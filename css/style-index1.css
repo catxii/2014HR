@@ -1,0 +1,40 @@
+body{font-family:"微软雅黑";}
+li{list-style: none;}
+.information{
+	height:170px;  padding:0px;
+	border-bottom:2px solid #999;
+}
+.left-nav{
+    padding:0px;
+border-bottom:2px solid #999;
+
+
+}
+.personal-file-box ul li{
+	}
+.information-photo{
+	width:90px;margin:0px auto;}
+.information-name{
+	width:100px;margin:0px auto;  }
+li.information-text{
+	float:left;
+	display:inline;
+	font-size:18px;
+	padding:0 5px;
+	}
+.information-text em{
+	font-size:26px;}
+.information-text span{
+	font-size:14px;}
+.left-zuijin{
+	margin-top:5px;
+}
+.left-zuijin > .panel-body > img{
+	margin:10px 10px;
+}
+
+
+p.bg-success{
+	font-size:16px; padding:10px 0 8px 20px;
+	border-bottom:2px solid #d6d6d6;;
+     }
