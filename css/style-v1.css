@@ -2,7 +2,7 @@
 .btn-lg,
 .btn-group-lg > .btn {
   padding: 15px 16px;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.33;
   border-radius: 6px;
 }
@@ -244,6 +244,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   background-image:         linear-gradient(to bottom, #d6d6d6 0%, #c7c7c7 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd6d6d6', endColorstr='#ffc7c7c7', GradientType=0);
   background-repeat: repeat-x;
+  border-color:#CCC;
 }
 .panel-primary > .panel-heading {
   background-image: -webkit-linear-gradient(top, #2ecc71 0%, #48be7a 100%);
@@ -252,10 +253,24 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   background-image:         linear-gradient(to bottom, #2ecc71 0%, #48be7a 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff2ecc71', endColorstr='#ff48be7a', GradientType=0);
   background-repeat: repeat-x;
-}
+  border-color:#CCC;
+} 
 .panel-primary {
   border-color: #2ecc71;
 }
+
+/*panel-other*/
+.panel-primary-other > .panel-heading-other{
+  background:#efefef;
+  border:0px;
+  border-radius:0px;
+}
+.panel-primary-other > .panel-body-other{
+  background:#efefef;
+}
+.panel-primary-other{
+	background:#FFF;}
+
 .carousel-indicators .active {
   background-color: #2ecc71;
 }
