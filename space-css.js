@@ -7,7 +7,7 @@ function loadJS(filename){
 }
 
 var filegroup = [
-
+	//glyphicons 图标样式
 	"<link href='libs/glyphicons/css/glyphicons.css' rel='stylesheet'>",
 	// Bootstrap core CSS 
 	"<link href='libs/bootstrap/css/bootstrap.css' rel='stylesheet'>",

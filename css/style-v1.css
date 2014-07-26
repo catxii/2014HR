@@ -762,3 +762,6 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   zoom:1;
   *display:inline;
 }
+.tree-title-button:hover {
+  cursor: pointer;
+}
