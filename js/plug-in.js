@@ -11,6 +11,9 @@ $(function(){
 
 	// select2定义列表
  	$(".select2-box").select2(); 
+ 	$(".select2-box-single").select2({
+ 		maximumSelectionSize: 1
+ 	});
  	$(".select2-box-single-bank").select2({
  		maximumSelectionSize: 1
  	});
@@ -106,8 +109,10 @@ $(function(){
  	$(".list-group-collapse-button").click(function(){
  		if ( $(".panel-body-collapse").is(":visible") ) {
  			$(".open-all-collapse").text("全部折叠").addClass("active");
+ 			$(this).find(".glyphicon.glyphicon-chevron-right").addClass("glyphicon-chevron-down");
  		}else{
- 			$(".open-all-collapse").text("全部展开").removeClass("active");;
+ 			$(".open-all-collapse").text("全部展开").removeClass("active");
+ 			$(this).find(".glyphicon.glyphicon-chevron-right").removeClass("glyphicon-chevron-down");
  		};
  	});
 
