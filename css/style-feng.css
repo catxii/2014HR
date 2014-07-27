@@ -1,6 +1,6 @@
 body{font-family:"微软雅黑";}
 li{list-style: none;}
-a{color:#0cb353;}
+a{color:#4c4c4c;}
 a:hover{color:#ffae00;}
 .navbar{
 	box-shadow:0 1px 2px #575757;}
@@ -136,17 +136,16 @@ p.bg-success{
 
 
 .right-content .panel-heading{
-	padding:1px 15px;
 	}
 .tab-top-nav > .nav-pills{
 	width:100%;
 	margin:auto;
 	text-align:center;
 	padding:6px 0px 20px 0px;
-	border-bottom:1px solid #CCC;}
-	
-.notice{
-	padding:20px 0px;}
+	border-bottom:1px solid #CCC;
+	}
+/*班级通知*/
+
 .position-right{
 	position:absolute;
 	right:20px;
@@ -168,4 +167,13 @@ p.bg-success{
 .list-group-item:first-child{
 	border-radius:0px;
 	box-shadow:none;}
+
+/*班级信息管理*/
+.management{
+	margin-top:20px;}
+.management-xuanyan li{
+	margin-top:20px;}
+.nav-justified li a span{
+	margin-right:5px;
+	color:#F0AD4E;}
 
