@@ -1,5 +1,70 @@
 body{font-family:"微软雅黑";}
 li{list-style: none;}
+a{color:#0cb353;}
+a:hover{color:#ffae00;}
+.navbar{
+	box-shadow:0 1px 2px #575757;}
+.second-nav-bar-bottom{
+	bottom:5px;}
+.clear-border{
+	border-radius:0px;
+	border:0px;
+	box-shadow:none;
+}
+/*button*/
+
+.btn-default > span{
+	margin-right:5px;}
+.btn-default > a{
+	color:#545454;
+}
+	
+.btn-primary > span{
+	margin-right:5px;}
+.btn-primary > a{
+	color:#FFF;
+	}
+
+.btn-warning > span{
+	margin-right:5px;}
+.btn-warning > a{
+	color:#FFF;
+	}
+
+.btn-danger > span{
+	margin-right:5px;}
+.btn-danger > a{
+	color:#FFF;
+	}
+
+.nav-class-management > li > a,.nav-pills > li > a{
+	border-radius:0px;!important;
+	padding:5px 10px;
+}
+
+/*tab*/
+
+.position-bottom-navs {
+  color: #2ecc71;
+  height: 0;
+  left: 53%;
+  line-height: 0;
+  margin-left: -8px;
+  position: absolute;
+  top: 100%;
+}
+
+	
+/*分页*/
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus{
+	background:#ffae00;
+	border:1px solid #ddd;
+}
+.pagination > li > a, .pagination > li > span{ color:#ffae00;}
+.pagination > li > a:hover,.pagination > li > a:focus{ color:#333;}
+
+
+/*个人空间主页*/
 .information{
 	height:170px;  padding:0px;
 	border-bottom:2px solid #999;
@@ -15,7 +80,7 @@ border-bottom:2px solid #999;
 .information-photo{
 	width:90px;margin:0px auto;}
 .information-name{
-	width:100px;margin:0px auto;  }
+	width:120px;margin:0px auto;  }
 li.information-text{
 	float:left;
 	display:inline;
@@ -32,9 +97,75 @@ li.information-text{
 .left-zuijin > .panel-body > img{
 	margin:10px 10px;
 }
-
-
+ul > li.list-group-item{
+	padding:5px 15px;}
+.list-group-item > span{ margin-left:20px}	
 p.bg-success{
 	font-size:16px; padding:10px 0 8px 20px;
-	border-bottom:2px solid #d6d6d6;;
+	background:#0cb353;
+	color:#ffae00;
+	border-bottom:2px solid #ffae00;
+	height:50px;
      }
+
+.fd-item{
+	margin:10px 18px;
+	overflow:hidden;
+	padding-bottom:15px;
+	float:left;
+	border-bottom:1px solid #D4D4D4;
+}
+
+.fd-item dt{
+
+	float:left;}
+
+.fd-left > a > img{
+	width:50px;
+	height:50px;
+}
+.fd-left{}
+.fd-right{
+	margin-left:65px;}
+
+.list-group-item{
+	 border:none;}
+.panel-body > a > img{margin-right:4px;}
+
+/*班级空间主页*/
+
+
+.right-content .panel-heading{
+	padding:1px 15px;
+	}
+.tab-top-nav > .nav-pills{
+	width:100%;
+	margin:auto;
+	text-align:center;
+	padding:6px 0px 20px 0px;
+	border-bottom:1px solid #CCC;}
+	
+.notice{
+	padding:20px 0px;}
+.position-right{
+	position:absolute;
+	right:20px;
+	margin-top:10px;
+	z-index:999;
+}
+.notice-old{
+	margin-top:50px;}
+.notice-old .list-group-item{
+	border:1px dotted #CCC;}
+.notice > .panel{
+	border:0px;
+	border-radius:0px;
+}
+.notice .sub-list{
+	border:0px;
+	border-radius:0px;
+	box-shadow:none;}
+.list-group-item:first-child{
+	border-radius:0px;
+	box-shadow:none;}
+
