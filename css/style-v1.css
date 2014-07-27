@@ -765,3 +765,48 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 .tree-title-button:hover {
   cursor: pointer;
 }
+
+/* sidebar-hover */
+.list-group-sidebar-hover .badge {
+ /* background: none!important;
+  color: #fff!important;*/
+  display: none;
+}
+.list-group-sidebar-hover .active .badge {
+  display: block;
+}
+.affix.search-bank {
+  background: #f1f1f1;
+  border-bottom: 1px solid #ccc;
+  left: 0;
+  padding: 60px 10px 0;
+  right: 0;
+  text-align: center;
+  top: 0;
+  z-index: 30;
+}
+.inline-block-ul.search-bank li{
+  vertical-align: top;
+}
+.search-bank .select2-container-multi {
+  display: block;
+}
+.tableheader-gray {
+  background: #e2e2e2;
+  color: #000000;
+  font-weight: bold;
+}
+.add-button-bank {
+  position: absolute;
+  right: 5px;
+  z-index: 10;
+  top:8px;
+}
+.form-font {
+  padding-top: 7px;
+}
+.button-group-input-text {
+  line-height: 20px;
+  height: 20px;
+  padding: 0 3px;
+}

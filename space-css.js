@@ -17,9 +17,13 @@ var filegroup = [
 	// select 2 
 	"<link href='libs/select2/select2.css' rel='stylesheet'>",
 
+	// 日期选择器 
+	"<link href='libs/bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.min.css' rel='stylesheet' >",
+
 	// Custom styles for this template 
 	"<link href='css/style-v1.css' rel='stylesheet'>",
     "<link href='css/style-feng.css' rel='stylesheet'>", 
+
 	// Just for debugging purposes. Don't actually copy these 2 lines! 
 	"<!--[if lt IE 9]> <script src='libs/bootstrap/js/ie8-responsive-file-warning.js'></script> <![endif]-->",
 	"<script src='libs/bootstrap/js/ie-emulation-modes-warning.js'></script>",

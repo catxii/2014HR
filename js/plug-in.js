@@ -11,9 +11,22 @@ $(function(){
 
 	// select2定义列表
  	$(".select2-box").select2(); 
+ 	$(".select2-box-single-bank").select2({
+ 		maximumSelectionSize: 1
+ 	});
+ 	$(".select2-box-single-bank").on("select2-close",function(e){
+ 		var patchBankName = $(".select2-search-choice > div").text();
+ 		var selectBankName = $(".bank-name:contains('"+ patchBankName+"')").closest(".list-group");
+ 		$(".list-group.list-group-collapse-button").not( selectBankName ).hide();
+ 	});
+ 	$(".select2-box-single-bank").on("select2-removing",function(e){
+ 		$(".list-group.list-group-collapse-button").show();
+ 	});
 
  	// tips设置
  	$('.btn').tooltip();
+
+
 
  	// tree
 	$(".all-tree-ul-none.showit").find(".icon-circle-plus").addClass("icon-circle-minus");
@@ -69,5 +82,66 @@ $(function(){
  		$(this).parent().addClass("current-tree").siblings().removeClass("current-tree");
  		$(".current-tree").not( $(this).parent() ).removeClass("current-tree");
  	})
+
+ 	//  打开所有的德能银行
+ 	function treeHide(){
+ 		$(".panel-body-collapse").show();
+ 		$(".all-tree-ul-none").find(".icon-circle-plus").addClass("icon-circle-minus");
+ 		$(".glyphicon.glyphicon-chevron-right").addClass("glyphicon-chevron-down");
+ 	}
+ 	function treeShow(){
+ 		$(".all-tree-ul-none").find(".icon-circle-plus").removeClass("icon-circle-minus");
+		$(".panel-body-collapse").hide();
+		$(".glyphicon.glyphicon-chevron-right").removeClass("glyphicon-chevron-down");
+ 	}
+ 	$(".open-all-collapse").click(function(){
+ 		if( $(this).text() == "全部展开" ){
+ 			$(this).text("全部折叠");
+ 			treeHide();
+ 		}else {
+ 			$(this).text("全部展开");
+ 			treeShow();
+ 		}
+ 	});
+ 	$(".list-group-collapse-button").click(function(){
+ 		if ( $(".panel-body-collapse").is(":visible") ) {
+ 			$(".open-all-collapse").text("全部折叠").addClass("active");
+ 		}else{
+ 			$(".open-all-collapse").text("全部展开").removeClass("active");;
+ 		};
+ 	});
+
+ 	// 日期选择器
+ 	$('.form_datetime').datetimepicker({
+        //language:  'fr',
+        weekStart: 1,
+        todayBtn:  1,
+		autoclose: 1,
+		todayHighlight: 1,
+		startView: 2,
+		forceParse: 0,
+        showMeridian: 1
+    });
+	$('.form_date').datetimepicker({
+        language:  'fr',
+        weekStart: 1,
+        todayBtn:  1,
+		autoclose: 1,
+		todayHighlight: 1,
+		startView: 2,
+		minView: 2,
+		forceParse: 0
+    });
+	$('.form_time').datetimepicker({
+        language:  'fr',
+        weekStart: 1,
+        todayBtn:  1,
+		autoclose: 1,
+		todayHighlight: 1,
+		startView: 1,
+		minView: 0,
+		maxView: 1,
+		forceParse: 0
+    });
 
 })
