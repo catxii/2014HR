@@ -360,7 +360,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 
 /* 高校学堂 */
 .fixed-top-body {
-  padding-top: 55px;
+  padding-top: 70px;
 }
 .banner-fluid-bg {
   background: url(../img/banner-graybg_03.png) repeat-x;
@@ -856,4 +856,32 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   padding: 6px 12px;
   transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
   width: 100%;
+}
+.icon-circle-ok.green {
+  color: #0cb353;
+}
+.tab-header {
+  position: relative;
+  height: 45px;
+}
+.navigation-inline-ul {
+  position: absolute;
+  bottom:-1px;
+  margin: 0;
+}
+.navigation-inline-ul li {
+  line-height: 22px;
+  margin-right: 0;
+}
+.navigation-inline-ul li a{
+  display: block;
+  padding: 5px 20px;
+  border-radius: 6px 6px 0 0;
+}
+.navigation-inline-ul li a:hover {
+  text-decoration: none;
+  background: #a3a3a3;
+}
+.navigation-inline-ul li.current a{
+  background:white;
 }

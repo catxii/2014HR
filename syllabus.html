@@ -65,27 +65,32 @@
   </div>
 </div>
 
-<div class="container-fluid banner-fluid-bg">
-    <div class="container top-banner-small">
-      <ul class="inline-block-ul second-nav-bar-bottom">
-        <li class="current"><a href="#">主页</a></li>
-        <li><a href="#">高校课堂</a></li>
-        <li><a href="#">资源库</a></li>
-        <li><a href="#">随堂测试</a></li>
-        <li><a href="#">教研室</a></li>
-        <li><a href="#">我的班级</a></li>
-      </ul>
-    </div>
-</div>
 
 <div class="container">
-  <div class="col-md-12"> 
+  <div class="col-md-2">
+  	<div class="list-group">
+	  <a href="#" class="list-group-item disabled icon-group">
+	      &nbsp;选择班级
+	  </a>
+	  <a href="#" class="list-group-item active">三年级1班</a>
+	  <a href="#" class="list-group-item">三年级2班</a>
+	</div>
+  </div>
+  <div class="col-md-10"> 
 
   	<div class="panel panel-default">
-	  <div class="panel-heading">
-	    <h3 class="panel-title">课程表</h3>
+	  <div class="panel-heading tab-header">
+	    <ul class="inline-block-ul navigation-inline-ul">
+	        <li class="current"><a href="#">主页</a></li>
+	        <li><a href="#">高校课堂</a></li>
+	        <li><a href="#">资源库</a></li>
+	        <li><a href="#">随堂测试</a></li>
+	        <li><a href="#">教研室</a></li>
+	        <li><a href="#">我的班级</a></li>
+	     </ul>
 	  </div>
 	  <div class="panel-body">
+
 	    <table class="table table-syllabus table-bordered table-striped">
 	    	<tr class="title">
 	    		<td></td>
@@ -99,7 +104,7 @@
 	    	</tr>
 	    	<tr>
 	    		<td class="title">第一节课</td>
-	    		<td><input type="text" class="form-control" placeholder="点击输入课程名称"></td>
+	    		<td><input type="text" class="form-control save-complete" placeholder="输入课程名"></td>
 	    		<td><input type="text" class="form-control" ></td>
 	    		<td><input type="text" class="form-control" ></td>
 	    		<td><input type="text" class="form-control" ></td>

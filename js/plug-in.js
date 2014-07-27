@@ -149,4 +149,8 @@ $(function(){
 		forceParse: 0
     });
 
+	// 保存成功后
+	function saveComplete(){
+		$(this).after("<i class='icon-circle-ok green'></i>");
+	}
 })
