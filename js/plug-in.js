@@ -87,12 +87,12 @@ $(function(){
  	})
 
  	//  打开所有的德能银行
- 	function treeHide(){
+ 	function treeHideBank(){
  		$(".panel-body-collapse").show();
  		$(".all-tree-ul-none").find(".icon-circle-plus").addClass("icon-circle-minus");
  		$(".glyphicon.glyphicon-chevron-right").addClass("glyphicon-chevron-down");
  	}
- 	function treeShow(){
+ 	function treeShowBank(){
  		$(".all-tree-ul-none").find(".icon-circle-plus").removeClass("icon-circle-minus");
 		$(".panel-body-collapse").hide();
 		$(".glyphicon.glyphicon-chevron-right").removeClass("glyphicon-chevron-down");
@@ -100,10 +100,10 @@ $(function(){
  	$(".open-all-collapse").click(function(){
  		if( $(this).text() == "全部展开" ){
  			$(this).text("全部折叠");
- 			treeHide();
+ 			treeHideBank();
  		}else {
  			$(this).text("全部展开");
- 			treeShow();
+ 			treeShowBank();
  		}
  	});
  	$(".list-group-collapse-button").click(function(){

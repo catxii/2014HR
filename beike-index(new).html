@@ -85,8 +85,7 @@
       <div class="panel-heading">
         我的备课
           <div class="position-right-top" style="display:block">
-            <!-- <button type="button" class="btn btn-warning btn-sm open-all-tree" data-toggle="button">全部展开</button> -->
-            <button type="button" class="btn btn-warning btn-sm open-all-tree" data-toggle="button">管理目录</button>
+          <button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target=".bs-example-modal-sm">管理目录</button>
           </div>
       </div>
       <div class="panel-body">
@@ -95,23 +94,13 @@
 
           <div class="list-group  list-group-tree all-tree-ul-none">
 
-            <div class="btn-group position-right-top">
-              <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" role="menu" >
-                <li><a href="javascript:" data-toggle="modal" data-target=".bs-example-modal-sm"><span class="icon-edit"></span> 修改名称</a></li> 
-                <li><a href="javascript:"><span class="glyphicon glyphicon-trash"></span> 删除目录</a></li>
-              </ul>
-            </div>
-
             <div href="javascript:" class="list-group-item tree-title-button active title-button">
               <span class="glyphicon glyphicon-chevron-right"></span> 英语 人教版 七年级 上学期
             </div>
 
             <ul class="tree-sub tree-sub-1 sub-list">
               <li>
-                <a href="javascript:"><span class="sub-click-area icon-circle-plus"></span> <span class="sub-click-area">第一单元</span> <span class="btn btn-xs btn-primary  icon-pencil todo-ico-button"  data-toggle="modal" data-target=".bs-example-modal-sm"data-toggle="modal" data-target=".bs-example-modal-sm"></span></a> 
+                <a href="javascript:"><span class="sub-click-area icon-circle-plus"></span> <span class="sub-click-area">第一单元</span> <span class="btn btn-xs btn-primary  icon-pencil todo-ico-button"  data-toggle="modal" data-target=".bs-example-modal-sm" ></span></a> 
 
                 <ul class="tree-sub ">
                   <li>
@@ -411,7 +400,7 @@
 <!-- 拖拽效果 -->
 <script type="text/javascript" src="libs/jQuery-ui/jquery-ui-1.10.4.custom.js"></script>
 <script type="text/javascript" src="libs/jquery.shapeshift-master/jquery.shapeshift.js"></script>
- // <script>
+<script>
  //    $(document).ready(function() {
  //      $(".clones").shapeshift({
  //          dragClone: true,

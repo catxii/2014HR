@@ -619,7 +619,9 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   padding-left: 5px;
 
 }
-
+.list-group-tree .title-button .glyphicon-chevron-right {
+  margin-left: 0;
+}
 
 /* 相册详情页 */
 .photo-title-box {
