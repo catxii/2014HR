@@ -465,6 +465,13 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 .list-group:hover .position-right-top {
   display:block;
 }
+.position-right-top-block {
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  z-index: 20;
+  margin: 0;
+}
 .sub-list .input-group {
   padding:10px 0px;
 }
@@ -868,7 +875,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 }
 .navigation-inline-ul {
   position: absolute;
-  bottom:-1px;
+  bottom:-2px;
   margin: 0;
 }
 .navigation-inline-ul li {
@@ -912,4 +919,13 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 .resource-info .glyphicon {
   margin-right: 10px;
   display: none;
+}
+.top-head-ul li{
+  margin-right: 0;
+}
+.table ul {
+  margin: 0;
+}
+.btn-left {
+  text-align: left;
 }

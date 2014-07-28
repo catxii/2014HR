@@ -27,7 +27,7 @@ $(function(){
  	});
 
  	// tips设置
- 	$('.btn').tooltip();
+ 	$('.btn,a').tooltip();
 
 
 
@@ -153,4 +153,26 @@ $(function(){
 	function saveComplete(){
 		$(this).after("<i class='icon-circle-ok green'></i>");
 	}
+
+	// 选择教材版本
+	var paddingName = $(".padding-name span").length;
+	$(".banben-chose-box tr a").click(function(){
+		var choseEqOne = $(this).closest("tr").index();
+		var ThisText = $(this).text();
+		console.log( ThisText );
+		console.log( choseEqOne );
+		$(".padding-name span").eq(choseEqOne).text(ThisText);
+	});
+	
+
+	// 目录管理
+	$(".myfile-click").click(function(){
+		$(".myfile-well").toggle();
+		if ( $(".myfile-well").is(":visible") ) {
+			$(this).find(".glyphicon-plus").addClass("glyphicon-minus");
+		}else{
+			$(this).find(".glyphicon-plus").removeClass("glyphicon-minus");
+		};
+		
+	});
 })
