@@ -99,7 +99,7 @@ li.information-text{
 }
 ul > li.list-group-item{
 	padding:5px 15px;}
-.list-group-item > span{ margin-left:20px}	
+
 p.bg-success{
 	font-size:16px; padding:10px 0 8px 20px;
 	background:#0cb353;
@@ -176,4 +176,34 @@ p.bg-success{
 .nav-justified li a span{
 	margin-right:5px;
 	color:#F0AD4E;}
+.tab-content-tx{
+	margin:30px;
+	float:left;
+}
+.tab-content-kj{
+	float:left;margin:30px;}
+/*班级日志*/
+.rizhi-content{margin-bottom:20px;}
+.rizhi-title{
+	margin-bottom:20px;}
+.rizhi-fenlei{
+	margin:20px 17px;
+	border-top:1px solid #CCC;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
