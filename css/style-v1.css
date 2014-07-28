@@ -363,11 +363,11 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   padding-top: 70px;
 }
 .banner-fluid-bg {
-  background: url(../img/banner-graybg_03.png) repeat-x;
+  /*background: url(../img/banner-graybg_03.png) repeat-x;*/
 }
 .top-banner-small {
-  height: 100px;
-  background:url(../img/banner-pic_03.jpg) no-repeat center;
+  height: 50px;
+  /*background:url(../img/banner-pic_03.jpg) no-repeat center;*/
   position: relative;
 }
 .second-nav-bar-bottom {
@@ -884,4 +884,30 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 }
 .navigation-inline-ul li.current a{
   background:white;
+}
+.button-two-area {
+  padding: 0;
+  width: 100%;
+}
+.button-two-area li {
+  margin-bottom: 10px;
+}
+.button-two-area li a{
+  width:100%;
+}
+.media-heading {
+  font-size: 14px;
+}
+.pingjia-nr {
+  font-size: 12px;
+}
+.media-body h4 {
+  font-size: 12px;
+}
+.resource-info {
+  padding-left: 0;
+}
+.resource-info .glyphicon {
+  margin-right: 10px;
+  display: none;
 }
