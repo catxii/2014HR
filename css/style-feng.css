@@ -145,15 +145,14 @@ p.bg-success{
 	border-bottom:1px solid #CCC;
 	}
 /*班级通知*/
-
+.notice .row{padding:0 15px;}
 .position-right{
 	position:absolute;
 	right:20px;
 	margin-top:10px;
 	z-index:999;
 }
-.notice-old{
-	margin-top:50px;}
+
 .notice-old .list-group-item{
 	border:1px dotted #CCC;}
 .notice > .panel{
@@ -191,15 +190,42 @@ p.bg-success{
 	border-top:1px solid #CCC;
 	}
 
+/*班级相册*/
+.photo-upload{width:160px; margin:auto;
+padding:20px 0px;
+ }
+.photo-upload > .btn-warning{
+	padding:8px 25px;
+	border:4px solid #ffae00;
+	font-size:20px;
+	background:#ffae00;
+	color:#FFF;
+	text-align:center;}
+.photo-upload > .btn-warning:hover{
+	
+	border:4px solid #ffae00;
+	background:#FFF;
+	color:#ffae00;
+	padding:8px 25px;
+	}
 
+/*.photo-box-single img{
+	width:100%}*/
 
-
-
-
-
-
-
-
+.photo-box-single.big img {
+  height: 140px;
+  width: 203px;
+}
+/*作业管理*/
+.homework-km{
+	}
+.homework-km > h5,.homework-km > .btn-group{
+	float:left;
+	margin-right:10px;}
+.homework-go{width:100px;
+padding:10px 0px;
+font-size:18px;}
+	
 
 
 
