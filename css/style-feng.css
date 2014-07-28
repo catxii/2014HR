@@ -181,6 +181,15 @@ p.bg-success{
 }
 .tab-content-kj{
 	float:left;margin:30px;}
+	
+.left-qx,.right-qx{ 
+	padding:10px 10px;
+	}	
+.button-qx{
+	padding:10px 45px;}
+	
+.button-qx .btn-primary,.button-qx .btn-warning{
+	margin-top:20px;}
 /*班级日志*/
 .rizhi-content{margin-bottom:20px;}
 .rizhi-title{
@@ -215,7 +224,21 @@ padding:20px 0px;
 .photo-box-single.big img {
   height: 140px;
   width: 203px;
+  
 }
+
+.photo-add{
+	background:#F2F2F2; margin-top:20px;
+	width:100%;
+	height:300px;}
+	
+.btn-danger{
+	position:absolute;
+	width:200px;
+	font-family:"微软雅黑";
+	font-size:20px;
+	left:40%;
+	top:40%;}
 /*作业管理*/
 .homework-km{
 	}
@@ -225,7 +248,12 @@ padding:20px 0px;
 .homework-go{width:100px;
 padding:10px 0px;
 font-size:18px;}
-	
+.button-right{
+	position:absolute;
+	right:0px;
+	text-align:center;
+	font-family:"微软雅黑";
+}
 
 
 

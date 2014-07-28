@@ -65,11 +65,11 @@
         </ul>
       </div>
       <div class="panel-body">
-        <div class="tab-top-nav"> </div>
-        <div class="notice">
+       <div class="row" style="padding:0px 15px;">
+        <div class="notice col-md-12">
           <h5 style=" margin-right:10px;float:left;">上传到</h5>
           <div class="btn-group" style=" margin-right:10px;float:left;">
-  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
     默认相册 <span class="caret"></span>
   </button>
   <ul class="dropdown-menu" role="menu">
@@ -81,8 +81,24 @@
   </ul>
 </div>
           <h5 style=" margin-right:10px;float:left;">或</h5>
-            <button type="button" class="btn btn-warning">创建相册</button>
-            <a href="#">返回相册列表</a>
+            <button type="button" class="btn btn-primary" style=" margin-right:10px;float:left;"><span class="glyphicon glyphicon-plus">创建相册</span></button>
+            <div class="button-right"><button type="button" class="btn btn-default" data-toggle="dropdown">
+    <span class="glyphicon glyphicon-share-alt">返回相册列表</span> 
+  </button></div>
+        </div>
+        </div>
+        <div class="row" style="padding:0px 15px;">
+        <div class="photo-add col-md-12">
+            <button type="button" class="btn-lg btn-danger" style="float:left;"><span class="glyphicon glyphicon-picture">上传照片</span></button>
+        </div>
+        </div>
+        <div class="row" style="margin:15px 0px; padding:10px; border-top:1px solid #CCC;">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+    上传照片 
+  </button>
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+    取消所有照片 
+  </button>
         </div>
       </div>
     </div>
