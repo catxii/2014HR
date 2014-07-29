@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="../../favicon.ico">
+<title>领信样式模板</title>
+
+<!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+<script type="text/JavaScript" src="space-css.js"></script>
+<!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+
+</head>
+<body class="fixed-top-body" ng-app="" data-spy="scroll" data-target=".navbar-example">
+<div class="navbar navbar-zhijiao navbar-green navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a href="#" class="navbar-brand logo-small" alt="领信logo"></a> </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"> <a href="#">教学空间</a> </li>
+        <li> <a href="#about">个人空间</a> </li>
+        <li> <a href="#contact">班级空间</a> </li>
+        <li> <a href="#contact">我的班级</a> </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">张学友 [ 退出 ]</a></li>
+        <li><a href="#"><span class="icon-t-shirt"></span> 装扮</a></li>
+        <li class="dropdown"> <a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class=" icon-cogwheel"></span> 设置 <span class="caret"></span></a>
+          <ul role="menu" class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    
+    <!--/.nav-collapse --> 
+  </div>
+</div>
+<div class="container">
+  <div class="col-md-2">
+    <div class="list-group"> <a href="#" class="list-group-item disabled icon-group"> &nbsp;选择班级 </a> <a href="#" class="list-group-item active">三年级1班</a> <a href="#" class="list-group-item">三年级2班</a> </div>
+    <div class="list-group"> <a href="#" class="list-group-item disabled icon-eye-open"> &nbsp;班级预览</a></div>
+  </div>
+  <div class="col-md-10">
+    <div class="panel panel-default">
+      <div class="panel-heading tab-header">
+        <ul class="inline-block-ul navigation-inline-ul">
+          <li class="current"><a href="#">班级成员</a></li>
+          <li><a href="#">成员分组</a></li>
+          <li><a href="#">成员公告</a></li>
+          <li><a href="#">班级日志</a></li>
+          <li><a href="#">照片墙</a></li>
+          <li><a href="#">德能银行</a></li>
+          <li><a href="#">课程表</a></li>
+          <li><a href="#">班级作业</a></li>
+          <li><a href="#">班级信息管理</a></li>
+        </ul>
+      </div>
+      <div class="panel-body" style="padding:0px 15px;">
+        <div class="management">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="active"><a href="#home" role="tab" data-toggle="tab"><span class="icon-roundabout"></span>&nbsp;按学习合作分组</a></li>
+            <li><a href="#profile" role="tab" data-toggle="tab"><span class="icon-sheriffs-star"></span>&nbsp;按学习能力分组</a></li>
+          </ul>
+          
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div class="tab-pane active" id="home">
+              <ul class="add-grouping inline-block-ul inline-block-ul-mid btn-center
+">
+                <li>
+                  <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#add-group">创建小组</button>
+                </li>
+                <li>
+                  <button type="button" class="btn btn-warning">评价项管理</button>
+                </li>
+              </ul>
+              </ul>
+              <div class="list-grouping">
+                <table class="table table-striped btn-center table-bordered">
+                  <thead style="background:#D2E6E8">
+                    <tr>
+                      <th class="btn-center">第一小组</th>
+                      <th class="btn-center"> <ul class=" inline-block-ul inline-block-ul-mid">
+                          <li>
+                            <button type="button" class="btn btn-Success btn-sm" data-toggle="modal" data-target="#add-people"><span class="icon-user-add"></span>&nbsp;添加成员</button>
+                          </li>
+                          <li>
+                            <button type="button" class="btn btn-Success btn-sm" data-toggle="modal" data-target="#say-group"><span class="icon-conversation"></span>&nbsp;评价小组</button>
+                          </li>
+                        </ul>
+                      </th>
+                      <th class="btn-center"colspan="3">小组总分：<a>23</a>分&nbsp;排名<a>3</a></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="col-sm-2">小组成员</td>
+                      <td class="col-sm-4">评价内容</td>
+                      <td class="col-sm-1">总分</td>
+                      <td class="col-sm-1">排名</td>
+                      <td class="col-sm-4">操作</td>
+                    </tr>
+                    <tr>
+                      <td>刘德华<span class="label label-default" >组长</span></td>
+                      <td>
+                      <ul style="padding:0px;" class="btn-left list-grouping-fen">
+                      <li>1.好人好事,好人好事好人好事好人好事好人好事,好人好事<span>加一分</span><a href="#" class="list-grouping-fen-more" data-toggle="modal" data-target="#evaluation-more">更多</a></li>
+                      
+                      </ul>
+                      </td>
+                      <td>5</td>
+                      <td>56</td>
+                      <td><ul class=" inline-block-ul inline-block-ul-mid">
+                          <li>
+                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#say-people">评价</button>
+                          </li>
+                          <li>
+                            <div class="btn-group">
+                              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">移动&nbsp;<span class="caret"></span> </button>
+                              <ul class="dropdown-menu" role="menu" style="min-width:0px;">
+                                <li style="margin:0px;"><a href="#">第一小组</a></li>
+                                <li style="margin:0px;"><a href="#">第二小组</a></li>
+                                <li style="margin:0px;"><a href="#">第三小组</a></li>
+                                <li class="divider"></li>
+                                <li style="margin:0px;"><a href="#">移除组员</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li>
+                            <button type="button" class="btn btn-default" data-toggle="dropdown">设为组长</button>
+                          </li>
+                        </ul></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="tab-pane" id="profile">
+              <div class="tab-content-tx"> <img src="img/people-1.png" alt="..." class="img-thumbnail"> </div>
+              <div class="tab-content-kj"> fsdfsdfsdf </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 创建小组 --> 
+<!-- add-group -->
+<div class="modal fade" id="add-group" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">创建小组</h4>
+      </div>
+      <div class="modal-body">
+        <input type="text" class="form-control" placeholder="输入小组名称">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary">保存</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 更多评价 --> 
+<!-- evaluation-more -->
+<div class="modal fade" id="evaluation-more" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">更多评价</h4>
+      </div>
+      <div class="modal-body">
+        <ul style="padding:0px;">
+            <li class="list-group-item">1.好人好事,好人好事好人好事好人好事好人好事,好人好事1.好人好事,好人好事好人好事好人好事好人好事,好人好事1.好人好事,好人好事好人好事好人好事好人好事,好人好事1.好人好事,好人好事好人好事好人好事好人好事,好人好事1.好人好事,好人好事好人好事好人好事好人好事,好人好事1.好人好事,好人好事好人好事好人好事好人好事,好人好事</li>
+            <li class="list-group-item">1.好人好事,好人好事好人好事好人好事好人好事,好人好事</li>
+            <li class="list-group-item">1.好人好事,好人好事好人好事好人好事好人好事,好人好事</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 添加成员 --> 
+<!-- add-people -->
+<div class="modal fade" id="add-people" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">添加小组成员</h4>
+      </div>
+      <div class="modal-body row">
+        <div class="tab-pane" id="messages">
+              <div class="left-qx col-md-5">
+                <div class="panel panel-default"> 
+                  <!-- Default panel contents -->
+                  <div class="panel-heading">班级成员</div>
+                  
+                  <!-- List group -->
+                  <ul class="list-group" style="height:300px; overflow:auto">
+                    <li class="list-group-item">
+                      
+                      <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1">
+                        1 </label>
+                    </li>
+                    <li class="list-group-item">
+                     
+                      <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1">
+                        1 </label>
+                    </li>
+                    <li class="list-group-item">
+                      <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1">
+                        2 </label>
+                    </li>
+                    <li class="list-group-item">
+                      <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1">
+                        3 </label>
+                    </li>
+                    <li class="list-group-item">
+                      <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1">
+                        4 </label>
+                    </li>
+                    <li class="list-group-item">
+                      <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1">
+                        5 </label>
+                    </li>
+                    <li class="list-group-item">
+                      <label>
+                      <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1">
+                        1 </label>
+                    </li>
+                    <li class="list-group-item">
+                      <label>
+                      <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1">
+                        1 </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="button-qx col-md-2" style="padding:0px 10px; width:80px; ">
+                <button type="button" class="btn-lg btn-warning icon-forward" style="font-size:30px"></button>
+               
+              </div>
+              <div class="right-qx col-md-5">
+                <div class="panel panel-default"> 
+                  <!-- Default panel contents -->
+                  <div class="panel-heading">已选对象</div>
+                  
+                  <!-- List group -->
+                  <ul class="list-group" style="height:300px; overflow:auto">
+                    <li class="list-group-item">
+                     
+                      <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1">
+                        1 </label>
+                    </li>
+                    <li class="list-group-item">
+                     
+                      <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1">
+                        1 </label>
+                    </li>
+                    <li class="list-group-item">
+                      <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1">
+                        2 </label>
+                    </li>
+                    <li class="list-group-item">
+                      <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1">
+                        3 </label>
+                    </li>
+                    <li class="list-group-item">
+                      <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1">
+                        4 </label>
+                    </li>
+                    <li class="list-group-item">
+                      <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1">
+                        5 </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary">保存</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 评价小组 --> 
+<!-- say-group -->
+<div class="modal fade bs-example-modal-sm" id="say-group" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">评价小组</h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal" role="form">
+          <div class="form-group">
+            <label  class="col-sm-3 control-label">评价对象：</label>
+            <div class="col-sm-8 form-font"> <span>第一小组</span> </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-3 control-label">评分项
+              <button class="icon-cogwheel"> 管理</button>
+              ：</label>
+            <div class="col-sm-8">
+              <select class="select2-box-single"  multiple placeholder="点击选择或输入评分项" style="display:block; width:100%;">
+                <optgroup label="校园行为评分">
+                <option value="AL">XXXX评分项 参考分值：<span class="value">+ 5</span></option>
+                <option value="AL">XXXX评分项 参考分值：<span class="value">+ 5</span></option>
+                <option value="AL">XXXX评分项 参考分值：<span class="value">+ 5</span></option>
+                <option value="AL">XXXX评分项 参考分值：<span class="value">+ 5</span></option>
+                <option value="AL">课外情况评分项 参考分值：<span class="value">+ 5</span></option>
+                <option value="AL">课外情况评分项课外情况评分项课外情况评分项课外情况评分项 参考分值：<span class="value">+ 5</span></option>
+                </optgroup>
+                <optgroup label="读书评分">
+                <option value="AL">XXXX评分项 参考分值：<span class="value">+ 5</span></option>
+                <option value="AL">XXXX评分项 参考分值：<span class="value">+ 5</span></option>
+                <option value="AL">XXXX评分项 参考分值：<span class="value">+ 5</span></option>
+                <option value="AL">XXXX评分项 参考分值：<span class="value">+ 5</span></option>
+                </optgroup>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-3 control-label">奖惩： </label>
+            <div class="col-sm-8">
+              <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-primary active">
+                  <input type="radio" name="options" id="option1" checked>
+                  奖励 </label>
+                <label class="btn btn-primary">
+                  <input type="radio" name="options" id="option2">
+                  扣除 </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-3 control-label">分值：</label>
+            <div class="col-sm-8">
+              <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-Success" style="padding:0px;">
+                  <input type="radio" name="options" id="option5">
+                  <input type="text" class="form-control button-group-input-text" placeholder="输入分值" style="width:200px; border:0px; height:30px; background:#EBEBEB;  box-shadow:none; ">
+                </label>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary">添加记录</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 评价个人 --> 
+<!-- say-people -->
+<div class="modal fade bs-example-modal-sm" id="say-people" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">评价小组</h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal" role="form">
+          <div class="form-group">
+            <label  class="col-sm-3 control-label">评价对象：</label>
+            <div class="col-sm-8 form-font"> <span>第一小组</span> </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-3 control-label">评分项
+              <button class="icon-cogwheel"> 管理</button>
+              ：</label>
+            <div class="col-sm-8">
+              <select class="select2-box-single"  multiple placeholder="点击选择或输入评分项" style="display:block; width:100%;">
+                <optgroup label="校园行为评分">
+                <option value="AL">XXXX评分项 参考分值：<span class="value">+ 5</span></option>
+                <option value="AL">XXXX评分项 参考分值：<span class="value">+ 5</span></option>
+                <option value="AL">XXXX评分项 参考分值：<span class="value">+ 5</span></option>
+                <option value="AL">XXXX评分项 参考分值：<span class="value">+ 5</span></option>
+                <option value="AL">课外情况评分项 参考分值：<span class="value">+ 5</span></option>
+                <option value="AL">课外情况评分项课外情况评分项课外情况评分项课外情况评分项 参考分值：<span class="value">+ 5</span></option>
+                </optgroup>
+                <optgroup label="读书评分">
+                <option value="AL">XXXX评分项 参考分值：<span class="value">+ 5</span></option>
+                <option value="AL">XXXX评分项 参考分值：<span class="value">+ 5</span></option>
+                <option value="AL">XXXX评分项 参考分值：<span class="value">+ 5</span></option>
+                <option value="AL">XXXX评分项 参考分值：<span class="value">+ 5</span></option>
+                </optgroup>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-3 control-label">奖惩： </label>
+            <div class="col-sm-8">
+              <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-primary active">
+                  <input type="radio" name="options" id="option1" checked>
+                  奖励 </label>
+                <label class="btn btn-primary">
+                  <input type="radio" name="options" id="option2">
+                  扣除 </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-3 control-label">分值：</label>
+            <div class="col-sm-8">
+              <div class="btn-group" data-toggle="buttons">
+                <label class="btn btn-Success" style="padding:0px;">
+                  <input type="radio" name="options" id="option5">
+                  <input type="text" class="form-control button-group-input-text" placeholder="输入分值" style="width:200px; border:0px; height:30px; background:#EBEBEB;  box-shadow:none; ">
+                </label>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary">添加记录</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 底部 -->
+<div class="container-fluid footer footer-grayline">
+  <div class="row">
+    <ul class="col-md-12 inline-block-ul">
+      <li><a href="#">关于我们</a></li>
+      <li>|</li>
+      <li><a href="#">联系我们</a></li>
+      <li>|</li>
+      <li><a href="#">友情链接</a></li>
+      <li>|</li>
+      <li><a href="#">关于我们</a></li>
+      <li>|</li>
+      <li><a href="#">关于我们</a></li>
+    </ul>
+  </div>
+  <div class="row">
+    <div class="col-md-12">Copyright @ 2011-2015 湖南领信教育网络发展有限公司版权所有 湘ICP备14001031号</div>
+  </div>
+</div>
+
+<!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****--> 
+<script type="text/JavaScript" src="space-footer-css.js"></script> 
+<!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+
+</body>
+</html>

@@ -100,12 +100,11 @@ li.information-text{
 ul > li.list-group-item{
 	padding:5px 15px;}
 
-p.bg-success{
-	font-size:16px; padding:10px 0 8px 20px;
-	background:#0cb353;
-	color:#ffae00;
-	border-bottom:2px solid #ffae00;
-	height:50px;
+.bg-success{
+	font-size:16px; padding:8px 0 8px 20px;
+	background:#D9EDF7;
+	color:#86C1EE;
+	height:36px;
      }
 
 .fd-item{
@@ -200,7 +199,7 @@ p.bg-success{
 	}
 
 /*班级相册*/
-.photo-upload{width:260px; margin:auto;
+.photo-upload{width:180px; margin:auto;
 padding:20px 0px;
  }
 .photo-upload > .btn-warning{
@@ -255,9 +254,38 @@ font-size:18px;}
 	font-family:"微软雅黑";
 }
 
+/*班级留言管理*/
 
+.edit-info-tips .btn-default{
+	height:20px;}
+/*班级成员分组*/	
+.add-grouping{ border-bottom:2px solid #E6E6E6; padding:10px 0px;}
+.inline-block-ul-mid li {
+  display: inline-block;
+  vertical-align:middle;
+}
+.list-grouping{
+	margin-top:10px;}
+.list-grouping .label-default{
+	color:#F30; margin-left:3px;}
+.list-grouping-fen li span{
+	color:#F00;}
+a.list-grouping-fen-more{
+	 margin-left:5px;
+	 color:#999;}
 
-
-
-
-
+/*班级主页*/
+.right-class-content .panel-body{
+	padding:0px 5px 20px 5px;}
+.class-tongzhi{
+	background:#8A4500; height:100px;
+	padding:5px;
+	overflow:hidden;}
+.class-tongzhi-content{
+	height:90px; background:#004040;
+	padding:10px;}
+.class-tongzhi-content .list-group{
+	box-shadow:none;;}
+.class-tongzhi-content .list-group-item{
+	background:#408080;
+	border-radius:3px;}
