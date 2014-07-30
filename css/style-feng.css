@@ -282,6 +282,12 @@ a.list-grouping-fen-more{
 	top:12px;
 	font-size:20px;
 	color:#666;}
+.group-people-ico{
+	margin-bottom:20px; border:2px solid #CCC; border-radius:5px; padding:10px;}
+	
+	
+.classification-tiele{
+	padding:15px; color:#06C; background:#E6E6E6; margin-bottom:15px;}
 /*班级主页*/
 .right-class-content .panel-body{
 	padding:0px 5px 20px 5px;}
@@ -297,3 +303,10 @@ a.list-grouping-fen-more{
 .class-tongzhi-content .list-group-item{
 	background:#408080;
 	border-radius:3px;}
+/*班级权限*/
+label.checkbox-qx{
+	margin-right:15px; display:block;}
+
+ul.qx-thead-body li{ border:1px solid #E8E8E8;padding:10px 0px;}
+.class-group-permissions .radio{
+	margin:0px;}
