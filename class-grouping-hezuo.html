@@ -69,7 +69,7 @@
         <div class="management">
           <ul class="nav nav-tabs" role="tablist">
             <li class="active"><a href="#home" role="tab" data-toggle="tab"><span class="icon-roundabout"></span>&nbsp;按学习合作分组</a></li>
-            <li><a href="#profile" role="tab" data-toggle="tab"><span class="icon-sheriffs-star"></span>&nbsp;按学习能力分组</a></li>
+            <li><a href="#profile" role="tab" data-toggle="tab"><span class="icon-sheriffs-star"></span>&nbsp;分层教学分组</a></li>
           </ul>
           
           <!-- Tab panes -->
@@ -87,22 +87,26 @@
               </ul>
               <div class="list-grouping">
                 <table class="table table-striped btn-center table-bordered">
-                  <thead style="background:#D2E6E8">
+                  <thead style="background:#D2E6E8; position:relative;">
                     <tr>
-                      <th class="btn-center">第一小组</th>
+                      <th class="btn-center" style="color:#2B5B84; text-align:center;"><h5>第一小组</h5></th>
                       <th class="btn-center"> <ul class=" inline-block-ul inline-block-ul-mid">
                           <li>
-                            <button type="button" class="btn btn-Success btn-sm" data-toggle="modal" data-target="#add-people"><span class="icon-user-add"></span>&nbsp;添加成员</button>
+                            <button type="button" class="btn btn-Success btn-sm" data-toggle="modal" data-target="#add-people">添加成员</button>
                           </li>
                           <li>
-                            <button type="button" class="btn btn-Success btn-sm" data-toggle="modal" data-target="#say-group"><span class="icon-conversation"></span>&nbsp;评价小组</button>
+                            <button type="button" class="btn btn-Success btn-sm" data-toggle="modal" data-target="#say-group">评价小组</button>
+                          </li>
+                          <li>
+                            <button type="button" class="btn btn-Success btn-sm"><span class="icon-right-arrow"></span>&nbsp;展开列表</button>
                           </li>
                         </ul>
                       </th>
-                      <th class="btn-center"colspan="3">小组总分：<a>23</a>分&nbsp;排名<a>3</a></th>
+                      <th class="btn-center"colspan="3"><h5>小组总分：<a style="color:#F00;">23</a>分&nbsp;排名<a style="color:#F00;">3</a></h5><span class="icon-delete delete-ico"></span></th>
+                      
                     </tr>
                   </thead>
-                  <tbody>
+                  <tbody class="class-group-collapse">
                     <tr>
                       <td class="col-sm-2">小组成员</td>
                       <td class="col-sm-4">评价内容</td>
@@ -122,11 +126,11 @@
                       <td>56</td>
                       <td><ul class=" inline-block-ul inline-block-ul-mid">
                           <li>
-                            <button type="button" class="btn btn-default" data-toggle="modal" data-target="#say-people">评价</button>
+                            <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#say-people">评价</button>
                           </li>
                           <li>
                             <div class="btn-group">
-                              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">移动&nbsp;<span class="caret"></span> </button>
+                              <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">移动&nbsp;<span class="caret"></span> </button>
                               <ul class="dropdown-menu" role="menu" style="min-width:0px;">
                                 <li style="margin:0px;"><a href="#">第一小组</a></li>
                                 <li style="margin:0px;"><a href="#">第二小组</a></li>
@@ -137,18 +141,21 @@
                             </div>
                           </li>
                           <li>
-                            <button type="button" class="btn btn-default" data-toggle="dropdown">设为组长</button>
+                            <button type="button" class="btn btn-warning" data-toggle="dropdown">设为组长</button>
                           </li>
                         </ul></td>
                     </tr>
+                   
+                   
                   </tbody>
                 </table>
+             
               </div>
+              
             </div>
-            <div class="tab-pane" id="profile">
-              <div class="tab-content-tx"> <img src="img/people-1.png" alt="..." class="img-thumbnail"> </div>
-              <div class="tab-content-kj"> fsdfsdfsdf </div>
-            </div>
+            
+             
+           
           </div>
         </div>
       </div>

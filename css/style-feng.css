@@ -273,7 +273,15 @@ font-size:18px;}
 a.list-grouping-fen-more{
 	 margin-left:5px;
 	 color:#999;}
-
+.list-grouping .btn-center a{
+	}
+.delete-ico{
+	display:block;
+	position:absolute;
+	right:14px;
+	top:12px;
+	font-size:20px;
+	color:#666;}
 /*班级主页*/
 .right-class-content .panel-body{
 	padding:0px 5px 20px 5px;}
