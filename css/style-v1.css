@@ -629,7 +629,12 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 .list-group-tree .title-button .glyphicon-chevron-right {
   margin-left: 0;
 }
-
+.tree-sub {
+  padding-left: 15px;
+}
+.tree-sub a {
+  font-size: 12px;
+}
 /* 相册详情页 */
 .photo-title-box {
   margin-top: 10px;
@@ -928,4 +933,97 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 }
 .btn-left {
   text-align: left;
+}
+.movefile .title{
+  font-size: 14px;
+}
+.movefile .menu-list,.movefile .menu-div {
+  border: 1px solid #ccc;
+  height: 200px;
+  padding-left: 0;
+  overflow-x:auto;
+}
+.movefile .menu-list a {
+  display: block;
+  padding-left: 10px;
+  line-height: 24px;
+  font-size: 12px;
+}
+.movefile .menu-list a:hover {
+  text-decoration: none;
+  background: #efefef;
+  color: #333;
+}
+
+.movefile .menu-div {
+  display: none;
+}
+.movefile .menu-div .title-button{
+  margin:0;
+}
+.movefile .menu-div .title-button a{
+  font-size: 13px;
+  display: block;
+  padding: 5px;
+}
+.movefile .menu-div .title-button a:hover {
+  text-decoration: none;
+  background: #efefef;
+  color: #333;
+}
+.movefile .menu-div .list {
+  margin-bottom: 5px;
+  padding-left: 0;
+}
+.movefile .menu-div .list li {
+  line-height: 24px;
+}
+.movefile .menu-div .list a {
+  font-size: 12px;
+  display: block;
+  padding-left: 22px;
+}
+.movefile .menu-div .list a:hover {
+  text-decoration: none;
+  background: #efefef;
+  color: #333;
+}
+.movefile .menu-list li.current a,.movefile .menu-div .list li.current a {
+  background: #0cb353;
+  color: #fff;
+}
+.all-table-border-gray tr,.all-table-border-gray td {
+  border: 1px solid #ccc;
+}
+.drag-km {
+  z-index: 3000;
+}
+.chose-box-index.container-fluid .drag-km {
+  border-radius: 6px;
+  padding: 5px;
+  background: #2ecc71;
+  color: white;
+  text-decoration: none;
+}
+.chose-box-index .icon-move {
+  display: none;
+}
+.chose-box-index.container-fluid .icon-move{
+  display: inline-block;
+}
+.movefile .table td{
+  font-size: 12px;
+}
+.movefile .drop-item {
+  background: #f7f7f7;
+  border-radius: 5px;
+  box-shadow: 1px 1px 0 #d3d3d3;
+  margin-bottom: 5px;
+  padding: 3px;
+}
+.movefile .drop-item .btn {
+  margin-left: 5px;
+}
+.movefile .drop-item .glyphicon {
+  margin: 0px;
 }

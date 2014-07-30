@@ -175,4 +175,52 @@ $(function(){
 		};
 		
 	});
+
+	// 组合备课
+	$('#zhbkmodal').on('show.bs.modal', function () {
+	  $(".chose-box-index").removeClass("container").addClass("container-fluid");
+	  $(".chose-box-index").css({ "z-index":"1041","position":"relative"});
+	})
+	$('#zhbkmodal').on('hide.bs.modal', function () {
+		$(".chose-box-index").removeClass("container-fluid").addClass("container");
+	  $(".chose-box-index").css({ "z-index":"1041","position":"none"});
+	})
+
+	//  打开所有的德能银行
+ 	function bodyHide(a,b){
+ 		$("a").show();
+ 		$("b").find(".icon-circle-plus").addClass("icon-circle-minus");
+ 		$(".glyphicon.glyphicon-chevron-right").addClass("glyphicon-chevron-down");
+ 	}
+ 	function bodyShow(){
+ 		$("a").find(".icon-circle-plus").removeClass("icon-circle-minus");
+		$("b").hide();
+		$(".glyphicon.glyphicon-chevron-right").removeClass("glyphicon-chevron-down");
+ 	}
+ 	$(".title-button a").click(function(){
+ 		$(this).parent().next(".menu-div .list").toggle();
+ 		if ( $(".menu-div .list").is(":visible") ) {
+ 			$(this).find(".glyphicon.glyphicon-plus").addClass("glyphicon-minus");
+ 		}else{
+ 			$(this).find(".glyphicon.glyphicon-plus").removeClass("glyphicon-minus");
+ 		};
+ 	});
+ 	$(".menu-list li a").click(function(){
+ 		$(this).parent().addClass("current").siblings("li").removeClass("current");
+ 	});
+ 	$(".menu-div .list a").click(function(){
+ 		$(this).parent().addClass("current");
+ 		$(".menu-div .list li").siblings("li").not( $(this).parent() ).removeClass("current");
+ 	});
+ 	$(".menu-list1 li a").click(function(){
+ 		var thisIndexNumber = $(this).parent().index()+1;
+ 		$("#sub-box"+thisIndexNumber ).show().siblings(".menu-div").hide();
+ 	});
+
+ 	
+	
+	
+ 
+
+
 })

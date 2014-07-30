@@ -15,7 +15,7 @@
   <title>领信样式模板</title>
 
 </head>
-<body class="fixed-top-body" ng-app="">
+<body class="fixed-top-body" ng-app="" oncontextmenu="return false" onselectstart ="return false" onselect="document.selection.empty()" oncopy="document.selection.empty()" onbeforecopy="return false" onmouseup="document.selection.empty()">
 <div class="navbar navbar-zhijiao navbar-green navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
@@ -78,7 +78,7 @@
     </div>
 </div>
 
-<div class="container">
+<div class="container chose-box-index">
   <div class="col-md-3"> 
 
     <div class="panel panel-default">
@@ -193,12 +193,12 @@
                 </div>
             </li>
             <li>
-                <a class="btn btn-sm btn-primary" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#">
+                <a class="btn btn-sm btn-primary" href="#">
                   <span class="icon-cloud-upload"></span> 本地上传 
                 </a>
             </li>
             <li>
-                <a class="btn btn-sm btn-primary" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#">
+                <a class="btn btn-sm btn-primary" href="javascript:"  data-toggle="modal" data-target="#zhbkmodal" >
                   <span class="icon-sampler"></span> 组合备课 
                 </a>
             </li>
@@ -216,7 +216,7 @@
           </tr>
           <tr>
             <td><input type="checkbox"> 1</td>
-            <td class="btn-left">红楼梦诗词两首</td>
+            <td class="btn-left"><a href="#" class="drag-km"><span class="icon-move"></span> 红楼梦诗词两首</a></td>
             <td>在线制作</td>
             <td>2014-07-12</td>
             <td>
@@ -230,7 +230,7 @@
           </tr>
           <tr>
             <td><input type="checkbox"> 2</td>
-            <td class="btn-left">红楼梦诗词两首</td>
+            <td class="btn-left"><a href="#" class="drag-km"><span class="icon-move"></span> 红楼梦诗词两首</a></td>
             <td>在线制作</td>
             <td>2014-07-12</td>
             <td>
@@ -244,7 +244,7 @@
           </tr>
           <tr>
             <td><input type="checkbox"> 3</td>
-            <td class="btn-left">红楼梦诗词两首</td>
+            <td class="btn-left"><a href="#" class="drag-km"><span class="icon-move"></span> 红楼梦诗词两首</a></td>
             <td>在线制作</td>
             <td>2014-07-12</td>
             <td>
@@ -258,7 +258,7 @@
           </tr>
           <tr>
             <td><input type="checkbox"> 4</td>
-            <td class="btn-left">红楼梦诗词两首</td>
+            <td class="btn-left"><a href="#" class="drag-km"><span class="icon-move"></span> 红楼梦诗词两首</a></td>
             <td>在线制作</td>
             <td>2014-07-12</td>
             <td>
@@ -272,7 +272,7 @@
           </tr>
           <tr>
             <td><input type="checkbox"> 5</td>
-            <td class="btn-left">红楼梦诗词两首</td>
+            <td class="btn-left"><a href="#" class="drag-km"><span class="icon-move"></span> 红楼梦诗词两首</a></td>
             <td>在线制作</td>
             <td>2014-07-12</td>
             <td>
@@ -286,7 +286,7 @@
           </tr>
           <tr>
             <td><input type="checkbox"> 6</td>
-            <td class="btn-left">红楼梦诗词两首</td>
+            <td class="btn-left"><a href="#" class="drag-km"><span class="icon-move"></span> 红楼梦诗词两首</a></td>
             <td>在线制作</td>
             <td>2014-07-12</td>
             <td>
@@ -312,26 +312,184 @@
 
 <!-- 弹出框 -->
 <!-- 管理目录弹出框 -->
-<div class="modal fade bs-example-modal-sm" id="movefilebox" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+<div class="modal fade bs-example-modal-sm" id="movefilebox" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"  >
+  <div class="modal-dialog" style="display:block;">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
         <h4 class="modal-title" id="myModalLabel">移动文件到</h4>
       </div>
-      <div class="modal-body">
+      <div class="modal-body movefile container-fluid">
         
         <div class="col-md-4">
+          <h4 class="title">文件夹</h4>
+          <ul class="menu-list menu-list1">
+            <li><a href="javascript:">初中语文七年级上</a></li>
+            <li><a href="javascript:">初中生物七年级上</a></li>
+            <li><a href="javascript:">其他</a></li>
+          </ul>
         </div>
         <div class="col-md-4">
+          <h4 class="title">目录</h4>
+          <div class="menu-div" id="sub-box1" style="display:block;">
+            <h4 class="title-button"><a href="javascript:"><span class="glyphicon glyphicon-plus"></span> 第一单元1</a></h4>
+            <ul class="list" style="display:none;">
+              <li><a href="javascript:">初中语文七年级上1</a></li>
+              <li><a href="javascript:">初中生物七年级上</a></li>
+              <li><a href="javascript:">其他</a></li>
+            </ul>
+            <h4 class="title-button"><a href="javascript:"><span class="glyphicon glyphicon-plus"></span> 第二单元</a></h4>
+            <ul class="list" style="display:none;">
+              <li><a href="javascript:">初中语文七年级上</a></li>
+              <li><a href="javascript:">初中生物七年级上</a></li>
+              <li><a href="javascript:">其他</a></li>
+            </ul>
+          </div>
+          <div class="menu-div" id="sub-box2">
+            <h4 class="title-button"><a href="javascript:"><span class="glyphicon glyphicon-plus"></span> 第一单元2</a></h4>
+            <ul class="list" style="display:none;">
+              <li><a href="javascript:">初中语文七年级上2</a></li>
+              <li><a href="javascript:">初中生物七年级上</a></li>
+              <li><a href="javascript:">其他</a></li>
+            </ul>
+            <h4 class="title-button"><a href="javascript:"><span class="glyphicon glyphicon-plus"></span> 第二单元</a></h4>
+            <ul class="list" style="display:none;">
+              <li><a href="javascript:">初中语文七年级上</a></li>
+              <li><a href="javascript:">初中生物七年级上</a></li>
+              <li><a href="javascript:">其他</a></li>
+            </ul>
+          </div>
+          <div class="menu-div" id="sub-box3">
+            <h4 class="title-button"><a href="javascript:"><span class="glyphicon glyphicon-plus"></span> 第一单元3</a></h4>
+            <ul class="list" style="display:none;">
+              <li><a href="javascript:">初中语文七年级上3</a></li>
+              <li><a href="javascript:">初中生物七年级上</a></li>
+              <li><a href="javascript:">其他</a></li>
+            </ul>
+            <h4 class="title-button"><a href="javascript:"><span class="glyphicon glyphicon-plus"></span> 第二单元</a></h4>
+            <ul class="list" style="display:none;">
+              <li><a href="javascript:">初中语文七年级上</a></li>
+              <li><a href="javascript:">初中生物七年级上</a></li>
+              <li><a href="javascript:">其他</a></li>
+            </ul>
+          </div>
         </div>
         <div class="col-md-4">
+          <h4 class="title">分类</h4>
+          <ul class="menu-list menu-list2 ">
+            <li><a href="javascript:">教案</a></li>
+            <li><a href="javascript:">导学案</a></li>
+            <li><a href="javascript:">课件</a></li>
+            <li><a href="javascript:">素材</a></li>
+            <li><a href="javascript:">作业/习题</a></li>
+            <li><a href="javascript:">试卷</a></li>
+            <li><a href="javascript:">微课</a></li>
+            <li><a href="javascript:">其他</a></li>
+          </ul>
         </div>
 
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary">立即移动</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 组合备课弹出框 -->
+<div class="modal fade bs-example-modal-sm " id="zhbkmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="right:10px; left:50%;" >
+  <div class="modal-dialog" style="display:block;  ">
+    <div class="modal-content">
+      <div class="modal-header" style="cursor:move;">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">组合备课</h4>
+      </div>
+      <div class="modal-body movefile container-fluid">
+        <ul class="btn-center inline-block-ul">
+          <li><a href="javascript:" class="btn btn-primary btn-sm "><span class="icon-chevron-left"></span>上一周</a></li>
+          <li> 当前： 2014-09-01 至 2014-09-07 </li>
+          <li><a href="javascript:" class="btn btn-primary btn-sm "> 下一周<span class="icon-chevron-right"></span></a></li>
+        </ul>
+        <div class="col-md-12" style="overflow:auto;">
+          <table class="table table-striped btn-center all-table-border-gray 12px" style="width:1000px; max-width:none">
+            <tr>
+              <td style="width:2%;"></td>
+              <td style="width:14%;">星期一</td>
+              <td style="width:14%;">星期二</td>
+              <td style="width:14%;">星期三</td>
+              <td style="width:14%;">星期四</td>
+              <td style="width:14%;">星期五</td>
+              <td style="width:14%;">星期六</td>
+              <td style="width:14%;">星期日</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td class="dropzone-km"></td>
+              <td class="dropzone-km"></td>
+              <td class="dropzone-km"></td>
+              <td class="dropzone-km"></td>
+              <td class="dropzone-km"></td>
+              <td class="dropzone-km"></td>
+              <td class="dropzone-km"></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td class="dropzone-km"></td>
+              <td class="dropzone-km"></td>
+              <td class="dropzone-km"></td>
+              <td class="dropzone-km"></td>
+              <td class="dropzone-km"></td>
+              <td class="dropzone-km"></td>
+              <td class="dropzone-km"></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td class="dropzone-km"></td>
+              <td class="dropzone-km"></td>
+              <td class="dropzone-km"></td>
+              <td class="dropzone-km"></td>
+              <td class="dropzone-km"></td>
+              <td class="dropzone-km"></td>
+              <td class="dropzone-km"></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td class="dropzone-km"></td>
+              <td class="dropzone-km"></td>
+              <td class="dropzone-km"></td>
+              <td class="dropzone-km"></td>
+              <td class="dropzone-km"></td>
+              <td class="dropzone-km"></td>
+              <td class="dropzone-km"></td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td class="dropzone-km"></td>
+              <td class="dropzone-km"></td>
+              <td class="dropzone-km"></td>
+              <td class="dropzone-km"></td>
+              <td class="dropzone-km"></td>
+              <td class="dropzone-km"></td>
+              <td class="dropzone-km"></td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td class="dropzone-km"></td>
+              <td class="dropzone-km"></td>
+              <td class="dropzone-km"></td>
+              <td class="dropzone-km"></td>
+              <td class="dropzone-km"></td>
+              <td class="dropzone-km"></td>
+              <td class="dropzone-km"></td>
+            </tr>
+          </table>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary">保存</button>
       </div>
     </div>
   </div>
@@ -375,12 +533,38 @@
     </div>
 </div>  
 
- 
+
 <!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
 <script type="text/JavaScript" src="space-footer-css.js"></script>
 <!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
 
+<script type="text/javascript" src="libs/jQuery-ui/jquery-ui-1.10.4.custom.js"></script>
+<script type="text/javascript">
 
+      //课程表拖拽
+      $('.drag-km').draggable({ 
+        appendTo: 'body',
+        helper: 'clone'
+      });
+
+      $('.dropzone-km').droppable({
+        activeClass: 'well active',
+        hoverClass: 'hover',
+        accept: ":not(.ui-sortable-helper)", // Reject clones generated by sortable
+        drop: function (e, ui) {
+          var $el = $('<div class="drop-item">' + ui.draggable.text() + '</div>');
+          $el.append($('<button type="button" class="btn btn-default btn-xs remove"> <span class="glyphicon glyphicon-trash"></span></button>').click(function () { $(this).parent().detach(); }));
+          $(this).append($el);
+        }
+      }).sortable({
+        items: '.drop-item',
+        sort: function() {
+          // gets added unintentionally by droppable interacting with sortable
+          // using connectWithSortable fixes this, but doesn't allow you to customize active/hoverClass options
+          $( this ).removeClass( "active" );
+        }
+      });
+    </script>
 
 </body>
 </html>
