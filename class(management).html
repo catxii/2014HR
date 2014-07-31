@@ -15,7 +15,7 @@
 
 <![endif]-->
 </head>
-<body class="fixed-top-body" ng-app="">
+<body class="fixed-top-body" ng-app="" style="padding-top:52px;">
 <div class="navbar navbar-zhijiao navbar-green navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
@@ -46,78 +46,96 @@
     <!--/.nav-collapse --> 
   </div>
 </div>
-<div class="container-fluid banner-fluid-bg">
-  <div class="container top-banner-small"> </div>
-</div>
+
 <div class="container">
-  <div class="container-box" style=" border-top:2px solid #0cb353"> 
+<div class="container-fluid people-fluid-bg" >
+    <div class="container top-people-small">
+    <div class="user">
+       <a class="username"><h3 style="text-shadow:none;">领信话题广场</h3></a>
+       <a class="username"><h5 style="text-shadow:none;">华容实验初中</h5></a>
+     </div>
+       
+    </div>
+</div>
+  <div class="container-box" > 
     <!--左侧栏-->
     
-    <div class="col-md-3 left-content" style="padding:20px 0px;background:#ededed; ">
-      <div class="information">
-        <div class="personal-file-box">
-          <div class="information-photo"><img src="img/people-1.png" width="90" height="90"  alt="" class="img-thumbnail"/></div>
-          <div class="information-name">二年级3班<a href="#" data-target="#myModa1"><span class="icon-pencil">修改</span></a></div>
-          <ul style="width:320px;margin:auto;">
-            <li class="information-text"> <a> <em class="f18">36</em></a> <span class="f14">日志</span> </li>
-            <li class="information-text"> <a> <em class="f18">36</em></a> <span class="f14">日志</span> </li>
-            <li class="information-text"> <a> <em class="f18">36</em></a> <span class="f14">日志</span> </li>
-          </ul>
-        </div>
-      </div>
-      <div class="left-nav">
-        <button type="button" class="btn btn-lg btn-default col-md-12" style="border-radius:0px;">
-        <a href="#">我的日志</a>
-        </button>
-        <button type="button" class="btn btn-lg btn-default col-md-12" style="border-radius:0px;">
-        <a href="#">我的相册</a>
-        </button>
-        <button type="button" class="btn btn-lg btn-default col-md-12" style="border-radius:0px;">
-        <a href="#">话题讨论</a>
-        </button>
-        <button type="button" class="btn btn-lg btn-default col-md-12" style="border-radius:0px;">
-        <a href="#">我的圈子</a>
-        </button>
-        <button type="button" class="btn btn-lg btn-default col-md-12" style="border-radius:0px;">
-        <a href="#">分享</a>
-        </button>
-      </div>
-    </div>
+    
     <!--右侧栏-->
-    <div class="col-md-9 right-content" style="margin-top:5px;">
+    <div class="col-md-9 right-topic" >
       <div class="panel panel-default"> 
         <!-- Default panel contents -->
         <div class="panel-heading">
-          <h4>班级照片墙<small><a href="#">(华容一中 二年级3班)</a></small></h4>
+          当前话题
           <div class="position-right-top" style="display:block;">
-            <button type="button" class="btn btn-primary">班级预览</button>
+            <button type="button" class="btn-sm btn-primary" data-toggle="modal" data-target="#myModal">发布话题</button>
           </div>
         </div>
         <div class="panel-body">
-          <div class="tab-top-nav">
-            <ul class="nav nav-pills" role="tablist">
-              <li class="active"><a href="#">班级成员</a></li>
-              <li><a href="#">成员分组</a></li>
-              <li><a href="#">通知公告</a></li>
-              <li><a href="#">班级日志</a></li>
-              <li><a href="#">照片墙</a></li>
-              <li><a href="#">德能银行</a></li>
-              <li><a href="#">课程表</a></li>
-              <li><a href="#">班级作业</a></li>
-              <li><a href="#">班级信息管理</a></li>
-            </ul>
-          </div>
-          <div class="management">
-            <ul class="nav nav-tabs nav-justified" role="tablist">
-              <li role="presentation" class="active"><a href="#"><span class="icon-conversation"></span>班级宣言</a></li>
-              <li role="presentation"><a href="#"><span class="glyphicon glyphicon-user"></span>头像设置</a></li>
-              <li role="presentation"><a href="#"><span class="icon-keys"></span>班级权限管理</a></li>
-            </ul>
-            
-              <textarea class="form-control" rows="3" style="margin-top:20px;"></textarea>
-
-
-          </div>
+          
+          <ul class="list-group">
+  <li class="list-group-item list-group-item-info"> <img src="img/people-zuijin-img.png" alt="..."><span>233/33333</span><a>写好红楼梦诗词两首一两首</a><span class="text-right">2014-3-23 23:00</span></li>
+  <li class="list-group-item"><img src="img/people-zuijin-img.png" alt="..."><span>233/33333</span><a>写好红楼梦诗词两首一两首</a><span class="text-right">2014-3-23 23:00</span></li>
+  <li class="list-group-item list-group-item-warning"><img src="img/people-zuijin-img.png" alt="..."><span>233/33333</span><a>写好红楼梦诗词两首一两首</a><span class="text-right">2014-3-23 23:00</span></li>
+  <li class="list-group-item"><img src="img/people-zuijin-img.png" alt="..."><span>233/33333</span><a>写好红楼梦诗词两首一两首</a><span class="text-right">2014-3-23 23:00</span></li>
+  <li class="list-group-item list-group-item-success"><img src="img/people-zuijin-img.png" alt="..."><span>233/33333</span><a>写好红楼梦诗词两首一两首</a><span class="text-right">2014-3-23 23:00</span></li>
+  <li class="list-group-item"><img src="img/people-zuijin-img.png" alt="..."><span>233/33333</span><a>写好红楼梦诗词两首一两首</a><span class="text-right">2014-3-23 23:00</span></li>
+  
+ 
+</ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 left-topic" >
+      <div class="panel panel-default"> 
+        <!-- Default panel contents -->
+        <div class="panel-heading">
+          话题广场
+          
+        </div>
+        <div class="panel-body">
+          <div class="col-md-3 user-list-small">
+              <div class="img"><img data-src="holder.js/50x50/auto/#777:#555/text:First slide" alt="First slide"></div>
+              <div class="name"><a href="#">黄永玉</a></div>
+             
+            </div>
+          
+        </div>
+      </div>
+      <div class="panel panel-default"> 
+        <!-- Default panel contents -->
+        <div class="panel-heading">
+         
+          最热话题
+        </div>
+        <div class="panel-body">
+          <ul class="list-group">
+  <li class="list-group-item"><span class="glyphicon glyphicon-file"></span><a>写好红楼梦诗词两首一两首</a></li>
+  <li class="list-group-item"><span class="glyphicon glyphicon-file" ></span><a>写好红楼梦诗词两首一两首</a></li>
+ 
+  
+ 
+</ul>
+          
+        </div>
+      </div>
+      <div class="panel panel-default"> 
+        <!-- Default panel contents -->
+        <div class="panel-heading">
+         
+          最新话题
+        </div>
+        <div class="panel-body">
+          <ul class="list-group">
+  <li class="list-group-item"><span class="glyphicon glyphicon-file"></span><a>写好红楼梦诗词两首一两首</a></li>
+  <li class="list-group-item"><span class="glyphicon glyphicon-file" ></span><a>写好红楼梦诗词两首一两首</a></li>
+  <li class="list-group-item"><span class="glyphicon glyphicon-file"></span><a>写好红楼梦诗词两首一两首</a></li>
+  <li class="list-group-item"><span class="glyphicon glyphicon-file" ></span><a>写好红楼梦诗词两首一两首</a></li>
+  <li class="list-group-item"><span class="glyphicon glyphicon-file"></span><a>写好红楼梦诗词两首一两首</a></li>
+  
+ 
+</ul>
+          
         </div>
       </div>
     </div>
@@ -131,10 +149,10 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">修改名称</h4>
+        <h4 class="modal-title" id="myModalLabel">发布话题</h4>
       </div>
       <div class="modal-body">
-        <input type="text" class="form-control" placeholder="Text input">
+        <input type="text" class="form-control" placeholder="发表您想说的话题">
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

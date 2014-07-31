@@ -17,7 +17,7 @@
 
   <![endif]-->
 </head>
-<body class="fixed-top-body people-top-body" ng-app="" >
+<body class="fixed-top-body people-top-body" ng-app="" style="background:#d6ebc2">
 <div class="navbar navbar-zhijiao navbar-green navbar-fixed-top" >
   <div class="container">
     <div class="navbar-header">
@@ -67,19 +67,21 @@
   </div>
 </div>
 
-<div class="container-fluid people-fluid-bg" style="background:url(img/bg_07.jpg);">
-    <div class="container top-people-small" style="background:none;">
+<div class="container-fluid people-fluid-bg" style="background:url(img/bg_08.png);">
+    <div class="container top-people-small" style="background:url(img/bg_07.png);">
     <div class="user">
-       <a class="userimg"><img data-src="holder.js/80x80" alt="80x80" style="width: 80px; height: 80px; " class="img-thumbnail"></a>
+       <a class="userimg"><img src="img/6f0b532.jpg" alt="80x80" style="width: 80px; height: 80px; " class="img-thumbnail"></a>
        <a class="username"><h3>张老师</h3></a>
        <a class="username"><h5>华容实验初中</h5></a>
+       <a class="Focus-on"><button type="button" class="btn-sm btn-danger">关注</button></a>
      </div>
        <ul class="inline-block-ul second-nav-bar-bottom" style=" ">
         <li class="current"><a href="#">主页</a></li>
-        <li><a href="#">高校课堂</a></li>
+        <li><a href="#">备课</a></li>
         <li><a href="#">资源库</a></li>
         <li><a href="#">随堂测试</a></li>
-        <li><a href="#">教研室</a></li>
+        <li><a href="#">相册</a></li>
+        <li><a href="#">日志</a></li>
         <li><a href="#">我的班级</a></li>
       </ul>
     </div>
@@ -89,33 +91,70 @@
    <div class="container-box row">
    <div class="col-md-3"> 
 
-    <div class="panel-default panel" >
-      <div class="panel-heading none-heading">最新备课信息</div> 
+    <div class="panel-default panel people-beike-content" >
+      <div class="panel-heading">最新备课信息</div> 
       <div class="panel-body">
-      asdasdasdasdas
+      
+      <ul class="list-group">
+  <li class="list-group-item"><span class="glyphicon glyphicon-calendar" style="color:#F00;"></span><a>张老师</a>刚备课了<a>红楼梦诗词两首</a></li>
+  <li class="list-group-item"><span class="glyphicon glyphicon-calendar" style="color:#F00;"></span><a>张老师</a>刚备课了<a>红楼梦诗词两首</a></li>
+  <li class="list-group-item"><span class="glyphicon glyphicon-calendar" style="color:#F00;"></span><a>张老师</a>刚备课了<a>红楼梦诗词两首</a></li>
+  <li class="list-group-item"><span class="glyphicon glyphicon-calendar" style="color:#666;"></span><a>张老师</a>刚备课了<a>红楼梦诗词两首</a></li>
+  <li class="list-group-item"><span class="glyphicon glyphicon-calendar" style="color:#666;"></span><a>张老师</a>刚备课了<a>红楼梦诗词两首</a></li>
+  <li class="list-group-item"><span class="glyphicon glyphicon-calendar" style="color:#666;"></span><a>张老师</a>刚备课了<a>红楼梦诗词两首</a></li>
+  
+ 
+</ul>
+      
       </div>
     </div>
       
   </div>
    <div class="col-md-6">
     
-   <div class="panel-primary panel" >
+   <div class="panel-primary panel people-dongtai-content" >
      <div class="panel-heading ">动态信息</div> 
       <div class="panel-body">
-      asdasdasdasdas
+      <div class="say-say"><textarea class="form-control" rows="2"></textarea><div class="say-say-bth"><button type="button" class="btn btn-primary">说一说</button></div></div>
+      <ul class="list-group">
+      <!--  动态信息-->
+  <li class="list-group-item">
+
+<div class="media">
+  <a class="pull-left" href="#">
+    <img class="media-object" src="img/people-zuijin-img.png" alt="...">
+  </a>
+  <div class="media-body">
+    <h4 class="media-heading" style="font-size:16px;"><a>红楼梦研究计划</a></h4>
+    <div class="dcon-txt">
+			<p>2014-04-01</p>
+			<p>说到Siri，用过iPad或iPhone的肯定不陌生。它是苹果自带的智能语音系统，跟它说话它就会马上回答，而且能听懂N多种语言。一开始觉得挺好玩，不过……我家iPad的siri好像跟我较上了真，我说的话几乎全都听错了。比如，我让它搜一下“神探夏洛克第四季”于是乎它听成了“神拿夏洛克第思及”你要吐死地...
+				<a href="http://blog.3ren.cn/class/blog/2361632" target="_blank">(阅读全文)</a>
+			</p>
+			<p class='fd-from'>来自: <a href="javascript:;" data-card="105409" data-card-type=""  target="_blank">曹景宣</a>
+				<a href="#" target='_blank' class='icon16 icon16-v-person' title='认证个人'></a>
+			</p>
+		</div>
+  </div>
+</div>
+  </li>
+ 
+ 
+</ul>
+      
       </div>
     </div>  
    
   </div>
    <div class="col-md-3"> 
 
-    <div class="panel-default panel" >
+    <div class="panel-default panel people-photo-content" >
       <div class="panel-heading">最新照片</div> 
       <div class="panel-body">
       
       <!--最新照片-->
       
-      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="padding:15px;">
       <ol class="carousel-indicators" style="bottom:0px;">
         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-example-generic" data-slide-to="1"></li>
@@ -123,11 +162,11 @@
       </ol>
       <div class="carousel-inner">
         <div class="item active">
-          <img src="img/banner1.jpg" width="708" height="359"  alt=""/></div>
+          <img src="img/6f0b532563af000.jpg" width="250" height="250"  alt=""/></div>
         <div class="item">
-          <img src="img/banner2.jpg" width="708" height="359"  alt=""/></div>
+          <img src="img/6f0b532563af000001378d6335f3.jpg" width="250" height="250"  alt=""/></div>
         <div class="item">
-          <img src="img/banner4.jpg" width="708" height="359"  alt=""/></div>
+          <img src="img/6f0b532563af000.jpg" width="250" height="250"  alt=""/></div>
       </div>
       <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left"></span>
@@ -146,33 +185,167 @@
    <div class="container-box row">
    <div class="col-md-3"> 
 
-    <div class="panel-default panel" >
-      <div class="panel-heading none-heading">最新日志信息</div> 
+    <div class="panel-default panel people-beike-content" >
+      <div class="panel-heading">最新日志信息</div> 
       <div class="panel-body">
-      asdasdasdasdas
+      
+      <ul class="list-group">
+  <li class="list-group-item"><span class="glyphicon glyphicon-file"></span><a>写好红楼梦诗词两首一两首</a></li>
+  <li class="list-group-item"><span class="glyphicon glyphicon-file" ></span><a>写好红楼梦诗词两首一两首</a></li>
+  <li class="list-group-item"><span class="glyphicon glyphicon-file"></span><a>写好红楼梦诗词两首一两首</a></li>
+  <li class="list-group-item"><span class="glyphicon glyphicon-file" ></span><a>写好红楼梦诗词两首一两首</a></li>
+  <li class="list-group-item"><span class="glyphicon glyphicon-file"></span><a>写好红楼梦诗词两首一两首</a></li>
+  <li class="list-group-item"><span class="glyphicon glyphicon-file"></span><a>写好红楼梦诗词两首一两首</a></li>
+  
+ 
+</ul>
+      
       </div>
     </div>
       
   </div>
    <div class="col-md-6">
     
-   <div class="panel-default panel" >
-     <div class="panel-heading none-heading">最新话题</div> 
+   <div class="panel-default panel people-beike-content" >
+     <div class="panel-heading" style="position:relative;">最新话题<a></a><div class="topic-release"><button type="button" class="btn-sm btn-warning">话题发布</button></div></div> 
       <div class="panel-body">
-      asdasdasdasdas
+      <ul class="list-group">
+      <!--  动态信息-->
+  <li class="list-group-item">
+
+<div class="media">
+  <a class="pull-left" href="#">
+    <img class="media-object" src="img/people-zuijin-img.png" alt="...">
+  </a>
+  <div class="media-body">
+    <h4 class="media-heading" style="font-size:16px;"><a>红楼梦研究计划红楼梦研究计划</a>发表自<a>丁伟</a></h4>
+    <div class="dcon-txt">
+			<p>2014-04-01&nbsp;<a class="glyphicon glyphicon-comment">进入讨论</a></p>
+			
+			
+		</div>
+  </div>
+</div>
+  </li>
+  
+  <li class="list-group-item">
+
+<div class="media">
+  <a class="pull-left" href="#">
+    <img class="media-object" src="img/people-zuijin-img.png" alt="...">
+  </a>
+  <div class="media-body">
+    <h4 class="media-heading" style="font-size:16px;"><a>红楼梦研究计划</a>发表自<a>丁伟</a></h4>
+    <div class="dcon-txt">
+			<p>2014-04-01</p>
+			
+			
+		</div>
+  </div>
+</div>
+  </li>
+  <li class="list-group-item">
+
+<div class="media">
+  <a class="pull-left" href="#">
+    <img class="media-object" src="img/people-zuijin-img.png" alt="...">
+  </a>
+  <div class="media-body">
+    <h4 class="media-heading" style="font-size:16px;"><a>红楼梦研究计划</a>发表自<a>丁伟</a></h4>
+    <div class="dcon-txt">
+			<p>2014-04-01</p>
+			
+			
+		</div>
+  </div>
+</div>
+  </li>
+ 
+</ul>
       </div>
     </div>  
    
   </div>
    <div class="col-md-3"> 
 
-    <div class="panel-default panel" >
-      <div class="panel-heading none-heading">本校老师圈子</div> 
+    <div class="panel-default panel people-beike-content" >
+      <div class="panel-heading">圈子</div> 
       <div class="panel-body">
-      asdasdasdasdas
-        
-        
-        
+  <ul class="nav nav-tabs nav-justified" role="tablist">
+  <li class="active"><a href="#home" role="tab" data-toggle="tab">老师圈子</a></li>
+  <li><a href="#profile" role="tab" data-toggle="tab">朋友圈子</a></li>
+  
+</ul>
+  
+  
+  <div class="tab-content">
+  <div class="tab-pane active" id="home" style="padding:10px 0;">    
+  <div class="col-md-3">
+    <a href="#" class="thumbnail">
+      <img data-src="holder.js/50x50" alt="...">
+    </a>
+  </div>
+  <div class="col-md-3">
+    <a href="#" class="thumbnail">
+      <img data-src="holder.js/50x50" alt="...">
+    </a>
+  </div>
+  <div class="col-md-3">
+    <a href="#" class="thumbnail">
+      <img data-src="holder.js/50x50" alt="...">
+    </a>
+  </div>
+  <div class="col-md-3">
+    <a href="#" class="thumbnail">
+      <img data-src="holder.js/50x50" alt="...">
+    </a>
+  </div>
+  <div class="col-md-3">
+    <a href="#" class="thumbnail">
+      <img data-src="holder.js/50x50" alt="...">
+    </a>
+  </div>
+  <div class="col-md-3">
+    <a href="#" class="thumbnail">
+      <img data-src="holder.js/50x50" alt="...">
+    </a>
+  </div>
+  <div class="col-md-3">
+    <a href="#" class="thumbnail">
+      <img data-src="holder.js/50x50" alt="...">
+    </a>
+  </div>
+  <div class="col-md-3">
+    <a href="#" class="thumbnail">
+      <img data-src="holder.js/50x50" alt="...">
+    </a>
+  </div>
+  
+  </div>
+  <div class="tab-pane" id="profile" style="padding:10px 0;">
+   <div class="col-md-3">
+    <a href="#" class="thumbnail">
+      <img data-src="holder.js/50x50" alt="...">
+    </a>
+  </div>
+  <div class="col-md-3">
+    <a href="#" class="thumbnail">
+      <img data-src="holder.js/50x50" alt="...">
+    </a>
+  </div>
+  <div class="col-md-3">
+    <a href="#" class="thumbnail">
+      <img data-src="holder.js/50x50" alt="...">
+    </a>
+  </div>
+  <div class="col-md-3">
+    <a href="#" class="thumbnail">
+      <img data-src="holder.js/50x50" alt="...">
+    </a>
+  </div>
+  </div>
+  </div>
+  
       </div>
     </div>
       
@@ -181,30 +354,84 @@
    <div class="container-box row">
    <div class="col-md-3"> 
 
-    <div class="panel-default panel" >
-      <div class="panel-heading none-heading">自定义模块</div> 
+    <div class="panel-default panel people-beike-content" >
+      <div class="panel-heading">自定义模块</div> 
       <div class="panel-body">
-      asdasdasdasdas
+      <div class="input-group" style="padding:0 10px;">
+  <input type="text" class="form-control">
+  <span class="input-group-addon">添加</span>
+</div>
+      <ul class="list-group">
+
+  <li class="list-group-item"><a>张老师红楼梦诗词两首</a></li>
+  <li class="list-group-item"><a>张老师红楼梦诗词两首</a></li>
+  <li class="list-group-item"><a>张老师红楼梦诗词两首</a></li>
+  
+ 
+</ul>
       </div>
     </div>
       
   </div>
    <div class="col-md-6">
     
-   <div class="panel-default panel" >
-     <div class="panel-heading none-heading">圈子动态</div> 
+   <div class="panel-default panel people-beike-content" >
+     <div class="panel-heading">圈子动态</div> 
       <div class="panel-body">
-      asdasdasdasdas
+      
       </div>
     </div>  
    
   </div>
    <div class="col-md-3"> 
 
-    <div class="panel-default panel" >
-      <div class="panel-heading none-heading">朋友圈子</div> 
+    <div class="panel-default panel people-beike-content" >
+      <div class="panel-heading">最近访客</div> 
       <div class="panel-body">
-      asdasdasdasdas
+      <div style="padding:10px 0;">    
+  <div class="col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="img/people-zuijin-img.png" alt="...">
+    </a>
+  </div>
+  <div class="col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="img/people-zuijin-img.png" alt="...">
+    </a>
+  </div>
+  <div class="col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="img/people-zuijin-img.png" alt="">
+    </a>
+    
+  </div>
+  <div class="col-md-3">
+    <a href="#" class="thumbnail">
+      <img data-src="holder.js/50x50" alt="...">
+    </a>
+  </div>
+  <div class="col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="img/people-zuijin-img.png" alt="...">
+    </a>
+  </div>
+  <div class="col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="img/people-zuijin-img.png" alt="...">
+    </a>
+  </div>
+  <div class="col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="img/people-zuijin-img.png" alt="...">
+    </a>
+  </div>
+  <div class="col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="img/people-zuijin-img.png" alt="...">
+    </a>
+  </div>
+  
+  </div>
         
         
         

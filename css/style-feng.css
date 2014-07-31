@@ -358,6 +358,7 @@ ul.qx-thead-body li{ border:1px solid #E8E8E8;padding:10px 0px;}
   position: relative;
 }
 .user{ position:relative; padding:20px 0;}
+.Focus-on{ position:absolute; top:60px; left:150px;}
 .userimg{
 	float:left; width:80px; height:80px;  margin-left:50px;}
 .username{
@@ -369,6 +370,113 @@ ul.qx-thead-body li{ border:1px solid #E8E8E8;padding:10px 0px;}
 .container-people .none-heading{
 	text-align:center; background:none; border:none;}
 .container-people .panel-body{
-	height:242px; padding:0px; overflow:hidden;}
+	height:280px; padding:0px; overflow:hidden;}
 .container-people .panel-heading{
-	text-align:center;}
+	text-align:center; font-size:18px;}
+.people-beike-content{
+	background:#FFF;}
+.people-beike-content .list-group{
+	border:none;
+	background:none;
+	box-shadow:none;
+	border-radius:0px;}
+.people-beike-content .list-group .list-group-item{
+	background:none;
+	color:#999;
+	border-bottom:1px solid #F1F1F1;
+	padding:10px 15px;
+	box-shadow:none;
+	}
+.people-beike-content .list-group .list-group-item a{
+	margin:0px 5px; }
+
+.dcon-txt{
+	color:#999;}
+.people-dongtai-content .list-group{
+	border:none;
+	background:none;
+	box-shadow:none;
+	border-radius:0px;}
+.people-dongtai-content .list-group .list-group-item{
+	padding:15px;}
+	
+.people-photo-content .carousel-control.left{
+	background-image:none;}	
+.people-photo-content .carousel-control.right{
+	background-image:none;}	
+.people-beike-content .panel-heading{
+  background-image: -webkit-linear-gradient(top, #DEDEDE -130%, #FFF 100%);
+  background-image:      -o-linear-gradient(top, #DEDEDE -130%, #FFF 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#DEDEDE), to(#FFF));
+  background-image:         linear-gradient(to bottom, #DEDEDE -130%, #FFF 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd6d6d6', endColorstr='#ffc7c7c7', GradientType=0);
+  background-repeat: repeat-x;
+  border-color:#FFF;
+}
+
+.people-photo-content .panel-heading{
+  background-image: -webkit-linear-gradient(top, #d6d6d6 -130%, #FFF 100%);
+  background-image:      -o-linear-gradient(top, #d6d6d6 -130%, #FFF 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#d6d6d6), to(#FFF));
+  background-image:         linear-gradient(to bottom, #d6d6d6 -130%, #FFF 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd6d6d6', endColorstr='#ffc7c7c7', GradientType=0);
+  background-repeat: repeat-x;
+  border-color:#FFF;
+}
+.people-dongtai-content .panel-heading{
+  background-image: -webkit-linear-gradient(top, #2ECC71  -530%, #FFF 100%);
+  background-image:      -o-linear-gradient(top, #2ECC71  -530%, #FFF 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2ECC71 ), to(#FFF));
+  background-image:         linear-gradient(to bottom, #2ECC71  -530%, #FFF 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd6d6d6', endColorstr='#ffc7c7c7', GradientType=0);
+  background-repeat: repeat-x;
+  border-color:#FFF;
+  color:#0C3;
+}
+.say-say{
+	padding:0px 15px; position:relative;}
+.say-say-bth{
+	position:absolute;
+	top:20px; right:27px;}
+.topic-release{
+	position:absolute;
+	top:10px;
+	right:10px;}
+
+
+
+
+/*话题广场*/
+
+.right-topic .panel-heading,.left-topic .panel-heading{
+  background-image: -webkit-linear-gradient(top, #DEDEDE -130%, #FFF 100%);
+  background-image:      -o-linear-gradient(top, #DEDEDE -130%, #FFF 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#DEDEDE), to(#FFF));
+  background-image:         linear-gradient(to bottom, #DEDEDE -130%, #FFF 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd6d6d6', endColorstr='#ffc7c7c7', GradientType=0);
+  background-repeat: repeat-x;
+  border-color:#FFF;
+}
+
+.right-topic .list-group{
+	border:none;
+	background:none;
+	box-shadow:none;
+	border-radius:0px;}
+.right-topic .list-group .list-group-item{
+	padding:10px;
+	border-bottom:2px solid #EBEBEB;}
+.right-topic .panel-body,.left-topic .panel-body{padding:0 10px;}
+.left-topic .list-group{
+	border:none;
+	background:none;
+	box-shadow:none;
+	border-radius:0px;}
+.left-topic .list-group .list-group-item{
+	padding:6px;
+	border-bottom:1px solid #EBEBEB;}
+.right-topic .list-group .list-group-item span{
+	color:#999; font-size:12px; margin-left:10px;}
+	
+.right-topic .list-group .list-group-item a{
+	margin-left:10px; font-size:16px;}	
