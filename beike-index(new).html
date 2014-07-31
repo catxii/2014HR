@@ -15,8 +15,7 @@
   <title>领信样式模板</title>
 
 </head>
-<body class="fixed-top-body" ng-app="" oncontextmenu="return false" onselectstart ="return false" onselect="document.selection.empty()" oncopy="document.selection.empty()" onbeforecopy="return false" onmouseup="document.selection.empty()">
-<div class="navbar navbar-zhijiao navbar-green navbar-fixed-top">
+<body class="fixed-top-body" ng-app="" oncontextmenu="return false" onselectstart ="return false" >
   <div class="container">
     <div class="navbar-header">
       <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
@@ -480,7 +479,24 @@
 <script type="text/javascript" src="libs/jQuery-ui/jquery-ui-1.10.4.custom.js"></script>
 <script type="text/javascript">
 
-      //课程表拖拽
+
+
+      // 排序效果
+      function OrderByCtrl($scope,$filter) {
+        $scope.lists = [
+          {'id':1,'name':'1红楼梦诗词1两首','from':'在线制作','status':'草稿','type':'doc','attr':'公开','creattime':"2014-07-12"},
+          {'id':2,'name':'2红楼梦诗词两2首','from':'复制','status':'草稿','type':'xsl','attr':'公开','creattime':"2014-01-12"},
+          {'id':3,'name':'4红楼梦诗3词两首','from':'在线制作','status':'发布','type':'doc','attr':'公开','creattime':"2014-07-12"},
+          {'id':4,'name':'3红楼梦诗词两3首','from':'在线制作','status':'草稿','type':'swf','attr':'隐藏','creattime':"2014-03-12"},
+          {'id':5,'name':'5红楼梦诗词两首','from':'拷贝','status':'发布','type':'doc','attr':'公开','creattime':"2014-07-12"},
+          {'id':6,'name':'6红楼梦诗词3两首','from':'在线制作','status':'草稿','type':'doc','attr':'隐藏','creattime':"2014-07-12"},
+          {'id':6,'name':'3红楼梦诗词3两首','from':'在线制作','status':'草稿','type':'doc','attr':'隐藏','creattime':"2014-07-12"}
+        ];
+          $scope.sortField = 'id';
+          $scope.reverse = false;   
+      }
+
+       //课程表拖拽
       $('.drag-km').draggable({ 
         appendTo: 'body',
         helper: 'clone'
@@ -503,22 +519,7 @@
           $( this ).removeClass( "active" );
         }
       });
-
-      // 排序效果
-      function OrderByCtrl($scope,$filter) {
-        $scope.lists = [
-          {'id':1,'name':'1红楼梦诗词1两首','from':'在线制作','status':'草稿','type':'doc','attr':'公开','creattime':"2014-07-12"},
-          {'id':2,'name':'2红楼梦诗词两2首','from':'复制','status':'草稿','type':'xsl','attr':'公开','creattime':"2014-01-12"},
-          {'id':3,'name':'4红楼梦诗3词两首','from':'在线制作','status':'发布','type':'doc','attr':'公开','creattime':"2014-07-12"},
-          {'id':4,'name':'3红楼梦诗词两3首','from':'在线制作','status':'草稿','type':'swf','attr':'隐藏','creattime':"2014-03-12"},
-          {'id':5,'name':'5红楼梦诗词两首','from':'拷贝','status':'发布','type':'doc','attr':'公开','creattime':"2014-07-12"},
-          {'id':6,'name':'6红楼梦诗词3两首','from':'在线制作','status':'草稿','type':'doc','attr':'隐藏','creattime':"2014-07-12"},
-          {'id':6,'name':'3红楼梦诗词3两首','from':'在线制作','status':'草稿','type':'doc','attr':'隐藏','creattime':"2014-07-12"}
-        ];
-          $scope.sortField = 'id';
-          $scope.reverse = false;
-          
-      }
+      
 </script>
 
 
