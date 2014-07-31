@@ -574,6 +574,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 }
 .tree-sub-1 {
   padding: 10px;
+  overflow: auto;
 }
 .tree-sub-1 > li {
   border-bottom: 1px dashed #dedede;
@@ -625,7 +626,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   display: block;
 }
 .list-group-tree.small .tree-sub {
-  padding-left: 5px;
+  padding-left: 15px;
 
 }
 .list-group-tree .title-button .glyphicon-chevron-right {
@@ -1111,4 +1112,48 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   text-decoration: none;
   background: #f1f1f1;
   color: #333;
+}
+.close-position {
+  position: absolute;
+  right: 5px;
+  z-index: 10;
+}
+.iframe {
+  border: medium none;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.alert-message {
+  background: #f2dede;
+  border: 1px solid #ebccd1;
+  border-radius: 5px;
+  color: #a94442;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+.transition-area {
+  background: #f7f7f7;
+  border: 1px solid #efefef;
+  border-radius: 10px;
+  min-height: 300px;
+  padding: 10px;
+}
+.sj-tab-pane {
+  margin-top: 10px;
+}
+
+/* office预览页面 */
+.pageoffice-info {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+}
+.pageoffice-info-off {
+  top: 188px;
+}
+.pageoffice-info-on {
+  top: 30px;
 }

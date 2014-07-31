@@ -100,10 +100,10 @@
 
 		<ul class="button-two-area">  
 		<li>
-		<a href="#" class="btn btn btn-lg btn-primary"> <span class="icon-inbox-in"></span> 下载资源 <span class="badge">235人下载</span></a>
+		<a href="#" class="btn btn btn-lg btn-primary" data-toggle="modal" data-target="#loginModal"> <span class="icon-inbox-in"></span> 下载资源 <span class="badge">235人下载</span></a>
 		</li>
 		<li>
-			<a href="#" class="btn btn btn-lg btn-warning"> <span class="icon-heart"></span> 收藏资源 <span class="badge">2349人收藏</span> </a>
+			<a href="#" class="btn btn btn-lg btn-warning"  data-toggle="modal" data-target="#loginModal"> <span class="icon-heart"></span> 收藏资源 <span class="badge">2349人收藏</span> </a>
 			</li>
 		</ul>
 
@@ -284,103 +284,37 @@
 </div>
 
 <!-- 弹出框 -->
+
+
 <!-- Modal -->
-<div class="modal fade bs-example-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+<div class="modal fade bs-example-modal-sm" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
     <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">添加</h4>
-      </div>
+      <button type="button" class="close close-position" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
       <div class="modal-body">
         
-        <form class="form-horizontal" role="form">
-		  <div class="form-group">
-		    <label  class="col-sm-3 control-label">学生名称：</label>
-		    <div class="col-sm-8 form-font">
-		      <span>彭毅超</span>
-		    </div>
-		  </div>
-		  <div class="form-group">
-		    <label for="inputPassword3" class="col-sm-3 control-label">评分项 <button class="icon-cogwheel"> 管理</button>：</label>
-		    <div class="col-sm-8">
-		      <select class="select2-box-single"  multiple placeholder="点击选择或输入评分项" style="display:block; width:100%;">
-		      	<optgroup label="校园行为评分">
-	               <option value="AL">XXXX评分项 参考分值：<span class="value">+ 5</span></option>
-	               <option value="AL">XXXX评分项 参考分值：<span class="value">+ 5</span></option>
-	               <option value="AL">XXXX评分项 参考分值：<span class="value">+ 5</span></option>
-	               <option value="AL">XXXX评分项 参考分值：<span class="value">+ 5</span></option>
-	               <option value="AL">课外情况评分项 参考分值：<span class="value">+ 5</span></option>
-	               <option value="AL">课外情况评分项课外情况评分项课外情况评分项课外情况评分项 参考分值：<span class="value">+ 5</span></option>
-              	</optgroup>
-              	<optgroup label="读书评分">
-	               <option value="AL">XXXX评分项 参考分值：<span class="value">+ 5</span></option>
-	               <option value="AL">XXXX评分项 参考分值：<span class="value">+ 5</span></option>
-	               <option value="AL">XXXX评分项 参考分值：<span class="value">+ 5</span></option>
-	               <option value="AL">XXXX评分项 参考分值：<span class="value">+ 5</span></option>
-              	</optgroup>
-	          </select>
-		    </div>
-		  </div>
-		  <div class="form-group">
-		    <label for="inputPassword3" class="col-sm-3 control-label">存支： </label>
-		    <div class="col-sm-8">
-		        <div class="btn-group" data-toggle="buttons">
-				  <label class="btn btn-primary active">
-				    <input type="radio" name="options" id="option1" checked> 存入
-				  </label>
-				  <label class="btn btn-primary">
-				    <input type="radio" name="options" id="option2"> 支出
-				  </label>
-				</div>
-		    </div>
-		  </div>
-		  <div class="form-group">
-		    <label for="inputPassword3" class="col-sm-3 control-label">分值（DNB）：</label>
-		    <div class="col-sm-8">
-		        <div class="btn-group" data-toggle="buttons">
-				  <label class="btn btn-primary active">
-				    <input type="radio" name="options" id="option1" checked>1
-				  </label>
-				  <label class="btn btn-primary">
-				    <input type="radio" name="options" id="option2">5
-				  </label>
-				  <label class="btn btn-primary">
-				    <input type="radio" name="options" id="option3">10
-				  </label>
-				  <label class="btn btn-primary">
-				    <input type="radio" name="options" id="option4">15
-				  </label>
-				  <label class="btn btn-primary">
-				  	<input type="radio" name="options" id="option5">
-				    <input type="text" class="form-control button-group-input-text" placeholder="输入分值" style="width:100px;">
-				  </label>
-				</div>
-		    </div>
-		  </div>
-		  <div class="form-group">
-		    <label for="inputPassword3" class="col-sm-3 control-label">奖惩时间：</label>
-		    <div class="col-sm-8">
-					<div class="input-group date form_date col-md-8" data-date="" data-date-format="yyyy-mm-dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
-						 <input class="form-control" size="16" type="text" value="" readonly>
-						<span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
-						<span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
-					</div>
-					<input type="hidden" id="dtp_input2" value="" /><br/>
-		    </div>
-		  </div>
-		  <div class="form-group">
-		    <label for="inputPassword3" class="col-sm-3 control-label">备注：</label>
-		    <div class="col-sm-8">
-		      <textarea class="form-control" rows="3"></textarea>
-		    </div>
-		  </div>
-		</form>
+        <form role="form">
+            <h4 class="login-title">领信登录</h4>
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-addon large"><span class="glyphicon glyphicon-user"></span></div>
+                    <input type="text" placeholder="输入用户名" class="form-control small">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-group">
+                    <div class="input-group-addon large"><span class="glyphicon glyphicon-lock"></span></div>
+                    <input type="password" placeholder="输入密码" id="exampleInputPassword2" class="form-control small">
+                </div>
+            </div>
+            <div class="checkbox" style="text-align: right;">
+                <label>
+                    <input type="checkbox"> 记住密码
+                </label>
+            </div>
+            <button class="btn btn-primary btn-lg" type="submit" style="width:100%;">登 陆</button>
+        </form>
 
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-        <button type="button" class="btn btn-primary">添加记录</button>
       </div>
     </div>
   </div>
