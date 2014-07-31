@@ -90,9 +90,9 @@
       </div>
       <div class="panel-body">
         
-        <div class="collapse-lx">
+        <div class="collapse-lx sub-list-all-hover">
 
-          <div class="list-group  list-group-tree all-tree-ul-none">
+          <div class="list-group  list-group-tree all-tree-ul-none ">
 
             <div href="javascript:" class="list-group-item tree-title-button active title-button">
               <span class="glyphicon glyphicon-chevron-right"></span> 英语 人教版 七年级 上学期
@@ -205,90 +205,29 @@
          </ul>
       </div>
       <div class="panel-body">
-
-        <table class="table table-striped btn-center">
+      <ul class="inline-block-ul">
+      	<li><a href="javascript:" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-export "></span>批量移动</a></li>
+      	<li><a href="javascript:" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-trash "></span>批量删除</a></li>
+      </ul>
+        <table class="table table-striped btn-center" ng-controller="OrderByCtrl" >
           <tr>
-            <td class="col-sm-1">序号</td>
-            <td class="col-sm-4">备课名称</td>
-            <td class="col-sm-1">来源</td>
-            <td class="col-sm-2">时间</td>
+            <td class="col-sm-1"><input type="checkbox"> <a href="javascript:" ng-click="sortField='id'; reverse = !reverse">序号</a></td>
+            <td class="col-sm-2"><a href="javascript:" ng-click="sortField='name'; reverse = !reverse">备课名称 </a></td>
+            <td class="col-sm-1"><a href="javascript:" ng-click="sortField='from'; reverse = !reverse">来源</a></td>
+            <td class="col-sm-1"><a href="javascript:" ng-click="sortField='status'; reverse = !reverse">状态</a></td>
+            <td class="col-sm-1"><a href="javascript:" ng-click="sortField='type'; reverse = !reverse">类型</a></td>
+            <td class="col-sm-1"><a href="javascript:" ng-click="sortField='attr'; reverse = !reverse">属性</a></td>
+            <td class="col-sm-1"><a href="javascript:" ng-click="sortField='creattime'; reverse = !reverse">创建时间</a></td>
             <td class="col-sm-2">操作</td>
           </tr>
-          <tr>
-            <td><input type="checkbox"> 1</td>
-            <td class="btn-left"><a href="#" class="drag-km"><span class="icon-move"></span> 红楼梦诗词两首</a></td>
-            <td>在线制作</td>
-            <td>2014-07-12</td>
-            <td>
-              <ul class="inline-block-ul">
-              <li><a href="javascript:" class="icon-eye-open" data-toggle="tooltip" data-placement="top" title="查看详情"></a></li>
-              <li><a href="javascript:" data-toggle="modal" data-target="#movefilebox" class="glyphicon glyphicon-export" data-toggle="tooltip" data-placement="top" title="移动知识点"></a></li>
-              <li><a href="javascript:" class="glyphicon glyphicon-pencil" data-toggle="tooltip" data-placement="top" title="编辑知识点"></a></li>
-              <li><a href="javascript:" data-toggle="modal" data-target="#delmodal" class="glyphicon glyphicon-trash" data-toggle="tooltip" data-placement="top" title="删除知识点"></a></li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-            <td><input type="checkbox"> 2</td>
-            <td class="btn-left"><a href="#" class="drag-km"><span class="icon-move"></span> 红楼梦诗词两首</a></td>
-            <td>在线制作</td>
-            <td>2014-07-12</td>
-            <td>
-              <ul class="inline-block-ul">
-              <li><a href="javascript:" class="icon-eye-open" data-toggle="tooltip" data-placement="top" title="查看详情"></a></li>
-              <li><a href="javascript:" data-toggle="modal" data-target="#movefilebox" class="glyphicon glyphicon-export" data-toggle="tooltip" data-placement="top" title="移动知识点"></a></li>
-              <li><a href="javascript:" class="glyphicon glyphicon-pencil" data-toggle="tooltip" data-placement="top" title="编辑知识点"></a></li>
-              <li><a href="javascript:" data-toggle="modal" data-target="#delmodal" class="glyphicon glyphicon-trash" data-toggle="tooltip" data-placement="top" title="删除知识点"></a></li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-            <td><input type="checkbox"> 3</td>
-            <td class="btn-left"><a href="#" class="drag-km"><span class="icon-move"></span> 红楼梦诗词两首</a></td>
-            <td>在线制作</td>
-            <td>2014-07-12</td>
-            <td>
-              <ul class="inline-block-ul">
-              <li><a href="javascript:" class="icon-eye-open" data-toggle="tooltip" data-placement="top" title="查看详情"></a></li>
-              <li><a href="javascript:" data-toggle="modal" data-target="#movefilebox" class="glyphicon glyphicon-export" data-toggle="tooltip" data-placement="top" title="移动知识点"></a></li>
-              <li><a href="javascript:" class="glyphicon glyphicon-pencil" data-toggle="tooltip" data-placement="top" title="编辑知识点"></a></li>
-              <li><a href="javascript:" data-toggle="modal" data-target="#delmodal" class="glyphicon glyphicon-trash" data-toggle="tooltip" data-placement="top" title="删除知识点"></a></li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-            <td><input type="checkbox"> 4</td>
-            <td class="btn-left"><a href="#" class="drag-km"><span class="icon-move"></span> 红楼梦诗词两首</a></td>
-            <td>在线制作</td>
-            <td>2014-07-12</td>
-            <td>
-              <ul class="inline-block-ul">
-              <li><a href="javascript:" class="icon-eye-open" data-toggle="tooltip" data-placement="top" title="查看详情"></a></li>
-              <li><a href="javascript:" data-toggle="modal" data-target="#movefilebox" class="glyphicon glyphicon-export" data-toggle="tooltip" data-placement="top" title="移动知识点"></a></li>
-              <li><a href="javascript:" class="glyphicon glyphicon-pencil" data-toggle="tooltip" data-placement="top" title="编辑知识点"></a></li>
-              <li><a href="javascript:" data-toggle="modal" data-target="#delmodal" class="glyphicon glyphicon-trash" data-toggle="tooltip" data-placement="top" title="删除知识点"></a></li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-            <td><input type="checkbox"> 5</td>
-            <td class="btn-left"><a href="#" class="drag-km"><span class="icon-move"></span> 红楼梦诗词两首</a></td>
-            <td>在线制作</td>
-            <td>2014-07-12</td>
-            <td>
-              <ul class="inline-block-ul">
-              <li><a href="javascript:" class="icon-eye-open" data-toggle="tooltip" data-placement="top" title="查看详情"></a></li>
-              <li><a href="javascript:" data-toggle="modal" data-target="#movefilebox" class="glyphicon glyphicon-export" data-toggle="tooltip" data-placement="top" title="移动知识点"></a></li>
-              <li><a href="javascript:" class="glyphicon glyphicon-pencil" data-toggle="tooltip" data-placement="top" title="编辑知识点"></a></li>
-              <li><a href="javascript:" data-toggle="modal" data-target="#delmodal" class="glyphicon glyphicon-trash" data-toggle="tooltip" data-placement="top" title="删除知识点"></a></li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-            <td><input type="checkbox"> 6</td>
-            <td class="btn-left"><a href="#" class="drag-km"><span class="icon-move"></span> 红楼梦诗词两首</a></td>
-            <td>在线制作</td>
-            <td>2014-07-12</td>
+          <tr ng-repeat="list in lists | orderBy:sortField:reverse">
+            <td><input type="checkbox"> {{list.id}}</td>
+            <td class="btn-left"><a href="#" class="drag-km"><span class="icon-move"></span> {{list.name}}</a></td>
+            <td>{{list.from}}</td>
+            <td>{{list.type}}</td>
+            <td>{{list.status}}</td>
+            <td>{{list.attr}}</td>
+            <td>{{list.creattime}}</td>
             <td>
               <ul class="inline-block-ul">
               <li><a href="javascript:" class="icon-eye-open" data-toggle="tooltip" data-placement="top" title="查看详情"></a></li>
@@ -564,7 +503,24 @@
           $( this ).removeClass( "active" );
         }
       });
-    </script>
+
+      // 排序效果
+      function OrderByCtrl($scope,$filter) {
+        $scope.lists = [
+          {'id':1,'name':'1红楼梦诗词1两首','from':'在线制作','status':'草稿','type':'doc','attr':'公开','creattime':"2014-07-12"},
+          {'id':2,'name':'2红楼梦诗词两2首','from':'复制','status':'草稿','type':'xsl','attr':'公开','creattime':"2014-01-12"},
+          {'id':3,'name':'4红楼梦诗3词两首','from':'在线制作','status':'发布','type':'doc','attr':'公开','creattime':"2014-07-12"},
+          {'id':4,'name':'3红楼梦诗词两3首','from':'在线制作','status':'草稿','type':'swf','attr':'隐藏','creattime':"2014-03-12"},
+          {'id':5,'name':'5红楼梦诗词两首','from':'拷贝','status':'发布','type':'doc','attr':'公开','creattime':"2014-07-12"},
+          {'id':6,'name':'6红楼梦诗词3两首','from':'在线制作','status':'草稿','type':'doc','attr':'隐藏','creattime':"2014-07-12"},
+          {'id':6,'name':'3红楼梦诗词3两首','from':'在线制作','status':'草稿','type':'doc','attr':'隐藏','creattime':"2014-07-12"}
+        ];
+          $scope.sortField = 'id';
+          $scope.reverse = false;
+          
+      }
+</script>
+
 
 </body>
 </html>

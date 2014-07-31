@@ -217,10 +217,22 @@ $(function(){
  		$("#sub-box"+thisIndexNumber ).show().siblings(".menu-div").hide();
  	});
 
- 	
-	
-	
- 
-
+ 	// 备课参考js
+ 	// $(".bkck-yy-botton").click(function(){
+ 	// 	var getDataSrc = $(this).attr("data-src");
+ 	// 	var setDataSrc = $(this).closest(".tab-pane").find(".ckbk-iframe");
+ 	// 	setDataSrc.attr("src",getDataSrc).show();
+ 	// })
+	$(".ckzl-tab li").click(function(){
+		$(this).not(".addli").addClass("active").siblings().removeClass("active");
+		var LiNumber = $(this).index();
+		$(".tab-pane-ck").eq(LiNumber).removeClass("position-hidden").siblings(".tab-pane-ck").addClass("position-hidden");
+	});
+	$('#addconsult').on('show.bs.modal', function () {
+		$(".tab-pane-ck").addClass("position-hidden");
+	})
+	$('#addconsult').on('hide.bs.modal', function () {
+		$(".tab-pane-ck").removeClass("position-hidden");
+	})
 
 })

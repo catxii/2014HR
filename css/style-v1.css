@@ -1027,3 +1027,32 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 .movefile .drop-item .glyphicon {
   margin: 0px;
 }
+.title-ckbk {
+  background: #eeeeee;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+.ckbk-iframe {
+  border: medium none;
+  height: 600px;
+  width: 100%;
+}
+.nav-tabs .close {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  padding: 0;
+  margin: 0;
+  z-index: 10;
+  line-height: 1;
+  border: none;
+}
+.nav-tabs .close:hover {
+  background: none;
+  border: none;
+}
+.position-hidden {
+  position: absolute;
+  top: -100000px;
+  z-index: 0;
+}
