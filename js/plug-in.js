@@ -234,5 +234,8 @@ $(function(){
 	$('#addconsult').on('hide.bs.modal', function () {
 		$(".tab-pane-ck").removeClass("position-hidden");
 	})
+	$(".order-header a").click(function(){
+		$(this).addClass("glyphicon glyphicon-sort").closest("td").siblings().find("a").removeClass("glyphicon glyphicon-sort");
+	});
 
 })

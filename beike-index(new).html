@@ -128,7 +128,7 @@
           <div class="list-group  list-group-tree all-tree-ul-none">
 
             <div href="javascript:" class="list-group-item tree-title-button active title-button">
-              <span class="glyphicon glyphicon-chevron-right"></span> 英语 人教版 七年级 上学期
+              <span class="glyphicon glyphicon-chevron-right"></span> 我的文件夹
             </div>
 
             <ul class="tree-sub tree-sub-1 sub-list">
@@ -210,7 +210,7 @@
       	<li><a href="javascript:" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-trash "></span>批量删除</a></li>
       </ul>
         <table class="table table-striped btn-center" ng-controller="OrderByCtrl" >
-          <tr>
+          <tr class="order-header">
             <td class="col-sm-1"><input type="checkbox"> <a href="javascript:" ng-click="sortField='id'; reverse = !reverse">序号</a></td>
             <td class="col-sm-2"><a href="javascript:" ng-click="sortField='name'; reverse = !reverse">备课名称 </a></td>
             <td class="col-sm-1"><a href="javascript:" ng-click="sortField='from'; reverse = !reverse">来源</a></td>
@@ -224,8 +224,8 @@
             <td><input type="checkbox"> {{list.id}}</td>
             <td class="btn-left"><a href="#" class="drag-km"><span class="icon-move"></span> {{list.name}}</a></td>
             <td>{{list.from}}</td>
-            <td>{{list.type}}</td>
             <td>{{list.status}}</td>
+            <td>{{list.type}}</td>
             <td>{{list.attr}}</td>
             <td>{{list.creattime}}</td>
             <td>
