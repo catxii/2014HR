@@ -181,46 +181,38 @@
 
 
     <div class="panel panel-default">
-      <div class="panel-heading tab-header">
-        <ul class="inline-block-ul navigation-inline-ul">
-            <li class="current"><a href="#">发布的备课</a></li>
-            <li><a href="#">私密备课</a></li>
-            <li><a href="#">草稿箱</a></li>
-            <li><a href="#">我的收藏</a></li>
-         </ul>
-         <ul class="inline-block-ul position-right-top-block top-head-ul" >
-            <li>
-                <div class="dropdown">
-                  <a class="btn btn-sm btn-primary" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#">
-                    <span class="glyphicon glyphicon-plus"></span> 创建备课 <span class="caret"></span>
-                  </a>
-                  <ul class="dropdown-menu" role="menu" >
-                    <li><a href="javascript:"><span class="icon-wordpress"></span> word备课</a></li> 
-                    <li><a href="javascript:"><span class="icon-pinterest"></span> PPT备课</a></li>
-                    <li><a href="javascript:"><span class="icon-stopwatch"></span> 随堂测试</a></li>
-                    <li class="divider"></li>
-                    <li><a href="javascript:"><span class="icon-cloud-upload"></span> 本地上传</a></li>
-                    <li><a href="javascript:"><span class="icon-search"></span> 云盘查找</a></li>
-                  </ul>
-                </div>
-            </li>
-            <li>
-                <a class="btn btn-sm btn-primary" href="#">
-                  <span class="icon-cloud-upload"></span> 本地上传 
-                </a>
-            </li>
-            <li>
-                <a class="btn btn-sm btn-primary" href="javascript:"  data-toggle="modal" data-target="#zhbkmodal" >
-                  <span class="icon-sampler"></span> 组合备课 
-                </a>
-            </li>
-         </ul>
-      </div>
       <div class="panel-body">
-      <ul class="inline-block-ul">
-      	<li><a href="javascript:" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-export "></span>批量移动</a></li>
-      	<li><a href="javascript:" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-trash "></span>批量删除</a></li>
-      </ul>
+        <ul class="inline-block-ul position-right-top-block top-head-ul" style="right:24px; top:24px;">
+              <li>
+                  <div class="dropdown">
+                    <a class="btn btn-sm btn-primary" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#">
+                      <span class="glyphicon glyphicon-plus"></span> 创建备课 <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" >
+                      <li><a href="javascript:"><span class="icon-wordpress"></span> word备课</a></li> 
+                      <li><a href="javascript:"><span class="icon-pinterest"></span> PPT备课</a></li>
+                      <li><a href="javascript:"><span class="icon-stopwatch"></span> 随堂测试</a></li>
+                      <li class="divider"></li>
+                      <li><a href="javascript:"><span class="icon-cloud-upload"></span> 本地上传</a></li>
+                      <li><a href="javascript:"><span class="icon-search"></span> 云盘查找</a></li>
+                    </ul>
+                  </div>
+              </li>
+              <li>
+                  <a class="btn btn-sm btn-primary" href="#">
+                    <span class="icon-cloud-upload"></span> 本地上传 
+                  </a>
+              </li>
+              <li>
+                  <a class="btn btn-sm btn-primary" href="javascript:"  data-toggle="modal" data-target="#zhbkmodal" >
+                    <span class="icon-sampler"></span> 组合备课 
+                  </a>
+              </li>
+           </ul>
+        <ul class="inline-block-ul">
+        	<li><a href="javascript:" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-export "></span>批量移动</a></li>
+        	<li><a href="javascript:" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-trash "></span>批量删除</a></li>
+        </ul>
         <table class="table table-striped btn-center" ng-controller="OrderByCtrl" >
           <tr class="order-header">
             <td class="col-sm-1"><input type="checkbox"> <a href="javascript:" ng-click="sortField='id'; reverse = !reverse">序号</a></td>
