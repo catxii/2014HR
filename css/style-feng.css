@@ -1,4 +1,4 @@
-body{font-family:"微软雅黑";}
+﻿body{font-family:"微软雅黑";}
 li{list-style: none;}
 a{color:#4c4c4c;}
 a:hover{color:#ffae00;}
@@ -289,11 +289,35 @@ a.list-grouping-fen-more{
 .classification-tiele{
 	padding:15px; color:#06C; background:#E6E6E6; margin-bottom:15px;}
 /*班级主页*/
-.right-class-content .panel-body{
-	padding:0px 5px 20px 5px;}
+.container-class{
+	}
+	
+.left-class-content{
+	padding-left:0px; padding-right:0px;background:#ECECEC;
+	border-radius:10px 0px 0px 0px;}	
+.left-class-content .name{
+	display:inline-block;
+	margin:0 5px 0 0;
+	}
+..left-class-content .name a{
+	color:#F60;}
+.center-class-content{
+	padding-left:0px; padding-right:0px;
+	background:#ECECEC;
+	border-right:1px solid #D8D8D8;
+	border-left:1px solid #D8D8D8;}
+.right-class-content{
+	background:#ECECEC;
+	border-radius:0px 10px 0px 0px;
+	padding-left:0px; padding-right:0px;
+	}
+
+
 .class-tongzhi{
-	background:#8A4500; height:100px;
+	background:#8A4500;
 	padding:5px;
+	
+	border-radius:6px;
 	overflow:hidden;}
 .class-tongzhi-content{
 	height:90px; background:#004040;
