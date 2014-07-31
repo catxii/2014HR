@@ -295,10 +295,17 @@ a.list-grouping-fen-more{
 .left-class-content{
 	padding-left:0px; padding-right:0px;background:#ECECEC;
 	border-radius:10px 0px 0px 0px;}	
-.left-class-content .name{
+.left-information-content{
+	border-bottom:2px solid #D0D0D0; padding:0 0 20px 0;}
+.left-class-content .username{
 	display:inline-block;
-	margin:0 5px 0 0;
+	margin:0 5px 3px 0;
+	font-size:12px;
 	}
+.class-name{
+	color:#F60;  font-size:16px;}
+.class-say{
+	color:#999;}
 ..left-class-content .name a{
 	color:#F60;}
 .center-class-content{
@@ -334,3 +341,34 @@ label.checkbox-qx{
 ul.qx-thead-body li{ border:1px solid #E8E8E8;padding:10px 0px;}
 .class-group-permissions .radio{
 	margin:0px;}
+	
+	
+/*教师空间*/
+.left-class-content{}
+.people-top-body{
+	padding-top:50px;}
+.container-people{
+	margin-top:20px;}
+.people-fluid-bg {
+ background: url(../img/banner-graybg_03.png) repeat-x;
+}
+.top-people-small {
+  height: 120px;
+  background:url(../img/banner-pic_03.jpg) no-repeat center;
+  position: relative;
+}
+.user{ position:relative; padding:20px 0;}
+.userimg{
+	float:left; width:80px; height:80px;  margin-left:50px;}
+.username{
+	margin-left:20px; }
+.username h3,.username h5{
+	margin:0px; color:#F0AD4E; display:inline; text-shadow:0 0 4px #333333;}
+.second-nav-people-bottom{
+	background:#333; float:left;}
+.container-people .none-heading{
+	text-align:center; background:none; border:none;}
+.container-people .panel-body{
+	height:242px; padding:0px; overflow:hidden;}
+.container-people .panel-heading{
+	text-align:center;}
