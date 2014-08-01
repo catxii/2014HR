@@ -24,7 +24,8 @@ a:hover{color:#ffae00;}
 .btn-primary > a{
 	color:#FFF;
 	}
-
+.navbar-green{
+	background-color:rgba(0,168,86,0.9)}
 .btn-warning > span{
 	margin-right:5px;}
 .btn-warning > a{
@@ -291,10 +292,96 @@ a.list-grouping-fen-more{
 /*班级主页*/
 .container-class{
 	}
+.top-nav-fluid{
+	position:relative;
+	padding:0;
+	margin:0;
+	height:178px;
+	width:100%;
+	background:#eff2ec; background:url(../img/b2de9c82d158ccbf1c2ab7391bd8bc3eb135411a.jpg) center;}
+.top-nav-left{
+	padding-left:0px; padding-right:0px; /*background:url(../img/bg_09.png) repeat-x;*/
+	height:178px;
+	position:relative;}	
+.user-nav-bar{
+	position:relative;
+	margin:-35px auto 0px;
+	height:35px;}
+.top-nav-bar-bottom {
+  width: 100%;
+/*text-align: center;
+*//* background-color:rgba(0, 0, 0, 0.7);*/
+
+}
+.top-nav-bar-bottom li {
+  margin:0 20px;
+  position: relative;
+}
+.top-nav-bar-bottom li a {
+  font-size: 16px;
+  color: #FFF;
+  padding-bottom: 2px;
+  text-shadow:1px 1px 1px #000;
+}
+.top-nav-bar-bottom li a:hover,.second-nav-bar-bottom li:hover a {
+  color: #ee9e19;
+}
+.top-nav-bar-bottom li.current a {
+  text-decoration: none;
+  color: #0c9e4a;
+  font-weight: bold;
+}
+.top-nav-bar-bottom li.current a {
+  border-bottom: 3px solid #0cb353;
+}
+
+.img-wrapper{
+	float:left;
+	margin-top:-80px;
+	margin-left: auto;
+	}
+.img-wrappr-ico{
+	float:left;
+	position:relative;}
+.user-num-wrapper{
+	float:left;
+	position:absolute; left:100px;
+	}
+.num-item{
+	float:left; margin-right:5px;}
+.num-list li h3{
+	padding:0px; color:#FFF;  text-shadow:1px 1px 1px #000;} 
+.num-list li span{
+	color:#FFF; font-size:12px;margin-left:15px;  text-shadow:none}
+.class-index-container{
+	margin-top:10px;}
+.class-index-container .panel-body{
+	padding:10px 5px;}
+.class-index-container .row,.class-index-container .thumbnail{
+	margin:0px;}
+.class-index-container .thumbnail a{
+	border:1px solid #F60;}
+.class-index-container .panel{
+	border-radius:2px; border:none;}
+.class-index-center .panel-class-photo,.class-index-left .panel-class-photo{
+	background-color:rgba(0,0,0,0.1); padding:5px;}
+.class-index-center .panel-class-photo .panel-body{
+	background:#FFF;}
 	
-.left-class-content{
-	padding-left:0px; padding-right:0px;background:#ECECEC;
-	border-radius:10px 0px 0px 0px;}	
+
+.class-index-left .panel-class-photo .panel-body{
+	background:#FFF;}
+
+
+
+
+
+
+
+
+
+
+
 .left-information-content{
 	border-bottom:2px solid #D0D0D0; padding:0 0 20px 0;}
 .left-class-content .username{

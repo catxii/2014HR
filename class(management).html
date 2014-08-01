@@ -15,7 +15,7 @@
 
 <![endif]-->
 </head>
-<body class="fixed-top-body" ng-app="" style="padding-top:52px;">
+<body class="fixed-top-body" ng-app="" style="padding-top:52px;background:#F0F0F0">
 <div class="navbar navbar-zhijiao navbar-green navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
@@ -48,11 +48,15 @@
 </div>
 
 <div class="container">
-<div class="container-fluid people-fluid-bg" >
-    <div class="container top-people-small">
+<div class="container-fluid people-fluid-bg"  style="background:#F0F0F0">
+    <div class="container top-people-small" style="background:none">
     <div class="user">
        <a class="username"><h3 style="text-shadow:none;">领信话题广场</h3></a>
        <a class="username"><h5 style="text-shadow:none;">华容实验初中</h5></a>
+     </div>
+     <div class="user">
+       <a class="username"><h5 style="text-shadow:none;">发表量</h5></a>
+       <a class="username"><h5 style="text-shadow:none;">浏览数</h5></a>
      </div>
        
     </div>
@@ -69,6 +73,11 @@
           当前话题
           <div class="position-right-top" style="display:block;">
             <button type="button" class="btn-sm btn-primary" data-toggle="modal" data-target="#myModal">发布话题</button>
+            <div class="btn-group btn-group-sm">
+  <button type="button" class="btn btn-default">最热</button>
+  <button type="button" class="btn btn-default">最新</button>
+  <button type="button" class="btn btn-default">浏览最多</button>
+</div>
           </div>
         </div>
         <div class="panel-body">
@@ -150,6 +159,7 @@
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
         <h4 class="modal-title" id="myModalLabel">发布话题</h4>
+        
       </div>
       <div class="modal-body">
         <input type="text" class="form-control" placeholder="发表您想说的话题">
