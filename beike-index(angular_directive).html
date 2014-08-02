@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../favicon.ico">
+
+  <!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+  <script type="text/JavaScript" src="space-css.js"></script>
+  <!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+
+  <title>领信样式模板</title>
+
+</head>
+<body class="fixed-top-body" ng-app="order" onselectstart ="return false" >
+<div class="navbar navbar-zhijiao navbar-green navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#" class="navbar-brand logo-small" alt="领信logo"></a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active">
+          <a href="#">教学空间</a>
+        </li>
+        <li>
+          <a href="#about">个人空间</a>
+        </li>
+        <li>
+          <a href="#contact">班级空间</a>
+        </li>
+        <li>
+          <a href="#contact">我的班级</a>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">张学友 [ 退出 ]</a></li>
+        <li><a href="#"><span class="icon-t-shirt"></span> 装扮</a></li>
+        <li class="dropdown">
+          <a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class=" icon-cogwheel"></span> 设置 <span class="caret"></span></a>
+          <ul role="menu" class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+
+    </div>
+
+
+    <!--/.nav-collapse --> 
+  </div>
+</div>
+
+<div class="container-fluid banner-fluid-bg">
+    <div class="container top-banner-small">
+      <ul class="inline-block-ul second-nav-bar-bottom">
+        <li class="current"><a href="#">主页</a></li>
+        <li><a href="#">高校课堂</a></li>
+        <li><a href="#">资源库</a></li>
+        <li>
+          <a href="#">作业布置 <span class="caret"></span></a></a>
+          <ul class="sub">
+            <li><a href="#">作业本布置</a></li>
+            <li><a href="#">电子作业</a></li>
+            <li><a href="#">随堂测试</a></li>
+          </ul>
+        </li>
+        <li><a href="#">题库管理 <span class="caret"></span></a></a>
+          <ul class="sub">
+            <li><a href="#">单题参考导入</a></li>
+            <li><a href="#">多题批量导入</a></li>
+            <li><a href="#">题库预览修改</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+</div>
+
+<div class="container chose-box-index">
+  <div class="col-md-3"> 
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        我的备课
+          <div class="position-right-top" style="display:block">
+          <button type="button" class="btn btn-warning btn-sm" >管理目录</button>
+          </div>
+      </div>
+      <div class="panel-body">
+        
+        <div class="collapse-lx sub-list-all-hover">
+
+          <div class="list-group  list-group-tree all-tree-ul-none ">
+
+            <div href="javascript:" class="list-group-item tree-title-button active title-button">
+              <span class="glyphicon glyphicon-chevron-right"></span> 英语 人教版 七年级 上学期
+            </div>
+
+            <ul class="tree-sub tree-sub-1 sub-list">
+              <li>
+                <a href="javascript:"><span class="sub-click-area icon-circle-plus"></span> <span class="sub-click-area">第一单元</span> </a> 
+
+                <ul class="tree-sub ">
+                  <li>
+                    <a href="javascript:"><span class="sub-click-area icon-circle-plus"></span> <span class="sub-click-area">第一节</span></a>
+                    <ul class="tree-sub ">
+                      <li>
+                        <a href="javascript:"><span class="icon-notes"></span> 第一知识点</a>
+                      </li>
+                      <li>
+                        <a href="javascript:"><span class="icon-notes"></span> 第一知识点</a>
+                      </li>
+                      <li>
+                        <a href="javascript:"><span class="icon-notes"></span> 第一知识点</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+
+            </ul>
+
+          </div>
+
+          <div class="list-group  list-group-tree all-tree-ul-none">
+
+            <div href="javascript:" class="list-group-item tree-title-button active title-button">
+              <span class="glyphicon glyphicon-chevron-right"></span> 我的文件夹
+            </div>
+
+            <ul class="tree-sub tree-sub-1 sub-list">
+              <li>
+                <a href="javascript:"><span class="sub-click-area icon-circle-plus"></span> <span class="sub-click-area">第一单元</span> </a> 
+
+                <ul class="tree-sub ">
+                  <li>
+                    <a href="javascript:"><span class="sub-click-area icon-circle-plus"></span> <span class="sub-click-area">第一节</span></a>
+                    <ul class="tree-sub ">
+                      <li>
+                        <a href="javascript:"><span class="icon-notes"></span> 第一知识点</a>
+                      </li>
+                      <li>
+                        <a href="javascript:"><span class="icon-notes"></span> 第一知识点</a>
+                      </li>
+                      <li>
+                        <a href="javascript:"><span class="icon-notes"></span> 第一知识点</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+
+            </ul>
+
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+      
+  </div>
+  <div class="col-md-9">
+
+
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <ul class="inline-block-ul position-right-top-block top-head-ul" style="right:24px; top:24px;">
+              <li>
+                  <div class="dropdown">
+                    <a class="btn btn-sm btn-primary" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#">
+                      <span class="glyphicon glyphicon-plus"></span> 创建备课 <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu" >
+                      <li><a href="javascript:"><span class="icon-wordpress"></span> word备课</a></li> 
+                      <li><a href="javascript:"><span class="icon-pinterest"></span> PPT备课</a></li>
+                      <li><a href="javascript:"><span class="icon-stopwatch"></span> 随堂测试</a></li>
+                      <li class="divider"></li>
+                      <li><a href="javascript:"><span class="icon-cloud-upload"></span> 本地上传</a></li>
+                      <li><a href="javascript:"><span class="icon-search"></span> 云盘查找</a></li>
+                    </ul>
+                  </div>
+              </li>
+              <li>
+                  <a class="btn btn-sm btn-primary" href="#">
+                    <span class="icon-cloud-upload"></span> 本地上传 
+                  </a>
+              </li>
+              <li>
+                  <a class="btn btn-sm btn-primary" href="javascript:"  data-toggle="modal" data-target="#zhbkmodal" >
+                    <span class="icon-sampler"></span> 组合备课 
+                  </a>
+              </li>
+           </ul>
+        <ul class="inline-block-ul">
+        	<li><a href="javascript:" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-export "></span>批量移动</a></li>
+        	<li><a href="javascript:" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-trash "></span>批量删除</a></li>
+        </ul>
+        <table ng-app="order"  class="table table-striped btn-center" ng-controller="OrderByCtrl" >
+          <tr class="order-header">
+            <td class="col-sm-1"><input type="checkbox"> <a href="javascript:" ng-click="sortField='id'; reverse = !reverse">序号</a></td>
+            <td class="col-sm-2"><a href="javascript:" ng-click="sortField='name'; reverse = !reverse">备课名称 </a></td>
+            <td class="col-sm-1"><a href="javascript:" ng-click="sortField='from'; reverse = !reverse">来源</a></td>
+            <td class="col-sm-1"><a href="javascript:" ng-click="sortField='status'; reverse = !reverse">状态</a></td>
+            <td class="col-sm-1"><a href="javascript:" ng-click="sortField='type'; reverse = !reverse">类型</a></td>
+            <td class="col-sm-1"><a href="javascript:" ng-click="sortField='attr'; reverse = !reverse">属性</a></td>
+            <td class="col-sm-1"><a href="javascript:" ng-click="sortField='creattime'; reverse = !reverse">创建时间</a></td>
+            <td class="col-sm-2">操作</td>
+          </tr>
+          <tr ng-repeat="list in lists | orderBy:sortField:reverse">
+            <td><input type="checkbox"> {{list.id}}</td>
+            <td class="btn-left"><a href="#" class="drag-km" draggable><span class="icon-move"></span> {{list.name}}</a></td>
+            <td>{{list.from}}</td>
+            <td>{{list.status}}</td>
+            <td>{{list.type}}</td>
+            <td>{{list.attr}}</td>
+            <td>{{list.creattime}}</td>
+            <td>
+              <ul class="inline-block-ul">
+              <li><a href="javascript:" class="icon-eye-open" data-toggle="tooltip" data-placement="top" title="查看详情"></a></li>
+              <li><a href="javascript:" data-toggle="modal" data-target="#movefilebox" class="glyphicon glyphicon-export" data-toggle="tooltip" data-placement="top" title="移动知识点"></a></li>
+              <li><a href="javascript:" class="glyphicon glyphicon-pencil" data-toggle="tooltip" data-placement="top" title="编辑知识点"></a></li>
+              <li><a href="javascript:" data-toggle="modal" data-target="#delmodal" class="glyphicon glyphicon-trash" data-toggle="tooltip" data-placement="top" title="删除知识点"></a></li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+
+      </div>
+    </div>
+
+
+
+
+  </div>
+</div>
+
+
+<!-- 弹出框 -->
+<!-- 管理目录弹出框 -->
+<div class="modal fade bs-example-modal-sm" id="movefilebox" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"  >
+  <div class="modal-dialog" style="display:block;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">移动文件到</h4>
+      </div>
+      <div class="modal-body movefile container-fluid">
+        
+        <div class="col-md-4">
+          <h4 class="title">文件夹</h4>
+          <ul class="menu-list menu-list1">
+            <li><a href="javascript:">初中语文七年级上</a></li>
+            <li><a href="javascript:">初中生物七年级上</a></li>
+            <li><a href="javascript:">其他</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4 class="title">目录</h4>
+          <div class="menu-div" id="sub-box1" style="display:block;">
+            <h4 class="title-button"><a href="javascript:"><span class="glyphicon glyphicon-plus"></span> 第一单元1</a></h4>
+            <ul class="list" style="display:none;">
+              <li><a href="javascript:">初中语文七年级上1</a></li>
+              <li><a href="javascript:">初中生物七年级上</a></li>
+              <li><a href="javascript:">其他</a></li>
+            </ul>
+            <h4 class="title-button"><a href="javascript:"><span class="glyphicon glyphicon-plus"></span> 第二单元</a></h4>
+            <ul class="list" style="display:none;">
+              <li><a href="javascript:">初中语文七年级上</a></li>
+              <li><a href="javascript:">初中生物七年级上</a></li>
+              <li><a href="javascript:">其他</a></li>
+            </ul>
+          </div>
+          <div class="menu-div" id="sub-box2">
+            <h4 class="title-button"><a href="javascript:"><span class="glyphicon glyphicon-plus"></span> 第一单元2</a></h4>
+            <ul class="list" style="display:none;">
+              <li><a href="javascript:">初中语文七年级上2</a></li>
+              <li><a href="javascript:">初中生物七年级上</a></li>
+              <li><a href="javascript:">其他</a></li>
+            </ul>
+            <h4 class="title-button"><a href="javascript:"><span class="glyphicon glyphicon-plus"></span> 第二单元</a></h4>
+            <ul class="list" style="display:none;">
+              <li><a href="javascript:">初中语文七年级上</a></li>
+              <li><a href="javascript:">初中生物七年级上</a></li>
+              <li><a href="javascript:">其他</a></li>
+            </ul>
+          </div>
+          <div class="menu-div" id="sub-box3">
+            <h4 class="title-button"><a href="javascript:"><span class="glyphicon glyphicon-plus"></span> 第一单元3</a></h4>
+            <ul class="list" style="display:none;">
+              <li><a href="javascript:">初中语文七年级上3</a></li>
+              <li><a href="javascript:">初中生物七年级上</a></li>
+              <li><a href="javascript:">其他</a></li>
+            </ul>
+            <h4 class="title-button"><a href="javascript:"><span class="glyphicon glyphicon-plus"></span> 第二单元</a></h4>
+            <ul class="list" style="display:none;">
+              <li><a href="javascript:">初中语文七年级上</a></li>
+              <li><a href="javascript:">初中生物七年级上</a></li>
+              <li><a href="javascript:">其他</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h4 class="title">分类</h4>
+          <ul class="menu-list menu-list2 ">
+            <li><a href="javascript:">教案</a></li>
+            <li><a href="javascript:">导学案</a></li>
+            <li><a href="javascript:">课件</a></li>
+            <li><a href="javascript:">素材</a></li>
+            <li><a href="javascript:">作业/习题</a></li>
+            <li><a href="javascript:">试卷</a></li>
+            <li><a href="javascript:">微课</a></li>
+            <li><a href="javascript:">其他</a></li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary">立即移动</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 组合备课弹出框 -->
+<div class="modal fade bs-example-modal-sm " id="zhbkmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="right:10px; left:50%;" >
+  <div class="modal-dialog" style="display:block;  ">
+    <div class="modal-content">
+      <div class="modal-header" style="cursor:move;">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">组合备课</h4>
+      </div>
+      <div class="modal-body movefile container-fluid">
+        <ul class="btn-center inline-block-ul">
+          <li><a href="javascript:" class="btn btn-primary btn-sm "><span class="icon-chevron-left"></span>上一周</a></li>
+          <li> 当前： 2014-09-01 至 2014-09-07 </li>
+          <li><a href="javascript:" class="btn btn-primary btn-sm "> 下一周<span class="icon-chevron-right"></span></a></li>
+        </ul>
+        <div class="col-md-12" style="overflow:auto;">
+          <table class="table table-striped btn-center all-table-border-gray 12px" style="width:1000px; max-width:none">
+            <tr>
+              <td style="width:2%;"></td>
+              <td style="width:14%;">星期一</td>
+              <td style="width:14%;">星期二</td>
+              <td style="width:14%;">星期三</td>
+              <td style="width:14%;">星期四</td>
+              <td style="width:14%;">星期五</td>
+              <td style="width:14%;">星期六</td>
+              <td style="width:14%;">星期日</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td class="dropzone-km" droppable></td>
+              <td class="dropzone-km" droppable></td>
+              <td class="dropzone-km" droppable></td>
+              <td class="dropzone-km" droppable></td>
+              <td class="dropzone-km" droppable></td>
+              <td class="dropzone-km" droppable></td>
+              <td class="dropzone-km" droppable></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td class="dropzone-km" droppable></td>
+              <td class="dropzone-km" droppable></td>
+              <td class="dropzone-km" droppable></td>
+              <td class="dropzone-km" droppable></td>
+              <td class="dropzone-km" droppable></td>
+              <td class="dropzone-km" droppable></td>
+              <td class="dropzone-km" droppable></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td class="dropzone-km" droppable></td>
+              <td class="dropzone-km" droppable></td>
+              <td class="dropzone-km" droppable></td>
+              <td class="dropzone-km" droppable></td>
+              <td class="dropzone-km" droppable></td>
+              <td class="dropzone-km" droppable></td>
+              <td class="dropzone-km" droppable></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td class="dropzone-km" droppable></td>
+              <td class="dropzone-km" droppable></td>
+              <td class="dropzone-km" droppable></td>
+              <td class="dropzone-km" droppable></td>
+              <td class="dropzone-km" droppable></td>
+              <td class="dropzone-km" droppable></td>
+              <td class="dropzone-km" droppable></td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td class="dropzone-km" droppable></td>
+              <td class="dropzone-km" droppable></td>
+              <td class="dropzone-km" droppable></td>
+              <td class="dropzone-km" droppable></td>
+              <td class="dropzone-km" droppable></td>
+              <td class="dropzone-km" droppable></td>
+              <td class="dropzone-km" droppable></td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td class="dropzone-km" droppable></td>
+              <td class="dropzone-km" droppable></td>
+              <td class="dropzone-km" droppable></td>
+              <td class="dropzone-km" droppable></td>
+              <td class="dropzone-km" droppable></td>
+              <td class="dropzone-km" droppable></td>
+              <td class="dropzone-km" droppable></td>
+            </tr>
+          </table>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary">保存</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 删除弹出框 -->
+<div class="modal fade bs-example-modal-sm delmodal" id="delmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">确定删除该知识点？</h4>
+      </div>
+      <div class="modal-footer btn-center" style="border-top:none">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-danger">删除</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- 底部 -->
+<div class="container-fluid footer footer-grayline">
+    <div class="row">
+      <ul class="col-md-12 inline-block-ul">
+        <li><a href="#">关于我们</a></li>
+        <li>|</li>
+        <li><a href="#">联系我们</a></li>
+        <li>|</li>
+        <li><a href="#">友情链接</a></li>
+        <li>|</li>
+        <li><a href="#">关于我们</a></li>
+        <li>|</li>
+        <li><a href="#">关于我们</a></li>
+      </ul>
+    </div>
+    <div class="row">
+        <div class="col-md-12">Copyright @ 2011-2015 湖南领信教育网络发展有限公司版权所有 湘ICP备14001031号</div>
+    </div>
+</div>  
+
+
+<!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+<script type="text/JavaScript" src="space-footer-css.js"></script>
+<!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+
+<script type="text/javascript" src="libs/jQuery-ui/jquery-ui-1.10.4.custom.js"></script>
+<script type="text/javascript">
+
+
+
+      // 排序效果
+      var app = angular.module('order',[]);
+      app.controller('OrderByCtrl',function ($scope,$filter) {
+        $scope.lists = [
+          {'id':1,'name':'1红楼梦诗词1两首','from':'在线制作','status':'草稿','type':'doc','attr':'公开','creattime':"2014-07-12"},
+          {'id':2,'name':'2红楼梦诗词两2首','from':'复制','status':'草稿','type':'xsl','attr':'公开','creattime':"2014-01-12"},
+          {'id':3,'name':'4红楼梦诗3词两首','from':'在线制作','status':'发布','type':'doc','attr':'公开','creattime':"2014-07-12"},
+          {'id':4,'name':'3红楼梦诗词两3首','from':'在线制作','status':'草稿','type':'swf','attr':'隐藏','creattime':"2014-03-12"},
+          {'id':5,'name':'5红楼梦诗词两首','from':'拷贝','status':'发布','type':'doc','attr':'公开','creattime':"2014-07-12"},
+          {'id':6,'name':'6红楼梦诗词3两首','from':'在线制作','status':'草稿','type':'doc','attr':'隐藏','creattime':"2014-07-12"},
+          {'id':6,'name':'3红楼梦诗词3两首','from':'在线制作','status':'草稿','type':'doc','attr':'隐藏','creattime':"2014-07-12"}
+        ];
+          $scope.sortField = 'id';
+          $scope.reverse = false;   
+      });
+      
+      app.directive('draggable', function() {
+      return {
+          restrict: 'A',
+          link: function($scope, $elem, attrs) {
+              $elem.draggable({
+                  appendTo: 'body',
+                  helper: 'clone'
+              })
+          }
+      }
+
+      });
+
+      app.directive('droppable',function() {
+        return {
+          restrict: 'A',
+          link: function($scope, $elem, attrs) {
+              $elem.droppable({
+                activeClass: 'well active',
+                hoverClass: 'hover',
+                accept: ":not(.ui-sortable-helper)", // Reject clones generated by sortable
+                drop: function (e, ui) {
+                  var $el = $('<div class="drop-item">' + ui.draggable.text() + '</div>');
+                  $el.append($('<button type="button" class="btn btn-default btn-xs remove"> <span class="glyphicon glyphicon-trash"></span></button>').click(function () { $(this).parent().detach(); }));
+                  $(this).append($el);
+                }
+              }).sortable({
+                items: '.drop-item',
+                sort: function() {
+                  // gets added unintentionally by droppable interacting with sortable
+                  // using connectWithSortable fixes this, but doesn't allow you to customize active/hoverClass options
+                  $( this ).removeClass( "active" );
+                }
+              });
+          }
+        }
+      })
+
+       //课程表拖拽
+      // $('.drag-km').draggable({ 
+      //   appendTo: 'body',
+      //   helper: 'clone'
+      // });
+
+      // $('.dropzone-km').droppable({
+      //   activeClass: 'well active',
+      //   hoverClass: 'hover',
+      //   accept: ":not(.ui-sortable-helper)", // Reject clones generated by sortable
+      //   drop: function (e, ui) {
+      //     var $el = $('<div class="drop-item">' + ui.draggable.text() + '</div>');
+      //     $el.append($('<button type="button" class="btn btn-default btn-xs remove"> <span class="glyphicon glyphicon-trash"></span></button>').click(function () { $(this).parent().detach(); }));
+      //     $(this).append($el);
+      //   }
+      // }).sortable({
+      //   items: '.drop-item',
+      //   sort: function() {
+      //     // gets added unintentionally by droppable interacting with sortable
+      //     // using connectWithSortable fixes this, but doesn't allow you to customize active/hoverClass options
+      //     $( this ).removeClass( "active" );
+      //   }
+      // });
+      
+</script>
+
+
+</body>
+</html>

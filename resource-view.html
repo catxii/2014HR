@@ -103,7 +103,7 @@
 		<a href="#" class="btn btn btn-lg btn-primary" data-toggle="modal" data-target="#loginModal"> <span class="icon-inbox-in"></span> 下载资源 <span class="badge">235人下载</span></a>
 		</li>
 		<li>
-			<a href="#" class="btn btn btn-lg btn-warning"  data-toggle="modal" data-target="#loginModal"> <span class="icon-heart"></span> 收藏资源 <span class="badge">2349人收藏</span> </a>
+			<a href="#" class="btn btn btn-lg btn-warning"  data-toggle="modal" data-target="#collectBox"> <span class="icon-heart"></span> 收藏资源 <span class="badge">2349人收藏</span> </a>
 			</li>
 		</ul>
 
@@ -321,6 +321,78 @@
 </div>
 
 
+
+<!-- 收藏 -->
+<div class="modal fade bs-example-modal-sm" id="collectBox" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <button type="button" class="close close-position" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      <div class="modal-body">
+        
+        <form role="form">
+            <h4 class="login-title">收藏资源到</h4>
+            <div class="form-group">
+               <ul class="tree-sub tree-sub-1 sub-list">
+              <li>
+                <a href="javascript:"><span class="sub-click-area glyphicon glyphicon-folder-open"></span> <span class="sub-click-area"> 我的文件夹</span> </a> 
+
+                <ul class="tree-sub " style="display:block">
+                  <li>
+                    <a href="javascript:"><span class="sub-click-area glyphicon glyphicon-folder-open"></span> <span class="sub-click-area"> 第一节</span></a>
+                    <ul class="tree-sub"  style="display:block">
+                      <li>
+                        <a href="javascript:"><span class="glyphicon glyphicon-folder-open"></span> 第一知识点</a>
+                      </li>
+                      <li>
+                        <a href="javascript:"><span class="glyphicon glyphicon-folder-open"></span> 第一知识点</a>
+                      </li>
+                      <li>
+                        <a href="javascript:"><span class="glyphicon glyphicon-folder-open"></span> 第一知识点</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="javascript:"><span class="sub-click-area glyphicon glyphicon-folder-open"></span> <span class="sub-click-area"> 第一节</span></a>
+                    <ul class="tree-sub "  style="display:block">
+                      <li>
+                        <a href="javascript:"><span class="glyphicon glyphicon-folder-open"></span> 第一知识点</a>
+                      </li>
+                      <li>
+                        <a href="javascript:"><span class="glyphicon glyphicon-folder-open"></span> 第一知识点</a>
+                      </li>
+                      <li>
+                        <a href="javascript:"><span class="glyphicon glyphicon-folder-open"></span> 第一知识点</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="javascript:"><span class="sub-click-area glyphicon glyphicon-folder-open"></span> <span class="sub-click-area"> 第一节</span></a>
+                    <ul class="tree-sub "  style="display:block">
+                      <li>
+                        <a href="javascript:"><span class="glyphicon glyphicon-folder-open"></span> 第一知识点</a>
+                      </li>
+                      <li>
+                        <a href="javascript:"><span class="glyphicon glyphicon-folder-open"></span> 第一知识点</a>
+                      </li>
+                      <li>
+                        <a href="javascript:"><span class="glyphicon glyphicon-folder-open"></span> 第一知识点</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+
+            </ul>
+            </div>
+            <button class="btn btn-primary btn-lg" type="submit" style="width:100%;">保 存</button>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- 底部 -->
 <div class="container-fluid footer footer-grayline">
     <div class="row">
@@ -341,7 +413,7 @@
     </div>
 </div>
 
- <!--***** “space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+<!--***** “space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
 <script type="text/JavaScript" src="space-footer-css.js"></script>
 <!--***** “space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
 
@@ -349,7 +421,7 @@
 ​<script src="libs/jwplayer6.9/jwplayer.js" ></script>
 <script type='text/javascript'>
   jwplayer('playerSSrvbmYPpReq').setup({
-      file: 'http://video-js.zencoder.com/oceans-clip.mp4',
+      file: '/test.mp3',
       image: '',
       width: '100%',
       height:'516px;',

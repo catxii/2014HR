@@ -6,7 +6,7 @@
   line-height: 1.33;
   border-radius: 6px;
 }
-.btn-default {
+/*.btn-default {
   background: #d6d6d6;
   border: none;
   text-shadow: none;
@@ -21,7 +21,7 @@
   background-color: #c5c5c5;
   border-color: #adadad;
 }
-
+*/
 .btn-primary {
   background: #2ecc71;
   border: none;
@@ -1086,7 +1086,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 .second-nav-bar-bottom li .sub {
   display: none;
   position: absolute;
-  top: 25px;
+  top: 24px;
   left: 0;
   padding-left: 0;
   background: white;
@@ -1156,4 +1156,83 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 }
 .pageoffice-info-on {
   top: 30px;
+}
+.alert-success {
+  border-radius: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 3000;
+}
+.modal-success-dialog .glyphicon {
+  color: green;
+  font-size: 24px;
+  margin-right: 8px;
+  vertical-align: middle;
+}.modal-success-dialog .modal-body {
+  color: green;
+}
+.order-header th {
+  text-align:center;
+}
+.sub-to-ul {
+  position: absolute;
+  right: 3%;
+  margin: 0;
+  top: 0px;
+}
+.sub-to-ul li {
+  padding: 0;
+  position: static;
+}
+.sub-to-ul li a,.sub-to-ul li a:hover{
+  background: none;
+}
+.weektable {
+  font-size: 12px;
+}
+/* 题目上传 */
+.exam-upfile-area {
+  background: none repeat scroll 0 0 #f8f8f8;
+  border: 1px dashed #ccc;
+  padding: 30px 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+.green {
+  color: green;
+}
+.single-exam-question {
+  border: 1px solid #d7d7d7;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px #ccc;
+  margin: 10px 0 10px 20px;
+  padding: 0;
+  position: relative;
+}
+.singlecheck {
+  left: 0;
+  margin-left: -21px;
+  position: absolute;
+}
+.inthetree {
+  background-color: #fcf8e3;
+  border: 1px solid #faebcc;
+  color: #8a6d3b;
+  padding: 2px 10px;
+  margin: 5px 5px 10px;
+}
+.exam-title {
+  color: green;
+  font-size: 14px;
+  margin: 0 0 5px;
+}
+.exam {
+  margin: 5px;
+}
+.info-area {
+  /*background: #f8f8f8;*/
+  /*border-top: 1px solid #e5e5e5;*/
+  padding: 10px;
 }

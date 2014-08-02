@@ -11,6 +11,9 @@ $(function(){
 
 	// select2定义列表
  	$(".select2-box").select2(); 
+ 	$(".select2-box.dele").select2({
+		allowClear: true
+	});
  	$(".select2-box-single").select2({
  		maximumSelectionSize: 1
  	});
@@ -26,8 +29,10 @@ $(function(){
  		$(".list-group.list-group-collapse-button").show();
  	});
 
+
  	// tips设置
- 	$('.btn,a').tooltip();
+ 	$('.btn').tooltip();
+ 	$('.btn-popover,a.a-popover').popover()
 
 
 
@@ -180,10 +185,11 @@ $(function(){
 	$('#zhbkmodal').on('show.bs.modal', function () {
 	  $(".chose-box-index").removeClass("container").addClass("container-fluid");
 	  $(".chose-box-index").css({ "z-index":"1041","position":"relative"});
+
 	})
 	$('#zhbkmodal').on('hide.bs.modal', function () {
 		$(".chose-box-index").removeClass("container-fluid").addClass("container");
-	  $(".chose-box-index").css({ "z-index":"1041","position":"none"});
+	  	$(".chose-box-index").css({ "z-index":"0","position":"none"});
 	})
 
 	//  打开所有的德能银行
@@ -237,5 +243,19 @@ $(function(){
 	$(".order-header a").click(function(){
 		$(this).addClass("glyphicon glyphicon-sort").closest("td").siblings().find("a").removeClass("glyphicon glyphicon-sort");
 	});
+
+	// 批量导入试题页面
+	// function choseAll(chosebutton,checkbox){
+	// 	chosebutton.click(function(){
+	// 		if ( $(this).is(":checked") ) {
+	// 			checkbox.attr("checked",true);
+	// 		}else{
+	// 			checkbox.attr("checked",false);
+	// 		}
+	// 	})
+	// }
+	// var examChose = $(".chose-all-exam input:checkbox");
+	// var examCheck = $(".singlecheck input:checkbox");
+	// choseAll(examChose,examCheck);
 
 })
