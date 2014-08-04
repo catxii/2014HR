@@ -623,12 +623,12 @@ ul.qx-thead-body li{ border:1px solid #E8E8E8;padding:10px 0px;}
   border-color:#FFF;
 }
 
-.right-topic .list-group{
+.right-topic .list-topic{
 	border:none;
 	background:none;
 	box-shadow:none;
 	border-radius:0px;}
-.right-topic .list-group .list-group-item{
+.right-topic .list-topic .list-group-item{
 	padding:10px;
 	border-bottom:2px solid #EBEBEB;}
 .right-topic .panel-body,.left-topic .panel-body{padding:0 10px;}
@@ -644,4 +644,13 @@ ul.qx-thead-body li{ border:1px solid #E8E8E8;padding:10px 0px;}
 	color:#999; font-size:12px; margin-left:10px;}
 	
 .right-topic .list-group .list-group-item a{
-	margin-left:10px; font-size:16px;}	
+	 font-size:16px;}	
+
+
+/*教师空间*/
+.top-nav-fluid2{
+	background:url(../img/bgasd.png) center repeat;}
+
+
+
+
