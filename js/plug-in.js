@@ -120,7 +120,6 @@ $(function(){
  			$(this).find(".glyphicon.glyphicon-chevron-right").removeClass("glyphicon-chevron-down");
  		};
  	});
-
  	// 日期选择器
  	$('.form_datetime').datetimepicker({
         //language:  'fr',
