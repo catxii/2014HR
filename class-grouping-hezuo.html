@@ -118,7 +118,7 @@
                       <td>刘德华<span class="label label-default" >组长</span></td>
                       <td>
                       <ul style="padding:0px;" class="btn-left list-grouping-fen">
-                      <li>1.好人好事,好人好事好人好事好人好事好人好事,好人好事<span>加一分</span><a href="#" class="list-grouping-fen-more" data-toggle="modal" data-target="#evaluation-more">更多</a></li>
+                      <li>1.好人好事,好人好事好人好事好人好事好人好事,好人好事事好人好事好人好事好人好事,好人好事事好人好事好人好事好人好事,好人好事<span>加一分</span><a data-toggle="modal" data-target=".bs-example-modal-lg" style="color:#999;">更多</a></li>
                       
                       </ul>
                       </td>
@@ -184,19 +184,43 @@
 
 <!-- 更多评价 --> 
 <!-- evaluation-more -->
-<div class="modal fade" id="evaluation-more" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
+<div class="modal fade bs-example-modal-lg" id="evaluation-more" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
         <h4 class="modal-title" id="myModalLabel">更多评价</h4>
       </div>
       <div class="modal-body">
-        <ul style="padding:0px;">
-            <li class="list-group-item">1.好人好事,好人好事好人好事好人好事好人好事,好人好事1.好人好事,好人好事好人好事好人好事好人好事,好人好事1.好人好事,好人好事好人好事好人好事好人好事,好人好事1.好人好事,好人好事好人好事好人好事好人好事,好人好事1.好人好事,好人好事好人好事好人好事好人好事,好人好事1.好人好事,好人好事好人好事好人好事好人好事,好人好事</li>
-            <li class="list-group-item">1.好人好事,好人好事好人好事好人好事好人好事,好人好事</li>
-            <li class="list-group-item">1.好人好事,好人好事好人好事好人好事好人好事,好人好事</li>
-        </ul>
+        <table  class="table table-bordered" >
+							<tbody>
+							  <tr class="tableheader-gray">
+							  	<td class="col-sm-2">奖惩时间</td>
+							    <td class="col-sm-4">评分项</td>
+							    <td class="col-sm-1">奖惩</td>
+							    <td class="col-sm-1">分值</td>
+							    <td class="col-sm-1">操作时间</td>
+							    <td class="col-sm-1">操作人</td>
+							    <td class="col-sm-2">操作</td>
+							  </tr>
+							  <tr id="">
+							  	<td>2014-06-18</td>
+							    <td>
+							    	<ul style="padding:0px;" class="btn-left list-grouping-fen">
+                      <li>好人好事,好人好事好人好事好人好事好人好事,好人好事事好人好事好人好事好人好事,好人好事事好人好事好人好事好人好事,好人好事</li>
+							    </td>
+							    <td>
+									<span class="red">支出</span>
+								</td>
+							    <td>-9</td>
+							    <td>2014-06-20</td>
+							    <td>梁静云</td>
+							    <td>
+							    	<a href="javascript:" onclick="virtue_del('2843b07b74c74d05a73642bd127895eb');" class="zoom-button"><i class="button-ico-style delete-ico"></i>删除</a>
+							    </td>
+							  </tr>   
+							</tbody>
+						</table>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
