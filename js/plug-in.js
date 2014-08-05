@@ -31,8 +31,9 @@ $(function(){
 
 
  	// tips设置
- 	$('.btn').tooltip();
- 	$('.btn-popover,a.a-popover').popover()
+ 	$('.btn,.icon-eye-close,.glyphicon-trash').tooltip();
+ 	$(".add-person-button,.show-tips").tooltip();
+ 	$('.btn-popover,a.a-popover').popover();
 
 
 
@@ -72,14 +73,17 @@ $(function(){
  		if( $(this).closest("li").children(".tree-sub").is(":hidden") ){
  			$(this).closest("li").children(".tree-sub").show();
  			$(this).parent("a").children(".icon-circle-plus").addClass("icon-circle-minus");
+ 			$(this).parent("a").children(".glyphicon-folder-close").addClass("glyphicon-folder-open");
  			$(".open-all-tree").text("全部折叠").addClass("active");
+ 			$(".add-person-button").removeClass("disabled");
  		}else{
  			$(this).closest("li").children(".tree-sub").hide();
  			$(this).parent("a").children(".icon-circle-plus").removeClass("icon-circle-minus");
-
+ 			$(this).parent("a").children(".glyphicon-folder-close").removeClass("glyphicon-folder-open");
  		}
  		
  	});
+
 
  	// 资源库页面js
  	$(".filter-box .list a").click(function(){
@@ -169,16 +173,6 @@ $(function(){
 	});
 	
 
-	// 目录管理
-	$(".myfile-click").click(function(){
-		$(".myfile-well").toggle();
-		if ( $(".myfile-well").is(":visible") ) {
-			$(this).find(".glyphicon-plus").addClass("glyphicon-minus");
-		}else{
-			$(this).find(".glyphicon-plus").removeClass("glyphicon-minus");
-		};
-		
-	});
 
 	// 组合备课
 	$('#zhbkmodal').on('show.bs.modal', function () {

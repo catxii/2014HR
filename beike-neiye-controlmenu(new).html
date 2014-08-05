@@ -111,7 +111,15 @@
       <div class="panel-body container-fluid">
         <div class="col-md-6 ">
           <div class="panel panel-border-gray">
-            <div class="panel-heading"><span class="glyphicon glyphicon-cog"></span> 管理版本目录文件夹</div>
+            <div class="panel-heading"><span class="glyphicon glyphicon-cog"></span> 管理版本目录文件夹
+              <ul class="inline-block-ul position-right-top-block top-head-ul">
+                <li>
+                    <a href="#" class="btn btn-sm btn-primary" data-original-title="" title="">
+                      <span class="glyphicon glyphicon-plus"></span> 新增目录
+                    </a>
+                </li>
+             </ul>
+            </div>
             <table class="table table-striped btn-center" style="margin-bottom:0; border-top:1px solid #ddd;">
               <tr>
                 <td class="col-sm-4">名称</td>
@@ -152,61 +160,96 @@
                   </ul>
                 </td>
               </tr>
-              <tr>
-                <td class="btn-center" colspan="4"><a href="#" class="btn btn-add btn-sm "><span class="glyphicon glyphicon-plus"></span> 新增版本目录文件夹</a></td>
-              </tr>
               
             </table>
           </div>
         </div>
         <div class=" col-md-6 " >
           <div class="myfile-well panel panel-border-gray">
-          <div class="panel-heading"><span class="glyphicon glyphicon-cog"></span> 管理个人目录</div>
-          <ul class="tree-sub tree-sub-1 sub-list" style="padding-top:0px; border-top:1px solid #ddd;">
-            <li>
-              <ul class="inline-block-ul sub-to-ul">
-                <li><a data-original-title="隐藏" href="javascript:" class="icon-eye-close" data-toggle="tooltip" data-placement="top" title=""></a></li>
-                <li><a data-original-title="删除知识点" href="javascript:" data-toggle="modal" data-target="#delmodal" class="glyphicon glyphicon-trash" data-placement="top" title=""></a></li>
-              </ul>
-              <a href="javascript:"><span class="sub-click-area glyphicon glyphicon-folder-open"></span> <span class="sub-click-area">第一单元</span> </a> 
-
-              <ul class="tree-sub ">
-                <li>
-                  <ul class="inline-block-ul sub-to-ul">
-                    <li><a data-original-title="隐藏" href="javascript:" class="icon-eye-close" data-toggle="tooltip" data-placement="top" title=""></a></li>
-                    <li><a data-original-title="删除知识点" href="javascript:" data-toggle="modal" data-target="#delmodal" class="glyphicon glyphicon-trash" data-placement="top" title=""></a></li>
-                  </ul>
-                  <a href="javascript:"><span class="sub-click-area glyphicon glyphicon-folder-open"></span> <span class="sub-click-area">第一节</span></a>
-                  <ul class="tree-sub ">
-                    <li>
-                      <ul class="inline-block-ul sub-to-ul">
-                        <li><a data-original-title="隐藏" href="javascript:" class="icon-eye-close" data-toggle="tooltip" data-placement="top" title=""></a></li>
-                        <li><a data-original-title="删除知识点" href="javascript:" data-toggle="modal" data-target="#delmodal" class="glyphicon glyphicon-trash" data-placement="top" title=""></a></li>
-                      </ul>
-                      <a href="javascript:"><span class="glyphicon glyphicon-folder-open"></span> 第一知识点</a>
-                    </li>
-                    <li>
-                      <ul class="inline-block-ul sub-to-ul">
-                        <li><a data-original-title="隐藏" href="javascript:" class="icon-eye-close" data-toggle="tooltip" data-placement="top" title=""></a></li>
-                        <li><a data-original-title="删除知识点" href="javascript:" data-toggle="modal" data-target="#delmodal" class="glyphicon glyphicon-trash" data-placement="top" title=""></a></li>
-                      </ul>
-                      <a href="javascript:"><span class="glyphicon glyphicon-folder-open"></span> 第一知识点</a>
-                    </li>
-                    <li>
-                      <ul class="inline-block-ul sub-to-ul">
-                        <li><a data-original-title="隐藏" href="javascript:" class="icon-eye-close" data-toggle="tooltip" data-placement="top" title=""></a></li>
-                        <li><a data-original-title="删除知识点" href="javascript:" data-toggle="modal" data-target="#delmodal" class="glyphicon glyphicon-trash" data-placement="top" title=""></a></li>
-                      </ul>
-                      <a href="javascript:"><span class="glyphicon glyphicon-folder-open"></span> 第一知识点</a>
-                    </li>
-                    <li><a href="#" ><span class="glyphicon glyphicon-plus"></span> 新增</a></li>
-                  </ul>
+          <div class="panel-heading"><span class="glyphicon glyphicon-cog"></span> 管理个人目录
+              <ul class="inline-block-ul position-right-top-block top-head-ul">
+                <li class="show-tips" data-toggle="tooltip" data-placement="top" title="点击个人目录，在被选中目录下新增子目录。">
+                    <a href="#" class="btn btn-sm btn-primary disabled add-person-button" >
+                      <span class="glyphicon glyphicon-plus"></span> 新增目录
+                    </a>
                 </li>
-                <li><a href="#" ><span class="glyphicon glyphicon-plus"></span> 新增</a></li>
-              </ul>
-            </li>
-            <li><a href="#" class="btn btn-add btn-sm "><span class="glyphicon glyphicon-plus"></span> 新增目录</a></li>
-          </ul>
+             </ul>
+          </div>
+          <div class="sub-list-all-hover">
+            <ul class="tree-sub tree-sub-1 sub-list " style="padding-top:0px; border-top:1px solid #ddd;">
+              <li>
+                <ul class="inline-block-ul sub-to-ul">
+                  <li><a data-original-title="隐藏" href="javascript:" class="icon-eye-close" data-toggle="tooltip" data-placement="top" title=""></a></li>
+                  <li><a data-original-title="删除知识点" href="javascript:" data-toggle="modal" data-target="#delmodal" class="glyphicon glyphicon-trash" data-placement="top" title=""></a></li>
+                </ul>
+                <a href="javascript:"><span class="sub-click-area glyphicon glyphicon-folder-close"></span> <span class="sub-click-area">根目录</span> </a> 
+
+                <ul class="tree-sub ">
+                  <li>
+                    <ul class="inline-block-ul sub-to-ul">
+                      <li><a data-original-title="隐藏" href="javascript:" class="icon-eye-close" data-toggle="tooltip" data-placement="top" title=""></a></li>
+                      <li><a data-original-title="删除知识点" href="javascript:" data-toggle="modal" data-target="#delmodal" class="glyphicon glyphicon-trash" data-placement="top" title=""></a></li>
+                    </ul>
+                    <a href="javascript:"><span class="sub-click-area glyphicon glyphicon-folder-close"></span> <span class="sub-click-area">第一节</span></a>
+                    <ul class="tree-sub ">
+                      <li>
+                        <ul class="inline-block-ul sub-to-ul">
+                          <li><a data-original-title="隐藏" href="javascript:" class="icon-eye-close" data-toggle="tooltip" data-placement="top" title=""></a></li>
+                          <li><a data-original-title="删除知识点" href="javascript:" data-toggle="modal" data-target="#delmodal" class="glyphicon glyphicon-trash" data-placement="top" title=""></a></li>
+                        </ul>
+                        <a href="javascript:"><span class="glyphicon glyphicon-folder-close"></span> 第一知识点</a>
+                      </li>
+                      <li>
+                        <ul class="inline-block-ul sub-to-ul">
+                          <li><a data-original-title="隐藏" href="javascript:" class="icon-eye-close" data-toggle="tooltip" data-placement="top" title=""></a></li>
+                          <li><a data-original-title="删除知识点" href="javascript:" data-toggle="modal" data-target="#delmodal" class="glyphicon glyphicon-trash" data-placement="top" title=""></a></li>
+                        </ul>
+                        <a href="javascript:"><span class="glyphicon glyphicon-folder-close"></span> 第一知识点</a>
+                      </li>
+                      <li>
+                        <ul class="inline-block-ul sub-to-ul">
+                          <li><a data-original-title="隐藏" href="javascript:" class="icon-eye-close" data-toggle="tooltip" data-placement="top" title=""></a></li>
+                          <li><a data-original-title="删除知识点" href="javascript:" data-toggle="modal" data-target="#delmodal" class="glyphicon glyphicon-trash" data-placement="top" title=""></a></li>
+                        </ul>
+                        <a href="javascript:"><span class="glyphicon glyphicon-folder-close"></span> 第一知识点</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <ul class="inline-block-ul sub-to-ul">
+                      <li><a data-original-title="隐藏" href="javascript:" class="icon-eye-close" data-toggle="tooltip" data-placement="top" title=""></a></li>
+                      <li><a data-original-title="删除知识点" href="javascript:" data-toggle="modal" data-target="#delmodal" class="glyphicon glyphicon-trash" data-placement="top" title=""></a></li>
+                    </ul>
+                    <a href="javascript:"><span class="sub-click-area glyphicon glyphicon-folder-close"></span> <span class="sub-click-area">第一节</span></a>
+                    <ul class="tree-sub ">
+                      <li>
+                        <ul class="inline-block-ul sub-to-ul">
+                          <li><a data-original-title="隐藏" href="javascript:" class="icon-eye-close" data-toggle="tooltip" data-placement="top" title=""></a></li>
+                          <li><a data-original-title="删除知识点" href="javascript:" data-toggle="modal" data-target="#delmodal" class="glyphicon glyphicon-trash" data-placement="top" title=""></a></li>
+                        </ul>
+                        <a href="javascript:"><span class="glyphicon glyphicon-folder-close"></span> 第一知识点</a>
+                      </li>
+                      <li>
+                        <ul class="inline-block-ul sub-to-ul">
+                          <li><a data-original-title="隐藏" href="javascript:" class="icon-eye-close" data-toggle="tooltip" data-placement="top" title=""></a></li>
+                          <li><a data-original-title="删除知识点" href="javascript:" data-toggle="modal" data-target="#delmodal" class="glyphicon glyphicon-trash" data-placement="top" title=""></a></li>
+                        </ul>
+                        <a href="javascript:"><span class="glyphicon glyphicon-folder-close"></span> 第一知识点</a>
+                      </li>
+                      <li>
+                        <ul class="inline-block-ul sub-to-ul">
+                          <li><a data-original-title="隐藏" href="javascript:" class="icon-eye-close" data-toggle="tooltip" data-placement="top" title=""></a></li>
+                          <li><a data-original-title="删除知识点" href="javascript:" data-toggle="modal" data-target="#delmodal" class="glyphicon glyphicon-trash" data-placement="top" title=""></a></li>
+                        </ul>
+                        <a href="javascript:"><span class="glyphicon glyphicon-folder-close"></span> 第一知识点</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              
+            </ul>
+          </div>
           </div>
         </div>
 
