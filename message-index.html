@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../favicon.ico">
+
+  <!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+  <script type="text/JavaScript" src="space-css.js"></script>
+  <!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+
+  <title>领信样式模板</title>
+
+</head>
+<body class="fixed-top-body" ng-app="">
+<div class="navbar navbar-zhijiao navbar-green navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#" class="navbar-brand logo-small" alt="领信logo"></a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active">
+          <a href="#">教学空间</a>
+        </li>
+        <li>
+          <a href="#about">个人空间</a>
+        </li>
+        <li>
+          <a href="#contact">班级空间</a>
+        </li>
+        <li>
+          <a href="#contact">我的班级</a>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">张学友 [ 退出 ]</a></li>
+        <li><a href="#"><span class="icon-t-shirt"></span> 装扮</a></li>
+        <li class="dropdown">
+          <a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class=" icon-cogwheel"></span> 设置 <span class="caret"></span></a>
+          <ul role="menu" class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+
+    </div>
+
+
+    <!--/.nav-collapse --> 
+  </div>
+</div>
+
+<div class="container-fluid banner-fluid-bg">
+    <div class="container top-banner-small">
+      <ul class="inline-block-ul second-nav-bar-bottom">
+        <li class="current"><a href="#">主页</a></li>
+        <li><a href="#">高校课堂</a></li>
+        <li><a href="#">资源库</a></li>
+        <li>
+          <a href="#">作业布置 <span class="caret"></span></a></a>
+          <ul class="sub">
+            <li><a href="#">作业本布置</a></li>
+            <li><a href="#">电子作业</a></li>
+            <li><a href="#">随堂测试</a></li>
+          </ul>
+        </li>
+        <li><a href="#">题库管理 <span class="caret"></span></a></a>
+          <ul class="sub">
+            <li><a href="#">单题参考导入</a></li>
+            <li><a href="#">多题批量导入</a></li>
+            <li><a href="#">题库预览修改</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+</div>
+
+<div class="container">
+
+  <div class="col-md-2">
+    <div class="list-group">
+      <a href="#" class="list-group-item"><span class="icon-cogwheel"></span> 个人设置</a>
+      <a href="#" class="list-group-item active"><span class="glyphicon glyphicon-envelope"></span> 私信</a> </div>
+  </div>
+
+  <div class="col-md-10">
+
+
+    <div class="panel panel-default">
+      <div class="panel-heading tab-header">
+        <ul class="inline-block-ul navigation-inline-ul" >
+            <li class="current"><a href="#"><span class=""></span> 私信</a></li>
+         </ul>
+         <ul class="inline-block-ul position-right-top-block top-head-ul" >
+            <li>
+                <a class="btn btn-sm btn-warning"  href="#">
+                  <span class="icon-unshare"></span> 返回
+                </a>
+            </li>
+         </ul>
+      </div>
+      <div class="panel-body container-fluid">
+        
+        <ul class="inline-block-ul-mid" style="padding-left:0;">
+          <li><a data-toggle="modal" data-target="#sendmessage" href="javascript:" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-envelope"></span> 发私信</a></li>
+          <li><a href="#" class="btn btn-default btn-sm">清空所有私信</a></li>
+          <li class="pull-right">
+            <div class="input-group">
+              <input type="text" class="form-control">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+              </span>
+            </div>
+          </li>
+        </ul>
+        
+
+        <div class="message-single-box container-fluid">
+          <div class="row">
+            <div class="col-md-1">
+              <img data-src="holder.js/100%x67">
+            </div>
+            <div class="col-md-11 ">
+              <ul class="message-info list-unstyled">
+                <li class="info">
+                  <a href="#" class="name">江海客XP：</a>
+                  <a href="javascript:" style="margin-left:10px;" data-toggle="modal" data-target="#delmodal" class="btn btn-xs btn-primary pull-right icon-bin"></a>
+                  <span class="pull-right gray">今天 11：11</span>
+                </li>
+                <li class="nr"><i class="icon-paperclip"></i> <i class="glyphicon glyphicon-picture"></i> 您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报</li>
+                <li><a href="#" class="position-bottom-left red-block">1 条新消息</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="message-single-box container-fluid">
+          <div class="row">
+            <div class="col-md-1">
+              <img data-src="holder.js/100%x67">
+            </div>
+            <div class="col-md-11 ">
+              <ul class="message-info list-unstyled">
+                <li class="info">
+                  <a href="#" class="name">江海客XP：</a>
+                  <a href="javascript:" style="margin-left:10px;" class="btn btn-xs btn-primary pull-right icon-bin"></a>
+                  <span class="pull-right gray">今天 11：11 </span>
+                </li>
+                <li class="nr">您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="message-single-box container-fluid">
+          <div class="row">
+            <div class="col-md-1">
+              <img data-src="holder.js/100%x67">
+            </div>
+            <div class="col-md-11 ">
+              <ul class="message-info list-unstyled">
+                <li class="info">
+                  <a href="#" class="name">江海客XP：</a>
+                  <a href="javascript:" style="margin-left:10px;" class="btn btn-xs btn-primary pull-right icon-bin"></a>
+                  <span class="pull-right gray">今天 11：11 </span>
+                </li>
+                <li class="nr">您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="message-single-box container-fluid">
+          <div class="row">
+            <div class="col-md-1">
+              <img data-src="holder.js/100%x67">
+            </div>
+            <div class="col-md-11 ">
+              <ul class="message-info list-unstyled">
+                <li class="info">
+                  <a href="#" class="name">江海客XP：</a>
+                  <a href="javascript:" style="margin-left:10px;" class="btn btn-xs btn-primary pull-right icon-bin"></a>
+                  <span class="pull-right gray">今天 11：11 </span>
+                </li>
+                <li class="nr">您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="message-single-box container-fluid">
+          <div class="row">
+            <div class="col-md-1">
+              <img data-src="holder.js/100%x67">
+            </div>
+            <div class="col-md-11 ">
+              <ul class="message-info list-unstyled">
+                <li class="info">
+                  <a href="#" class="name">江海客XP：</a>
+                  <a href="javascript:" style="margin-left:10px;" class="btn btn-xs btn-primary pull-right icon-bin"></a>
+                  <span class="pull-right gray">今天 11：11 </span>
+                </li>
+                <li class="nr">您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="message-single-box container-fluid">
+          <div class="row">
+            <div class="col-md-1">
+              <img data-src="holder.js/100%x67">
+            </div>
+            <div class="col-md-11 ">
+              <ul class="message-info list-unstyled">
+                <li class="info">
+                  <a href="#" class="name">江海客XP：</a>
+                  <a href="javascript:" style="margin-left:10px;" class="btn btn-xs btn-primary pull-right icon-bin"></a>
+                  <span class="pull-right gray">今天 11：11 </span>
+                </li>
+                <li class="nr">您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+
+  </div>
+</div>
+
+
+<!-- 弹出框 -->
+<!-- 管理目录弹出框 -->
+<div class="modal fade bs-example-modal-lg" id="sendmessage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">发私信</h4>
+      </div>
+      <div class="modal-body">
+        
+        <form class="form-horizontal" role="form">
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">发给：</label>
+            <div class="col-sm-9">
+              <select class="select2-box" multiple style="width:100%;" placeholder="请输入对方昵称">
+                <option>江海客XP</option>
+                <option>彭毅超超哥</option>
+                <option>龚昕菊菊花兄</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">内容：</label>
+            <div class="col-sm-9">
+              <textarea class="form-control" rows="3"></textarea>
+              <ul class="list-inline" style="margin:10px 0;">
+                <li><a href="javascript:" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-picture" style="margin:0;"></span></a></li>
+                <li><a href="javascript:" class="btn btn-primary btn-xs"><span class="icon-paperclip" style="margin:0;"></span></a></li>
+                <li class="pull-right gray">还可以输入 10000 字</li>
+              </ul>
+            </div>
+          </div>
+        </form>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary">发送</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- 删除弹出框 -->
+<div class="modal fade bs-example-modal-sm delmodal" id="delmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">删除全部</h4>
+      </div>
+      <div class="modal-footer btn-center" style="border-top:none">
+        <div class="nr text-left" style="margin-bottom:10px;">
+        删除对话内容将不可恢复，确定要删除与 江海客XP 之间的所有对话？
+        </div>
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-danger">删除</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- 底部 -->
+<div class="container-fluid footer footer-grayline">
+    <div class="row">
+      <ul class="col-md-12 inline-block-ul">
+        <li><a href="#">关于我们</a></li>
+        <li>|</li>
+        <li><a href="#">联系我们</a></li>
+        <li>|</li>
+        <li><a href="#">友情链接</a></li>
+        <li>|</li>
+        <li><a href="#">关于我们</a></li>
+        <li>|</li>
+        <li><a href="#">关于我们</a></li>
+      </ul>
+    </div>
+    <div class="row">
+        <div class="col-md-12">Copyright @ 2011-2015 湖南领信教育网络发展有限公司版权所有 湘ICP备14001031号</div>
+    </div>
+</div>  
+
+ 
+<!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+<script type="text/JavaScript" src="space-footer-css.js"></script>
+<!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+
+
+</body>
+</html>

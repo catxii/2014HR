@@ -31,7 +31,7 @@ $(function(){
 
 
  	// tips设置
- 	$('.btn,.icon-eye-close,.glyphicon-trash').tooltip();
+ 	$('a,.btn,.icon-eye-close,.glyphicon-trash').tooltip();
  	$(".add-person-button,.show-tips").tooltip();
  	$('.btn-popover,a.a-popover').popover();
 
