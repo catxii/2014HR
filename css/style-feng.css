@@ -16,7 +16,15 @@ a:hover{color:#ffae00;}
 	width:95%;
 	text-overflow:ellipsis;
 	white-space:nowrap;
-	course:hand;}
+	course:hand;
+	display:inline-block;
+  zoom:1;
+   *display:inline;
+-o-text-overflow:ellipsis;
+vertical-align: middle;
+
+
+}
 /*button*/
 
 .btn-default > span{
