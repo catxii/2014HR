@@ -90,7 +90,7 @@ $(function(){
  		$(this).parent("li").addClass("current").siblings("li").removeClass("current");
  	});
 
- 	$(".sub-list-all-hover .tree-sub li a").click(function(){
+ 	$(".sub-list-all-hover .tree-sub > li > a").click(function(){
  		$(this).parent().addClass("current-tree").siblings().removeClass("current-tree");
  		$(".current-tree").not( $(this).parent() ).removeClass("current-tree");
  	})

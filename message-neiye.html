@@ -104,30 +104,33 @@
     <div class="panel panel-default">
       <div class="panel-heading tab-header">
         <ul class="inline-block-ul navigation-inline-ul" >
-            <li class="current"><a href="#"><span class=""></span> 私信</a></li>
+            <li class="current"><a href="#"><span class=""></span>  与 江海客XP 的对话</a></li>
          </ul>
-         <!-- <ul class="inline-block-ul position-right-top-block top-head-ul" >
+         <ul class="inline-block-ul position-right-top-block top-head-ul" >
             <li>
                 <a class="btn btn-sm btn-warning"  href="#">
-                  <span class="icon-unshare"></span> 返回
+                  <span class="icon-unshare"></span> 返回私信列表
                 </a>
             </li>
-         </ul> -->
+         </ul>
       </div>
       <div class="panel-body container-fluid">
         
         <ul class="inline-block-ul-mid" style="padding-left:0;">
-          <li><a data-toggle="modal" data-target="#sendmessage" href="javascript:" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-envelope"></span> 发私信</a></li>
-          <li><a href="#" class="btn btn-default btn-sm">清空所有私信</a></li>
-          <li class="pull-right">
-            <div class="input-group" style="width:250px;" >
-              <input type="text" class="form-control" placeholder="搜索联系人或者关键字">
-              <span class="input-group-btn">
-                <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
-              </span>
-            </div>
-          </li>
+          <li><a href="#" class="btn btn-default btn-sm">批量删除</a></li>
         </ul>
+
+        <div class="send-box well">
+          <ul class="send-info list-inline clearfix">
+            <li class="pull-left"><span class=" icon-envelope"></span> 发私信给：江海客XP</li>
+            <li class="pull-right">还可以输入10000字</li>
+          </ul>
+          <textarea class="form-control" rows="3" style="margin-bottom:10px;"></textarea>
+          <ul class="list-inline clearfix" style="margin:0;">
+            <li class="pull-left"><a href="javascript:" class="btn btn-primary btn-xs"><span class="icon-paperclip" style="margin:0;"></span></a></li>
+            <li class="pull-right"><a href="#" class="btn btn-default btn-sm">发送</a></li>
+          </ul>
+        </div>
         
 
         <div class="message-single-box container-fluid">
@@ -135,15 +138,20 @@
             <div class="col-xs-1">
               <img data-src="holder.js/100%x67" class="img-responsive">
             </div>
-            <div class="col-xs-11 ">
-              <ul class="message-info list-unstyled">
+            <div class="col-xs-10 ">
+              <ul class="message-info message-info-ball list-unstyled">
                 <li class="info">
+                  <div class="arrow-left">
+                    <em>◆</em>
+                    <i>◆</i>
+                  </div>
                   <a href="#" class="name">江海客XP：</a>
-                  <a href="javascript:" style="margin-left:10px;" data-toggle="modal" data-target="#delmodal" class="btn btn-xs btn-primary pull-right icon-bin"></a>
+                  <a href="javascript:" style="margin-left:10px;" data-toggle="modal" data-target="#delmodal" class="btn btn-xs btn-danger pull-right icon-bin"></a>
+                  <a href="javascript:" style="margin-left:10px;" data-toggle="modal" data-target="#delmodal" class="btn btn-xs btn-primary pull-right icon-share"></a>
+                  
                   <span class="pull-right gray">今天 11：11</span>
                 </li>
-                <li class="nr font-overflow"><i class="icon-paperclip"></i> <i class="glyphicon glyphicon-picture"></i> 您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报</li>
-                <li><a href="#" style="margin:0 5px -10px 0;" class="position-bottom-left red-block">1</a></li>
+                <li class="nr "><i class="icon-paperclip"></i> <i class="glyphicon glyphicon-picture"></i> 您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报</li>
               </ul>
             </div>
           </div>
@@ -151,94 +159,26 @@
 
         <div class="message-single-box container-fluid">
           <div class="row">
-            <div class="col-xs-1">
+            <div class="col-xs-1 col-xs-push-10 col-xs-offset-1">
               <img data-src="holder.js/100%x67" class="img-responsive">
             </div>
-            <div class="col-xs-11 ">
-              <ul class="message-info list-unstyled">
+            <div class="col-xs-10 col-xs-pull-1">
+              <ul class="message-info message-info-ball list-unstyled">
                 <li class="info">
+                  <div class="arrow-right">
+                    <em>◆</em>
+                    <i>◆</i>
+                  </div>
                   <a href="#" class="name">江海客XP：</a>
-                  <a href="javascript:" style="margin-left:10px;" class="btn btn-xs btn-primary pull-right icon-bin"></a>
-                  <span class="pull-right gray">今天 11：11 </span>
+                  <a href="javascript:" style="margin-left:10px;" data-toggle="modal" data-target="#delmodal" class="btn btn-xs btn-danger pull-right icon-bin"></a>
+                  <a href="javascript:" style="margin-left:10px;" data-toggle="modal" data-target="#delmodal" class="btn btn-xs btn-primary pull-right icon-share"></a>
+                  <span class="pull-right gray">今天 11：11</span>
                 </li>
-                <li class="nr font-overflow">您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报</li>
+                <li class="nr "><i class="icon-paperclip"></i> <i class="glyphicon glyphicon-picture"></i> 您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报</li>
               </ul>
             </div>
           </div>
         </div>
-
-        <div class="message-single-box container-fluid">
-          <div class="row">
-            <div class="col-xs-1">
-              <img data-src="holder.js/100%x67" class="img-responsive">
-            </div>
-            <div class="col-xs-11 ">
-              <ul class="message-info list-unstyled">
-                <li class="info">
-                  <a href="#" class="name">江海客XP：</a>
-                  <a href="javascript:" style="margin-left:10px;" class="btn btn-xs btn-primary pull-right icon-bin"></a>
-                  <span class="pull-right gray">今天 11：11 </span>
-                </li>
-                <li class="nr font-overflow">您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="message-single-box container-fluid">
-          <div class="row">
-            <div class="col-xs-1">
-              <img data-src="holder.js/100%x67" class="img-responsive">
-            </div>
-            <div class="col-xs-11 ">
-              <ul class="message-info list-unstyled">
-                <li class="info">
-                  <a href="#" class="name">江海客XP：</a>
-                  <a href="javascript:" style="margin-left:10px;" class="btn btn-xs btn-primary pull-right icon-bin"></a>
-                  <span class="pull-right gray">今天 11：11 </span>
-                </li>
-                <li class="nr font-overflow">您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="message-single-box container-fluid">
-          <div class="row">
-            <div class="col-xs-1">
-              <img data-src="holder.js/100%x67" class="img-responsive">
-            </div>
-            <div class="col-xs-11 ">
-              <ul class="message-info list-unstyled">
-                <li class="info">
-                  <a href="#" class="name">江海客XP：</a>
-                  <a href="javascript:" style="margin-left:10px;" class="btn btn-xs btn-primary pull-right icon-bin"></a>
-                  <span class="pull-right gray">今天 11：11 </span>
-                </li>
-                <li class="nr font-overflow">您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="message-single-box container-fluid">
-          <div class="row">
-            <div class="col-xs-1">
-              <img data-src="holder.js/100%x67" class="img-responsive">
-            </div>
-            <div class="col-xs-11 ">
-              <ul class="message-info list-unstyled">
-                <li class="info">
-                  <a href="#" class="name">江海客XP：</a>
-                  <a href="javascript:" style="margin-left:10px;" class="btn btn-xs btn-primary pull-right icon-bin"></a>
-                  <span class="pull-right gray">今天 11：11 </span>
-                </li>
-                <li class="nr font-overflow">您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
 
       </div>
     </div>
