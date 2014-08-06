@@ -342,11 +342,11 @@ a.list-grouping-fen-more{
 }
 .top-nav-bar-bottom li.current a {
   text-decoration: none;
-  color: #0c9e4a;
+  color: #FFAE00;
   font-weight: bold;
 }
 .top-nav-bar-bottom li.current a {
-  border-bottom: 3px solid #0cb353;
+  border-bottom: 3px solid #FFAE00;
 }
 
 .img-wrapper{
@@ -363,6 +363,10 @@ a.list-grouping-fen-more{
 	}
 .num-item{
 	float:left; margin-right:5px;}
+.num-item h3 a{
+	color:#FFF;}
+.num-item h3 a:hover{
+	color:#2ecc71; text-decoration:none;}
 .num-list li h3{
 	padding:0px; color:#FFF;  text-shadow:1px 1px 1px #000;} 
 .num-list li span{
@@ -663,8 +667,37 @@ ul.qx-thead-body li{ border:1px solid #E8E8E8;padding:10px 0px;}
 
 /*教师空间*/
 .top-nav-fluid2{
-	background:url(../img/bgasd.png) center repeat;}
+	/*background:url(../img/bgasd.png) center repeat;*/}
 
+.table-student{
+	margin-bottom:0px;}
 
+.table-student td {
+	border-right: 1px solid #E7E7E7;
+	border-bottom: 1px solid #E7E7E7;
+	padding: 6px 6px 6px 12px;
+	color: #4f6b72;
+}
+#mytable .table-student-title td{
+	background-color:rgba(236, 236, 236, 1) ;!important}
+	
+.class-index-left .panel-class-photo .panel-student{padding:0px;!important; background:none;}
+.title-student{background:#E7E7E7;  height:30px;}
+.title-student h4{
+	 margin:0 0 0 15px; line-height:25px; font-size:16px; color:#454545}
 
-
+.class-index-left .panel-class-photo .panel-student .label{
+	font-size:12px; padding:0.05em 0.59em 0.05em; font-weight:200; margin-left:20px; background:#FC7272; box-shadow:1px 2px 2px #E0DFDF}	
+.class-index-left .panel-class-photo .panel-student .list-group{
+	padding:0px 0px; }
+.class-index-left .panel-class-photo .panel-student .list-group-item{
+	font-size:14px;
+	 line-height:30px; padding:0px;}
+.class-index-left .panel-class-photo .panel-student .list-group-item a:hover{
+	background:#E8E8E8; display:block;  border-left:2px solid #FFAE00;}
+.class-index-left .panel-class-photo .panel-student .list-group-item a{
+	padding-left:30px; display:block;color:#A1A1A1; border-bottom:1px solid #ececec}
+.student-img{
+	margin-top:15px;width:100%; height:100%;}	
+	
+	
