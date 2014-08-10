@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../favicon.ico">
+
+  <title>领信样式模板</title>
+
+  <!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+  <script type="text/JavaScript" src="space-css.js"></script>
+  <!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+
+</head>
+<body class="fixed-top-body" ng-app="" style=" padding-top:52px; background:url(img/index-bg2.png) repeat;">
+  <div class="navbar navbar-zhijiao navbar-green navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a href="#" class="navbar-brand logo-small" alt="领信logo"></a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="#">教学空间</a>
+          </li>
+          <li>
+            <a href="#about">个人空间</a>
+          </li>
+          <li>
+            <a href="#contact">班级空间</a>
+          </li>
+          <li>
+            <a href="#contact">我的班级</a>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#">张学友 [ 退出 ]</a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon-t-shirt"></span>
+              装扮
+            </a>
+          </li>
+          <li class="dropdown">
+            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+              <span class=" icon-cogwheel"></span>
+              设置
+              <span class="caret"></span>
+            </a>
+            <ul role="menu" class="dropdown-menu">
+              <li>
+                <a href="#">Action</a>
+              </li>
+              <li>
+                <a href="#">Another action</a>
+              </li>
+              <li>
+                <a href="#">Something else here</a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="#">Separated link</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+      </div>
+
+      <!--/.nav-collapse --> </div>
+  </div>
+
+
+
+  <div class="container" style="margin-top:10px;">
+    <div class="col-md-2">
+      <div class="sidebar" data-spy="affix" data-offset-top="40" data-offset-bottom="20" style="max-width:180px;">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">随堂测试信息</h3>
+          </div>
+          <div class="panel-body">
+            <div class="well" style="padding:10px;">
+              <ul class="test-info list-unstyled small" style="margin-bottom:0;">
+              <li>测验名称：<span class="orange">随堂小测试</span></li>
+                <li>科目：<span class="orange">语文</span></li>
+                <li>章节：<span class="orange">第三章第二节</span></li>
+                <li>任课老师：<span class="orange">小菊花老师</span></li>
+                <li>题目数量：<span class="orange">20</span></li>
+              </ul>
+            </div>
+            <div class="well text-center" style="padding:10px; ">
+              <ul class="inline-block-ul-mid list-unstyled time-less-list"> 
+                <li><span class="icon-stopwatch"></span></li>
+                <li>12 : 20</li>
+                <li><a href="javascript:" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-play"></span> 开始做题</a></li>
+                <li><a href="javascript:" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-pause"></span> 暂停做题</a></li>
+                <li><a href="javascript:" class="btn btn-warning btn-xs"><span class="glyphicon glyphicon-play"></span> 继续做题</a></li>
+                <li><a href="javascript:" class="btn btn-danger btn-xs"><span class="icon-more-items"></span> 我要交卷</a></li>
+              </ul>
+            </div>
+            <ul class="exam-status-list inline-block-ul">
+              <li><A href="javascript:" class="btn btn-default btn-xs" ng-class="{ 'btn-primary':answerform.useranswer.$valid }" >{{$index}}</A></li>
+              <li><A href="javascript:" class="btn btn-default btn-xs" >2</A></li>
+              <li><A href="javascript:" class="btn btn-default btn-xs" >3</A></li>
+              <li><A href="javascript:" class="btn btn-default btn-xs btn-warning">4</A></li>
+              <li><A href="javascript:" class="btn btn-default btn-xs">5</A></li>
+              <li><A href="javascript:" class="btn btn-default btn-xs">6</A></li>
+              <li><A href="javascript:" class="btn btn-default btn-xs">7</A></li>
+              <li><A href="javascript:" class="btn btn-default btn-xs">8</A></li>
+              <li><A href="javascript:" class="btn btn-default btn-xs">9</A></li>
+              <li><A href="javascript:" class="btn btn-default btn-xs">10</A></li>
+              <li><A href="javascript:" class="btn btn-default btn-xs">11</A></li>
+              <li><A href="javascript:" class="btn btn-default btn-xs">12</A></li>
+              <li><A href="javascript:" class="btn btn-default btn-xs">13</A></li>
+              <li><A href="javascript:" class="btn btn-default btn-xs">14</A></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-10" name="answerform" >
+
+
+      <div class="single-exam-question"> 
+        <div class="exam">
+        <p><span class="exam-number">1,</span> 七年级⑵班座位有7排8列，张艳的座位在2排4列，简记为（2，4），班级座次表上写着王刚（5，8），那么王刚的座位在__________；<br type="_moz"></p>
+        </div>
+        <div class="info-area">
+          <form role="form">   
+              <h4 class="exam-title">输入答案：</h4>
+              <textarea class="form-control" rows="1" placeholder="请输入答案" name="useranswer{{$index}}"  ng-model="user.answer" required></textarea>
+          </form>
+        </div>
+      </div>
+
+      <div class="single-exam-question"> 
+        <div class="exam">
+           <p><span class="exam-number">2,</span> 七年级⑵班座位有7排8列，张艳的座位在2排4列，简记为（2，4），班级座次表上写着王刚（5，8），那么王刚的座位在__________；<br type="_moz"></p>
+        </div>
+        <div class="info-area">
+          <form role="form">   
+              <h4 class="exam-title">输入答案：</h4>
+              <textarea class="form-control" rows="1" placeholder="请输入答案" name="useranswer"></textarea>
+          </form>
+        </div>
+      </div>
+
+      <div class="single-exam-question"> 
+        <div class="exam">
+           <p><span class="exam-number">3,</span> 七年级⑵班座位有7排8列，张艳的座位在2排4列，简记为（2，4），班级座次表上写着王刚（5，8），那么王刚的座位在__________；<br type="_moz"></p>
+        </div>
+        <div class="info-area">
+          <form role="form">   
+              <h4 class="exam-title">输入答案：</h4>
+              <textarea class="form-control" rows="1" placeholder="请输入答案"></textarea>
+          </form>
+        </div>
+      </div>
+
+      <div class="single-exam-question"> 
+        <div class="exam">
+           <p><span class="exam-number">4,</span> 七年级⑵班座位有7排8列，张艳的座位在2排4列，简记为（2，4），班级座次表上写着王刚（5，8），那么王刚的座位在__________；<br type="_moz"></p>
+        </div>
+        <div class="info-area">
+          <form role="form">   
+              <h4 class="exam-title">输入答案：</h4>
+              <textarea class="form-control" rows="1" placeholder="请输入答案"></textarea>
+          </form>
+        </div>
+      </div>
+
+      <div class="single-exam-question"> 
+        <div class="exam">
+           <p><span class="exam-number">5,</span> 七年级⑵班座位有7排8列，张艳的座位在2排4列，简记为（2，4），班级座次表上写着王刚（5，8），那么王刚的座位在__________；<br type="_moz"></p>
+        </div>
+        <div class="info-area">
+          <form role="form">   
+              <h4 class="exam-title">输入答案：</h4>
+              <textarea class="form-control" rows="1" placeholder="请输入答案"></textarea>
+          </form>
+        </div>
+      </div>
+
+      <div class="single-exam-question"> 
+        <div class="exam">
+           <p><span class="exam-number">6,</span> 七年级⑵班座位有7排8列，张艳的座位在2排4列，简记为（2，4），班级座次表上写着王刚（5，8），那么王刚的座位在__________；<br type="_moz"></p>
+        </div>
+        <div class="info-area">
+          <form role="form">           
+              <h4 class="exam-title">选择答案：</h4>
+              <ul class="inline-block-ul">
+                <li><label><input type="checkbox"> A</label></li>
+                <li><label><input type="checkbox"> B</label></li>
+                <li><label><input type="checkbox"> C</label></li>
+                <li><label><input type="checkbox"> D</label></li>
+              </ul>              
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- 弹出框 -->
+  <!-- Modal -->
+  <div class="modal fade bs-example-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">
+            <span aria-hidden="true">&times;</span>
+            <span class="sr-only">Close</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">修改名称</h4>
+        </div>
+        <div class="modal-body">
+
+          <input type="text" class="form-control" placeholder="Text input"></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 底部 -->
+  <div class="container-fluid footer footer-grayline">
+    <div class="row">
+      <ul class="col-md-12 inline-block-ul">
+        <li>
+          <a href="#">关于我们</a>
+        </li>
+        <li>|</li>
+        <li>
+          <a href="#">联系我们</a>
+        </li>
+        <li>|</li>
+        <li>
+          <a href="#">友情链接</a>
+        </li>
+        <li>|</li>
+        <li>
+          <a href="#">关于我们</a>
+        </li>
+        <li>|</li>
+        <li>
+          <a href="#">关于我们</a>
+        </li>
+      </ul>
+    </div>
+    <div class="row">
+      <div class="col-md-12">Copyright @ 2011-2015 湖南领信教育网络发展有限公司版权所有 湘ICP备14001031号</div>
+    </div>
+  </div>
+  <!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+  <script type="text/JavaScript" src="space-footer-css.js"></script>
+  <!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+</body>
+</html>

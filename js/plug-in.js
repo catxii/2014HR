@@ -68,8 +68,7 @@ $(function(){
  			$(".open-all-tree").text("全部展开");
  		};
  	});
-
- 	$(".sub-click-area").click(function(){
+ 	$(document).on('click','.sub-click-area',function(){
  		if( $(this).closest("li").children(".tree-sub").is(":hidden") ){
  			$(this).closest("li").children(".tree-sub").show();
  			$(this).parent("a").children(".icon-circle-plus").addClass("icon-circle-minus");
@@ -251,4 +250,51 @@ $(function(){
 	// var examCheck = $(".singlecheck input:checkbox");
 	// choseAll(examChose,examCheck);
 
+	// 圈子效果
+	$(".panel-body").on("click",".watch",function(){
+		if( $(this).find(".icon-heart").hasClass("gray") ){
+			$(this).find(".icon-heart").addClass("red").removeClass("gray");
+			$(this).find(".gz").text("取消关注");
+		}else{
+			$(this).find(".icon-heart").addClass("gray").removeClass("red");
+			$(this).find(".gz").text("关注");
+		}
+	});
+	$(".table-pepole-list").on("click","tr",function(){
+		$(this).not( $("tr:first") ).addClass("active").siblings().removeClass("active");
+	});
+	$(".table-pepole-list").on("click",".title td a",function(){
+		$(".table-pepole-list .title").next("tr").addClass("active").siblings().removeClass("active");
+	});
+
+	function tabChangeBox(tabHead,tabPane){
+		$(tabHead).click(function(){
+			$(this).parent().addClass("current").siblings().removeClass("current");
+			var tabIndex = $(this).parent().index() ;
+			$(tabPane).eq(tabIndex).show().siblings( tabPane ).hide();
+		})
+	}
+	tabChangeBox( ".tab-header-ul li a",".tab-panel-body" );
+
+	$(".btn-batch-del").click(function(){
+		$(".batch-box").show();
+		$(this).parent().parent().hide();
+		$(".batch-check").show();
+	})
+	$(".btn-batch-cancel").click(function(){
+		$(".batch-box").hide();
+		$(".btn-batch-del").parent().parent().show();
+		//$(".chose-all-batch-check").prop("checked", false);
+		//$(".batch-check").prop("checked", false);
+		$(".batch-check").hide();
+	})
+	/*
+	$(".chose-all-batch-check").click(function(){
+		$(".batch-check").prop("checked",$(this).is(":checked"));
+	})
+	$(".panel-body").on("click",".batch-check",function(){
+		var checkAll = ($(".batch-check:checked").length == $(".batch-check").length);
+		$(".chose-all-batch-check").prop("checked", checkAll);
+	})
+	*/
 })

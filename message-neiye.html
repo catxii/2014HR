@@ -117,7 +117,13 @@
       <div class="panel-body container-fluid">
         
         <ul class="inline-block-ul-mid" style="padding-left:0;">
-          <li><a href="#" class="btn btn-default btn-sm">批量删除</a></li>
+          <li><a href="javascript:" class="btn btn-default btn-sm btn-batch-del">批量删除</a></li>
+        </ul>
+
+        <ul class="inline-block-ul-mid batch-box clearfix" >
+          <li class="title">请选择需要删除的私信</li>
+          <li><label><input type="checkbox" class="chose-all-batch-check"> 全选本页</label></li>
+          <li class="pull-right"><a href="javascript:" class="btn btn-primary btn-xs">确定</a> <a href="javascript:" class="btn btn-default btn-xs btn-batch-cancel">取消</a></li>
         </ul>
 
         <div class="send-box well">
@@ -145,6 +151,7 @@
                     <em>◆</em>
                     <i>◆</i>
                   </div>
+                  <input type="checkbox" class="batch-check" >
                   <a href="#" class="name">江海客XP：</a>
                   <a href="javascript:" style="margin-left:10px;" data-toggle="modal" data-target="#delmodal" class="btn btn-xs btn-danger pull-right icon-bin"></a>
                   <a href="javascript:" style="margin-left:10px;" data-toggle="modal" data-target="#delmodal" class="btn btn-xs btn-primary pull-right icon-share"></a>
@@ -189,6 +196,7 @@
                     <em>◆</em>
                     <i>◆</i>
                   </div>
+                  <input type="checkbox" class="batch-check" >
                   <a href="#" class="name">江海客XP：</a>
                   <a href="javascript:" style="margin-left:10px;" data-toggle="modal" data-target="#delmodal" class="btn btn-xs btn-danger pull-right icon-bin"></a>
                   <a href="javascript:" style="margin-left:10px;" data-toggle="modal" data-target="#delmodal" class="btn btn-xs btn-primary pull-right icon-share"></a>
