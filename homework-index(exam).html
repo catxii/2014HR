@@ -72,14 +72,14 @@
         <li><a href="#">高校课堂</a></li>
         <li><a href="#">资源库</a></li>
         <li>
-          <a href="#">作业布置 <span class="caret"></span></a></a>
+          <a href="#">作业布置 <span class="caret"></span></a>
           <ul class="sub">
             <li><a href="#">作业本布置</a></li>
             <li><a href="#">电子作业</a></li>
             <li><a href="#">随堂测试</a></li>
           </ul>
         </li>
-        <li><a href="#">题库管理 <span class="caret"></span></a></a>
+        <li><a href="#">题库管理 <span class="caret"></span></a>
           <ul class="sub">
             <li><a href="#">单题参考导入</a></li>
             <li><a href="#">多题批量导入</a></li>
@@ -161,27 +161,39 @@
                 </select>
               </div>
             </div>
-             <div class="form-group">
-              <label class="col-sm-2 control-label">指定小组：</label>
-              <div class="col-sm-9" >
-                <select class="select2-box col-md-12" multiple style="padding:0;">
-                  <option>XX小组</option>
-                  <option>XX小组</option>
-                  <option>XX小组</option>
-                </select>
-              </div>
-            </div>
             <div class="form-group">
-              <label class="col-sm-2 control-label">作业说明：</label>
+              <label class="col-sm-2 control-label">发布班级：</label>
               <div class="col-sm-9" >
-                <div class="ckedit" style="border:1px solid #ccc; min-height:150px;"></div>
+                <ul class="list-inline">
+                  <li>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 10分钟
+                    </label>
+                  </li>
+                  <li>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 15分钟
+                    </label>
+                  </li>
+                  <li>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 30分钟
+                    </label>
+                  </li>
+                  <li>
+                    <label class="radio-inline">
+                      <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" style="top:14px;"> 
+                      <input type="text" class="form-control" placeholder="默认显示节名称">
+                    </label>
+                  </li>
+                </ul>
               </div>
             </div>
           </form>
 
           <div class="form-group text-center">
             <div class="col-sm-12">
-              <button type="submit" class="btn btn-primary btn-home-next" data-index="1">提交，下一步</button>
+              <button type="submit" class="btn btn-warning btn-home-next" data-index="1">提交，下一步</button>
             </div>
           </div>
 
@@ -197,7 +209,7 @@
           <div class="position-fix left">
 
             <div class="no-exam-area">
-              <span class="glyphicon glyphicon-leaf"></span> 暂无题目，在右侧搜索并添加题目吧
+              <span class="glyphicon glyphicon-leaf"></span> 暂无题目，在右侧搜索并添加题目吧 <a href="javascript:void(0)" class="btn btn-warning btn-xs"><span class="icon-playing-dices"></span>随机 5 道题</a>
             </div>
             <div class="single-exam-question">
               
@@ -350,7 +362,7 @@
 
           </div>
 
-          <button type="submit" class="btn btn-primary btn-home-next bz-next-fix-top" data-index="2">提交，下一步</button>
+          <button type="submit" class="btn btn-warning btn-home-next bz-next-fix-top" data-index="2">提交，下一步</button>
 
         </div>
 
@@ -378,7 +390,7 @@
 
           <div class="form-group text-center">
             <div class="col-sm-12">
-              <button type="submit" class="btn btn-primary btn-home-next" data-index="3">确定发布</button>
+              <button type="submit" class="btn btn-warning btn-home-next" data-index="3">确定发布</button>
             </div>
           </div>
 

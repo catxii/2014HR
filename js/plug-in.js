@@ -69,12 +69,12 @@ $(function(){
  		};
  	});
  	$(document).on('click','.sub-click-area',function(){
+ 		$(".add-person-button").removeClass("disabled");
  		if( $(this).closest("li").children(".tree-sub").is(":hidden") ){
  			$(this).closest("li").children(".tree-sub").show();
  			$(this).parent("a").children(".icon-circle-plus").addClass("icon-circle-minus");
  			$(this).parent("a").children(".glyphicon-folder-close").addClass("glyphicon-folder-open");
  			$(".open-all-tree").text("全部折叠").addClass("active");
- 			$(".add-person-button").removeClass("disabled");
  		}else{
  			$(this).closest("li").children(".tree-sub").hide();
  			$(this).parent("a").children(".icon-circle-plus").removeClass("icon-circle-minus");
@@ -125,7 +125,7 @@ $(function(){
  	});
  	// 日期选择器
  	$('.form_datetime').datetimepicker({
-        //language:  'fr',
+        language:  'fr',
         weekStart: 1,
         todayBtn:  1,
 		autoclose: 1,
@@ -297,4 +297,8 @@ $(function(){
 		$(".chose-all-batch-check").prop("checked", checkAll);
 	})
 	*/
+
+	var navigationtoplight = $("#navigation-top-menu").val();
+	$("#"+navigationtoplight).parent().find("li").removeClass("active");
+	$("#"+navigationtoplight).addClass("active");
 })
