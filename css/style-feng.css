@@ -14,7 +14,7 @@ a:hover{color:#ffae00;}
 }
 .text-space{
 	overflow:hidden;
-	width:95%;
+	width:100%;
 	text-overflow:ellipsis;
 	white-space:nowrap;
 	course:hand;
@@ -373,7 +373,7 @@ a.list-grouping-fen-more{
 .num-list li span{
 	color:#FFF; font-size:12px;margin-left:15px;  text-shadow:none}
 .class-index-container{
-	margin-top:10px;}
+	margin-top:20px;}
 .class-index-container .panel-body{
 	padding:10px 5px;}
 .class-index-container .row,.class-index-container .thumbnail{
@@ -461,6 +461,15 @@ a.list-grouping-fen-more{
 	margin-top:10px;
 	font-size:12px;
 	color:#DDD;}
+.zj-group{
+	border:none;
+	margin-bottom:0px;
+	background:none;
+	box-shadow:none;
+	border-radius:0px;
+	margin-top:10px;
+	font-size:12px;
+	color:#333!important;}
 .panel-class-photo .label{
 	font-size:18px;}
 .class-index-left .list-group .list-group-item{
@@ -524,6 +533,98 @@ ul.dongtai-say-reply li.dongtai-media a.media-reply:hover{
 .class-tongzhi-content .list-group-item{
 	background:#408080;
 	border-radius:3px;}
+/*班级展示页-日志*/
+.class-rizhi-list .list-group{ border-radius:0px; box-shadow:none; }
+.class-rizhi-list .list-group .list-group-item{border-bottom:1PX dashed #DDD; margin-bottom:1px;}
+.class-rizhi-list-classification{
+	padding:0px 5px;}
+.class-rizhi-list-classification .panel-heading{
+	height:40px; width:100%; background:#CCC; border-radius:0px; padding:10px 0; margin-top:10px; text-align:center; font-size:16px;}
+.panel-heading-border{ border-left:3px solid #FFAE00; width:100%; display:block;}
+.class-rizhi-list-classification ul.list-group{margin-bottom:0px!important;}
+.class-rizhi-list-classification > .list-group{border-radius:0px; box-shadow:none;}
+.class-rizhi-list-classification .list-group{border-radius:0px; box-shadow:none; }
+.class-rizhi-list-classification .panel-collapse .list-group-item{padding:0px;}
+.class-rizhi-list-classification .panel-collapse .list-group-item a:hover{
+	background:#DDD; display:block;  border-left:2px solid #FFAE00; color:#FFAE00;}
+.class-rizhi-list-classification .panel-collapse .list-group-item a{
+	 display:block;color:#A1A1A1;  line-height:25px; text-align:center; padding:5px 0; }
+.class-rizhi-list .thumbnail h4{
+	margin:0px; text-align:center; color:rgba(0, 168, 86, 1)}
+.class-rizhi-list .thumbnail p{
+	margin:10px 0;} 
+.class-rizhi-list-img{
+	margin-bottom:10px;}
+.btn-group-all{
+	margin:10px 0;}
+.btn-group-all .btn{
+	line-height:24px;}
+	
+.class-rizhi-list-classification .btn-group-vertical .btn{
+	line-height:30px;}	
+.class-homework-list .icon-star{
+	color:#F00; font-size:12px; margin-right:10px;}
+.homework-line{
+	height:3px; background:#999; display:block;}
+
+/*课程表*/
+.class-rizhi-list .syllabus .panel-default{ border-radius:0px; box-shadow:none!important;}
+.class-rizhi-list .syllabus .panel-body{padding:0px 0px;}
+.class-rizhi-list .syllabus .table-syllabus .title-syllabus{background:#ccc!important; height:40px;}
+.class-rizhi-list .syllabus .table-syllabus td{text-align:center!important;}
+.class-rizhi-list .syllabus .table-syllabus .btn-other{
+	 font-size:14px;}
+
+/*普通按钮*/
+.btn-other {
+  color: #999;
+  background-color:#FFF;
+  border-color: #ccc;
+  border:3px solid #E6E6E6;
+  font-size:16px;
+  font-weight:300;
+  padding:4px 10px;
+}
+.btn-other:hover,
+.btn-other:focus,
+.btn-other:active,
+.btn-other.active,
+.open > .dropdown-toggle.btn-other {
+  color: #000;
+  background-color:rgba(0,0,0,0.1);
+  border-color: #adadad;
+}
+.btn-other:active,
+.btn-other.active,
+.open > .dropdown-toggle.btn-other {
+  background-image: none;
+}
+.btn-other.disabled,
+.btn-other[disabled],
+fieldset[disabled] .btn-other,
+.btn-other.disabled:hover,
+.btn-other[disabled]:hover,
+fieldset[disabled] .btn-other:hover,
+.btn-other.disabled:focus,
+.btn-other[disabled]:focus,
+fieldset[disabled] .btn-other:focus,
+.btn-other.disabled:active,
+.btn-other[disabled]:active,
+fieldset[disabled] .btn-other:active,
+.btn-other.disabled.active,
+.btn-other[disabled].active,
+fieldset[disabled] .btn-other.active {
+  background-color: #fff;
+  border-color: #ccc;
+}
+.btn-other .badge {
+  color: #fff;
+  background-color: #333;
+}
+	
+/*班级展示页-作业*/
+.homework-line{
+	display:block; background:#DDD; width:100%; height:3px; margin:5px 0;}
 /*班级权限*/
 label.checkbox-qx{
 	margin-right:15px; display:block;}
@@ -703,7 +804,7 @@ ul.qx-thead-body li{ border:1px solid #E8E8E8;padding:10px 0px;}
 	 margin:0 0 0 15px; line-height:25px; font-size:16px; color:#454545}
 
 .class-index-left .panel-class-photo .panel-student .label{
-	font-size:12px; padding:0.05em 0.59em 0.05em; font-weight:200; margin-left:20px; background:#FC7272; box-shadow:1px 2px 2px #E0DFDF}	
+	font-size:12px; padding:0.05em 0.59em 0.05em; font-weight:200; float:right; text-align:center; background:#FC7272; box-shadow:1px 2px 2px #E0DFDF; margin-top:5px;}	
 .class-index-left .panel-class-photo .panel-student .list-group{
 	padding:0px 0px; }
 .class-index-left .panel-class-photo .panel-student .list-group-item{
@@ -724,3 +825,36 @@ li.nav-bottom-navs > a{position:relative; border-radius:4px!important;}
 
 .panel-class-photo .name-block-center{
 	font-size:10px;}
+.teacher-index-img{
+	margin-top:10px; margin-left:0px; margin-right:0px; padding:0px;}
+.teacher-index-img .thumbnail{
+	border:0px; box-shadow:none;}
+.teacher-index-img h4{
+	margin:0px; }
+/*学校空间*/
+.school-container{
+	width:1170px; margin:auto; border-radius:0px 0px 80px 0px; background:url(../img/bga-school.png) center;}
+.head-school{border-radius:0px 0px 80px 0px;}
+h3.schoolname{font-weight:800; text-shadow:2px 2px 2px #000000!important; margin-left:20px;}
+.school-ico{
+	position:absolute; z-index:999;top:-20px; left:-20px;}
+.school-elegant{border:6px solid #fff3ae;  padding:0px!important; border-radius:4px;}
+.school-elegant > .panel-heading{
+	background:#fff3ae; height:26px; color:#ab9311; font-size:16px; font-weight:600; text-align:center; border-radius:0px;}
+.school-elegant > .panel-heading h4{
+	padding:0px;}
+
+.school-user{border:6px solid #DDD;  padding:0px!important; border-radius:4px;}
+.school-user > .panel-heading{
+	background:#DDD; height:26px; color:#999; font-size:16px; font-weight:600; text-align:center; border-radius:0px;}
+.school-username{
+	height:116px; margin-top:20px; width:100%; background:#DDD; color:#333; border-radius:5px;text-overflow:ellipsis;
+	padding:6px; font-size:12px; line-height:20px;
+	}
+.school-deng{
+	margin-bottom:10px!important;}
+.school-group{
+	border-radius:0px;
+	box-shadow:none;
+	margin-bottom:0px;
+}
