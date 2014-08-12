@@ -538,6 +538,11 @@ ul.dongtai-say-reply li.dongtai-media a.media-reply:hover{
 .class-rizhi-list .list-group .list-group-item{border-bottom:1PX dashed #DDD; margin-bottom:1px;}
 .class-rizhi-list-classification{
 	padding:0px 5px;}
+/*日志详情页*/
+.panel-class-photo .school-user > .panel-heading h4{
+	margin-left:40px; font-size:20px; font-weight:800;}
+
+
 .class-rizhi-list-classification .panel-heading{
 	height:40px; width:100%; background:#CCC; border-radius:0px; padding:10px 0; margin-top:10px; text-align:center; font-size:16px;}
 .panel-heading-border{ border-left:3px solid #FFAE00; width:100%; display:block;}
@@ -549,31 +554,49 @@ ul.dongtai-say-reply li.dongtai-media a.media-reply:hover{
 	background:#DDD; display:block;  border-left:2px solid #FFAE00; color:#FFAE00;}
 .class-rizhi-list-classification .panel-collapse .list-group-item a{
 	 display:block;color:#A1A1A1;  line-height:25px; text-align:center; padding:5px 0; }
+.class-rizhi-list .thumbnail{
+	box-shadow:3px 3px 1px rgba(0, 0, 0, 0.055)}
 .class-rizhi-list .thumbnail h4{
 	margin:0px; text-align:center; color:rgba(0, 168, 86, 1)}
 .class-rizhi-list .thumbnail p{
-	margin:10px 0;} 
+	margin:10px 0;}
+.class-rizhi-list-classification .well{ padding:0px 5px;}
+.photo-list-choose{ margin:10px 0; height:100%;border-radius:6px; background-color:rgba(0, 0, 0, 0.05);}
+.photo-list-choose .arrow-left em{ color:#ddd;}
+.photo-list-choose .arrow-left i{
+	color:#E4E4E4;} 
 .class-rizhi-list-img{
 	margin-bottom:10px;}
 .btn-group-all{
-	margin:10px 0;}
+	margin:5px 0;}
 .btn-group-all .btn{
 	line-height:24px;}
-	
+.class-rizhi-list-classification .sidebar.affix{top:75px;}	
 .class-rizhi-list-classification .btn-group-vertical .btn{
 	line-height:30px;}	
 .class-homework-list .icon-star{
-	color:#F00; font-size:12px; margin-right:10px;}
+	color:#FFF; font-size:12px; margin-right:10px;}
 .homework-line{
 	height:3px; background:#999; display:block;}
+.class-homework-list .message-single-box:hover{
+	 border:1px dashed #DDD; border-radius:6px; background:#F1F1F1;}
 
 /*课程表*/
 .class-rizhi-list .syllabus .panel-default{ border-radius:0px; box-shadow:none!important;}
+
 .class-rizhi-list .syllabus .panel-body{padding:0px 0px;}
 .class-rizhi-list .syllabus .table-syllabus .title-syllabus{background:#ccc!important; height:40px;}
 .class-rizhi-list .syllabus .table-syllabus td{text-align:center!important;}
 .class-rizhi-list .syllabus .table-syllabus .btn-other{
 	 font-size:14px;}
+.course-time{font-size:14px; text-align:center;  line-height:38px; z-index:999; padding:0px 40px;position:absolute; top:7px;border-radius: 10px;
+  box-shadow: 3px 3px 3px #ccc;
+  
+  
+  z-index:999;
+  background: white;}
+
+
 
 /*普通按钮*/
 .btn-other {
@@ -844,9 +867,9 @@ h3.schoolname{font-weight:800; text-shadow:2px 2px 2px #000000!important; margin
 .school-elegant > .panel-heading h4{
 	padding:0px;}
 
-.school-user{border:6px solid #DDD;  padding:0px!important; border-radius:4px;}
+.school-user{border-bottom:6px solid #DDD; border-left:6px solid #DDD; border-right:6px solid #DDD;  padding:0px!important; border-radius:4px;}
 .school-user > .panel-heading{
-	background:#DDD; height:26px; color:#999; font-size:16px; font-weight:600; text-align:center; border-radius:0px;}
+	background:#DDD; line-height:46px; padding:4px 0px;color:#999; font-size:18px; font-weight:600; text-align:center; border-radius:0px;}
 .school-username{
 	height:116px; margin-top:20px; width:100%; background:#DDD; color:#333; border-radius:5px;text-overflow:ellipsis;
 	padding:6px; font-size:12px; line-height:20px;

@@ -13,25 +13,7 @@
   <!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
   <script type="text/JavaScript" src="space-css.js"></script>
   <!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
-   <script>
-window.onload=function(){
-       $("tr:nth-child(n+1) td a").click(function(){
-    var titleIndex = $(this).parent().index();
-    
-    $(".class-rizhi-list .syllabus .table-syllabus").find("td").each(function(i) {
 
-      if (i%8 == titleIndex) {
-        
-        $(this).find(".btn").addClass("btn-primary").removeClass("btn-other").parent().siblings().find(".btn").removeClass("btn-primary");
-      }
-    });		
-	});
-}
-
-
-
-
-   </script>
 
   <![endif]-->
 </head>
@@ -137,114 +119,13 @@ window.onload=function(){
     <div class="col-md-12 class-index-center">
    <div class="panel panel-default panel-class-photo" style="margin-bottom:0px;">
   <div class="panel-body school-user" style="">
-  <div class="panel-heading" style="position:relative;">
-  明日课程<div class="course-time" style="float:right;">
-                 <a>2014-02-02</a><a>周三</a>
-                
-              </div>
+  <div class="panel-heading" style="text-align:left;">
+  <h4>我的作业</h4>
  
    
    </div>
-   <div class="panel-body col-md-12 class-rizhi-list">
+   <div class="panel-body col-md-12 class-rizhi-list" style="padding:15px; ">
    
-   <div class="col-md-12 syllabus"> 
-   
-  	<div class="panel panel-default">
-	  
-	  <div class="panel-body">
-      
-      
-         <div class="table-responsive">
-
-	    <table class="table table-syllabus table-bordered table-striped">
-            
-	    	<tr class="title">
-	    		<td></td>
-	    		<td><a href="#" id="mon-ico">星期一</a></td>
-	    		<td><a href="#" id="Tue-ico">星期二</a></td>
-	    		<td><a href="#" id="Wed-ico">星期三</a></td>
-	    		<td><a href="#" id="Thu-ico">星期四</a></td>
-	    		<td><a href="#" id="Fri-ico">星期五</a></td>
-	    		<td><a href="#" id="Sat-ico">星期六</a></td>
-	    		<td><a href="#" id="Sun-ico">星期日</a></td>
-	    	</tr>
-	    	<tr>
-	    		<td class="title">第一节课</td>
-	    		<td><button type="button" class="btn btn-other ">语文</button></td>
-	    		<td><button type="button" class="btn btn-other ">语文</button></td>
-	    		<td><button type="button" class="btn btn-other ">语文</button></td>
-	    		<td><button type="button" class="btn btn-other ">语文</button></td>
-	    		<td><button type="button" class="btn btn-other ">语文</button></td>
-	    		<td><button type="button" class="btn btn-other ">语文</button></td>
-	    		<td><button type="button" class="btn btn-other ">语文</button></td>
-	    	</tr>
-	    	<tr>
-	    		<td class="title">第二节课</td>
-	    		<td><button type="button" class="btn btn-other ">语文</button></td>
-	    		<td><button type="button" class="btn btn-other ">语文</button></td>
-	    		<td><button type="button" class="btn btn-other ">语文</button></td>
-	    		<td><button type="button" class="btn btn-other ">语文</button></td>
-	    		<td><button type="button" class="btn btn-other ">语文</button></td>
-	    		<td><button type="button" class="btn btn-other ">语文</button></td>
-	    		<td><button type="button" class="btn btn-other ">语文</button></td>
-	    	</tr>
-	    	<tr>
-	    		<td class="title">第三节课</td>
-	    		<td><button type="button" class="btn btn-other ">语文</button></td>
-	    		<td><button type="button" class="btn btn-other ">语文</button></td>
-	    		<td><button type="button" class="btn btn-other ">语文</button></td>
-	    		<td><button type="button" class="btn btn-other ">语文</button></td>
-	    		<td><button type="button" class="btn btn-other ">语文</button></td>
-	    		<td><button type="button" class="btn btn-other ">语文</button></td>
-	    		<td><button type="button" class="btn btn-other ">语文</button></td>
-	    	</tr>
-	    	<tr>
-	    		<td class="title">第四节课</td>
-	    		<td><button type="button" class="btn btn-other ">语文</button></td>
-	    		<td><button type="button" class="btn btn-other ">语文</button></td>
-	    		<td><button type="button" class="btn btn-other ">语文</button></td>
-	    		<td><button type="button" class="btn btn-other ">语文</button></td>
-	    		<td><button type="button" class="btn btn-other ">语文</button></td>
-	    		<td><button type="button" class="btn btn-other ">语文</button></td>
-	    		<td><button type="button" class="btn btn-other ">语文</button></td>
-	    	</tr>
-	    	<tr>
-	    		<td class="title">第五节课</td>
-	    		<td><button type="button" class="btn btn-other ">语文</button></td>
-	    		<td><button type="button" class="btn btn-other ">语文</button></td>
-	    		<td><button type="button" class="btn btn-other ">思品</button></td>
-	    		<td><button type="button" class="btn btn-other ">语文</button></td>
-	    		<td><button type="button" class="btn btn-other ">语文</button></td>
-	    		<td><button type="button" class="btn btn-other ">思想品德</button></td>
-	    		<td><button type="button" class="btn btn-other ">语文</button></td>
-	    	</tr>
-	    	<tr>
-	    		<td class="title">第六节课</td>
-	    		<td><button type="button" class="btn btn-other ">数学</button></td>
-	    		<td><button type="button" class="btn btn-other ">思想品德</button></td>
-	    		<td><button type="button" class="btn btn-other ">英语</button></td>
-	    		<td><button type="button" class="btn btn-other ">语文</button></td>
-	    		<td><button type="button" class="btn btn-other ">思想品德</button></td>
-	    		<td><button type="button" class="btn btn-other ">思想品德</button></td>
-	    		<td><button type="button" class="btn btn-other ">语文</button></td>
-	    	</tr>
-	    	<tr>
-	    		<td class="title">第七节课</td>
-	    		<td><button type="button" class="btn btn-other ">物理</button></td>
-	    		<td><button type="button" class="btn btn-other ">语文</button></td>
-	    		<td><button type="button" class="btn btn-other ">语文</button></td>
-	    		<td><button type="button" class="btn btn-other ">历史</button></td>
-	    		<td><button type="button" class="btn btn-other ">语文</button></td>
-	    		<td><button type="button" class="btn btn-other ">地理</button></td>
-	    		<td><button type="button" class="btn btn-other ">语文</button></td>
-	    	</tr>
-	    </table>
-        </div>
-	  </div>
-	</div>
-
-      
-  </div>
    
     
     
