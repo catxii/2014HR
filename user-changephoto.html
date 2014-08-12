@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../favicon.ico">
+
+  <!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+  <script type="text/JavaScript" src="space-css.js"></script>
+  <!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+
+  <title>领信样式模板</title>
+
+</head>
+<body class="fixed-top-body" ng-app="">
+<div class="navbar navbar-zhijiao navbar-green navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#" class="navbar-brand logo-small" alt="领信logo"></a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active">
+          <a href="#">教学空间</a>
+        </li>
+        <li>
+          <a href="#about">个人空间</a>
+        </li>
+        <li>
+          <a href="#contact">班级空间</a>
+        </li>
+        <li>
+          <a href="#contact">我的班级</a>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">张学友 [ 退出 ]</a></li>
+        <li><a href="#"><span class="icon-t-shirt"></span> 装扮</a></li>
+        <li class="dropdown">
+          <a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class=" icon-cogwheel"></span> 设置 <span class="caret"></span></a>
+          <ul role="menu" class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+
+    </div>
+
+
+    <!--/.nav-collapse --> 
+  </div>
+</div>
+
+<div class="container-fluid banner-fluid-bg">
+    <div class="container top-banner-small">
+      <ul class="inline-block-ul second-nav-bar-bottom">
+        <li class="current"><a href="#">主页</a></li>
+        <li><a href="#">高校课堂</a></li>
+        <li><a href="#">资源库</a></li>
+        <li>
+          <a href="#">作业布置 <span class="caret"></span></a>
+          <ul class="sub">
+            <li><a href="#">作业本布置</a></li>
+            <li><a href="#">电子作业</a></li>
+            <li><a href="#">随堂测试</a></li>
+          </ul>
+        </li>
+        <li><a href="#">题库管理 <span class="caret"></span></a>
+          <ul class="sub">
+            <li><a href="#">单题参考导入</a></li>
+            <li><a href="#">多题批量导入</a></li>
+            <li><a href="#">题库预览修改</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+</div>
+
+<div class="container">
+
+  <div class="col-sm-2">
+    <div class="list-group">
+      <a href="#" class="list-group-item "><span class="glyphicon glyphicon-user"></span> 个人设置</a>
+      <a href="#" class="list-group-item active"><span class="icon-vcard"></span> 修改头像</a>
+      <a href="#" class="list-group-item"><span class="icon-shield"></span> 安全中心</a>
+      <a href="#" class="list-group-item"><span class="glyphicon glyphicon-envelope"></span> 私信</a>
+    </div>
+  </div>
+
+  <div class="col-sm-10">
+
+
+    <div class="panel panel-default">
+      <div class="panel-heading tab-header">
+        <ul class="inline-block-ul navigation-inline-ul" >
+            <li class="current"><a href="#">修改头像</a></li>
+         </ul>
+         <!-- <ul class="inline-block-ul position-right-top-block top-head-ul" >
+            <li>
+                <a class="btn btn-sm btn-warning"  href="#">
+                  <span class="icon-unshare"></span> 返回
+                </a>
+            </li>
+         </ul> -->
+      </div>
+      <div class="panel-body container-fluid">
+        
+        <div class="row">
+          <div class="col-md-4 col-md-offset-1">
+            <h4>当前头像：</h4>
+            <img src="img/6f0b532563af000.jpg" alt="..." class="img-thumbnail">
+          </div>
+          <div class="col-md-5">
+            <h4>上传新头像：</h4>
+            <label class="btn btn-primary btn-sm">
+              <span class="glyphicon glyphicon-picture"></span>
+              <span >选择本地图片...</span>
+              <input type="file"  id="picupload" name="filename" style="display:none;">
+            </label>
+            <div id="imgshow">
+            </div>
+            <button style="margin:10px 0px 20px 0px; display:none;" class="btn btn-warning img-upload" type="submit" data-original-title="" title="">提交</button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+  </div>
+</div>
+
+
+<!-- 弹出框 -->
+
+
+<!-- 删除弹出框 -->
+<div class="modal fade bs-example-modal-sm delmodal" id="delmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">删除全部</h4>
+      </div>
+      <div class="modal-footer btn-center" style="border-top:none">
+        <div class="nr text-left" style="margin-bottom:10px;">
+        删除对话内容将不可恢复，确定要删除与 江海客XP 之间的所有对话？
+        </div>
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-danger">删除</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- 底部 -->
+<div class="container-fluid footer footer-grayline">
+    <div class="row">
+      <ul class="col-md-12 inline-block-ul">
+        <li><a href="#">关于我们</a></li>
+        <li>|</li>
+        <li><a href="#">联系我们</a></li>
+        <li>|</li>
+        <li><a href="#">友情链接</a></li>
+        <li>|</li>
+        <li><a href="#">关于我们</a></li>
+        <li>|</li>
+        <li><a href="#">关于我们</a></li>
+      </ul>
+    </div>
+    <div class="row">
+        <div class="col-md-12">Copyright @ 2011-2015 湖南领信教育网络发展有限公司版权所有 湘ICP备14001031号</div>
+    </div>
+</div>  
+
+ 
+<!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+<script type="text/JavaScript" src="space-footer-css.js"></script>
+<!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+
+  <script type="text/javascript">
+
+    $(function(){
+        var result = document.getElementById("imgshow");
+        var input = document.getElementById("picupload");
+        if(typeof FileReader === 'undefined'){
+          result.innerHTML = "抱歉，你的浏览器不支持 FileReader";
+          input.setAttribute('disabled','disabled');
+          }else{
+          input.addEventListener('change',readFile,false);
+        }
+        function readFile(){
+          var file = this.files[0];
+          if(!/image\/\w+/.test(file.type)){
+          alert("请确保文件为图像类型");
+          return false;
+        }
+        var reader = new FileReader();
+          reader.readAsDataURL(file);
+          reader.onload = function(e){
+          result.innerHTML = '<img src="'+this.result+'" alt=""/>'
+        }
+        }
+        $("#picupload").change(function(){
+          $(".img-upload").show();
+        })
+
+    })
+  </script>
+
+</body>
+</html>
