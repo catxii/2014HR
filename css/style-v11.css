@@ -228,9 +228,6 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 .table .table-header {
   background: #e7e7e7;
 }
-.dropdown-menu li {
-  display: block;
-}
 /*list groups*/
 .list-group-item.active,
 .list-group-item.active:hover,
@@ -1209,8 +1206,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 .pageoffice-info-on {
   top: 30px;
 }
-.alert-success,
-.alert-danger {
+.alert-success {
   border-radius: 0;
   left: 0;
   position: fixed;
@@ -1690,11 +1686,4 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 }
 .wrong-form .text-danger {
   display: block!important;
-}
-.red-bg {
-  background: red;
-  border-radius: 5px;
-  color: white;
-  font-size: 10px;
-  padding: 0 3px;
 }

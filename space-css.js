@@ -36,8 +36,21 @@ var filegroup = [
 	<script src='https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js'></script>\
 	<script src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js'>\
 	</script>\
-	<![endif]-->"
+	<![endif]-->",
 
+	//当为IE6~9的
+	"<!--[if IE 6]>\
+	<script type='text/javascript' src='js/downbrowser.js'></script>\
+	<![endif]-->\
+	<!--[if IE 7]>\
+	<script type='text/javascript' src='js/downbrowser.js'></script>\
+	<![endif]-->\
+	<!--[if IE 8]>\
+	<script type='text/javascript' src='js/downbrowser.js'></script>\
+	<![endif]-->\
+	<!--[if IE 9]>\
+	<script type='text/javascript' src='js/downbrowser.js'></script>\
+	<![endif]-->"
 ]
 
 loadJS(filegroup);
