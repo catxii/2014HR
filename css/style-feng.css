@@ -1,5 +1,6 @@
 ﻿body{font-family:"微软雅黑";}
-
+.container-min{min-height:900px;}
+.content-body-min{min-height:500px;}
 li{list-style: none;}
 a{color:#4c4c4c;}
 a:hover{color:#ffae00;}
@@ -23,9 +24,8 @@ a:hover{color:#ffae00;}
    *display:inline;
 -o-text-overflow:ellipsis;
 vertical-align: middle;
-
-
 }
+
 /*button*/
 
 .btn-default > span{
@@ -370,6 +370,7 @@ a.list-grouping-fen-more{
 	color:#2ecc71; text-decoration:none;}
 .num-list li h3{
 	padding:0px; color:#FFF;  text-shadow:1px 1px 1px #000;} 
+
 .num-list li span{
 	color:#FFF; font-size:12px;margin-left:15px;  text-shadow:none}
 .class-index-container{
@@ -540,9 +541,18 @@ ul.dongtai-say-reply li.dongtai-media a.media-reply:hover{
 	padding:0px 5px;}
 /*日志详情页*/
 .panel-class-photo .school-user > .panel-heading h4{
-	margin-left:40px; font-size:20px; font-weight:800;}
-
-
+	 font-size:20px; font-weight:800; color:#4c4c4c; float:left; margin-left:20px;}
+.panel-class-photo .school-user > .panel-heading span{ font-size:14px; margin-left:10px;}
+.class-rizhi-list-line{
+	line-height:20px;
+	position:relative;
+	}
+.bz-next-ab-top{
+	position:absolute;
+	top:12px;
+	right:5px;}	
+.class-rizhi-list .panel{
+	box-shadow:none;}
 .class-rizhi-list-classification .panel-heading{
 	height:40px; width:100%; background:#CCC; border-radius:0px; padding:10px 0; margin-top:10px; text-align:center; font-size:16px;}
 .panel-heading-border{ border-left:3px solid #FFAE00; width:100%; display:block;}
@@ -565,8 +575,19 @@ ul.dongtai-say-reply li.dongtai-media a.media-reply:hover{
 .photo-list-choose .arrow-left em{ color:#ddd;}
 .photo-list-choose .arrow-left i{
 	color:#E4E4E4;} 
+/*班级选择页面*/
 .class-rizhi-list-img{
-	margin-bottom:10px;}
+	padding:10px 10px;}
+.class-rizhi-list .row{
+	margin-bottom:15px;}
+.class-rizhi-list-img .thumbnail{
+	padding:10px 0; margin:0px; background:#FCF8E3; border:1px solid #FAEBCC}
+.class-rizhi-list-img .caption{ padding:9px 9px 0px 9px;}
+.class-rizhi-list-img .thumbnail a{
+	border:none; text-align:center; color:#8A6D3B; font-size:12px;}
+.class-rizhi-list-img .thumbnail p{}	
+.class-rizhi-list-img .thumbnail .caption h5{
+	margin:0px;}
 .btn-group-all{
 	margin:5px 0;}
 .btn-group-all .btn{
@@ -574,13 +595,33 @@ ul.dongtai-say-reply li.dongtai-media a.media-reply:hover{
 .class-rizhi-list-classification .sidebar.affix{top:75px;}	
 .class-rizhi-list-classification .btn-group-vertical .btn{
 	line-height:30px;}	
-.class-homework-list .icon-star{
-	color:#FFF; font-size:12px; margin-right:10px;}
 .homework-line{
 	height:3px; background:#999; display:block;}
 .class-homework-list .message-single-box:hover{
-	 border:1px dashed #DDD; border-radius:6px; background:#F1F1F1;}
+	 border:1px dashed #ccc; border-radius:6px; background:#DDD;}
 
+
+
+
+
+
+/*班级成员展示页*/
+.class-group-list .icon-cup a{ font-size:18px; font-weight:800; color:#333; margin-left:3px; }
+.class-group-list .icon-cup a:hover{ font-size:18px; font-weight:800; color:#333; margin-left:3px; text-decoration:none;}
+.class-group-list > .panel-heading > span{
+	font-size:16px!important;color:#FFAE00!important;}
+.class-group-list .table{
+	margin-bottom:0px;}
+.class-group-list .col-sm-12{
+	padding:0px;}	
+.class-group-list-content{padding:0px!important; min-height:0px; display:none;}	
+.class-group-list-content .table .label{
+	font-size:11px; color:#FFF; margin-left:5px;}
+
+.average-group{
+	font-size:14px; font-weight:600;color:#666; margin-bottom:6px;}
+.average-group span{margin-left:5px!important;}	
+	
 /*课程表*/
 .class-rizhi-list .syllabus .panel-default{ border-radius:0px; box-shadow:none!important;}
 
@@ -648,6 +689,8 @@ fieldset[disabled] .btn-other.active {
 /*班级展示页-作业*/
 .homework-line{
 	display:block; background:#DDD; width:100%; height:3px; margin:5px 0;}
+.homework-list-sub{display:none;}
+
 /*班级权限*/
 label.checkbox-qx{
 	margin-right:15px; display:block;}
@@ -867,9 +910,9 @@ h3.schoolname{font-weight:800; text-shadow:2px 2px 2px #000000!important; margin
 .school-elegant > .panel-heading h4{
 	padding:0px;}
 
-.school-user{border-bottom:6px solid #DDD; border-left:6px solid #DDD; border-right:6px solid #DDD;  padding:0px!important; border-radius:4px;}
+.school-user{border-bottom:6px solid #CCC; border-left:6px solid #CCC; border-right:6px solid #CCC;  padding:0px!important; border-radius:4px;}
 .school-user > .panel-heading{
-	background:#DDD; line-height:46px; padding:4px 0px;color:#999; font-size:18px; font-weight:600; text-align:center; border-radius:0px;}
+	background:#CCC; line-height:46px; padding:4px 0px;color:#999; font-size:18px; font-weight:600; text-align:center; border-radius:0px;}
 .school-username{
 	height:116px; margin-top:20px; width:100%; background:#DDD; color:#333; border-radius:5px;text-overflow:ellipsis;
 	padding:6px; font-size:12px; line-height:20px;
@@ -881,3 +924,27 @@ h3.schoolname{font-weight:800; text-shadow:2px 2px 2px #000000!important; margin
 	box-shadow:none;
 	margin-bottom:0px;
 }
+
+
+
+
+.num-item h2 a{
+	color:#FFF;}
+.num-item h2 a:hover{
+	color:#2ecc71; text-decoration:none;}
+.num-list li h2{
+	padding:0px; color:#FFF;  text-shadow:1px 1px 1px #000; font-weight:bold;} 
+.school-banner{background:#f5f5f5;}
+.school-banner .container-box{margin-top:0px;}
+.school-banner .container-box .col-md-9{
+	}
+.school-banner .container-box .col-md-3{
+	padding:0px;}
+.school-banner .carousel-indicators{ bottom:0px; text-align:right; left:60%;}
+
+
+
+
+
+
+

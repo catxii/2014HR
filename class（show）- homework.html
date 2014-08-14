@@ -13,7 +13,32 @@
   <!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
   <script type="text/JavaScript" src="space-css.js"></script>
   <!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+<script>
+window.onload=function(){
+      
+	 $(function(){
+		 $(".message-info a").click(
+		 function(){
+			 if( $(this).parent().parent().find("div").is(":visible") ){
+				 $(this).removeClass("btn-primary").addClass("btn-danger").text("展开");
+				 $(this).parent().parent().find("div").hide();
+			 }else{
+				 $(this).removeClass("btn-danger").addClass("btn-primary").text("收起");
+				 $(this).parent().parent().find("div").show();
+				 }
+			 
+});
+		     
+		 });
+ 	     
+ 	
 
+	  
+	  
+}
+
+
+ </script>
 
   <![endif]-->
 </head>
@@ -113,7 +138,7 @@
     </div>
 
 
-<div class="container">
+<div class="container container-min">
    <div class="container-box class-index-container">
    
     <div class="col-md-12 class-index-center">
@@ -140,16 +165,18 @@
             <div class="col-md-11 ">
               <ul class="message-info list-unstyled">
                 <li class="info">
-                  <a href="#" class="name">丁老师：</a>
-                  <a href="javascript:" style="margin-left:10px;" class="btn btn-xs btn-danger pull-right icon-star"></a>
+                  <span class="name">丁老师：</span>
+                  <a href="#" style="margin-left:10px;" class="btn btn-xs btn-danger pull-right">展开</a>
                   <span class="pull-right gray">今天 11：11 </span>
                 </li>
-                <li class="nr font-overflow"><a href="#">您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报</a></li>
+                <li><h5>您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报</h5>
+                <div class="homework-list-sub">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+                </li>
               </ul>
             </div>
           </div>
         </div>
-  <div class="message-single-box">
+   <div class="message-single-box">
           <div class="row">
             <div class="col-md-1">
               <img data-src="holder.js/50x50" class="img-responsive">
@@ -157,16 +184,18 @@
             <div class="col-md-11 ">
               <ul class="message-info list-unstyled">
                 <li class="info">
-                  <a href="#" class="name">丁老师：</a>
-                  <a href="javascript:" style="margin-left:10px;" class="btn btn-xs btn-danger pull-right icon-star"></a>
+                  <span class="name">丁老师：</span>
+                  <a href="#" style="margin-left:10px;" class="btn btn-xs btn-danger pull-right">展开</a>
                   <span class="pull-right gray">今天 11：11 </span>
                 </li>
-                <li class="nr font-overflow"><a href="#">您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报</a></li>
+                <li><h5>您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报</h5>
+                <div class="homework-list-sub">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
+                </li>
               </ul>
             </div>
           </div>
         </div>
-        <div class="message-single-box">
+   <div class="message-single-box">
           <div class="row">
             <div class="col-md-1">
               <img data-src="holder.js/50x50" class="img-responsive">
@@ -174,62 +203,13 @@
             <div class="col-md-11 ">
               <ul class="message-info list-unstyled">
                 <li class="info">
-                  <a href="#" class="name">丁老师：</a>
-                  <a href="javascript:" style="margin-left:10px;" class="btn btn-xs btn-danger pull-right icon-star"></a>
+                  <span class="name">丁老师：</span>
+                  <a href="#" style="margin-left:10px;" class="btn btn-xs btn-danger pull-right">展开</a>
                   <span class="pull-right gray">今天 11：11 </span>
                 </li>
-                <li class="nr font-overflow"><a href="#">您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="message-single-box">
-          <div class="row">
-            <div class="col-md-1">
-              <img data-src="holder.js/50x50" class="img-responsive">
-            </div>
-            <div class="col-md-11 ">
-              <ul class="message-info list-unstyled">
-                <li class="info">
-                  <a href="#" class="name">丁老师：</a>
-                  <a href="javascript:" style="margin-left:10px;" class="btn btn-xs btn-danger pull-right icon-star"></a>
-                  <span class="pull-right gray">今天 11：11 </span>
+                <li><h5>您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报</h5>
+                <div class="homework-list-sub">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</div>
                 </li>
-                <li class="nr font-overflow"><a href="#">您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="message-single-box">
-          <div class="row">
-            <div class="col-md-1">
-              <img data-src="holder.js/50x50" class="img-responsive">
-            </div>
-            <div class="col-md-11 ">
-              <ul class="message-info list-unstyled">
-                <li class="info">
-                  <a href="#" class="name">丁老师：</a>
-                  <a href="javascript:" style="margin-left:10px;" class="btn btn-xs btn-default pull-right icon-star"></a>
-                  <span class="pull-right gray">今天 11：11 </span>
-                </li>
-                <li class="nr font-overflow"><a href="#">您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="message-single-box">
-          <div class="row">
-            <div class="col-md-1">
-              <img data-src="holder.js/50x50" class="img-responsive">
-            </div>
-            <div class="col-md-11 ">
-              <ul class="message-info list-unstyled">
-                <li class="info">
-                  <a href="#" class="name">丁老师：</a>
-                  <a href="javascript:" style="margin-left:10px;" class="btn btn-xs btn-default pull-right icon-star"></a>
-                  <span class="pull-right gray">今天 11：11 </span>
-                </li>
-                <li class="nr font-overflow"><a href="#">您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报</a></li>
               </ul>
             </div>
           </div>
