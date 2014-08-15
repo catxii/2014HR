@@ -301,4 +301,16 @@ $(function(){
 	var navigationtoplight = $("#navigation-top-menu").val();
 	$("#"+navigationtoplight).parent().find("li").removeClass("active");
 	$("#"+navigationtoplight).addClass("active");
+
+	
+    
 })
+// loading图形
+	function openLoading(boxName){
+        $(boxName).show();
+        $("body").append("<div class='modal-backdrop fade in'></div><div class='loadmodal'><img src='img/logo.gif' width='50' ></div>")
+    }
+    function closeLoading(boxName){
+        $(boxName).hide();
+        $(".modal-backdrop").remove()
+    }

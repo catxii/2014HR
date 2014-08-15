@@ -824,6 +824,26 @@
         </fieldset>
     </form>
 
+    <div class="page-header" id="data">
+      <h1>loading</h1>
+    </div>
+    <div class="loadingbutton">
+      <a href="javascript:" onclick="openLoading('.loadmodal')" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#loadbutton">loading弹出框</a>
+    </div>
+
+    <div class="loadmodal">
+            <img src="img/logo-loading.gif" width="50" onclick="closeLoading('.loadmodal')"> 加载中...
+    </div>
+    <script type="text/javascript">
+    function openLoading(boxName){
+        $(boxName).show();
+        $("body").append("<div class='modal-backdrop fade in'></div>")
+    }
+    function closeLoading(boxName){
+        $(boxName).hide();
+        $(".modal-backdrop").remove()
+    }
+    </script>
 
  <!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
 <script type="text/JavaScript" src="space-footer-css.js"></script>
