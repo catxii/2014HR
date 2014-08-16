@@ -465,7 +465,7 @@ a.list-grouping-fen-more{
 	color:#FFAE00; font-size:16px; }
 .panel-class-dongtai .dongtai-say{ background:rgba(0,0,0,0.05); margin:0px; padding:5px 10px; border-top:3px solid #ECECEC;}
 .dongtai-reply .form-control{
-	border:1px solid #E7E7E7;}
+	border:1px solid #E7E7E7; }
 	
 	
 /*动态图片*/
@@ -474,6 +474,7 @@ a.list-grouping-fen-more{
 	width:100px; height:100px; margin-bottom:5px;}
 .media-body-img .col-md-2,.media-body-img .col-md-10{
 	padding:0px; margin-top:5px;}
+/*图片滑动*/
 .dongtai-img-hover{ width:100px; height:100px;}
 ul.ban li {
 	width:100px;
