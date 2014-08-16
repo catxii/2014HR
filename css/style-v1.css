@@ -364,7 +364,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 }
 /* 高校学堂 */
 .fixed-top-body {
-  padding-top: 52px;
+  padding-top: 80px;
 }
 .banner-fluid-bg {
   /*background: url(../img/banner-graybg_03.png) repeat-x;*/
@@ -1720,6 +1720,9 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   width: auto;
   z-index: 1060;
 }
+.single-view0body {
+  background: #f2f2f2;
+}
 .html-view-area {
   border: 1px solid #d0d0d0;
   box-shadow: 0 0 7px #ccc;
@@ -1727,7 +1730,4 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   padding: 36px;
   width: 800px;
   background: white;
-}
-.single-view0body {
-  background: #f2f2f2;
 }
