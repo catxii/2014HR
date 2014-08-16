@@ -4,6 +4,17 @@
 li{list-style: none;}
 a{color:#4c4c4c;}
 a:hover{color:#ffae00;}
+.clear-margin{margin:0px!important;} 
+.clear-padding{padding:0px!important;}
+.clear-border{
+	border:0px; box-shadow:none; border-radius:0px;}
+.list-group-other.active, .list-group-other.active:hover, .list-group-other.active:focus{text-shadow: 0px -1px 0px #FFF;
+background-image: linear-gradient(to bottom, #EEE 0%, #EEE 100%);
+background-repeat: repeat-x;
+border-color: #48BE7A;
+color:#666; border-bottom:1px solid #D0D0D0; margin-bottom:1PX; border-radius:0px;}
+.clear-panel{
+	border-radius:4px 4px 0px 0px;}
 .navbar{
 	box-shadow:0 1px 2px #575757;}
 .second-nav-bar-bottom{
@@ -437,7 +448,7 @@ a.list-grouping-fen-more{
 .class-index-center .panel-class-dongtai .panel-body .media{
 	 padding:10px; }
 .panel-class-dongtai .media-heading{
-	font-size:12px; color:#4c4c4c; border-top:1px dashed #EEE; padding:6px;}
+	font-size:12px; color:#4c4c4c; border-top:1px dotted #EEE; padding:6px;}
 .panel-class-dongtai .media-heading span{
 	font-size:12px; color:#CCC; margin-left:6px;}
 .panel-class-dongtai .media-body{
@@ -447,12 +458,48 @@ a.list-grouping-fen-more{
 	 margin-bottom:8px;
 	display:block; color:#999; font-size:12px;}
 .panel-class-dongtai .media-body a.media-body-h{
-	color:#2ECC71; font-size:17px; font-weight:bold; margin-top:8px;}
+	color:#093; font:16px "microsoft yahei";  margin-top:8px; letter-spacing:1px;}
 .panel-class-dongtai .media-body a.media-body-h:hover{
-	color:#FFAE00; font-size:17px; }
-.panel-class-dongtai .dongtai-say{ background:rgba(0,0,0,0.05); margin:0px; padding:5px 10px; border-top:1px solid #DDD;}
+	color:#FFAE00; font-size:16px; }
+.panel-class-dongtai .dongtai-say{ background:rgba(0,0,0,0.05); margin:0px; padding:5px 10px; border-top:3px solid #ECECEC;}
 .dongtai-reply .form-control{
 	border:1px solid #E7E7E7;}
+	
+	
+/*动态图片*/
+.media-body-img{ padding-top:15px;}
+.media-body-img .img-rounded{
+	width:100px; height:100px; margin-bottom:5px;}
+.media-body-img .col-md-2,.media-body-img .col-md-10{
+	padding:0px; margin-top:5px;}
+.dongtai-img-hover{ width:100px; height:100px;}
+ul.ban li {
+	float: left;
+	text-align: center;
+	display: inline; /*--Gimp Fix aka IE6 Fix--*/
+}
+ul.ban li a.thumb {
+	width: 100px;
+	height: 100px;
+	cursor: pointer;
+}
+ul.ban li span { /*--Used to crop image--*/
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+	display: block;
+}
+ul.ban li a.thumb:hover {
+	background: #666;
+}
+ul.ban li a {
+	text-decoration: none;
+	color: #777;
+	display: block;
+}
+
+
+
 
 .class-index-left .panel-class-photo .panel-body{
 	background:#FFF; padding:10px;}
@@ -635,12 +682,15 @@ ul.dongtai-say-reply li.dongtai-media a.media-reply:hover{
 .class-rizhi-list .syllabus .table-syllabus td{text-align:center!important;}
 .class-rizhi-list .syllabus .table-syllabus .btn-other{
 	 font-size:14px;}
-.course-time{font-size:14px; text-align:center;  line-height:38px; z-index:999; padding:0px 40px;position:absolute; top:7px;border-radius: 10px;
-  box-shadow: 3px 3px 3px #ccc;
-  
-  
-  z-index:999;
-  background: white;}
+.course-time{font-size: 12px;
+text-align: center;
+line-height:30px;
+padding: 0px 10px;
+position: absolute;
+top: 12px;
+border-radius: 4px;
+z-index: 999;
+background: none repeat scroll 0% 0% rgba(179, 179, 179, 1);}
 
 
 
@@ -706,6 +756,41 @@ ul.qx-thead-body li{ border:1px solid #E8E8E8;padding:10px 0px;}
 	
 	
 /*教师空间*/
+
+.img-wrapper .img:hover .position-ico-info {
+  display: block;
+}
+.position-ico-info {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  top: 80%;
+  background-color:rgba(0, 0, 0, 0.2);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: none;
+  width:100%;
+ 
+}
+.position-ico-info li {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  vertical-align: middle;
+  list-style: none;
+   padding-bottom:5px;
+  
+}
+.position-ico-info li a {
+  color: white;
+  font-size: 12px;
+}
+.position-ico-info li .icon-envelope{
+	color:#FFAE00; text-shadow:1px 1px 2px #333;}
+.position-ico-info li a:hover{
+	text-decoration:none;}
 .left-class-content{}
 .people-top-body{
 	padding-top:50px;}
@@ -917,7 +1002,7 @@ h3.schoolname{font-weight:800; text-shadow:2px 2px 2px #000000!important; margin
 
 .school-user{border-bottom:6px solid #CCC; border-left:6px solid #CCC; border-right:6px solid #CCC;  padding:0px!important; border-radius:4px;}
 .school-user > .panel-heading{
-	background:#CCC; line-height:46px; padding:4px 0px;color:#999; font-size:18px; font-weight:600; text-align:center; border-radius:0px;}
+	background:#CCC; line-height:33px; padding:4px 0px;color:#999; font-size:18px; font-weight:600; text-align:center; border-radius:0px;}
 .school-username{
 	height:116px; margin-top:20px; width:100%; background:#DDD; color:#333; border-radius:5px;text-overflow:ellipsis;
 	padding:6px; font-size:12px; line-height:20px;
@@ -929,28 +1014,39 @@ h3.schoolname{font-weight:800; text-shadow:2px 2px 2px #000000!important; margin
 	box-shadow:none;
 	margin-bottom:0px;
 }
-
-
-
-
 .num-item h2 a{
 	color:#FFF;}
 .num-item h2 a:hover{
 	color:#2ecc71; text-decoration:none;}
 .num-list li h2{
-	padding:0px; color:#FFF;  text-shadow:1px 1px 1px #000; font-weight:bold;} 
+	padding:0px; color:#FFF;  text-shadow:1px 1px 4px #000; font-weight:bold;} 
 /*学校空间banner*/
-.school-banner{background:#f5f5f5; }
+.school-banner{background:#ddd; }
 .school-banner .container-box{margin-top:0px;}
-.school-banner .container-box .col-md-9{border-bottom:3px solid #F90;
+.school-banner .container-box .col-md-9{
 	}
 .school-banner .container-box .col-md-3{
-	padding:0px; background:#333; height:100%;border-bottom:3px solid #F90;}
+	padding:0px; background:#eee; height:100%; height:278px; border-bottom:3px solid #F90}
 
-
-
-
-
-
-
+.school-banner .nav-pills > li > a{border-radius:0px; font-size:16px;}
+.school-banner #school-news .list-group{
+	box-shadow:none; border-radius:0px; margin-bottom:0px;}
+.school-banner #school-news .list-group .list-group-item{
+	border-bottom:2px solid #CCC; padding:10px 10px; height:41PX; background:#eee}
+.school-banner #school-news .list-group .list-group-item:hover{
+	 background:#DDD; border-left:4px solid #FF8000;color:#FF8000;}
+.school-banner #school-news .list-group .list-group-item:hover a:hover{
+	}
+.school-banner #school-news .list-group .list-group-item:last-child{
+	border-radius:0px;}
+#school-jj{
+	padding:20px!important;
+	 }
+.school-introduction{
+	 background:#EEE; text-align:center;}
+.school-introduction h3{
+	margin-top:10px;
+	margin-bottom:10px; font-weight:bold; color:#FF8000;}
+.school-introduction p{
+	margin-top:25px; border-top:1px solid #DDD;}
 

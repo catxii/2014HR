@@ -75,15 +75,14 @@
     
     <div class="nav-wrapper grid-responsive" >
     
-    <div class="img-wrapper">
-<div class="img-wrappr-ico" style=" box-shadow:1px 7px 17px #333"><img src="img/314f32372e2e2e324071712e636f6d9736.jpg" class="img-responsive" alt="Responsive image"></div>
+    <div class="img-wrapper ">
+<div class="img-wrappr-ico img" style=" box-shadow:1px 7px 17px #333"><a href="#"><img src="img/314f32372e2e2e324071712e6.jpg" class="img-responsive" alt="Responsive image"></a><ul class="position-ico-info">
+                    <li><a href="#"><span class=" icon-envelope"> 私信</span></a></li>
+                  </ul></div>
 <div class="user-num-wrapper">
 <ul class="num-list clearfix">
 <li class="num-item">
-<a href="#" class="num-link" target="_blank">
-
-<h3><a href="#">丁老师</a><span class="label label-warning">马鞍山实验小学</span><span class="label label-danger"><a href="#">关注</a></span></h3>
-</a>
+<h3><a href="#">丁同学</a><span class="label label-warning">马鞍山实验小学</span><span class="label label-danger icon-heart"><a href="#"> 关注</a></span></h3>
 </li>
 
 
@@ -459,20 +458,58 @@
   <div class="panel-body">
     <div class="media">
   <a class="pull-left" href="#">
-    <img class="media-object" src="img/people-zuijin-img.png" alt="...">
+    <img class="media-object" src="img/people-zuijin-img1.png" alt="...">
+    <h3 class="media-heading" style="text-align:center; border:none;">张老师</h3>
   </a>
   <div class="media-body">
-    <h3 class="media-heading">张老师<span>马鞍山实验小学</span></h3>
-   <p class="text-space" >发表了一篇日志：<a href="#">红楼梦研究两首红楼梦研究两首红楼梦研究两首红楼梦研究两首红楼梦研究两首红楼梦研究两首红楼梦研究两首红楼梦研究两首红楼梦研究两首红楼梦研究两首红楼梦研究两首红楼梦研究两首红楼梦研究两首红楼梦研究两首红楼梦研究两首</a></p>
-   <span class="media-body-text"><img src="img/banner5.jpg" width="708" height="359"  class="img-responsive" alt="Responsive image"/></span>
+    
+   发表了一篇日志：<a href="#" class="media-body-h text-space">红楼梦研究两红楼梦研究两红楼梦研究两红楼梦研究两首首红楼梦研究两红楼梦研究两首首红楼梦研究两首首首首</a>
+   <!--图片-->
+   <span class="media-body-text">
+   
+   <div class="row media-body-img">
+   <div class="col-md-10">
+   <div class="col-md-2">
+    <a href="#" class="img-rounded">
+      <img data-src="holder.js/100x100" alt="...">
+    </a>
+    </div>
+     <div class="col-md-2">
+    <a href="#" class="img-rounded">
+      <img data-src="holder.js/100x100" alt="...">
+    </a>
+    </div>
+    <div class="col-md-2">
+    <a href="#" class="img-rounded">
+      <img data-src="holder.js/100x100" alt="...">
+    </a>
+    </div>
+    <div class="col-md-2">
+    <a href="#" class="img-rounded">
+      <img data-src="holder.js/100x100" alt="...">
+    </a>
+    </div>
+    </div>
+    <div class="col-md-2 dongtai-img-hover"> 
+    <ul class="ban">
+          <li><a href="#" class="thumb img-rounded"><span><img data-src="holder.js/200x200" alt="..."></span></a></li>
+        </ul>
+    </div>
+</div>
+   </span>
+   <h3 class="media-heading"><span class="pull-right">2014-08-09</span></h3>
   </div>
 </div>
     <ul class="dongtai-say inline-block-ul">
-      <li><a href="#">回复(23)</a></li>
-      <li><a href="#">评论</a></li>
+      <li><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">回复(23)</a></li>
+      <li><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">评论</a></li>
       <li><a href="#">转发</a></li>
       
     </ul>
+    
+    
+    
+    
     
   </div>
   
@@ -532,5 +569,30 @@
 <!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
 <script type="text/JavaScript" src="space-footer-css.js"></script>
 <!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+<script type="text/javascript">
+
+$(document).ready(function() {
+	
+	$("ul.gallery li,ul.web li,ul.ban li,ul.idea li").hover(function() { //On hover...
+		
+		var thumbOver = $(this).find("img").attr("src"); //Get image url and assign it to 'thumbOver'
+		
+		//Set a background image(thumbOver) on the &lt;a&gt; tag 
+		$(this).find("a.thumb").css({'background' : 'url(' + thumbOver + ') no-repeat center bottom'});
+		//Fade the image to 0 
+		$(this).find("span").stop().fadeTo('normal', 0 , function() {
+			$(this).hide() //Hide the image after fade
+		}); 
+	} , function() { //on hover out...
+		//Fade the image to 1 
+		$(this).find("span").stop().fadeTo('normal', 1).show();
+	});
+	 
+	
+});
+
+</script>
+
+
 </body>
 </html>
