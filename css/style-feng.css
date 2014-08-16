@@ -12,9 +12,11 @@ a:hover{color:#ffae00;}
 background-image: linear-gradient(to bottom, #EEE 0%, #EEE 100%);
 background-repeat: repeat-x;
 border-color: #48BE7A;
-color:#666; border-bottom:1px solid #D0D0D0; margin-bottom:1PX; border-radius:0px;}
+color:#666; border-bottom:1px solid #E5E5E5; margin-bottom:1PX; border-radius:0px;}
 .clear-panel{
 	border-radius:4px 4px 0px 0px;}
+.list-group-lg{}
+.list-group-lg > ul li > .list-group-item{padding:10px 15px;}
 .navbar{
 	box-shadow:0 1px 2px #575757;}
 .second-nav-bar-bottom{
@@ -474,6 +476,8 @@ a.list-grouping-fen-more{
 	padding:0px; margin-top:5px;}
 .dongtai-img-hover{ width:100px; height:100px;}
 ul.ban li {
+	width:100px;
+	height:100px;
 	float: left;
 	text-align: center;
 	display: inline; /*--Gimp Fix aka IE6 Fix--*/
