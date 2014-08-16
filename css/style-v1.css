@@ -6,22 +6,7 @@
   line-height: 1.33;
   border-radius: 6px;
 }
-/*.btn-default {
-  background: #d6d6d6;
-  border: none;
-  text-shadow: none;
-  color: #545454;
-}
-.btn-default:hover,
-.btn-default:focus,
-.btn-default:active,
-.btn-default.active,
-.open > .dropdown-toggle.btn-default {
-  color: #545454;
-  background-color: #c5c5c5;
-  border-color: #adadad;
-}
-*/
+/*.btn-default {  background: #d6d6d6;  border: none;  text-shadow: none;  color: #545454;}.btn-default:hover,.btn-default:focus,.btn-default:active,.btn-default.active,.open > .dropdown-toggle.btn-default {  color: #545454;  background-color: #c5c5c5;  border-color: #adadad;}*/
 .btn-primary {
   background: #2ecc71;
   border: none;
@@ -311,23 +296,11 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 }
 .carousel-indicators.indicators-bottom-center {
   list-style: none outside none;
-  /*
-  margin: 0;
-  right: auto;
-  top: auto;
-  bottom:0;
-  z-index: 5;
-  text-align: center;
-  width: 100%;*/
+  /*  margin: 0;  right: auto;  top: auto;  bottom:0;  z-index: 5;  text-align: center;  width: 100%;*/
 }
 .carousel-indicators.indicators-bottom-center li {
   border: 1px solid #2ecc71;
-  /*
-  display: inline-block;
-  zoom:1;
-  *display:inline;
-  *margin-right: 6px;
-  float: none;*/
+  /*  display: inline-block;  zoom:1;  *display:inline;  *margin-right: 6px;  float: none;*/
 }
 /* 输入框 */
 .form-control.large {
@@ -873,8 +846,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 }
 /* sidebar-hover */
 .list-group-sidebar-hover .badge {
-  /* background: none!important;
-  color: #fff!important;*/
+  /* background: none!important;  color: #fff!important;*/
   display: none;
 }
 .list-group-sidebar-hover .active .badge {
@@ -1500,9 +1472,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 }
 /* 圈子*/
 .quanzi-single-show {
-  /*border: 1px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 3px 3px 3px #ccc;*/
+  /*border: 1px solid #ccc;  border-radius: 10px;  box-shadow: 3px 3px 3px #ccc;*/
   padding: 20px 15px 54px;
   max-width: 230px;
 }
@@ -1767,5 +1737,8 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 .html-view-area table tr,
 .html-view-area table td {
   border: 1px solid #ccc;
-  padding:5px;
+}
+.html-view-area img {
+  display: inline-block;
+  vertical-align: middle;
 }
