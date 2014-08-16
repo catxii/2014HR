@@ -700,6 +700,12 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 .tree-sub a {
   font-size: 12px;
 }
+.tree-sub .icon-circle-plus {
+  margin-right: 5px;
+}
+.tree-sub .icon-circle-minus {
+  margin-right: 5px;
+}
 /* 相册详情页 */
 .photo-title-box {
   margin-top: 10px;
