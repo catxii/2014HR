@@ -546,7 +546,6 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   position: relative;
 }
 .all-page-content-bg {
-  background: #f3f3f3;
   padding-top: 10px;
 }
 .wz-edit-button-area {
@@ -635,8 +634,6 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 }
 .tree-sub-1 > li {
   border-bottom: 1px dashed #dedede;
-  margin-bottom: 10px;
-  padding-bottom: 10px;
 }
 .tree-sub-1 > li:hover {
   background: #f9f9f9;
@@ -704,6 +701,9 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   margin-right: 5px;
 }
 .tree-sub .icon-circle-minus {
+  margin-right: 5px;
+}
+.tree-sub .glyphicon.glyphicon-book {
   margin-right: 5px;
 }
 /* 相册详情页 */
@@ -1261,6 +1261,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 }
 .weektable {
   font-size: 12px;
+  background: white;
 }
 /* 题目上传 */
 .exam-upfile-area {
@@ -1269,6 +1270,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   padding: 30px 10px;
   border-radius: 5px;
   text-align: center;
+  min-height: 300px;
 }
 .green {
   color: green;
