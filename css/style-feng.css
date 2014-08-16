@@ -1,5 +1,5 @@
-﻿body{font-family:"微软雅黑";padding-top:52px; background:url(../img/index-bg2.png) repeat;}
-.container-min{min-height:900px;}
+﻿body{font-family:"微软雅黑";padding-top:52px; background:url(../img/debut_light.png) repeat;}
+.container-min{min-height:700px;}
 .content-body-min{min-height:500px;}
 li{list-style: none;}
 a{color:#4c4c4c;}
@@ -469,7 +469,7 @@ a.list-grouping-fen-more{
 	
 	
 /*动态图片*/
-.media-body-img{ padding-top:15px;}
+.media-body-img{ padding-top:0px;}
 .media-body-img .img-rounded{
 	width:100px; height:100px; margin-bottom:5px;}
 .media-body-img .col-md-2,.media-body-img .col-md-10{
@@ -1040,6 +1040,10 @@ h3.schoolname{font-weight:800; text-shadow:2px 2px 2px #000000!important; margin
 	border-bottom:2px solid #CCC; padding:10px 10px; height:41PX; background:#eee}
 .school-banner #school-news .list-group .list-group-item:hover{
 	 background:#DDD; border-left:4px solid #FF8000;color:#FF8000;}
+.list-tab-school .nav-pills > li.active > a{
+	background-color:#2ECC71;}
+.list-tab-school .nav-pills > li.active > a:hover,.list-tab-school .nav-pills > li.active > a:focus{
+	background-color:#DDD;}
 .school-banner #school-news .list-group .list-group-item:hover a:hover{
 	}
 .school-banner #school-news .list-group .list-group-item:last-child{
