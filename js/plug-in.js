@@ -312,5 +312,6 @@ $(function(){
     }
     function closeLoading(boxName){
         $(boxName).hide();
-        $(".modal-backdrop").remove()
+        $(".modal-backdrop").remove();
+        $(".loadmodal").remove();
     }

@@ -291,6 +291,9 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 .panel-primary-other {
   background: #FFF;
 }
+.panel {
+  margin-bottom: 10px;
+}
 .carousel-indicators .active {
   background-color: #2ecc71;
 }
@@ -838,6 +841,9 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 .swf-ico {
   background-position: -21px center;
 }
+.pagination {
+  margin: 10px auto;
+}
 .pagination.center {
   text-align: center;
   width: 100%;
@@ -1076,6 +1082,22 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   background: #2ecc71;
   color: white;
   text-decoration: none;
+  font-size: 12px;
+  padding: 3px 5px;
+}
+.chose-box-index.container-fluid .drag-km .icon-move {
+  margin-right: 5px;
+}
+.drag-km.ui-draggable-dragging {
+  width: 100px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 12px;
+  height: 50px;
+  overflow: hidden;
+  background: #000;
+  padding: 5px;
+  color: #fff;
 }
 .chose-box-index .icon-move {
   display: none;
