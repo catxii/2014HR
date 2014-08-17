@@ -41,8 +41,7 @@ vertical-align: middle;
 
 /*button*/
 
-.btn-default > span{
-	margin-right:5px;}
+
 .btn-default > a{
 	color:#545454;
 }
@@ -475,7 +474,7 @@ a.list-grouping-fen-more{
 .media-body-img .col-md-2,.media-body-img .col-md-10{
 	padding:0px; margin-top:5px;}
 /*图片滑动*/
-.dongtai-img-hover{ width:100px; height:100px;}
+.dongtai-img-hover{ padding-top:5px;color:#000;background:#DDD; text-align:center; vertical-align:baseline; display:inline; }
 ul.ban li {
 	width:100px;
 	height:100px;
