@@ -597,7 +597,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   zoom: 1;
   *display: inline;
   vertical-align: middle;
-  margin: 0 10px;
+  margin: 0 3px;
   list-style: none;
 }
 .position-bottom-info li a {
@@ -737,6 +737,10 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 .send-new-pj-box h4 {
   font-size: 16px;
   color: #0cb353;
+}
+.es-carousel ul li a img {
+  width: 60px;
+  height: 60px;
 }
 /* 进度条 */
 .pace-activity {
