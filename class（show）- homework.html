@@ -13,32 +13,7 @@
   <!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
   <script type="text/JavaScript" src="space-css.js"></script>
   <!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
-<script>
-window.onload=function(){
-      
-	 $(function(){
-		 $(".message-info a").click(
-		 function(){
-			 if( $(this).parent().parent().find("div").is(":visible") ){
-				 $(this).removeClass("btn-primary").addClass("btn-danger").text("展开");
-				 $(this).parent().parent().find("div").hide();
-			 }else{
-				 $(this).removeClass("btn-danger").addClass("btn-primary").text("收起");
-				 $(this).parent().parent().find("div").show();
-				 }
-			 
-});
-		     
-		 });
- 	     
- 	
 
-	  
-	  
-}
-
-
- </script>
 
   <![endif]-->
 </head>
@@ -276,5 +251,31 @@ window.onload=function(){
 <!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
 <script type="text/JavaScript" src="space-footer-css.js"></script>
 <!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+<script>
+
+      
+	 $(function(){
+		 $(".message-info a").click(
+		 function(){
+			 if( $(this).parent().parent().find("div").is(":visible") ){
+				 $(this).removeClass("btn-primary").addClass("btn-danger").text("展开");
+				 $(this).parent().parent().find("div").hide();
+			 }else{
+				 $(this).removeClass("btn-danger").addClass("btn-primary").text("收起");
+				 $(this).parent().parent().find("div").show();
+				 }
+			 
+});
+		     
+		 });
+ 	     
+ 	
+
+	  
+	  
+
+
+
+ </script>
 </body>
 </html>

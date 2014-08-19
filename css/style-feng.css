@@ -15,6 +15,13 @@ border-color: #48BE7A;
 color:#666; border-bottom:1px solid #E5E5E5; margin-bottom:1PX; border-radius:0px;}
 .clear-panel{
 	border-radius:4px 4px 0px 0px;}
+/*科目图标*/
+.subjects-Chinese-ico{
+	background:url(../img/subjects-Chinese1-ico.png); width:50px; height:50px; margin:auto; border-radius:3px;}
+.subjects-mathematics-ico{
+	background:url(../img/subjects-Chinese-ico.png); width:50px; height:50px; margin:auto; border-radius:3px;}
+.subjects-English-ico{
+	background:url(../img/subjects-English-ico.png); width:50px; height:50px; margin:auto; border-radius:3px;}
 .list-group-lg{}
 .list-group-lg > ul li > .list-group-item{padding:10px 15px;}
 .navbar{
@@ -260,6 +267,7 @@ padding:20px 0px;
 	height:300px;}
 	
 .photo-add .btn-danger{
+	text-align:center;
 	position:absolute;
 	width:200px;
 	font-family:"微软雅黑";
@@ -1057,4 +1065,4 @@ h3.schoolname{font-weight:800; text-shadow:2px 2px 2px #000000!important; margin
 	margin-bottom:10px; font-weight:bold; color:#FF8000;}
 .school-introduction p{
 	margin-top:25px; border-top:1px solid #DDD;}
-
+/*收藏*/
