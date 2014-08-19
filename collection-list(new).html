@@ -236,8 +236,8 @@
                 <nav class="navbar navbar-default" role="navigation" style="box-shadow:none;">
   <div class="container-fluid">
     <div class="navbar-header">
-       <a href="#" type="button" class="btn btn-default navbar-btn btn-sm">上传</a>
-       <p class="navbar-text">未选择文件</p>
+       <input id="file" type="file" name="file" style="float:left; margin:15px;"></input>
+       
        <div class="nav navbar-nav" style="margin-top:15px; margin-right:15px;">
        <div class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">资料收藏 <span class="caret"></span></a>
@@ -256,18 +256,18 @@
 </nav>
                 <table class="table table-striped btn-center clear-margin">
                   <thead>
-									<tr class="order-header">
-										<th class="col-sm-1 header"><a href="javascript:">序号</a></th>
-										<th class="col-sm-2 header"><a href="javascript:">资料名称
+									<tr>
+										<th class="col-sm-1" style="text-align:center;"><a href="javascript:">序号</a></th>
+										<th class="col-sm-2" style="text-align:center;"><a href="javascript:">资料名称
 										</a></th>
-										<th class="col-sm-1 header"><a href="javascript:">来源</a></th>
-										<th class="col-sm-1 header"><a href="javascript:">状态</a></th>
-										<th class="col-sm-1 header"><a href="javascript:">类型</a></th>
-										<th class="col-sm-2 header"><a href="javascript:">创建时间</a></th>
-										<th class="col-sm-2 header">操作</th>
+										<th class="col-sm-1" style="text-align:center;"><a href="javascript:">来源</a></th>
+										<th class="col-sm-1" style="text-align:center;"><a href="javascript:">状态</a></th>
+										<th class="col-sm-1" style="text-align:center;"><a href="javascript:">类型</a></th>
+										<th class="col-sm-2" style="text-align:center;"><a href="javascript:">创建时间</a></th>
+										<th class="col-sm-2" style="text-align:center;">操作</th>
 									</tr>
 								</thead>
-                  <tbody class="order-header">
+                  <tbody>
                     <tr>
                       <td>序号</td>
                       <td>资料名称</td>

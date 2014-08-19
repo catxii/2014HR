@@ -205,89 +205,11 @@
 
 <!-- 弹出框 -->
 <!-- 管理目录弹出框 -->
-<div class="modal fade bs-example-modal-sm" id="sendmessage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">发私信</h4>
-      </div>
-      <div class="modal-body">
-        
-        <form class="form-horizontal" role="form">
-          <div class="form-group">
-            <label for="inputEmail3" class="col-sm-2 control-label">发给：</label>
-            <div class="col-sm-9">
-              <select class="select2-box" multiple style="width:100%;" placeholder="请输入对方昵称">
-                <option>江海客XP</option>
-                <option>彭毅超超哥</option>
-                <option>龚昕菊菊花兄</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="inputPassword3" class="col-sm-2 control-label">内容：</label>
-            <div class="col-sm-9">
-              <textarea class="form-control" rows="3" ng-model="messageIndexNumber"></textarea>
-              <ul class="list-inline" style="margin:10px 0;">
-                <li><a href="javascript:" class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-picture" style="margin:0;"></span></a></li>
-                <li>
-                  <label class="btn btn-primary btn-sm btn-fileupload">
-                    <span class="icon-paperclip" style="margin:0;"></span><input type="file" style="display:none;">
-                  </label>
-                </li>
-                <li class="pull-right gray">还可以输入 {{1000 - messageIndexNumber.length}} 字</li>
-              </ul>
-              <ul class="file-upload-list list-unstyled">
-                <li>
-                  <span class="icon-paperclip gray" style="margin:0;"></span> 
-                  <span class="filename">邓成伟的洗澡视频.flv</span>
-                  <button type="button" class="close" style="float:none;"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                </li>
-                <li>
-                  <span class="icon-paperclip gray" style="margin:0;"></span> 
-                  <span class="filename">邓成伟的洗澡视频.flv</span>
-                  <button type="button" class="close" style="float:none;"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                </li>
-                <li>
-                  <span class="icon-paperclip gray" style="margin:0;"></span> 
-                  <span class="filename">邓成伟的洗澡视频.flv</span>
-                  <button type="button" class="close" style="float:none;"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </form>
 
-
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-        <button type="button" class="btn btn-primary">发送</button>
-      </div>
-    </div>
-  </div>
-</div>
 
 
 <!-- 删除弹出框 -->
-<div class="modal fade bs-example-modal-sm delmodal" id="delmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-sm">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">删除全部</h4>
-      </div>
-      <div class="modal-footer btn-center" style="border-top:none">
-        <div class="nr text-left" style="margin-bottom:10px;">
-        删除对话内容将不可恢复，确定要删除与 江海客XP 之间的所有对话？
-        </div>
-        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-        <button type="button" class="btn btn-danger">删除</button>
-      </div>
-    </div>
-  </div>
-</div>
+
 
 
 
@@ -333,13 +255,6 @@
 		     
 		 });
  	     
- 	
-
-	  
-	  
-
-
-
  </script>
 
 </body>

@@ -19,9 +19,15 @@ color:#666; border-bottom:1px solid #E5E5E5; margin-bottom:1PX; border-radius:0p
 .subjects-Chinese-ico{
 	background:url(../img/subjects-Chinese1-ico.png); width:50px; height:50px; margin:auto; border-radius:3px;}
 .subjects-mathematics-ico{
-	background:url(../img/subjects-Chinese-ico.png); width:50px; height:50px; margin:auto; border-radius:3px;}
+	background:url(../img/subjects-math-ico.png); width:50px; height:50px; margin:auto; border-radius:3px;}
 .subjects-English-ico{
 	background:url(../img/subjects-English-ico.png); width:50px; height:50px; margin:auto; border-radius:3px;}
+.subjects-phy-ico{
+	background:url(../img/subjects-phy-ico.png); width:50px; height:50px; margin:auto; border-radius:3px;}
+.subjects-chemical-ico{
+	background:url(../img/subjects-chemical-ico.png); width:50px; height:50px; margin:auto; border-radius:3px;}
+.subjects-history-ico{
+	background:url(../img/subjects-history-ico.png); width:50px; height:50px; margin:auto; border-radius:3px;}
 .list-group-lg{}
 .list-group-lg > ul li > .list-group-item{padding:10px 15px;}
 .navbar{
