@@ -89,7 +89,7 @@ $(function(){
  		$(this).parent("li").addClass("current").siblings("li").removeClass("current");
  	});
 
- 	$(".sub-list-all-hover .tree-sub > li > a").click(function(){
+ 	$(document).on("click",".sub-list-all-hover .tree-sub > li > a",function(){
  		$(this).parent().addClass("current-tree").siblings().removeClass("current-tree");
  		$(".current-tree").not( $(this).parent() ).removeClass("current-tree");
  	})
@@ -308,10 +308,21 @@ $(function(){
 // loading图形
 	function openLoading(boxName){
         $(boxName).show();
-        $("body").append("<div class='modal-backdrop fade in'></div><div class='loadmodal'><img src='img/logo.gif' width='50' ></div>")
+        $("body").append("<div class='modal-backdrop modal-backdrop2 fade in' style='z-index:1050;'></div><div class='loadmodal'><img src='"+getPathUrl()+"/static/img/logo.gif' width='50' ></div>")
     }
     function closeLoading(boxName){
         $(boxName).hide();
-        $(".modal-backdrop").remove();
+        $(".modal-backdrop2").remove();
         $(".loadmodal").remove();
+    }
+    
+    /*获取path*/
+    function getPathUrl()
+    {
+        var curWwwPath=window.document.location.href;
+        var pathName=window.document.location.pathname;
+        var pos=curWwwPath.indexOf(pathName);
+        var localhostPaht=curWwwPath.substring(0,pos);
+        var projectName=pathName.substring(0,pathName.substr(1).indexOf('/')+1);
+        return (localhostPaht+projectName);
     }
