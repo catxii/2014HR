@@ -90,8 +90,11 @@ $(function(){
  	});
 
  	$(document).on("click",".sub-list-all-hover .tree-sub > li > a",function(){
- 		$(this).parent().addClass("current-tree").siblings().removeClass("current-tree");
- 		$(".current-tree").not( $(this).parent() ).removeClass("current-tree");
+ 		if(!$(this).parent().hasClass("bkp"))
+ 		{
+ 			$(this).parent().addClass("current-tree").siblings().removeClass("current-tree");
+ 			$(".current-tree").not( $(this).parent() ).removeClass("current-tree");
+ 		}
  	})
 
  	//  打开所有的德能银行
@@ -109,23 +112,26 @@ $(function(){
  		if( $(this).text() == "全部展开" ){
  			$(this).text("全部折叠");
  			treeHideBank();
+ 			$(".collapse-button-allopen").addClass("active");
  		}else {
  			$(this).text("全部展开");
  			treeShowBank();
+ 			$(".collapse-button-allopen").removeClass("active");
  		}
  	});
  	$(".list-group-collapse-button").click(function(){
- 		if ( $(".panel-body-collapse").is(":visible") ) {
+ 		if ( $(this).find(".panel-body-collapse").is(":visible") ) {
  			$(".open-all-collapse").text("全部折叠").addClass("active");
  			$(this).find(".glyphicon.glyphicon-chevron-right").addClass("glyphicon-chevron-down");
+ 			$(this).find(".collapse-button-allopen").addClass("active");
  		}else{
  			$(".open-all-collapse").text("全部展开").removeClass("active");
  			$(this).find(".glyphicon.glyphicon-chevron-right").removeClass("glyphicon-chevron-down");
+ 			$(this).find(".collapse-button-allopen").removeClass("active");
  		};
  	});
  	// 日期选择器
  	$('.form_datetime').datetimepicker({
-        language:  'fr',
         weekStart: 1,
         todayBtn:  1,
 		autoclose: 1,
@@ -135,7 +141,6 @@ $(function(){
         showMeridian: 1
     });
 	$('.form_date').datetimepicker({
-        language:  'fr',
         weekStart: 1,
         todayBtn:  1,
 		autoclose: 1,
@@ -145,7 +150,6 @@ $(function(){
 		forceParse: 0
     });
 	$('.form_time').datetimepicker({
-        language:  'fr',
         weekStart: 1,
         todayBtn:  1,
 		autoclose: 1,
@@ -177,11 +181,12 @@ $(function(){
 	$('#zhbkmodal').on('show.bs.modal', function () {
 	  $(".chose-box-index").removeClass("container").addClass("container-fluid");
 	  $(".chose-box-index").css({ "z-index":"1041","position":"relative"});
+	  $("body").css("overflow","auto");
 
 	})
 	$('#zhbkmodal').on('hide.bs.modal', function () {
 		$(".chose-box-index").removeClass("container-fluid").addClass("container");
-	  	$(".chose-box-index").css({ "z-index":"0","position":"none"});
+	  	$(".chose-box-index").css({ "z-index":"0","position":"static"});
 	})
 
 	//  打开所有的德能银行
@@ -261,7 +266,7 @@ $(function(){
 		}
 	});
 	$(".table-pepole-list").on("click","tr",function(){
-		$(this).not( $("tr:first") ).addClass("active").siblings().removeClass("active");
+		$(this).not( $(".title") ).addClass("active").siblings().removeClass("active");
 	});
 	$(".table-pepole-list").on("click",".title td a",function(){
 		$(".table-pepole-list .title").next("tr").addClass("active").siblings().removeClass("active");

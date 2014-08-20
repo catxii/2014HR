@@ -893,7 +893,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   position: absolute;
   right: 5px;
   z-index: 10;
-  top: 8px;
+  top: 6px;
 }
 .form-font {
   padding-top: 7px;
@@ -1793,4 +1793,11 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   position: absolute;
   right: 6px;
   top: 15px;
+}
+.clear-margin li .list-group-item {
+  color: green;
+  padding-left: 31px;
+}
+.modal-backdrop {
+  opacity: 0;
 }
