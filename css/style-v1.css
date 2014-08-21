@@ -1801,3 +1801,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 .modal-backdrop {
   opacity: 0;
 }
+.photo-list-no {
+  padding: 100px 0 150px;
+  text-align: center;
+}
