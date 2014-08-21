@@ -9,7 +9,9 @@
   <link rel="icon" href="../../favicon.ico">
 
   <title>领信样式模板</title>
-
+   <style>
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td { padding:4px 8px!important;}
+   </style>
   <!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
   <script type="text/JavaScript" src="space-css.js"></script>
   <!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
@@ -17,7 +19,7 @@
 
   <![endif]-->
 </head>
-<body class="fixed-top-body" ng-app="" style=" padding-top:52px;">
+<body class="fixed-top-body" ng-app="" style=" padding-top:52px; background:url(img/index-bg2.png) repeat;">
 <div class="navbar navbar-zhijiao navbar-green navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
@@ -113,32 +115,100 @@
     </div>
 
 
-<div class="container">
+<div class="container container-min">
    <div class="container-box class-index-container">
    
     <div class="col-md-12 class-index-center">
    <div class="panel panel-default panel-class-photo" style="margin-bottom:0px;">
   <div class="panel-body school-user" style="">
   <div class="panel-heading" style="position:relative;">
-  我的相册
-  
-   
-   </div>
-   
-   <div class="panel-body class-rizhi-list">
-  <div class="col-md-2" >
-  <div class="photo-box-single">
-    <div class="img">
-      <a href="#" class="thumbnail clear-border clear-padding"><img src="img/6f0b532563af000001378d6335f3.jpg" alt="First slide"></a>
-<div class="caption" style=" padding:9px;">
-  <h5 class="text-space clear-margin">春游一日春游一日游春游一日游游</h5>
-        
-  </div>
-    </div>
-    </div>
-  </div>
+  我的班级成员
  
+   
    </div>
+   <div class="text-center" >
+   <ul class="inline-block-ul search-bank" data-spy="affix" data-offset-top="60" data-offset-bottom="200">
+		    	<li >
+			    <div class="input-group " style="margin-top:10px; ">
+			      <span class="input-group-addon"> 找学生</span>
+			      <select class="select2-box-single-bank"  multiple placeholder="请输入学生名称">
+		               <option value="AL">王召唤</option>
+		               <option value="WY">彭毅超</option>
+		               <option value="WY">梁云龙</option>
+		               <option value="AL">邓成伟</option>
+		               <option value="WY">丁伟</option>
+		               <option value="WY">曾梵志</option>
+		               <option value="AL">老卢</option>
+		          </select>
+			      <span class="input-group-btn ">
+			        <button class="btn btn-danger icon-search" type="button"></button>
+			      </span>
+			    </div>
+			    </li>
+		    </ul>
+   </div>
+  <div class="panel panel-warning clear-border" style="padding:0 15px;">
+  <!-- Default panel contents -->
+  <div class="panel-heading panel-heading-student"><h4>学生</h4></div>
+
+  <!-- Table -->
+  <table class="table table-striped btn-center table-bordered" style="border-bottom:1px solid #DDD">
+   <tbody class="class-group-permissions">
+   <tr>
+   <td class="col-md-2">序号</td>
+   <td class="col-md-2">姓名</td>
+   <td class="col-md-4">班级职务</td>
+   <td class="col-md-4">操作</td>
+   </tr>
+   <tr>
+   <td>0</td>
+   <td>丁大伟</td>
+   <td>卫生委员</td>
+   <td><ul class="inline-block-ul inline-block-ul-mid">
+   <li><button class="btn btn-primary btn-xs" type="button">预览</button></li>
+   <li class="button-active"><button class="btn btn-warning btn-xs" type="button">收藏</button></li>
+   </ul></td>
+   </tr>
+   <tr>
+   <td>0</td>
+   <td>丁大伟</td>
+   <td>卫生委员</td>
+   <td><ul class="inline-block-ul inline-block-ul-mid">
+   <li><button class="btn btn-primary btn-xs" type="button">预览</button></li>
+   <li class="button-active"><button class="btn btn-warning btn-xs" type="button">收藏</button></li>
+   </ul></td>
+   </tr>
+   <tr>
+   <td>0</td>
+   <td>丁大伟</td>
+   <td>卫生委员</td>
+   <td><ul class="inline-block-ul inline-block-ul-mid">
+   <li><button class="btn btn-primary btn-xs" type="button">预览</button></li>
+   <li class="button-active"><button class="btn btn-warning btn-xs" type="button">收藏</button></li>
+   </ul></td>
+   </tr>
+   <tr>
+   <td>0</td>
+   <td>丁大伟</td>
+   <td>卫生委员</td>
+   <td><ul class="inline-block-ul inline-block-ul-mid">
+   <li><button class="btn btn-primary btn-xs" type="button">预览</button></li>
+   <li class="button-active"><button class="btn btn-warning btn-xs" type="button">收藏</button></li>
+   </ul></td>
+   </tr>
+   <tr>
+   <td>0</td>
+   <td>丁大伟</td>
+   <td>卫生委员</td>
+   <td><ul class="inline-block-ul inline-block-ul-mid">
+   <li><button class="btn btn-primary btn-xs" type="button">预览</button></li>
+   <li class="button-active"><button class="btn btn-warning btn-xs" type="button">收藏</button></li>
+   </ul></td>
+   </tr>
+   </tbody>
+  </table>
+</div>
+
    
    
     
@@ -198,5 +268,21 @@
 <!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
 <script type="text/JavaScript" src="space-footer-css.js"></script>
 <!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+<script>
+
+      
+	 $(function(){
+		 $(".table td .button-active button").click(
+		 function(){
+			 if( $(this).is(":visible") ){
+				 $(this).removeClass("btn-warning").addClass("btn-default").text("取消收藏");
+			 }else{
+				 $(this).removeClass("btn-default").addClass("btn-warning").text("收藏");
+				 }
+			 
+});
+		     
+		 });
+ </script>
 </body>
 </html>

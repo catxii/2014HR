@@ -7,13 +7,14 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <link rel="icon" href="../../favicon.ico">
-
+  
   <title>领信样式模板</title>
-
+  <link rel="stylesheet" type="text/css" href="css/BreakingNews.css"/>
+  
   <!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
   <script type="text/JavaScript" src="space-css.js"></script>
   <!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
-
+  
 
   <![endif]-->
 </head>
@@ -181,7 +182,29 @@
 </div>
 
 <div class="container">
-   <div class="container-box class-index-container">
+   <div class="container-box class-index-container clear-margin">
+   
+   <div class="col-md-12 clear-margin clear-padding">
+   
+    <div>
+        <div class="BreakingNewsController easing" id="breakingnews2">
+        	<div class="bn-title"></div>
+            <ul>
+                <li><a href="#">1. Lorem Ipsum is simply dummy text of the printing and typesetting industry</a></li>
+                <li><a href="#">2. It is a long established fact that a reader will be distracted</a></li>
+                <li><a href="#">3. Many desktop publishing packages</a></li>
+                <li><a href="#">4. All the Lorem Ipsum generators on the Internet tend to repeat predefined</a></li>
+                <li><a href="#">5. The standard chunk of Lorem Ipsum used</a></li>
+                <li><a href="#">6. English versions from the 1914 translation by H. Rackham.</a></li>
+                <li><a href="#">7. Bu metin deneme amaçlıdır  the standard chunk of Lorem Ipsum used</a></li>
+            </ul>
+            <div class="bn-arrows"><span class="bn-arrows-left"></span><span class="bn-arrows-right"></span></div>	
+        </div>
+        
+    </div>
+    
+   </div>
+   
    <div class="col-md-9 class-index-center" >
    <div class="panel panel-default panel-class-photo">
   <div class="panel-body">
@@ -375,8 +398,36 @@
         <div class="col-md-12">Copyright @ 2011-2015 湖南领信教育网络发展有限公司版权所有 湘ICP备14001031号</div>
     </div>
 </div>
+
 <!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
 <script type="text/JavaScript" src="space-footer-css.js"></script>
 <!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+<script type="text/javascript" src="libs/BreakingNews/BreakingNews.js"></script>
+  <script>
+	$(document).ready(function(){
+		
+		$("#breakingnews2").Breaking({
+			background		:'#FFF',
+			title			:'动态信息',
+			titlecolor		:'#FFF',
+			titlebgcolor	:'#F90',
+			linkcolor		:'#333',
+			linkhovercolor	:'#F90',
+			fonttextsize	:14,
+			isbold			:false,
+			border			:'solid 1px #F90',
+			width			:'100%',
+			timer			:2000,
+			autoplay		:true,
+			effect			:'slide'
+				
+		});
+		
+		
+	});	
+	
+
+	
+</script>
 </body>
 </html>
