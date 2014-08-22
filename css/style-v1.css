@@ -767,6 +767,9 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   background: #fbfbfb;
   text-align: center;
 }
+.filter-box .list {
+  margin: 0 auto;
+}
 .filter-box .list li {
   text-align: center;
   margin: 3px 10px;
@@ -1804,4 +1807,17 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 .photo-list-no {
   padding: 100px 0 150px;
   text-align: center;
+}
+.xinde-sub-list {
+  padding: 10px;
+  background: #fff;
+}
+.xinde-sub-list > li {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 3px 3px 7px #ccc;
+  margin-bottom: 15px;
+  overflow: hidden;
+  padding: 10px;
+  background: #ffffff;
 }
