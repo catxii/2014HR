@@ -15,6 +15,8 @@ border-color: #48BE7A;
 color:#666; border-bottom:1px solid #E5E5E5; margin-bottom:1PX; border-radius:0px;}
 .clear-panel{
 	border-radius:4px 4px 0px 0px;}
+.position-new-ico{position:relative;}
+.new-ico{display:inline-block; color:red!important; position:absolute; top:-5px; margin-left:5px}
 /*科目图标*/
 .subjects-Chinese-ico{
 	background:url(../img/subjects-Chinese1-ico.png); width:50px; height:50px; margin:auto; border-radius:3px;}
@@ -1078,3 +1080,57 @@ h3.schoolname{font-weight:800; text-shadow:2px 2px 2px #000000!important; margin
 .school-introduction p{
 	margin-top:25px; border-top:1px solid #DDD;}
 /*收藏*/
+/*试卷*/
+.questions-index-content .navigation-inline-ul .current h4{ margin-bottom:14px; font-weight:800; color:#999; }
+.questions-index-content .panel-heading{ }
+.quetions-subjects{ border-right:1px solid #ddd;}
+.quetions-subjects .position-right-top-block{ position:absolute; top:10px;}
+
+.quetions-xd-title{ height:45px; border-left:4px solid #C9302C; padding:0 0 0 10px; border-bottom:1px solid #ddd; }
+.quetions-xd-title .inline-block-ul{ padding:8px 0; position:relative;}
+.quetions-xd-title .quetions-subjects-text{font-size:14px; color:#C9302C; ;}
+
+.quetions-subjects-title{ height:45px; border-left:4px solid #F90; padding:0 0 0 10px; border-bottom:1px solid #ddd; }
+.quetions-subjects-title .inline-block-ul{ padding:8px 0; position:relative;}
+.quetions-subjects-title .quetions-subjects-text{font-size:14px; color:#F90; }
+
+.quetions-nj-title{ height:45px; border-left:4px solid #31B0D5; padding:0 0 0 10px; border-bottom:1px solid #ddd; }
+.quetions-nj-title .inline-block-ul{ padding:10px 0; position:relative;}
+.quetions-nj-title .quetions-subjects-text{font-size:14px; color:#31B0D5; }
+
+.quetions-bb-title{ height:45px; border-left:4px solid #5CB85C; padding:0 0 0 10px; border-bottom:1px solid #ddd; }
+.quetions-bb-title .inline-block-ul{ padding:10px 0; position:relative;}
+.quetions-bb-title .quetions-subjects-text{font-size:14px; color:#5CB85C; }
+.choose-chapter .list-group-item{
+	height:40px; padding-left:20px;}
+.quetions-subjects .well{ border-radius:0px!important; border-left:0px; border-right:0px; background:none!important;}
+.quetions-chapter .tree-sub-1{overflow-y:scroll; height:700px;}
+.quetions-chapter .list-group-item:first-child { height:44px; border-left:4px solid #eee; font-size:18px; padding:8px 10px; background:#F7F7F7; color:#999}
+.quetions-chapter .list-group-item:first-child .glyphicon-chevron-right{font-size:12px; }
+.quetions-chapter .list-group-tree .tree-sub{padding-left:5px;}
+.quetions-chapter .sub-list .current-tree > a{}
+.quetions-chapter .tree-sub-1 > li{border-bottom:0px;}
+.quetions-choose{ overflow-y:scroll; height:750px;}
+.quetions-choose .inthetree{
+	background:rgba(216, 240, 228, 1); border:1px solid rgba(198, 233, 216, 1); color:#0C9E4A; border-radius:4px;margin:5px 5px 1px 5px!important; font-weight:700;}
+.quetions-choose .single-exam-question{
+	margin:10px 0 10px 5px;}
+
+.question-title-bottom{padding:0 15px; font-size:12px;}
+.question-title-bottom .active{color:#FFAE00;}
+.quetions-choose .single-exam-question .position-right-top-block{
+position: absolute;
+right:15px;
+top: 10px;
+z-index: 20;
+margin: 0px; font-size:12px;}
+
+.quetions-choose .single-exam-question .position-right-top-block-que{
+position: absolute;
+right:50px;
+top: 7px;
+z-index: 20;
+margin: 0px;}
+
+
+
