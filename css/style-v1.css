@@ -972,7 +972,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 }
 .navigation-inline-ul li a {
   display: block;
-  padding: 5px 20px;
+  padding: 5px 14px;
   border-radius: 6px 6px 0 0;
 }
 .navigation-inline-ul li a:hover {
@@ -1809,7 +1809,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   text-align: center;
 }
 .xinde-sub-list {
-  padding: 10px;
+  padding: 10px 70px;
   background: #fff;
 }
 .xinde-sub-list > li {
@@ -1820,4 +1820,19 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   overflow: hidden;
   padding: 10px;
   background: #ffffff;
+}
+.red-round {
+  display: block;
+  font-size: 10px;
+  height: 15px;
+  line-height: 15px;
+  margin-right: -10px;
+  margin-top: -10px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 15px;
+  background: red;
+  border-radius: 20px;
 }
