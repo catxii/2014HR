@@ -1081,7 +1081,7 @@ h3.schoolname{font-weight:800; text-shadow:2px 2px 2px #000000!important; margin
 	margin-top:25px; border-top:1px solid #DDD;}
 /*收藏*/
 /*试卷*/
-.questions-index-content .navigation-inline-ul .current h4{ margin-bottom:14px; font-weight:800; color:#999; }
+.questions-index-content .navigation-inline-ul .current h4{ margin-bottom:10px; font-weight:800; color:#999; }
 .questions-index-content .panel-heading{ }
 .quetions-subjects{ border-right:1px solid #ddd;}
 .quetions-subjects .position-right-top-block{ position:absolute; top:10px;}
@@ -1104,13 +1104,13 @@ h3.schoolname{font-weight:800; text-shadow:2px 2px 2px #000000!important; margin
 .choose-chapter .list-group-item{
 	height:40px; padding-left:20px;}
 .quetions-subjects .well{ border-radius:0px!important; border-left:0px; border-right:0px; background:none!important;}
-.quetions-chapter .tree-sub-1{overflow-y:scroll; height:700px;}
-.quetions-chapter .list-group-item:first-child { height:44px; border-left:4px solid #eee; font-size:18px; padding:8px 10px; background:#F7F7F7; color:#999}
+.quetions-chapter .tree-sub-1{overflow-y:scroll; position:fixed; bottom:0; left:0; right:0; top:45px; position:absolute;}
+.quetions-chapter .list-group-item:first-child { height:44px; border-left:4px solid #eee; font-size:16px; padding:10px 10px; background:#F7F7F7; color:#999}
 .quetions-chapter .list-group-item:first-child .glyphicon-chevron-right{font-size:12px; }
 .quetions-chapter .list-group-tree .tree-sub{padding-left:5px;}
 .quetions-chapter .sub-list .current-tree > a{}
 .quetions-chapter .tree-sub-1 > li{border-bottom:0px;}
-.quetions-choose{ overflow-y:scroll; height:750px;}
+.quetions-choose{ overflow-y:scroll; left:400px; bottom:40px; top:40px; position:fixed; right:0; width:auto; background:#FFF;}
 .quetions-choose .inthetree{
 	background:rgba(216, 240, 228, 1); border:1px solid rgba(198, 233, 216, 1); color:#0C9E4A; border-radius:4px;margin:5px 5px 1px 5px!important; font-weight:700;}
 .quetions-choose .single-exam-question{
@@ -1131,6 +1131,34 @@ right:50px;
 top: 7px;
 z-index: 20;
 margin: 0px;}
+
+/*网址管理*/
+.url-management .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+	box-shadow:2px 0px 0px #eee;}
+.tab-url .panel-heading-student h4{
+	color:#666!important;}
+.tab-url .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td{ padding:4px 8px;}
+.tab-url .Focuson{ font-size:16px;}
+.url-add{margin-top: 15px;
+padding: 8px !important;
+background-image: none !important;
+border-radius:0px!important;
+background-color: #EEE !important;
+border-bottom: 2px solid #E7E7E7 !important;
+height:50px;}
+.click-up-down .btn-info{display:none;}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
