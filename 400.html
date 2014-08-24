@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../favicon.ico">
+
+  <!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+  <script type="text/JavaScript" src="space-css.js"></script>
+  <!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+
+  <title>领信样式模板</title>
+
+</head>
+<body class="fixed-top-body" ng-app="" onselectstart ="return false" >
+<div class="navbar navbar-zhijiao navbar-green navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#" class="navbar-brand logo-small" alt="领信logo"></a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active">
+          <a href="#">教学空间</a>
+        </li>
+        <li>
+          <a href="#about">个人空间</a>
+        </li>
+        <li>
+          <a href="#contact">班级空间</a>
+        </li>
+        <li>
+          <a href="#contact">我的班级</a>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">张学友 [ 退出 ]</a></li>
+        <li><a href="#"><span class="icon-t-shirt"></span> 装扮</a></li>
+        <li class="dropdown">
+          <a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class=" icon-cogwheel"></span> 设置 <span class="caret"></span></a>
+          <ul role="menu" class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+
+    </div>
+
+
+    <!--/.nav-collapse --> 
+  </div>
+</div>
+
+<div style="padding: 40px 0px; width: 50%; margin: 30px auto; text-align: center; box-shadow:3px 3px 6px #cecece;" class="panel panel-default">
+  <h4><span class="icon-buoy"></span> 你飞到了一个不存在的页面</h4>
+  <ul class="list-unstyled ">
+    <li style="margin-top: 30px;">你可以试试 <a onclick="javascript:location.reload()" class="btn btn-primary btn-sm">刷新页面</a></li>
+  <li style="margin-top: 10px;">还不行？麻烦你 <a href="javascript:void(0)" class="btn btn-warning btn-sm fkbutton">一键反馈错误</a></li>
+  <li class="green" style="display:none; margin-top:10px;"><span class="icon-thumbs-up"></span> 感谢反馈！</li>
+  </ul>
+</div>
+
+
+<!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+<script type="text/JavaScript" src="space-footer-css.js"></script>
+<!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+
+<script type="text/javascript" src="libs/jQuery-ui/jquery-ui-1.10.4.custom.js"></script>
+<script type="text/javascript">
+  $(function(){
+      $(".fkbutton").click(function(){
+      $(this).parent().hide().next("li").show();
+    })
+  })
+</script>
+
+
+</body>
+</html>

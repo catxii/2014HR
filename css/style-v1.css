@@ -1836,3 +1836,15 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   background: red;
   border-radius: 20px;
 }
+.num-round {
+  background: green;
+  border-radius: 20px;
+  box-shadow: 3px 3px 0 #ccc;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  width: 20px;
+}
+.modal-backdrop {
+  opacity: 0.1;
+}
