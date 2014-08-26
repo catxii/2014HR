@@ -1,0 +1,387 @@
+<!DOCTYPE>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<head>
+
+	<title>画图板</title>
+	<!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+	<script type="text/JavaScript" src="space-css.js"></script>
+	<!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+
+	<style type="text/css">
+
+	
+	</style>
+
+</head>
+<body class="single-view0body">
+
+	<div class="panel-heading tab-header" style="background:white; box-shadow:0px 7px 11px #ccc; position:fixed; top:0;left:0; right:0; height:50px; z-index:100;">
+		<ul class="inline-block-ul">
+			<li class="current">资料：1.1 疆域_作业</li>
+		</ul>
+
+		<ul class="inline-block-ul position-right-top-block top-head-ul" >
+			<li>
+				<a class="btn btn-sm btn-warning"  href="#" onclick="javascript:window.close();">退出</a>
+			</li>
+		</ul>
+
+	</div>
+	<div class="html-view-area" style="width:1024px">
+
+		<div class="panel panel-default panel-class-dongtai" style="display:block">
+			<div class="panel-body" style="padding:0px;width:900px;">
+				<div class="media">
+					<a title="" data-original-title="" class="pull-left" href="#"></a>
+					<div class="media-body">
+						<h3 class="media-heading"> <strong>附件</strong>
+						</h3>
+						<hr/>
+
+						<a href="/linktrust//UploadedFile/bucket/lsn/16343368741683056.doc">
+							<span class="media-body-text">语文试题1.doc</span>
+						</a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="panel panel-default panel-class-dongtai" style="display:block">
+			<div class="panel-body" style="padding:0px;width:900px;">
+				<div class="media">
+					<a title="" data-original-title="" class="pull-left" href="#"></a>
+					<div class="media-body">
+						<h3 class="media-heading"> <strong>作业说明</strong>
+						</h3>
+						<hr/>
+						<span class="media-body-text">
+							<p>
+								练习册 P30
+								<br />
+								&nbsp;
+							</p>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel-default panel-class-dongtai" style="display:block">
+			<div class="panel-body" style="padding:0px;width:900px;">
+				<div class="media">
+					<a title="" data-original-title="" class="pull-left" href="#"></a>
+					<div class="media-body">
+						<h3 class="media-heading">
+							<strong>课前预习</strong>
+						</h3>
+						<hr/>
+						<span class="media-body-text"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="panel panel-default panel-class-dongtai" style="display:block">
+			<div class="panel-body" style="padding:0px;width:900px;">
+				<div class="media">
+					<a title="" data-original-title="" class="pull-left" href="#"></a>
+					<div class="media-body">
+						<h3 class="media-heading">
+							<strong>课后复习</strong>
+						</h3>
+						<hr/>
+						<span class="media-body-text">
+							<p style="text-align:start">
+								<span style="background-color:inherit; font-family:楷体; font-size:14pt">
+									<strong>一、开发准备</strong>
+								</span>
+							</p>
+
+							<p style="text-align:start">
+								<span style="background-color:inherit; font-size:12px">官方文档不难看出，Sencha Touch 2的环境搭建需要</span>
+							</p>
+
+							<p style="text-align:start">
+								<span style="background-color:inherit; font-size:12px">1.SDK（Sencha Touch 2 SDK）</span>
+							</p>
+
+							<p style="text-align:start">
+								<span style="background-color:inherit; font-size:12px">2.SDK tool</span>
+							</p>
+
+							<p style="text-align:start">
+								<span style="background-color:inherit; font-size:12px">3.server (本次环境搭建使用Tomcat7.0)</span>
+							</p>
+
+							<p style="text-align:start">
+								<span style="background-color:inherit; font-size:12px">4.浏览器（建议Chrome和Safari）</span>
+							</p>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<ul id="drawController" class="inline-block-ul-mid drawkit">
+		<li>
+			<span class="icon-unshare  btn btn-sm btn-warning" onclick="cancel(this)"  title = '撤销上一个操作'></span>
+		</li>
+		<li>
+			<span class="icon-share  btn btn-sm btn-warning" onclick="next(this)"  title = '重做上一个操作'></span>
+		</li>
+		<li class="gray">|</li>
+		<li class="chose">
+			<span class='icon-pencil btn btn-sm btn-primary' onclick="draw_graph('pencil',this)" title = '铅笔'></span>
+		</li>
+		<li class="chose">
+			<span class="icon-brush  btn btn-sm btn-primary" onclick="draw_graph('handwriting',this)"  title = '涂鸦'></span>
+		</li>
+		<li class="chose">
+			<span class="icon-vector-path-line btn btn-sm btn-primary" onclick="draw_graph('line',this);"  title = '画直线'></span>
+		</li>
+		<li class="chose">
+			<span class="icon-vector-path-square  btn btn-sm btn-primary" onclick="draw_graph('square',this)"  title = '方形'></span>
+		</li>
+		<li class="chose">
+			<span class="icon-vector-path-circle  btn btn-sm btn-primary" onclick="draw_graph('circle',this)"  title = '圆'></span>
+		</li>
+		
+		<li class="gray">|</li>
+		<li><input id="chooseColor"  type="button"  class='i1 border_nochoose ' onclick="showColor(this)" title = '选择颜色'></li>
+		<li>
+			<span class="icon-show-lines  btn btn-sm btn-primary" onclick="showLineSize(this)"  title = '线条大小'></span>
+			<div class="btn-group cx-group" data-toggle="buttons">
+			  <label class="btn btn-primary active">
+			  <input type="radio" name="options" id="option1" autocomplete="off" checked> <span class="cx cx1"></span>
+			  </label>
+			  <label class="btn btn-primary">
+			    <input type="radio" name="options" id="option2" autocomplete="off"> <span class="cx cx2"></span>
+			  </label>
+			  <label class="btn btn-primary">
+			    <input type="radio" name="options" id="option3" autocomplete="off"> <span class="cx cx3"></span>
+			  </label>
+			</div>
+		</li>
+		<li class="gray">|</li>
+		<li class="chose">
+			<span class="icon-stop  btn btn-sm btn-primary" onclick="draw_graph('rubber',this)"  title = '橡皮擦'></span>
+		</li>
+		<li>
+			<span class="icon-bin  btn btn-sm btn-danger" onclick="clearContext('1')"  title = '清屏'></span>
+		</li>
+
+	</ul>
+
+	<div class="canvas-div">
+		<canvas id="canvas" class="canvas-panerl">浏览器不支持哦，亲</canvas>
+
+		<canvas id="canvas_bak"  class="canvas-panerl"></canvas>
+	</div>
+
+	<div id="color" class="color color-chose" >
+		<input class="i1" type="button"/>
+		<input class="i2" type="button"/>
+		<input class="i3" type="button"/>
+		<input class="i4" type="button"/>
+		<input class="i5" type="button"/>
+		<input class="i6" type="button"/>
+		<input class="i7" type="button"/>
+		<input class="i8" type="button"/>
+		<input class="i9" type="button"/>
+	</div>
+
+	<div id="line_size"  class="border_nochoose" style="z-index:99">
+		细 <img src="img/line_size_1.png" width = '80px;' height = '12px;' onclick="chooseLineSize(1)">
+		<br/>
+		普通 <img src="img/line_size_3.png" width = '80px;' height = '12px;' onclick="chooseLineSize(3)">
+		<br/>
+		粗 <img src="img/line_size_5.png" width = '80px;' height = '12px;' onclick="chooseLineSize(5)">
+		<br/>
+		加粗 <img src="img/line_size_7.png" width = '80px;' height = '12px;' onclick="chooseLineSize(7)">
+	</div>
+
+	<!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+	<script type="text/JavaScript" src="space-footer-css.js"></script>
+	<!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+
+	<script src='libs/canvas/draw.js'></script>
+	<script src='libs/canvas/storage.js'></script>
+	<script>       
+		//撤销的array
+		var cancelList = new Array();
+		//撤销的次数
+		var cancelIndex = 0;
+
+		$(function(){
+			initCanvas();
+			initDrag();
+			$("img")[0].click();
+			$("#color input").click(chooseColor);
+		});		
+
+		//初始化
+		var initCanvas = function(){
+			canvas =  document.getElementById("canvas");
+			canvas.width = canvasWidth;
+			canvas.height = canvasHeight;
+			context = canvas.getContext('2d');
+			canvasTop = $(canvas).offset().top
+			canvasLeft = $(canvas).offset().left;
+	
+
+			canvas_bak =  document.getElementById("canvas_bak");
+			canvas_bak.width = canvasWidth;
+			canvas_bak.height = canvasHeight;
+			context_bak = canvas_bak.getContext('2d');		
+		}	
+		
+		//下载图片
+		var downloadImage = function(){
+			$("#downloadImage_a")[0].href=canvas.toDataURL();
+			$("#downloadImage_a").click();
+		}
+
+		//展开颜色选择器
+		var showColor = function(obj){
+			var top = $(obj).offset().top;
+			var left = $(obj).offset().left;		
+			$("#color")[0].style.left = left + "px";;
+			$("#color")[0].style.top = top + "px";
+			$("#color").show();
+		
+		}
+		//展开线条大小选择器
+		var showLineSize = function(obj){
+			
+			if($("#line_size").is(":hidden")){
+				var top = $(obj).offset().top;
+				var left = $(obj).offset().left;				
+				$("#line_size")[0].style.left = left + $(obj).width() + 5; +  "px";
+				$("#line_size")[0].style.top = top   + "px";
+				$("#line_size").show();
+			}else{
+				$("#line_size").hide();
+			}
+		}
+
+		//选择颜色
+		var chooseColor = function(obj){		
+			var objClass = $(this).attr("class");
+			$("#chooseColor").attr("class" , "");
+			$("#chooseColor").addClass (objClass).addClass('border_nochoose');			
+			color  = $(this).css('background-color');
+			$("#color").hide();
+
+		}
+
+		//选择大小
+		var chooseLineSize =  function(_size){		
+			$("#chooseSize").attr("src" , "image/line_size_"+_size+".png");		
+			size = _size;
+			$("#line_size").hide();
+		}
+
+
+
+		//撤销上一个操作
+		var cancel = function(){
+			cancelIndex++;
+			context.clearRect(0,0,canvasWidth,canvasHeight);
+			var  image = new Image();
+			var index = cancelList.length-1 - cancelIndex  ;
+			var url = cancelList[index];
+			image.src = url;
+			image.onload = function(){
+				context.drawImage(image , 0 ,0 , image.width , image.height , 0 ,0 , canvasWidth , canvasHeight);
+			}
+		}
+
+		//重做上一个操作
+		var next = function(){
+			cancelIndex--;
+			context.clearRect(0,0,canvasWidth,canvasHeight);
+			var  image = new Image();
+			var index = cancelList.length-1 - cancelIndex  ;
+			var url = cancelList[index];
+			image.src = url;
+			image.onload = function(){
+				context.drawImage(image , 0 ,0 , image.width , image.height , 0 ,0 , canvasWidth , canvasHeight);
+			}
+		}
+
+		//保存历史 用于撤销
+		var saveImageToAry = function (){
+			cancelIndex = 0;
+			var dataUrl =  canvas.toDataURL();
+			cancelList.push(dataUrl);		
+		}		
+		
+        // 处理文件拖入事件，防止浏览器默认事件带来的重定向  
+        function handleDragOver(evt) {  
+			evt.stopPropagation();  
+			evt.preventDefault();  
+         }
+		 
+
+		// 判断是否图片  
+		function isImage(type) {  
+			switch (type) {  
+			case 'image/jpeg':  
+			case 'image/png':  
+			case 'image/gif':  
+			case 'image/bmp':  
+			case 'image/jpg':  
+				return true;  
+			default:  
+				return false;  
+			}  
+		}  
+
+
+		 // 处理拖放文件列表  
+		function handleFileSelect(evt) {  
+			evt.stopPropagation();  
+			evt.preventDefault();  
+  
+			var files = evt.dataTransfer.files;  
+  
+			for (var i = 0, f; f = files[i]; i++) {    
+				var t = f.type ? f.type : 'n/a';
+				reader = new FileReader();
+				isImg = isImage(t);
+				  
+				// 处理得到的图片  
+				if (isImg) {  
+					reader.onload = (function (theFile) {  
+						return function (e) {  
+							var  image = new Image(); 
+							image.src =  e.target.result ;
+							image.onload = function(){
+								context.drawImage(image , 0 ,0 , image.width , image.height , 0 ,0 , canvasWidth , canvasHeight);
+							}
+
+						};  
+					})(f)  
+					reader.readAsDataURL(f);  
+				}   
+			}    
+		}  
+
+		//初始化拖入效果
+		var initDrag= function(){
+			var dragDiv  = document.getElementById("canvas_bak");
+			dragDiv.addEventListener('dragover', handleDragOver, false);  
+			dragDiv.addEventListener('drop', handleFileSelect, false);  
+		}
+
+		$(".drawkit .chose").click(function(){
+			$(this).find("span").addClass("disabled");
+			$(this).siblings(".chose").find("span").removeClass("disabled");
+		});
+	</script>
+
+</body>
+</html>

@@ -1,3 +1,6 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+}
 /* button */
 .btn-lg,
 .btn-group-lg > .btn {
@@ -1847,4 +1850,110 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 }
 .modal-backdrop {
   opacity: 0.1;
+}
+.canvas-div {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 55px;
+  z-index: 50;
+}
+.drawkit {
+  padding-left: 0;
+}
+.drawkit li {
+  margin: 0 5px;
+}
+.canvas-panerl {
+  border-width: 1px;
+  border-style: dashed;
+  border-color: rgba(20, 126, 239, 0.5);
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+#drawController {
+  position: fixed;
+  top: 10px;
+  text-align: center;
+  width: 600px;
+  left: 50%;
+  margin-left: -300px;
+  z-index: 1010;
+}
+.border_nochoose {
+  height: 27px;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  width: 60px;
+  border: none;
+}
+.i1 {
+  background: #000000;
+}
+.i2 {
+  background: #ff0000;
+}
+.i3 {
+  background: #f7941d;
+}
+.i4 {
+  background: #fff200;
+}
+.i5 {
+  background: #39b54a;
+}
+.i6 {
+  background: #c69c6d;
+}
+.i7 {
+  background: #00aeef;
+}
+.i8 {
+  background: #8560a8;
+}
+.i9 {
+  background: #cecece;
+}
+.color-chose {
+  width: 155px;
+  top: 60px!important;
+  position: absolute;
+  z-index: 10;
+  display: none;
+  z-index: 1010;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+.color-chose input {
+  width: 40px;
+  height: 40px;
+  border: none;
+  margin-bottom: 5px;
+  border-radius: 8px;
+}
+#line_size {
+  position: absolute;
+  display: none;
+}
+.cx-group .cx {
+  background: #fff;
+  display: block;
+  width: 20px;
+  margin: 10px;
+}
+.cx-group .cx1 {
+  height: 2px;
+}
+.cx-group .cx2 {
+  height: 2px;
+}
+.cx-group .cx3 {
+  height: 5px;
 }
