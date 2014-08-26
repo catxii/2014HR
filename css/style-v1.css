@@ -1878,9 +1878,9 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   position: fixed;
   top: 10px;
   text-align: center;
-  width: 600px;
+  width: 760px;
   left: 50%;
-  margin-left: -300px;
+  margin-left: -380px;
   z-index: 1010;
 }
 .border_nochoose {
@@ -1941,19 +1941,4 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 #line_size {
   position: absolute;
   display: none;
-}
-.cx-group .cx {
-  background: #fff;
-  display: block;
-  width: 20px;
-  margin: 10px;
-}
-.cx-group .cx1 {
-  height: 2px;
-}
-.cx-group .cx2 {
-  height: 2px;
-}
-.cx-group .cx3 {
-  height: 5px;
 }
