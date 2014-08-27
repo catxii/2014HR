@@ -1109,7 +1109,7 @@ h3.schoolname{font-weight:800; text-shadow:2px 2px 2px #000000!important; margin
 .quetions-chapter .list-group-item:first-child { height:44px; border-left:4px solid #eee; font-size:16px; padding:10px 10px; background:#F7F7F7; color:#999}
 .quetions-chapter .list-group-item:first-child .glyphicon-chevron-right{font-size:12px; }
 .quetions-chapter .list-group-tree .tree-sub{padding-left:5px;}
-.quetions-chapter .sub-list .current-tree > a{}
+.quetions-chapter .sub-list .current-tree > a, .sub-list .current-tree > a:hover{ background:#ddd; color:#333}
 .quetions-chapter .tree-sub-1 > li{border-bottom:0px;}
 .quetions-choose{ overflow-y:scroll; left:400px; bottom:40px; top:40px; position:fixed; right:0; width:auto; background:#FFF;}
 .quetions-choose .inthetree{
@@ -1152,11 +1152,12 @@ height:50px;}
 
 /*日志树*/
 .rizhi-shu .sub-list .current-tree > a,.rizhi-shu .sub-list .current-tree > a:hover{background:#eee; color:#FFAE00;}
-.rizhi-shu .tree-sub-1 li a{padding-left:0px;}
+.rizhi-shu .tree-sub-1 li a{padding:0px 15px;}
+.rizhi-shu .tree-sub-1 .tree-sub > li > .tree-sub > li > a{ color:#999;}
 .rizhi-shu .iblock{width:10px; text-align:center; display:inline-block; font-weight:800;}
 .rizhi-shu .tree-sub-1 li{line-height:25px;}
 .class-rizhi-list .list-group-item .name{font-size:16px; }
-
+.panel-body-beike .text-center{margin:auto;}
 
 
 
