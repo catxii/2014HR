@@ -1948,3 +1948,8 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 .coursebtn {
   display: block !important;
 }
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+  border-top: 3px solid #2ecc71;
+}
