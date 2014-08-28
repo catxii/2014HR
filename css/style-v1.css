@@ -653,6 +653,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   display: block;
   padding-left: 10px;
   text-decoration: none;
+  line-height: 30px;
 }
 .tree-sub-1 li a:hover {
   /* background: #f6f6f6;*/
@@ -966,7 +967,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 }
 .navigation-inline-ul {
   position: absolute;
-  bottom: -2px;
+  bottom: -1px;
   margin: 0;
 }
 .navigation-inline-ul li {
@@ -1281,7 +1282,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   position: absolute;
   right: 3%;
   margin: 0;
-  top: 5px;
+  top: -1px;
 }
 .sub-to-ul li {
   padding: 0;
@@ -1852,14 +1853,15 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   opacity: 0.1;
 }
 .canvas-div {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  top: 55px;
+  top: 0;
   z-index: 50;
 }
 .drawkit {
+  display: none;
   padding-left: 0;
 }
 .drawkit li {
@@ -1878,10 +1880,11 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   position: fixed;
   top: 10px;
   text-align: center;
-  width: 760px;
+  width: 770px;
   left: 50%;
-  margin-left: -380px;
+  margin-left: -385px;
   z-index: 1010;
+  background: white;
 }
 .border_nochoose {
   height: 27px;
@@ -1941,4 +1944,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 #line_size {
   position: absolute;
   display: none;
+}
+.coursebtn {
+  display: block !important;
 }
