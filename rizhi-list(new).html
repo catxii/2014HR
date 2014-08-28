@@ -9,7 +9,9 @@
   <link rel="icon" href="../../favicon.ico">
 
   <title>领信样式模板</title>
-
+  <style>
+.list-group-other.active, .list-group-other.active:hover, .list-group-other.active:focus{border-bottom:0px;}
+  </style>
   <!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
   <script type="text/JavaScript" src="space-css.js"></script>
   <!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
@@ -91,30 +93,36 @@
 </div>
 
 <div class="container">
-  <div class="col-md-3"> 
-    <div class="panel panel-default clear-panel">
-      <div class="panel-heading">
+  
+  <div class="col-md-12">
+    
+
+    <!-- 日志列表 -->
+    <div class="panel panel-default">
+      <div class="panel-heading tab-header" style="height:40px;">
+        <ul class="inline-block-ul navigation-inline-ul">
+            <li class="current"><a href="#" data-original-title="" title="">日志列表</a></li>
+         </ul>
+         <ul class="inline-block-ul position-right-top-block top-head-ul">
+            <li><a href="/linktrust/space/bloginfo/add" class="btn btn-primary  btn-xs icon-circle-plus" data-original-title="" title=""> 添加日志</a></li>
+        <li><a href="/linktrust/space/blogcat/main" class="btn btn-default btn-xs icon-cogwheel" data-original-title="" title=""> 目录管理</a></li> 
+         </ul> 
+      </div>
+      <div class=" panel-body" style="background:#fff;">
+      <div class="col-md-3"> 
+    <div class="panel panel-default clear-panel clear-border" >
+      <div class="panel-heading" style=" padding:4px 8px; background:none;">
         <span class="glyphicon glyphicon-th-list"> 日志分类</span>
       </div>
       <div class="panel-body clear-padding ">
         
         <div class="collapse-lx">
-
           <div class="list-group clear-padding clear-margin clear-border">
 
-            <div class="btn-group position-right-top">
-              <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown">
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="javascript:" data-toggle="modal" data-target=".bs-example-modal-sm"><span class="icon-edit"></span> 修改名称</a></li> 
-                <li><a href="javascript:"><span class="glyphicon glyphicon-trash"></span> 删除目录</a></li>
-                
-              </ul>
-            </div>
+            
 
-            <div href="javascript:" class="list-group-item list-group-other active title-button">
-              <span class="glyphicon glyphicon-chevron-right"></span> 资源目录
+            <div href="javascript:" class="list-group-item list-group-other active title-button" style="padding:4px 10px; background:none; border:0px;">
+               <a href="#">资源目录</a>
             </div>
             <ul class="sub-list" >
               <li>
@@ -154,19 +162,10 @@
           </div>
           <div class="list-group clear-padding clear-margin clear-border">
 
-            <div class="btn-group position-right-top">
-              <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown">
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="javascript:" data-toggle="modal" data-target=".bs-example-modal-sm"><span class="icon-edit"></span> 修改名称</a></li> 
-                <li><a href="javascript:"><span class="glyphicon glyphicon-trash"></span> 删除目录</a></li>
-                
-              </ul>
-            </div>
+            
 
-            <div href="javascript:" class="list-group-item list-group-other active title-button">
-              <span class="glyphicon glyphicon-chevron-right"></span> 资源目录
+            <div href="javascript:" class="list-group-item list-group-other active title-button" style="padding:4px 10px; background:none; border:0px;">
+               资源目录
             </div>
             <ul class="sub-list" >
               <li>
@@ -206,19 +205,10 @@
           </div>
           <div class="list-group clear-padding clear-margin clear-border">
 
-            <div class="btn-group position-right-top">
-              <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown">
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="javascript:" data-toggle="modal" data-target=".bs-example-modal-sm"><span class="icon-edit"></span> 修改名称</a></li> 
-                <li><a href="javascript:"><span class="glyphicon glyphicon-trash"></span> 删除目录</a></li>
-                
-              </ul>
-            </div>
+            
 
-            <div href="javascript:" class="list-group-item list-group-other active title-button">
-              <span class="glyphicon glyphicon-chevron-right"></span> 资源目录
+            <div href="javascript:" class="list-group-item list-group-other active title-button" style="padding:4px 10px; background:none; border:0px;">
+               资源目录
             </div>
             <ul class="sub-list" >
               <li>
@@ -256,364 +246,14 @@
               </li>
             </ul>
           </div>
-
 
         </div>
 
       </div>
     </div>
-    <div class="panel panel-default clear-panel">
-      <div class="panel-heading">
-        日志分类
-      </div>
-      <div class="panel-body clear-padding ">
-        
-        <div class="collapse-lx">
-
-          <div class="list-group clear-padding clear-margin clear-border">
-
-            <div class="btn-group position-right-top">
-              <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="javascript:" data-toggle="modal" data-target=".bs-example-modal-sm"><span class="icon-edit"></span> 修改名称</a></li> 
-                <li><a href="javascript:"><span class="glyphicon glyphicon-trash"></span> 删除目录</a></li>
-                
-              </ul>
-            </div>
-
-            <div href="javascript:" class="list-group-item list-group-other active title-button">
-              <span class="glyphicon glyphicon-chevron-right"></span> 资源目录
-            </div>
-            <ul class="sub-list" >
-              <li>
-                <a href="#" class="list-group-item"><span class="badge">14</span><span class="name">Dapibus ac facilisis in</span>
-                </a>
-                <ul class="inline-block-ul edit-info-tips">
-                  <li><a href="javascript:" class="icon-edit" data-toggle="modal" data-target=".bs-example-modal-sm"></a></li>
-                  <li><a href="javascript:" class="glyphicon glyphicon-trash"></a></li>
-                  
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="list-group-item"><span class="badge">14</span><span class="name">Dapibus ac facilisis in</span></a>
-                <ul class="inline-block-ul edit-info-tips">
-                  <li><a href="javascript:" class="icon-edit" data-toggle="modal" data-target=".bs-example-modal-sm"></a></li>
-                  <li><a href="javascript:" class="glyphicon glyphicon-trash"></a></li>
-                  
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="list-group-item"><span class="badge">14</span><span class="name">Dapibus ac facilisis in</span></a>
-                <ul class="inline-block-ul edit-info-tips">
-                  <li><a href="javascript:" class="icon-edit" data-toggle="modal" data-target=".bs-example-modal-sm"></a></li>
-                  <li><a href="javascript:" class="glyphicon glyphicon-trash"></a></li>
-                  
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="list-group-item"><span class="badge">14</span><span class="name">Dapibus ac facilisis in</span></a>
-                <ul class="inline-block-ul edit-info-tips">
-                  <li><a href="javascript:" class="icon-edit" data-toggle="modal" data-target=".bs-example-modal-sm"></a></li>
-                  <li><a href="javascript:" class="glyphicon glyphicon-trash"></a></li>
-                  
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="list-group clear-padding clear-margin clear-border">
-
-            <div class="btn-group position-right-top">
-              <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="javascript:" data-toggle="modal" data-target=".bs-example-modal-sm"><span class="icon-edit"></span> 修改名称</a></li> 
-                <li><a href="javascript:"><span class="glyphicon glyphicon-trash"></span> 删除目录</a></li>
-                
-              </ul>
-            </div>
-
-            <div href="javascript:" class="list-group-item list-group-other active title-button">
-              <span class="glyphicon glyphicon-chevron-right"></span> 资源目录
-            </div>
-            <ul class="sub-list" >
-              <li>
-                <a href="#" class="list-group-item"><span class="badge">14</span><span class="name">Dapibus ac facilisis in</span>
-                </a>
-                <ul class="inline-block-ul edit-info-tips">
-                  <li><a href="javascript:" class="icon-edit" data-toggle="modal" data-target=".bs-example-modal-sm"></a></li>
-                  <li><a href="javascript:" class="glyphicon glyphicon-trash"></a></li>
-                  
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="list-group-item"><span class="badge">14</span><span class="name">Dapibus ac facilisis in</span></a>
-                <ul class="inline-block-ul edit-info-tips">
-                  <li><a href="javascript:" class="icon-edit" data-toggle="modal" data-target=".bs-example-modal-sm"></a></li>
-                  <li><a href="javascript:" class="glyphicon glyphicon-trash"></a></li>
-                  
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="list-group-item"><span class="badge">14</span><span class="name">Dapibus ac facilisis in</span></a>
-                <ul class="inline-block-ul edit-info-tips">
-                  <li><a href="javascript:" class="icon-edit" data-toggle="modal" data-target=".bs-example-modal-sm"></a></li>
-                  <li><a href="javascript:" class="glyphicon glyphicon-trash"></a></li>
-                  
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="list-group-item"><span class="badge">14</span><span class="name">Dapibus ac facilisis in</span></a>
-                <ul class="inline-block-ul edit-info-tips">
-                  <li><a href="javascript:" class="icon-edit" data-toggle="modal" data-target=".bs-example-modal-sm"></a></li>
-                  <li><a href="javascript:" class="glyphicon glyphicon-trash"></a></li>
-                  
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="list-group clear-padding clear-margin clear-border">
-
-            <div class="btn-group position-right-top">
-              <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="javascript:" data-toggle="modal" data-target=".bs-example-modal-sm"><span class="icon-edit"></span> 修改名称</a></li> 
-                <li><a href="javascript:"><span class="glyphicon glyphicon-trash"></span> 删除目录</a></li>
-                
-              </ul>
-            </div>
-
-            <div href="javascript:" class="list-group-item list-group-other active title-button">
-              <span class="glyphicon glyphicon-chevron-right"></span> 资源目录
-            </div>
-            <ul class="sub-list" >
-              <li>
-                <a href="#" class="list-group-item"><span class="badge">14</span><span class="name">Dapibus ac facilisis in</span>
-                </a>
-                <ul class="inline-block-ul edit-info-tips">
-                  <li><a href="javascript:" class="icon-edit" data-toggle="modal" data-target=".bs-example-modal-sm"></a></li>
-                  <li><a href="javascript:" class="glyphicon glyphicon-trash"></a></li>
-                  
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="list-group-item"><span class="badge">14</span><span class="name">Dapibus ac facilisis in</span></a>
-                <ul class="inline-block-ul edit-info-tips">
-                  <li><a href="javascript:" class="icon-edit" data-toggle="modal" data-target=".bs-example-modal-sm"></a></li>
-                  <li><a href="javascript:" class="glyphicon glyphicon-trash"></a></li>
-                  
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="list-group-item"><span class="badge">14</span><span class="name">Dapibus ac facilisis in</span></a>
-                <ul class="inline-block-ul edit-info-tips">
-                  <li><a href="javascript:" class="icon-edit" data-toggle="modal" data-target=".bs-example-modal-sm"></a></li>
-                  <li><a href="javascript:" class="glyphicon glyphicon-trash"></a></li>
-                  
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="list-group-item"><span class="badge">14</span><span class="name">Dapibus ac facilisis in</span></a>
-                <ul class="inline-block-ul edit-info-tips">
-                  <li><a href="javascript:" class="icon-edit" data-toggle="modal" data-target=".bs-example-modal-sm"></a></li>
-                  <li><a href="javascript:" class="glyphicon glyphicon-trash"></a></li>
-                  
-                </ul>
-              </li>
-            </ul>
-          </div>
-
-
-        </div>
-
-      </div>
-    </div>
-    <div class="panel panel-default clear-panel">
-      <div class="panel-heading">
-        日志分类
-      </div>
-      <div class="panel-body clear-padding ">
-        
-        <div class="collapse-lx">
-
-          <div class="list-group clear-padding clear-margin clear-border">
-
-            <div class="btn-group position-right-top">
-              <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="javascript:" data-toggle="modal" data-target=".bs-example-modal-sm"><span class="icon-edit"></span> 修改名称</a></li> 
-                <li><a href="javascript:"><span class="glyphicon glyphicon-trash"></span> 删除目录</a></li>
-                
-              </ul>
-            </div>
-
-            <div href="javascript:" class="list-group-item list-group-other active title-button">
-              <span class="glyphicon glyphicon-chevron-right"></span> 资源目录
-            </div>
-            <ul class="sub-list" >
-              <li>
-                <a href="#" class="list-group-item"><span class="badge">14</span><span class="name">Dapibus ac facilisis in</span>
-                </a>
-                <ul class="inline-block-ul edit-info-tips">
-                  <li><a href="javascript:" class="icon-edit" data-toggle="modal" data-target=".bs-example-modal-sm"></a></li>
-                  <li><a href="javascript:" class="glyphicon glyphicon-trash"></a></li>
-                  
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="list-group-item"><span class="badge">14</span><span class="name">Dapibus ac facilisis in</span></a>
-                <ul class="inline-block-ul edit-info-tips">
-                  <li><a href="javascript:" class="icon-edit" data-toggle="modal" data-target=".bs-example-modal-sm"></a></li>
-                  <li><a href="javascript:" class="glyphicon glyphicon-trash"></a></li>
-                  
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="list-group-item"><span class="badge">14</span><span class="name">Dapibus ac facilisis in</span></a>
-                <ul class="inline-block-ul edit-info-tips">
-                  <li><a href="javascript:" class="icon-edit" data-toggle="modal" data-target=".bs-example-modal-sm"></a></li>
-                  <li><a href="javascript:" class="glyphicon glyphicon-trash"></a></li>
-                  
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="list-group-item"><span class="badge">14</span><span class="name">Dapibus ac facilisis in</span></a>
-                <ul class="inline-block-ul edit-info-tips">
-                  <li><a href="javascript:" class="icon-edit" data-toggle="modal" data-target=".bs-example-modal-sm"></a></li>
-                  <li><a href="javascript:" class="glyphicon glyphicon-trash"></a></li>
-                  
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="list-group clear-padding clear-margin clear-border">
-
-            <div class="btn-group position-right-top">
-              <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="javascript:" data-toggle="modal" data-target=".bs-example-modal-sm"><span class="icon-edit"></span> 修改名称</a></li> 
-                <li><a href="javascript:"><span class="glyphicon glyphicon-trash"></span> 删除目录</a></li>
-                
-              </ul>
-            </div>
-
-            <div href="javascript:" class="list-group-item list-group-other active title-button">
-              <span class="glyphicon glyphicon-chevron-right"></span> 资源目录
-            </div>
-            <ul class="sub-list" >
-              <li>
-                <a href="#" class="list-group-item"><span class="badge">14</span><span class="name">Dapibus ac facilisis in</span>
-                </a>
-                <ul class="inline-block-ul edit-info-tips">
-                  <li><a href="javascript:" class="icon-edit" data-toggle="modal" data-target=".bs-example-modal-sm"></a></li>
-                  <li><a href="javascript:" class="glyphicon glyphicon-trash"></a></li>
-                  
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="list-group-item"><span class="badge">14</span><span class="name">Dapibus ac facilisis in</span></a>
-                <ul class="inline-block-ul edit-info-tips">
-                  <li><a href="javascript:" class="icon-edit" data-toggle="modal" data-target=".bs-example-modal-sm"></a></li>
-                  <li><a href="javascript:" class="glyphicon glyphicon-trash"></a></li>
-                  
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="list-group-item"><span class="badge">14</span><span class="name">Dapibus ac facilisis in</span></a>
-                <ul class="inline-block-ul edit-info-tips">
-                  <li><a href="javascript:" class="icon-edit" data-toggle="modal" data-target=".bs-example-modal-sm"></a></li>
-                  <li><a href="javascript:" class="glyphicon glyphicon-trash"></a></li>
-                  
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="list-group-item"><span class="badge">14</span><span class="name">Dapibus ac facilisis in</span></a>
-                <ul class="inline-block-ul edit-info-tips">
-                  <li><a href="javascript:" class="icon-edit" data-toggle="modal" data-target=".bs-example-modal-sm"></a></li>
-                  <li><a href="javascript:" class="glyphicon glyphicon-trash"></a></li>
-                  
-                </ul>
-              </li>
-            </ul>
-          </div>
-          <div class="list-group clear-padding clear-margin clear-border">
-
-            <div class="btn-group position-right-top">
-              <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
-                <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="javascript:" data-toggle="modal" data-target=".bs-example-modal-sm"><span class="icon-edit"></span> 修改名称</a></li> 
-                <li><a href="javascript:"><span class="glyphicon glyphicon-trash"></span> 删除目录</a></li>
-                
-              </ul>
-            </div>
-
-            <div href="javascript:" class="list-group-item list-group-other active title-button">
-              <span class="glyphicon glyphicon-chevron-right"></span> 资源目录
-            </div>
-            <ul class="sub-list" >
-              <li>
-                <a href="#" class="list-group-item"><span class="badge">14</span><span class="name">Dapibus ac facilisis in</span>
-                </a>
-                <ul class="inline-block-ul edit-info-tips">
-                  <li><a href="javascript:" class="icon-edit" data-toggle="modal" data-target=".bs-example-modal-sm"></a></li>
-                  <li><a href="javascript:" class="glyphicon glyphicon-trash"></a></li>
-                  
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="list-group-item"><span class="badge">14</span><span class="name">Dapibus ac facilisis in</span></a>
-                <ul class="inline-block-ul edit-info-tips">
-                  <li><a href="javascript:" class="icon-edit" data-toggle="modal" data-target=".bs-example-modal-sm"></a></li>
-                  <li><a href="javascript:" class="glyphicon glyphicon-trash"></a></li>
-                  
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="list-group-item"><span class="badge">14</span><span class="name">Dapibus ac facilisis in</span></a>
-                <ul class="inline-block-ul edit-info-tips">
-                  <li><a href="javascript:" class="icon-edit" data-toggle="modal" data-target=".bs-example-modal-sm"></a></li>
-                  <li><a href="javascript:" class="glyphicon glyphicon-trash"></a></li>
-                  
-                </ul>
-              </li>
-              <li>
-                <a href="#" class="list-group-item"><span class="badge">14</span><span class="name">Dapibus ac facilisis in</span></a>
-                <ul class="inline-block-ul edit-info-tips">
-                  <li><a href="javascript:" class="icon-edit" data-toggle="modal" data-target=".bs-example-modal-sm"></a></li>
-                  <li><a href="javascript:" class="glyphicon glyphicon-trash"></a></li>
-                  
-                </ul>
-              </li>
-            </ul>
-          </div>
-
-
-        </div>
-
-      </div>
-    </div>
+    
   </div>
-  <div class="col-md-9">
-
-
-    <!-- 日志列表 -->
-    <div class="list-group list-group-lg">
-      <ul class="list-group-item active title-button inline-block-ul" style="position:relative; margin-bottom:0px;">
-        <li class="glyphicon glyphicon-list-alt">日志列表</li> 
-        <li><a href="#" class="btn btn-warning btn-xs icon-circle-plus" style="position:absolute; top:5px; right:90px; z-index:999; color:#FFF;">添加日志</a></li>
-        <li><a href="#" class="btn btn-default btn-xs icon-cogwheel" style="position:absolute; top:5px; right:10px; z-index:999; color:#000;">日志管理</a></li> 
-      </ul>
-      <ul class="sub-list" style="display:block;">
+      <ul class="sub-list col-md-9" style="display:block;">
         <li>
           <a href="#" class="list-group-item"><span class="badge badge-none">2014-12-10</span><span class="name">Dapibus ac facilisis in</span></a>
           <ul class="inline-block-ul edit-info-tips">
@@ -647,6 +287,7 @@
           </ul>
         </li>
       </ul>
+      </div>
     </div>
 
 
