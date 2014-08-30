@@ -1,4 +1,4 @@
-﻿body{font-family:"微软雅黑";padding-top:52px; background:url(../img/debut_light.png) repeat;}
+﻿body{font-family:"微软雅黑";padding-top:52px; background:url(../img/index-ng.gif) repeat;}
 .container-min{min-height:700px;}
 .content-body-min{min-height:500px;}
 li{list-style: none;}
@@ -11,6 +11,7 @@ a:hover{color:#ffae00;}
 .panel-other > .panel-heading {background-image: linear-gradient(to bottom, #EDEDED 0%, #E4E4E4 100%)!important;
 background-repeat: repeat-x!important;
 border-color: #DADADA!important;}
+.panel-other-right .panel-other > .panel-heading{background:none!important; margin-top:3px; border-bottom:1px dotted #ddd;}
 .list-group-other.active, .list-group-other.active:hover, .list-group-other.active:focus{text-shadow: 0px -1px 0px #FFF;
 background-image: linear-gradient(to bottom, #EEE 0%, #EEE 100%);
 background-repeat: repeat-x;
@@ -1158,7 +1159,7 @@ height:50px;}
 /*日志树*/
 .rizhi-shu .sub-list .current-tree > a,.rizhi-shu .sub-list .current-tree > a:hover{background:#eee; color:#FFAE00;}
 .rizhi-shu .tree-sub-1 li a{padding:0px 15px;}
-.rizhi-shu .tree-sub-1 .tree-sub > li > .tree-sub > li > a{ color:#999;}
+.rizhi-shu .tree-sub-1 .tree-sub > li > .tree-sub > li > a{ color:#666;}
 .rizhi-shu .iblock{width:10px; text-align:center; display:inline-block; font-weight:800;}
 .rizhi-shu .tree-sub-1 li{line-height:25px;}
 .class-rizhi-list .list-group-item .name{font-size:16px; }
@@ -1167,15 +1168,84 @@ height:50px;}
 /*列表和课表*/
 .panel-syllabus{background-image: linear-gradient(to bottom, rgba(249, 182, 59, 1) 0%, #967125 100%)!important;
 background-repeat: repeat-x!important; margin:30px;  height:100%; padding:10px; box-shadow:1px 1px 3px #999;}
-.panel-syllabus-content{ width:100%; height:100%;background-image: linear-gradient(to bottom, rgba(158, 189, 155, 1) 0%, #5e8b5a 100%) !important;
-background-repeat: repeat-x!important; border-top:4px solid rgba(17, 89, 17, 0.23);border-bottom:3px solid #577c03;}
-.panel-syllabus-content .table-syllabus .title,.panel-syllabus-content .table-syllabus .title td {background:none!important; border:0px!important;color: #fff;
-font-size: 17px;
-font-weight: 900;
-}
-.panel-syllabus-content .table-striped > tbody > tr:nth-child(2n+1) > td{background:none!important; border:0px!important;color: #fff;
-font-size: 17px;
+.panel-syllabus-content{ width:100%; height:100%;background-image:  linear-gradient(to bottom, rgba(115, 153, 111, 1) 0%, rgba(47, 77, 44, 1) 100%) !important;background-repeat: repeat-x!important; border-top:2px solid rgba(17, 89, 17, 0.23);border-bottom:3px solid #577c03;}
+.panel-syllabus-content .table-syllabus .title,.panel-syllabus-content .table-syllabus .title td {background:none!important; border:0px!important;color:#71BA65;font-size: 15px;font-weight:bold; text-shadow:1px 1px 1px #333; vertical-align:middle;}
+
+.panel-syllabus-content .table-striped > tbody > tr > td{background:none!important; border:0px!important;color: #fff;
+font-size: 15px;
 font-weight: 900; 
 }
-.panel-syllabus-content .table > tbody > tr > td{border:1px;}
+.panel-syllabus-content .table-striped > tbody > tr > td.title{color:#f90;}
+.panel-syllabus-content .table > tbody > tr > td{border:1px;vertical-align:middle;}
+.syllabus-ico{ height:100%;width:100%; padding:0 15px 0px 15px; }
+.syllabus-ico .text-space{color:rgba(25, 104, 53, 1); text-overflow:inherit; text-shadow:0px 1px 1px rgba(255, 255, 255, 0.5);}
+
+.dropzone-bkxx{background: rgba(225, 225, 225, 0.16);border-radius: 5px;box-shadow:1px 1px 0px rgba(54, 105, 69, 1);margin-bottom: 3px;padding: 1px; text-align:center; font-weight:normal; font-size:12px; }
+.dropzone-bkxx a{color:#FFF; text-shadow:1px 1px 1px #333; text-decoration:none;}
+
+
+.nav-bar-new{ height:36px; }
+.nav-bar-new-list{border-right:1px solid #ccc;}
+.nav-bar-new-list > li{ line-height:36px; background:rgba(225, 225, 225, 1); margin-right:0px!important; float:left; padding:0 16px; border-top:3px solid #0cb353;  font-size:14px; border-left:1px solid #ccc;}
+
+
+
+.nav-bar-new-list > li > a{color:#3C3C3C; text-decoration:none; font-size:15px; font-weight:500;}
+.nav-list-case .dropdown-menu{border-radius:0px; min-width:80px;}
+.nav-list-case .dropdown-menu li{ margin-right:0px; text-align:center; width:100%;}
+.nav-bar-new-list a:hover > li{color:#F90; background:#ccc; border-top:2px solid #F90;}
+
+
+/*教学空间nav*/
+.nav-list-case{position:relative;}
+
+.nav-list-img1{background:url(../img/nav-list.png) left no-repeat; width:19px; height:19px; overflow:hidden; display:block; float:left; position:relative; top:8px; margin-right:5px;} 
+.nav-list-img2{background:url(../img/nav-list.png) no-repeat; background-position:-24px 0px; width:19px; height:19px; overflow:hidden; display:block; float:left; position:relative; top:8px; margin-right:5px;} 
+.nav-list-img3{background:url(../img/nav-list.png) no-repeat; background-position:-48px 0px; width:19px; height:19px; overflow:hidden; display:block; float:left; position:relative; top:8px; margin-right:5px;} 
+.nav-list-img4{background:url(../img/nav-list.png) no-repeat; background-position:-72px 0px; width:19px; height:19px; overflow:hidden; display:block; float:left; position:relative; top:8px; margin-right:5px;} 
+.nav-list-img5{background:url(../img/nav-list.png) no-repeat; background-position:-96px 0px; width:19px; height:19px; overflow:hidden; display:block; float:left; position:relative; top:8px; margin-right:5px;} 
+.nav-list-img6{background:url(../img/nav-list.png) no-repeat; background-position:-120px 0px; width:19px; height:19px; overflow:hidden; display:block; float:left; position:relative; top:8px; margin-right:5px;} 
+.nav-bar-new-list > li.nav-list-bk{ padding:0 53px;}
+.nav-bar-new-list .nav-lin-b{ line-height:39px;  margin-right:0px!important; float:left; padding:0 4px 0 4px;  font-size:14px;  height:39px;border-top:3px solid #0cb353; border-left:0px;}
+/*教师空间nav*/
+.nav-list-te1{background:url(../img/nav-list-teacher.png) no-repeat; background-position:0px 0px; width:19px; height:19px; overflow:hidden; display:block; float:left; position:relative; top:8px; margin-right:5px;} 
+.nav-list-te2{background:url(../img/nav-list-teacher.png) no-repeat; background-position:-24px 0px; width:19px; height:19px; overflow:hidden; display:block; float:left; position:relative; top:8px; margin-right:5px;} 
+.nav-list-te3{background:url(../img/nav-list-teacher.png) no-repeat; background-position:-48px 0px; width:19px; height:19px; overflow:hidden; display:block; float:left; position:relative; top:8px; margin-right:5px;} 
+.nav-list-te4{background:url(../img/nav-list-teacher.png) no-repeat; background-position:-72px 0px; width:19px; height:19px; overflow:hidden; display:block; float:left; position:relative; top:8px; margin-right:5px;} 
+.nav-list-te5{background:url(../img/nav-list-teacher.png) no-repeat; background-position:-96px 0px; width:19px; height:19px; overflow:hidden; display:block; float:left; position:relative; top:8px; margin-right:5px;} 
+.nav-list-te6{background:url(../img/nav-list-teacher.png) no-repeat; background-position:-120px 0px; width:19px; height:19px; overflow:hidden; display:block; float:left; position:relative; top:8px; margin-right:5px;} 
+.nav-list-te7{background:url(../img/nav-list-teacher.png) no-repeat; background-position:-144px 0px; width:19px; height:19px; overflow:hidden; display:block; float:left; position:relative; top:8px; margin-right:5px;} 
+
+.nav-bar-new-list .nav-lin-t{ line-height:39px; margin-right:0px!important; float:left; padding:0 5px 0 6px;  font-size:14px; border-radius:0 0px 0 0!important; height:39px;border-top:3px solid #0cb353; border-left:0px;}
+.nav-bar-new-list > li.nav-list-te{ padding:0 49px;}
+
+/*学生空间nav*/
+.nav-list-te1{background:url(../img/nav-list-teacher.png) no-repeat; background-position:0px 0px; width:19px; height:19px; overflow:hidden; display:block; float:left; position:relative; top:8px; margin-right:5px;} 
+.nav-list-te2{background:url(../img/nav-list-teacher.png) no-repeat; background-position:-24px 0px; width:19px; height:19px; overflow:hidden; display:block; float:left; position:relative; top:8px; margin-right:5px;} 
+.nav-list-te3{background:url(../img/nav-list-teacher.png) no-repeat; background-position:-48px 0px; width:19px; height:19px; overflow:hidden; display:block; float:left; position:relative; top:8px; margin-right:5px;} 
+.nav-list-te4{background:url(../img/nav-list-teacher.png) no-repeat; background-position:-72px 0px; width:19px; height:19px; overflow:hidden; display:block; float:left; position:relative; top:8px; margin-right:5px;} 
+.nav-list-te5{background:url(../img/nav-list-teacher.png) no-repeat; background-position:-96px 0px; width:19px; height:19px; overflow:hidden; display:block; float:left; position:relative; top:8px; margin-right:5px;} 
+.nav-list-te6{background:url(../img/nav-list-teacher.png) no-repeat; background-position:-120px 0px; width:19px; height:19px; overflow:hidden; display:block; float:left; position:relative; top:8px; margin-right:5px;} 
+.nav-list-te7{background:url(../img/nav-list-teacher.png) no-repeat; background-position:-144px 0px; width:19px; height:19px; overflow:hidden; display:block; float:left; position:relative; top:8px; margin-right:5px;} 
+
+.nav-bar-new-list .nav-lin-t{ line-height:39px; margin-right:0px!important; float:left; padding:0 5px 0 6px;  font-size:14px; border-radius:0 0px 0 0!important; height:39px;border-top:3px solid #0cb353; border-left:0px;}
+.nav-bar-new-list > li.nav-list-te{ padding:0 49px;}
+.panel-other-all{background:#FFF; /*box-shadow:0px 2px 2px #ccc;*/ border-right:1px solid #ccc;border-left:1px solid #ccc;border-bottom:1px solid #ccc;}
+.panel-other-left{padding-left:5px;  }
+.panel-other-left .panel-heading{background:none; border-top:3px solid #f90; border-radius:0px; padding:5px;}
+.panel-other-left .panel-body .list-other-tree .list-other-item{background:none!important; padding:8px 0px!important;color:#333; border-bottom:1px dotted #eee;}
+.panel-other-left .rizhi-shu .sub-list .current-tree > a,.panel-other-left .rizhi-shu .sub-list .current-tree > a:hover{background:none; color:#FFAE00;}
+.ico-position{position:relative; display:block; line-height:36px; height:36px; padding-left:30px;font-weight: 800;
+color: rgba(96, 96, 96, 1); font-size:15px;}
+.ico-other{width:19px; height:19px; position:absolute; background:url(../img/social_myspace_square.png); top:8px; left:2px;}
+.ico-other-rizhi{width:19px; height:19px; position:absolute; background:url(../img/social_myspace_rizhi.png); top:8px; left:2px;}
+.rizhi-shu .tree-sub-1 .tree-sub > li > .tree-sub > li > a:hover{
+	color:#f90;}
+
+
+
+
+
+
+
 
