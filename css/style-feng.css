@@ -841,9 +841,9 @@ ul.qx-thead-body li{ border:1px solid #E8E8E8;padding:10px 0px;}
 .userimg{
 	float:left; width:80px; height:80px;  margin-left:50px;}
 .username{
-	margin-left:20px; }
-.username h3,.username h5{
-	margin:0px; color:#F0AD4E; display:inline; text-shadow:0 0 4px #333333;}
+	 margin-bottom:12px; border-bottom:2px solid #999;}
+.username h3{
+	 color:#5BC0DE; }
 .second-nav-people-bottom{
 	background:#333; float:left;}
 .container-people .none-heading{
@@ -946,11 +946,11 @@ ul.qx-thead-body li{ border:1px solid #E8E8E8;padding:10px 0px;}
   border-color:#FFF;
 }
 
-.right-topic .list-topic{
-	border:none;
-	background:none;
-	box-shadow:none;
-	border-radius:0px;}
+.list-topic{
+	box-shadow:none; margin-bottom:5px; padding:0 6px;}
+.school-user .pagination{ margin:10px 10px!important;}
+.list-topic .list-group-item{ border-bottom:1px dashed #ddd;margin-bottom:1px;}
+.list-topic .list-group-item h2.media-heading{font-size:12px; color:#999; }
 .right-topic .list-topic .list-group-item{
 	padding:10px;
 	border-bottom:2px solid #EBEBEB;}
@@ -1185,8 +1185,8 @@ font-weight: 900;
 
 
 .nav-bar-new{ height:36px; }
-.nav-bar-new-list{border-right:1px solid #ccc;}
-.nav-bar-new-list > li{ line-height:36px; background:rgba(225, 225, 225, 1); margin-right:0px!important; float:left; padding:0 16px; border-top:3px solid #0cb353;  font-size:14px; border-left:1px solid #ccc;}
+.nav-bar-new-list{border-right:1px solid #ccc; border-bottom:1px solid #ccc;}
+.nav-bar-new-list > li{ line-height:36px; background:#e1e1e1; margin-right:0px!important; float:left; padding:0 16px; border-bottom:3px solid #0cb353;  font-size:14px; border-left:1px solid #ccc;}
 
 
 
@@ -1216,20 +1216,23 @@ font-weight: 900;
 .nav-list-te6{background:url(../img/nav-list-teacher.png) no-repeat; background-position:-120px 0px; width:19px; height:19px; overflow:hidden; display:block; float:left; position:relative; top:8px; margin-right:5px;} 
 .nav-list-te7{background:url(../img/nav-list-teacher.png) no-repeat; background-position:-144px 0px; width:19px; height:19px; overflow:hidden; display:block; float:left; position:relative; top:8px; margin-right:5px;} 
 
-.nav-bar-new-list .nav-lin-t{ line-height:39px; margin-right:0px!important; float:left; padding:0 5px 0 6px;  font-size:14px; border-radius:0 0px 0 0!important; height:39px;border-top:3px solid #0cb353; border-left:0px;}
+.nav-bar-new-list .nav-lin-t{ line-height:39px; margin-right:0px!important; float:left; padding:0 5px 0 6px;  font-size:14px; border-radius:0 0px 0 0!important; height:40px;border-top:3px solid #0cb353; border-left:0px;}
 .nav-bar-new-list > li.nav-list-te{ padding:0 49px;}
 
 /*学生空间nav*/
-.nav-list-te1{background:url(../img/nav-list-teacher.png) no-repeat; background-position:0px 0px; width:19px; height:19px; overflow:hidden; display:block; float:left; position:relative; top:8px; margin-right:5px;} 
-.nav-list-te2{background:url(../img/nav-list-teacher.png) no-repeat; background-position:-24px 0px; width:19px; height:19px; overflow:hidden; display:block; float:left; position:relative; top:8px; margin-right:5px;} 
-.nav-list-te3{background:url(../img/nav-list-teacher.png) no-repeat; background-position:-48px 0px; width:19px; height:19px; overflow:hidden; display:block; float:left; position:relative; top:8px; margin-right:5px;} 
-.nav-list-te4{background:url(../img/nav-list-teacher.png) no-repeat; background-position:-72px 0px; width:19px; height:19px; overflow:hidden; display:block; float:left; position:relative; top:8px; margin-right:5px;} 
-.nav-list-te5{background:url(../img/nav-list-teacher.png) no-repeat; background-position:-96px 0px; width:19px; height:19px; overflow:hidden; display:block; float:left; position:relative; top:8px; margin-right:5px;} 
-.nav-list-te6{background:url(../img/nav-list-teacher.png) no-repeat; background-position:-120px 0px; width:19px; height:19px; overflow:hidden; display:block; float:left; position:relative; top:8px; margin-right:5px;} 
-.nav-list-te7{background:url(../img/nav-list-teacher.png) no-repeat; background-position:-144px 0px; width:19px; height:19px; overflow:hidden; display:block; float:left; position:relative; top:8px; margin-right:5px;} 
+.nav-list-st1{background:url(../img/nav-list-st.png) no-repeat; background-position:0px 0px; width:19px; height:19px; overflow:hidden; display:block; float:left; position:relative; top:8px; margin-right:5px;} 
+.nav-list-st2{background:url(../img/nav-list-st.png) no-repeat; background-position:-24px 0px; width:19px; height:19px; overflow:hidden; display:block; float:left; position:relative; top:8px; margin-right:5px;} 
+.nav-list-st3{background:url(../img/nav-list-st.png) no-repeat; background-position:-48px 0px; width:19px; height:19px; overflow:hidden; display:block; float:left; position:relative; top:8px; margin-right:5px;} 
+.nav-list-st4{background:url(../img/nav-list-st.png) no-repeat; background-position:-72px 0px; width:19px; height:19px; overflow:hidden; display:block; float:left; position:relative; top:8px; margin-right:5px;} 
+.nav-list-st5{background:url(../img/nav-list-st.png) no-repeat; background-position:-96px 0px; width:19px; height:19px; overflow:hidden; display:block; float:left; position:relative; top:8px; margin-right:5px;} 
+.nav-list-st6{background:url(../img/nav-list-st.png) no-repeat; background-position:-120px 0px; width:19px; height:19px; overflow:hidden; display:block; float:left; position:relative; top:8px; margin-right:5px;} 
+.nav-list-st7{background:url(../img/nav-list-st.png) no-repeat; background-position:-144px 0px; width:19px; height:19px; overflow:hidden; display:block; float:left; position:relative; top:8px; margin-right:5px;} 
+.nav-list-st8{background:url(../img/nav-list-st.png) no-repeat; background-position:-168px 0px; width:30px; height:19px; overflow:hidden; display:block; float:left; position:relative; top:8px; margin-right:5px;} 
+.nav-list-st9{background:url(../img/nav-list-st.png) no-repeat; background-position:-203px 0px; width:19px; height:19px; overflow:hidden; display:block; float:left; position:relative; top:8px; margin-right:5px;} 
+.nav-list-st10{background:url(../img/nav-list-st.png) no-repeat; background-position:-224px 0px; width:19px; height:19px; overflow:hidden; display:block; float:left; position:relative; top:8px; margin-right:5px;} 
 
-.nav-bar-new-list .nav-lin-t{ line-height:39px; margin-right:0px!important; float:left; padding:0 5px 0 6px;  font-size:14px; border-radius:0 0px 0 0!important; height:39px;border-top:3px solid #0cb353; border-left:0px;}
-.nav-bar-new-list > li.nav-list-te{ padding:0 49px;}
+.nav-bar-new-list .nav-lin-s{ line-height:39px; margin-right:0px!important; float:left; padding:0 2px 0 3px;  font-size:14px; border-radius:0 0px 0 0!important; height:39px;border-top:3px solid #0cb353; border-left:0px;}
+.nav-bar-new-list > li.nav-list-st{ padding:0 10px;}
 .panel-other-all{background:#FFF; /*box-shadow:0px 2px 2px #ccc;*/ border-right:1px solid #ccc;border-left:1px solid #ccc;border-bottom:1px solid #ccc;}
 .panel-other-left{padding-left:5px;  }
 .panel-other-left .panel-heading{background:none; border-top:3px solid #f90; border-radius:0px; padding:5px;}

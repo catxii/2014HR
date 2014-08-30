@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../favicon.ico">
+
+  <!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+  <script type="text/JavaScript" src="space-css.js"></script>
+  <!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+
+  <title>领信样式模板</title>
+
+</head>
+<body class="fixed-top-body" ng-app="">
+<div class="navbar navbar-zhijiao navbar-green navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#" class="navbar-brand logo-small" alt="领信logo"></a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active">
+          <a href="#">教学空间</a>
+        </li>
+        <li>
+          <a href="#about">个人空间</a>
+        </li>
+        <li>
+          <a href="#contact">班级空间</a>
+        </li>
+        <li>
+          <a href="#contact">我的班级</a>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">张学友 [ 退出 ]</a></li>
+        <li><a href="#"><span class="icon-t-shirt"></span> 装扮</a></li>
+        <li class="dropdown">
+          <a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class=" icon-cogwheel"></span> 设置 <span class="caret"></span></a>
+          <ul role="menu" class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+
+    </div>
+
+
+    <!--/.nav-collapse --> 
+  </div>
+</div>
+
+<div class="container-fluid banner-fluid-bg">
+    <div class="container top-banner-small nav-bar-new">
+      <ul class="inline-block-ul  nav-bar-new-list clearfix">
+       
+        <li class="nav-list-case nav-list-st"><a href="#"><i class="nav-list-st1"></i>主 页</a></li>
+        <li class="nav-list-case nav-list-st"><a href="#"><i class="nav-list-st2"></i>日 志</a></li>
+        <li class="nav-list-case nav-list-st"><a href="#"><i class="nav-list-st3"></i>照 片</a></li>
+        <li class="nav-list-case nav-list-st"><a href="#"><i class="nav-list-st4"></i>圈 子</a></li>
+        <li class="nav-list-case nav-list-st"><a href="#"><i class="nav-list-st5"></i>私 信</a></li>
+        <li class="nav-list-case nav-list-st"><a href="#"><i class="nav-list-st6"></i>电子作业</a></li>
+        <li class="nav-list-case nav-list-st"><a href="#"><i class="nav-list-st7"></i>随堂测验</a></li>
+        <li class="nav-list-case nav-list-st"><a href="#"><i class="nav-list-st8"></i>试题上传</a></li>
+        <li class="nav-list-case nav-list-st"><a href="#"><i class="nav-list-st9"></i>收藏书签</a></li>
+        <li class="nav-list-case nav-list-st"><a href="#"><i class="nav-list-st10"></i>目录管理</a></li>
+        <li class="nav-lin-s"></li>
+     </ul>
+    </div>
+</div>
+
+<div class="container">
+
+  <div class="col-md-12 clear-padding">
+
+
+    <div class="panel panel-default clear-border">
+      <div class="panel-heading tab-header clear-border">
+        <ul class="inline-block-ul navigation-inline-ul tab-header-ul" >
+            <li class="current"><a href="#">同事</a></li>
+            <li><a href="#">好友</a></li>
+            <li><a href="#">被关注</a></li>
+            <li><a href="#">关注</a></li>
+         </ul>
+         <ul class="inline-block-ul-mid position-right-top-block top-head-ul" >
+            <li>
+              <select class="select2-box" style="width:100px;">
+                <option>全部学校</option>
+                <option>华容一中</option>
+                <option>万予中学</option>
+              </select>
+            </li>
+            <li>
+              <select class="select2-box" style="width:130px;">
+                <option>全部班级</option>
+                <optgroup label="高三">
+                  <option>高三一班</option>
+                  <option>高三三班</option>
+                </optgroup>
+                <optgroup label="高二">
+                  <option>高三一班</option>
+                  <option>高三三班</option>
+                </optgroup>
+                <optgroup label="高一">
+                  <option>高三一班</option>
+                  <option>高三三班</option>
+                </optgroup>
+              </select>
+            </li>
+            <li>
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="请输入教师或学生名称">
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                  </span>
+                </div>
+            </li>
+         </ul>
+      </div>
+
+      <div class="panel-body">
+          <div class=" container-fluid col-sm-9">
+
+            <div class="tab-panel-body">
+              <table class="table table-striped table table-hover text-center table-pepole-list" ng-controller="OrderByCtrl">
+                <tr class="title">
+                  <td>头像预览</td>
+                  <td><a href="javascript:" ng-click="sortField='name'; reverse = !reverse">姓名</a></td>
+                  <td><a href="javascript:" ng-click="sortField='schoolname'; reverse = !reverse">所属学校</a></td>
+                  <td><a href="javascript:" ng-click="sortField='subject'; reverse = !reverse">学科</a></td>
+                  <td><a href="javascript:" ng-click="sortField='watch'; reverse = !reverse">是否关注</a></td>
+                  <td></td>
+                </tr>
+                <tr ng-class="{ 'active':$index == 0}" ng-repeat="list in lists | orderBy:sortField:reverse">
+                  <td><img src="img/photo.jpg" width="20px" height="20px"></td>
+                  <td >{{list.name}}</td>
+                  <td>{{list.schoolname}}</td>
+                  <td>{{list.subject}}</td>
+                  <td>{{list.watch}}</td>
+                  <td><span class="glyphicon glyphicon-chevron-right"></span></td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="tab-panel-body" style="display:none">
+              <table class="table table-striped table table-hover text-center table-pepole-list" ng-controller="OrderByCtrl">
+                <tr class="title">
+                  <td>头像预览</td>
+                  <td><a href="javascript:" ng-click="sortField='name'; reverse = !reverse">姓名2</a></td>
+                  <td><a href="javascript:" ng-click="sortField='schoolname'; reverse = !reverse">所属学校</a></td>
+                  <td><a href="javascript:" ng-click="sortField='subject'; reverse = !reverse">学科</a></td>
+                  <td><a href="javascript:" ng-click="sortField='watch'; reverse = !reverse">是否关注</a></td>
+                  <td></td>
+                </tr>
+                <tr ng-class="{ 'active':$index == 0}" ng-repeat="list in lists | orderBy:sortField:reverse">
+                  <td><img src="img/photo.jpg" width="20px" height="20px"></td>
+                  <td >{{list.name}}</td>
+                  <td>{{list.schoolname}}</td>
+                  <td>{{list.subject}}</td>
+                  <td>{{list.watch}}</td>
+                  <td><span class="glyphicon glyphicon-chevron-right"></span></td>
+                </tr>
+              </table>
+            </div>  
+
+            <div class="tab-panel-body" style="display:none">
+              <table class="table table-striped table table-hover text-center table-pepole-list" ng-controller="OrderByCtrl">
+                <tr class="title">
+                  <td>头像预览</td>
+                  <td><a href="javascript:" ng-click="sortField='name'; reverse = !reverse">姓名3</a></td>
+                  <td><a href="javascript:" ng-click="sortField='schoolname'; reverse = !reverse">所属学校</a></td>
+                  <td><a href="javascript:" ng-click="sortField='subject'; reverse = !reverse">学科</a></td>
+                  <td><a href="javascript:" ng-click="sortField='watch'; reverse = !reverse">是否关注</a></td>
+                  <td></td>
+                </tr>
+                <tr ng-class="{ 'active':$index == 0}" ng-repeat="list in lists | orderBy:sortField:reverse">
+                  <td><img src="img/photo.jpg" width="20px" height="20px"></td>
+                  <td >{{list.name}}</td>
+                  <td>{{list.schoolname}}</td>
+                  <td>{{list.subject}}</td>
+                  <td>{{list.watch}}</td>
+                  <td><span class="glyphicon glyphicon-chevron-right"></span></td>
+                </tr>
+              </table>
+            </div>
+
+            <div class="tab-panel-body" style="display:none">
+              <table class="table table-striped table table-hover text-center table-pepole-list" ng-controller="OrderByCtrl">
+                <tr class="title">
+                  <td>头像预览</td>
+                  <td><a href="javascript:" ng-click="sortField='name'; reverse = !reverse">姓名4</a></td>
+                  <td><a href="javascript:" ng-click="sortField='schoolname'; reverse = !reverse">所属学校</a></td>
+                  <td><a href="javascript:" ng-click="sortField='subject'; reverse = !reverse">学科</a></td>
+                  <td><a href="javascript:" ng-click="sortField='watch'; reverse = !reverse">是否关注</a></td>
+                  <td></td>
+                </tr>
+                <tr ng-class="{ 'active':$index == 0}" ng-repeat="list in lists | orderBy:sortField:reverse">
+                  <td><img src="img/photo.jpg" width="20px" height="20px"></td>
+                  <td >{{list.name}}</td>
+                  <td>{{list.schoolname}}</td>
+                  <td>{{list.subject}}</td>
+                  <td>{{list.watch}}</td>
+                  <td><span class="glyphicon glyphicon-chevron-right"></span></td>
+                </tr>
+              </table>
+            </div>
+
+          </div>
+          <div class="col-sm-3">
+            <div class="quanzi-single-show container-fluid" data-spy="affix" data-offset-top="60" data-offset-bottom="20">
+              <div class="col-md-12">
+                <a class="photo" href="#"><img src="img/photo.jpg" ></a>
+              </div>
+              <div class="col-md-12">
+                <ul class="list-unstyled">
+                  <li class="name"><a class="font-overflow" href="#">教师测试账号</a></li>
+                  <li class="school-name"><a class="font-overflow" href="#">学校测试</a></li>
+                  <li class="watch">
+                    <a href="#" class="btn btn-sm btn-default"><span class="icon-heart red"></span> <span class="gz">取消关注</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </div>
+      
+    </div>
+
+
+
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- 底部 -->
+<div class="container-fluid footer footer-grayline">
+    <div class="row">
+      <ul class="col-md-12 inline-block-ul">
+        <li><a href="#">关于我们</a></li>
+        <li>|</li>
+        <li><a href="#">联系我们</a></li>
+        <li>|</li>
+        <li><a href="#">友情链接</a></li>
+        <li>|</li>
+        <li><a href="#">关于我们</a></li>
+        <li>|</li>
+        <li><a href="#">关于我们</a></li>
+      </ul>
+    </div>
+    <div class="row">
+        <div class="col-md-12">Copyright @ 2011-2015 湖南领信教育网络发展有限公司版权所有 湘ICP备14001031号</div>
+    </div>
+</div>  
+
+ 
+<!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+<script type="text/JavaScript" src="space-footer-css.js"></script>
+<!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+<script type="text/javascript">
+    // 排序效果
+      function OrderByCtrl($scope,$filter) {
+        $scope.lists = [
+          {'name':'彭毅超','schoolname':'花容易中','subject':'数学','watch':'已关注'},
+          {'name':'龚昕菊','schoolname':'万庾中学','subject':'数学','watch':'已关注'},
+          {'name':'邓成伟','schoolname':'城关小学','subject':'数学','watch':'已关注'},
+          {'name':'丁伟','schoolname':'大学城卧底','subject':'英语','watch':'已关注'},
+          {'name':'樊素静','schoolname':'花容二中','subject':'体育','watch':'未关注'},
+          {'name':'王召唤','schoolname':'插旗中学','subject':'数学','watch':'已关注'},
+          {'name':'郭涛','schoolname':'幸福乡小学','subject':'数学','watch':'已关注'},
+          {'name':'周前锋','schoolname':'花容二中','subject':'数学','watch':'已关注'},
+          {'name':'张胜','schoolname':'城关小学','subject':'数学','watch':'已关注'},
+          {'name':'冯亮','schoolname':'花容易中','subject':'数学','watch':'已关注'},
+          {'name':'曾梵志','schoolname':'万庾中学','subject':'数学','watch':'已关注'}
+        ];
+          $scope.sortField = 'id';
+          $scope.reverse = false;   
+      }
+</script>
+
+</body>
+</html>

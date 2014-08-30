@@ -11,14 +11,16 @@
   <title>领信样式模板</title>
   <style>
 .list-group-other.active, .list-group-other.active:hover, .list-group-other.active:focus{border-bottom:0px;}
+.navbar-nav > li > a{padding:8px 10px!important;}
+.navbar {min-height:36px!important;}
   </style>
   <!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
   <script type="text/JavaScript" src="space-css.js"></script>
   <!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
 
 </head>
-<body class="fixed-top-body" ng-app="">
-<div class="navbar navbar-zhijiao navbar-green navbar-fixed-top">
+<body class="fixed-top-body" ng-app="" style="padding-top:34px;">
+<div class="navbar navbar-zhijiao navbar-green navbar-fixed-top" style="height:36px;">
   <div class="container">
     <div class="navbar-header">
       <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
@@ -27,7 +29,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="#" class="navbar-brand logo-small" alt="领信logo"></a>
+      <a href="#" class="navbar-brand logo-small" alt="领信logo" style="height:36px;"></a>
     </div>
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
@@ -67,115 +69,26 @@
   </div>
 </div>
 
-<div class="container-fluid banner-fluid-bg">
+<div class="container-fluid banner-fluid-bg" style="background:#ddd; border-bottom:1px solid #BEBEBE">
     <div class="container top-banner-small nav-bar-new">
       <ul class="inline-block-ul  nav-bar-new-list clearfix">
        
-        <li class="nav-list-case nav-list-te"><a href="#"><i class="nav-list-st1"></i>主 页</a></li>
-        <li class="nav-list-case nav-list-te"><a href="#"><i class="nav-list-st2"></i>日 志</a></li>
-        <li class="nav-list-case nav-list-te"><a href="#"><i class="nav-list-st3"></i>照 片</a></li>
-        <li class="nav-list-case nav-list-te"><a href="#"><i class="nav-list-st4"></i>圈 子</a></li>
-        <li class="nav-list-case nav-list-te"><a href="#"><i class="nav-list-st5"></i>心 得</a></li>
-        <li class="nav-list-case nav-list-te"><a href="#"><i class="nav-list-st6"></i>私 信</a></li>
-        <li class="nav-list-case nav-list-te"><a href="#"><i class="nav-list-st7"></i>收藏书签</a></li>
-        <li class="nav-list-case nav-list-te"><a href="#"><i class="nav-list-st8"></i>收藏书签</a></li>
-        <li class="nav-list-case nav-list-te"><a href="#"><i class="nav-list-st9"></i>收藏书签</a></li>
-        <li class="nav-lin-s"></li>
-      </ul>
+        <li class="nav-list-case nav-list-st"><a href="#"><i class="nav-list-st1"></i>主 页</a></li>
+        <li class="nav-list-case nav-list-st"><a href="#"><i class="nav-list-st2"></i>日 志</a></li>
+        <li class="nav-list-case nav-list-st"><a href="#"><i class="nav-list-st3"></i>照 片</a></li>
+        <li class="nav-list-case nav-list-st"><a href="#"><i class="nav-list-st4"></i>圈 子</a></li>
+        <li class="nav-list-case nav-list-st"><a href="#"><i class="nav-list-st5"></i>私 信</a></li>
+        <li class="nav-list-case nav-list-st"><a href="#"><i class="nav-list-st6"></i>电子作业</a></li>
+        <li class="nav-list-case nav-list-st"><a href="#"><i class="nav-list-st7"></i>随堂测验</a></li>
+        <li class="nav-list-case nav-list-st"><a href="#"><i class="nav-list-st8"></i>试题上传</a></li>
+        <li class="nav-list-case nav-list-st"><a href="#"><i class="nav-list-st9"></i>收藏书签</a></li>
+        <li class="nav-list-case nav-list-st"><a href="#"><i class="nav-list-st10"></i>目录管理</a></li>
+       
+     </ul>
     </div>
 </div>
 
-<div class="container">
-  
-  <div class="col-md-12 panel-other-all">
-    
 
-    <!-- 日志列表 -->
-    <div class="panel panel-default clear-border clear-margin">
-      
-      <div class=" panel-body clear-border" style="padding:15px 0;">
-      <div class="col-md-3 panel-other-left">
-    <!-- 分类 -->
-       <div class="panel panel-default clear-border">
-      <div class="panel-heading clear-padding">
-        <div class="ico-position">
-        <span class="ico-other-rizhi"></span>  日志列表 
-        </div>
-        
-      </div>
-      <div class="panel-body clear-padding">
-        
-        <div class="collapse-lx rizhi-shu" style="margin-bottom:3px;">
-              <div class="list-other-tree small all-tree-ul-none showit sub-list-all-hover clear-border">
-                <div href="javascript:" class="list-other-item tree-title-button active title-button" style=" ">
-               <a style="border-left:3px solid #F90; padding:0px 10px;">教育局分类</a>
-            </div>
-                <div class="tree-sub tree-sub-1 sub-list clear-padding">
-                  <ul class="tree-sub clear-padding">
-                    <li> <a href="javascript:"> <span class="iblock dot">·</span> <span class="sub-click-area">第一章</span> </a>
-                    </li>
-                    <li> <a href="javascript:"> <span class="iblock dot">·</span> <span class="sub-click-area">班级基本情况</span> </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-        <div class="collapse-lx rizhi-shu" style="margin-bottom:3px;">
-              <div class="list-other-tree small all-tree-ul-none showit sub-list-all-hover clear-border">
-                <div href="javascript:" class="list-other-item tree-title-button active title-button" style=" ">
-               <a style="border-left:3px solid #F90; padding:0px 10px;">学校分类</a>
-            </div>
-                <div class="tree-sub tree-sub-1 sub-list clear-padding">
-                  <ul class="tree-sub clear-padding">
-                    
-                    <li> <a href="javascript:"> <span class="iblock dot">·</span> <span class="sub-click-area">第一章</span> </a>
-                      
-                    </li>
-                    
-                    <li> <a href="javascript:"> <span class="iblock dot">·</span> <span class="sub-click-area">班级基本情况</span> </a>
-                      
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-        <div class="collapse-lx rizhi-shu" style="margin-bottom:3px;">
-              <div class="list-other-tree small all-tree-ul-none showit sub-list-all-hover clear-border">
-                <div href="javascript:" class="list-other-item tree-title-button active title-button" style=" ">
-               <a style="border-left:3px solid #F90; padding:0px 10px;"><img src="img/social_myspace_wenjian.png" width="19" height="19"  alt=""/> 我的分类</a>
-            </div>
-                <div class="tree-sub tree-sub-1 sub-list clear-padding">
-                  <ul class="tree-sub clear-padding">
-                    
-                    <li> <a href="javascript:"> <span class="iblock dot">·</span> <span class="sub-click-area">第一章</span> </a>
-                      
-                    </li>
-                    
-                    <li> <a href="javascript:"> <span class="iblock dot">·</span> <span class="sub-click-area">班级基本情况</span> </a>
-                      
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-      </div>
-    </div>
-    
-    
-      
-  </div>
-      <div class="col-md-9 panel-other-right"> 
-
-  	
-	</div>
-      </div>
-    </div>
-
-
-
-
-  </div>
-</div>
 
 <!-- 弹出框 -->
 <!-- Modal -->
@@ -228,7 +141,7 @@
 $(document).ready(function(e) {
     $('.nav-list-case').mouseup(
 		function(){
-			$(this).css({"background":"#fff","border-top-color":"#f90"}).siblings().css({"background":"#e1e1e1","border-top-color":"#0cb353"});
+			$(this).css({"background":"#fff","border-bottom-color":"#f90"}).siblings().css({"background":"#e1e1e1","border-bottom-color":"#0cb353"});
 			
 	});
 	
