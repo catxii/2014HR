@@ -56,7 +56,7 @@
             <a href="javascript:"><span class="sub-click-area icon-circle-plus"></span> <span class="sub-click-area">后勤部</span></a>
             <ul class="tree-sub inline-block-ul">
               <li>
-                <a href="javascript:"><span class="sub-click-area icon-user"></span> <span class="sub-click-area">梁云龙（校长）</span></a>
+                <a href="javascript:" data-toggle="modal" data-target="#quicklogin"><span class="sub-click-area icon-user"></span> <span class="sub-click-area">梁云龙（校长）</span></a>
               </li>
               <li>
                 <a href="javascript:"><span class="sub-click-area icon-user"></span> <span class="sub-click-area">冯亮（教导主任）</span></a>
@@ -190,6 +190,39 @@
 
 
 
+<!-- 快速登陆 -->
+<div class="modal fade bs-example-modal-sm" id="quicklogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body clearfix">
+
+        <form class="form-horizontal" role="form">
+
+          <div class="col-md-12" style="padding:10px 20px">
+            <div class="col-sm-12" style="margin-bottom:10px;">我是<span class="name red">刘亚卡</span>，我要登录空间：
+                <input type="email" class="form-control " id="inputEmail3" placeholder="请输入登陆密码" style="width:200px; display:inline-block; vertical-align: middle;">
+              <button class="btn btn-primary">登录</button>
+            </div>
+          </div>
+
+          <div class="col-md-12" style="border-top:1px dashed #cecece; margin:10px 0;"></div>
+
+          <div class="col-md-12" style="padding:10px 20px;">
+            <div class="col-sm-12" style="margin-bottom:10px;">
+              我是<span class="name red">游客</span>，我要 
+              <a href="#" class="btn btn-primary">直接访问空间</a>
+            </div>
+          </div>
+        
+        </form>
+
+      </div>
+      <div class="modal-footer" style="padding:5px;">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+      </div>
+    </div>
+  </div>
+</div>
  
 <!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
 <script type="text/JavaScript" src="space-footer-css.js"></script>
