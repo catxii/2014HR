@@ -13,7 +13,7 @@ var canvasLeft;
 
 //画笔大小
 var size = 1;
-var color  = '#000000';
+var color  = 'red';
 
 //画图形
 var draw_graph = function(graphType,obj){	
@@ -131,23 +131,23 @@ var draw_graph = function(graphType,obj){
 				context_bak.stroke();
 			}
 		//涂鸦 未画得时候 出现一个小圆
-		}else if(graphType == 'handwriting'){											
-			if(canDraw){
-				context_bak.beginPath();	
-				context_bak.strokeStyle = color;
-				context_bak.fillStyle  = color;
-				context_bak.arc(x,y,size*10,0,Math.PI * 2,false);		
-				context_bak.fill();
-				context_bak.stroke();
-				context_bak.restore();
-			}else{	
-				clearContext();
-				context_bak.beginPath();					
-				context_bak.fillStyle  = color;
-				context_bak.arc(x,y,size*10,0,Math.PI * 2,false);
-				context_bak.fill();
-				context_bak.stroke();
-			}
+		// }else if(graphType == 'handwriting'){											
+		// 	if(canDraw){
+		// 		context_bak.beginPath();	
+		// 		context_bak.strokeStyle = color;
+		// 		context_bak.fillStyle  = color;
+		// 		context_bak.arc(x,y,size*10,0,Math.PI * 2,false);		
+		// 		context_bak.fill();
+		// 		context_bak.stroke();
+		// 		context_bak.restore();
+		// 	}else{	
+		// 		clearContext();
+		// 		context_bak.beginPath();					
+		// 		context_bak.fillStyle  = color;
+		// 		context_bak.arc(x,y,size*10,0,Math.PI * 2,false);
+		// 		context_bak.fill();
+		// 		context_bak.stroke();
+		// 	}
 		//橡皮擦 不管有没有在画都出现小方块 按下鼠标 开始清空区域
 		}else if(graphType == 'rubber'){	
 			context_bak.lineWidth = 1;

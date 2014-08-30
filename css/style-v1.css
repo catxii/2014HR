@@ -1875,6 +1875,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   z-index: 0;
   top: 0;
   left: 0;
+  opacity: 0.3;
 }
 #drawController {
   position: fixed;
@@ -1896,10 +1897,10 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   border: none;
 }
 .i1 {
-  background: #000000;
+  background: #ff0000;
 }
 .i2 {
-  background: #ff0000;
+  background: #000000;
 }
 .i3 {
   background: #f7941d;
