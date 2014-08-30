@@ -213,10 +213,10 @@
 		<li class="gray">|</li>
 		<li class="chose">
 			<span class='icon-pencil btn btn-sm btn-primary' onclick="draw_graph('pencil',this)" ></span>
-		</li>
+		</li><!-- 
 		<li class="chose">
 			<span class="icon-brush  btn btn-sm btn-primary" onclick="draw_graph('handwriting',this)" ></span>
-		</li>
+		</li> -->
 		<li class="chose">
 			<span class="icon-vector-path-line btn btn-sm btn-primary" onclick="draw_graph('line',this);"  ></span>
 		</li>
@@ -234,13 +234,13 @@
 			  <label class="btn btn-default active" onclick="chooseLineSize(1)">
 			  <input type="radio" name="options" id="option1" autocomplete="off" checked> <span class="cx cx1">细</span>
 			  </label>
-			  <label class="btn btn-default" onclick="chooseLineSize(3)">
+			  <label class="btn btn-default" onclick="chooseLineSize(5)">
 			    <input type="radio" name="options" id="option2" autocomplete="off"> <span class="cx cx2">中等</span>
 			  </label>
-			  <label class="btn btn-default" onclick="chooseLineSize(6)">
+			  <label class="btn btn-default" onclick="chooseLineSize(10)">
 			    <input type="radio" name="options" id="option3" autocomplete="off"> <span class="cx cx3">粗</span>
 			  </label>
-			  <label class="btn btn-default" onclick="chooseLineSize(10)">
+			  <label class="btn btn-default" onclick="chooseLineSize(20)">
 			    <input type="radio" name="options" id="option4" autocomplete="off"> <span class="cx cx4">加粗</span>
 			  </label>
 			</div>
@@ -276,11 +276,11 @@
 	<div id="line_size"  class="border_nochoose" style="z-index:99">
 		细 <img src="img/line_size_1.png" width = '80px;' height = '12px;' onclick="chooseLineSize(1)">
 		<br/>
-		普通 <img src="img/line_size_3.png" width = '80px;' height = '12px;' onclick="chooseLineSize(3)">
+		普通 <img src="img/line_size_3.png" width = '80px;' height = '12px;' onclick="chooseLineSize(5)">
 		<br/>
-		粗 <img src="img/line_size_5.png" width = '80px;' height = '12px;' onclick="chooseLineSize(5)">
+		粗 <img src="img/line_size_5.png" width = '80px;' height = '12px;' onclick="chooseLineSize(10)">
 		<br/>
-		加粗 <img src="img/line_size_7.png" width = '80px;' height = '12px;' onclick="chooseLineSize(7)">
+		加粗 <img src="img/line_size_7.png" width = '80px;' height = '12px;' onclick="chooseLineSize(20)">
 	</div>
 
 	<!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
