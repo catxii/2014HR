@@ -144,6 +144,10 @@ fieldset[disabled] .btn-primary.active {
 }
 .navbar-green .navbar-nav > li > a {
   color: #fff;
+  height: 36px;
+  line-height: 36px;
+  padding-bottom: 0;
+  padding-top: 0;
 }
 .navbar-green .navbar-nav > li > a:hover,
 .navbar-green .navbar-nav > li > a:focus {
@@ -338,7 +342,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   display: block;
   background: url(../img/logo-tm-top_03.png) left center no-repeat;
   width: 220px;
-  height: 50px;
+  height: 36px;
 }
 .navbar-zhijiao {
   border-radius: 0;
