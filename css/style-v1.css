@@ -266,11 +266,11 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 }
 /* panels */
 .panel-default > .panel-heading {
-  background-image: -webkit-linear-gradient(top, #eeeeee 0%, #eeeeee 100%);
-  background-image: -o-linear-gradient(top, #eeeeee 0%, #eeeeee 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#eeeeee));
-  background-image: linear-gradient(to bottom, #eeeeee 0%, #eeeeee 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eee', endColorstr='#eee', GradientType=0);
+  background-image: -webkit-linear-gradient(top, #eeeeee 0%, #e8e8e8 100%);
+  background-image: -o-linear-gradient(top, #eeeeee 0%, #e8e8e8 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#e8e8e8));
+  background-image: linear-gradient(to bottom, #eeeeee 0%, #e8e8e8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eee', endColorstr='#e8e8e8', GradientType=0);
   background-repeat: repeat-x;
   border-color: #CCC;
 }
@@ -374,7 +374,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 }
 /* 高校学堂 */
 .fixed-top-body {
-  padding-top: 80px;
+  padding-top: 50px;
 }
 .banner-fluid-bg {
   /*background: url(../img/banner-graybg_03.png) repeat-x;*/
@@ -409,8 +409,10 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   color: #0c9e4a;
   font-weight: bold;
 }
-.second-nav-bar-bottom li.current a {
-  border-bottom: 3px solid #0cb353;
+.nav-bar-new-list .current {
+  background: #d1d1d1;
+  border-bottom-color: #f90;
+  border-bottom-style: 3px solid #e1e1e1;
 }
 .second-nav-bar-bottom li .sub li a {
   border-bottom: none;
@@ -1988,4 +1990,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 }
 .lanmu-title .icon-more-items {
   vertical-align: middle;
+}
+.blog-nr-view * {
+  max-width: 100%!important;
 }
