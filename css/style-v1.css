@@ -378,6 +378,8 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 }
 .banner-fluid-bg {
   /*background: url(../img/banner-graybg_03.png) repeat-x;*/
+  position: relative;
+  z-index: 10;
 }
 .top-banner-small {
   height: 50px;
@@ -385,37 +387,13 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   position: relative;
   z-index: 21;
 }
-.second-nav-bar-bottom {
-  position: absolute;
-  bottom: 10px;
-  width: 100%;
-  text-align: center;
-}
-.second-nav-bar-bottom li {
-  margin: 0 20px;
+.second-nav-bar-bottom > li {
   position: relative;
-}
-.second-nav-bar-bottom li a {
-  font-size: 16px;
-  color: #4c4c4c;
-  padding-bottom: 2px;
-}
-.second-nav-bar-bottom li a:hover,
-.second-nav-bar-bottom li:hover a {
-  color: #ee9e19;
-}
-.second-nav-bar-bottom li.current a {
-  text-decoration: none;
-  color: #0c9e4a;
-  font-weight: bold;
 }
 .nav-bar-new-list .current {
   background: #d1d1d1;
   border-bottom-color: #f90;
   border-bottom-style: 3px solid #e1e1e1;
-}
-.second-nav-bar-bottom li .sub li a {
-  border-bottom: none;
 }
 .second-nav-bar-bottom li .sub li.current a,
 .second-nav-bar-bottom li .sub li.current a:hover {
@@ -1193,27 +1171,29 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 .second-nav-bar-bottom li .sub {
   display: none;
   position: absolute;
-  top: 24px;
+  top: 80px;
   left: 0;
   padding-left: 0;
   background: white;
   border: 1px solid #cecece;
-  border-radius: 5px;
-  box-shadow: 3px 3px 3px #ccc;
+  border-top: none;
+  border-radius: 0 0 5px 5px;
+  word-spacing: 0;
 }
 .second-nav-bar-bottom li:hover .sub {
   display: block;
 }
 .second-nav-bar-bottom li .sub li {
-  margin: 0 0 0px 0;
+  margin: 0 0 0 0;
   width: 120px;
 }
 .second-nav-bar-bottom li .sub li a {
   font-size: 12px;
   text-align: left;
-  padding: 10px 10px 10px 15px;
   display: block;
   color: #333;
+  padding-left: 10px;
+  line-height: 40px;
 }
 .second-nav-bar-bottom li .sub li a:hover {
   text-decoration: none;
@@ -1991,6 +1971,10 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 .lanmu-title .icon-more-items {
   vertical-align: middle;
 }
+.blog-nr-view {
+  position: relative;
+}
 .blog-nr-view * {
   max-width: 100%!important;
+  position: static!important;
 }
