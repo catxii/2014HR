@@ -1218,10 +1218,6 @@ font-weight: 900;
 .nav-list-te7{background:url(../img/nav-list-teacher.png) no-repeat; background-position:-144px 0px; width:19px; height:19px; overflow:hidden; display:block; float:left; position:relative; top:8px; margin-right:5px;} 
 
 .nav-bar-new-list .nav-lin-t{ line-height:39px; margin-right:0px!important; float:left; padding:0 5px 0 6px;  font-size:14px; border-radius:0 0px 0 0!important; height:40px;border-top:3px solid #0cb353; border-left:0px;}
-<<<<<<< HEAD
-=======
-.nav-bar-new-list > li.nav-list-te{ padding:0 49px;}
->>>>>>> FETCH_HEAD
 
 /*图标nav*/
 .nav-list-zy{background:url(../img/nav-list-st.png) no-repeat; background-position:0px 0px; width:19px; height:19px; overflow:hidden; display:block;  position:relative; top:21px; margin-right:5px;}
@@ -1235,13 +1231,12 @@ font-weight: 900;
 .nav-list-stsc{background:url(../img/nav-list-st.png) no-repeat; background-position:-168px 0px; width:30px; height:19px; overflow:hidden; display:block;position:relative; top:21px; margin-right:5px;} 
 .nav-list-scsq{background:url(../img/nav-list-st.png) no-repeat; background-position:-203px 0px; width:19px; height:19px; overflow:hidden; display:block; position:relative; top:21px; margin-right:5px;} 
 .nav-list-mlgl{background:url(../img/nav-list-st.png) no-repeat; background-position:-224px 0px; width:19px; height:19px; overflow:hidden; display:block;  position:relative; top:21px; margin-right:5px;} 
-
 .nav-list-ggzy{background:url(../img/nav-list-st.png) no-repeat; background-position:-271px 0px; width:19px; height:19px; overflow:hidden; display:block;  position:relative; top:21px; margin-right:5px;} 
 .nav-list-xbzy{background:url(../img/nav-list-st.png) no-repeat; background-position:-247px 0px; width:19px; height:19px; overflow:hidden; display:block;  position:relative; top:21px; margin-right:5px;} 
 .nav-list-wdtk{background:url(../img/nav-list-st.png) no-repeat; background-position:-319px 0px; width:19px; height:19px; overflow:hidden; display:block;position:relative; top:21px; margin-right:5px;} 
 .nav-list-xbtk{background:url(../img/nav-list-st.png) no-repeat; background-position:-247px 0px; width:19px; height:19px; overflow:hidden; display:block; position:relative; top:21px; margin-right:5px;} 
 .nav-list-ggtk{background:url(../img/nav-list-st.png) no-repeat; background-position:-295px 0px; width:19px; height:19px; overflow:hidden; display:block;  position:relative; top:21px; margin-right:5px;} 
-
+.nav-list-xd{background:url(../img/nav-list-teacher.png) no-repeat; background-position:-96px 0px; width:19px; height:19px; overflow:hidden; display:block; float:left; position:relative; top:8px; margin-right:5px;} 
 
 
 
