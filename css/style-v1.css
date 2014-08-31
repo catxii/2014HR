@@ -1171,7 +1171,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 .second-nav-bar-bottom li .sub {
   display: none;
   position: absolute;
-  top: 80px;
+  top: 79px;
   left: 0;
   padding-left: 0;
   background: white;
@@ -1981,7 +1981,9 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 .sub-list-first {
   display: block;
   line-height: 30px;
-  padding-left: 15px;
+  padding: 0 0 0 15px;
+  border: none!important;
+  background: white!important;
 }
 .nav-bar-new-list i {
   margin-bottom: 0;
