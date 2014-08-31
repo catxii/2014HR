@@ -1983,3 +1983,9 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   line-height: 30px;
   padding-left: 15px;
 }
+.nav-bar-new-list i {
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+}

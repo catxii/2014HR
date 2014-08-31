@@ -1176,7 +1176,7 @@ background-repeat: repeat-x!important; margin:30px;  height:100%; padding:7px; b
 font-size: 15px;
 font-weight: 900; 
 }
-.panel-syllabus-content .table-striped > tbody > tr > td.title{color:#f90;}
+.panel-syllabus-content .table-striped > tbody > tr > td.title {color:#f90;}
 .panel-syllabus-content .table > tbody > tr > td{border:1px;vertical-align:middle;}
 .syllabus-ico{ height:100%;width:100%; padding:0 15px 0px 15px; }
 .syllabus-ico .text-space{color:rgba(25, 104, 53, 1); text-overflow:inherit; text-shadow:0px 1px 1px rgba(255, 255, 255, 0.5);}
