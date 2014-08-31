@@ -1181,7 +1181,7 @@ font-weight: 900;
 .syllabus-ico{ height:100%;width:100%; padding:0 15px 0px 15px; }
 .syllabus-ico .text-space{color:rgba(25, 104, 53, 1); text-overflow:inherit; text-shadow:0px 1px 1px rgba(255, 255, 255, 0.5);}
 
-.dropzone-bkxx{background: rgba(173, 173, 173, 0.2);border-radius: 5px;box-shadow:1px 1px 1px #bdbdbd;margin-bottom: 4px;padding: 3px 0; text-align:center; font-weight:normal; font-size:12px; }
+.dropzone-bkxx{background: rgba(173, 173, 173, 0.2);border-radius: 5px;box-shadow:1px 1px 1px #bdbdbd;margin-bottom: 4px;padding: 5px 0; text-align:center; font-weight:normal; font-size:14px; }
 .dropzone-bkxx a{color:#333; text-decoration:none; text-shadow:1px 1px 0px rgba(255, 255, 255, 1);}
 
 
