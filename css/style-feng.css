@@ -1189,7 +1189,6 @@ font-weight: 900;
 .nav-bar-new-list > li{ line-height:60px; background:#e1e1e1; margin-right:0px!important;  border-bottom:3px solid #0cb353;  font-size:14px; }
 .nav-bar-new-list > li:hover { border-bottom: 3px solid #f90; background: white; }
 
-
 .nav-bar-new-list > li > a{color:#3C3C3C; text-decoration:none; font-size:15px; font-weight:500; display:block; padding:0 30px;}
 .nav-list-case .dropdown-menu{border-radius:0px; min-width:80px;}
 .nav-list-case .dropdown-menu li{ margin-right:0px; text-align:center; width:100%;}
@@ -1219,6 +1218,10 @@ font-weight: 900;
 .nav-list-te7{background:url(../img/nav-list-teacher.png) no-repeat; background-position:-144px 0px; width:19px; height:19px; overflow:hidden; display:block; float:left; position:relative; top:8px; margin-right:5px;} 
 
 .nav-bar-new-list .nav-lin-t{ line-height:39px; margin-right:0px!important; float:left; padding:0 5px 0 6px;  font-size:14px; border-radius:0 0px 0 0!important; height:40px;border-top:3px solid #0cb353; border-left:0px;}
+<<<<<<< HEAD
+=======
+.nav-bar-new-list > li.nav-list-te{ padding:0 49px;}
+>>>>>>> FETCH_HEAD
 
 /*图标nav*/
 .nav-list-zy{background:url(../img/nav-list-st.png) no-repeat; background-position:0px 0px; width:19px; height:19px; overflow:hidden; display:block;  position:relative; top:21px; margin-right:5px;}
