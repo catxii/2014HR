@@ -21,7 +21,7 @@
 
   <![endif]-->
 </head>
-<body class="fixed-top-body" ng-app="" style=" padding-top:52px; background:url(img/index-bg2.png) repeat;">
+<body class="fixed-top-body" ng-app="" style=" padding-top:52px; ">
 <div class="navbar navbar-zhijiao navbar-green navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
@@ -229,28 +229,40 @@
 
   <div class="col-md-12">
   
-    <div class="panel panel-default">
+    <div class="panel panel-default comments-panel">
       <div class="panel-heading">
-        <h3 class="panel-title"><span class="icon-conversation"></span> 用户评价</h3>
+        <h3 class="panel-title"><span class="icon-conversation"></span> 用户评价( <a>12</a> )</h3>
       </div>
-      <div class="panel-body">
-
+      <div class="panel-body comments-content clear-padding">
+        <div class="comments-new">
+          
+          <div class="media">
+            <a class="pull-left" href="#">
+              <img  src="img/314f32372e2.jpg" alt="用户头像">
+              <span class="name-block-center">默认用户</span>
+            </a>
+            <div class="media-body">
+              <div><textarea class="form-control" rows="3"></textarea></div>
+              <div class="pull-right"><button class="btn btn-warning" style="margin-top:10px;">发表</button></div>
+            </div>
+          </div>
+        </div>
         <div class="media">
           <a class="pull-left" href="#">
-            <img data-src="holder.js/100x100" alt="用户头像">
+            <img data-src="holder.js/50x50" alt="用户头像">
             <span class="name-block-center">默认用户</span>
           </a>
           <div class="media-body">
             <h4 class="media-heading">1楼 <span class="gray">评价时间：2014年06月04日 17:10:00</span></h4>
             <div class="pingjia-nr">
-              这个是什么啊，你造吗？这个是什么啊，你造吗？这个是什么啊，你造吗？这个是什么啊，你造吗？这个是什么啊，你造吗？这个是什么啊，你造吗？这个是什么啊，你造吗？这个是什么啊，你造吗？这个是什么啊，你造吗？这个是什么啊，你造吗？这个是什么啊，你造吗？这个是什么啊，你造吗？这个是什么啊，你造吗？这个是什么啊，你造吗？这个是什么啊，你造吗？这个是什么啊，你造吗？这个是什么啊，你造吗？这个是什么啊，你造吗？这个是什么啊，你造吗？这个是什么啊，你造吗？这个是什么啊，你造吗？这个是什么啊，你造吗？这个是什么啊，你造吗？这个是什么啊，你造吗？
+             <div class="pingjia-nr-body">这个是什么啊，你造吗？这个是什</div>
 
               <div class="media">
                 <a class="pull-left" href="#">
                   <img data-src="holder.js/50x50" alt="用户头像">
                 </a>
                 <div class="media-body">
-                  <h4 class="media-heading"><a href="#" >默认用户</a> <span class="gray">回复时间：2014年06月04日 17:10:00</span> <a href="javascript:" class="icon-bin pj-del-ico-small"> 删除</a></h4>
+                  <h4 class="media-heading"><a href="#" >默认用户</a> <span class="gray">回复时间：2014年06月04日 17:10:00</span></h4>
                   <div class="pingjia-nr">
                     这个是什么啊，你造吗？
                   </div>
@@ -262,7 +274,7 @@
                   <img data-src="holder.js/50x50" alt="用户头像">
                 </a>
                 <div class="media-body">
-                  <h4 class="media-heading"><a href="#" >默认用户</a> <span class="gray">回复时间：2014年06月04日 17:10:00</span> <a href="javascript:" class="icon-bin pj-del-ico-small"> 删除</a></h4>
+                  <h4 class="media-heading"><a href="#" >默认用户</a> <span class="gray">回复时间：2014年06月04日 17:10:00</span></h4>
                   <div class="pingjia-nr">
                     这个是什么啊，你造吗？
                   </div>
@@ -274,35 +286,25 @@
                   <img data-src="holder.js/50x50" alt="用户头像">
                 </a>
                 <div class="media-body">
-                  <h4 class="media-heading"><a href="#" >默认用户</a> <span class="gray">回复时间：2014年06月04日 17:10:00</span> <a href="javascript:" class="icon-bin pj-del-ico-small"> 删除</a></h4>
+                  <h4 class="media-heading"><a href="#" >默认用户</a> <span class="gray">回复时间：2014年06月04日 17:10:00</span></h4>
                   <div class="pingjia-nr">
                     这个是什么啊，你造吗？
                   </div>
                 </div>
               </div>
 
-              <div class="input-group" style="margin-top:10px; max-width:500px;">
-                <input type="text" class="form-control" >
-                <span class="input-group-addon btn btn-primary">回复</span>
+              <div class="input-group" style="margin-top:10px; ">
+                 
+                <input id="focusedInput" type="text" class="form-control"  placeholder="Disabled input here..." >
+               
+                <span class="input-group-addon btn btn-default">回复</span>
               </div>
 
             </div>
           </div>
         </div>
-
-        <div class="send-new-pj-box">
-          <h4><span class="icon-chat"></span> 发表评价</h4>
-          <div class="media">
-            <a class="pull-left" href="#">
-              <img data-src="holder.js/100x100" alt="用户头像">
-              <span class="name-block-center">默认用户</span>
-            </a>
-            <div class="media-body">
-              <textarea class="form-control" rows="3"></textarea>
-              <button class="btn btn-primary btn-sm" style="margin-top:10px;">发表</button>
-            </div>
-          </div>
-        </div>
+        
+        
 
 
 
