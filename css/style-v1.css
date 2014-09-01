@@ -1179,6 +1179,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   border-top: none;
   border-radius: 0 0 5px 5px;
   word-spacing: 0;
+  line-height: 40px;
 }
 .second-nav-bar-bottom li:hover .sub {
   display: block;
@@ -1865,7 +1866,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 }
 #drawController {
   position: fixed;
-  top: 10px;
+  top: 6px;
   text-align: center;
   width: 770px;
   left: 50%;
