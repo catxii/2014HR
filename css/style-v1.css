@@ -836,6 +836,9 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 .swf-ico {
   background-position: -21px center;
 }
+.html-ico {
+  background-position: -105px center;
+}
 .pagination {
   margin: 10px auto;
 }
