@@ -1236,19 +1236,23 @@ font-weight: 900;
 .nav-list-xbtk{background:url(../img/nav-list-st.png) no-repeat; background-position:-247px 0px; width:19px; height:19px; overflow:hidden; display:block; position:relative; top:21px; margin-right:5px;} 
 .nav-list-ggtk{background:url(../img/nav-list-st.png) no-repeat; background-position:-295px 0px; width:19px; height:19px; overflow:hidden; display:block;  position:relative; top:21px; margin-right:5px;} 
 .nav-list-xd{background:url(../img/nav-list-teacher.png) no-repeat; background-position:-96px 0px; width:19px; height:19px; overflow:hidden; display:block; position:relative; top:21px; margin-right:5px;} 
-
+.nav-list-sjfx{background:url(../img/nav-list-st.png) no-repeat; background-position:-391px 0px; width:19px; height:19px; overflow:hidden; display:block; position:relative; top:21px; margin-right:5px;} 
 
 
 .nav-bar-new-list .nav-lin-s{ line-height:60px; margin-right:0px!important; float:left; padding:0 2px 0 3px;  font-size:14px; border-radius:0 0px 0 0!important; height:60px;border-top:3px solid #0cb353; border-left:0px;}
 /*.nav-bar-new-list > li.nav-list-st{ padding:0 20px; word-spacing:0px;}*/
-.panel-other-all{background:#FFF; /*box-shadow:0px 2px 2px #ccc;*/ border-right:1px solid #ccc;border-left:1px solid #ccc;border-bottom:1px solid #ccc;}
+.panel-other-all{background:#FFF; /*box-shadow:0px 2px 2px #ccc;*/ border:1px solid #ccc; margin-top:15px;}
 .panel-other-left{padding-left:5px;  }
 .panel-other-left .panel-heading{background:none; border-top:3px solid #f90; border-radius:0px; padding:5px;}
 .panel-other-left .panel-body .list-other-tree .list-other-item{background:none!important; padding:8px 0px!important;color:#333; border-bottom:1px dotted #eee;}
 .panel-other-left .rizhi-shu .sub-list .current-tree > a,.panel-other-left .rizhi-shu .sub-list .current-tree > a:hover{background:none; color:#FFAE00;}
 .ico-position{position:relative; display:block; line-height:36px; height:36px; padding-left:30px;font-weight: 800;
 color: rgba(96, 96, 96, 1); font-size:15px;}
+.ico-position i{ font-size:12px; font-weight:600;}
+.ico-position i a{ color:#f90;}
 .ico-other{width:19px; height:19px; position:absolute; background:url(../img/social_myspace_square.png); top:8px; left:2px;}
+.ico-ybzcy{width:19px; height:19px; position:absolute; background:url(../img/nav-list-st.png) no-repeat; background-position:-144px 0px; top:8px; left:2px;}
+
 .ico-other-rizhi{width:19px; height:19px; position:absolute; background:url(../img/social_myspace_rizhi.png); top:8px; left:2px;}
 .rizhi-shu .tree-sub-1 .tree-sub > li > .tree-sub > li > a:hover{
 	color:#f90;}
@@ -1262,3 +1266,22 @@ color: rgba(96, 96, 96, 1); font-size:15px;}
 .comments-content .media .pull-left{margin-right:20px;}
 .comments-new{ padding:15px; background:rgba(239, 239, 239, 0.5); border-bottom:1px solid #ddd;}
 .comments-new h5 span{color:#F90; }
+a.comments-reply{color:#eee; background:rgba(192, 192, 192, 1); font-size:12px; font-weight:normal; text-shadow:none; border:0px;}
+a.comments-reply:hover{background:#666;text-shadow:none;color:#eee;}
+.reply-content{ margin-top:10px; display:none; max-width:500px; }
+.reply-content .input-group-addon{padding:9px 15px;}
+
+
+.ico-ybzzy{background:url(../img/nav-list-st.png) no-repeat; background-position:-168px 0px; width:30px; height:19px; overflow:hidden; display:block;}
+.panel-data-all{background:rgba(233, 244, 249, 1); height:900px; width:100%; box-shadow:1px 1px 1px #000;}
+.panel-data-all .panel-heading{ padding:0 30px; background:none; padding-top:0px;}
+.panel-data-all .panel-heading .panel-data-all-ico{ height:180px; background:#e1e1e1; }
+
+
+
+
+
+
+
+
+

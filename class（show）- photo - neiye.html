@@ -264,7 +264,8 @@
                 <div class="media-body">
                   <h4 class="media-heading"><a href="#" >默认用户</a> <span class="gray">回复时间：2014年06月04日 17:10:00</span></h4>
                   <div class="pingjia-nr">
-                    这个是什么啊，你造吗？
+                    这个是什么啊，你造吗？这个是什么啊，你造吗？这个是什么啊，你造吗？这个是什么啊，你造吗？这个是什么啊，你造吗？这个是什么啊，你造吗？这个是什么啊，你造吗？
+                    <a class="comments-reply btn btn-default btn-xs">回复</a>
                   </div>
                 </div>
               </div>
@@ -293,17 +294,69 @@
                 </div>
               </div>
 
-              <div class="input-group" style="margin-top:10px; ">
-                 
+              <div class="input-group reply-content" >
                 <input id="focusedInput" type="text" class="form-control"  placeholder="Disabled input here..." >
-               
                 <span class="input-group-addon btn btn-default">回复</span>
               </div>
 
             </div>
           </div>
         </div>
-        
+        <div class="media">
+          <a class="pull-left" href="#">
+            <img data-src="holder.js/50x50" alt="用户头像">
+            <span class="name-block-center">默认用户</span>
+          </a>
+          <div class="media-body">
+            <h4 class="media-heading">1楼 <span class="gray">评价时间：2014年06月04日 17:10:00</span></h4>
+            <div class="pingjia-nr">
+             <div class="pingjia-nr-body">这个是什么啊，你造吗？这个是什</div>
+
+              <div class="media">
+                <a class="pull-left" href="#">
+                  <img data-src="holder.js/50x50" alt="用户头像">
+                </a>
+                <div class="media-body">
+                  <h4 class="media-heading"><a href="#" >默认用户</a> <span class="gray">回复时间：2014年06月04日 17:10:00</span></h4>
+                  <div class="pingjia-nr">
+                    这个是什么啊，你造吗？这个是什么啊，你造吗？这个是什么啊，你造吗？这个是什么啊，你造吗？这个是什么啊，你造吗？这个是什么啊，你造吗？这个是什么啊，你造吗？
+                    <a class="comments-reply btn btn-default btn-xs">回复</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="media">
+                <a class="pull-left" href="#">
+                  <img data-src="holder.js/50x50" alt="用户头像">
+                </a>
+                <div class="media-body">
+                  <h4 class="media-heading"><a href="#" >默认用户</a> <span class="gray">回复时间：2014年06月04日 17:10:00</span></h4>
+                  <div class="pingjia-nr">
+                    这个是什么啊，你造吗？
+                  </div>
+                </div>
+              </div>
+
+              <div class="media">
+                <a class="pull-left" href="#">
+                  <img data-src="holder.js/50x50" alt="用户头像">
+                </a>
+                <div class="media-body">
+                  <h4 class="media-heading"><a href="#" >默认用户</a> <span class="gray">回复时间：2014年06月04日 17:10:00</span></h4>
+                  <div class="pingjia-nr">
+                    这个是什么啊，你造吗？
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-group reply-content" >
+                <input id="focusedInput" type="text" class="form-control"  placeholder="Disabled input here..." >
+                <span class="input-group-addon btn btn-default">回复</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
         
 
 
@@ -361,7 +414,17 @@
 <!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
 <script type="text/JavaScript" src="space-footer-css.js"></script>
 <!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+<script>
+ $(function(){
+	$(".comments-reply").click(
+	  function(){
+		  $(this).parent().parent().parent().parent().find(".reply-content").show();
+		  });
+	 
+});
 
+
+</script>
 <!-- 照片墙JS -->
 <script type="text/javascript" src="libs/jquery.elastislide/js/jquery.tmpl.min.js"></script>
 <script type="text/javascript" src="libs/jquery.elastislide/js/jquery.easing.1.3.js"></script>
