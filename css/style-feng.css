@@ -1301,10 +1301,17 @@ overflow:hidden;
 vertical-align: middle;
 }
 .panel-left-body .table thead tr th{width:100px;}
-.panel-right-body{  float:left; width:85%;}
-.panel-left-body{  float:left; width:15%;}
+.panel-right-body {
+  left: 267px;
+  position: absolute;
+  right: 117px;
+}
+.panel-left-right-body{  width:100px; float:right;  }
+.panel-left-body{  width:250px; float:left; }
 .table-font-color{font-weight:200; color:#428BCA;}
 .panel-left-body .table > thead > tr > th{vertical-align:middle; text-align:center;}
+.panel-left-body .table  tfoot > tr > td{ font-weight:900;}
+.panel-left-right-body tfoot > tr > th{vertical-align:middle; text-align:center!important;}
 .panel-right-body .table > thead > tr > th{vertical-align:middle; text-align:center;}
 .panel-right-body .table tfoot{font-weight:bold;}
 .table > thead > tr > th{vertical-align:middle; text-align:center;}
