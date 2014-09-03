@@ -2010,3 +2010,6 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 .photo-ico-center img {
   display: inline-block;
 }
+.global-zeroclipboard-container {
+  display: none;
+}

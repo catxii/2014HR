@@ -29,7 +29,12 @@ $(function(){
  		$(".list-group.list-group-collapse-button").show();
  	});
 
-
+ 	// lightbox 
+ 	$(".lightbox").lightbox({
+	    fitToScreen: true,
+	    imageClickClose: false
+    });
+ 	
  	// tips设置
  	$('a,.btn,.icon-eye-close,.glyphicon-trash').tooltip();
  	$(".add-person-button,.show-tips").tooltip();

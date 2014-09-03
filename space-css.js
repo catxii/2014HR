@@ -17,8 +17,11 @@ var filegroup = [
 	// select 2 
 	"<link href='libs/select2/select2.css' rel='stylesheet'>",
 
+	// lightbox 2 
+	"<link href='libs/jquery-lightbox/css/lightbox.css' rel='stylesheet'>",
+
 	// 日期选择器 
-	"<link href='libs/bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.min.css' rel='stylesheet' >",
+	// "<link href='libs/bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.min.css' rel='stylesheet' >",
 
 	// Custom styles for this template 
 	"<link href='css/style-v1.css' rel='stylesheet'>",
@@ -29,7 +32,7 @@ var filegroup = [
 	// "<script src='libs/bootstrap/js/ie-emulation-modes-warning.js'></script>",
 
 	// IE10 viewport hack for Surface/desktop Windows 8 bug 
-	"<script src='libs/bootstrap/js/ie10-viewport-bug-workaround.js'></script>",
+	// "<script src='libs/bootstrap/js/ie10-viewport-bug-workaround.js'></script>",
 
 	// HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries 
 	// "<!--[if lt IE 9]>\
