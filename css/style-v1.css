@@ -244,20 +244,20 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 .list-group-item.active:focus {
   z-index: 2;
   color: #fff;
-  background-color: #2ecc71;
+  background-color: #eeeeee;
   border-color: #428bca;
 }
 .list-group-item.active,
 .list-group-item.active:hover,
 .list-group-item.active:focus {
   text-shadow: 0;
-  background-image: -webkit-linear-gradient(top, #2ecc71 0%, #1dbb60 100%);
-  background-image: -o-linear-gradient(top, #2ecc71 0%, #1dbb60 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#2ecc71), to(#1dbb60));
-  background-image: linear-gradient(to bottom, #2ecc71 0%, #1dbb60 100%);
+  background-image: -webkit-linear-gradient(top, #eeeeee 0%, #dddddd 100%);
+  background-image: -o-linear-gradient(top, #eeeeee 0%, #dddddd 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#dddddd));
+  background-image: linear-gradient(to bottom, #eeeeee 0%, #dddddd 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff2ecc71', endColorstr='#ff48be7a', GradientType=0);
   background-repeat: repeat-x;
-  border-color: #1dbb60;
+  border-color: #dddddd;
 }
 .list-group-item.active,
 .list-group-item.active:hover,
@@ -2012,4 +2012,119 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 }
 .global-zeroclipboard-container {
   display: none;
+}
+.edit-area {
+  margin: 10px 0;
+  position: relative;
+}
+.edit-area .menu-list {
+  margin-left: 0;
+  margin-right: 10px;
+  background: #dcdcdc;
+  padding: 5px;
+  border-radius: 5px;
+}
+.ppt-list {
+  overflow-x: scroll;
+  white-space: nowrap;
+  width: 100%;
+  padding: 10px 0;
+}
+.ppt-list li a {
+  display: block;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  background: #ffe481;
+  cursor: pointer;
+  font-size: 30px;
+  color: #efc360;
+  border-bottom: none;
+  border: 2px solid white;
+  text-decoration: none;
+}
+.ppt-list li a:hover {
+  background: #f4d976;
+  text-decoration: none;
+}
+.ppt-list li a.current {
+  background: #ff6300;
+  color: white;
+  border-color: #ff6000;
+}
+.ppt-list li a.add-ppt {
+  background: #2ecc71;
+  color: white;
+  font-size: 26px;
+}
+.ppt-list li a.add-ppt:hover {
+  background: #1ebc61;
+}
+.ppt-show-area {
+  -moz-box-orient: vertical;
+  -moz-box-pack: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: center;
+  display: -moz-box;
+  min-height: 500px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  border: 1px solid #ccc;
+  width: 100%;
+  background: white;
+}
+.ppt-show-area input {
+  vertical-align: middle;
+}
+.ppt-show-area input[type="text"] {
+  text-align: center;
+}
+.ppt-show-area .remove-list {
+  margin-left: 0px;
+  border-radius: 0 5px 5px 0;
+}
+.ppt-show-area ul {
+  width: 400px;
+  text-align: left;
+  margin: 20px auto;
+}
+.ppt-show-area ul li {
+  list-style: disc;
+  margin-bottom: 10px;
+}
+.ppt-show-area a {
+  vertical-align: middle;
+}
+.colorbox {
+  background: url("../libs/jquery-colorpicker/colorpicker.png");
+  display: inline-block;
+  height: 14px;
+  margin-left: 10px;
+  width: 14px;
+}
+#colorpanel {
+  z-index: 20;
+}
+#colorpanel table {
+  width: 100%;
+}
+slide {
+  background-color: #4fc5c7;
+  color: white;
+  font-size: 26px;
+  height: 100%;
+  left: 0;
+  padding: 40px 60px;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0px);
+  transform-style: preserve-3d;
+  transition: all 0.6s ease-in-out 0s;
+  width: 100%;
+  z-index: 9;
+}
+.bg-color-picker {
+  color: #000!important;
 }

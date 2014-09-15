@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="../../favicon.ico">
+    <!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+	<script type="text/JavaScript" src="space-css.js"></script>
+	<!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+	<!-- <link rel="stylesheet" media="all" href="libs/nodeppt/css/nodeppt2.0.css">
+    <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="libs/nodeppt/css/phone.css">
+    <link rel="stylesheet" media="print" href="libs/nodeppt/css/pdf.css">
+    <link rel="stylesheet" href="libs/nodeppt/js/highlight/styles/monokai_sublime.css"></head> -->
+
+<body style="opacity:1; background:#eee; overflow:auto; padding-top:0;">
+
+    <div class="container-fluid edit-ppt">
+
+    	<div class="edit-area clearfix">
+    		<ul class="float-left inline-block-ul-mid menu-list">
+    			<li><a class="btn btn-sm btn-default add_h1" href="javascript:void(0)">h1标题</a></li>
+    			<li><a class="btn btn-sm btn-default add_h2" href="javascript:void(0)">h2标题</a></li>
+    		</ul>
+    		<ul class="float-left inline-block-ul-mid menu-list">
+    			<li><a class="btn btn-sm btn-default add_url" href="javascript:void(0)">添加链接</a></li>
+    			<li><a class="btn btn-sm btn-default add_img" href="javascript:void(0)">添加图片</a></li>
+    			<li><a class="btn btn-sm btn-default add_p" href="javascript:void(0)">段落文本</a></li>
+    			<li><a class="btn btn-sm btn-default add_ul_zh" href="javascript:void(0)">逐行列表</a></li>
+    		</ul>
+    		<ul class="float-left inline-block-ul-mid menu-list">
+				<li><a href="javascript:void(0)" class="bg-color-picker btn btn-sm btn-default">本页背景颜色<span class="caret"></span></a></li>
+			</ul>
+    		<ul class="float-left inline-block-ul-mid menu-list">
+    			<li><a class="btn btn-sm btn-default" href="javascript:void(0)">参考在线文档</a></li>
+    			<li><a class="btn btn-sm btn-primary" href="javascript:void(0)">保存并预览</a></li>
+    		</ul>
+    	</div>
+
+    	<div class="ppt-show-area" class="container-fluid" >
+    		<slide class="slide">
+                <section class="slide-wrapper">
+        			
+                </section>
+            </slide>
+    	</div>
+    	<div class="ppt-show-area" class="container-fluid" style="display:none;">
+    		<slide class="slide">
+                <section class="slide-wrapper">
+        			
+                </section>
+            </slide>
+    	</div>
+    	<div class="ppt-show-area" class="container-fluid" style="display:none;">
+    		<slide class="slide">
+                <section class="slide-wrapper">
+        			
+                </section>
+            </slide>
+    	</div>
+
+    	<ul class="ppt-list inline-block-ul container-fluid">
+    		<li><a href="javascript:void(0)" class="current">1</a></li>
+    		<li><a href="javascript:void(0)" class="add-ppt">+ 新增</a></li>
+    	</ul>
+
+    	<div class="btn-center">
+    		<a href="javascript:void(0)" class="btn btn-lg btn-warning">保存PPT</a>
+    	</div>
+
+    </div>
+
+<!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+<script type="text/JavaScript" src="space-footer-css.js"></script>
+<!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+<script type="text/javascript" src="libs/jquery-colorpicker/jquery.colorpicker.js"></script>
+<script type="text/javascript">
+	$(function(){
+		var ppt_show_area = ".ppt-show-area:visible .slide-wrapper";
+		var color_picker = "<a href='javascript:void(0)' class='colorbox color_box'></a>";
+		var h1 = "<h1 style='color:#000;'><input type='text' value='h1标题'><a href='javascript:void(0)' class='colorbox color_box_h1'></a></h1>";	//定义h1标签
+		var h2 = "<h2 style='color:#000;'><input type='text' value='h2标题'><a href='javascript:void(0)' class='colorbox color_box_h2'></a></h2>";	//定义h2标签
+		var url = "<p><a href='#' class='url_color'><input type='text' value='链接文字'></a><a href='javascript:void(0)' class='colorbox color_box_url'></a></p>";	//定义外部链接文字
+		var img = "<p><img src='img/banner1.png' style='max-width:90%;max-height:90%; margin:10px;'></p>";		//定义图片
+		var p = "<p><textarea class='form-control' rows='3' style='margin:20px auto; width:60%;'>请输入文本</textarea></p>"	//定义段落
+		var ul_zh = "<ul class='moveIn'><li><input type='text' placeholder='输入列表内容'><a href='javascript:void(0)' class='btn btn-warning btn-sm remove-list'>移除</a></li><li><a href='javascript:void(0)' class='btn btn-primary btn-sm add-list-x'>新增一个列表项</a></li></ul>"
+		$(".add_h1").click(function(){	//添加h1标签
+			$(ppt_show_area).append(h1);
+			$(".color_box_h1").colorpicker({
+			    fillcolor:true,
+			    success:function(o,color){
+			        $("h1").css("color",color);
+			    }
+			});
+		});
+		$(".add_h2").click(function(){	//添加h2标签
+			$(ppt_show_area).append(h2);
+			$(".color_box_h2").colorpicker({
+			    fillcolor:true,
+			    success:function(o,color){
+			        $("h2").css("color",color);
+			    }
+			});
+		});
+		$(".add_url").click(function(){		//添加h2标签
+			$(ppt_show_area).append(url);
+			$(".color_box_url").colorpicker({
+			    fillcolor:true,
+			    success:function(o,color){
+			        $(".url_color").css("color",color);
+			    }
+			});
+		});
+		$(".add_img").click(function(){ 	//添加h2标签
+			$(ppt_show_area).append(img);
+		});
+		$(".add_p").click(function(){	//添加h2标签
+			$(ppt_show_area).append(p);
+		});
+		$(".add_ul_zh").click(function(){	//添加逐步显示ul
+			$(ppt_show_area).append(ul_zh);
+			var newList = "<li><input type='text' placeholder='输入列表内容'><a href='javascript:void(0)' class='btn btn-warning btn-sm remove-list'>移除</a></li>";
+			$(".add-list-x").click(function(){
+				$(this).before(newList);
+			});
+			$(".moveIn").on("click",".remove-list",function(){
+				$(this).parent().remove();
+			});
+		});
+		$(".bg-color-picker").colorpicker({   //页面背景颜色修改
+		    fillcolor:true,
+		    success:function(o,color){
+		        $(".slide:visible").css("background",color);
+		    }
+		});
+		$(".add-ppt").click(function(){
+			var addpptlist = $(".ppt-list li").length;
+			var i = $(this).parent().index() + 1;
+			var newPPTButton = "<li><a href='javascript:void(0)' >"+ i +"</a></li>";
+			$(this).parent().before(newPPTButton);
+		});
+	})
+</script>
+</body>
+</html>
