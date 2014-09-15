@@ -255,7 +255,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   background-image: -o-linear-gradient(top, #eeeeee 0%, #dddddd 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#dddddd));
   background-image: linear-gradient(to bottom, #eeeeee 0%, #dddddd 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff2ecc71', endColorstr='#ff48be7a', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eee', endColorstr='#e8e8e8', GradientType=0);
   background-repeat: repeat-x;
   border-color: #dddddd;
 }
@@ -279,7 +279,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   background-image: -o-linear-gradient(top, #2ecc71 0%, #48be7a 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#2ecc71), to(#48be7a));
   background-image: linear-gradient(to bottom, #2ecc71 0%, #48be7a 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff2ecc71', endColorstr='#ff48be7a', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eee', endColorstr='#e8e8e8', GradientType=0);
   background-repeat: repeat-x;
   border-color: #CCC;
 }
@@ -561,7 +561,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   background: white;
 }
 .photo-box-single img {
-  width: 173px;
+  width: 100%;
   height: 140px;
 }
 .photo-box-single .img:hover .position-bottom-info {
