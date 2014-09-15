@@ -26,6 +26,7 @@ var filegroup = [
 	// Custom styles for this template 
 	"<link href='css/style-v1.css' rel='stylesheet'>",
     "<link href='css/style-feng.css' rel='stylesheet'>", 
+	"<link rel='stylesheet' media='screen and (max-width: 900px)' href='css/response.css' />"
 
 	// Just for debugging purposes. Don't actually copy these 2 lines! 
 	// "<!--[if lt IE 9]> <script src='libs/bootstrap/js/ie8-responsive-file-warning.js'></script> <![endif]-->",
