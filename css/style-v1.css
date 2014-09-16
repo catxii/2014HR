@@ -2074,6 +2074,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   border: 1px solid #ccc;
   width: 100%;
   background: white;
+  overflow: hidden;
 }
 .ppt-show-area input {
   vertical-align: middle;

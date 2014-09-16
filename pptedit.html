@@ -40,21 +40,7 @@
     	</div>
 
     	<div class="ppt-show-area" class="container-fluid" >
-    		<slide class="slide">
-                <section class="slide-wrapper">
-        			
-                </section>
-            </slide>
-    	</div>
-    	<div class="ppt-show-area" class="container-fluid" style="display:none;">
-    		<slide class="slide">
-                <section class="slide-wrapper">
-        			
-                </section>
-            </slide>
-    	</div>
-    	<div class="ppt-show-area" class="container-fluid" style="display:none;">
-    		<slide class="slide">
+    		<slide class="slide slide1">
                 <section class="slide-wrapper">
         			
                 </section>
@@ -66,7 +52,7 @@
     		<li><a href="javascript:void(0)" class="add-ppt">+ 新增</a></li>
     	</ul>
 
-    	<div class="btn-center">
+    	<div class="btn-center" style="margin:20px auto;">
     		<a href="javascript:void(0)" class="btn btn-lg btn-warning">保存PPT</a>
     	</div>
 
@@ -78,7 +64,7 @@
 <script type="text/javascript" src="libs/jquery-colorpicker/jquery.colorpicker.js"></script>
 <script type="text/javascript">
 	$(function(){
-		var ppt_show_area = ".ppt-show-area:visible .slide-wrapper";
+		var ppt_show_area = ".ppt-show-area .slide-wrapper:visible";
 		var color_picker = "<a href='javascript:void(0)' class='colorbox color_box'></a>";
 		var h1 = "<h1 style='color:#000;'><input type='text' value='h1标题'><a href='javascript:void(0)' class='colorbox color_box_h1'></a></h1>";	//定义h1标签
 		var h2 = "<h2 style='color:#000;'><input type='text' value='h2标题'><a href='javascript:void(0)' class='colorbox color_box_h2'></a></h2>";	//定义h2标签
@@ -140,6 +126,14 @@
 			var i = $(this).parent().index() + 1;
 			var newPPTButton = "<li><a href='javascript:void(0)' >"+ i +"</a></li>";
 			$(this).parent().before(newPPTButton);
+			var newPPTPage = "<slide class='slide slide"+i+"' style='display:none;'><section class='slide-wrapper'></section></slide>";
+			$(".slide:last").after(newPPTPage);
+		});
+		$(".ppt-list").on("click","li a",function(){
+			$(this).not(".add-ppt").addClass("current").parent().siblings().find("a").removeClass("current");
+			var index = $(this).parent().index() + 1;
+			$('.slide'+index).show().siblings(".slide").hide();
+			console.log( $('.slide'+index) )
 		});
 	})
 </script>
