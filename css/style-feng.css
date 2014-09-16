@@ -1033,9 +1033,11 @@ h3.schoolname{font-weight:800; text-shadow:2px 2px 2px #000000!important; margin
 .school-elegant > .panel-heading h4{
 	padding:0px;}
 
-.school-user{border-bottom:6px solid #CCC; border-left:6px solid #CCC; border-right:6px solid #CCC;  padding:0px!important; border-radius:4px;}
+.school-user{border-bottom:1px solid #eee;  padding:0px!important;}
 .school-user > .panel-heading{
-	background:#CCC; line-height:33px; padding:4px 0px;color:#999; font-size:18px; font-weight:600; text-align:center; border-radius:0px;}
+	background:#CCC; line-height:33px; padding:0px;color:#666; font-size:18px; font-weight:600;border-radius:0px;}
+.school-user > .panel-heading .pull-right a{
+	font-size:12px; color:#999; padding-right:10px; font-weight:normal;}
 .school-username{
 	height:116px; margin-top:20px; width:100%; background:#DDD; color:#333; border-radius:5px;text-overflow:ellipsis;
 	padding:6px; font-size:12px; line-height:20px;
@@ -1047,12 +1049,13 @@ h3.schoolname{font-weight:800; text-shadow:2px 2px 2px #000000!important; margin
 	box-shadow:none;
 	margin-bottom:0px;
 }
+.school-group .list-group-item .icon-bookmark{ color:#e26165}
 .num-item h2 a{
 	color:#FFF;}
 .num-item h2 a:hover{
 	color:#2ecc71; text-decoration:none;}
 .num-list li h2{
-	padding:0px; color:#FFF;  text-shadow:1px 1px 4px #000; font-weight:bold;} 
+	padding:0px; color:#FFF;  text-shadow:1px 1px 4px #666; font-weight:bold;} 
 /*学校空间banner*/
 .school-banner{background:#ddd; }
 .school-banner .container-box{margin-top:0px;}
@@ -1065,9 +1068,9 @@ h3.schoolname{font-weight:800; text-shadow:2px 2px 2px #000000!important; margin
 .school-banner #school-news .list-group{
 	box-shadow:none; border-radius:0px; margin-bottom:0px;}
 .school-banner #school-news .list-group .list-group-item{
-	border-bottom:2px solid #CCC; padding:10px 10px; height:41PX; background:#eee}
+	border-bottom:2px solid #CCC; padding:10px 10px; height:41PX; background:#eee;font-size:12px!important; }
 .school-banner #school-news .list-group .list-group-item:hover{
-	 background:#DDD; border-left:4px solid #FF8000;color:#FF8000;}
+	 background:#DDD; border-left:4px solid #FF8000;color:#FF8000; }
 .list-tab-school .nav-pills > li.active > a{
 	background-color:#2ECC71;}
 .list-tab-school .nav-pills > li.active > a:hover,.list-tab-school .nav-pills > li.active > a:focus{
@@ -1085,7 +1088,18 @@ h3.schoolname{font-weight:800; text-shadow:2px 2px 2px #000000!important; margin
 	margin-top:10px;
 	margin-bottom:10px; font-weight:bold; color:#FF8000;}
 .school-introduction p{
-	margin-top:25px; border-top:1px solid #DDD;}
+	margin-top:15px; border-top:1px solid #DDD;}
+/*学校空间内容*/
+.school-title-left{background:url(../img/title-new.png) #10d178 no-repeat right; width:150px; height:38px; color:#FFF; font-size:18px;  float:left;}
+.xzzc-h{text-align:center; font-size:18px; color:#666; padding:4px 0px; font-weight:normal}
+.xzzc-h span{color:#f90; font-weight:bold}
+.xzzc{text-align:center; font-size:12px; margin-top:5px; margin-bottom:0px;}
+.list-group-item-url{ height:73px; background:rgba(114, 213, 137, 0.21); text-align:center; width:100%; display:block; margin-top:3px; padding:16px 0;}
+a.icon-share-alt{font-size:24px; text-decoration:none; color:#2ECC71;}	
+	
+	
+	
+	
 /*收藏*/
 /*试卷*/
 
@@ -1291,6 +1305,7 @@ overflow:hidden;
 -o-text-overflow:ellipsis;
 vertical-align: middle;
 }
+
 .panel-left-body .table thead tr th,.panel-left-body .table tr td{ white-space:nowrap;
 overflow:hidden;
 	text-overflow:ellipsis;
@@ -1308,7 +1323,7 @@ vertical-align: middle;
 }
 .panel-left-right-body{  width:100px; float:right;  }
 .panel-left-body{  width:250px; float:left; }
-.table-font-color{font-weight:200; color:#428BCA;}
+.table-font-color{font-weight:200; color:#428BCA; padding:7px 8px 7px 8px!important;}
 .panel-left-body .table > thead > tr > th{vertical-align:middle; text-align:center;}
 .panel-left-body .table  tfoot > tr > td{ font-weight:900;}
 .panel-left-right-body tfoot > tr > th{vertical-align:middle; text-align:center!important;}
