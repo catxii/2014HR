@@ -1104,7 +1104,8 @@ h3.schoolname{font-weight:800; text-shadow:2px 2px 2px #000000!important; margin
 .list-group-item-url{ height:52px; background: #eee; text-align:center; width:100%; display:block; margin-top:8px; padding:11px 0; border-bottom:4px solid #ddd;}
 a.icon-share-alt{font-size:18px; text-decoration:none; color:#999; font-weight:bold; border-radius:3px;}	
 a.icon-share-alt:hover{font-size:18px; text-decoration:none; color:#f90; font-weight:bold}	
-.school-group .photo-box-single .img{ box-shadow:0px 0px 4px #ccc; border:0px;text-align:center; padding:5px 0; font-size:12px;}
+.school-group .photo-box-single .img{ box-shadow:0px 0px 4px #ccc; border:0px;text-align:center; padding:5px 0; font-size:12px;background: none repeat scroll 0% 0% #FCF8E3;
+border: 1px solid #FAEBCC;}
 .school-group .photo-box-single{padding:8px; margin-top:10px;}
 .top-nav-bar-bottom li a.label{font-size:14px;top: 2px; padding:2px 10px;
 position: relative;
@@ -1118,10 +1119,16 @@ text-shadow: none;}
 
 
 /*学校后台*/
-.school-list-group-ul-active{border-radius:0px; box-shadow:none;border:1px solid #FAEBCC;}
-.school-list-group-ul-active .school-list-group-li{background-color: #FCF8E3}
-.school-list-group-ul{ border-radius:0px; box-shadow:none; border:1px solid #ddd; background:#eee;}
-.school-list-group-li{text-align:center; padding:8px 0; }
+.school-list-group-ul-active{border-radius:0px; box-shadow:none;border:1px solid #BCE8F1;}
+.school-list-group-ul-active .school-list-group-li{background-color:#D9EDF7}
+.school-list-group-ul{ border-radius:0px; box-shadow:none; border:1px solid #eee; }
+.school-list-group-li{text-align:center; padding:4px 0; }
+.school-ht .rizhi-shu{margin-top:30px; border-top:1px solid #eee;}
+.school-ht .rizhi-shu .tree-sub li a{text-align:center; line-height:45px; font-size:14px;}
+.school-ht .rizhi-shu .tree-sub li a.school-list-ative{text-align:center; border-left:5px solid #f90; position:relative; left:-5px;}
+.school-ht .rizhi-shu .tree-sub li{ border-bottom:1px solid #eee;}
+.school-ht .rizhi-shu .sub-list .current-tree > a,.school-ht .rizhi-shu .sub-list .current-tree > a:hover{ background:none;}
+
 
 /*.management .select2-container-multi .select2-choices{max-height:34px;}*/
 .management .school-group .photo-box-single .img p{margin:0px;}
