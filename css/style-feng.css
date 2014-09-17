@@ -1011,7 +1011,7 @@ li.nav-bottom-navs > a{position:relative; border-radius:4px!important;}
 .nav-pills .active a:visited .nav-bottom-navs{display:block;}
 .nav-pills .active a:link .nav-bottom-navs{display:block;}
 .nav-pills .active a:active .nav-bottom-navs{display:block;}
-
+.school-user .name-block-center{text-align:center; line-height:26px; font-size:14px;}
 .panel-class-photo .name-block-center{
 	font-size:10px;}
 .teacher-index-img{
@@ -1033,11 +1033,13 @@ h3.schoolname{font-weight:800; text-shadow:2px 2px 2px #000000!important; margin
 .school-elegant > .panel-heading h4{
 	padding:0px;}
 
-.school-user{border-bottom:1px solid #eee;  padding:0px!important;}
+.school-user{ padding:0px!important;}
 .school-user > .panel-heading{
 	background:#CCC; line-height:33px; padding:0px;color:#666; font-size:18px; font-weight:600;border-radius:0px;}
-.school-user > .panel-heading .pull-right a{
-	font-size:12px; color:#999; padding-right:10px; font-weight:normal;}
+.school-user > .panel-heading .pull-right a.more-g{
+	font-size:12px; color:rgba(11, 182, 79, 1); padding-right:10px; font-weight:normal;}
+.school-user > .panel-heading .pull-right a.more-c{
+	font-size:12px; color:#f90; padding-right:10px; font-weight:normal;}
 .school-username{
 	height:116px; margin-top:20px; width:100%; background:#DDD; color:#333; border-radius:5px;text-overflow:ellipsis;
 	padding:6px; font-size:12px; line-height:20px;
@@ -1049,6 +1051,8 @@ h3.schoolname{font-weight:800; text-shadow:2px 2px 2px #000000!important; margin
 	box-shadow:none;
 	margin-bottom:0px;
 }
+.school-group .list-group-item{border-bottom: 2px dotted #ccc; border-radius:0px;
+}
 .school-group .list-group-item .icon-bookmark{ color:#e26165}
 .num-item h2 a{
 	color:#FFF;}
@@ -1056,6 +1060,7 @@ h3.schoolname{font-weight:800; text-shadow:2px 2px 2px #000000!important; margin
 	color:#2ecc71; text-decoration:none;}
 .num-list li h2{
 	padding:0px; color:#FFF;  text-shadow:1px 1px 4px #666; font-weight:bold;} 
+
 /*学校空间banner*/
 .school-banner{background:#ddd; }
 .school-banner .container-box{margin-top:0px;}
@@ -1090,16 +1095,44 @@ h3.schoolname{font-weight:800; text-shadow:2px 2px 2px #000000!important; margin
 .school-introduction p{
 	margin-top:15px; border-top:1px solid #DDD;}
 /*学校空间内容*/
-.school-title-left{background:url(../img/title-new.png) #10d178 no-repeat right; width:150px; height:38px; color:#FFF; font-size:18px;  float:left;}
+.school-title-left{background:url(../img/title-new.png) #10d178 no-repeat right; width:150px; height:38px; color:#FFF; font-size:16px;  float:left;}
+.school-title-left-new{background:url(../img/title-school-new.png) #f90 no-repeat right; width:150px; height:38px; color:#FFF; font-size:16px;  float:left;}
+
 .xzzc-h{text-align:center; font-size:18px; color:#666; padding:4px 0px; font-weight:normal}
 .xzzc-h span{color:#f90; font-weight:bold}
 .xzzc{text-align:center; font-size:12px; margin-top:5px; margin-bottom:0px;}
-.list-group-item-url{ height:73px; background:rgba(114, 213, 137, 0.21); text-align:center; width:100%; display:block; margin-top:3px; padding:16px 0;}
-a.icon-share-alt{font-size:24px; text-decoration:none; color:#2ECC71;}	
-	
-	
-	
-	
+.list-group-item-url{ height:52px; background: #eee; text-align:center; width:100%; display:block; margin-top:8px; padding:11px 0; border-bottom:4px solid #ddd;}
+a.icon-share-alt{font-size:18px; text-decoration:none; color:#999; font-weight:bold; border-radius:3px;}	
+a.icon-share-alt:hover{font-size:18px; text-decoration:none; color:#f90; font-weight:bold}	
+.school-group .photo-box-single .img{ box-shadow:0px 0px 4px #ccc; border:0px;text-align:center; padding:5px 0; font-size:12px;}
+.school-group .photo-box-single{padding:8px; margin-top:10px;}
+.top-nav-bar-bottom li a.label{font-size:14px;top: 2px; padding:2px 10px;
+position: relative;
+background: #f90;
+text-shadow: none;}
+.class-index-container .panel{margin-bottom:20px;}
+.school-Message-list p{padding:6px; margin:0px; }
+.school-Message-list .label{margin:0px 5px 5px 0;}
+
+
+
+
+/*学校后台*/
+.school-list-group-ul{ border-radius:0px; box-shadow:none; border:1px solid #ddd; background:#eee;}
+.school-list-group-li{text-align:center; padding:8px 0; border-right: 1px solid #ddd;}
+
+/*.management .select2-container-multi .select2-choices{max-height:34px;}*/
+.management .school-group .photo-box-single .img p{margin:0px;}
+.management .school-group .photo-box-single .btn{ text-align:center; margin-top:10px;}
+
+
+
+
+
+
+
+
+
 /*收藏*/
 /*试卷*/
 
@@ -1294,7 +1327,7 @@ a.comments-reply:hover{background:#666;text-shadow:none;color:#eee;}
 .panel-data-all .panel-heading .panel-data-all-ico{ height:80px; background:rgba(245, 245, 245, 1); border-bottom:1px solid #fff;border-left:1px solid #ccc;border-right:1px solid #ccc; padding:5px 30px; border-radius:0 0 20px 20px;}
 
 .panel-data-all-ico .text-muted{font-size:20px; margin-bottom:0px;}
-.panel-data-all-ico .text-primary{font-size:30px; font-weight:bold; margin-bottom:0px;}
+.panel-data-all-ico .text-primary{font-size:20px; font-weight:bold; margin-bottom:0px;}
 .panel-data-all .text-success{font-size:24px; margin-top:30px; font-weight:bold; color:rgba(116, 174, 117, 1); margin-bottom:0px;}
 .panel-right-body .table thead tr th{ width:250px;
 overflow:hidden;
@@ -1323,7 +1356,7 @@ vertical-align: middle;
 }
 .panel-left-right-body{  width:100px; float:right;  }
 .panel-left-body{  width:250px; float:left; }
-.table-font-color{font-weight:200; color:#428BCA; padding:7px 8px 7px 8px!important;}
+.table-font-color{font-weight:200; color:#428BCA; padding:6px 8px 5px 8px!important;}
 .panel-left-body .table > thead > tr > th{vertical-align:middle; text-align:center;}
 .panel-left-body .table  tfoot > tr > td{ font-weight:900;}
 .panel-left-right-body tfoot > tr > th{vertical-align:middle; text-align:center!important;}
@@ -1331,3 +1364,11 @@ vertical-align: middle;
 .panel-right-body .table tfoot{font-weight:bold;}
 .table > thead > tr > th{vertical-align:middle; text-align:center;}
 
+.panel-right-body table > thead th,.panel-right-body table > tbody td,.panel-right-body table > tfoot td{
+	font-size:12px;}
+.panel-left-body table > thead th,.panel-left-body table > tbody td,.panel-left-body table > tfoot td{
+	font-size:12px;}	
+.panel-left-right-body table > thead th,.panel-left-right-body table > tbody td,.panel-left-right-body table > tfoot th{
+	font-size:12px;}	
+	
+	
