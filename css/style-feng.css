@@ -1118,8 +1118,10 @@ text-shadow: none;}
 
 
 /*学校后台*/
+.school-list-group-ul-active{border-radius:0px; box-shadow:none;border:1px solid #FAEBCC;}
+.school-list-group-ul-active .school-list-group-li{background-color: #FCF8E3}
 .school-list-group-ul{ border-radius:0px; box-shadow:none; border:1px solid #ddd; background:#eee;}
-.school-list-group-li{text-align:center; padding:8px 0; border-right: 1px solid #ddd;}
+.school-list-group-li{text-align:center; padding:8px 0; }
 
 /*.management .select2-container-multi .select2-choices{max-height:34px;}*/
 .management .school-group .photo-box-single .img p{margin:0px;}
@@ -1371,4 +1373,4 @@ vertical-align: middle;
 .panel-left-right-body table > thead th,.panel-left-right-body table > tbody td,.panel-left-right-body table > tfoot th{
 	font-size:12px;}	
 	
-	
+.list-group-item-dn-active{background:#FCF8E3}
