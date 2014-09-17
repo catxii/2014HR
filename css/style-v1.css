@@ -251,11 +251,11 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 .list-group-item.active:hover,
 .list-group-item.active:focus {
   text-shadow: 0;
-  background-image: -webkit-linear-gradient(top, #eeeeee 0%, #dddddd 100%);
-  background-image: -o-linear-gradient(top, #eeeeee 0%, #dddddd 100%);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#dddddd));
-  background-image: linear-gradient(to bottom, #eeeeee 0%, #dddddd 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eee', endColorstr='#e8e8e8', GradientType=0);
+  background-image: -webkit-linear-gradient(top, #2ecc71 0%, #1dbb60 100%);
+  background-image: -o-linear-gradient(top, #2ecc71 0%, #1dbb60 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2ecc71), to(#1dbb60));
+  background-image: linear-gradient(to bottom, #2ecc71 0%, #1dbb60 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2ecc71', endColorstr='#0eac51', GradientType=0);
   background-repeat: repeat-x;
   border-color: #dddddd;
 }
@@ -965,13 +965,19 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   display: block;
   padding: 5px 14px;
   border-radius: 6px 6px 0 0;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  outline: none;
+  text-decoration: none;
 }
 .navigation-inline-ul li a:hover {
   text-decoration: none;
-  background: #a3a3a3;
+  background: #fff;
+  color: #333;
 }
 .navigation-inline-ul li.current a {
   background: white;
+  border-top: 3px solid #2ecc71;
 }
 .button-two-area {
   padding: 0;
@@ -1356,6 +1362,9 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 /* 私信 */
 .message-info .info {
   margin-bottom: 5px;
+}
+.message-info .info a:hover {
+  text-decoration: none;
 }
 .message-info .nr {
   color: #ababab;
@@ -2020,6 +2029,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 .edit-area .menu-list {
   margin-left: 0;
   margin-right: 10px;
+  margin-bottom: 0;
   background: #dcdcdc;
   padding: 5px;
   border-radius: 5px;
@@ -2062,11 +2072,6 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   background: #1ebc61;
 }
 .ppt-show-area {
-  -moz-box-orient: vertical;
-  -moz-box-pack: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-align: center;
-  display: -moz-box;
   min-height: 500px;
   margin: 0 auto;
   position: relative;
@@ -2085,11 +2090,6 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 .ppt-show-area .remove-list {
   margin-left: 0px;
   border-radius: 0 5px 5px 0;
-}
-.ppt-show-area ul {
-  width: 400px;
-  text-align: left;
-  margin: 20px auto;
 }
 .ppt-show-area ul li {
   list-style: disc;
@@ -2128,4 +2128,48 @@ slide {
 }
 .bg-color-picker {
   color: #000!important;
+}
+.popline li a {
+  box-sizing: unset;
+}
+.message-history {
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.message-history li {
+  margin-right: 0px;
+  position: relative;
+}
+.message-history li .close {
+  position: absolute;
+  right: 5px;
+  display: none;
+  top: 0px;
+}
+.message-history li a {
+  background: #ffe380;
+  border-radius: 5px;
+  color: #8f7310;
+  font-size: 12px;
+  padding: 5px 10px;
+}
+.message-history li a:hover {
+  text-decoration: none;
+  background: #eee380;
+}
+.message-history li:hover a {
+  padding-right: 20px;
+}
+.message-history li:hover .close {
+  display: block;
+}
+.address-list {
+  margin-top: 10px;
+}
+.address-list label {
+  font-weight: normal;
+}
+.address-list .check-adress {
+  margin-right: 10px;
 }

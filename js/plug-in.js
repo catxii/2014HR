@@ -21,7 +21,7 @@ $(function(){
  		maximumSelectionSize: 1
  	});
  	$(".select2-box-single-bank").on("select2-close",function(e){
- 		var patchBankName = $(".select2-search-choice > div").text();
+ 		var patchBankName = $(".search-bank .select2-search-choice > div").text().split("-")[1];
  		var selectBankName = $(".bank-name:contains('"+ patchBankName+"')").closest(".list-group");
  		$(".list-group.list-group-collapse-button").not( selectBankName ).hide();
  	});

@@ -15,20 +15,22 @@
     <link rel="stylesheet" media="print" href="libs/nodeppt/css/pdf.css">
     <link rel="stylesheet" href="libs/nodeppt/js/highlight/styles/monokai_sublime.css"></head> -->
 
+ <!-- popline 样式 -->
+	<link rel="stylesheet" type="text/css" href="libs/jquery-popline/css/toggle-switch.css" />
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="libs/jquery-popline/themes/default.css" />
+
+
 <body style="opacity:1; background:#eee; overflow:auto; padding-top:0;">
 
     <div class="container-fluid edit-ppt">
 
     	<div class="edit-area clearfix">
-    		<ul class="float-left inline-block-ul-mid menu-list">
+    		<!-- <ul class="float-left inline-block-ul-mid menu-list">
     			<li><a class="btn btn-sm btn-default add_h1" href="javascript:void(0)">h1标题</a></li>
-    			<li><a class="btn btn-sm btn-default add_h2" href="javascript:void(0)">h2标题</a></li>
-    		</ul>
+    		</ul> -->
     		<ul class="float-left inline-block-ul-mid menu-list">
-    			<li><a class="btn btn-sm btn-default add_url" href="javascript:void(0)">添加链接</a></li>
     			<li><a class="btn btn-sm btn-default add_img" href="javascript:void(0)">添加图片</a></li>
-    			<li><a class="btn btn-sm btn-default add_p" href="javascript:void(0)">段落文本</a></li>
-    			<li><a class="btn btn-sm btn-default add_ul_zh" href="javascript:void(0)">逐行列表</a></li>
     		</ul>
     		<ul class="float-left inline-block-ul-mid menu-list">
 				<li><a href="javascript:void(0)" class="bg-color-picker btn btn-sm btn-default">本页背景颜色<span class="caret"></span></a></li>
@@ -39,12 +41,24 @@
     		</ul>
     	</div>
 
-    	<div class="ppt-show-area" class="container-fluid" >
+    	<div class="ppt-show-area " >
+
     		<slide class="slide slide1">
-                <section class="slide-wrapper">
-        			
-                </section>
+                <section class="slide-wrapper editor" contenteditable="true">
+			        <p><a href="https://github.com/kenshin54/popline">Popline</a> is a non-intrusive <font color="#00ae52">WYSIWYG</font> editor.</p>
+			        <p>It shows up only after selecting a piece of text on the page.</p>
+			        <p>Inspired by <a href="http://pilotmoon.com/popclip/" target="_blank">popclip</a>.</p>
+			        <p>It provides commonly used editing features <b>out-of-the-box</b>.</p>
+			        <blockquote>Easy to extend, Easy to customize.</blockquote>
+			        <p>Two modes supported, <i>Edit mode</i> and <i>View mode</i>.</p>
+			        <p>Two popup ways supported, <u>Fixed</u> and <u>Relative</u>.</p>
+			        <p>
+			          The default theme popline used is designed by <a target="_blank" href="https://twitter.com/PepsinY">@Pepsin</a>, Thanks.
+			        </p>
+			        <p style="text-align: right;">欢迎使用<i class="fa fa-smile-o"></i></p>
+				  </section>
             </slide>
+
     	</div>
 
     	<ul class="ppt-list inline-block-ul container-fluid">
@@ -52,26 +66,64 @@
     		<li><a href="javascript:void(0)" class="add-ppt">+ 新增</a></li>
     	</ul>
 
-    	<div class="btn-center" style="margin:20px auto;">
-    		<a href="javascript:void(0)" class="btn btn-lg btn-warning">保存PPT</a>
-    	</div>
-
     </div>
+
+
+
 
 <!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
 <script type="text/JavaScript" src="space-footer-css.js"></script>
 <!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+	<!-- poplinejs -->
+	<!--[if lt IE 9]>
+    <script type="text/javascript" src="libs/jquery-popline/scripts/html5shiv.min.js"></script>
+  <![endif]-->
+  <script type="text/javascript" src="libs/jquery-popline/scripts/jquery.popline.js"></script>
+  <script type="text/javascript" src="libs/jquery-popline/scripts/plugins/jquery.popline.link.js"></script>
+  <script type="text/javascript" src="libs/jquery-popline/scripts/plugins/jquery.popline.blockquote.js"></script>
+  <script type="text/javascript" src="libs/jquery-popline/scripts/plugins/jquery.popline.decoration.js"></script>
+  <script type="text/javascript" src="libs/jquery-popline/scripts/plugins/jquery.popline.list.js"></script>
+  <script type="text/javascript" src="libs/jquery-popline/scripts/plugins/jquery.popline.justify.js"></script>
+  <script type="text/javascript" src="libs/jquery-popline/scripts/plugins/jquery.popline.blockformat.js"></script>
+  <script type="text/javascript" src="libs/jquery-popline/scripts/plugins/jquery.popline.social.js"></script>
+  <script type="text/javascript" src="libs/jquery-popline/scripts/plugins/jquery.popline.backcolor.js"></script>
+  <script type="text/javascript">
+    $(function(){
+      if ($.popline.utils.browser.ie) {
+        if ($.popline.utils.browser.ieVersion() < 9) {
+          $.popline.utils.fixIE8();
+        } else {
+          $(".switcher").show();
+        }
+      } else {
+        $(".switcher").show();
+        document.execCommand('defaultParagraphSeparator', false, 'p');
+      }
+      $(".editor").popline({position: "fixed"});
+      $("input[name='mode']").click(function(){
+        $(".editor").popline("destroy");
+        $(".editor").attr("contenteditable", this.id === "edit");
+        $(".editor").popline({mode: this.id, position: $("input[name='position']:checked").attr("id")});
+      });
+      $("input[name='position']").click(function(){
+        $(".editor").popline("setPosition", this.id);
+      });
+    });
+  </script>
+
+
+
+  <!-- 颜色选取js -->
 <script type="text/javascript" src="libs/jquery-colorpicker/jquery.colorpicker.js"></script>
 <script type="text/javascript">
 	$(function(){
 		var ppt_show_area = ".ppt-show-area .slide-wrapper:visible";
-		var color_picker = "<a href='javascript:void(0)' class='colorbox color_box'></a>";
-		var h1 = "<h1 style='color:#000;'><input type='text' value='h1标题'><a href='javascript:void(0)' class='colorbox color_box_h1'></a></h1>";	//定义h1标签
-		var h2 = "<h2 style='color:#000;'><input type='text' value='h2标题'><a href='javascript:void(0)' class='colorbox color_box_h2'></a></h2>";	//定义h2标签
-		var url = "<p><a href='#' class='url_color'><input type='text' value='链接文字'></a><a href='javascript:void(0)' class='colorbox color_box_url'></a></p>";	//定义外部链接文字
+		// var color_picker = "<a href='javascript:void(0)' class='colorbox color_box'></a>";
+		// var h1 = "<h1 style='color:#000;'>h1 标题</h1>";	//定义h1标签
+		// var h2 = "<h2 style='color:#000;'>h2 标题</h2>";	//定义h2标签
 		var img = "<p><img src='img/banner1.png' style='max-width:90%;max-height:90%; margin:10px;'></p>";		//定义图片
 		var p = "<p><textarea class='form-control' rows='3' style='margin:20px auto; width:60%;'>请输入文本</textarea></p>"	//定义段落
-		var ul_zh = "<ul class='moveIn'><li><input type='text' placeholder='输入列表内容'><a href='javascript:void(0)' class='btn btn-warning btn-sm remove-list'>移除</a></li><li><a href='javascript:void(0)' class='btn btn-primary btn-sm add-list-x'>新增一个列表项</a></li></ul>"
+		var ul_zh = "<ul class='moveIn'><li>请输入列表内容</li><li><a href='javascript:void(0)' class='btn btn-primary btn-sm add-list-x'>新增一个列表项</a></li></ul>"
 		$(".add_h1").click(function(){	//添加h1标签
 			$(ppt_show_area).append(h1);
 			$(".color_box_h1").colorpicker({
@@ -90,24 +142,12 @@
 			    }
 			});
 		});
-		$(".add_url").click(function(){		//添加h2标签
-			$(ppt_show_area).append(url);
-			$(".color_box_url").colorpicker({
-			    fillcolor:true,
-			    success:function(o,color){
-			        $(".url_color").css("color",color);
-			    }
-			});
-		});
 		$(".add_img").click(function(){ 	//添加h2标签
 			$(ppt_show_area).append(img);
 		});
-		$(".add_p").click(function(){	//添加h2标签
-			$(ppt_show_area).append(p);
-		});
 		$(".add_ul_zh").click(function(){	//添加逐步显示ul
 			$(ppt_show_area).append(ul_zh);
-			var newList = "<li><input type='text' placeholder='输入列表内容'><a href='javascript:void(0)' class='btn btn-warning btn-sm remove-list'>移除</a></li>";
+			var newList = "<li>请输入列表内容</li>";
 			$(".add-list-x").click(function(){
 				$(this).before(newList);
 			});
@@ -126,14 +166,13 @@
 			var i = $(this).parent().index() + 1;
 			var newPPTButton = "<li><a href='javascript:void(0)' >"+ i +"</a></li>";
 			$(this).parent().before(newPPTButton);
-			var newPPTPage = "<slide class='slide slide"+i+"' style='display:none;'><section class='slide-wrapper'></section></slide>";
+			var newPPTPage = "<slide class='slide slide"+i+"' style='display:none;'><section class='slide-wrapper editor' contenteditable='true'>请输入内容</section></slide>";
 			$(".slide:last").after(newPPTPage);
 		});
 		$(".ppt-list").on("click","li a",function(){
 			$(this).not(".add-ppt").addClass("current").parent().siblings().find("a").removeClass("current");
 			var index = $(this).parent().index() + 1;
 			$('.slide'+index).show().siblings(".slide").hide();
-			console.log( $('.slide'+index) );
 		});
 	})
 </script>
