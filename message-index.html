@@ -111,7 +111,7 @@
             </li>
          </ul> -->
       </div>
-      <div class="panel-body container-fluid tab-content">
+      <div class="panel-body container-fluid tab-content" >
         
         <ul class="inline-block-ul-mid" style="padding-left:0;">
           <li><a data-toggle="modal" data-target="#sendmessage" href="javascript:" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-envelope"></span> 发私信</a></li>
@@ -166,6 +166,7 @@
           </div>
           <div class="info-position">
               <a href="javascript:" style="margin-left:10px;" data-toggle="modal" data-target="#delmodal" class="btn btn-xs btn-primary pull-right icon-bin"></a>
+              
               <span class="pull-right gray">今天 11：11</span>
           </div>
         </div>
@@ -257,17 +258,62 @@
 
       </div>
 
-      <div class="panel-body container-fluid tab-content" style=" display:none;">
+      <div class="panel-body container-fluid tab-content" style=" display:none; position:relative; padding-right:215px;">
+
         <div class="address-bar clearfix">
-          <ul class="inline-block-ul-mid list-unstyled">
-            <li><a href="javascript:void(0)" class="btn btn-sm btn-primary"><span class="icon-user-add"></span> 添加联系人</a></li>
+          <ul class="inline-block-ul-mid list-unstyled search-list">
+            <li style="width:400px; position:relative; padding-right:100px;">
+              <select class="select2-box"  multiple placeholder="请输入对方的名称" >
+                   <option>王召唤</option>
+                   <option>彭毅超</option>
+                   <option>梁云龙</option>
+                   <option>邓成伟</option>
+                   <option>丁伟</option>
+                   <option>曾梵志</option>
+                   <option>老卢</option>
+                   <option>王召唤1</option>
+                   <option>彭毅超2</option>
+                   <option>梁云龙3</option>
+                   <option>邓成伟4</option>
+                   <option>丁伟5</option>
+                   <option>曾梵志6</option>
+                   <option>老卢7</option>
+              </select>
+              <a href="javascript:void(0)" class="btn btn-warning add-button">加入通讯录</a>
+            </li>
             <li class="ash-bin-li" style="display:none;"><a href="javascript:void(0)" class="btn btn-sm btn-danger"><span class="icon-bin"></span> 删除联系人</a></li>
           </ul>
+          <ul class="inline-block-ul-mid list-unstyled select-checkbox-ul" style="display:none;">
+            <li><a href="javascript:void(0)" class="btn btn-default">发私信</a></li>
+            <li><a href="javascript:void(0)" class="btn btn-default">删除</a></li>
+            <li>
+              <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                  添加到组...
+                  <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">全部</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">我的同学</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">活动小组</a></li>
+                  <li role="presentation" class="divider"></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#"  data-target="#addname" data-toggle="modal">新建组</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="javascript:" class="btn btn-primary del-button"><span class="glyphicon glyphicon-remove" style="margin:0;"></span></a></li>
+          </ul>
         </div>
+        
+        <ul class="title-ul inline-block-ul-mid">
+          <li><h1 class="fl-title">组名称</h1></li>
+          <li style="float:right;"><a href="javascript:void(0)" class="btn btn-xs btn-primary" data-target="#setgroup" data-toggle="modal"><span class="glyphicon glyphicon-cog"></span> 修改名称</a></li>
+        </ul>
+
         <table class="address-list table table-hover">
           <tr class="active"> 
-              <td class="btn-center" style="width:30%;">
-                名称
+              <td style="width:30%;">
+                <label><input type="checkbox" class="check-adress-all"> 名称</label>
               </td>
               <td style="width:70%;">
                 账户
@@ -279,6 +325,7 @@
               </td>
               <td style="width:80%;">
                 12312314432
+                <a href="javascript:void(0)" class="delbutton"><span class="glyphicon glyphicon-minus-sign"></span></a>
               </td>
            </tr>
            <tr>
@@ -287,6 +334,7 @@
               </td>
               <td style="width:80%;">
                 12312314432
+                <a href="javascript:void(0)" class="delbutton"><span class="glyphicon glyphicon-minus-sign"></span></a>
               </td>
            </tr>
            <tr>
@@ -295,6 +343,7 @@
               </td>
               <td style="width:80%;">
                 12312314432
+                <a href="javascript:void(0)" class="delbutton"><span class="glyphicon glyphicon-minus-sign"></span></a>
               </td>
            </tr>
            <tr>
@@ -303,6 +352,7 @@
               </td>
               <td style="width:80%;">
                 12312314432
+                <a href="javascript:void(0)" class="delbutton"><span class="glyphicon glyphicon-minus-sign"></span></a>
               </td>
            </tr>
            <tr>
@@ -311,6 +361,7 @@
               </td>
               <td style="width:80%;">
                 12312314432
+                <a href="javascript:void(0)" class="delbutton"><span class="glyphicon glyphicon-minus-sign"></span></a>
               </td>
            </tr>
            <tr>
@@ -319,32 +370,20 @@
               </td>
               <td style="width:80%;">
                 12312314432
+                <a href="javascript:void(0)" class="delbutton"><span class="glyphicon glyphicon-minus-sign"></span></a>
               </td>
            </tr>
         </table>
 
-        <div class="message-single-box container-fluid" style="position:relative;">
-          <div class="row">
-            <div class="col-xs-1">
-              <img data-src="holder.js/100%x67" class="img-responsive">
-            </div>
-            <div class="col-xs-11 ">
-              <ul class="message-info list-unstyled">
-                <li class="info">
-                  <a href="#" class="name">江海客XP：</a>
-                </li>
-                <li class="nr font-overflow"><i class="icon-paperclip"></i> <i class="glyphicon glyphicon-picture"></i> 您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报您好，您的举报已完成判定。根据《微博社区管理规定(试行)》，被举报</li>
-                <li><a href="#" style="margin:0 5px -10px 0;" class="position-bottom-left red-block">1</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="info-position">
-              <a href="javascript:" style="margin-left:10px;" data-toggle="modal" data-target="#delmodal" class="btn btn-xs btn-danger pull-right icon-bin"></a>
-              <a href="javascript:" style="margin-left:10px;" class="btn btn-xs btn-primary pull-right"><span class="glyphicon glyphicon-plus"></span>添加到通讯录</a>
-              <span class="pull-right gray">今天 11：11</span>
-          </div>
-        </div>
 
+        <div class="message-sidebar">
+          <h4 class="title">通讯录<a href="javascript:void(0)" class="add btn btn-primary btn-xs" data-target="#addname" data-toggle="modal">新建组</a></h4>
+          <ul class="category-list">
+            <li><a href="#">全部 (10)</a></li>
+            <li class="current"><a href="#">我的同学 (10)</a></li>
+            <li><a href="#">活动小组 (10)</a></li>
+          </ul>
+        </div>
 
       </div>
 
@@ -452,8 +491,65 @@
         <div class="nr text-left" style="margin-bottom:10px;">
         删除对话内容将不可恢复，确定要删除与 江海客XP 之间的所有对话？
         </div>
+      </div>
+      <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
         <button type="button" class="btn btn-danger">删除</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 新建组 -->
+<div class="modal fade bs-example-modal-sm" id="addname" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">新建组</h4>
+      </div>
+      <div class="modal-body btn-center" style="border-top:none">
+        <div class="nr" style="margin-bottom:10px;">
+           <form class="form-horizontal" role="form">
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input type="text" class="form-control" placeholder="输入群组名称">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary">确定</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 新建组 -->
+<div class="modal fade bs-example-modal-sm" id="setgroup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">管理组</h4>
+      </div>
+      <div class="modal-body btn-center" style="border-top:none">
+        <div class="nr" style="margin-bottom:10px;">
+           <form class="form-horizontal" role="form">
+            <div class="form-group">
+              <div class="col-sm-12">
+                <input type="text" class="form-control" placeholder="输入群组名称">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="javascript:void(0)" class="btn btn-danger pull-left">删除该群组</a>
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary">保存</button>
       </div>
     </div>
   </div>
@@ -495,6 +591,37 @@
     $(".message-history").on("click",".close",function(){
       $(this).closest("li").remove();
     })
+    $(".category-list").on("click","li",function(){
+      $(this).addClass("current").siblings("li").removeClass("current");
+    })
+    $(".address-list").on("click",".check-adress",function(){
+       if( $(".check-adress").is(":checked") ){
+         // $(".check-adress-all").prop("checked",true);
+         $(".select-checkbox-ul").show();
+         $(".search-list").hide();
+       }else{
+        // $(".check-adress-all").prop("checked",false);
+        $(".select-checkbox-ul").hide();
+        $(".search-list").show();
+      }
+    });
+    $(".address-list").on("click",".check-adress-all",function(){
+      if( $(this).is(":checked") ){
+        $(".check-adress").prop("checked",true);
+        $(".select-checkbox-ul").show();
+         $(".search-list").hide();
+      }else{
+        $(".check-adress").prop("checked",false);
+        $(".select-checkbox-ul").hide();
+        $(".search-list").show();
+      }
+    });
+    $(".select-checkbox-ul").on("click",".del-button",function(){
+        $(".check-adress").prop("checked",false);
+        $(".check-adress-all").prop("checked",false);
+        $(".select-checkbox-ul").hide();
+        $(".search-list").show();
+    });
   });
 </script>
 
