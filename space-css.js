@@ -21,7 +21,7 @@ var filegroup = [
 	"<link href='libs/jquery-lightbox/css/lightbox.css' rel='stylesheet'>",
 
 	// 日期选择器 
-	// "<link href='libs/bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.min.css' rel='stylesheet' >",
+	"<link href='libs/bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.min.css' rel='stylesheet' >",
 
 	// Custom styles for this template 
 	"<link href='css/style-v1.css' rel='stylesheet'>",

@@ -379,7 +379,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 .banner-fluid-bg {
   /*background: url(../img/banner-graybg_03.png) repeat-x;*/
   position: relative;
-  z-index: 10;
+  z-index: 30;
 }
 .top-banner-small {
   height: 50px;
@@ -834,10 +834,22 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   background-position: -147px center;
 }
 .swf-ico {
-  background-position: -21px center;
+  background-position: -366px center;
 }
 .html-ico {
   background-position: -105px center;
+}
+.audio-ico {
+  background-position: -387px center;
+}
+.pdf-ico {
+  background-position: -42px center;
+}
+.other-ico {
+  background-position: -404px center;
+}
+.video-ico {
+  background-position: -423px center;
 }
 .pagination {
   margin: 10px auto;
@@ -2257,4 +2269,21 @@ slide {
   border: 1px solid #ccc;
   color: white;
   margin-bottom: 5px;
+}
+.dialog-title-h4 {
+  background: #ececec;
+  font-size: 14px;
+  padding: 10px;
+}
+.table-view .name {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  vertical-align: middle;
+  margin-right: 10px;
+  text-align: right;
+  width: 80px;
+  background: #efefef;
+  padding: 2px;
+  color: #9c9c9c;
 }

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="../../favicon.ico">
+<title>领信样式模板</title>
+
+<!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+<script type="text/JavaScript" src="space-css.js"></script>
+<!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+
+</head>
+<body class="fixed-top-body" ng-app="" data-spy="scroll" data-target=".navbar-example">
+<div class="navbar navbar-zhijiao navbar-green navbar-fixed-top" style="height:36px; min-height:36px;">
+  <div class="container">
+    <div class="navbar-header">
+      <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a href="#" class="navbar-brand logo-small" alt="领信logo"></a> </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"> <a href="#">教学空间</a> </li>
+        <li> <a href="#about">个人空间</a> </li>
+        <li> <a href="#contact">班级空间</a> </li>
+        <li> <a href="#contact">我的班级</a> </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">张学友 [ 退出 ]</a></li>
+        <li><a href="#"><span class="icon-t-shirt"></span> 装扮</a></li>
+        <li class="dropdown"> <a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class=" icon-cogwheel"></span> 设置 <span class="caret"></span></a>
+          <ul role="menu" class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    
+    <!--/.nav-collapse --> 
+  </div>
+</div>
+<div class="container">
+  <div class="col-md-2">
+    <div class="list-group"> <a href="#" class="list-group-item disabled icon-group"> &nbsp;选择班级 </a> <a href="#" class="list-group-item active">三年级1班</a> <a href="#" class="list-group-item">三年级2班</a> </div>
+  </div>
+  <div class="col-md-10">
+    <div class="panel panel-default">
+      <div class="panel-heading tab-header">
+        <ul class="inline-block-ul navigation-inline-ul">
+          <li class="current"><a href="#">班级成员</a></li>
+          <li><a href="#">成员分组</a></li>
+          <li><a href="#">成员公告</a></li>
+          <li><a href="#">班级日志</a></li>
+          <li><a href="#">照片墙</a></li>
+          <li><a href="#">德能银行</a></li>
+          <li><a href="#">课程表</a></li>
+          <li><a href="#">班级作业</a></li>
+          <li><a href="#">班级信息管理</a></li>
+        </ul>
+      </div>
+      <div class="panel-body" style="padding:0px 5px; min-height:350px;">
+
+        <div class="panel-heading" >
+          <ul class="inline-block-ul top-head-ul" >
+            <li><a href="javascript:void(0)" class="btn btn-warning  btn-sm icon-unshare" > 返回学生列表</a></li>
+          </ul>
+        </div> 
+
+        <h4 class="dialog-title-h4 btn-center" style="margin-top:0;"><span class="icon-user-add"></span> 新增学生信息 <span class="red">(必填)</span></h4>
+        <div class="list-box-add-student" style="width:500px; margin:20px auto;">
+          <form class="form-horizontal" role="form">
+            <div class="form-group has-error has-feedback">
+              <label for="inputEmail3" class="col-sm-3 control-label">学校名称：</label>
+              <div class="col-sm-9">
+                <select class="select2-box" style="width:180px;">
+                  <option>学校名称</option>
+                  <option>学校名称</option>
+                  <option>学校名称</option>
+                  <option>学校名称</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group has-success has-feedback">
+              <label for="inputPassword3" class="col-sm-3 control-label">学生姓名：</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" placeholder="">
+                <span class="glyphicon glyphicon-ok form-control-feedback" style="display:block!important;"></span>
+              </div>
+            </div>
+            <div class="form-group has-warning has-feedback">
+              <label for="inputPassword3" class="col-sm-3 control-label">学号：</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" placeholder="">
+                <span class="glyphicon glyphicon-warning-sign form-control-feedback" style="display:block!important;"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-3 control-label">年级：</label>
+              <div class="col-sm-9">
+                <select class="select2-box" style="width:180px;">
+                  <option>学校名称</option>
+                  <option>学校名称</option>
+                  <option>学校名称</option>
+                  <option>学校名称</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-3 control-label">所在班级：</label>
+              <div class="col-sm-9">
+                <select class="select2-box" style="width:180px;">
+                  <option>学校名称</option>
+                  <option>学校名称</option>
+                  <option>学校名称</option>
+                  <option>学校名称</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group has-error has-feedback">
+              <label for="inputPassword3" class="col-sm-3 control-label">家长姓名：</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" placeholder="">
+                <span class="glyphicon glyphicon-remove form-control-feedback"  style="display:block!important;"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-3 control-label">家长手机号码：</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-3 control-label">学生性别：</label>
+              <div class="col-sm-9">
+                <label style="margin:5px 0 0;"><input type="radio" name="sex"> 男</label>
+                <label style="margin:5px 0 0;"><input type="radio" name="sex"> 女</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-3 control-label">是否住校：</label>
+              <div class="col-sm-9">
+                <select class="select2-box" style="width:180px;">
+                  <option>学校名称</option>
+                  <option>学校名称</option>
+                  <option>学校名称</option>
+                  <option>学校名称</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-3 control-label">上传照片：</label>
+              <div class="col-sm-9">
+                <input type="file">
+                <span class="small red">上传图片的像素为110 * 110，图片大小不能超过100KB</span>
+              </div>
+            </div>
+          </form>
+        </div>
+        <h4 class="dialog-title-h4 btn-center"><a href="javascript:void(0)" class="checkmore">+ 点击展开更多信息(选填)</a></h4>
+        <div class="list-box-add-student-more" style="width:500px; margin:20px auto; display:none;">
+          <form class="form-horizontal" role="form">
+            <div class="form-group">
+              <label for="inputEmail3" class="col-sm-3 control-label">民族：</label>
+              <div class="col-sm-9">
+                <select class="select2-box" style="width:180px;">
+                  <option>汉族</option>
+                  <option>战斗民族</option>
+                  <option>猫族</option>
+                  <option>狗族</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group ">
+              <label for="inputPassword3" class="col-sm-3 control-label">籍贯：</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" placeholder="">
+              </div>
+            </div>
+            <div class="form-group" style="padding: 0 5px;">
+              <label for="inputPassword3" class="col-sm-3 control-label">入校时间：</label>
+               <div class="input-group date form_date col-md-9" data-date="" data-date-format="yyyy-MM-dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                    <input class="form-control" size="16" type="text" value="" readonly>
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+              </div>
+            </div>
+            <div class="form-group" style="padding: 0 5px;">
+              <label for="inputPassword3" class="col-sm-3 control-label">出生年月：</label>
+              <div class="input-group date form_date col-md-9" data-date="" data-date-format="yyyy-MM-dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                    <input class="form-control" size="16" type="text" value="" readonly>
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-3 control-label">IC卡号：</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-3 control-label">出生地：</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-3 control-label">户口性质：</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-3 control-label">户口所在地：</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-3 control-label">健康状况：</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-3 control-label">政治面貌：</label>
+              <div class="col-sm-9">
+                <select class="select2-box" style="width:180px;">
+                  <option>汉族</option>
+                  <option>战斗民族</option>
+                  <option>猫族</option>
+                  <option>狗族</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-3 control-label">身份证号：</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-3 control-label">特长：</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-3 control-label">家庭电话：</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" placeholder="">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-3 control-label">血型：</label>
+              <div class="col-sm-9">
+                <select class="select2-box" style="width:180px;">
+                  <option>汉族</option>
+                  <option>战斗民族</option>
+                  <option>猫族</option>
+                  <option>狗族</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-3 control-label">家庭地址：</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" placeholder="">
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <ul class="btn-center inline-block-ul-mid">
+          <li><a href="javascript:void(0)" class="btn btn-primary btn-sm">保存</a></li>
+          <li><a href="javascript:void(0)" class="btn btn-default btn-sm">添加下一个</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- 底部 -->
+<div class="container-fluid footer footer-grayline">
+  <div class="row">
+    <ul class="col-md-12 inline-block-ul">
+      <li><a href="#">关于我们</a></li>
+      <li>|</li>
+      <li><a href="#">联系我们</a></li>
+      <li>|</li>
+      <li><a href="#">友情链接</a></li>
+      <li>|</li>
+      <li><a href="#">关于我们</a></li>
+      <li>|</li>
+      <li><a href="#">关于我们</a></li>
+    </ul>
+  </div>
+  <div class="row">
+    <div class="col-md-12">Copyright @ 2011-2015 湖南领信教育网络发展有限公司版权所有 湘ICP备14001031号</div>
+  </div>
+</div>
+
+<!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****--> 
+<script type="text/JavaScript" src="space-footer-css.js"></script> 
+<!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+
+
+<script type="text/javascript">
+    $('.form_date').datetimepicker({
+        weekStart: 1,
+        todayBtn:  1,
+         autoclose: 1,
+         todayHighlight: 1,
+         startView: 2,
+         minView: 2,
+         forceParse: 0
+    });
+    $(".checkmore").click(function(){
+      if( $(".list-box-add-student-more").is(":hidden") ){
+        $(this).text("- 点击折叠更多信息(选填)");
+        $(".list-box-add-student-more").show("slow");
+      }else{
+        $(this).text("+ 点击展开更多信息(选填)");
+        $(".list-box-add-student-more").hide("slow");
+      }
+    })
+</script>
+</body>
+</html>

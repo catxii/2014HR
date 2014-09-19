@@ -15,7 +15,7 @@
 
 </head>
 <body class="fixed-top-body" ng-app="" data-spy="scroll" data-target=".navbar-example">
-<div class="navbar navbar-zhijiao navbar-green navbar-fixed-top" style="height:36px; max-height:36px;">
+<div class="navbar navbar-zhijiao navbar-green navbar-fixed-top" style="height:36px; min-height:36px;">
   <div class="container">
     <div class="navbar-header">
       <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
@@ -64,84 +64,102 @@
           <li><a href="#">班级信息管理</a></li>
         </ul>
       </div>
-      <div class="panel-body" style="padding:0px 5px;">
-      <div class="col-md-2" style="border-right:1px solid #eee; padding-left:15px;">
-    <!-- 分类 -->
-       <div class="panel panel-default clear-border">
-      <div class="panel-heading" style="padding:10px; background:none;">
-        <span class="glyphicon glyphicon-th-list"></span>  分类 
-      </div>
-      <div class="panel-body clear-padding">
-        
-        <div class="collapse-lx rizhi-shu">
-              <div class="list-group-tree small all-tree-ul-none showit sub-list-all-hover clear-border">
-                
-                <div class="tree-sub tree-sub-1 sub-list clear-padding">
-                  <ul class="tree-sub clear-padding">
-                    <li> <a href="javascript:"> <span class="iblock dot">·</span> <span class="sub-click-area">所有日志</span>(10) </a>
-                      
-                    </li>
-                    <li> <a href="javascript:"> <span class="iblock dot">·</span> <span class="sub-click-area">班级基本情况</span> </a>
-                      <ul class="tree-sub">
-                        <li> <a href="javascript:">  <span class="sub-click-area">第一节</span>(2)</a> </li>
-                        <li> <a href="javascript:"> <span class="sub-click-area">第一节</span>(2)</a> </li>
-                      </ul>
-                    </li>
-                    <li> <a href="javascript:"> <span class="iblock dot">·</span> <span class="sub-click-area">班级基本情况</span> </a>
-                      <ul class="tree-sub">
-                        <li> <a href="javascript:">  <span class="sub-click-area">第一节</span> </a> </li>
-                        <li> <a href="javascript:"> <span class="sub-click-area">第一节</span> </a> </li>
-                      </ul>
-                    </li>
-                    <li> <a href="javascript:"> <span class="iblock dot">·</span> <span class="sub-click-area">班级基本情况</span> </a>
-                      <ul class="tree-sub">
-                        <li> <a href="javascript:">  <span class="sub-click-area">第一节</span> </a> </li>
-                        <li> <a href="javascript:"> <span class="sub-click-area">第一节</span> </a> </li>
-                      </ul>
-                    </li>
-                    <li> <a href="javascript:"> <span class="iblock dot">·</span> <span class="sub-click-area">班级基本情况</span> </a>
-                      <ul class="tree-sub">
-                        <li> <a href="javascript:">  <span class="sub-click-area">第一节</span> </a> </li>
-                        <li> <a href="javascript:"> <span class="sub-click-area">第一节</span> </a> </li>
-                      </ul>
-                    </li>
-                    <li> <a href="javascript:"> <span class="iblock dot">·</span> <span class="sub-click-area">班级基本情况</span> </a>
-                      <ul class="tree-sub">
-                        <li> <a href="javascript:">  <span class="sub-click-area">第一节</span> </a> </li>
-                        <li> <a href="javascript:"> <span class="sub-click-area">第一节</span> </a> </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+      <div class="panel-body" style="padding:0px 5px; min-height:350px;">
 
-      </div>
-    </div>
-    
-    
-      
-  </div>
-    <div class="panel-body col-md-10 class-rizhi-list">
-    <div class="panel-heading">
-    <ul class="inline-block-ul position-right-top-block top-head-ul">
-            <li><a title="" data-original-title="" href="/linktrust/space/class/article/add?classid=53e3532846968458ad568fb7" class="btn btn-primary  btn-sm icon-circle-plus"> 添加日志</a></li>
-        <li><a title="" data-original-title="" href="/linktrust/space/class/cat/main?classid=53e3532846968458ad568fb7" class="btn btn-default btn-sm icon-cogwheel"> 目录管理</a></li> 
-         </ul>
-    </div> 
-    <div class="list-group">
-      
-      <ul class="sub-list" style="display:block;">
-        <li>
-          <a href="#" class="list-group-item list-group-item-bottom"><span class="badge badge-none">2014-12-10</span><span class="name icon-file">“航海体育场不缺绿地”是个哲学难题
-</span></a>
-          
-        </li>
-       
-      </ul>
-    </div>
-    
-   </div>
+        <div class="panel-heading" >
+          <ul class="inline-block-ul top-head-ul">
+            <li><a href="javascript:void(0)" class="btn btn-primary  btn-sm icon-circle-plus" > 添加学生</a></li>
+          </ul>
+        </div> 
+
+        <table class="address-list table table-hover btn-center" style="margin:0;">
+          <tr class="active"> 
+              <td style="width:10%;">序号</td>
+              <td style="width:30%;">班级信息</td>
+              <td style="width:10%;">学生姓名</td>
+              <td style="width:10%;">学号</td>
+              <td style="width:10%;">家长姓名</td>
+              <td style="width:30%;">操作</td>
+           </tr>
+           <tr>
+            <td>1</td>
+            <td>华容一中 / 初一 / 初一一班</td>
+            <td>周同学</td>
+            <td>11000011</td>
+            <td>周同学爸爸</td>
+            <td>
+              <ul class="inline-block-ul-mid">
+                <li><a href="javascript:void(0)" class="btn btn-default btn-xs" data-toggle="modal" data-target="#view-student-dialog">查看</a></li>
+                <li><a href="javascript:void(0)" class="btn btn-default btn-xs">修改</a></li>
+                <li><a href="javascript:void(0)" class="btn btn-default btn-xs">删除</a></li>
+                <li><a href="javascript:void(0)" class="btn btn-default btn-xs">生成账号</a></li>
+              </ul>
+            </td>
+           </tr>
+           <tr>
+            <td>1</td>
+            <td>华容一中 / 初一 / 初一一班</td>
+            <td>周同学</td>
+            <td>11000011</td>
+            <td>周同学爸爸</td>
+            <td>
+              <ul class="inline-block-ul-mid">
+                <li><a href="javascript:void(0)" class="btn btn-default btn-xs" data-toggle="modal" data-target="#view-student-dialog">查看</a></li>
+                <li><a href="javascript:void(0)" class="btn btn-default btn-xs">修改</a></li>
+                <li><a href="javascript:void(0)" class="btn btn-default btn-xs">删除</a></li>
+                <li><a href="javascript:void(0)" class="btn btn-default btn-xs">生成账号</a></li>
+              </ul>
+            </td>
+           </tr>
+           <tr>
+            <td>1</td>
+            <td>华容一中 / 初一 / 初一一班</td>
+            <td>周同学</td>
+            <td>11000011</td>
+            <td>周同学爸爸</td>
+            <td>
+              <ul class="inline-block-ul-mid">
+                <li><a href="javascript:void(0)" class="btn btn-default btn-xs" data-toggle="modal" data-target="#view-student-dialog">查看</a></li>
+                <li><a href="javascript:void(0)" class="btn btn-default btn-xs">修改</a></li>
+                <li><a href="javascript:void(0)" class="btn btn-default btn-xs">删除</a></li>
+                <li><a href="javascript:void(0)" class="btn btn-default btn-xs">生成账号</a></li>
+              </ul>
+            </td>
+           </tr>
+           <tr>
+            <td>1</td>
+            <td>华容一中 / 初一 / 初一一班</td>
+            <td>周同学</td>
+            <td>11000011</td>
+            <td>周同学爸爸</td>
+            <td>
+              <ul class="inline-block-ul-mid">
+                <li><a href="javascript:void(0)" class="btn btn-default btn-xs" data-toggle="modal" data-target="#view-student-dialog">查看</a></li>
+                <li><a href="javascript:void(0)" class="btn btn-default btn-xs">修改</a></li>
+                <li><a href="javascript:void(0)" class="btn btn-default btn-xs">删除</a></li>
+                <li><a href="javascript:void(0)" class="btn btn-default btn-xs">生成账号</a></li>
+              </ul>
+            </td>
+           </tr>
+           <tr>
+            <td>1</td>
+            <td>华容一中 / 初一 / 初一一班</td>
+            <td>周同学</td>
+            <td>11000011</td>
+            <td>周同学爸爸</td>
+            <td>
+              <ul class="inline-block-ul-mid">
+                <li><a href="javascript:void(0)" class="btn btn-default btn-xs" data-toggle="modal" data-target="#view-student-dialog">查看</a></li>
+                <li><a href="javascript:void(0)" class="btn btn-default btn-xs">修改</a></li>
+                <li><a href="javascript:void(0)" class="btn btn-default btn-xs">删除</a></li>
+                <li><a href="javascript:void(0)" class="btn btn-default btn-xs">生成账号</a></li>
+              </ul>
+            </td>
+           </tr>
+           
+        </table>
+
+
       </div>
     </div>
   </div>
@@ -149,15 +167,136 @@
 
 <!-- 弹出框 --> 
 <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="view-student-dialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">丁伟已发通知：丁伟已被抓</h4>
+        <h4 class="modal-title" id="myModalLabel">查看学生信息</h4>
       </div>
-      <div class="modal-body"> 丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓丁伟已发通知：丁伟已被抓 </div>
+      <div class="modal-body"> 
+        <h4 class="dialog-title-h4">学生信息(必填)</h4>
+        <div class="list-box-add-student" style="width:500px; margin:20px auto;">
+          <table class="table table-bordered table-view">
+            <tr>
+              <td>
+                <span class="name">所属省份:</span><span class="value">湖南</span>
+              </td>
+              <td>
+                <span class="name">所属地市:</span><span class="value">岳阳市</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="name">所属区县:</span><span class="value">华容县</span>
+              </td>
+              <td>
+                <span class="name">学校名称:</span><span class="value">华容一中</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="name">学生姓名:</span><span class="value">周同学</span>
+              </td>
+              <td>
+                <span class="name">学号:</span><span class="value">11001100</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="name">年级:</span><span class="value">初一</span>
+              </td>
+              <td>
+                <span class="name">所在班级:</span><span class="value">初一一班</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="name">家长姓名:</span><span class="value">周同学爸爸</span>
+              </td>
+              <td>
+                <span class="name">家长电话:</span><span class="value">13566660777</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="name">性别:</span><span class="value">男</span>
+              </td>
+              <td>
+                <span class="name">是否住校:</span><span class="value">否</span>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <h4 class="dialog-title-h4 btn-center"><a href="javascript:void(0)" class="checkmore">点击展开更多信息</a></h4>
+        <div class="list-box-add-student-more" style="display:none; width:500px; margin:20px auto;">
+          <table class="table table-bordered table-view">
+            <tr>
+              <td>
+                <span class="name">民族:</span><span class="value">汉族</span>
+              </td>
+              <td>
+                <span class="name">贯籍:</span><span class="value">未填</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="name">入校时间:</span><span class="value">未填</span>
+              </td>
+              <td>
+                <span class="name">出生年月:</span><span class="value">未填</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="name">IC卡号:</span><span class="value">未填</span>
+              </td>
+              <td>
+                <span class="name">出生地:</span><span class="value">未填</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="name">户口性质:</span><span class="value">未填</span>
+              </td>
+              <td>
+                <span class="name">户口所在地:</span><span class="value">未填</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="name">健康状况:</span><span class="value">未填</span>
+              </td>
+              <td>
+                <span class="name">政治面貌:</span><span class="value">未填</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="name">身份证号:</span><span class="value">未填</span>
+              </td>
+              <td>
+                <span class="name">特长:</span><span class="value">未填</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="name">家庭电话:</span><span class="value">未填</span>
+              </td>
+              <td>
+                <span class="name">血型:</span><span class="value">未填</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="name">家庭住址:</span><span class="value">未填</span>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
       <div class="modal-footer">
+        <a href="#" class="btn btn-primary" >修改信息</a>
         <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
       </div>
     </div>
@@ -188,5 +327,17 @@
 <script type="text/JavaScript" src="space-footer-css.js"></script> 
 <!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
 
+<script type="text/javascript">
+
+    $(".checkmore").click(function(){
+      if( $(".list-box-add-student-more").is(":hidden") ){
+        $(this).text("- 点击折叠更多信息(选填)");
+        $(".list-box-add-student-more").show("slow");
+      }else{
+        $(this).text("+ 点击展开更多信息(选填)");
+        $(".list-box-add-student-more").hide("slow");
+      }
+    })
+</script>
 </body>
 </html>

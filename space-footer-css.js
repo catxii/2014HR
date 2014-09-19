@@ -24,9 +24,9 @@ var filegroup = [
 	//lightbox JS 文件
 	"<script type='text/javascript' src='libs/jquery-lightbox/jquery.lightbox.js'><\/script>",
 
-	// 日期选择器
-	// "<script type='text/javascript' src='libs/bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.js'></script>",
-	// "<script type='text/javascript' src='libs/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.fr.js'></script>",
+	//日期选择器
+	"<script type='text/javascript' src='libs/bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.js'></script>",
+	"<script type='text/javascript' src='libs/bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.fr.js'></script>",
 
 	// 自定义JS
 	"<script type='text/javascript' src='js/plug-in.js'><\/script>"
