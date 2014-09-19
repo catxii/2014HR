@@ -1114,8 +1114,19 @@ text-shadow: none;}
 .class-index-container .panel{margin-bottom:20px;}
 .school-Message-list p{padding:6px; margin:0px; }
 .school-Message-list .label{margin:0px 5px 5px 0;}
-
-
+.school-item-list{border-bottom: 1px solid #EDEDED; padding-bottom:20px;}
+.school-item-list-title{
+font-size: 20px;
+line-height: 40px;
+font-weight: bold;
+padding-left:28px;
+margin-top:10px;
+}
+.school-item-list-footer{padding-left:28px;}
+.school-item-list-footer-data{margin-left:10px;}
+.icon-home1{width:20px; height:20px; background:url(../img/icon-home1.png) no-repeat; display:block; position:absolute; top:12px; left:2px;}
+.icon-home2{width:20px; height:20px; background:url(../img/ico-home2.png) no-repeat; display:block; position:absolute; top:12px;left:2px;}
+.icon-home3{width:20px; height:20px; background:url(../img/ico-home3.png) no-repeat; display:block; position:absolute; top:12px;left:2px;}
 
 
 /*学校后台*/
@@ -1124,11 +1135,10 @@ text-shadow: none;}
 .school-list-group-ul{ border-radius:0px; box-shadow:none; border:1px solid #eee; }
 .school-list-group-li{text-align:center; padding:4px 0; }
 .school-ht .rizhi-shu{margin-top:30px; border-top:1px solid #eee;}
-.school-ht .rizhi-shu .tree-sub li a{text-align:center; line-height:45px; font-size:14px;}
-.school-ht .rizhi-shu .tree-sub li a.school-list-ative{text-align:center; border-left:5px solid #f90; position:relative; left:-5px;}
+.school-ht .rizhi-shu .tree-sub li a{text-align:center; line-height:55px; font-size:16px; position:relative;}
+.school-ht .rizhi-shu .tree-sub li a.school-list-ative{text-align:center;}
 .school-ht .rizhi-shu .tree-sub li{ border-bottom:1px solid #eee;}
-.school-ht .rizhi-shu .sub-list .current-tree > a,.school-ht .rizhi-shu .sub-list .current-tree > a:hover{ background:none;}
-
+.school-ht .rizhi-shu .sub-list .current-tree > a,.school-ht .rizhi-shu .sub-list .current-tree > a:hover{ background:none; border-left:5px solid #f90; position:relative; left:-5px;}
 
 /*.management .select2-container-multi .select2-choices{max-height:34px;}*/
 .management .school-group .photo-box-single .img p{margin:0px;}
@@ -1359,12 +1369,12 @@ vertical-align: middle;
 }
 .panel-left-body .table thead tr th{width:100px;}
 .panel-right-body {
-  left: 267px;
+  left: 317px;
   position: absolute;
   right: 117px;
 }
 .panel-left-right-body{  width:100px; float:right;  }
-.panel-left-body{  width:250px; float:left; }
+.panel-left-body{  width:300px; float:left; }
 .table-font-color{font-weight:200; color:#428BCA; padding:6px 8px 5px 8px!important;}
 .panel-left-body .table > thead > tr > th{vertical-align:middle; text-align:center;}
 .panel-left-body .table  tfoot > tr > td{ font-weight:900;}
