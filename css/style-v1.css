@@ -973,7 +973,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   line-height: 22px;
   margin-right: 0;
 }
-.navigation-inline-ul li a {
+.navigation-inline-ul > li > a {
   display: block;
   padding: 5px 14px;
   border-radius: 6px 6px 0 0;
@@ -987,7 +987,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   background: #fff;
   color: #333;
 }
-.navigation-inline-ul li.current a {
+.navigation-inline-ul > li.current > a {
   background: white;
   border-top: 3px solid #2ecc71;
 }
@@ -1780,8 +1780,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 .single-view0body {
   background: #f2f2f2;
 }
-.html-view-area,
-.blog-nr-view {
+.html-view-area {
   border: 1px solid #d0d0d0;
   box-shadow: 0 0 7px #ccc;
   margin: 5px auto;
@@ -1791,24 +1790,43 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   position: relative;
   overflow: hidden;
 }
-.html-view-area *,
+.html-view-area * {
+  position: static!important;
+  max-height: 100%!important;
+  line-height: 1.7em !important;
+  max-width: 100%!important;
+}
+.html-view-area table {
+  max-width: 100%!important;
+}
+.html-view-area table tr,
+.html-view-area table td {
+  border: 1px solid #ccc;
+}
+.html-view-area img {
+  display: inline-block;
+  vertical-align: middle;
+}
+.blog-nr-view {
+  margin: 5px auto;
+  padding: 36px;
+  background: white;
+  position: relative;
+  overflow: hidden;
+}
 .blog-nr-view * {
   position: static!important;
   max-height: 100%!important;
   line-height: 1.7em !important;
   max-width: 100%!important;
 }
-.html-view-area table,
 .blog-nr-view table {
   max-width: 100%!important;
 }
-.html-view-area table tr,
 .blog-nr-view table tr,
-.html-view-area table td,
 .blog-nr-view table td {
   border: 1px solid #ccc;
 }
-.html-view-area img,
 .blog-nr-view img {
   display: inline-block;
   vertical-align: middle;
