@@ -107,7 +107,7 @@
             <div class="well clear-border"> <a type="button" class="btn btn-default btn-block" disabled="disabled">试题预览</a> </div>
           </div>
           
-          <!-------------------------------- 章节---------------------------------->
+          <!--------------------------------- 章节----------------------------------->
           <div class="col-md-6 clear-padding quetions-chapter" style="position:fixed; width:200px; bottom:40px; left:200px; top:40px; background:#fff;">
             <div class="collapse-lx">
               <div class="list-group-tree small all-tree-ul-none showit sub-list-all-hover clear-border">
@@ -219,6 +219,81 @@
                 <h4 class="exam-title">正确答案：</h4>
                 <div class="answer-box">正确答案显示区域</div>
               </form>
+            </div>
+          </div>
+          <div class="single-exam-question">
+            <ul class="inline-block-ul inthetree">
+              <li><a type="button" class="btn btn-primary btn-xs glyphicon glyphicon-pencil">修改</a></li>
+              
+              <li><a href="javascript:" class="btn btn-warning btn-xs position-right-top-block-que" data-toggle="modal" data-target="#chosetree"><span class="glyphicon glyphicon-cloud"></span>收藏</a></li>
+              <li><a href="#" class=" top-head-ul position-right-top-block">纠错</a></li>
+            </ul>
+            <ul class=" clear-margin question-title-bottom clearfix form-horizontal">
+              <li style="margin:15px 0">
+              <div class="form-group col-md-12">
+    <label for="inputEmail3" class="col-sm-1 control-label" style="font-size:14px">单道试题:</label>
+    <div class="col-sm-11">
+      <textarea class="form-control" rows="3"></textarea>
+    </div>
+  </div>
+              </li>
+              <li style="margin-bottom:15px">
+              <div class="form-group col-md-12">
+    <label for="inputEmail3" class="col-sm-1 control-label" style="font-size:14px">知识点:</label>
+    <div class="col-sm-11">
+      <textarea class="form-control" rows="1"></textarea>
+    </div>
+  </div>
+              </li>
+              <li style="margin-bottom:15px">
+              <div class="form-group col-md-12">
+    <label for="inputEmail3" class="col-sm-1 control-label" style="font-size:14px">答案:</label>
+    <div class="col-sm-11">
+      <textarea class="form-control" rows="1"></textarea>
+    </div>
+  </div>
+              </li>
+              <li style="margin-bottom:15px">
+              <div class="form-group col-md-12">
+    <label for="inputEmail3" class="col-sm-1 control-label" style="font-size:14px">内容解析:</label>
+    <div class="col-sm-11">
+      <textarea class="form-control" rows="1"></textarea>
+    </div>
+  </div>
+              </li>
+              <li style="margin-bottom:15px">
+              <div class="form-group col-md-12">
+                  <label for="inputPassword3" class="col-md-1 control-label"style="font-size:14px">题型：</label>
+                  <div class="col-md-11">
+                    <select class="select2-box">
+                      <option>选择题</option>
+                      <option>填空题</option>
+                      <option>主观题</option>
+                    </select>
+                  </div>
+                </div>
+                </li>
+                <li style="margin-bottom:15px">
+              <div class="form-group col-md-12">
+                  <label for="inputPassword3" class="col-md-1 control-label"style="font-size:14px">难度：</label>
+                  <div class="col-md-11">
+                    <select class="select2-box">
+                      <option>一般</option>
+                      <option>难</option>
+                      <option>很难</option>
+                    </select>
+                  </div>
+                </div>
+                </li>
+                <li class="pull-right">
+                <ul class="inline-block-ul">
+                <li><a href="#" type="button" class="btn btn-primary">确定</a></li>
+                <li><a href="#" type="button" class="btn btn-default">取消</a></li>
+                </ul>
+                </li>
+            </ul>
+            
+            <div class="info-area">
             </div>
           </div>
           <div class="single-exam-question">
