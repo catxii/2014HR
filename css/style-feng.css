@@ -44,6 +44,17 @@ color:#666; border-bottom:1px solid #E5E5E5; margin-bottom:1PX; border-radius:0p
 	background:url(../img/subjects-sw-ico.png); width:50px; height:50px; margin:auto; border-radius:3px;}
 .subjects-music-ico{
 	background:url(../img/subjects-music-ico.png); width:50px; height:50px; margin:auto; border-radius:3px;}
+.subjects-sp-ico{
+	background:url(../img/subjects-sp-ico.png); width:50px; height:50px; margin:auto; border-radius:3px;}
+.subjects-ty-ico{
+	background:url(../img/subjects-ty-ico.png); width:50px; height:50px; margin:auto; border-radius:3px;}
+.subjects-ms-ico{
+	background:url(../img/subjects-ms-ico.png); width:50px; height:50px; margin:auto; border-radius:3px;}
+.subjects-lj-ico{
+	background:url(../img/subjects-lj-ico.png); width:50px; height:50px; margin:auto; border-radius:3px;}
+.subjects-xx-ico{
+	background:url(../img/subjects-xx-ico.png); width:50px; height:50px; margin:auto; border-radius:3px;}
+
 .list-group-lg{}
 .list-group-lg > ul li > .list-group-item{padding:10px 15px;}
 .navbar{
@@ -1399,3 +1410,10 @@ vertical-align: middle;
 	font-size:12px;}	
 	
 .list-group-item-dn-active{background:#FCF8E3}
+
+/*论坛*/
+.bbs{border:1px solid #ddd;  background:rgba(248, 248, 248, 1); padding:0px; margin-top:20px;}
+.bbs-left{ text-align:center; padding:15px 0}
+.bbs-right{background:#fff; }
+.bbs-right .inline-block-ul{ color:#999}
+.bbs-reply-btn{ background:#eee; padding:15px 15px}
