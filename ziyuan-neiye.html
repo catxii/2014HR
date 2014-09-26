@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../favicon.ico">
+
+  <!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+  <script type="text/JavaScript" src="space-css.js"></script>
+  <!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+  <style type="text/css">
+    .select2-search {
+      display: none;
+    }
+  </style>
+
+  <title>领信样式模板</title>
+
+</head>
+<body class="fixed-top-body" ng-app="">
+<div class="navbar navbar-zhijiao navbar-green navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#" class="navbar-brand logo-small" alt="领信logo"></a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active">
+          <a href="#">教学空间</a>
+        </li>
+        <li>
+          <a href="#about">个人空间</a>
+        </li>
+        <li>
+          <a href="#contact">班级空间</a>
+        </li>
+        <li>
+          <a href="#contact">我的班级</a>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">张学友 [ 退出 ]</a></li>
+        <li><a href="#"><span class="icon-t-shirt"></span> 装扮</a></li>
+        <li class="dropdown">
+          <a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class=" icon-cogwheel"></span> 设置 <span class="caret"></span></a>
+          <ul role="menu" class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+
+    </div>
+
+
+    <!--/.nav-collapse --> 
+  </div>
+</div>
+
+<div class="container-fluid banner-fluid-bg" style="display:none;">
+    <div class="container top-banner-small">
+      <ul class="inline-block-ul second-nav-bar-bottom">
+        <li class="current"><a href="#">主页</a></li>
+        <li><a href="#">我的备课</a></li>
+        <li><a href="#">资源库</a></li>
+        <li><a href="#">作业与测验</a></li>
+        <li><a href="#">教研室</a></li>
+        <li><a href="#">我的班级</a></li>
+      </ul>
+    </div>
+</div>
+
+<div class="container-fluid clear-padding clear-margin clear-border">
+
+  <div class="col-md-12 clear-padding">
+
+
+    <div class="panel panel-default">
+      <div class="panel-heading tab-header" style="height:60px;">
+        <ul class="inline-block-ul container" style="text-align:center">
+            <li><a href="#" type="button" class="btn btn-primary">上一页</a>
+</li>
+          <li><span>页码: <span id="page_num">1</span> / <span id="page_count">396</span></span></li>
+          <li><a href="#" type="button" class="btn btn-primary">下一页</a>
+</li>
+         </ul>
+      </div>
+      <div class="panel-body">
+       <iframe style="width:100%;">
+       
+       </iframe>
+
+      </div>
+    </div>
+
+
+
+
+  </div>
+</div>
+
+
+<!-- 弹出框 -->
+<!-- 管理目录弹出框 -->
+<div class="modal fade bs-example-modal-lg" id="addconsult" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">选择参考备课</h4>
+      </div>
+      <div class="modal-body">
+          
+            <ul class="inline-block-ul-mid">
+              <li>备课类型：</li>
+              <li>
+                <select class="select2-box" style="width:100px">
+                  <option>模板1</option>
+                  <option>模板2</option>
+                  <option>模板3</option>
+                </select>
+              </li>
+              <li>
+                <input type="text" value="" placeholder="输入作者姓名搜索">
+              </li>
+              <li><input type="button" class="btn btn-primary btn-sm" value="搜 索"></li>
+            </ul>
+            <table class="table table-striped btn-center">
+              <tr>
+                <td class="col-sm-1">序号</td>
+                <td class="col-sm-4">备课名称</td>
+                <td class="col-sm-1">类型</td>
+                <td class="col-sm-1">时间</td>
+                <td class="col-sm-1">作者</td>
+                <td class="col-sm-2">操作</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td class="btn-left"><a href="#" class="drag-km">红楼梦诗词两首</a></td>
+                <td>教学教案</td>
+                <td>2014-07-12</td>
+                <td>彭毅超</td>
+                <td>
+                  <ul class="inline-block-ul">
+                  <li><a href="javascript:" class="bkck-yy-botton" data-src="beike-index(new).html" data-toggle="tooltip" data-placement="top" title="在参考页显示参考内容"> 引用</a></li>
+                  <li><a href="javascript:" data-toggle="modal" data-target="#movefilebox" class="" data-toggle="tooltip" data-placement="top" title="查看详细内容">详情</a></li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td class="btn-left"><a href="#" class="drag-km">红楼梦诗词两首</a></td>
+                <td>教学教案</td>
+                <td>2014-07-12</td>
+                <td>彭毅超</td>
+                <td>
+                  <ul class="inline-block-ul">
+                  <li><a href="javascript:" class="bkck-yy-botton" data-src="beike-index(new).html" data-toggle="tooltip" data-placement="top" title="在参考页显示参考内容"> 引用</a></li>
+                  <li><a href="javascript:" data-toggle="modal" data-target="#movefilebox" class="" data-toggle="tooltip" data-placement="top" title="查看详细内容">详情</a></li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td class="btn-left"><a href="#" class="drag-km">红楼梦诗词两首</a></td>
+                <td>教学教案</td>
+                <td>2014-07-12</td>
+                <td>彭毅超</td>
+                <td>
+                  <ul class="inline-block-ul">
+                  <li><a href="javascript:" class="bkck-yy-botton" data-src="beike-index(new).html" data-toggle="tooltip" data-placement="top" title="在参考页显示参考内容"> 引用</a></li>
+                  <li><a href="javascript:" data-toggle="modal" data-target="#movefilebox" class="" data-toggle="tooltip" data-placement="top" title="查看详细内容">详情</a></li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td class="btn-left"><a href="#" class="drag-km">红楼梦诗词两首</a></td>
+                <td>教学教案</td>
+                <td>2014-07-12</td>
+                <td>彭毅超</td>
+                <td>
+                  <ul class="inline-block-ul">
+                  <li><a href="javascript:" class="bkck-yy-botton" data-src="beike-index(new).html" data-toggle="tooltip" data-placement="top" title="在参考页显示参考内容"> 引用</a></li>
+                  <li><a href="javascript:" data-toggle="modal" data-target="#movefilebox" class="" data-toggle="tooltip" data-placement="top" title="查看详细内容">详情</a></li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td class="btn-left"><a href="#" class="drag-km">红楼梦诗词两首</a></td>
+                <td>教学教案</td>
+                <td>2014-07-12</td>
+                <td>彭毅超</td>
+                <td>
+                  <ul class="inline-block-ul">
+                  <li><a href="javascript:" class="bkck-yy-botton" data-src="beike-index(new).html" data-toggle="tooltip" data-placement="top" title="在参考页显示参考内容"> 引用</a></li>
+                  <li><a href="javascript:" data-toggle="modal" data-target="#movefilebox" class="" data-toggle="tooltip" data-placement="top" title="查看详细内容">详情</a></li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td class="btn-left"><a href="#" class="drag-km">红楼梦诗词两首</a></td>
+                <td>教学教案</td>
+                <td>2014-07-12</td>
+                <td>彭毅超</td>
+                <td>
+                  <ul class="inline-block-ul">
+                  <li><a href="javascript:" class="bkck-yy-botton" data-src="beike-index(new).html" data-toggle="tooltip" data-placement="top" title="在参考页显示参考内容"> 引用</a></li>
+                  <li><a href="javascript:" data-toggle="modal" data-target="#movefilebox" class="" data-toggle="tooltip" data-placement="top" title="查看详细内容">详情</a></li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- 新建个人文件夹 -->
+<div class="modal fade bs-example-modal-sm" id="creatpersonfile" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">新建版本目录文件夹</h4>
+      </div>
+      <div class="modal-body">
+
+        <form class="form-horizontal" role="form">
+          <div class="form-group">
+            <label for="inputEmail3" class="col-sm-2 control-label">子文件名：</label>
+            <div class="col-sm-9">
+              <input type="email" class="form-control" id="inputEmail3" placeholder="请输入“个人文件夹”的“子文件夹名”">
+            </div>
+          </div>
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary">创建</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 删除弹出框 -->
+<div class="modal fade bs-example-modal-sm delmodal" id="delmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">确定删除该知识点？</h4>
+      </div>
+      <div class="modal-footer btn-center" style="border-top:none">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-danger">删除</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- 底部 -->
+<div class="container-fluid footer footer-grayline">
+    <div class="row">
+      <ul class="col-md-12 inline-block-ul">
+        <li><a href="#">关于我们</a></li>
+        <li>|</li>
+        <li><a href="#">联系我们</a></li>
+        <li>|</li>
+        <li><a href="#">友情链接</a></li>
+        <li>|</li>
+        <li><a href="#">关于我们</a></li>
+        <li>|</li>
+        <li><a href="#">关于我们</a></li>
+      </ul>
+    </div>
+    <div class="row">
+        <div class="col-md-12">Copyright @ 2011-2015 湖南领信教育网络发展有限公司版权所有 湘ICP备14001031号</div>
+    </div>
+</div>  
+
+ 
+<!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+<script type="text/JavaScript" src="space-footer-css.js"></script>
+<!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+
+
+
+</body>
+</html>
