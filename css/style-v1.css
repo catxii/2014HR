@@ -1347,6 +1347,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 }
 .exam {
   margin: 5px;
+  overflow: hidden;
 }
 .info-area {
   /*background: #f8f8f8;*/
@@ -2304,4 +2305,11 @@ slide {
   background: #efefef;
   padding: 2px;
   color: #9c9c9c;
+}
+.panel-header,
+.panel-body {
+  border: none;
+}
+.tab-content {
+  min-height: 260px;
 }
