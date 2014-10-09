@@ -19,7 +19,7 @@ var filegroup = [
 
 	// lightbox 2 
 	"<link href='libs/jquery-lightbox/css/lightbox.css' rel='stylesheet'>",
-
+	
 	// 日期选择器 
 	"<link href='libs/bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.min.css' rel='stylesheet' >",
 
