@@ -1070,9 +1070,12 @@ h3.schoolname{font-weight:800; text-shadow:2px 2px 2px #000000!important; margin
 	box-shadow:none;
 	margin-bottom:0px;
 }
-.school-group .list-group-item{border-bottom: 2px dotted #ccc; border-radius:0px;
+.school-group .list-group-item{border-bottom: 2px dotted #ccc; border-radius:0px;margin-bottom: 1px;
 }
-.school-group .list-group-item .icon-bookmark{ color:#e26165}
+.ziyuan-list a.list-group-item{padding: 6px 11px!important;font-size: 14px;}
+.ziyuan-list a.list-group-item .icon-cloud{color: red;}
+.school-group .list-group-item .icon-bookmark{ color:#008AFF}
+.school-group .list-group-item .icon-certificate{ color:red; font-size: 16px;}
 .num-item h2 a{
 	color:#FFF;}
 .num-item h2 a:hover{
@@ -1081,20 +1084,32 @@ h3.schoolname{font-weight:800; text-shadow:2px 2px 2px #000000!important; margin
 	padding:0px; color:#FFF;  text-shadow:1px 1px 4px #666; font-weight:bold;} 
 
 /*学校空间banner*/
-.school-banner{background:#ddd; }
+.school-banner-img .carousel-caption{ width: 572px; position: absolute; bottom: 0px; left: 0; right: 0; background:rgba(255, 255, 255, 0.6);padding: 0px 35px 25px 35px; }
+.school-banner-img .carousel-caption h4 a{color: #333;  font-size: 20px;text-shadow: 1px 0px 1px #818181;}
+.school-banner-img div.carousel-caption:hover{background:rgba(255, 255, 255, 0.7);}
+.school-banner-img div.carousel-caption:hover h4 a{color: #36A937; text-shadow: 1px 0px 1px #818181; font-size: 20px; text-decoration: none;}
+.school-banner-img .carousel-indicators{bottom: 0px;}
+.school-banner-img .carousel-indicators li{width: 40px; border-radius: 0;background:#36A937;border:0px;height: 8px;margin: 0;}
+.school-banner-img .carousel-indicators li.active{height: 8px;background: #f90; margin: 0;}
 .school-banner .container-box{margin-top:0px;}
 .school-banner .container-box .col-md-9{
 	}
 .school-banner .container-box .col-md-3{
-	padding:0px; background:#eee; height:100%; height:278px; }
-
+	padding:0px; background:#eee; height:100%; height:230px; }
+.jj-text{overflow: hidden;
+width: 100%;
+height: 90px;
+font-size: 12px;
+text-align:justify;
+text-justify:inter-ideograph}
 .school-banner .nav-pills > li > a{border-radius:0px; font-size:16px;}
 .school-banner #school-news .list-group{
-	box-shadow:none; border-radius:0px; margin-bottom:0px;}
+	box-shadow:none; border-radius:0px; margin-bottom:0px;background: #fff;}
 .school-banner #school-news .list-group .list-group-item{
-	border-bottom:2px solid #CCC; padding:10px 10px; height:41PX; background:#eee;font-size:12px!important; }
+	 padding:0px 0px 2px 0px; height:48px; background:#eee;font-size:15px!important;margin-bottom: 1px;}
 .school-banner #school-news .list-group .list-group-item:hover{
-	 background:#DDD; border-left:4px solid #FF8000;color:#FF8000; }
+	 background:#DDD; color:#FF8000; }
+.school-banner #school-news .list-group .list-group-item:hover div.col-md-3{background: #666 !important;}
 .list-tab-school .nav-pills > li.active > a{
 	background-color:#2ECC71;}
 .list-tab-school .nav-pills > li.active > a:hover,.list-tab-school .nav-pills > li.active > a:focus{
@@ -1109,8 +1124,8 @@ h3.schoolname{font-weight:800; text-shadow:2px 2px 2px #000000!important; margin
 .school-introduction{
 	 background:#EEE; text-align:center;}
 .school-introduction h3{
-	margin-top:10px;
-	margin-bottom:10px; font-weight:bold; color:#FF8000;}
+	margin-top:5px;
+	margin-bottom:5px; font-weight:bold; color:#FF8000;}
 .school-introduction p{
 	margin-top:15px; border-top:1px solid #DDD;}
 /*学校空间内容*/
@@ -1130,7 +1145,7 @@ border: 1px solid #FAEBCC;}
 position: relative;
 background: #f90;
 text-shadow: none;}
-.class-index-container .panel{margin-bottom:20px;}
+.class-index-container .panel{margin-bottom:15px;}
 .school-Message-list p{padding:6px; margin:0px; }
 .school-Message-list .label{margin:0px 5px 5px 0;}
 .school-item-list{border-bottom: 1px solid #EDEDED; padding-bottom:20px;}
@@ -1154,17 +1169,40 @@ margin-top:10px;
 .school-list-group-ul{ border-radius:0px; box-shadow:none; border:1px solid #eee; }
 .school-list-group-li{text-align:center; padding:4px 0; }
 .school-ht .rizhi-shu{margin-top:30px; border-top:1px solid #eee;}
-.school-ht .rizhi-shu .tree-sub li a{text-align:center; line-height:23px; font-size:16px; position:relative; padding: 21px 0;}
+.school-ht .rizhi-shu .tree-sub li > a{text-align:center; line-height:23px; font-size:14px; position:relative; padding: 12px 0;}
 .school-ht .rizhi-shu .tree-sub li a.school-list-ative{text-align:center;}
-.school-ht .rizhi-shu .tree-sub li{ border-bottom:1px solid #eee;}
-.school-ht .rizhi-shu .sub-list .current-tree > a,.school-ht .rizhi-shu .sub-list .current-tree > a:hover{ background:none; border-left:5px solid #f90; position:relative; left:-5px;}
+.school-ht .rizhi-shu .tree-sub > li{ border-bottom:1px solid #eee;position: relative;}
+.school-ht .rizhi-shu .sub-list .current-tree{background: #eee;}
+.school-ht .rizhi-shu .sub-list .current-tree > a,.school-ht .rizhi-shu .sub-list .current-tree{border-right:5px solid #f90;position:relative; right:-5px;}
+.school-ht .rizhi-shu .sub-list .current-tree > a,.school-ht .rizhi-shu .sub-list .current-tree > a:hover{ background:none;  }
+.school-ht .rizhi-shu .sub-list .current-tree > i.current {
+    background: none repeat scroll 0% 0% #F9F9F9;
+}
+.school-ht .rizhi-shu .sub-list li i{
+	padding: 16px 6px;
+cursor: pointer;
+top: 0px;
+left: 0px;
+bottom: 0px;
+position: absolute;
+font-size: 12px;
+color: #f90;
+border-right: 1px solid #DDD;
+}
+ul.collashu li > a{
+	line-height: 23px;
+   font-size: 14px !important;
+padding: 12px 0px !important;
+	text-align: center;}
 
 /*.management .select2-container-multi .select2-choices{max-height:34px;}*/
 .management .school-group .photo-box-single .img p{margin:0px;}
 .management .school-group .photo-box-single .btn{ text-align:center; margin-top:10px;}
 
-
-
+.tab-ht{  position:relative;background: #eee;padding: 0;}
+.tab-ht > ul{margin: 0;word-spacing: -4px;border: 1px solid #ccc;}
+.tab-ht > ul > li{margin-right:0 !important;word-spacing: normal;}
+.tab-ht > ul > li a{line-height:49px;font-size:14px;padding: 0 10px; margin-right: 0;border-radius:0px !important;}
 
 
 
