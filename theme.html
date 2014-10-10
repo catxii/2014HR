@@ -14,13 +14,9 @@
   <script type="text/JavaScript" src="space-css.js"></script>
   <!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
 
-
- 
-
 </head>
 
 <body role="document" style="padding-top:50px;">
-  
 
   <!-- Fixed navbar -->
   <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -128,7 +124,10 @@
       <h1>Buttons</h1>
     </div>
     <p>
-      <button type="button" class="btn btn-lg btn-default "><span class="badge"></span>Default 默认</button>
+      <button type="button" class="btn btn-lg btn-default ">
+        <span class="badge"></span>
+        Default 默认
+      </button>
       <button type="button" class="btn btn-lg btn-primary">Primary 主要</button>
       <button type="button" class="btn btn-lg btn-warning">warning 强调</button>
       <button type="button" class="btn btn-lg btn-danger">danger 重要</button>
@@ -411,7 +410,10 @@
     </ul>
     <ul class="nav nav-pills">
       <li class="active">
-        <a href="#" style="position:relative;"><span class="position-bottom-navs glyphicon glyphicon-chevron-down"></span>Home</a>
+        <a href="#" style="position:relative;">
+          <span class="position-bottom-navs glyphicon glyphicon-chevron-down"></span>
+          Home
+        </a>
       </li>
       <li>
         <a href="#">Profile</a>
@@ -776,65 +778,79 @@
       </a>
     </div>
     <div class="flexslider">
-        <ul class="slides">
-            <li style="background:url(img/banner1.jpg) 50% 0 no-repeat;"></li>
-            <li style="background:url(img/banner2.jpg) 50% 0 no-repeat;"></li>
-            <li style="background:url(img/banner3.jpg) 50% 0 no-repeat;"></li>
-            <li style="background:url(img/banner4.jpg) 50% 0 no-repeat;"></li>
-            <li style="background:url(img/banner5.jpg) 50% 0 no-repeat;"></li>
-        </ul>
+      <ul class="slides">
+        <li style="background:url(img/banner1.jpg) 50% 0 no-repeat;"></li>
+        <li style="background:url(img/banner2.jpg) 50% 0 no-repeat;"></li>
+        <li style="background:url(img/banner3.jpg) 50% 0 no-repeat;"></li>
+        <li style="background:url(img/banner4.jpg) 50% 0 no-repeat;"></li>
+        <li style="background:url(img/banner5.jpg) 50% 0 no-repeat;"></li>
+      </ul>
     </div>
 
   </div>
   <!-- /container -->
 
   <div class="page-header" id="data">
-      <h1>日期选择器</h1>
-    </div>
+    <h1>日期选择器</h1>
+  </div>
   <form action="" class="form-horizontal"  role="form">
-        <fieldset>
-            <legend>Test</legend>
-            <div class="form-group">
-                <label for="dtp_input1" class="col-md-2 control-label">DateTime Picking</label>
-                <div class="input-group date form_datetime col-md-5" data-date="" data-date-format="dd MM yyyy - HH:ii p" data-link-field="dtp_input1">
-                    <input class="form-control" size="16" type="text" value="" readonly>
-                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
-          <span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
-                </div>
-        <input type="hidden" id="dtp_input1" value="" /><br/>
-            </div>
+    <fieldset>
+      <legend>Test</legend>
       <div class="form-group">
-                <label for="dtp_input2" class="col-md-2 control-label">Date Picking</label>
-                <div class="input-group date form_date col-md-5" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
-                    <input class="form-control" size="16" type="text" value="" readonly>
-                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
-          <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
-                </div>
-        <input type="hidden" id="dtp_input2" value="" /><br/>
-            </div>
+        <label for="dtp_input1" class="col-md-2 control-label">DateTime Picking</label>
+        <div class="input-group date form_datetime col-md-5" data-date="" data-date-format="dd MM yyyy - HH:ii p" data-link-field="dtp_input1">
+          <input class="form-control" size="16" type="text" value="" readonly>
+          <span class="input-group-addon">
+            <span class="glyphicon glyphicon-remove"></span>
+          </span>
+          <span class="input-group-addon">
+            <span class="glyphicon glyphicon-th"></span>
+          </span>
+        </div>
+        <input type="hidden" id="dtp_input1" value="" />
+        <br/>
+      </div>
       <div class="form-group">
-                <label for="dtp_input3" class="col-md-2 control-label">Time Picking</label>
-                <div class="input-group date form_time col-md-5" data-date="" data-date-format="hh:ii" data-link-field="dtp_input3" data-link-format="hh:ii">
-                    <input class="form-control" size="16" type="text" value="" readonly>
-                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
-          <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
-                </div>
-        <input type="hidden" id="dtp_input3" value="" /><br/>
-            </div>
-        </fieldset>
-    </form>
+        <label for="dtp_input2" class="col-md-2 control-label">Date Picking</label>
+        <div class="input-group date form_date col-md-5" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+          <input class="form-control" size="16" type="text" value="" readonly>
+          <span class="input-group-addon">
+            <span class="glyphicon glyphicon-remove"></span>
+          </span>
+          <span class="input-group-addon">
+            <span class="glyphicon glyphicon-calendar"></span>
+          </span>
+        </div>
+        <input type="hidden" id="dtp_input2" value="" />
+        <br/>
+      </div>
+      <div class="form-group">
+        <label for="dtp_input3" class="col-md-2 control-label">Time Picking</label>
+        <div class="input-group date form_time col-md-5" data-date="" data-date-format="hh:ii" data-link-field="dtp_input3" data-link-format="hh:ii">
+          <input class="form-control" size="16" type="text" value="" readonly>
+          <span class="input-group-addon">
+            <span class="glyphicon glyphicon-remove"></span>
+          </span>
+          <span class="input-group-addon">
+            <span class="glyphicon glyphicon-time"></span>
+          </span>
+        </div>
+        <input type="hidden" id="dtp_input3" value="" />
+        <br/>
+      </div>
+    </fieldset>
+  </form>
 
-    <div class="page-header" id="data">
-      <h1>loading</h1>
-    </div>
-    <div class="loadingbutton">
-      <a href="javascript:" onclick="openLoading('.loadmodal')" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#loadbutton">loading弹出框</a>
-    </div>
+  <div class="page-header" id="data">
+    <h1>loading</h1>
+  </div>
+  <div class="loadingbutton">
+    <a href="javascript:" onclick="openLoading('.loadmodal')" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#loadbutton">loading弹出框</a>
+  </div>
 
-    <div class="loadmodal">
-            <img src="img/logo-loading.gif" width="50" onclick="closeLoading('.loadmodal')"> 加载中...
-    </div>
-    <script type="text/javascript">
+  <div class="loadmodal">
+    <img src="img/logo-loading.gif" width="50" onclick="closeLoading('.loadmodal')">加载中...</div>
+  <script type="text/javascript">
     function openLoading(boxName){
         $(boxName).show();
         $("body").append("<div class='modal-backdrop fade in'></div>")
@@ -845,29 +861,96 @@
     }
     </script>
 
-    <ul>
-      <li><a href="img/banner4.png" class="lightbox"><img src="img/banner4.png"></a></li>
-      <li><a href="img/banner4.png" class="lightbox"><img src="img/banner4.png"></a></li>
-      <li><a href="img/banner4.png" class="lightbox"><img src="img/banner4.png"></a></li>
-      <li><a href="img/banner4.png" class="lightbox"><img src="img/banner4.png"></a></li>
-    </ul>
+  <ul>
+    <li>
+      <a href="img/banner4.png" class="lightbox">
+        <img src="img/banner4.png"></a>
+    </li>
+    <li>
+      <a href="img/banner4.png" class="lightbox">
+        <img src="img/banner4.png"></a>
+    </li>
+    <li>
+      <a href="img/banner4.png" class="lightbox">
+        <img src="img/banner4.png"></a>
+    </li>
+    <li>
+      <a href="img/banner4.png" class="lightbox">
+        <img src="img/banner4.png"></a>
+    </li>
+  </ul>
 
-    <ul>
-      <li><span class="document-ico-style word-ico"></span>word</li>
-      <li><span class="document-ico-style pdf-ico"></span>pdf</li>
-      <li><span class="document-ico-style audio-ico"></span>mp3</li>
-      <li><span class="document-ico-style ppt-ico"></span>ppt</li>
-      <li><span class="document-ico-style other-ico"></span>other</li>
-      <li><span class="document-ico-style html-ico"></span>html</li>
-      <li><span class="document-ico-style swf-ico"></span>swf</li>
-      <li><span class="document-ico-style excel-ico"></span>excel</li>
-      <li><span class="document-ico-style video-ico"></span>video</li>
-    </ul>
+  <ul>
+    <li>
+      <span class="document-ico-style word-ico"></span>
+      word
+    </li>
+    <li>
+      <span class="document-ico-style pdf-ico"></span>
+      pdf
+    </li>
+    <li>
+      <span class="document-ico-style audio-ico"></span>
+      mp3
+    </li>
+    <li>
+      <span class="document-ico-style ppt-ico"></span>
+      ppt
+    </li>
+    <li>
+      <span class="document-ico-style other-ico"></span>
+      other
+    </li>
+    <li>
+      <span class="document-ico-style html-ico"></span>
+      html
+    </li>
+    <li>
+      <span class="document-ico-style swf-ico"></span>
+      swf
+    </li>
+    <li>
+      <span class="document-ico-style excel-ico"></span>
+      excel
+    </li>
+    <li>
+      <span class="document-ico-style video-ico"></span>
+      video
+    </li>
+  </ul>
 
- <!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
-<script type="text/JavaScript" src="space-footer-css.js"></script>
-<!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
-
-
+  <!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+  <script type="text/JavaScript" src="space-footer-css.js"></script>
+  <!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+<script type="text/javascript">
+     $('.form_datetime').datetimepicker({
+        weekStart: 1,
+        todayBtn:  1,
+   autoclose: 1,
+   todayHighlight: 1,
+   startView: 2,
+   forceParse: 0,
+        showMeridian: 1
+    });
+  $('.form_date').datetimepicker({
+        weekStart: 1,
+        todayBtn:  1,
+   autoclose: 1,
+   todayHighlight: 1,
+   startView: 2,
+   minView: 2,
+   forceParse: 0
+    });
+  $('.form_time').datetimepicker({
+        weekStart: 1,
+        todayBtn:  1,
+   autoclose: 1,
+   todayHighlight: 1,
+   startView: 1,
+   minView: 0,
+   maxView: 1,
+   forceParse: 0
+    });
+</script>
 </body>
 </html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="../../favicon.ico">
+<title>领信样式模板</title>
+
+<!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+<script type="text/JavaScript" src="space-css.js"></script>
+<!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+
+</head>
+<body class="fixed-top-body" ng-app="" data-spy="scroll" data-target=".navbar-example">
+<div class="navbar navbar-zhijiao navbar-green navbar-fixed-top" style="height:36px; min-height:36px;">
+  <div class="container">
+    <div class="navbar-header">
+      <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a href="#" class="navbar-brand logo-small" alt="领信logo"></a> </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"> <a href="#">教学空间</a> </li>
+        <li> <a href="#about">个人空间</a> </li>
+        <li> <a href="#contact">班级空间</a> </li>
+        <li> <a href="#contact">我的班级</a> </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">张学友 [ 退出 ]</a></li>
+        <li><a href="#"><span class="icon-t-shirt"></span> 装扮</a></li>
+        <li class="dropdown"> <a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class=" icon-cogwheel"></span> 设置 <span class="caret"></span></a>
+          <ul role="menu" class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    
+    <!--/.nav-collapse --> 
+  </div>
+</div>
+<div class="container">
+<!--   <div class="col-md-2">
+    <div class="list-group"> <a href="#" class="list-group-item disabled icon-group"> &nbsp;选择班级 </a> <a href="#" class="list-group-item active">三年级1班</a> <a href="#" class="list-group-item">三年级2班</a> </div>
+  </div> -->
+  <div class="col-md-12">
+    <div class="panel panel-default">
+      <div class="panel-heading tab-header">
+        <ul class="inline-block-ul navigation-inline-ul">
+          <li class="current"><a href="#">考试发布</a></li>
+        </ul>
+        <ul class="inline-block-ul position-right-top-block top-head-ul">
+            <li><a href="javascript:void(0)" class="btn btn-warning  btn-sm icon-unshare" > 返回列表</a></li>
+         </ul>
+      </div>
+      <div class="panel-body " style="padding:0px 5px; min-height:350px;">
+
+
+        <h4 class="dialog-title-h4 btn-center" style="margin-top:10px;">考试信息 </h4>
+        <div class="list-box-add-table" style="width:80%;margin:20px auto;">
+          <form class="form-horizontal form-horizontal-nomargin" role="form">
+
+            <div class="container-fluid">
+              <div class="col-md-12">
+
+                <div class="form-group">
+                  <label for="inputPassword3" class="col-sm-3 control-label">考试号：</label>
+                  <div class="col-sm-8">
+                  <span class="lable-span">201411111</span>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="inputPassword3" class="col-sm-3 control-label">年度：</label>
+                  <div class="col-sm-8">
+                    <select class="select2-box" style="width:100%; margin-top:5px;">
+                      <option>2014</option>
+                      <option>2015</option>
+                      <option>2016</option>
+                      <option>2017</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="inputPassword3" class="col-sm-3 control-label">考试范围：</label>
+                  <div class="col-sm-8">
+                    <select class="select2-box" style="width:100%; margin-top:5px;">
+                      <option>书上有</option>
+                      <option>书上没有</option>
+                      <option>可能有</option>
+                      <option>可能没有</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="inputPassword3" class="col-sm-3 control-label">年级：</label>
+                  <div class="col-sm-8">
+                    <select class="select2-box" style="width:100%;">
+                      <option>初一</option>
+                      <option>初二</option>
+                      <option>初三</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group ">
+                  <label for="inputPassword3" class="col-sm-3 control-label">学期：</label>
+                  <div class="col-sm-8">
+                    <select class="select2-box" style="width:100%;">
+                      <option>上学期</option>
+                      <option>下学期</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="inputPassword3" class="col-sm-3 control-label">考试类型：</label>
+                  <div class="col-sm-8">
+                    <select class="select2-box" style="width:100%;">
+                      <option>期中</option>
+                      <option>期末</option>
+                      <option>模拟</option>
+                    </select>
+                  </div>
+                </div>
+               <div class="form-group">
+                  <label for="inputPassword3" class="col-sm-3 control-label">考试科目列表：</label>
+                  <div class="col-sm-8">
+                    <!-- <select class="select2-box" style="width:100%;" multiple>
+                      <option>语文</option>
+                      <option>数学</option>
+                      <option>英语</option>
+                      <option>体育</option>
+                    </select> -->
+                    <ul class="inline-block-ul">
+                      <li style="display:block; border-bottom:1px solid #ccc; margin-bottom:5px;"><label class="checkallbutton"><input type="checkbox"> 全部科目</label></li>
+                      <li><label class="tocheck"><input type="checkbox"> 语文</label></li>
+                      <li><label class="tocheck"><input type="checkbox"> 数学</label></li>
+                      <li><label class="tocheck"><input type="checkbox"> 英语</label></li>
+                      <li><label class="tocheck"><input type="checkbox"> 体育</label></li>
+                      <li><label class="tocheck"><input type="checkbox"> 生物</label></li>
+                      <li><label class="tocheck"><input type="checkbox"> 物理</label></li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            
+
+          </form>
+        </div>
+
+
+
+        <ul class="btn-center inline-block-ul-mid">
+          <li><a href="javascript:void(0)" class="btn btn-primary">发布</a></li>
+          <li><a href="javascript:void(0)" class="btn btn-default">取消</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- 底部 -->
+<div class="container-fluid footer footer-grayline">
+  <div class="row">
+    <ul class="col-md-12 inline-block-ul">
+      <li><a href="#">关于我们</a></li>
+      <li>|</li>
+      <li><a href="#">联系我们</a></li>
+      <li>|</li>
+      <li><a href="#">友情链接</a></li>
+      <li>|</li>
+      <li><a href="#">关于我们</a></li>
+      <li>|</li>
+      <li><a href="#">关于我们</a></li>
+    </ul>
+  </div>
+  <div class="row">
+    <div class="col-md-12">Copyright @ 2011-2015 湖南领信教育网络发展有限公司版权所有 湘ICP备14001031号</div>
+  </div>
+</div>
+
+<!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****--> 
+<script type="text/JavaScript" src="space-footer-css.js"></script> 
+<!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+
+<script type="text/javascript">
+ $(".tocheck input,.checkallbutton input").prop("checked",false)
+  $(".checkallbutton").click(function(){
+  if( $(".checkallbutton input").is(":checked") ){
+    $(".tocheck input").prop("checked",true)
+  }else{
+    $(".tocheck input").prop("checked",false)
+  }
+});
+$(".tocheck").click(function(){
+  var tocheckNumber = $(".tocheck").length;
+  if( $(".tocheck input:checked").length == $(".tocheck").length ){
+    $(".checkallbutton input").prop("checked",true)
+    console.log("等于")
+  }else{
+    $(".checkallbutton input").prop("checked",false)
+  }
+});
+</script>
+
+</body>
+</html>

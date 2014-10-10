@@ -2340,3 +2340,14 @@ slide {
 .table *[type='text'] {
   width: 100%;
 }
+.lable-span {
+  line-height: 34px;
+}
+.inline-block-ul-nowarp {
+  white-space: nowrap;
+  word-spacing: -5px;
+}
+.inline-block-ul-nowarp li {
+  margin-right: 5px;
+  word-spacing: 0px;
+}
