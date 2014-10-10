@@ -1212,14 +1212,14 @@ border-right: 1px solid #DDD;
 ul.expmenu{}
 ul.expmenu li div.headers{padding:12px;border-bottom:1px #fff solid;text-align: center;}
 ul.expmenu li:last-child div.headers{border-bottom:none;text-align: center;}
-ul.expmenu li ul li {background-color:rgba(251, 231, 178, 1);padding:8px 12px;border-bottom:1px solid #d2c8b5;color:#727272;text-shadow:1px 1px 0px rgba(255, 255, 255, 0.8);}
+ul.expmenu li ul li {text-align:center;background-color:#D9EDF7;padding:8px 12px;border-bottom:1px solid #A2C5E0;color:#727272;text-shadow:1px 1px 0px rgba(255, 255, 255, 0.8);}
 ul.expmenu li ul li:last-child{border-bottom:none;}
 ul.expmenu li ul li.selected{background-color:#f4f4f4;}
 ul.expmenu div.headers{
 	color:#203f61;
 	text-shadow:0px 1px 0px rgba(255, 255, 255, 0.2);
 	
-	background:#AE9C7E;/* Old browsers */
+	background:#98C9E1/* Old browsers */
 	
 }
 ul.expmenu li div.headers .label{background:no-repeat;color: #fff;/*text-shadow: 0px 0px 0px rgba(255, 255, 255, 0.8);*/ font-weight:bold;font-size: 16px;}
@@ -1231,7 +1231,7 @@ ul.expmenu li .menu{display:none;}
 
 
 ul.expmenu li ul li:not(.selected):hover{
-	background:#efe8d8;/* Old browsers */
+	background:#B1E0F0;/* Old browsers */
 	cursor:pointer;
 }
 ul.expmenu li ul li:not(.selected):active{
@@ -1243,7 +1243,7 @@ ul.expmenu li ul li:not(.selected):active{
 				
 				border: #E7E7E7 1px solid;
 				border-top: none;
-				background: #FFFBE6;
+				background: none repeat scroll 0% 0% rgba(217, 237, 247, 0.19);
 				text-align: center;
 				padding: 0;
 			}
@@ -1256,7 +1256,7 @@ ul.expmenu li ul li:not(.selected):active{
 				font-style: normal;
 			}
 .menu-menu a {
-				color:rgba(122, 79, 6, 1);
+				color:#1D516E;
 				text-decoration: none;
 			}
 .menu-menu .no {
@@ -1268,8 +1268,8 @@ ul.expmenu li ul li:not(.selected):active{
 				line-height: 2.5em;
 				
 			}
-.menu-menu ol a.ol-active{background: #E3CEA3;color: #fff;}
-.menu-menu ol a:hover{background: #E3CEA3;color: #fff;}
+.menu-menu ol a.ol-active{background: #ddd;}
+.menu-menu ol a:hover{background: #ddd;}
 
 
 
@@ -1296,13 +1296,16 @@ border-top: 1px solid #DDD;
 border-right: 1px solid #DDD;}
 .tab-ht > ul > li{margin-right:0 !important;word-spacing: normal;border-right: 1px solid #ccc;}
 .tab-ht > ul > li.active{border: 0 !important;}
-.tab-ht > ul > li.active > a{border-top: 3px solid #AE9C7E !important;}
+.tab-ht > ul > li.active > a{border-top: 3px solid #98C9E1 !important;}
 .tab-ht > ul > li a{line-height:40px;font-size:14px;padding: 0 10px; margin-right: 0;border-radius:0px !important;}
 
 .tab-content-ht{border-left: 5px solid #E6E6E6;}
-.panel-body-ht{min-height: 500px;}
-.ht-left{min-height: 545px; background: #FFFBE6;}
-
+.panel-body-ht{min-height: 500px;overflow-y: scroll;}
+.ht-left{height: 100%;
+background: none repeat scroll 0% 0% rgba(217, 237, 247, 0.19);}
+.ht-right{
+	
+}
 
 /*收藏*/
 /*试卷*/
