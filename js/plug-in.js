@@ -341,7 +341,7 @@ $(function(){
         var projectName=pathName.substring(0,pathName.substr(1).indexOf('/')+1);
         return (localhostPaht+projectName);
     }
-    
+//  学校后台竖导航
     function ShowMenu(obj, n) {
 					var Nav = obj.parentNode;
 					console.log("id:" + Nav.id);
