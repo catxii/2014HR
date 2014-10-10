@@ -1138,9 +1138,24 @@ text-justify:inter-ideograph}
 .list-group-item-url{ height:52px; background: #eee; text-align:center; width:100%; display:block; margin-top:8px; padding:11px 0; border-bottom:4px solid #ddd;}
 a.icon-share-alt{font-size:18px; text-decoration:none; color:#999; font-weight:bold; border-radius:3px;}	
 a.icon-share-alt:hover{font-size:18px; text-decoration:none; color:#f90; font-weight:bold}	
-.school-group .photo-box-single .img{ box-shadow:0px 0px 4px #ccc; border:0px;text-align:center; padding:5px 0; font-size:12px;background: none repeat scroll 0% 0% #FCF8E3;
+.school-group .photo-box-single .img{ box-shadow:0px 0px 4px #ccc; border: 1px solid #E0CCA5 !important;text-align:center; padding:5px 0; font-size:12px;background: none repeat scroll 0% 0% #FCF8E3;
 border: 1px solid #FAEBCC;}
-.school-group .photo-box-single{padding:8px; margin-top:10px;}
+.school-group .management-boss .img{background: none repeat scroll 0% 0% rgba(255, 81, 0, 0.55);border: 1px solid rgba(215, 125, 95, 1) !important;}
+.school-group .photo-box-single{padding:8px; margin-top:10px; position: relative;}
+.school-group .photo-box-single .icon-boss{
+	position: absolute;
+right: -7px;
+z-index: 999;
+top: -12px;
+font-size: 9px;
+padding: 2px 4px;
+text-align: center;
+vertical-align: middle;
+background: rgba(161, 26, 26, 1);
+color: #fff;
+border-radius: 7px;
+border:2px solid #fff;
+}
 .top-nav-bar-bottom li a.label{font-size:14px;top: 2px; padding:2px 10px;
 position: relative;
 background: #f90;
@@ -1197,7 +1212,7 @@ border-right: 1px solid #DDD;
 ul.expmenu{}
 ul.expmenu li div.headers{padding:12px;border-bottom:1px #fff solid;text-align: center;}
 ul.expmenu li:last-child div.headers{border-bottom:none;text-align: center;}
-ul.expmenu li ul li {background-color:rgba(251, 231, 178, 1);padding:8px 12px;border-bottom:1px solid #d2c8b5;color:#727272;text-shadow:0px 1px 0px rgba(255, 255, 255, 0.8);}
+ul.expmenu li ul li {background-color:rgba(251, 231, 178, 1);padding:8px 12px;border-bottom:1px solid #d2c8b5;color:#727272;text-shadow:1px 1px 0px rgba(255, 255, 255, 0.8);}
 ul.expmenu li ul li:last-child{border-bottom:none;}
 ul.expmenu li ul li.selected{background-color:#f4f4f4;}
 ul.expmenu div.headers{
@@ -1250,11 +1265,11 @@ ul.expmenu li ul li:not(.selected):active{
 .menu-menu ol a {
 				font-size: 12px;
 				display: block;
-				line-height: 2em;
+				line-height: 2.5em;
 				
 			}
 .menu-menu ol a.ol-active{background: #E3CEA3;color: #fff;}
-
+.menu-menu ol a:hover{background: #E3CEA3;color: #fff;}
 
 
 
@@ -1285,8 +1300,8 @@ border-right: 1px solid #DDD;}
 .tab-ht > ul > li a{line-height:40px;font-size:14px;padding: 0 10px; margin-right: 0;border-radius:0px !important;}
 
 .tab-content-ht{border-left: 5px solid #E6E6E6;}
-.panel-body-ht{min-height: 600px;}
-.ht-left{min-height: 645px; background: #FFFBE6;}
+.panel-body-ht{min-height: 500px;}
+.ht-left{min-height: 545px; background: #FFFBE6;}
 
 
 /*收藏*/
