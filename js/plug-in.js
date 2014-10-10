@@ -341,3 +341,32 @@ $(function(){
         var projectName=pathName.substring(0,pathName.substr(1).indexOf('/')+1);
         return (localhostPaht+projectName);
     }
+//  学校后台竖导航
+    function ShowMenu(obj, n) {
+					var Nav = obj.parentNode;
+					console.log("id:" + Nav.id);
+					if (!Nav.id) {
+						var BName = Nav.getElementsByTagName("ol");
+						var HName = Nav.getElementsByTagName("s6");
+						var t = 2;
+					} else {
+						var BName = document.getElementById(Nav.id).getElementsByTagName("span");
+						var HName = document.getElementById(Nav.id).getElementsByTagName(".header");
+						var t = 1;
+					}
+					obj.className = "s" + t;
+					for (var i = 0; i < BName.length; i++) {
+						if (i != n) {
+							BName[i].className = "no";
+						}
+					}
+					console.log('BName[n].className' + BName[n].className)
+					if (BName[n].className == "no") {
+						BName[n].className = "";
+						obj.innerHTML = obj.innerHTML.replace(/＋/g, "－");
+					} else {
+						BName[n].className = "no";
+						obj.className = "";
+						obj.innerHTML = obj.innerHTML.replace(/－/g, "＋");
+					}
+				}
