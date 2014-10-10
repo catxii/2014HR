@@ -1095,10 +1095,10 @@ h3.schoolname{font-weight:800; text-shadow:2px 2px 2px #000000!important; margin
 .school-banner .container-box .col-md-9{
 	}
 .school-banner .container-box .col-md-3{
-	padding:0px; background:#eee; height:100%; height:230px; }
+	padding:0px; background:#eee; height:100%; height:277px; }
 .jj-text{overflow: hidden;
 width: 100%;
-height: 90px;
+height: 140px;
 font-size: 12px;
 text-align:justify;
 text-justify:inter-ideograph}
@@ -1169,10 +1169,10 @@ margin-top:10px;
 .school-list-group-ul{ border-radius:0px; box-shadow:none; border:1px solid #eee; }
 .school-list-group-li{text-align:center; padding:4px 0; }
 .school-ht .rizhi-shu{margin-top:30px; border-top:1px solid #eee;}
-.school-ht .rizhi-shu .tree-sub li > a{text-align:center; line-height:23px; font-size:14px; position:relative; padding: 12px 0;}
+.school-ht .rizhi-shu .tree-sub li > a{text-align:center; line-height:18px; font-size:14px; position:relative; padding: 10px 0;}
 .school-ht .rizhi-shu .tree-sub li a.school-list-ative{text-align:center;}
 .school-ht .rizhi-shu .tree-sub > li{ border-bottom:1px solid #eee;position: relative;}
-.school-ht .rizhi-shu .sub-list .current-tree{background: #eee;}
+.school-ht .rizhi-shu .sub-list .tree-sub > .current-tree{background: #eee;}
 .school-ht .rizhi-shu .sub-list .current-tree > a,.school-ht .rizhi-shu .sub-list .current-tree{border-right:5px solid #f90;position:relative; right:-5px;}
 .school-ht .rizhi-shu .sub-list .current-tree > a,.school-ht .rizhi-shu .sub-list .current-tree > a:hover{ background:none;  }
 .school-ht .rizhi-shu .sub-list .current-tree > i.current {
@@ -1189,6 +1189,82 @@ font-size: 12px;
 color: #f90;
 border-right: 1px solid #DDD;
 }
+.school-ht .rizhi-shu .sub-list .current-tree .panel-collapse > ul > li > a{font-size: 12px !important;}
+
+
+
+/* expmenu */
+ul.expmenu{}
+ul.expmenu li div.headers{padding:12px;border-bottom:1px #fff solid;text-align: center;}
+ul.expmenu li:last-child div.headers{border-bottom:none;text-align: center;}
+ul.expmenu li ul li {background-color:rgba(251, 231, 178, 1);padding:8px 12px;border-bottom:1px solid #d2c8b5;color:#727272;text-shadow:0px 1px 0px rgba(255, 255, 255, 0.8);}
+ul.expmenu li ul li:last-child{border-bottom:none;}
+ul.expmenu li ul li.selected{background-color:#f4f4f4;}
+ul.expmenu div.headers{
+	color:#203f61;
+	text-shadow:0px 1px 0px rgba(255, 255, 255, 0.2);
+	
+	background:#AE9C7E;/* Old browsers */
+	
+}
+ul.expmenu li div.headers .label{background:no-repeat;color: #fff;/*text-shadow: 0px 0px 0px rgba(255, 255, 255, 0.8);*/ font-weight:bold;font-size: 16px;}
+ul.expmenu li div.headers .arrow{display:block;width:16px;height:16px;background:no-repeat center;float:right;}
+ul.expmenu li div.headers .arrow.up{background-image:url(../img/arrow_u.png);}
+ul.expmenu li div.headers .arrow.down{background-image:url(../img/arrow_d.png);}
+ul.expmenu li .menu{display:none;}	
+/* Mouse Events */
+
+
+ul.expmenu li ul li:not(.selected):hover{
+	background:#efe8d8;/* Old browsers */
+	cursor:pointer;
+}
+ul.expmenu li ul li:not(.selected):active{
+	background:#f1f1f1;/* Old browsers */
+	cursor:pointer;
+}
+
+.menu-menu ol {
+				
+				border: #E7E7E7 1px solid;
+				border-top: none;
+				background: #FFFBE6;
+				text-align: center;
+				padding: 0;
+			}
+.menu-menu li i {
+				background-color: #ae9c7e;
+				padding: 1px 2px;
+				color: #fff;
+				text-shadow: 0px 0px 0px rgba(255, 255, 255, 0.8);
+				
+				font-style: normal;
+			}
+.menu-menu a {
+				color:rgba(122, 79, 6, 1);
+				text-decoration: none;
+			}
+.menu-menu .no {
+				display: none;
+			}
+.menu-menu ol a {
+				font-size: 12px;
+				display: block;
+				line-height: 2em;
+				
+			}
+.menu-menu ol a.ol-active{background: #E3CEA3;color: #fff;}
+
+
+
+
+
+
+
+
+
+
+
 ul.collashu li > a{
 	line-height: 23px;
    font-size: 14px !important;
@@ -1197,16 +1273,20 @@ padding: 12px 0px !important;
 
 /*.management .select2-container-multi .select2-choices{max-height:34px;}*/
 .management .school-group .photo-box-single .img p{margin:0px;}
-.management .school-group .photo-box-single .btn{ text-align:center; margin-top:10px;}
+.management .school-group .photo-box-single .btn-group-vertical{margin-top: 10px;}
 
-.tab-ht{  position:relative;background: #eee;padding: 0;}
-.tab-ht > ul{margin: 0;word-spacing: -4px;border: 1px solid #ccc;}
-.tab-ht > ul > li{margin-right:0 !important;word-spacing: normal;}
-.tab-ht > ul > li a{line-height:49px;font-size:14px;padding: 0 10px; margin-right: 0;border-radius:0px !important;}
+.tab-ht{  position:relative;background: #F3F3F3;padding: 0;}
+.tab-ht > ul{margin: 0;word-spacing: -4px;border-bottom: 1px solid #DDD;
+border-top: 1px solid #DDD;
+border-right: 1px solid #DDD;}
+.tab-ht > ul > li{margin-right:0 !important;word-spacing: normal;border-right: 1px solid #ccc;}
+.tab-ht > ul > li.active{border: 0 !important;}
+.tab-ht > ul > li.active > a{border-top: 3px solid #AE9C7E !important;}
+.tab-ht > ul > li a{line-height:40px;font-size:14px;padding: 0 10px; margin-right: 0;border-radius:0px !important;}
 
-
-
-
+.tab-content-ht{border-left: 5px solid #E6E6E6;}
+.panel-body-ht{min-height: 600px;}
+.ht-left{min-height: 645px; background: #FFFBE6;}
 
 
 /*收藏*/
