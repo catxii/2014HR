@@ -1,0 +1,29 @@
+@charset "utf-8";
+.nivoSlider{position:relative;}
+.nivoSlider img{left:0px;top:0px;position:absolute;}
+.nivoSlider a.nivo-imageLink{margin:0px;padding:0px;border:0px currentColor;left:0px;top:0px;width:100%;height:100%;display:none;position:absolute;z-index:6;}
+.nivo-slice{height:100%;display:block;position:absolute;z-index:5;}
+.nivo-box{display:block;position:absolute;z-index:5;}
+.nivo-caption{background:rgb(0, 0, 0);padding:20px;left:70px;top:-500px;width:400px;height:400px;color:#fff !important;position:absolute;z-index:8;text-shadow: 1px 1px 9px #000;border-radius: 0px;border:0px solid #fff}
+.nivo-caption a{margin:0px;padding:0px; max-height: 120px; overflow: hidden;text-align: justify;text-justify:inter-ideograph;text-decoration: none;}
+.nivo-caption-inner a{color: #999 !important;display: block;}
+.nivo-caption-inner a:hover{color: #f90 !important;}
+.nivo-caption-inner a p{margin: 0 !important;text-align: justify;text-justify:inter-ideograph;}
+.nivo-html-caption{display:block;}
+
+.nivo-directionNav a{top:185px;position:absolute;z-index:9;cursor:pointer;}
+a.nivo-prevNav{background:url(../img/arrow_right.png) no-repeat;left:25px;}
+a.nivo-prevNav:hover{background:url(../img/arrow_right_hover.png) no-repeat;left:25px;}
+a.nivo-nextNav{background:url(../img/arrow_left.png) no-repeat;right:25px;}
+a.nivo-nextNav:hover{background:url(../img/arrow_left_hover.png) no-repeat;right:25px;}
+a.nivo-controlNav a{position:relative;z-index:9;cursor:pointer;}
+.nivo-controlNav a.active{font-weight:bold;}
+#slider-container{margin:0px;width:1280px;height:400px;overflow:hidden;clear:both !important;position:relative;margin:auto ;}
+.nivoSlider{margin-bottom:10px;position:relative;}
+.nivoSlider img{left:0px;top:0px;display:none;position:absolute;}
+.nivoSlider a{border:0px currentColor;display:block;}
+.nivo-directionNav a{border:0px currentColor;width:40px;height:40px;text-indent:-9999px;display:block;}
+#slider{margin:0px auto;width:1280px;height:408px;overflow:hidden;position:relative;z-index:9;}
+#slider h1.title-banner{color:#fff;font-size:18px;margin:40px 0 !important;line-height: 30px; display: block; width: 360px;text-shadow: 1px 1px 9px #000;font-weight: bold;}
+#slider .sdate{padding-bottom:10px;display:block;}
+#slider hr{margin:0px 0px 20px;padding:0px;border-bottom-color:rgb(137, 137, 137);border-bottom-width:1px;border-bottom-style:solid;}
