@@ -5,8 +5,8 @@ var context ;
 var canvas_bak;
 var context_bak;
 
-var canvasWidth = $(".canvas-div").width();
-var canvasHeight = $(".canvas-div").height();
+var canvasWidth = $(".SECT").width();
+var canvasHeight = $(".SECT").height();
 
 var canvasTop;
 var canvasLeft;

@@ -2348,3 +2348,25 @@ slide {
   margin-right: 5px;
   word-spacing: 0px;
 }
+.complete-info {
+  margin: 60px 0 20px;
+}
+.complete-info .title {
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: green;
+}
+.exam-info-alert-box {
+  background: #fafac1;
+  border: 1px solid #f0d673;
+  padding: 10px;
+  text-align: center;
+}
+.exam-info-alert-box li {
+  color: #ff6300;
+  font-size: 12px;
+  margin: 0 10px;
+}
+.exam-info-alert-box li .name {
+  color: #353535;
+}
