@@ -142,14 +142,16 @@
 	margin-left: 0px;
 }
 .cs-circleslight .br-slideinfo .br-infocontent {
-	background: url('../img/bg/info-pat.png');
+	/*background: url('../img/bg/info-pat.png');*/
+	background: rgba(0,0,0,0.8);
 	font-size: 12px;
 }
 .cs-circleslight .br-infocontent .title,  .cs-circleslight .br-infocontent .text {
-	text-shadow: 0px 1px 0px white;
+	text-shadow: 0px 1px 0px #000;
 }
+
 .cs-circleslight .br-slideinfo .right,  .cs-circleslight .br-slideinfo .left {
-	width: 300px;
+	width: 335px;
 }
 .cs-circleslight .br-slideinfo .top div {
 	padding: 20px 60px !important;
@@ -165,23 +167,21 @@
 }
 .cs-circleslight .br-slideinfo .title {
 	
-	color: #333;
+	color: #f90;
 }
 .cs-circleslight .br-slideinfo .text {
 	font-size: 14px;
-	color: #000;
+	color: #fff;
 }
 .cs-circleslight .br-slideinfo .more-btn {
-	height: 40px;
-	color: #333;
+	
+	color: #f90;
 	font-size: 14px;
-	margin-top: 20px !important;
+	margin-top: 10px !important;
 	width: auto;
 	
 }
-.cs-circleslight .br-slideinfo .more-btn:hover {
-	color: #111 !important;
-}
+
 /* Slider Timer */
 
 .cs-circleslight .br-circle-timer {
@@ -263,7 +263,7 @@
 /* Slider Shadow */
 
 .cs-circleslight .cute-shadow {
-	margin-top: -30px;
+	margin-top: -25px;
 }
 /* Slider Loading */
 

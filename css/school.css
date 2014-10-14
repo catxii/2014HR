@@ -30,13 +30,18 @@
 .school-new-left .panel-body{border-left:0px solid #ddd;border-right:0px solid #ddd;border-bottom:1px solid #ddd;padding: 5px 0 !important;}
 .school-new-right{padding-right: 0 !important;}
 .school-new-right .panel-body{border-left:0px solid #ddd;border-right:0px solid #ddd;border-bottom:1px solid #ddd;padding: 5px 0 !important;}
+.school-new-center{padding-left:8px;padding-right: 8px;}
 .school-new-center .panel-body{border-left:0px solid #ddd;border-right:0px solid #ddd;border-bottom:1px solid #ddd;padding: 5px 0 !important;}
 
 .school-new-left .panel-body .school-group .list-group-item,.school-new-center .panel-body .school-group .list-group-item,.school-new-right .panel-body .school-group .list-group-item{font-size: 12px !important;
 border-bottom: 0px dotted #CCC !important;font-family: "宋体";padding:4px !important;color: #333;background: none !important;}
 .school-new-left .panel-body .school-group a.list-group-item:hover,.school-new-center .panel-body .school-group a.list-group-item:hover,.school-new-right .panel-body .school-group a.list-group-item:hover{color: #2ECC71 !important; }
-.school-new-left span.fa-square,.school-new-center span.fa-square,.school-new-right span.fa-square{font-size: 5px;
+.school-new-left span.fa-square,.school-new-center span.fa-square,.school-new-right span.fa-square{font-size: 6px !important;
 color: #DDD;
+margin-right: 5px;
+vertical-align: middle;}
+.school-new-left span.fa-angle-double-right,.school-new-center span.fa-angle-double-right,.school-new-right span.fa-angle-double-right{font-size: 14px !important;
+color: #ccc;
 margin-right: 5px;
 vertical-align: middle;}
 /*学校自定义颜色*/
@@ -53,7 +58,7 @@ border-right: 1px solid #DDD;}
 .green-pane > ul > li.active{border: 0 !important;}
 .green-pane > ul > li.active > a{border-top: 3px solid #00A856 !important;}
 .green-pane > ul > li a{line-height:32px;font-size:13px;padding: 0 10px; margin-right: 0;border-radius:0px !important;font-weight: bold;}
-.green-pane .pull-right{position: absolute; right: 11px;
+.green-pane .pull-right{position: absolute; right: 11px;font-size: 12px;
 top: 10px;}
 .green-pane > ul > li a i{color:#00A856 ;font-size: 17px;}
 .school-new-xxgk .panel-body .school-group{padding: 0 6px;}
