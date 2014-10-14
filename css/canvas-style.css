@@ -2,7 +2,7 @@
         overflow: hidden;
       }
       body {
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: "微软雅黑";
         margin: 0;
         height: 100%;
       }
@@ -78,4 +78,84 @@
       }
       .sidebar li a:hover {
         background: #eee;
+      }
+      .literally .toolbar {
+        height: 45px;
+        padding: 5px;
+        border-top: 1px solid #ccc;
+      }
+      .literally .button.color-square {
+        width: 30px;
+        height: 30px;
+      }
+      .literally .tools .button {
+        width: 70px;
+        height: 40px;
+        line-height: 40px;
+      }
+      .literally .button {
+        vertical-align: middle;
+      }
+      .literally .tool-options-container {
+        vertical-align: middle;
+      }
+      .tool-pan,.tool-eye-dropper {
+        display: none!important;
+      }
+      .tool-eraser {
+        border-radius: 0 5px 5px 0!important;
+      }
+      .literally .button {
+        padding: 5px 10px;
+        line-height: 30px;
+      }
+      .literally .toolbar-row-right {
+        width: 15em;
+        margin-right: 10px;
+      }
+      .fullscreen-button {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        z-index: 20;
+        font-size: 20px;
+        width: 28px;
+        text-align: center;
+      }
+      ul,li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .page-change {
+        position: absolute;
+        z-index: 11;
+        top: 50%;
+        margin-top: -153px;
+      }
+      .page-change.left {
+        left:10px;
+      }
+      .page-change.right {
+        right:10px;
+      }
+      .page-change .button {
+        padding: 10px;
+        font-size: 20px;
+        opacity:0.1;
+      }
+      .page-change .button:hover {
+        color: white!important;
+        opacity:0.3;
+      }
+      .tool-options-container {
+        border-radius: 5px;
+        font-size: 12px;
+        padding: 7px 6px;
+      }
+      .tool-options span, .tool-options input {
+        vertical-align: middle;
+      }
+      .tool-options input {
+        width: 50px;
       }

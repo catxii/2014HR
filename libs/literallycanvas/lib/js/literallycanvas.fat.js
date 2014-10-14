@@ -7612,7 +7612,7 @@
     LC.defaultColors = [ "rgba(255, 0, 0, 0.9)", "rgba(255, 128, 0, 0.9)", "rgba(255, 255, 0, 0.9)", "rgba(128, 255, 0, 0.9)", "rgba(0, 255, 0, 0.9)", "rgba(0, 255, 128, 0.9)", "rgba(0, 128, 255, 0.9)", "rgba(0, 0, 255, 0.9)", "rgba(128, 0, 255, 0.9)", "rgba(255, 0, 128, 0.9)", "rgba(0, 0, 0, 0.9)", "rgba(255, 255, 255, 0.9)" ];
     LC.defaultStrokeColor = "rgba(0, 0, 0, 0.9)";
     LC.defaultFillColor = "rgba(255, 255, 255, 0.9)";
-    LC.toolbarHTML = '  <div class="toolbar-row">    <div class="toolbar-row-left">      <div class="button color-square stroke-picker">&nbsp;</div>      <div class="tools button-group"></div>      <div class="tool-options-container"></div>    </div>    <div class="toolbar-row-right">      <div class="action-buttons">        <div class="button clear-button danger">Clear</div>        <div class="button-group">          <div class="button btn-warning undo-button">&larr;</div><div class="button btn-warning redo-button">&rarr;</div>        </div>        <div class="button-group">          <div class="button btn-inverse zoom-out-button">&ndash;</div><div class="button btn-inverse zoom-in-button">+</div>        </div>        <div class="zoom-display">1</div>      </div>    </div>    <div class="clearfix"></div>  </div>';
+    LC.toolbarHTML = '  <div class="toolbar-row">    <div class="toolbar-row-left">      <div class="button color-square stroke-picker">&nbsp;</div>      <div class="tools button-group"></div>      <div class="tool-options-container"></div>    </div>    <div class="toolbar-row-right">      <div class="action-buttons">     <div class="button-group">          <div class="button btn-warning undo-button"><span class="icon-unshare" title="撤销"></span></div><div class="button btn-warning redo-button"><span class="icon-share" title="恢复"></span></div>        </div>      <div class="button clear-button danger">清空画板</div>          <div class="button clear-button ">退出全屏</div>      </div>     </div>     <div class="clearfix"></div>  </div>';
     LC.makeColorPicker = function($el, title, callback) {
         var cp;
         $el.data("color", "rgb(0, 0, 0)");
@@ -7774,7 +7774,7 @@
         RectangleTool.prototype.title = "Rectangle";
         RectangleTool.prototype.cssSuffix = "rectangle";
         RectangleTool.prototype.buttonContents = function() {
-            return "<img src='" + this.opts.imageURLPrefix + "/rectangle.png'>";
+            return "<span class='icon-more-windows'></span> 框选";
         };
         RectangleTool.prototype.begin = function(x, y, lc) {
             return this.currentShape = new LC.Rectangle(x, y, this.strokeWidth, lc.primaryColor);
@@ -7798,11 +7798,11 @@
         Pencil.prototype.title = "Pencil";
         Pencil.prototype.cssSuffix = "pencil";
         Pencil.prototype.buttonContents = function() {
-            return "<img src='" + this.opts.imageURLPrefix + "/pencil.png'>";
+            return "<span class='icon-brush'></span> 画笔";
         };
         Pencil.prototype.optionsContents = function() {
             var $brushWidthVal, $el, $input, _this = this;
-            $el = $("      <span class='brush-width-min'>1 px</span>      <input type='range' min='1' max='50' step='1' value='" + this.strokeWidth + "'>      <span class='brush-width-max'>50 px</span>      <span class='brush-width-val'>(5 px)</span>    ");
+            $el = $("      <span class='brush-width-min'>细</span>      <input type='range' min='1' max='50' step='1' value='" + this.strokeWidth + "'>      <span class='brush-width-max'>粗</span>      <span class='brush-width-val' >(5 px)</span>    ");
             $input = $el.filter("input");
             if ($input.size() === 0) {
                 $input = $el.find("input");
@@ -7848,7 +7848,7 @@
         Eraser.prototype.title = "Eraser";
         Eraser.prototype.cssSuffix = "eraser";
         Eraser.prototype.buttonContents = function() {
-            return "<img src='" + this.opts.imageURLPrefix + "/eraser.png'>";
+            return "<span class='icon-hdd'></span> 橡皮擦";
         };
         Eraser.prototype.makePoint = function(x, y, lc) {
             return new LC.Point(x, y, this.strokeWidth, "#000");
@@ -7866,7 +7866,7 @@
         Pan.prototype.title = "Pan";
         Pan.prototype.cssSuffix = "pan";
         Pan.prototype.buttonContents = function() {
-            return "<img src='" + this.opts.imageURLPrefix + "/pan.png'>";
+            return "<span class='icon-move'></span> 移动";
         };
         Pan.prototype.begin = function(x, y, lc) {
             return this.start = {
@@ -7888,7 +7888,7 @@
         EyeDropper.prototype.title = "Eyedropper";
         EyeDropper.prototype.cssSuffix = "eye-dropper";
         EyeDropper.prototype.buttonContents = function() {
-            return "<img src='" + this.opts.imageURLPrefix + "/eyedropper.png'>";
+            return "<span class='icon-eyedropper'></span> 取色";
         };
         EyeDropper.prototype.readColor = function(x, y, lc) {
             var newColor;
