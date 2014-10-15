@@ -176,60 +176,62 @@
         <div class="panel-heading clear-border tab-ht">
           <!--横导航-->
           <ul role="tablist" class="inline-block-ul nav nav-tabs">
-            <li class="current active"><a data-toggle="tab" role="tab" href="javascript:" data-original-title="" title="">首页大图管理</a></li>
+            <li class="current active"><a data-toggle="tab" role="tab" href="javascript:" data-original-title="" title="">添加图文</a></li>
           </ul>
 
         </div>
         <ul class="inline-block-ul">
           <li style="margin-left:10px;">
-            <div class="btn-group">
-              <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-              <span class="glyphicon glyphicon-plus"></span> 添加 <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">添加图片</a></li>
-                <li><a href="#">添加图文</a></li>
-                <li><a href="#">添加视频</a></li>
-              </ul>
-            </div>
+              <a href="javascript:void(0)" class="btn btn-sm btn-warning">
+              <span class="icon-unshare"></span> 返回列表 
+              </a>
           </li>
         </ul>
-        <div class="list-group">
-          
-          <table class="table btn-center table-striped" style="width:98%; margin:0 auto;">
-          <tr>
-            <td style="width:20%;">类型</td>
-            <td style="width:40%;">标题</td>
-            <td style="width:20%;">创建时间</td>
-            <td style="width:20%;">操作</td>
-          </tr>
-          <tr>
-            <td>图文类型</td>
-            <td>丁伟不是个好东西啊，邪恶的包工头啊，黑包公啊</td>
-            <td>2012-10-10</td>
-            <td>
-              <ul class="inline-block-ul inline-block-ul-nowarp ">
-                <li><input type="button" class="btn btn-sm btn-warning" value="显示中"></li>
-                <li><input type="button" class="btn btn-sm btn-primary" value="编辑"></li>
-                <li><input type="button" class="btn btn-sm btn-danger" value="删除"></li>
-              </ul>
-            </td>
-          </tr>
-          <tr>
-            <td>视频类型</td>
-            <td>丁伟拖欠农民工工资，贪污受贿</td>
-            <td>2012-10-10</td>
-            <td>
-              <ul class="inline-block-ul inline-block-ul-nowarp ">
-                <li><input type="button" class="btn btn-sm btn-default" value="未显示"></li>
-                <li><input type="button" class="btn btn-sm btn-primary" value="编辑"></li>
-                <li><input type="button" class="btn btn-sm btn-danger" value="删除"></li>
-              </ul>
-            </td>
-          </tr>
+        <div class="nr-box" style="border-top:1px solid #eee; width:98%; margin:0 auto;">
 
-        </table>
+          <form class="form-horizontal form-horizontal-nomargin" role="form">
 
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-3 control-label">标题：</label>
+              <div class="col-sm-8">
+                <input type="text" class="form-control" placeholder="图片显示的标题">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-3 control-label">文章正文：</label>
+              <div class="col-sm-8">
+              <div class="news-nr" style="border:1px solid #ccc;min-height:250px;"></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-3 control-label">图片效果：</label>
+              <div class="col-sm-8">
+                <div class="btn-group" data-toggle="buttons">
+                  <label class="btn btn-primary active">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> 左侧淡入
+                  </label>
+                  <label class="btn btn-primary">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> 右侧淡入
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputPassword3" class="col-sm-3 control-label">图片上传：</label>
+              <div class="col-sm-8">
+                <label class="btn btn-primary">上传照片<input type="file"  id="picupload" style="display:none;"></label>
+                <div class="img-file-showarea-small" id="imgshow2">
+                  <img src="img/school1_03.png">
+                </div>
+              </div>
+            </div>
+
+            <ul class="inline-block-ul btn-center" style="border-top:1px solid #eee; padding-top:10px; margin-bottom:10px;">
+              <li><input type="button" class="btn btn-warning" value="提 交"></li>
+              <li><a src="#" class="btn btn-default" >取 消</a></li>
+            </ul>
+
+          </form>
             
         </div>
         
@@ -266,6 +268,34 @@
 <!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****--> 
 <script type="text/JavaScript" src="space-footer-css.js"></script> 
 <!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+<script type="text/javascript">
 
+    $(function(){
+        //调取本地的图片预览
+        var result = document.getElementById("imgshow2");
+        var input = document.getElementById("picupload");
+        if(typeof FileReader === 'undefined'){
+          result.innerHTML = "抱歉，你的浏览器不支持 FileReader";
+          input.setAttribute('disabled','disabled');
+          }else{
+          input.addEventListener('change',readFile,false);
+        }
+        function readFile(){
+          var file = this.files[0];
+          if(!/image\/\w+/.test(file.type)){
+          alert("请确保文件为图像类型");
+          return false;
+        }
+        var reader = new FileReader();
+          reader.readAsDataURL(file);
+          reader.onload = function(e){
+          result.innerHTML = '<img src="'+this.result+'" alt=""/>'
+        }
+        }
+        $("#picupload").change(function(){
+          $(".img-upload").show();
+        })
+    });
+  </script>
 </body>
 </html>
