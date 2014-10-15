@@ -1163,15 +1163,15 @@ text-shadow: none;}
 .class-index-container .panel{margin-bottom:15px;}
 .school-Message-list p{padding:6px; margin:0px; }
 .school-Message-list .label{margin:0px 5px 5px 0;}
-.school-item-list{border-bottom: 1px solid #EDEDED; padding-bottom:20px;}
+.school-item-list{border-bottom: 1px solid #EDEDED; padding-bottom:5px;}
 .school-item-list-title{
-font-size: 17px;
-line-height: 40px;
+font-size: 15px;
+line-height: 35px;
 font-weight: bold;
-padding-left:28px;
-margin-top:10px;
+padding-left:8px;
+margin: 0 !important;
 }
-.school-item-list-footer{padding-left:28px;}
+.school-item-list-footer{padding-left:8px;font-size: 12px;}
 .school-item-list-footer-data{margin-left:10px;}
 .icon-home1{width:20px; height:20px; background:url(../img/icon-home1.png) no-repeat; display:block; position:absolute; top:12px; left:2px;}
 .icon-home2{width:20px; height:20px; background:url(../img/ico-home2.png) no-repeat; display:block; position:absolute; top:12px;left:2px;}
@@ -1185,9 +1185,9 @@ margin-top:10px;
 .school-list-group-li{text-align:center; padding:4px 0; }
 .school-ht .rizhi-shu{margin-top:30px; border-top:1px solid #eee;}
 .school-ht .rizhi-shu .tree-sub li > a{text-align:center; line-height:18px; font-size:14px; position:relative; padding: 10px 0;}
-.school-ht .rizhi-shu .tree-sub li a.school-list-ative{text-align:center;}
-.school-ht .rizhi-shu .tree-sub > li{ border-bottom:1px solid #eee;position: relative;}
-.school-ht .rizhi-shu .sub-list .tree-sub > .current-tree{background: #eee;}
+.school-ht .rizhi-shu .tree-sub li a.school-list-ative{text-align:center;color: #000;}
+.school-ht .rizhi-shu .tree-sub > li{ }
+.school-ht .rizhi-shu .sub-list .tree-sub > .current-tree{background: #ddd;}
 .school-ht .rizhi-shu .sub-list .current-tree > a,.school-ht .rizhi-shu .sub-list .current-tree{border-right:5px solid #f90;position:relative; right:-5px;}
 .school-ht .rizhi-shu .sub-list .current-tree > a,.school-ht .rizhi-shu .sub-list .current-tree > a:hover{ background:none;  }
 .school-ht .rizhi-shu .sub-list .current-tree > i.current {

@@ -1,6 +1,6 @@
 /*学校新页面*/
 .green-body{background: #fff; padding-top: 2px;}
-.green-body .navbar{background: #2ECC71;margin-top:-48px;}
+.green-body .navbar{background: #2ECC71;margin-top:-34px;}
 .green-body .navbar:hover{margin-top: 0;}
 
 .school-header{}
@@ -45,7 +45,7 @@ color: #ccc;
 margin-right: 5px;
 vertical-align: middle;}
 /*学校自定义颜色*/
-.school-new-default,.school-new-tzgg,.school-new-xxxw,.school-new-xxgk,.school-new-dyzc,.school-new-xyjs,.school-new-yxjs,.school-new-szdw,.school-new-xstd,.school-new-bjyd,.school-new-xxzy,.school-new-jypt,.school-new-rmzy,.school-new-rmht{margin-bottom: 20px; background: #fff;}
+.school-new-default,.school-new-tzgg,.school-new-xxxw,.school-new-xxgk,.school-new-dyzc,.school-new-xyjs,.school-new-yxjs,.school-new-szdw,.school-new-xstd,.school-new-bjyd,.school-new-xxzy,.school-new-jypt,.school-new-rmzy,.school-new-rmht,.school-new-xzxx{margin-bottom: 20px; background: #fff;}
 .green-pane{  position:relative;background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(254, 254, 254)), to(rgb(237, 237, 237)));
 background-image: -webkit-linear-gradient(top, rgb(254, 254, 254), rgb(237, 237, 237));
 background-image: -moz-linear-gradient(top, rgb(254, 254, 254), rgb(237, 237, 237));
@@ -91,8 +91,18 @@ border:1px solid #52AE7A !important;ont-weight: bold;text-align: center;border-r
 /*自定义栏目*/
 .school-new-default .panel-body{overflow-y: scroll; max-height: 90px;}
 /*尾部*/
-.green-body .container-footer{background: #eee; box-shadow: 0px -1px 2px rgba(168, 168, 168, 1);}
+.green-body .container-footer{background: url(../img/foot_bg.png) repeat-x #eee; /*box-shadow: 0px -1px 2px rgba(168, 168, 168, 1);*/}
 .green-body .container-footer ul li{margin-right: 0 !important;text-align: center;padding: 10px 0;background: #ccc;font-size: 13px;
 font-weight: 900;}
-.green-body .container-footer ul li a{background: #ccc;padding: 4px 30px;text-shadow: 1px 1px 1px #fff;border-radius: 4px;}
-.green-body .container-footer ul li a:hover{background: #ddd;}
+.green-body .container-footer ul li a{padding: 4px 30px;text-shadow: 1px 1px 1px #fff;border-radius: 4px;}
+.green-body .container-footer ul li a:hover{background: #999;color: #333;}
+
+
+/*学校二级页面*/
+.school-neiye-banner{background: #eee;}
+.school-neiye-banner-img{background: #ECECEC;height: 150px;}
+.school-new-neiye-left{position: relative;}
+.school-new-neiye-tab{position: absolute;top:-50px;width: 187px;}
+.school-neiye-title{min-height: 500px;}
+.green-pane .school-new-neiye-tab .panel-heading{color: rgba(46, 156, 92, 1) !important;padding:0 22px;line-height: 49px; text-align:center; background:#ccc;font-size: 20px;color: #fff;font-weight: bold;text-shadow: 1px 1px 0px rgba(255, 255, 255, 1);}
+.green-pane .school-new-neiye-list .list-group-item{}
