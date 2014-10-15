@@ -90,6 +90,7 @@ border:1px solid #52AE7A !important;ont-weight: bold;text-align: center;border-r
 
 .school-new-jypt-list div{text-align: center;margin:5px 0;}
 .school-new-jypt-list div a{padding: 4px; display: block;background:#EAE3C9 ;border-radius:4px;}
+.school-new-jypt-list div span{display: block;}
 .school-new-jypt-list div a img{transition: transform 0.3s ease 0s;}
 .school-new-jypt-list div a img:hover{transform: scale(1.1);}
 /*自定义栏目*/
@@ -113,7 +114,7 @@ font-weight: 900;}
     border:1px solid #00A856;
     
 }
-.school-rizhi-list-text{ font-size: 16px;padding: 10px;text-justify: inherit;text-align: justify;text-indent: 2em;}
+.school-rizhi-list-text{ font-size: 14px;font-family:"宋体";padding: 10px;text-justify: inherit;text-align: justify;text-indent: 2em;}
 .school-rizhi-list-text p{
 	line-height: 24px;
     color: #444;
@@ -151,3 +152,10 @@ top: 4px !important;}
 
 .school-details-title{text-align: center !important;line-height: 33px;padding: 10px 0 !important;background: #eee !important;border-bottom: 3px solid #2ECC71;}
 .school-details-title h4{float: none !important;margin: 0 0 5px 0 !important;}
+
+.school-boss{margin-top: 15px;}
+.school-boss .col-md-9{padding-right: 22px;padding-top: 0;}
+.school-boss-img{margin: auto;}
+.school-moreover{padding: 15px;}
+.school-moreover dt,.school-moreover dd{font-size: 15px !important; }
+.school-moreover dd{margin-bottom: 10px;}
