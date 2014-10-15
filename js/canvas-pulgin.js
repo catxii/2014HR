@@ -24,6 +24,12 @@
 			$("canvas,.page-change,.toolbar").show();
 		}
 
+		function wordaddCanvas(){
+	        $('.SECT2').literallycanvas();
+	        var wordHeight = document.body.scrollHeight;
+			$(".SECT2").css("height",wordHeight);
+		}
+
 		$(".sidebar").on("click","ul li a",function(){
 			$(this).parent().addClass("current").siblings().removeClass("current");
 			 var sidebarLI = $(this).parent().index();

@@ -87,14 +87,15 @@ div.WordSection1
 
 <!-- 样式添加开始 -->
 	<script type="text/javascript" src="js/appen-canvas.js"></script> 
-
-	<!-- 样式添加结束 -->
+	<link href="css/canvas-style-word.css" rel="stylesheet">
+<!-- 样式添加结束 -->
 
 </head>
 
 <body bgcolor=white lang=ZH-CN style='text-justify-trim:punctuation'> 
-<canvas id='mycanvas' style='position:absolute;z-index:-1;width:100%;height100%;'> </canvas>
-
+<div class="SECT2">
+	<canvas id='mycanvas' style='position:absolute;width:100%;height100%;'> </canvas>
+</div>
 <div class=WordSection1 style='layout-grid:15.6pt'>
 
 <p class=MsoNormal align=center style='text-align:center;line-height:20.0pt'><b><span
@@ -698,7 +699,9 @@ height=824 src="data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAgGBgcGBQ
 <!-- 功能添加开始 -->
 	<script type="text/javascript" src="js/canvas-pulgin.js"></script>
 	<script type="text/javascript">
-		addCanvas();  //调用画板
+		var wordHeight = document.body.scrollHeight;
+		$(".SECT2").css("height",wordHeight);
+		wordaddCanvas();  //调用画板
 		// canvasHide(); //隐藏画板
 		// canvasShow(); //显示画板
 	</script>

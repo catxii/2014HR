@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="../../favicon.ico">
+<title>领信样式模板</title>
+
+<!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+<script type="text/JavaScript" src="space-css.js"></script>
+<!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+
+</head>
+<body  ng-app="" data-spy="scroll" data-target=".navbar-example" style="padding:0;">
+
+<ul class="inline-block-ul-mid list-unstyled">
+
+    <li>
+      <span class="btn btn-primary fileinput-button"> 
+      <i class="glyphicon glyphicon-plus"></i> <span>添加文件</span> <input
+        type="file" nv-file-select="" uploader="uploader" accept=".txt,.docx,.docm,.doc,.dotx,.dotm,.dot,.rtf,.odt,.pptx,.pptm,.ppt,.xps,.potx,.potm,.pot,.ppsx,.ppsm,.pps,.xlsx,.xlsm,.xlsb,.xltx,.xltm,.xlt,.xls,.xlam,.xlsx,.ods,.pdf,.mp3,.ogg,.mp4,.flv,.swf" multiple />
+      </span>
+    </li>
+    <li style="display:none;">
+      <span class="gray">（<span class="icon-facetime-video"></span> 视频只支持 mp4,flv 格式，点击<a href="">下载转换工具</a>）</span>
+    </li>
+  </ul>
+
+ <div>
+  
+  
+    <div style=" height: 300px;  overflow: auto; margin-bottom: 10px;">
+      <table class="table">
+        <thead>
+        <tr>
+          <th width="30%">文件名</th>
+          <th>大小</th>
+          <th>进度</th>
+          <th>状态</th>
+          <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="item in uploader.queue">
+          <td>
+          <strong>{{ item.file.name }}</strong>
+          </td>
+          <td>{{ item.file.size/1024/1024|number:2 }} MB</td>
+          <td ng-show="uploader.isHTML5">
+            <div class="progress" style="margin-bottom: 0;">
+              <div class="progress-bar" role="progressbar" ng-style="{ 'width': item.progress + '%' }"></div>
+            </div>
+          </td>
+          <td class="text-center">
+            <span ng-show="item.isSuccess"><i class="glyphicon glyphicon-ok"></i></span>
+            <span ng-show="item.isCancel"><i class="glyphicon glyphicon-ban-circle"></i></span>
+            <span ng-show="item.isError"><i class="glyphicon glyphicon-remove"></i></span>
+          </td>
+          <td nowrap>
+            <button type="button" class="btn btn-success btn-sm"ng-click="item.upload()" ng-disabled="item.isReady || item.isUploading || item.isSuccess">
+              <span class="glyphicon glyphicon-upload"></span>
+            </button>
+            <button type="button" class="btn btn-warning btn-sm" ng-click="item.cancel()" ng-disabled="!item.isUploading">
+              <span class="glyphicon glyphicon-ban-circle"></span>
+            </button>
+            <button type="button" class="btn btn-danger btn-sm" ng-click="item.remove()">
+              <span class="glyphicon glyphicon-trash"></span>
+            </button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+    <button ng-click="uploader.uploadAll()" class="btn btn-success btn-s"
+      ng-disabled="!uploader.getNotUploadedItems().length">
+      <span class="glyphicon glyphicon-upload"></span> 全部上传
+    </button>
+    <button ng-click="uploader.cancelAll()" class="btn btn-warning btn-s"
+      ng-disabled="!uploader.isUploading">
+      <span class="glyphicon glyphicon-ban-circle"></span> 全部取消
+    </button>
+    
+    <button ng-click="uploader.clearQueue()" class="btn btn-danger btn-s"
+      ng-disabled="!uploader.queue.length">
+      <span class="glyphicon glyphicon-trash"></span> 全部移除
+    </button>
+  </div>
+</div>
+
+<!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****--> 
+<script type="text/JavaScript" src="space-footer-css.js"></script> 
+<!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+
+
+
+</body>
+</html>

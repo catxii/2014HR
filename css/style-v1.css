@@ -1700,7 +1700,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   top: 0;
   right: 0;
   display: none;
-  margin: -5px -5px 0 0;
+  margin: 0px -5px 0 0;
 }
 .exam-status-list .glyphicon-remove,
 .exam-number .glyphicon-remove {
@@ -2378,4 +2378,7 @@ slide {
 }
 .img-file-showarea-small img {
   width: 100%;
+}
+.video-box {
+  margin-top: 10px;
 }
