@@ -5,7 +5,7 @@
 
 .school-header{}
 .green-body .container-new-top{background:url(../img/bg-schol.jpg) repeat-x scroll center top #FFF !important;}
-.green-body .container-new-content{padding-top: 20px;}
+.green-body .container-new-content{padding-top: 10px;}
 .school-header-top{height: 130px;position: relative;border-bottom: 1px solid #D4D4D4;}
 .school-header-name{position: absolute;top:30px; width: 375px;height: 85px;}
 .school-header-bottom .top-nav-bar-bottom li a {
@@ -24,7 +24,7 @@
     padding-bottom: 2px;
     text-shadow:none;
 }
-.school-banner-new{margin: auto ;width: 1280px; height: 435px;margin-top: 15px;}
+.school-banner-new{margin: auto ;width: 1280px; height: 435px;margin-top: 0px;}
 
 .school-new-left{padding-left: 0 !important;}
 .school-new-left .panel-body{border-left:0px solid #ddd;border-right:0px solid #ddd;border-bottom:1px solid #ddd;padding: 5px 0 !important;}
@@ -35,6 +35,8 @@
 
 .school-new-left .panel-body .school-group .list-group-item,.school-new-center .panel-body .school-group .list-group-item,.school-new-right .panel-body .school-group .list-group-item{font-size: 12px !important;
 border-bottom: 0px dotted #CCC !important;font-family: "宋体";padding:4px !important;color: #333;background: none !important;}
+.school-new-left .panel-body .school-group a.list-group-item:hover,.school-new-center .panel-body .school-group a.list-group-item:hover,.school-new-right .panel-body .school-group a.list-group-item:hover{
+border-bottom: 0px dotted #CCC !important;color: #333;background: #eee !important;}
 .school-new-left .panel-body .school-group a.list-group-item:hover,.school-new-center .panel-body .school-group a.list-group-item:hover,.school-new-right .panel-body .school-group a.list-group-item:hover{color: #2ECC71 !important; }
 .school-new-left span.fa-square,.school-new-center span.fa-square,.school-new-right span.fa-square{font-size: 6px !important;
 color: #DDD;
@@ -81,23 +83,42 @@ border:1px solid #52AE7A !important;ont-weight: bold;text-align: center;border-r
 .school-new-szdw-img img{width: 50px;height: 50px;transition: transform 0.3s ease 0s;}
 .school-new-szdw-img img:hover{transform: scale(1.6);}
 .school-new-szdw-name{margin-right: 0 !important;}
-.school-new-szdw-name h4{margin: 0 0 5px 0 !important; line-height: 20px;/*text-shadow: 1px 1px 0px #285C44;*/display: block;font-size: 12px;}
-.school-new-szdw-name p{margin: 0 !important;color: #444;font-family: "新宋体";font-size: 12px;}
+.school-new-szdw-name h4{margin: 0 0 5px 0 !important; line-height: 20px;/*text-shadow: 1px 1px 0px #285C44;*/display: block;font-size: 12px;width: 57px;}
+.school-new-szdw-name p{margin: 0 !important;color: #444;font-family: "新宋体";font-size: 12px;width: 57px;}
+
+.school-new-bjyd .school-new-szdw-name h4{}
 
 .school-new-jypt-list div{text-align: center;margin:5px 0;}
 .school-new-jypt-list div a{padding: 4px; display: block;background:#EAE3C9 ;border-radius:4px;}
 .school-new-jypt-list div a img{transition: transform 0.3s ease 0s;}
 .school-new-jypt-list div a img:hover{transform: scale(1.1);}
 /*自定义栏目*/
-.school-new-default .panel-body{overflow-y: scroll; max-height: 90px;}
+.school-new-default .panel-body{overflow-y:scroll; max-height: 90px;}
 /*尾部*/
 .green-body .container-footer{background: url(../img/foot_bg.png) repeat-x #eee; /*box-shadow: 0px -1px 2px rgba(168, 168, 168, 1);*/}
 .green-body .container-footer ul li{margin-right: 0 !important;text-align: center;padding: 10px 0;background: #ccc;font-size: 13px;
 font-weight: 900;}
 .green-body .container-footer ul li a{padding: 4px 30px;text-shadow: 1px 1px 1px #fff;border-radius: 4px;}
 .green-body .container-footer ul li a:hover{background: #999;color: #333;}
-
-
+.green-body .number-news{
+	font-size: 10px;
+    padding: 1px 5px;
+    border-radius: 2px;
+    color: #fff;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#71C882), to(#39956A));
+    background-image: -webkit-linear-gradient(top, #71C882, #39956A);
+    background-image: -moz-linear-gradient(top, #71C882, #39956A);
+    background-image: -o-linear-gradient(top, #71C882, #39956A);
+    background-image: -ms-linear-gradient(top, #71C882, #39956A);
+    border:1px solid #00A856;
+    
+}
+.school-rizhi-list-text{ font-size: 16px;padding: 10px;text-justify: inherit;text-align: justify;text-indent: 2em;}
+.school-rizhi-list-text p{
+	line-height: 24px;
+    color: #444;
+    text-align: justify;
+}
 /*学校二级页面*/
 .school-neiye-banner{background: #eee;}
 .school-neiye-banner-img{background: #ECECEC;height: 150px;}
@@ -106,3 +127,27 @@ font-weight: 900;}
 .school-neiye-title{min-height: 500px;}
 .green-pane .school-new-neiye-tab .panel-heading{color: rgba(46, 156, 92, 1) !important;padding:0 22px;line-height: 49px; text-align:center; background:#ccc;font-size: 20px;color: #fff;font-weight: bold;text-shadow: 1px 1px 0px rgba(255, 255, 255, 1);}
 .green-pane .school-new-neiye-list .list-group-item{}
+
+.school-search-list{width: 200px;position: absolute !important;
+right: 4px !important;
+font-size: 12px !important;
+top: 4px !important;}
+.school-search-list .form-control{height: 29px;}
+.school-neiye-title .school-new-szdw-name h4{width: 70px;}
+.school-neiye-title .school-new-szdw-name p{width: 70px;}
+.school-menber {
+	height: 50px;
+	background: #F3F3F3;
+	border-bottom: 2px solid #ddd;
+	margin: 10px 0px;
+    padding: 14px 20px;
+}
+.school-menber span{
+	font-size: 16px;
+}
+.title-member{margin: 5px 0;}
+.title-member-h{font-size: 16px; height: 40px;padding: 9px 20px;position: relative;border-bottom: 3px solid #ddd;background: #f3f3f3;}
+.title-member-h a{font-size: 22px;color: #2ECC71;}
+
+.school-details-title{text-align: center !important;line-height: 33px;padding: 10px 0 !important;background: #eee !important;border-bottom: 3px solid #2ECC71;}
+.school-details-title h4{float: none !important;margin: 0 0 5px 0 !important;}

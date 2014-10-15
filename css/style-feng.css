@@ -1070,7 +1070,7 @@ h3.schoolname{font-weight:800; text-shadow:2px 2px 2px #000000!important; margin
 	box-shadow:none;
 	margin-bottom:0px;
 }
-.school-group .list-group-item{border-bottom: 2px dotted #ccc; border-radius:0px;margin-bottom: 1px;
+.school-group .list-group-item{border-bottom: 1px dotted #ccc; border-radius:0px;
 }
 .ziyuan-list a.list-group-item{padding: 6px 11px!important;font-size: 14px;}
 .ziyuan-list a.list-group-item .icon-cloud{color: red;}
