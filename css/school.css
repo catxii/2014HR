@@ -58,7 +58,7 @@ border-top: 1px solid #DDD;
 border-right: 1px solid #DDD;}
 .green-pane > ul > li{margin-right:0 !important;word-spacing: normal;border-right: 1px solid #ccc;}
 .green-pane > ul > li.active{border: 0 !important;}
-.green-pane > ul > li.active > a{border-top: 3px solid #00A856 !important;}
+.green-pane > ul > li.active > a{border-top: 3px solid #00A856 !important;box-shadow: 0px 2px 2px rgba(15, 82, 135, 0.25) inset, 0px 0px 0px rgba(255, 255, 255, 0.15);}
 .green-pane > ul > li a{line-height:32px;font-size:13px;padding: 0 10px; margin-right: 0;border-radius:0px !important;font-weight: bold;}
 .green-pane .pull-right{position: absolute; right: 11px;font-size: 12px;
 top: 10px;}
@@ -106,6 +106,7 @@ font-weight: 900;}
     padding: 1px 5px;
     border-radius: 2px;
     color: #fff;
+    margin-right: 5px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#71C882), to(#39956A));
     background-image: -webkit-linear-gradient(top, #71C882, #39956A);
     background-image: -moz-linear-gradient(top, #71C882, #39956A);
@@ -159,3 +160,35 @@ top: 4px !important;}
 .school-moreover{padding: 15px;}
 .school-moreover dt,.school-moreover dd{font-size: 15px !important; }
 .school-moreover dd{margin-bottom: 10px;}
+
+
+/*资源库*/
+.school-neiye-search-img{height: 53px; background: #eee;padding: 10px 10px;}
+.school-search .form-control{height: 32px;}
+.school-banner-img{height: 277px;}
+.list-tab-school{box-shadow: 3px 3px 3px #EBEBEB;border-bottom: 1px solid #ccc;border-left: 1px solid #ccc;border-right: 1px solid #ccc;}
+.list-tab-right{padding-top: 10px !important;}
+.list-tab-number{height: 160px; border: 1px solid #ccc;margin-bottom:7px;background: #EAE3C9;padding: 0 10px;}
+.list-tab-number h4{text-align: center;font-size: 16px; font-weight: bold;color: rgba(131, 125, 104, 1);}
+.list-tab-number .list-tab-number-list{height: 50px;
+            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.125) inset;
+    background-color: #449D44;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(13, 84, 13, 1);
+border-color: #398439;
+font-size: 25px;
+color: #fff;
+font-weight: bold;
+padding: 8px 14px !important;
+}
+.list-tab-up{height: 101px; border: 1px solid #ccc;}
+.school-resources-tui > li{padding:5px 10px 0 20px;background:#eee;box-shadow:0px 0px 4px rgba(0, 0, 0, 0.09) inset;}
+.school-resources-tui > li dl{border-bottom: 1px solid #eee !important;}
+.school-resources-tui > li dt{margin-bottom:5px !important;font-weight: 200 !important;color: #ccc;font-size: 12px;}
+.school-resources-tui > li dt a{font-weight: bold !important;margin-right: 5px;font-size: 15px;}
+.school-resources-tui > li dt b.b-bg{background-color: #67C1A5;width: 5px; height: 15px;display: inline-block;position: relative;
+left: -20px;
+top: 2px;}
+.school-resources-tui li dd ul li{font-size: 12px;}
+.school-resources-tui li dd ul li.resource-red{color: #999;}
+.list-tab-right .panel-class-Set > ul > li{background: none !important; height: auto !important;}
