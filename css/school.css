@@ -7,7 +7,9 @@
 .green-body .container-new-top{background:url(../img/bg-schol.jpg) repeat-x scroll center top #FFF !important;}
 .green-body .container-new-content{padding-top: 10px;}
 .school-header-top{height: 130px;position: relative;border-bottom: 1px solid #D4D4D4;}
-.school-header-name{position: absolute;top:30px; width: 375px;height: 85px;}
+.school-header-top .thumbnail{display: inherit;background: none;}
+.school-header-top a{width: 375px; height: 85px;}
+.school-header-name{position: absolute;top:35px; width: 375px;height: 85px;}
 .school-header-bottom .top-nav-bar-bottom li a {
     font-size: 15px;
     color: #000 !important;
@@ -62,7 +64,7 @@ border-right: 1px solid #DDD;}
 .green-pane > ul > li a{line-height:32px;font-size:13px;padding: 0 10px; margin-right: 0;border-radius:0px !important;font-weight: bold;}
 .green-pane .pull-right{position: absolute; right: 11px;font-size: 12px;
 top: 10px;}
-.green-pane > ul > li a i{color:#00A856 ;font-size: 17px;}
+.green-pane > ul > li a i{color:#00A856 ;font-size: 17px;text-shadow: -1px -1px 0px rgba(213, 213, 213, 1);}
 .school-new-xxgk .panel-body .school-group{padding: 0 6px;}
 .school-new-xxgk .panel-body .school-group .list-group-item{color: #285C44;
 font-size: 15px !important;
@@ -122,7 +124,7 @@ font-weight: 900;}
     text-align: justify;
 }
 /*学校二级页面*/
-.school-neiye-banner{background: #eee;}
+.school-neiye-banner{background:#2CA974;}
 .school-neiye-banner-img{background: #ECECEC;height: 150px;}
 .school-new-neiye-left{position: relative;}
 .school-new-neiye-tab{position: absolute;top:-50px;width: 187px;}
@@ -163,7 +165,7 @@ top: 4px !important;}
 
 
 /*资源库*/
-.school-neiye-search-img{height: 53px; background: #eee;padding: 10px 10px;}
+.school-neiye-search-img{height: 53px; padding: 10px 10px;}
 .school-search .form-control{height: 32px;}
 .school-banner-img{height: 277px;}
 .list-tab-school{box-shadow: 3px 3px 3px #EBEBEB;border-bottom: 1px solid #ccc;border-left: 1px solid #ccc;border-right: 1px solid #ccc;}
@@ -181,14 +183,74 @@ color: #fff;
 font-weight: bold;
 padding: 8px 14px !important;
 }
-.list-tab-up{height: 101px; border: 1px solid #ccc;}
-.school-resources-tui > li{padding:5px 10px 0 20px;background:#eee;box-shadow:0px 0px 4px rgba(0, 0, 0, 0.09) inset;}
-.school-resources-tui > li dl{border-bottom: 1px solid #eee !important;}
+.list-tab-up{height: 101px; border: 1px solid #ccc;padding: 0 10px;}
+.list-tab-up h4{text-align: center;font-size: 16px; font-weight: bold;color: rgba(131, 125, 104, 1);}
+.list-tab-up .list-tab-number-list{
+	height: 50px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.125) inset;
+    background-color: #989898;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(13, 84, 13, 1);
+border-color: #398439;
+font-size: 25px;
+color: #fff;
+font-weight: bold;
+padding: 8px 14px !important;
+}
+.school-resources-tui > li{padding:5px 10px 0 20px;background:#eee;/*box-shadow:0px 0px 4px rgba(0, 0, 0, 0.09) inset;*/}
+.school-resources-tui > li dl{border-bottom: 1px solid rgba(0, 0, 0, 0.09) !important;}
 .school-resources-tui > li dt{margin-bottom:5px !important;font-weight: 200 !important;color: #ccc;font-size: 12px;}
 .school-resources-tui > li dt a{font-weight: bold !important;margin-right: 5px;font-size: 15px;}
 .school-resources-tui > li dt b.b-bg{background-color: #67C1A5;width: 5px; height: 15px;display: inline-block;position: relative;
 left: -20px;
 top: 2px;}
-.school-resources-tui li dd ul li{font-size: 12px;}
+.school-resources-tui li dd ul li{font-size: 13px;}
 .school-resources-tui li dd ul li.resource-red{color: #999;}
 .list-tab-right .panel-class-Set > ul > li{background: none !important; height: auto !important;}
+.ranking-title{padding: 0 8px;}
+.ranking-title h5{font-size: 16px;margin-top: 10px;}
+.ranking-title h5 a{
+	background: none repeat scroll 0% 0% #2CA974;
+display: inline-block;
+padding: 4px;
+border-radius: 5px;
+}
+.ranking-title h5 i{color: #fff;}
+.school-teacher-ranking{border-bottom: 1px solid #ddd; height: 120px;overflow-x: scroll;padding: 0 3px;}
+.school-teacher-ranking > ul{white-space: nowrap;}
+.school-teacher-ranking > ul > li{
+	width: 274px;
+	height: 85px;
+	background: #efefef;
+	padding: 10px;
+	border-bottom: 1px solid #2CA974;
+	margin-right: 7px !important;
+}
+.school-teacher-ranking .inline-ranking-left dl{text-align: center;background: #ddd;padding:5px 10px;margin: 0 !important;}
+.school-teacher-ranking .inline-ranking-left dl dt{font-size: 20px; color: red;text-shadow: 1px 1px 1px #fff;}
+.school-teacher-ranking .inline-ranking-right{padding-left: 10px;}
+.school-teacher-ranking .inline-ranking-right dl{margin: 0 !important;}
+.school-teacher-ranking .inline-ranking-right dl dd{font-size: 12px; color: #999;}
+.school-teacher-ranking .inline-ranking-right dl dd.text-space{font-size: 14px; color: #333;}
+
+.school-resources-ranking{margin-top: 15px;}
+.school-resources-ranking .resources-ranking-hot .green-pane{
+	/*background: #E8E8E8;*/
+	
+}
+.school-resources-ranking .resources-ranking-hot .green-pane > ul{border-left: 1px solid #DDD;}
+.school-resources-ranking .resources-ranking-hot .green-pane .resources-ranking-hot-title{margin: 0 10px !important;border-right: 0 !important;}
+.school-new-left .resources-ranking-hot .panel-body .school-group > a{padding: 7px !important;}
+.school-new-left .resources-ranking-hot .panel-body .school-group > a:first-child .number-news{background-image: -moz-linear-gradient(center top , rgba(255, 102, 102, 1), rgba(182, 9, 9, 1));
+border: 1px solid rgba(168, 0, 0, 1);}
+
+.school-new-left .resources-ranking-hot .panel-body .school-group > a ul li{margin: 0 !important;}
+.school-new-left .resources-ranking-hot .panel-body .school-group > a ul li.c-1{width: 10% !important;float: left;}
+.school-new-left .resources-ranking-hot .panel-body .school-group > a ul li.c-2{width: 75% !important;float: left;}
+.school-new-left .resources-ranking-hot .panel-body .school-group > a ul li.c-3{width: 15% !important;float: left;color: #999;}
+
+
+
+
+
+
