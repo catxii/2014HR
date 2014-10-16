@@ -151,7 +151,7 @@
 }
 
 .cs-circleslight .br-slideinfo .right,  .cs-circleslight .br-slideinfo .left {
-	width: auto;
+	width: 335px;
 }
 .cs-circleslight .br-slideinfo .top div {
 	padding: 20px 60px !important;
@@ -166,7 +166,7 @@
 	padding-left: 60px !important;
 }
 .cs-circleslight .br-slideinfo .title {
-	width: 260px;
+	
 	color: #f90;
 }
 .cs-circleslight .br-slideinfo .text {
