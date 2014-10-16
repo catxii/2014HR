@@ -878,11 +878,12 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   background: #f1f1f1;
   border-bottom: 1px solid #ccc;
   left: 0;
-  padding: 60px 10px 0;
+  padding: 50px 10px 10px;
   right: 0;
   text-align: center;
   top: 0;
   z-index: 30;
+  margin: 0 auto;
 }
 .inline-block-ul.search-bank li {
   vertical-align: top;
@@ -2381,4 +2382,41 @@ slide {
 }
 .video-box {
   margin-top: 10px;
+}
+.search-bank {
+  background: #f3f1d4;
+  border-radius: 10px;
+  padding: 10px;
+}
+.search-bank li {
+  vertical-align: middle!important;
+  color: #bbbbbb;
+  font-size: 13px;
+}
+.search-bank li a {
+  color: #0099cb;
+  margin-right: 5px;
+}
+.sidebar-teacher-info img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+.sidebar-teacher-info li {
+  line-height: 30px;
+  font-size: 13px;
+}
+.sidebar-teacher-info li.info {
+  width: 135px;
+  text-align: left;
+  margin-left: 10px;
+}
+.sidebar-teacher-info li p {
+  line-height: 30px;
+  margin: 0;
+}
+.showfile {
+  border-radius: 5px;
+  display: block;
+  margin-top: 8px;
 }

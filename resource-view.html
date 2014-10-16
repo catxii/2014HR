@@ -16,7 +16,7 @@
 
 </head>
 <body class="fixed-top-body" ng-app="" data-spy="scroll" data-target=".navbar-example">
-<div class="navbar navbar-zhijiao navbar-green navbar-fixed-top">
+<div class="navbar navbar-zhijiao navbar-green navbar-fixed-top" style="height:36px; min-height:36px;">
   <div class="container">
     <div class="navbar-header">
       <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
@@ -64,7 +64,28 @@
     <!--/.nav-collapse --> 
   </div>
 </div>
-
+<div class="search-top-box container">
+  <ul class="inline-block-ul search-bank" data-spy="affix" data-offset-top="60" data-offset-bottom="10">
+    <li >
+    <div class="input-group " style="width:500px;">
+      <input type="text" class="form-control" placeholder="输入关键字搜索整站资源..">
+      <span class="input-group-btn ">
+        <button class="btn btn-primary icon-search" type="button"></button>
+      </span>
+    </div>
+    </li>
+    <!-- <li>
+      热门资源：
+      <a href="#">春天来了</a>
+      <a href="#">春天来了</a>
+      <a href="#">春天来了</a>
+      <a href="#">春天来了</a>
+      <a href="#">春天来了</a>
+      <a href="#">春天来了</a>
+      <a href="#">春天来了</a> 
+    </li> -->
+  </ul>
+</div>
 
 <div class="container">
   <div class="col-md-12">
@@ -94,7 +115,7 @@
     </ul>
     <div class="col-md-9">
     	<!-- 视频位置 -->
-	     <div id='playerSSrvbmYPpReq' style="width:100%; height:516px;"></div>
+	     <div style="background:black; width:100%; height:516px;"></div>
     </div>
 	<div class="col-md-3">
 
@@ -107,6 +128,14 @@
 			</li>
 		</ul>
 
+    <ul class="sidebar-teacher-info inline-block-ul-mid btn-center well" style="padding:10px; background:none;">
+      <li><a href="#"><img src="img/slider3.jpg"></a></li>
+      <li class="info">
+        <p class="name">上传老师：<a href="#" class="blue">赵老师</a></p>
+        <p class="project">所属科目：物理</p>
+      </li>
+    </ul>
+
 		<ul class="wd-info inline-block-ul well" style="padding:10px;">
 		<li>评价文档：</li>
 		<li class="start-pj">
@@ -118,6 +147,8 @@
 			3.0
 		</li>
 		</ul>
+
+
 
 		<div class="panel panel-default">
 			<div class="panel-heading">

@@ -222,10 +222,9 @@
                     <li><input type="text" style="width:450px;" class="form-control" placeholder="请输入优酷、土豆、腾讯视频提供的播放地址"></li>
                   </ul>
                 </div>
-                <div class="video-box clearfix" style="display:none;">
-                  <!-- <label class="btn btn-default">上传本地视频<input type="file"  id="picupload" style="display:none;"></label>
-                   -->
-                   <span>做上传，找郭涛</span>
+                <div class="video-box clearfix" style="display:block;">
+                  <label class="btn btn-default">上传本地视频<input type="file"  id="picupload" style="display:none;"></label>
+                  <span class="showfile"></span>
                 </div>
               </div>
             </div>
@@ -305,6 +304,14 @@
             var inputIndex = $(this).index();
             $(".video-box").eq(inputIndex).show().siblings(".video-box").hide();
         })
+
+        function inputFileName(input,box){
+          $(input).find("input").change(function(){
+            $(box).text( '已选择"' + $(this).val() +'"')
+          });
+        }
+        inputFileName(".btn",".showfile");
+
     });
   </script>
 
