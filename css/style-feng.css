@@ -1205,8 +1205,9 @@ color: #f90;
 border-right: 1px solid #DDD;
 }
 .school-ht .rizhi-shu .sub-list .current-tree .panel-collapse > ul > li > a{font-size: 12px !important;}
-
-
+.boss-messge{padding: 15px;}
+.boss-messge .col-xs-2{padding:0 10px 10px 10px;}
+.report-name{border: 1px solid #ccc;display: block;padding: 4px 6px;background: #eee;text-align: center;border-radius: 6px;font-size: 16px;text-shadow: 1px 1px 1px #fff;box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.125) inset;}
 
 /* expmenu */
 ul.expmenu{}
@@ -1299,7 +1300,7 @@ border-right: 1px solid #DDD;}
 .tab-ht > ul > li.active > a{border-top: 3px solid #98C9E1 !important;}
 .tab-ht > ul > li a{line-height:40px;font-size:14px;padding: 0 10px; margin-right: 0;border-radius:0px !important;}
 
-.tab-content-ht{border-left: 5px solid #E6E6E6;}
+.tab-content-ht{/*border-left: 5px solid #E6E6E6;*/}
 .panel-body-ht{min-height: 500px;overflow-y: scroll;}
 .ht-left{height: 100%;
 background: none repeat scroll 0% 0% rgba(217, 237, 247, 0.19);}
@@ -1553,7 +1554,6 @@ vertical-align: middle;
 .bbs-right{background:#fff; }
 .bbs-right .inline-block-ul{ color:#999}
 .bbs-reply-btn{ background:#eee; padding:15px 15px}
-
 
 
 
