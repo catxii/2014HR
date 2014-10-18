@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>领信样式模板</title>
+
+    <!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+    <script type="text/JavaScript" src="space-css.js"></script>
+    <!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+
+</head>
+<body style="background:white;">
+
+    <div class="panel panel-default" style="border: medium none;">
+
+        <div style="height:36px; min-height:36px;" class="navbar navbar-zhijiao navbar-green navbar-fixed-top ">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a alt="领信logo" class="navbar-brand logo-small" href="/linktrust/home/index" target="_blank" data-original-title="" title=""></a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+
+                        <li id="navigation-top-teacher-lsn" class="active">
+                            <a href="/linktrust/space/lsn/index" data-original-title="" title="">教学空间</a>
+                        </li>
+                        <li id="navigation-top-teacher-personal">
+                            <a href="/linktrust/space/index/main" data-original-title="" title="">个人空间</a>
+                        </li>
+
+                        <li id="navigation-top-school-class">
+                            <a href="/linktrust/space/class/index/main" data-original-title="" title="">班级空间</a>
+                        </li>
+                        <li id="navigation-top-school-space">
+                            <a href="/linktrust/others/school/index?schoolId=53f691f1a2d2f7034bdf2a07" data-original-title="" title="">学校空间</a>
+                        </li>
+
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li>
+
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)" data-original-title="" title="">
+                                前锋老师
+                                            
+                                                (
+                                <span class="user-role">华容县教育局管理员</span>
+                                <span class="caret"></span>
+                                )
+                            </a>
+
+                            <ul class="dropdown-menu" role="menu">
+
+                                <li>
+                                    <a onclick="doChangeRole('53e98bf5b3bb260e3e3f6cf5', '华容县教育局管理员')" href="javascript:void(0)" data-original-title="" title="">华容县教育局管理员</a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)" data-original-title="" title="">
+                                <span class="icon-t-shirt"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/linktrust/space/pm/index" data-original-title="" title="">
+                                <span style="position:relative;" class="icon-envelope">
+                                    <span style="display: none" class="red-round" id="pmNotReadCount">0</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-original-title="" title="">
+                                <span class=" icon-cogwheel"></span>
+                                设置
+                                <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+
+                                <li>
+                                    <a target="_blank" href="/linktrust/sys/site/login" data-original-title="" title="">后台管理</a>
+                                </li>
+                                <li class="divider"></li>
+
+                                <li>
+                                    <a href="/linktrust/sys/user/setup/info" data-original-title="" title="">个人设置</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                    <a href="/linktrust/sys/site/logout" data-original-title="" title="">退出</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <form id="htmlForm ">
+
+    <div class="panel-body pageoffice-info pageoffice-info-off add-ppt-option"  >
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs ppt-tab" role="tablist">
+            <li class="active views">
+                <a title="" data-original-title="" href="javascript:" role="tab" data-toggle="tab">查看内容</a>
+            </li>
+            <li class="addli">
+                <a title="" data-original-title="" href="javascript:" data-toggle="modal" data-target="#addconsult">
+                    <span class="glyphicon glyphicon-plus"></span>
+                    查看新PPT
+                </a>
+            </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+
+            <div class="tab-pane-ck active" style="padding-top:20px;">
+                <ul class="inline-block-ul-mid ppt-position-right-ul">
+                    <li><input type="text" class="form-control" style="width:170px;"></li><li><a href="javascript:void(0)" class="btn btn-warning btn-sm ">引用</a></li>
+                </ul>
+                <div class="uedit-area" style="background: none repeat scroll 0 0 #ccc; bottom: 10px; height: auto; left: 15px; position: absolute; right: 15px; top: 70px;">
+                    111<!-- umeditor --> </div>
+            </div>
+
+        </div>
+    </div>
+
+</form>
+<!-- 弹出框 -->
+<!-- 管理目录弹出框 -->
+
+
+<!-- <div class="modal fade btnsave" id="saveok" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm modal-success-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <span class="glyphicon glyphicon-ok-circle"></span>
+                保存成功
+            </div>
+            <div class="modal-footer">
+                <button title="" data-original-title="" type="button" class="btn btn-primary" data-dismiss="modal" onclick="javascript:window.close()">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="saveok" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">保存成功</div>
+    </div>
+</div> -->
+
+<!-- 2014“暑假班”JS公用库 -->
+
+<!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+<script type="text/JavaScript" src="space-footer-css.js"></script>
+<!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+
+<script type="text/javascript">
+    $(function(){
+        function addPPTButton(name){
+            var pptTab = "<li class='views'><a title=' data-original-title=' href='javascript:' role='tab' data-toggle='tab'>"+name +"</a></li>"
+            var pptContent = "<div class='tab-content'><div class='tab-pane-ck active' style='padding-top:20px;'><ul class='inline-block-ul-mid ppt-position-right-ul'><li><input type='text' class='form-control' style='width:170px;'></li><li><a href='javascript:void(0)' class='btn btn-warning btn-sm '>引用</a></li></ul><div class='uedit-area' style='background: #ccc; bottom: 10px; height: auto; left: 15px; position: absolute; right: 15px; top: 70px;'><!-- PPT内容框 --> </div></div></div>"
+            if ( $(".ppt-tab li").length < 6 ) {
+                $(".ppt-tab .addli").before(pptTab);
+                $(".tab-content:last").after(pptContent);
+                 $(".tab-content:last").show().siblings(".tab-content").hide(); //追加后默认显示最后追加的ppt内容
+                 $(".ppt-tab .views:last").addClass("active").siblings().removeClass("active");//追加后默认高亮最后的按钮
+                if ( $(".ppt-tab li").length == 6  ) {
+                    $(".addli").hide();
+                }
+            }
+        }
+        $(".addli a").click(function(){
+            addPPTButton("查看内容");
+        });
+        $(".ppt-tab").on("click",".views a",function(){
+            var thisIndex = $(this).parent().index();
+            $(this).parent().addClass("active").siblings().removeClass("active");
+             $(".tab-content").eq(thisIndex).show().siblings(".tab-content").hide();
+        });
+    })
+</script>
+</body>
+</html>

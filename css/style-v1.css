@@ -1612,7 +1612,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   overflow-y: scroll;
   padding: 10px;
   position: fixed;
-  top: 50px;
+  top: 37px;
   background: white;
   z-index: 40;
 }
@@ -2419,4 +2419,32 @@ slide {
   border-radius: 5px;
   display: block;
   margin-top: 8px;
+}
+.set-score-list {
+  padding-left: 0;
+}
+.set-score-list li {
+  margin-right: 10px;
+}
+.add-ppt-option {
+  top: 37px;
+  left: 50%;
+  right: auto;
+  margin-left: -500px;
+  width: 1000px;
+  overflow: auto;
+}
+.ppt-position-right-ul {
+  border: 1px solid #ccc;
+  border-bottom: none;
+  padding: 5px;
+  position: absolute;
+  right: 17px;
+  top: 19px;
+  z-index: 1111;
+  border-radius: 5px 5px 0 0;
+  background: white;
+}
+.ppt-position-right-ul li {
+  margin-left: 5px;
 }

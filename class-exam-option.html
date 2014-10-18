@@ -140,7 +140,7 @@
                       <option>英语</option>
                       <option>体育</option>
                     </select> -->
-                    <ul class="inline-block-ul">
+                    <ul class="inline-block-ul object-list">
                       <li style="display:block; border-bottom:1px solid #ccc; margin-bottom:5px;"><label class="checkallbutton"><input type="checkbox"> 全部科目</label></li>
                       <li><label class="tocheck"><input type="checkbox"> 语文</label></li>
                       <li><label class="tocheck"><input type="checkbox"> 数学</label></li>
@@ -148,6 +148,9 @@
                       <li><label class="tocheck"><input type="checkbox"> 体育</label></li>
                       <li><label class="tocheck"><input type="checkbox"> 生物</label></li>
                       <li><label class="tocheck"><input type="checkbox"> 物理</label></li>
+                    </ul>
+                    <ul class="set-score-list inline-block-ul-mid">
+                      
                     </ul>
                   </div>
                 </div>
@@ -197,24 +200,48 @@
 <script type="text/JavaScript" src="space-footer-css.js"></script> 
 <!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
 
-<script type="text/javascript">
- $(".tocheck input,.checkallbutton input").prop("checked",false)
+  <script type="text/javascript">
+   $(".tocheck input,.checkallbutton input").prop("checked",false)
+    $(".checkallbutton").click(function(){
+    if( $(".checkallbutton input").is(":checked") ){
+      $(".tocheck input").prop("checked",true)
+    }else{
+      $(".tocheck input").prop("checked",false)
+    }
+  });
+  $(".tocheck").click(function(){
+    var tocheckNumber = $(".tocheck").length;
+    if( $(".tocheck input:checked").length == $(".tocheck").length ){
+      $(".checkallbutton input").prop("checked",true)
+      console.log("等于")
+    }else{
+      $(".checkallbutton input").prop("checked",false)
+    }
+  });
+
+   $(".tocheck").click(function(){
+      var labelText = $(this).text();
+      var appendLi = "<li><span class='name'>"+labelText+"</span>(最高分)<input type='text' class='form-control'></li>";
+      if( $(this).find("input").is(":checked") ){
+        $(".set-score-list").append(appendLi);
+      }else{
+        $(".set-score-list .name:contains(" + labelText + ")").parent().remove();
+      }
+   });
+
   $(".checkallbutton").click(function(){
-  if( $(".checkallbutton input").is(":checked") ){
-    $(".tocheck input").prop("checked",true)
-  }else{
-    $(".tocheck input").prop("checked",false)
-  }
-});
-$(".tocheck").click(function(){
-  var tocheckNumber = $(".tocheck").length;
-  if( $(".tocheck input:checked").length == $(".tocheck").length ){
-    $(".checkallbutton input").prop("checked",true)
-    console.log("等于")
-  }else{
-    $(".checkallbutton input").prop("checked",false)
-  }
-});
+     if( $(".checkallbutton input").is(":checked") ){
+      var setScoreLi = $(".object-list li").length;
+       for( var i = 1; i < setScoreLi; i++ ){
+         var objectText = $(".object-list li").eq(i).text();
+          var appendLi = "<li><span class='name'>"+objectText+"</span>(最高分)<input type='text' class='form-control'></li>";
+          $(".set-score-list").append(appendLi);
+       }
+    }else{
+      $(".set-score-list li").remove();
+    }
+  });
+
 </script>
 
 </body>

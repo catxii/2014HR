@@ -10,8 +10,8 @@
         // the only LC-specific thing we have to do
         function addCanvas(){
 	        $('.SECT').literallycanvas();
-	        $(".SECT").not( $(".SECT:first") ).hide();
-	        var pageChangeul = "<ul class='page-change left'><li class='arrow-up'><span class='button icon-up-arrow'></span></li><li class='arrow-up-one'><span class='button icon-circle-arrow-top'></span></li><li class='arrow-down-one'><span class='button icon-circle-arrow-down'></span></li><li class='arrow-down'><span class='button icon-down-arrow'></span></li></ul><ul class='page-change right'><li class='arrow-up'><span class='button icon-up-arrow'></span></li><li class='arrow-up-one'><span class='button icon-circle-arrow-top'></span></li><li class='arrow-down-one'><span class='button icon-circle-arrow-down'></span></li><li class='arrow-down'><span class='button icon-down-arrow'></span></li></ul>"
+	        // $(".SECT").not( $(".SECT:first") ).hide();
+	        var pageChangeul = "<ul class='page-change mid'><li class='arrow-up'><span class='button icon-step-backward'></span></li><li class='arrow-up-one'><span class='button icon-chevron-left'></span></li><li class='arrow-down-one'><span class='button icon-chevron-right'></span></li><li class='arrow-down'><span class='button icon-step-forward'></span></li></ul>"
 			function appenPageul(){
 			  $(".SECT").append( pageChangeul );
 			}
@@ -22,12 +22,6 @@
 		}
 		function canvasShow(){
 			$("canvas,.page-change,.toolbar").show();
-		}
-
-		function wordaddCanvas(){
-	        $('.SECT2').literallycanvas();
-	        var wordHeight = document.body.scrollHeight;
-			$(".SECT2").css("height",wordHeight);
 		}
 
 		$(".sidebar").on("click","ul li a",function(){
@@ -52,6 +46,7 @@
 
 		function liAddCurrent(){
 			var SECTIndex = $(".SECT:visible").index();
+			sectid=SECTIndex+1;//MY
 			$(".sidebar li").eq(SECTIndex).addClass("current").siblings().removeClass("current");
 		}
 
