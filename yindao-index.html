@@ -11,12 +11,17 @@
   <!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
   <script type="text/JavaScript" src="space-css.js"></script>
   <!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+  <style type="text/css">
+    .col-md-3 {
+      width: 20%;
+    }
+  </style>
 
   <title>领信样式模板</title>
 
 </head>
 <body class="fixed-top-body" ng-app="">
-<div class="navbar navbar-zhijiao navbar-green navbar-fixed-top">
+<div class="navbar navbar-zhijiao navbar-green navbar-fixed-top" style="height:36px; min-height:36px;">
   <div class="container">
     <div class="navbar-header">
       <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
@@ -121,12 +126,57 @@
        </ul>
     </div>
     <div class="panel-body">
+       <div class="col-md-3">
+        <h4 style="margin-bottom:10px;" ><span class="num-round" >1</span> 学校空间</h4>
+        <div class="list-group" style="min-height:333px;">
+          <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading"><span class="icon-home"></span> 学校信息展示</h4>
+          </a>
+          <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading"><span class="icon-bullhorn"></span>  通知公告</h4>
+          </a>
+          <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading"><span class="icon-group"></span> 师资队伍</h4>
+          </a>
+          <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading"><span class="icon-sampler"></span> 学生天地</h4>
+          </a>
+          <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading"><span class="icon-certificate"></span> 活跃班级</h4>
+          </a>
+          <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading"><span class="icon-keynote"></span> 教研平台</h4>
+          </a>
+        </div>
+      </div>
       <div class="col-md-3">
-      <h4 style="margin-bottom:10px;" class="green"><span class="num-round">1</span> 教学空间</h4>
+        <h4 style="margin-bottom:10px;" class="green"><span class="num-round">2</span> 班级空间</h4>
+        <div class="list-group" style="min-height:333px;">
+          <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading"><span class="icon-globe"></span> 学校班级总览</h4>
+            <p class="list-group-item-text gray">可浏览本校的所有班级主页，藉此建立班级之间的联系和互动。</p>
+          </a>
+          <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading"><span class="icon-cogwheels"></span> 我管理的班级</h4>
+          <p class="list-group-item-text gray">可管理该账号负责的所有班级的班级考评、成员公告、<span class="red">德能银行(德育管理)</span>、班级日志、照片墙、课程表、班级作业、班级信息管理等班级相关展示内容。</p>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3">
+      <h4 style="margin-bottom:10px;" class="green"><span class="num-round">3</span> 教学空间</h4>
         <div class="list-group" style="min-height:333px;">
           <a href="#" class="list-group-item">
           <h4 class="list-group-item-heading "><span class="icon-keynote"></span> 我的备课</h4>
             <p class="list-group-item-text gray">协助教师备课，提供课程章节目录和课程表，在对应的课程章节上使用在教学工具组织备课内容、发布课堂作业、进行随堂测试。</p>
+
+            <ul class="list-unstyled index-list-option">
+              <li>1，协同备课</li>
+              <li>2，网页ppt/word</li>
+              <li>3，电子作业</li>
+              <li>4，随堂测试</li>
+              <li>5，教师推荐</li>
+            </ul>
+
           </a>
           <a href="#" class="list-group-item">
           <h4 class="list-group-item-heading"><span class="icon-cloud-download"></span> 资源库</h4>
@@ -139,7 +189,7 @@
         </div>
       </div>
       <div class="col-md-3">
-        <h4 style="margin-bottom:10px;" class="green"><span class="num-round">2</span> 个人空间</h4>
+        <h4 style="margin-bottom:10px;" class="green"><span class="num-round">4</span> 个人空间</h4>
         <div class="list-group" style="min-height:333px;">
           <a href="#" class="list-group-item">
           <h4 class="list-group-item-heading"><span class="icon-book"></span> 日志</h4>
@@ -164,26 +214,35 @@
         </div>
       </div>
       <div class="col-md-3">
-        <h4 style="margin-bottom:10px;" class="green"><span class="num-round">3</span> 班级空间</h4>
+        <h4 style="margin-bottom:10px;" class="green"><span class="num-round">5</span> APP</h4>
         <div class="list-group" style="min-height:333px;">
           <a href="#" class="list-group-item">
-          <h4 class="list-group-item-heading"><span class="icon-globe"></span> 学校班级总览</h4>
-            <p class="list-group-item-text gray">可浏览本校的所有班级主页，藉此建立班级之间的联系和互动。</p>
+          <h4 class="list-group-item-heading"><span class="icon-conversation"></span> 私信</h4>
           </a>
           <a href="#" class="list-group-item">
-          <h4 class="list-group-item-heading"><span class="icon-cogwheels"></span> 我管理的班级</h4>
-          <p class="list-group-item-text gray">可管理该账号负责的所有班级的班级考评、成员公告、<span class="red">德能银行</span>、班级日志、照片墙、课程表、班级作业、班级信息管理等班级相关展示内容。</p>
+          <h4 class="list-group-item-heading"><span class=" icon-stats"></span> 成绩单</h4>
+          </a>
+          <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading"><span class="icon-bank"></span> 德能银行</h4>
+          </a>
+          <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading"><span class="icon-group"></span> 课程表</h4>
+          </a>
+          <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading"><span class="icon-more-items"></span> 家庭作业</h4>
+          </a>
+          <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading"><span class="icon-bullhorn"></span> 通知公告</h4>
+          </a>
+          <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading"><span class=" icon-bus"></span> 平安到校</h4>
+          </a>
+          <a href="#" class="list-group-item">
+          <h4 class="list-group-item-heading"><span class="icon-message-flag"></span> 校长信箱</h4>
           </a>
         </div>
       </div>
-      <div class="col-md-3">
-        <h4 style="margin-bottom:10px;" class="gray"><span class="num-round" style="background:#ccc;box-shadow:none;">4</span> 学校空间</h4>
-        <div class="list-group" style="min-height:333px;">
-          <a href="#" class="list-group-item">
-          <p class="list-group-item-text gray text-center" style="padding: 50px 0px;"><span class="icon-claw-hammer"></span> 积极筹备中...</p>
-          </a>
-        </div>
-      </div>
+      
     </div>
   </div>
 </div>

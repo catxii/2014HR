@@ -1150,8 +1150,8 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 }
 .nav-tabs .close {
   position: absolute;
-  right: 3px;
-  top: 3px;
+  right: 4px;
+  top: 5px;
   padding: 0;
   margin: 0;
   z-index: 10;
@@ -1159,6 +1159,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   border: none;
   cursor: pointer!important;
   border: none!important;
+  font-size: 12px;
 }
 .nav-tabs .close:hover {
   background: none;
@@ -2434,6 +2435,9 @@ slide {
   width: 1000px;
   overflow: auto;
 }
+.ppt-tab li a {
+  outline: none;
+}
 .ppt-position-right-ul {
   border: 1px solid #ccc;
   border-bottom: none;
@@ -2447,4 +2451,15 @@ slide {
 }
 .ppt-position-right-ul li {
   margin-left: 5px;
+}
+.index-list-option {
+  padding-left: 10px;
+  margin: 5px 0 10px;
+  background: #eee;
+  border-left: 3px solid #ccc;
+  border-radius: 10px 0px 0px 10px;
+}
+.index-list-option li {
+  font-size: 12px;
+  line-height: 22px;
 }
