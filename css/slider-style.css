@@ -143,8 +143,7 @@
 }
 .cs-circleslight .br-slideinfo .br-infocontent {
 	/*background: url('../img/bg/info-pat.png');*/
-	background: url('../img/textBgln1.png') repeat;
-	/*background: rgba(0,0,0,0.8);*/
+	background: rgba(0,0,0,0.8);
 	font-size: 12px;
 }
 .cs-circleslight .br-infocontent .title,  .cs-circleslight .br-infocontent .text {
