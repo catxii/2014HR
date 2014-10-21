@@ -86,8 +86,8 @@ div.WordSection1
 </style>
 
 <!-- 样式添加开始 -->
-	<script type="text/javascript" src="js/appen-canvas.js"></script> 
-	<link href="css/canvas-style-word.css" rel="stylesheet">
+<!-- 	<script type="text/javascript" src="js/appen-canvas.js"></script> 
+	<link href="css/canvas-style-word.css" rel="stylesheet"> -->
 <!-- 样式添加结束 -->
 
 </head>
@@ -699,9 +699,10 @@ height=824 src="data:image/jpg;base64,/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAgGBgcGBQ
 <!-- 功能添加开始 -->
 	<script type="text/javascript" src="js/canvas-pulgin.js"></script>
 	<script type="text/javascript">
+		$('.SECT').literallycanvas();
 		var wordHeight = document.body.scrollHeight;
 		$(".SECT2").css("height",wordHeight);
-		wordaddCanvas();  //调用画板
+		//wordaddCanvas();  //调用画板
 		// canvasHide(); //隐藏画板
 		// canvasShow(); //显示画板
 	</script>

@@ -5,13 +5,12 @@ function loadJS(filename){
 		document.write(filename[i]);
 	}
 }
-
+var netAddress="/linktrust/static/";
 var filegroup = [
-	"<link href='libs/literallycanvas/lib/css/colorpicker.css' rel='stylesheet'>",
-	"<link href='libs/literallycanvas/lib/css/literally.css' rel='stylesheet'>",
-	"<link href='css/canvas-style.css' rel='stylesheet'>",
-	"<link href='libs/glyphicons/css/glyphicons.css' rel='stylesheet'>",
-	"<script src='libs/literallycanvas/lib/js/literallycanvas.fat.js'></script>"
+	"<link href='"+netAddress+"libs/literallycanvas/lib/css/colorpicker.css' rel='stylesheet'>",
+	"<link href='"+netAddress+"libs/literallycanvas/lib/css/literally.css' rel='stylesheet'>",
+	"<link href='"+netAddress+"css/canvas-style.css' rel='stylesheet'>",
+	"<link href='"+netAddress+"libs/glyphicons/css/glyphicons.css' rel='stylesheet'>"
 	]
 
 loadJS(filegroup);

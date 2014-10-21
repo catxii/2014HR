@@ -11,7 +11,12 @@
         function addCanvas(){
 	        $('.SECT').literallycanvas();
 	        // $(".SECT").not( $(".SECT:first") ).hide();
-	        var pageChangeul = "<ul class='page-change mid'><li class='arrow-up'><span class='button icon-step-backward'></span></li><li class='arrow-up-one'><span class='button icon-chevron-left'></span></li><li class='arrow-down-one'><span class='button icon-chevron-right'></span></li><li class='arrow-down'><span class='button icon-step-forward'></span></li></ul>"
+	        var pageChangeul = "<ul class='page-change mid'>"+
+	        "<li class='arrow-up' style='display:none'><span class='button icon-step-backward'></span></li>"+
+	        "<li class='arrow-up-one button '><span class='icon-chevron-left'></span>后退</li>"+
+	        "<li class='arrow-down-one button '>前进<span class='icon-chevron-right'></span></li>"+
+	        "<li class='arrow-down'  style='display:none'><span class='button icon-step-forward'></span> 后退</li>"+
+	        "</ul>"
 			function appenPageul(){
 			  $(".SECT").append( pageChangeul );
 			}
