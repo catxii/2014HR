@@ -369,4 +369,12 @@ $(function(){
 		obj.className = "";
 		obj.innerHTML = obj.innerHTML.replace(/－/g, "＋");
 	}
+	
 }
+    $(document).ready(function(){
+	$("ul.top-nav-bar-bottom li a").click(function() {
+		$("ul.top-nav-bar-bottom li").removeClass("selected");
+		$(this).parents().addClass("selected");
+		return false;
+	});
+});

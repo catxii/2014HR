@@ -442,7 +442,7 @@ a.list-grouping-fen-more{
 .class-index-container .panel{
 	border-radius:2px; border:none; margin-bottom:10px;}
 .class-index-center .panel-class-photo,.class-index-left .panel-class-photo{
-	background-color:rgba(0,0,0,0.05); padding:5px;}
+	background-color:rgba(203, 203, 203, 1); padding:5px;}
 .class-index-center .panel-class-photo .panel-body{
 	background:#FFF;}
 .class-index-left .panel-class-Set{
