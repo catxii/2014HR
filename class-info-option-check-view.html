@@ -353,8 +353,8 @@
                     <li><a class="btn btn-xs btn-default lightbox-jyjl" href="javascript:void(0)">查看证书</a>
                     <ul class="img-views">
                       <li class="img"><img src="img/001.jpg"></li>
-                      <li class="img"><img src="img/002.jpg"></li>
-                      <li class="img"><img src="img/003.jpg"></li>
+                      <li class="img"><img src="img/bga-school.jpg"></li>
+                      <li class="img"><img src="img/banner2.jpg"></li>
                     </ul>
                     </li>
                   </ul>
@@ -866,17 +866,49 @@
 
 <script type="text/javascript">
   $(function(){
+    var doButton = "<li class='infodo'>" +
+                     "<a href='javascript:void(0)' class='close icon-circle-remove'></a>" +
+                     "<a href='javascript:void(0)' class='prev public-btn icon-chevron-left' style='display:none'></a>" +
+                     "<a href='javascript:void(0)' class='next public-btn icon-chevron-right'></a>" +
+                     "</li>";
+    $(".img-views").append(doButton); //追加操作按钮
     $(".lightbox-jyjl").click(function(){
       $(this).next(".img-views").show(); //显示图片 
       $("body").append("<div class='modal-backdrop fade in'></div>") //追加黑色mask
-      var doButton = "<li class='infodo'>" +
-                     "<a href='javascript:void(0)' class='close icon-circle-remove'></a>" +
-                     "<a href='javascript:void(0)' class='next icon-chevron-left'></a>" +
-                     "<a href='javascript:void(0)' class='prev icon-chevron-right'></a>" +
-                     "</li>";
-      $(".img-views").append(doButton);
-
+      $(this).next(".img-views").find(".img:first").show().siblings(".img").hide();
+      $(this).next(".img-views").find(".prev").hide();
+      $(this).next(".img-views").find(".next").show();
+      var imgHeight = $(this).next(".img-views").find(".img:first img").height();
+      $(this).next(".img-views").css("margin-top",-imgHeight/2);
     })
+
+    $(".img-views").on("click",".close",function(){ //关闭按钮
+      $(this).closest("ul").hide();
+      $(".modal-backdrop").remove();
+    });
+
+    $(".img-views").on("click",".next.public-btn",function(){
+      var imgIndex = $(this).closest(".img-views").find(".img").length - 1;
+      $(this).closest("ul").find(".img:visible").next(".img").show().siblings(".img").hide();
+      $(this).closest("ul").find(".prev").show();
+      if ( $(this).closest("ul").find(".img:visible").index() == imgIndex ) {
+        $(this).hide();
+      }
+      var imgHeight = $(this).closest("ul").find(".img:visible img").height();
+      $(this).closest(".img-views").css("margin-top",-imgHeight/2);
+    });
+
+    $(".img-views").on("click",".prev.public-btn",function(){
+      var imgIndex = 0;
+      $(this).closest("ul").find(".img:visible").prev(".img").show().siblings(".img").hide();
+      $(this).closest("ul").find(".next").show();
+      if ( $(this).closest("ul").find(".img:visible").index() == imgIndex ) {
+        $(this).hide();
+      }
+      var imgHeight = $(this).closest("ul").find(".img:visible img").height();
+      $(this).closest(".img-views").css("margin-top",-imgHeight/2);
+    });
+
     $(".file-next-page").click(function(){  //显示下一页
       $(this).closest(".file-nr-box").hide().next(".file-nr-box").show();
     });

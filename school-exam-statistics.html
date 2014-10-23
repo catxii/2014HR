@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="../../favicon.ico">
+	<title>领信样式模板</title>
+
+	<!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+	<script type="text/JavaScript" src="space-css.js"></script>
+	<!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+
+</head>
+<body class="fixed-top-body" ng-app="" data-spy="scroll" data-target=".navbar-example">
+	<input type="hidden" id="navigation-top-menu" name="navigation-top-menu" value="navigation-top-school-xzhpt">
+	<input type="hidden" id="space-class-menu" name="space-class-menu" value="space-school-scoreinfo">
+	<input type="hidden" id="space-class-menu-two" name="space-class-menu-two" value="space-school-scoreinfo1">
+	<!-- 引入顶部 -->
+
+	<div class="navbar navbar-zhijiao navbar-green navbar-fixed-top " style="height:36px; min-height:36px;">
+		<div class="container">
+			<div class="navbar-header">
+				<button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a target="_blank" href="/linktrust/home/index" class="navbar-brand logo-small" alt="领信logo"></a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+
+					<li id="navigation-top-teacher-lsn">
+						<a href="/linktrust/space/lsn/index">教学空间</a>
+					</li>
+					<li id="navigation-top-teacher-personal">
+						<a href="/linktrust/space/index/main">个人空间</a>
+					</li>
+
+					<li id="navigation-top-school-class">
+						<a href="/linktrust/space/class/index/main">班级空间</a>
+					</li>
+					<li id="navigation-top-school-space">
+						<a href="/linktrust/others/school/index?schoolId=53f691f1a2d2f7034bdf2a07">学校空间</a>
+					</li>
+
+					<li id="navigation-top-school-xzhpt">
+						<a href="/linktrust/space/school/index?schoolId=53f691f1a2d2f7034bdf2a07">校综合平台</a>
+					</li>
+
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+
+					<li>
+
+						<a href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle">
+							彭志宏
+										
+											(
+							<span class="user-role">华容实验初中学校管理员</span>
+							<span class="caret"></span>
+							)
+						</a>
+
+						<ul role="menu" class="dropdown-menu">
+
+							<li>
+								<a href="javascript:void(0)" onclick="doChangeRole('53e98cbcb3bb260e3e3f6cf6', '华容实验初中学校管理员')">华容实验初中学校管理员</a>
+							</li>
+
+						</ul>
+
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<span class="icon-t-shirt"></span>
+						</a>
+					</li>
+					<li>
+						<a href="/linktrust/space/pm/index">
+							<span class="icon-envelope" style="position:relative;">
+								<span id="pmNotReadCount" class="red-round" style="display: none"></span>
+							</span>
+						</a>
+					</li>
+					<li class="dropdown">
+						<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+							<span class=" icon-cogwheel"></span>
+							设置
+							<span class="caret"></span>
+						</a>
+						<ul role="menu" class="dropdown-menu">
+
+							<li>
+								<a href="/linktrust/sys/site/login" target="_blank">后台管理</a>
+							</li>
+							<li class="divider"></li>
+
+							<li>
+								<a href="/linktrust/sys/user/setup/account">个人设置</a>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<a href="/linktrust/sys/site/logout">退出</a>
+							</li>
+						</ul>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+	function doChangeRole(id, text) {
+		$('.user-role').text(text);
+		var url = window.location.href;
+		window.location.href = '/linktrust/sys/site/changeRole?roleid=' + id + '&url=' + url;
+	}
+</script>
+	<div class="container">
+		<div class="col-md-12">
+			<div class="panel panel-default clear-border">
+				<div class="panel-body" style="padding: 15px;">
+					<!-- 引入空间中间头部 -->
+
+					<!--导航-->
+					<div class="col-md-2 clear-padding ht-left">
+						<!-- 分类 -->
+						<div class="panel panel-default clear-border">
+
+							<div class="panel-body clear-padding">
+
+								<ul class="expmenu col-md-12 clear-padding clear-margin">
+									<li>
+										<div class="headers">
+											<span class="label">学校综合平台</span>
+										</div>
+
+										<ul class="menu-menu col-md-12 clear-padding" style="display:block;">
+
+											<li id="space-school-news" onClick="javascript:ShowMenu(this,0)">
+												<a href="javascript:void(0)">校空间动态信息</a>
+											</li>
+											<ol id="ol-space-school-news" class="no">
+
+												<a id="space-school-news1"  href="/linktrust/space/school/news/main?type=1&schoolId=53f691f1a2d2f7034bdf2a07">学校新闻</a>
+
+												<a id="space-school-news2"  href="/linktrust/space/school/news/main?type=2&schoolId=53f691f1a2d2f7034bdf2a07">通知公告</a>
+
+												<a id="space-school-news3"  href="/linktrust/space/school/newscata/main?type=3&schoolId=53f691f1a2d2f7034bdf2a07">自定义栏目配置</a>
+
+												<a id="space-school-news4"  href="/linktrust/space/school/link/main?a=a&schoolId=53f691f1a2d2f7034bdf2a07">友情连接</a>
+
+											</ol>
+
+											<li id="space-school-tuijian-main" onClick="javascript:ShowMenu(this,1)">
+												<a href="javascript:void(0)">校空间推荐</a>
+											</li>
+											<ol id="ol-space-school-tuijian-main" class="no">
+
+												<a id="space-school-tuijian-main1"  href="/linktrust/space/school/best/teacher/main?a=a&schoolId=53f691f1a2d2f7034bdf2a07">优秀教师</a>
+
+												<a id="space-school-tuijian-main2"  href="/linktrust/space/school/best/teacher/ms/main?a=a&schoolId=53f691f1a2d2f7034bdf2a07">师资队伍</a>
+
+												<a id="space-school-tuijian-main3"  href="/linktrust/space/school/best/student/main?a=a&schoolId=53f691f1a2d2f7034bdf2a07">学生天地</a>
+
+												<a id="space-school-tuijian-main4"  href="/linktrust/space/school/best/class/main?a=a&schoolId=53f691f1a2d2f7034bdf2a07">班级园地</a>
+
+											</ol>
+
+											<li id="space-school-schoolinfo" onClick="javascript:ShowMenu(this,2)">
+												<a href="javascript:void(0)">校空间管理</a>
+											</li>
+											<ol id="ol-space-school-schoolinfo" class="no">
+
+												<a id="space-school-schoolinfo1"  href="/linktrust/space/school/base/main?a=a&schoolId=53f691f1a2d2f7034bdf2a07">校信息设置</a>
+
+												<a id="space-school-schoolinfo2"  href="/linktrust/space/school/banner/main?a=a&schoolId=53f691f1a2d2f7034bdf2a07">校风貌图片</a>
+
+												<a id="space-school-schoolinfo3"  href="/linktrust/space/class/virtue/catmain?a=a&schoolId=53f691f1a2d2f7034bdf2a07">德能评分项管理</a>
+
+												<a id="space-school-schoolinfo4"  href="/linktrust/space/school/module/main?a=a&schoolId=53f691f1a2d2f7034bdf2a07">论坛版块配置</a>
+
+												<a id="space-school-schoolinfo8"  href="/linktrust/space/school/menu/roleMain?a=a&schoolId=53f691f1a2d2f7034bdf2a07">角色管理</a>
+
+												<a id="space-school-schoolinfo9"  href="/linktrust/space/school/menu/main?a=a&schoolId=53f691f1a2d2f7034bdf2a07">菜单管理</a>
+
+												<a id="space-school-schoolinfo10"  href="/linktrust/space/school/jurisdiction/main?a=a&schoolId=53f691f1a2d2f7034bdf2a07">权限管理</a>
+
+												<a id="space-school-schoolinfo11"  href="/linktrust/space/school/mail/index?a=a&schoolId=53f691f1a2d2f7034bdf2a07">校长留言审核</a>
+
+											</ol>
+
+											<li id="space-school-schoolreport" onClick="javascript:ShowMenu(this,3)">
+												<a href="javascript:void(0)">报表管理</a>
+											</li>
+											<ol id="ol-space-school-schoolreport" class="no">
+
+												<a id="space-school-schoolreport1"  href="/linktrust/space/school/lsnreport/main?a=a&schoolId=53f691f1a2d2f7034bdf2a07">教学报表</a>
+
+												<a id="space-school-schoolreport2"  href="/linktrust/space/school/catasum/main?a=a&schoolId=53f691f1a2d2f7034bdf2a07">日志报表</a>
+
+												<a id="space-school-schoolreport3"  href="/linktrust/space/school/loginlogger/main?a=a&schoolId=53f691f1a2d2f7034bdf2a07">登陆日志</a>
+
+												<a id="space-school-schoolreport4"  href="/linktrust/space/school/online/main?a=a&schoolId=53f691f1a2d2f7034bdf2a07">在线用户</a>
+
+												<a id="space-school-schoolreport5"  href="/linktrust/space/school/spaceaddr/main?a=a&schoolId=53f691f1a2d2f7034bdf2a07">空间地址</a>
+
+												<a id="space-school-schoolreport6"  href="/linktrust/space/school/best/teacher/jy/main?a=a&schoolId=53f691f1a2d2f7034bdf2a07">备课检查</a>
+
+											</ol>
+
+											<li id="space-school-recordinfo" onClick="javascript:ShowMenu(this,4)">
+												<a href="javascript:void(0)">档案管理</a>
+											</li>
+											<ol id="ol-space-school-recordinfo" class="no">
+
+												<a id="space-school-recordinfo1"  href="/linktrust/space/record/approveby/main?a=a&schoolId=53f691f1a2d2f7034bdf2a07">指定审核人</a>
+
+												<a id="space-school-recordinfo2"  href="/linktrust/space/record/approve/main?a=a&schoolId=53f691f1a2d2f7034bdf2a07">档案审核</a>
+
+												<a id="space-school-recordinfo3"  href="/linktrust/space/record/list/main?a=a&schoolId=53f691f1a2d2f7034bdf2a07">档案列表</a>
+
+												<a id="space-school-recordinfo4"  href="/linktrust/space/record/logger/main?a=a&schoolId=53f691f1a2d2f7034bdf2a07">审核日志</a>
+
+												<a id="space-school-recordinfo5"  href="/linktrust/space/record/modify/main?a=a&schoolId=53f691f1a2d2f7034bdf2a07">档案修改</a>
+
+											</ol>
+
+											<li id="space-school-scoreinfo" onClick="javascript:ShowMenu(this,5)">
+												<a href="javascript:void(0)">考试成绩管理</a>
+											</li>
+											<ol id="ol-space-school-scoreinfo" class="no">
+
+												<a id="space-school-scoreinfo1"  href="/linktrust/space/score/school/exam/list?a=a&schoolId=53f691f1a2d2f7034bdf2a07">考试列表</a>
+
+											</ol>
+
+										</ul>
+
+									</li>
+
+								</ul>
+
+							</div>
+						</div>
+
+					</div>
+					<div class="col-md-10">
+						<div class="panel panel-default " style="padding: 0px;">
+							<div class="panel-heading tab-header">
+								<ul class="inline-block-ul navigation-inline-ul">
+									<li class="current">
+										<a href="javascript:void(0)">成绩统计</a>
+									</li>
+								</ul>
+							</div>
+							<div class="panel-body " style="padding: 0px 5px; min-height: 350px;">
+								<ul class="inline-block-ul exam-info-alert-box">
+								<li><span class="name">考试号：</span>2014000008</li>
+								<li><span class="name">考试范围：</span>学校</li>
+								<li><span class="name">年度：</span>2014</li>
+								<li><span class="name">年级：</span>初二</li>
+								<li><span class="name">学期：</span>上学期</li>
+								<li><span class="name">考试类型：</span>期中</li>
+								<li><span class="name">考试科目列表：</span>语文、数学、英语、物理、地理、历史、生物、思品</li>
+							</ul>
+								<ul class="inline-block-ul-mid exam-stat-info-list clearfix" style="margin-bottom:0; padding-bottom:0;">
+									<li><label class="name">优秀成绩</label><input type="text" class="form-control" name="goodScoreRate" value="80.0"><span class="bfb">%</span></li>
+									<li><label class="name">及格成绩</label><input type="text" class="form-control" name="goodScoreRate" value="80.0"><span class="bfb">%</span></li>
+									<li><label class="name">平均分积分</label><input type="text" class="form-control" name="goodScoreRate" value="80.0"><span class="bfb">%</span></li>
+									<li><label class="name">优秀率积分</label><input type="text" class="form-control" name="goodScoreRate" value="80.0"><span class="bfb">%</span></li>
+									<li><label class="name">及格率积分</label><input type="text" class="form-control" name="goodScoreRate" value="80.0"><span class="bfb">%</span></li>
+									<li style="width:99%;"><label class="name">分数段</label><input type="text" class="form-control" name="goodScoreRate" value="80.0" placeholder="请使用 XX-XX,XX-XX的格式录入" ></li>
+								</ul>
+								<ul class="inline-block-ul-mid btn-center list-unstyled " style="padding-bottom:10px; border-bottom:1px dashed #ccc; margin-bottom:20px;">
+									<li><input type="button" value="生成" class="btn btn-primary"></li>
+									<li><input type="button" value="成绩统计表下载" class="btn btn-default"></li>
+									<li><input type="button" value="综合分析表下载" class="btn btn-default"></li>
+								</ul>
+								
+								<div class="btn-group btn-center clearfix label-tab-button" data-toggle="buttons" style="display: block; margin: 0 auto 10px; width: 280px;">
+								  <label class="btn btn-default active">
+								  	<input type="radio" name="options" id="option1" autocomplete="off" checked> 成绩统计
+								  </label>
+								  <label class="btn btn-default">
+								  	<input type="radio" name="options" id="option2" autocomplete="off"> 综合分析
+								  </label>
+								  <label class="btn btn-default">
+								  <input type="radio" name="options" id="option3" autocomplete="off"> 生成统计图表
+								  </label>
+								</div>
+
+								<div class="nr-tab-content" style="display:block;">
+									<table class="exam-table"  border="1" width="100%">
+										<tr>
+											<td rowspan="2" align="center">科目</td>
+											<td rowspan="2" align="center">班级</td>
+											<td rowspan="2" align="center">人数</td>
+											<td rowspan="2" align="center">总分</td>
+											<td rowspan="2" align="center">平均分</td>
+											<td rowspan="2" align="center">积分</td>
+											<td rowspan="2" align="center">优秀率</td>
+											<td rowspan="2" align="center">积分</td>
+											<td rowspan="2" align="center">及格率</td>
+											<td rowspan="2" align="center">积分</td>
+											<td rowspan="2" align="center">总积分</td>
+											<td rowspan="2" align="center">名次</td>
+											<td rowspan="2" align="center">教者</td>
+											<td colspan="7" align="center">分段统计</td>
+										</tr>
+										<tr>
+
+											<td align="center">100</td>
+
+											<td align="center">100-90</td>
+
+											<td align="center">90-80</td>
+
+											<td align="center">80-70</td>
+
+											<td align="center">70-60</td>
+
+											<td align="center">60-50</td>
+
+											<td align="center">50-0</td>
+
+										</tr>
+
+										<tr>
+
+											<td rowspan="12" align="center">语文</td>
+
+											<td align="center">1201</td>
+											<td align="center">63</td>
+											<td align="center">4,602</td>
+											<td align="center">73.05</td>
+											<td align="center">29.22</td>
+											<td align="center">26.98</td>
+											<td align="center">5.40</td>
+											<td align="center">93.65</td>
+											<td align="center">37.46</td>
+											<td align="center">72.08</td>
+											<td align="center">2</td>
+											<td align="center"></td>
+
+											<td align="center">0</td>
+
+											<td align="center">0</td>
+
+											<td align="center">17</td>
+
+											<td align="center">27</td>
+
+											<td align="center">15</td>
+
+											<td align="center">2</td>
+
+											<td align="center">2</td>
+
+										</tr>
+
+										<tr>
+
+											<td align="center">1202</td>
+											<td align="center">67</td>
+											<td align="center">4,576</td>
+											<td align="center">68.3</td>
+											<td align="center">27.32</td>
+											<td align="center">16.42</td>
+											<td align="center">3.28</td>
+											<td align="center">82.09</td>
+											<td align="center">32.84</td>
+											<td align="center">63.44</td>
+											<td align="center">10</td>
+											<td align="center"></td>
+
+											<td align="center">0</td>
+
+											<td align="center">0</td>
+
+											<td align="center">11</td>
+
+											<td align="center">26</td>
+
+											<td align="center">18</td>
+
+											<td align="center">7</td>
+
+											<td align="center">5</td>
+
+										</tr>
+
+										<tr>
+
+											<td align="center">1203</td>
+											<td align="center">66</td>
+											<td align="center">4,792</td>
+											<td align="center">72.61</td>
+											<td align="center">29.04</td>
+											<td align="center">15.15</td>
+											<td align="center">3.03</td>
+											<td align="center">98.48</td>
+											<td align="center">39.39</td>
+											<td align="center">71.47</td>
+											<td align="center">4</td>
+											<td align="center"></td>
+
+											<td align="center">0</td>
+
+											<td align="center">0</td>
+
+											<td align="center">10</td>
+
+											<td align="center">36</td>
+
+											<td align="center">19</td>
+
+											<td align="center">0</td>
+
+											<td align="center">1</td>
+
+										</tr>
+
+										
+
+										
+
+										
+
+										<tr>
+
+											<td align="center">1208</td>
+											<td align="center">65</td>
+											<td align="center">5,388</td>
+											<td align="center">82.89</td>
+											<td align="center">33.16</td>
+											<td align="center">66.15</td>
+											<td align="center">13.23</td>
+											<td align="center">98.46</td>
+											<td align="center">39.38</td>
+											<td align="center">85.77</td>
+											<td align="center">6</td>
+											<td align="center"></td>
+
+											<td align="center">0</td>
+
+											<td align="center">19</td> 
+
+											<td align="center">24</td>
+
+											<td align="center">15</td>
+
+											<td align="center">6</td>
+
+											<td align="center">0</td>
+
+											<td align="center">1</td>
+
+										</tr>
+
+										<tr>
+
+											<td align="center">1209</td>
+											<td align="center">67</td>
+											<td align="center">5,647</td>
+											<td align="center">84.28</td>
+											<td align="center">33.71</td>
+											<td align="center">79.10</td>
+											<td align="center">15.82</td>
+											<td align="center">98.51</td>
+											<td align="center">39.40</td>
+											<td align="center">88.94</td>
+											<td align="center">3</td>
+											<td align="center"></td>
+
+											<td align="center">0</td>
+
+											<td align="center">18</td>
+
+											<td align="center">35</td>
+
+											<td align="center">11</td>
+
+											<td align="center">2</td>
+
+											<td align="center">1</td>
+
+											<td align="center">0</td>
+
+										</tr>
+
+										<tr>
+
+											<td align="center">1210</td>
+											<td align="center">67</td>
+											<td align="center">5,397</td>
+											<td align="center">80.55</td>
+											<td align="center">32.22</td>
+											<td align="center">61.19</td>
+											<td align="center">12.24</td>
+											<td align="center">100.00</td>
+											<td align="center">40.00</td>
+											<td align="center">84.46</td>
+											<td align="center">9</td>
+											<td align="center"></td>
+
+											<td align="center">0</td>
+
+											<td align="center">8</td>
+
+											<td align="center">33</td>
+
+											<td align="center">15</td>
+
+											<td align="center">11</td>
+
+											<td align="center">0</td>
+
+											<td align="center">0</td>
+
+										</tr>
+
+										<tr>
+
+											<td align="center">1211</td>
+											<td align="center">68</td>
+											<td align="center">5,537</td>
+											<td align="center">81.43</td>
+											<td align="center">32.57</td>
+											<td align="center">67.65</td>
+											<td align="center">13.53</td>
+											<td align="center">97.06</td>
+											<td align="center">38.82</td>
+											<td align="center">84.92</td>
+											<td align="center">8</td>
+											<td align="center"></td>
+
+											<td align="center">0</td>
+
+											<td align="center">15</td>
+
+											<td align="center">31</td>
+
+											<td align="center">14</td>
+
+											<td align="center">6</td>
+
+											<td align="center">1</td>
+
+											<td align="center">1</td>
+
+										</tr>
+
+										<tr>
+
+											<td align="center">合计</td>
+											<td align="center">730</td>
+											<td align="center">60,524</td>
+											<td align="center">82.91</td>
+											<td align="center"></td>
+											<td align="center">69.45</td>
+											<td align="center"></td>
+											<td align="center">98.36</td>
+											<td align="center"></td>
+											<td align="center"></td>
+											<td align="center"></td>
+											<td align="center"></td>
+
+											<td align="center">0</td>
+
+											<td align="center">196</td>
+
+											<td align="center">311</td>
+
+											<td align="center">156</td>
+
+											<td align="center">55</td>
+
+											<td align="center">8</td>
+
+											<td align="center">4</td>
+
+										</tr>
+
+									</table>
+								</div>
+								<div class="nr-tab-content">
+									<table width="100%" border="1" class="exam-table"  >
+										<tbody>
+											<tr>
+											<td align="center" rowspan="2">班级</td>
+											<td align="center" rowspan="2">人数</td>
+											
+												<td align="center" colspan="3">语文</td>
+											
+												<td align="center" colspan="3">数学</td>
+											
+												<td align="center" colspan="3">英语</td>
+											
+												<td align="center" colspan="3">物理</td>
+											
+												<td align="center" colspan="3">地理</td>
+											
+												<td align="center" colspan="3">历史</td>
+											
+												<td align="center" colspan="3">生物</td>
+											
+												<td align="center" colspan="3">思品</td>
+											
+										</tr>
+										<tr>
+									
+											<td align="center">年级</td>
+											<td align="center">班级</td>
+											<td align="center">教者</td>
+										
+											<td align="center">年级</td>
+											<td align="center">班级</td>
+											<td align="center">教者</td>
+										
+											<td align="center">年级</td>
+											<td align="center">班级</td>
+											<td align="center">教者</td>
+										
+											<td align="center">年级</td>
+											<td align="center">班级</td>
+											<td align="center">教者</td>
+										
+											<td align="center">年级</td>
+											<td align="center">班级</td>
+											<td align="center">教者</td>
+										
+											<td align="center">年级</td>
+											<td align="center">班级</td>
+											<td align="center">教者</td>
+										
+											<td align="center">年级</td>
+											<td align="center">班级</td>
+											<td align="center">教者</td>
+										
+											<td align="center">年级</td>
+											<td align="center">班级</td>
+											<td align="center">教者</td>
+										
+									</tr>
+								
+									<tr>
+										<td align="center">1201</td>
+										<td align="center">63</td>
+										
+											<td align="center">2</td>
+											<td align="center">2</td>
+											<td align="center">丁伟</td>
+										
+											<td align="center">10</td>
+											<td align="center">7</td>
+											<td align="center">严奉鑫</td>
+										
+											<td align="center">9</td>
+											<td align="center">6</td>
+											<td align="center">刘  丹</td>
+										
+											<td align="center">8</td>
+											<td align="center">3</td>
+											<td align="center"></td>
+										
+											<td align="center">8</td>
+											<td align="center">3</td>
+											<td align="center"></td>
+										
+											<td align="center">1</td>
+											<td align="center">1</td>
+											<td align="center"></td>
+										
+											<td align="center">8</td>
+											<td align="center">3</td>
+											<td align="center">刘  涛</td>
+										
+											<td align="center">11</td>
+											<td align="center">8</td>
+											<td align="center"></td>
+										
+									</tr>
+								
+									<tr>
+										<td align="center">1202</td>
+										<td align="center">67</td>
+										
+											<td align="center">10</td>
+											<td align="center">7</td>
+											<td align="center"></td>
+										
+											<td align="center">11</td>
+											<td align="center">8</td>
+											<td align="center"></td>
+										
+											<td align="center">3</td>
+											<td align="center">1</td>
+											<td align="center"></td>
+										
+											<td align="center">6</td>
+											<td align="center">5</td>
+											<td align="center"></td>
+										
+											<td align="center">4</td>
+											<td align="center">3</td>
+											<td align="center"></td>
+										
+											<td align="center">7</td>
+											<td align="center">6</td>
+											<td align="center"></td>
+										
+											<td align="center">3</td>
+											<td align="center">1</td>
+											<td align="center"></td>
+										
+											<td align="center">5</td>
+											<td align="center">4</td>
+											<td align="center"></td>
+										
+									</tr>
+								
+									<tr>
+										<td align="center">1203</td>
+										<td align="center">66</td>
+										
+											<td align="center">4</td>
+											<td align="center">1</td>
+											<td align="center"></td>
+										
+											<td align="center">8</td>
+											<td align="center">4</td>
+											<td align="center"></td>
+										
+											<td align="center">6</td>
+											<td align="center">3</td>
+											<td align="center"></td>
+										
+											<td align="center">5</td>
+											<td align="center">2</td>
+											<td align="center"></td>
+										
+											<td align="center">9</td>
+											<td align="center">5</td>
+											<td align="center"></td>
+										
+											<td align="center">10</td>
+											<td align="center">7</td>
+											<td align="center"></td>
+										
+											<td align="center">9</td>
+											<td align="center">5</td>
+											<td align="center"></td>
+										
+											<td align="center">10</td>
+											<td align="center">7</td>
+											<td align="center"></td>
+										
+									</tr>
+								
+									<tr>
+										<td align="center">1204</td>
+										<td align="center">67</td>
+										
+											<td align="center">5</td>
+											<td align="center">4</td>
+											<td align="center"></td>
+										
+											<td align="center">9</td>
+											<td align="center">8</td>
+											<td align="center"></td>
+										
+											<td align="center">8</td>
+											<td align="center">7</td>
+											<td align="center"></td>
+										
+											<td align="center">7</td>
+											<td align="center">5</td>
+											<td align="center"></td>
+										
+											<td align="center">7</td>
+											<td align="center">5</td>
+											<td align="center"></td>
+										
+											<td align="center">4</td>
+											<td align="center">2</td>
+											<td align="center"></td>
+										
+											<td align="center">2</td>
+											<td align="center">1</td>
+											<td align="center"></td>
+										
+											<td align="center">4</td>
+											<td align="center">2</td>
+											<td align="center"></td>
+										
+									</tr>
+								
+										</tbody>
+									</table>
+
+								</div>
+								<div class="nr-tab-content">
+	
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid footer footer-grayline">
+		<div class="row">
+			<ul class="col-md-12 inline-block-ul">
+				<li>
+					<a href="#">关于我们</a>
+				</li>
+				<li>|</li>
+				<li>
+					<a href="#">联系我们</a>
+				</li>
+				<li>|</li>
+				<li>
+					<a href="#">友情链接</a>
+				</li>
+				<li>|</li>
+				<li>
+					<a href="#">关于我们</a>
+				</li>
+				<li>|</li>
+				<li>
+					<a href="#">关于我们</a>
+				</li>
+			</ul>
+		</div>
+		<div class="row">
+			<div class="col-md-12">Copyright @ 2011-2015 湖南领信教育网络发展有限公司版权所有 湘ICP备14001031号</div>
+		</div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade bs-example-modal-sm" id="loginModal" 
+	tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+	aria-hidden="true">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<button type="button" class="close close-position" data-dismiss="modal">
+					<span aria-hidden="true">&times;</span>
+					<span class="sr-only">Close</span>
+				</button>
+				<div class="modal-body">
+					<form id="loginForm" role="form">
+						<h4 class="login-title">领信登录</h4>
+						<div id="login_alert" class="alert-message" style="display: none">
+							<span class="glyphicon glyphicon-exclamation-sign"></span>
+							<span id="login_message"></span>
+						</div>
+						<div class="form-group">
+							<div class="input-group">
+								<div class="input-group-addon large">
+									<span class="glyphicon glyphicon-user"></span>
+								</div>
+								<input type="text" id="login_account" name="account" placeholder="输入用户名" class="form-control small"></div>
+						</div>
+						<div class="form-group">
+							<div class="input-group">
+								<div class="input-group-addon large">
+									<span class="glyphicon glyphicon-lock"></span>
+								</div>
+								<input type="password" id="login_password" name="password" placeholder="输入密码" id="exampleInputPassword2" class="form-control small"></div>
+						</div>
+						<div class="checkbox" style="text-align: right;">
+							<label>
+								<input type="checkbox" id="login_rememberMe" name="rememberMe">记住密码</label>
+						</div>
+						<button class="btn btn-primary btn-lg" onclick="ajaxLogin()" style="width: 100%;">登 陆</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+	<script type="text/JavaScript" src="space-footer-css.js"></script>
+	<!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+
+	<script type="text/javascript">
+	$(function(){
+		$(".label-tab-button label").click(function(){
+			var ThisIndex = $(this).index();
+			$(".nr-tab-content").eq(ThisIndex).show().siblings(".nr-tab-content").hide();
+		});
+	})
+	</script>
+
+</body>
+</html>

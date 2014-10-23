@@ -15,6 +15,7 @@ body {
   border: none;
   text-shadow: none;
   color: white;
+  border: 1px solid #1fbd62;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -45,6 +46,7 @@ body {
   border: none;
   text-shadow: none;
   color: white;
+  border: 1px solid #e15828;
 }
 .btn-danger:hover,
 .btn-danger:focus,
@@ -2510,18 +2512,125 @@ slide {
   left: 50%;
   margin-left: -300px !important;
   position: fixed;
-  top: 30px;
+  top: 50%;
   width: 600px;
   z-index: 1041;
-  bottom: 30px;
   overflow: auto;
   background: white;
   padding: 10px;
+  border-radius: 10px;
 }
 .file-nr-box .img-views li {
   margin-right: 0;
+  display: block;
+}
+.file-nr-box .img-views li.img {
+  display: none;
 }
 .file-nr-box .img-views li img {
   width: 100%;
-  height: 100%;
+}
+.file-nr-box .img-views li a {
+  outline: none;
+}
+.file-nr-box .img-views li a.close {
+  color: red;
+  font-size: 30px;
+  opacity: 0.39;
+  position: absolute;
+  right: 3px;
+  top: 3px;
+}
+.file-nr-box .img-views li a.close:hover {
+  opacity: 0.7;
+}
+.file-nr-box .img-views li a.prev {
+  left: 0;
+  border-radius: 0 5px 5px 0;
+  display: none;
+}
+.file-nr-box .img-views li a.next {
+  right: 0;
+  border-radius: 5px 0 0 5px;
+}
+.file-nr-box .img-views li a.public-btn {
+  background: #000;
+  opacity: 0.59;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  display: none;
+  position: absolute;
+  top: 50%;
+  margin-top: -20px;
+}
+.file-nr-box .img-views:hover .public-btn {
+  display: block;
+}
+.file-nr-box .img-views:hover .public-btn:hover {
+  opacity: 0.9;
+}
+.panel-heading .btn-warning {
+  color: white!important;
+  text-transform: none!important;
+}
+.exam-stat-info-list {
+  padding: 10px 0;
+}
+.exam-stat-info-list li {
+  width: 19%;
+  position: relative;
+  float: left;
+  margin-right: 1%;
+  margin-bottom: 10px;
+}
+.exam-stat-info-list li .name {
+  background: #f6f6f6;
+  border-radius: 5px 0 0 5px;
+  border-right: 1px solid #ccc;
+  color: #333;
+  font-weight: normal;
+  left: 1px;
+  padding: 6px;
+  position: absolute;
+  text-align: right;
+  top: 1px;
+  width: 83px;
+}
+.exam-stat-info-list li .form-control {
+  display: inline-block;
+  padding-left: 81px;
+  text-align: center;
+}
+.exam-stat-info-list li .bfb {
+  background: white;
+  border-radius: 0 5px 5px 0;
+  bottom: 1px;
+  padding: 6px;
+  position: absolute;
+  right: 1px;
+  text-align: center;
+  top: 1px;
+}
+.exam-table tr,
+.exam-table td {
+  border: 1px solid #ccc;
+}
+.nr-tab-content {
+  display: none;
+  min-height: 300px;
+}
+.exam-tj-ul {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+.table-img {
+  border: 5px solid #ccc;
+  margin-bottom: 30px;
+  padding: 0;
+}
+.table-img svg {
+  height: 98%;
+  width: 99%;
 }
