@@ -444,7 +444,7 @@ a.list-grouping-fen-more{
 .class-index-container .panel{
 	border-radius:2px; border:none; margin-bottom:10px;}
 .class-index-center .panel-class-photo,.class-index-left .panel-class-photo{
-	background-color:rgba(203, 203, 203, 1); padding:5px;}
+	background-color:rgba(0,0,0,0.05); padding:5px;}
 .class-index-center .panel-class-photo .panel-body{
 	background:#FFF;}
 .class-index-left .panel-class-Set{
@@ -1382,7 +1382,7 @@ height:50px;}
 .click-up-down .btn-info{display:none;}
 
 /*日志树*/
-.number-news {
+.rizhi-list-new .number-news {
     font-size: 10px !important;
 padding: 0px 3px;
 border-radius: 2px;
@@ -1395,7 +1395,7 @@ text-shadow: 1px 1px 0px rgba(119, 0, 0, 1);
 }
 ul.sub-list{margin-bottom: 0 !important;}
 .rizhi-list-new{border-bottom: 1px dashed rgb(212, 212, 212);}
-.rizhi-list-new .name{font-size: 13px;}
+.rizhi-list-new .name{font-size: 14px;}
 .rizhi-list-new .list-group-item .red-block {
     font-size: 13px;
     color: #FF6347 !important;
@@ -1406,7 +1406,7 @@ padding-left: 8px !important;
 margin-left: 3px;
 }
 .rizhi-list-new > a{
-	border-bottom: 1px dotted #DDD !important;
+	border-bottom: 1px dotted #C5C5C5 !important;
 }
 .rizhi-list-new > a.bg1{
 	background:#FFF9ED ;
@@ -1415,6 +1415,7 @@ margin-left: 3px;
 	font-weight: 500 !important;
 	padding: 4px 7px;
 }
+.rizhi-list-new .badge-none{color: #999;}
 .rizhi-list-new .btn-group{
 	top: 9px !important;
 }

@@ -517,7 +517,7 @@
 <script>
 	$('.sub-list li').each(function(){
 		var num = $(this).index();
-		if(num % 2 == 0)
+		if(num % 2 !== 0)
 		{
 			$(this).find('a').addClass('bg1')
 		}

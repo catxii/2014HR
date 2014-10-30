@@ -493,7 +493,7 @@ font-weight: 900;}
     text-align: justify;
 }
 /*学校二级页面*/
-.red-body .school-neiye-banner{background:#ECECEC;}
+.red-body .school-neiye-banner{background:none repeat scroll 0% 0% rgba(240, 217, 153, 1);}
 .red-body .school-resources-banner{background:#DACBA9 !important;}
 .red-body .school-neiye-banner-img{/*background: #ECECEC;*/height: 150px;}
 .red-body .school-new-neiye-left{position: relative;}
@@ -521,7 +521,7 @@ top: 4px !important;}
 }
 .red-body .title-member{margin: 5px 0;}
 .red-body .title-member-h{font-size: 16px; height: 40px;padding: 9px 20px;position: relative;border-bottom: 3px solid #ddd;background: #f3f3f3;}
-.red-body .title-member-h a{font-size: 22px;color: #2ECC71;}
+.red-body .title-member-h a{font-size: 22px;color: #d80000;}
 
 .red-body .school-details-title{text-align: center !important;line-height: 33px;padding: 10px 0 !important;background: #eee !important;border-bottom: 3px solid rgba(233, 99, 99, 1);}
 .red-body .school-details-title h4{float: none !important;margin: 0 0 5px 0 !important;}
@@ -776,7 +776,7 @@ font-weight: 900;}
     text-align: justify;
 }
 /*学校二级页面*/
-.blue-body .school-neiye-banner{background:#ECECEC;}
+.blue-body .school-neiye-banner{background:none repeat scroll 0% 0% rgba(60, 164, 191, 1);}
 .blue-body .school-resources-banner{
                                background:none repeat scroll 0% 0% #62A0CE !important;
                                box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.44) inset;
@@ -807,7 +807,7 @@ top: 4px !important;}
 }
 .blue-body .title-member{margin: 5px 0;}
 .blue-body .title-member-h{font-size: 16px; height: 40px;padding: 9px 20px;position: relative;border-bottom: 3px solid #ddd;background: #f3f3f3;}
-.blue-body .title-member-h a{font-size: 22px;color: #2ECC71;}
+.blue-body .title-member-h a{font-size: 22px;color: #0079AC;}
 
 .blue-body .school-details-title{text-align: center !important;line-height: 33px;padding: 10px 0 !important;background: #eee !important;border-bottom: 3px solid #0079AC;}
 .blue-body .school-details-title h4{float: none !important;margin: 0 0 5px 0 !important;}
@@ -1096,7 +1096,7 @@ top: 4px !important;}
 }
 .pink-body .title-member{margin: 5px 0;}
 .pink-body .title-member-h{font-size: 16px; height: 40px;padding: 9px 20px;position: relative;border-bottom: 3px solid #ddd;background: #f3f3f3;}
-.pink-body .title-member-h a{font-size: 22px;color: #2ECC71;}
+.pink-body .title-member-h a{font-size: 22px;color: #FF6969;}
 
 .pink-body .school-details-title{text-align: center !important;line-height: 33px;padding: 10px 0 !important;background: #eee !important;border-bottom: 3px solid #FF6969;}
 .pink-body .school-details-title h4{float: none !important;margin: 0 0 5px 0 !important;}
@@ -1233,7 +1233,7 @@ overflow: hidden;
     text-decoration: none;
     font-weight: bold;
 }
-.crimson-body .school-header-bottom .top-nav-bar-bottom li{margin: 0 !important; padding: 6px 42px !important;border-radius: 2px;}
+.crimson-body .school-header-bottom .top-nav-bar-bottom li{margin: 0 !important; padding: 6px 41px !important;border-radius: 2px;}
 .crimson-body .school-header-bottom .top-nav-bar-bottom li:hover,.blue-body .school-header-bottom .top-nav-bar-bottom li:visited{background: none repeat scroll 0% 0% rgba(158, 0, 0, 1);
 }
 .crimson-body .school-header-bottom .top-nav-bar-bottom li:hover a,.blue-body .school-header-bottom .top-nav-bar-bottom li:visited a{
@@ -1362,7 +1362,7 @@ font-weight: 900;}
     text-align: justify;
 }
 /*学校二级页面*/
-.crimson-body .school-neiye-banner{background:#ECECEC;}
+.crimson-body .school-neiye-banner{background:none repeat scroll 0% 0% rgba(207, 202, 181, 1);}
 .crimson-body .school-resources-banner{
                                background:none repeat scroll 0% 0% rgba(174, 174, 174, 1) !important;
                                box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.44) inset;
@@ -1393,7 +1393,7 @@ top: 4px !important;}
 }
 .crimson-body .title-member{margin: 5px 0;}
 .crimson-body .title-member-h{font-size: 16px; height: 40px;padding: 9px 20px;position: relative;border-bottom: 3px solid #ddd;background: #f3f3f3;}
-.crimson-body .title-member-h a{font-size: 22px;color: #2ECC71;}
+.crimson-body .title-member-h a{font-size: 22px;color: #d80000;}
 
 .crimson-body .school-details-title{text-align: center !important;line-height: 33px;padding: 10px 0 !important;background: #eee !important;border-bottom: 3px solid #FF6969;}
 .crimson-body .school-details-title h4{float: none !important;margin: 0 0 5px 0 !important;}
