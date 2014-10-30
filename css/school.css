@@ -52,11 +52,10 @@ margin-right: 5px;
 vertical-align: middle;}
 /*学校自定义颜色*/
 .green-body .school-new-default,.green-body .school-new-tzgg,.green-body .school-new-xxxw,.green-body .school-new-xxgk,.green-body .school-new-dyzc,.green-body .school-new-xyjs,.green-body .school-new-yxjs,.green-body .school-new-szdw,.green-body .school-new-xstd,.green-body .school-new-bjyd,.green-body .school-new-xxzy,.green-body .school-new-jypt,.green-body .school-new-rmzy,.green-body .school-new-rmht,.green-body .school-new-xzxx{margin-bottom: 20px; background: #fff;}
-.green-body .green-pane{  position:relative;background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(254, 254, 254)), to(rgb(237, 237, 237)));
-background-image: -webkit-linear-gradient(top, rgb(254, 254, 254), rgb(237, 237, 237));
-background-image: -moz-linear-gradient(top, rgb(254, 254, 254), rgb(237, 237, 237));
-background-image: -o-linear-gradient(top, rgb(254, 254, 254), rgb(237, 237, 237));
-background-image: -ms-linear-gradient(top, rgb(254, 254, 254), rgb(237, 237, 237));padding: 0; position: relative;}
+.green-body .green-pane{  position:relative;
+background: linear-gradient(#e6e6e6, rgba(123, 123, 123, 0)) repeat scroll 0% 0% transparent;
+box-shadow: 0px 3px 0px #FFF inset;
+padding: 0; position: relative;}
 .green-body .green-pane > ul{margin: 0;word-spacing: -4px;border-bottom: 1px solid #00A856;
 border-top: 1px solid #DDD;
 border-right: 1px solid #DDD;}
@@ -415,11 +414,12 @@ margin-right: 5px;
 vertical-align: middle;}
 /*学校自定义颜色*/
 .red-body .school-new-default,.red-body .school-new-tzgg,.red-body .school-new-xxxw,.red-body .school-new-xxgk,.red-body .school-new-dyzc,.red-body .school-new-xyjs,.red-body .school-new-yxjs,.red-body .school-new-szdw,.red-body .school-new-xstd,.red-body .school-new-bjyd,.red-body .school-new-xxzy,.red-body .school-new-jypt,.red-body .school-new-rmzy,.red-body .school-new-rmht,.red-body .school-new-xzxx{margin-bottom: 20px; background: #fff;}
-.red-body .green-pane{  position:relative;background-image: -moz-linear-gradient(center top , #FEFEFE, rgba(243, 233, 210, 1));
-background-image: -webkit-linear-gradient(top, rgb(254, 254, 254), rgb(237, 237, 237));
-background-image: -moz-linear-gradient(top, rgb(254, 254, 254), rgb(237, 237, 237));
-background-image: -o-linear-gradient(top, rgb(254, 254, 254), rgb(237, 237, 237));
-background-image: -ms-linear-gradient(top, rgb(254, 254, 254), rgb(237, 237, 237));padding: 0; position: relative;}
+.red-body .green-pane{  position:relative;
+background-image: -moz-linear-gradient(center top , #FEFEFE, rgba(179, 179, 179, 0));
+background-image: -webkit-linear-gradient(top, #E2E2E2, rgba(179, 179, 179, 0));
+background-image: -moz-linear-gradient(top, #FEFEFE, rgba(179, 179, 179, 0));
+background-image: -o-linear-gradient(top, #FEFEFE, rgba(179, 179, 179, 0));
+background-image: -ms-linear-gradient(top, #FEFEFE, rgba(179, 179, 179, 0));padding: 0; position: relative;}
 .red-body .green-pane > ul{margin: 0;word-spacing: -4px;border-bottom: 1px solid #A2A2A2;
 border-top: 1px solid #DDD;
 border-right: 1px solid #DDD;}
@@ -1200,7 +1200,301 @@ border: 1px solid rgba(168, 0, 0, 1);}
 .pink-body .school-new-left .resources-ranking-hot .panel-body .school-group > a ul li.c-3{width: 15% !important;float: left;color: #999;}
 
 
+/*深红页面*/
+/*学校新页面*/
+.crimson-body{background:url(../img/5-13050G33952.jpg) repeat !important; padding-top: 2px;box-shadow: 0px -60px 91px rgba(0, 0, 0, 0.34) inset;}
+.crimson-body .navbar{background: none repeat scroll 0% 0% #292929;margin-top:-34px;}
+.crimson-body .navbar:hover{margin-top: 0;}
 
+.school-header{}
+.crimson-body .container-new-top{box-shadow: 0px 51px 55px rgba(0, 0, 0, 0.34) inset;background:url(../img/5-13050G33952.jpg) repeat !important;}
+.crimson-body .container-new-content{padding-top: 10px;background: url('../img/red-bg.png') repeat-y scroll 0% 0% transparent !important;}
+.crimson-body .school-header-top{height: 130px;position: relative;/*border-bottom:1px solid rgba(16, 88, 119, 0.32);*/}
+.crimson-body .school-header-top .thumbnail{display: inherit;background: none;}
+.crimson-body .school-header-top a{width: 375px; height: 85px;}
+.crimson-body .school-header-name{position: absolute;top:35px; width: 375px;height: 85px;}
+.crimson-body .school-header-bottom{
+	padding: 4px;
+background: none repeat scroll 0% 0% rgba(216, 0, 0, 1);}
+.crimson-body .school-header-bottom ul.top-nav-bar-bottom{
+	
+	border: 1px dashed rgba(255, 131, 131, 0.61);
+box-shadow: 0px 0px 3px #393939;
+padding-top: 0 !important;
+
+word-spacing: -4px;
+overflow: hidden;
+}
+.crimson-body .school-header-bottom .top-nav-bar-bottom li a {
+    font-size: 15px;
+    color: #fff !important;
+    padding-bottom: 2px;
+    text-shadow:1px 1px 0px rgba(93, 0, 0, 1);
+    text-decoration: none;
+    font-weight: bold;
+}
+.crimson-body .school-header-bottom .top-nav-bar-bottom li{margin: 0 !important; padding: 6px 42px !important;border-radius: 2px;}
+.crimson-body .school-header-bottom .top-nav-bar-bottom li:hover,.blue-body .school-header-bottom .top-nav-bar-bottom li:visited{background: none repeat scroll 0% 0% rgba(158, 0, 0, 1);
+}
+.crimson-body .school-header-bottom .top-nav-bar-bottom li:hover a,.blue-body .school-header-bottom .top-nav-bar-bottom li:visited a{
+	color: #fff !important;text-shadow:-1px -1px 0px rgba(0, 59, 110, 1);
+}
+.crimson-body .school-header-bottom .top-nav-bar-bottom li.current{
+                                                              background: none repeat scroll 0% 0% rgba(158, 0, 0, 1);
+                                                              box-shadow: 0px -6px 8px rgba(0, 0, 0, 0.21) inset;
+}
+.crimson-body .school-header-bottom .top-nav-bar-bottom li a:hover{color: #fff ;text-shadow:-1px -1px 0px rgba(0, 59, 110, 1);}
+.crimson-body .school-header-bottom .top-nav-bar-bottom li a:visited{color: #fff ;text-shadow:-1px -1px 0px rgba(0, 59, 110, 1);}
+.crimson-body .school-header-bottom .top-nav-bar-bottom li.current a {
+    font-size: 15px;
+    color: #fff !important;
+    border-bottom: 0px !important;
+    padding-bottom: 2px;
+    text-shadow: -1px -1px 0px #333;
+}
+.crimson-body .school-banner-new{margin: auto ;width: 1280px; height: 435px;margin-top: 0px;}
+
+.crimson-body .school-new-left{padding-left: 5px !important;}
+.crimson-body .school-new-left .panel-body{border-left:0px solid #ddd;border-right:0px solid #ddd;border-bottom:1px solid #ddd;padding: 5px 0 !important;}
+.crimson-body .school-new-right{padding-right: 5px !important;}
+.crimson-body .school-new-right .panel-body{border-left:0px solid #ddd;border-right:0px solid #ddd;border-bottom:1px solid #ddd;padding: 5px 0 !important;}
+.crimson-body .school-new-center{padding-left:8px;padding-right: 8px;}
+.crimson-body .school-new-center .panel-body{border-left:0px solid #ddd;border-right:0px solid #ddd;border-bottom:1px solid #ddd;padding: 5px 0 !important;}
+
+.crimson-body .school-new-left .panel-body .school-group .list-group-item,.crimson-body .school-new-center .panel-body .school-group .list-group-item,.crimson-body .school-new-right .panel-body .school-group .list-group-item{font-size: 12px !important;
+border-bottom: 0px dotted #CCC !important;font-family: "宋体";padding:4px !important;color: #333;background: none !important;position: relative;}
+.crimson-body .new-news{position: absolute; top: 2px; background:url(../img/new.gif);width: 24px;height: 11px;right:2px}
+.crimson-body .school-new-left .panel-body .school-group a.list-group-item:hover,.crimson-body .school-new-center .panel-body .school-group a.list-group-item:hover,.crimson-body .school-new-right .panel-body .school-group a.list-group-item:hover{
+border-bottom: 0px dotted #CCC !important;background:rgba(158, 0, 0, 1) !important;color: #fff !important;box-shadow: none ; }
+
+.crimson-body .school-new-left span.fa-square,.crimson-body .school-new-center span.fa-square,.crimson-body .school-new-right span.fa-square{font-size: 5px !important;
+
+color: #DDD;
+margin-right: 5px;
+vertical-align: middle;}
+.blue-body .school-new-left span.fa-angle-double-right,.blue-body .school-new-center span.fa-angle-double-right,.blue-body .school-new-right span.fa-angle-double-right{font-size: 14px !important;
+color: #ccc;
+margin-right: 5px;
+vertical-align: middle;}
+/*学校自定义颜色*/
+.crimson-body .school-new-default,.crimson-body .school-new-tzgg,.crimson-body .school-new-xxxw,.blue-body .school-new-xxgk,.crimson-body .school-new-dyzc,.crimson-body .school-new-xyjs,.crimson-body .school-new-yxjs,.crimson-body .school-new-szdw,.crimson-body .school-new-xstd,.crimson-body .school-new-bjyd,.crimson-body .school-new-xxzy,.crimson-body .school-new-jypt,.crimson-body .school-new-rmzy,.crimson-body .school-new-rmht,.crimson-body .school-new-xzxx{margin-bottom: 20px; background: #fff;}
+.crimson-body .green-pane{  position:relative;
+background-image: -moz-linear-gradient(center top , #FEFEFE, rgba(179, 179, 179, 0));
+background-image: -webkit-linear-gradient(top, #E2E2E2, rgba(179, 179, 179, 0));
+background-image: -moz-linear-gradient(top, #FEFEFE, rgba(179, 179, 179, 0));
+background-image: -o-linear-gradient(top, #FEFEFE, rgba(179, 179, 179, 0));
+background-image: -ms-linear-gradient(top, #FEFEFE, rgba(179, 179, 179, 0));
+padding: 0; position: relative;}
+.crimson-body .green-pane > ul{margin: 0;word-spacing: -4px;border-bottom: 1px solid #666;
+border-top: 1px solid #DDD;
+border-right: 1px solid #DDD;}
+.crimson-body .green-pane > ul > li{margin-right:0 !important;word-spacing: normal;border-right: 1px solid #ccc;}
+.crimson-body .green-pane > ul > li.active{border: 0 !important;}
+.crimson-body .green-pane > ul > li.active > a{border-top: 3px solid #d80000 !important;box-shadow: 0px 2px 2px rgba(15, 82, 135, 0.25) inset, 0px 0px 0px rgba(255, 255, 255, 0.15);}
+.crimson-body .green-pane > ul > li > a:hover i{transform:rotate(360deg);transition: -moz-transform 0.3s ease-out 0s;}
+.crimson-body .green-pane > ul > li a{line-height:32px;font-size:13px;padding: 0 10px; margin-right: 0;border-radius:0px !important;font-weight: bold;}
+.crimson-body .green-pane .pull-right{position: absolute; right: 11px;font-size: 12px;
+top: 10px;}
+.crimson-body .green-pane > ul > li a i{color:#d80000 ;font-size: 17px;/*text-shadow: -1px -1px 0px rgba(213, 213, 213, 1);-webkit-transform-origin: 0px 0px;-webkit-transform: rotate(0deg);-moz-transform-origin: 0px 0px;-moz-transform: rotate(0deg);-ms-transform-origin: 0px 0px;-ms-transform: rotate(0deg);-o-transform-origin: 0px 0px;-o-transform: rotate(0deg);transform-origin: 0px 0px;transform: rotate(0deg);*/}
+.crimson-body .school-new-xxgk .panel-body .school-group{padding: 0 6px;}
+.crimson-body .school-new-xxgk .panel-body .school-group .list-group-item{
+	color: rgba(255, 255, 255, 1);
+font-size: 15px !important;
+background: none repeat scroll 0% 0% #D80000 !important;
+text-shadow: 1px 1px 1px rgba(81, 0, 0, 1);
+box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3) inset, 0px 1px 1px rgba(50, 50, 50, 0.05);
+border: 1px solid #C63F3F !important;
+font-weight: bold;
+text-align: center;
+border-radius: 5px;
+margin: 2px 0px;
+height: 37px;
+vertical-align: middle;
+padding: 8px 4px !important;
+}
+.crimson-body .school-new-xyjs-img img:hover{transform: scale(1.1);}
+.crimson-body .school-new-xyjs-img img{transition: transform 0.3s ease 0s;width: 100px !important;height: 100px !important;}
+.crimson-body .school-new-xyjs-img a{position: relative;}
+
+.crimson-body .school-new-szdw-name .label{padding: 0.3em !important;text-shadow: 1px 1px 1px #fff;}
+.crimson-body .school-new-szdw-list ul{padding: 6px; background: #eee;}
+.crimson-body .school-new-szdw-list ul li{height: 50px;vertical-align: top;}
+.crimson-body .school-new-szdw-img{margin-right: 5px !important;overflow: hidden;}
+.crimson-body .school-new-szdw-img img{width: 50px;height: 50px;transition: transform 0.3s ease 0s;}
+.crimson-body .school-new-szdw-img img:hover{transform: scale(1.6);}
+.crimson-body .school-new-szdw-name{margin-right: 0 !important;}
+.crimson-body .school-new-szdw-name h4{margin: 0 0 5px 0 !important; line-height: 20px;/*text-shadow: 1px 1px 0px #285C44;*/display: block;font-size: 12px;width: 57px;}
+.crimson-body .school-new-szdw-name p{margin: 0 !important;color: #444;font-family: "新宋体";font-size: 12px;width: 57px;}
+
+.crimson-body .school-new-bjyd .school-new-szdw-name h4{}
+
+.crimson-body .school-new-jypt-list div{text-align: center;margin:5px 0;}
+.crimson-body .school-new-jypt-list div a{padding: 4px; display: block;background:#EAE3C9 ;border-radius:4px;}
+.crimson-body .school-new-jypt-list div span{display: block;}
+.crimson-body .school-new-jypt-list div a img{transition: transform 0.3s ease 0s;-webkit-transition: transform 0.3s ease 0s;-moz-transition:transform 0.3s ease 0s;-o-transition:transform 0.3s ease 0s;}
+.crimson-body .school-new-jypt-list div a img:hover{transform: scale(1.1);-webkit-transition: scale(1.1);-moz-transition:scale(1.1);-o-transition:scale(1.1);}
+/*自定义栏目*/
+.crimson-body .school-new-default .panel-body{overflow-y:scroll; max-height: 90px;}
+/*尾部*/
+.crimson-body .container-footer{background: url(../img/foot_bg.png) repeat-x #eee; /*box-shadow: 0px -1px 2px rgba(168, 168, 168, 1);*/}
+.crimson-body .container-footer ul li{margin-right: 0 !important;text-align: center;padding: 10px 0;background: #ccc;font-size: 13px;
+font-weight: 900;}
+.crimson-body .container-footer ul li a{padding: 4px 30px;text-shadow: 1px 1px 1px #fff;border-radius: 4px;}
+.crimson-body .container-footer ul li a:hover{background: #999;color: #333;}
+.crimson-body .number-news{
+	font-size: 10px;
+    padding: 1px 5px;
+    border-radius: 2px;
+    color: #fff;
+    margin-right: 5px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#D1D1D1), to(#7A7A7A));
+    background-image: -webkit-linear-gradient(top, #D1D1D1, #7A7A7A);
+    background-image: -moz-linear-gradient(top, #D1D1D1, #7A7A7A);
+    background-image: -o-linear-gradient(top, #D1D1D1, #7A7A7A);
+    background-image: -ms-linear-gradient(top, #D1D1D1, #7A7A7A);
+    border:1px solid rgba(119, 119, 119, 1);
+    text-shadow:1px 0px 1px rgba(80, 80, 80, 1);
+}
+.crimson-body .school-rizhi-list-text{ font-size: 14px;/*font-family:"宋体";*/padding: 10px;text-justify: inherit;text-align: justify;text-indent: 2em;}
+.crimson-body .school-rizhi-list-text p{
+	line-height: 24px;
+    color: #444;
+    text-align: justify;
+}
+/*学校二级页面*/
+.crimson-body .school-neiye-banner{background:#ECECEC;}
+.crimson-body .school-resources-banner{
+                               background:none repeat scroll 0% 0% rgba(174, 174, 174, 1) !important;
+                               box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.44) inset;
+}
+.crimson-body .school-neiye-banner-img{/*background: #ECECEC;*/height: 150px;}
+.crimson-body .school-new-neiye-left{position: relative;}
+.crimson-body .school-new-neiye-tab{position: absolute;top:-50px;width: 187px;}
+.crimson-body .school-neiye-title{min-height: 500px;}
+.crimson-body .green-pane .school-new-neiye-tab .panel-heading{color: #D84646 !important;padding:0 22px;line-height: 49px; text-align:center; background:#ccc;font-size: 20px;font-weight: bold;text-shadow: 1px 1px 0px rgba(255, 255, 255, 1);}
+.crimson-body .green-pane .school-new-neiye-list .list-group-item{}
+
+.crimson-body .school-search-list{width: 200px;position: absolute !important;
+right: 4px !important;
+font-size: 12px !important;
+top: 4px !important;}
+.crimson-body .school-search-list .form-control{height: 29px;}
+.crimson-body .school-neiye-title .school-new-szdw-name h4{width: 70px;}
+.crimson-body .school-neiye-title .school-new-szdw-name p{width: 70px;}
+.crimson-body .school-menber {
+	height: 50px;
+	background: #F3F3F3;
+	border-bottom: 2px solid #ddd;
+	margin: 10px 0px;
+    padding: 14px 20px;
+}
+.crimson-body .school-menber span{
+	font-size: 16px;
+}
+.crimson-body .title-member{margin: 5px 0;}
+.crimson-body .title-member-h{font-size: 16px; height: 40px;padding: 9px 20px;position: relative;border-bottom: 3px solid #ddd;background: #f3f3f3;}
+.crimson-body .title-member-h a{font-size: 22px;color: #2ECC71;}
+
+.crimson-body .school-details-title{text-align: center !important;line-height: 33px;padding: 10px 0 !important;background: #eee !important;border-bottom: 3px solid #FF6969;}
+.crimson-body .school-details-title h4{float: none !important;margin: 0 0 5px 0 !important;}
+
+.crimson-body .school-boss{margin-top: 15px;}
+.crimson-body .school-boss .col-md-9{padding-right: 22px;padding-top: 0;}
+.crimson-body .school-boss-img{margin: auto;}
+.crimson-body .school-moreover{padding: 15px;}
+.crimson-body .school-moreover dt,.school-moreover dd{font-size: 15px !important; }
+.crimson-body .school-moreover dd{margin-bottom: 10px;}
+
+
+/*资源库*/
+.crimson-body .school-neiye-search-img{height: 53px; padding: 10px 10px;}
+.crimson-body .school-search .form-control{height: 32px;}
+.crimson-body .school-banner-img{height: 277px;}
+.crimson-body .list-tab-school{box-shadow: 3px 3px 3px #EBEBEB;border-bottom: 1px solid #ccc;border-left: 1px solid #ccc;border-right: 1px solid #ccc;}
+.crimson-body .list-tab-right{padding-top: 10px !important;}
+.crimson-body .list-tab-number{height: 160px; border: 1px solid #ccc;margin-bottom:7px;background: #EAE3C9;padding: 0 10px;}
+.crimson-body .list-tab-number h4{text-align: center;font-size: 16px; font-weight: bold;color: rgba(131, 125, 104, 1);}
+.crimson-body .list-tab-number .list-tab-number-list{height: 50px;
+            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.125) inset;
+    background-color: #D80000;
+    text-align: center;
+    text-shadow: 0px 4px 9px rgba(122, 22, 22, 1), 0px -1px 0px #FFF;
+border-color: rgba(57, 129, 132, 1);
+font-size: 25px;
+color: rgba(255, 190, 190, 1);
+font-weight: bold;
+padding: 8px 14px !important;
+letter-spacing: -1px;
+}
+.crimson-body .list-tab-up{height: 101px; border: 1px solid #ccc;padding: 0 10px;}
+.crimson-body .list-tab-up h4{text-align: center;font-size: 16px; font-weight: bold;color: rgba(131, 125, 104, 1);}
+.crimson-body .list-tab-up .list-tab-number-list{
+	height: 50px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.125) inset;
+    background-color: #989898;
+    text-align: center;
+    text-shadow: 0px 4px 9px rgba(62, 62, 62, 1), 0px -1px 0px #FFF;
+border-color: rgba(108, 108, 108, 1);
+font-size: 25px;
+color: #D1D1D1;
+font-weight: bold;
+padding: 8px 14px !important;
+letter-spacing: -1px;
+}
+.crimson-body .school-resources {
+    background: url('../img/red-bg.png') repeat-y scroll 0% 0% transparent !important;
+}
+.crimson-body .school-resources-tui > li{padding:5px 10px 0 20px;background:#eee;/*box-shadow:0px 0px 4px rgba(0, 0, 0, 0.09) inset;*/}
+.crimson-body .school-resources-tui > li dl{border-bottom: 1px solid rgba(0, 0, 0, 0.09) !important;}
+.crimson-body .school-resources-tui > li dt{margin-bottom:5px !important;font-weight: 200 !important;color: #ccc;font-size: 12px;}
+.crimson-body .school-resources-tui > li dt a{font-weight: bold !important;margin-right: 5px;font-size: 15px;}
+.crimson-body .school-resources-tui > li dt b.b-bg{background-color: #D80000;width: 5px; height: 15px;display: inline-block;position: relative;
+left: -21px;
+top: 2px;}
+.crimson-body .school-resources-tui li dd ul li{font-size: 13px;}
+.crimson-body .school-resources-tui li dd ul li.resource-red{color: #999;}
+.crimson-body .list-tab-right .panel-class-Set > ul > li{background: none !important; height: auto !important;}
+.crimson-body .ranking-title{padding: 0 8px;}
+.crimson-body .ranking-title h5{font-size: 16px;margin-top: 10px;}
+.crimson-body .ranking-title h5 a{
+	background: none repeat scroll 0% 0% #4C9ED9;
+display: inline-block;
+padding: 4px;
+border-radius: 5px;
+}
+.crimson-body .ranking-title h5 i{color: #fff;}
+.crimson-body .school-teacher-ranking{border-bottom: 1px solid #ddd; height: 120px;overflow-x: scroll;padding: 0 3px;}
+.crimson-body .school-teacher-ranking > ul{white-space: nowrap;word-spacing: -4px;}
+.crimson-body .school-teacher-ranking > ul > li{
+	width: 274px;
+	height: 85px;
+	background: #efefef;
+	padding: 10px;
+	border-bottom: 1px solid #FF6969;
+	margin-right: 11px !important;
+	word-spacing: 0px;
+}
+.crimson-body .school-teacher-ranking .inline-ranking-left dl{text-align: center;background: #ddd;padding:5px 10px;margin: 0 !important;}
+.crimson-body .school-teacher-ranking .inline-ranking-left dl dt{font-size: 20px; color: red;text-shadow: 1px 1px 1px #fff;}
+.crimson-body .school-teacher-ranking .inline-ranking-right{padding-left: 10px;}
+.crimson-body .school-teacher-ranking .inline-ranking-right dl{margin: 0 !important;}
+.crimson-body .school-teacher-ranking .inline-ranking-right dl dd{font-size: 12px; color: #999;}
+.crimson-body .school-teacher-ranking .inline-ranking-right dl dd.text-space{font-size: 14px; color: #333;}
+
+.crimson-body .school-resources-ranking{margin-top: 15px;}
+.crimson-body .school-resources-ranking .resources-ranking-hot .green-pane{
+	/*background: #E8E8E8;*/
+}
+.crimson-body .school-resources-ranking .resources-ranking-hot .green-pane > ul{border-left: 1px solid #DDD;}
+.crimson-body .school-resources-ranking .resources-ranking-hot .green-pane .resources-ranking-hot-title{margin: 0 10px !important;border-right: 0 !important;}
+.crimson-body .school-new-left .resources-ranking-hot .panel-body .school-group > a{padding: 7px !important;}
+.crimson-body .school-new-left .resources-ranking-hot .panel-body .school-group > a:first-child .number-news{background-image: -moz-linear-gradient(center top , rgba(255, 102, 102, 1), rgba(182, 9, 9, 1));
+border: 1px solid rgba(168, 0, 0, 1);}
+
+.crimson-body .school-new-left .resources-ranking-hot .panel-body .school-group > a ul li{margin: 0 !important;}
+.crimson-body .school-new-left .resources-ranking-hot .panel-body .school-group > a ul li.c-1{width: 10% !important;float: left;}
+.crimson-body .school-new-left .resources-ranking-hot .panel-body .school-group > a ul li.c-2{width: 75% !important;float: left;}
+.crimson-body .school-new-left .resources-ranking-hot .panel-body .school-group > a ul li.c-3{width: 15% !important;float: left;color: #999;}
 
 
 

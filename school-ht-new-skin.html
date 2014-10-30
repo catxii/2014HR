@@ -13,6 +13,7 @@
 		<!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
 		<script type="text/JavaScript" src="space-css.js"></script>
 		<!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+		<script src="libs/jquery-lightbox/jquery.lightbox.js" type="text/javascript"></script>
 		<style>
 		/*.thumbnail img{z-index: 9999 !important;}
 		.thumbnail img:hover{transform: scale(2.9);}*/
@@ -151,7 +152,7 @@
 
 
 												<!-- Tab panes -->
-												<div class="tab-content">
+												<div class="tab-content skin-school">
 
 													<div class="tab-pane active" id="teacher-qx">
 														<div class="panel-body clear-padding">
@@ -164,7 +165,7 @@
 																	<div class="row clear-margin">
 																		<div class="col-xs-2 school-list-group-li">选择</div>
 
-																		<div class="col-xs-5 school-list-group-li">科目</div>
+																		<div class="col-xs-5 school-list-group-li">皮肤</div>
 
 																		<div class="col-xs-5 school-list-group-li">
 																			操作
@@ -177,28 +178,55 @@
 
 
 																	<div class="row clear-margin">
-																		<div class="col-xs-2 school-list-group-li">
+																		<div class="col-xs-2 school-list-group-li skin-left">
 
-																			<input type="checkbox" id="inlineCheckbox1" value="option1" class="clear-margin" style="position:inherit">
+																			<input name="optionsRadios" id="optionsRadios2" value="option2" type="radio">
 
 																		</div>
 
-																		<div class="col-xs-5 school-list-group-li">
-																			<a href="#" class="thumbnail">
-																				<img src="img/pink-html.png" width="375px" height="100px" >
+																		<div class="col-xs-5 school-list-group-li skin-center">
+																			<a class="thumbnail lightbox clear-border" href="img/green-skin.png">
+																				<img src="img/green-skin.png" width="115px" height="50px" >
 																				
 																			</a>
 																		</div>
 
-																		<div class="col-xs-5 school-list-group-li">
+																		<div class="col-xs-5 school-list-group-li skin-right">
 																			<ul class=" inline-block-ul inline-block-ul-mid clear-margin">
 																				<li>
-																					<button title="" data-original-title="" type="button" class=" btn btn-warning dropdown-toggle btn-xs" onclick="">加入讨论</button>
+																					<button title="" data-original-title="" type="button" class=" btn btn-success" onclick="">确 定</button>
+																				</li>
+																				<li>
+																					<button title="" data-original-title="" type="button" class=" btn btn-info " onclick="">查 看</button>
 																				</li>
 																			</ul>
 																		</div>
 																	</div>
+                                                                    <div class="row clear-margin">
+																		<div class="col-xs-2 school-list-group-li skin-left">
 
+																			<input name="optionsRadios" id="optionsRadios2" value="option2" type="radio">
+
+																		</div>
+
+																		<div class="col-xs-5 school-list-group-li skin-center">
+																			<a class="thumbnail lightbox clear-border" href="img/red-skin.png">
+																				<img src="img/red-skin.png" width="115px" height="50px" >
+																				
+																			</a>
+																		</div>
+
+																		<div class="col-xs-5 school-list-group-li skin-right">
+																			<ul class=" inline-block-ul inline-block-ul-mid clear-margin">
+																				<li>
+																					<button title="" data-original-title="" type="button" class=" btn btn-success" onclick="">确 定</button>
+																				</li>
+																				<li>
+																					<button title="" data-original-title="" type="button" class=" btn btn-info " onclick="">查 看</button>
+																				</li>
+																			</ul>
+																		</div>
+																	</div>
 
 																</div>
 

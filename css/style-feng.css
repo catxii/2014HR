@@ -48,6 +48,8 @@ color:#666; border-bottom:1px solid #E5E5E5; margin-bottom:1PX; border-radius:0p
 	background:url(../img/subjects-sp-ico.png); width:50px; height:50px; margin:auto; border-radius:3px;}
 .subjects-ty-ico{
 	background:url(../img/subjects-ty-ico.png); width:50px; height:50px; margin:auto; border-radius:3px;}
+.subjects-kx-ico{
+	background:url(../img/subjects-kx-ico.png); width:50px; height:50px; margin:auto; border-radius:3px;}
 .subjects-ms-ico{
 	background:url(../img/subjects-ms-ico.png); width:50px; height:50px; margin:auto; border-radius:3px;}
 .subjects-lj-ico{
@@ -1380,6 +1382,49 @@ height:50px;}
 .click-up-down .btn-info{display:none;}
 
 /*日志树*/
+.number-news {
+    font-size: 10px !important;
+padding: 0px 3px;
+border-radius: 2px;
+color: #FFF;
+margin-right: 5px;
+background-image: -moz-linear-gradient(center top , #FF4343, rgba(197, 6, 6, 1));
+background-image: -webkit-linear-gradient(top, #FF4343, rgba(197, 6, 6, 1));
+border: 1px solid rgba(204, 0, 0, 1);
+text-shadow: 1px 1px 0px rgba(119, 0, 0, 1);
+}
+ul.sub-list{margin-bottom: 0 !important;}
+.rizhi-list-new{border-bottom: 1px dashed rgb(212, 212, 212);}
+.rizhi-list-new .name{font-size: 13px;}
+.rizhi-list-new .list-group-item .red-block {
+    font-size: 13px;
+    color: #FF6347 !important;
+    background: none !important;
+    border-left: 1px solid #999;
+border-radius: 0px;
+padding-left: 8px !important;
+margin-left: 3px;
+}
+.rizhi-list-new > a{
+	border-bottom: 1px dotted #DDD !important;
+}
+.rizhi-list-new > a.bg1{
+	background:#FFF9ED ;
+}
+.rizhi-list-new .badge{
+	font-weight: 500 !important;
+	padding: 4px 7px;
+}
+.rizhi-list-new .btn-group{
+	top: 9px !important;
+}
+.rizhi-list-new .btn-group .btn{
+	padding: 0 10px !important;
+	height: 24px !important;
+}
+.rizhi-list-new .btn-group .dropdown-menu{
+	min-width: 125px !important;
+}
 .rizhi-shu .sub-list .current-tree > a,.rizhi-shu .sub-list .current-tree > a:hover{background:#eee; color:#FFAE00;}
 .rizhi-shu .tree-sub-1 li a{padding:0px 15px;}
 .rizhi-shu .tree-sub-1 .tree-sub > li > .tree-sub > li > a{ color:#666;}
@@ -1555,5 +1600,8 @@ vertical-align: middle;
 .bbs-right .inline-block-ul{ color:#999}
 .bbs-reply-btn{ background:#eee; padding:15px 15px}
 
-
-
+/*学校后台皮肤*/
+.skin-school .col-xs-2.skin-left{height: 72px;padding: 27px 0;}
+.skin-school .col-xs-5.skin-right{height: 72px;padding: 20px 0;}
+.skin-school .thumbnail{box-shadow: none !important;margin-bottom: 0;}
+.skin-school .school-list-group-ul .row .thumbnail img{}
