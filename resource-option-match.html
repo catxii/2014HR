@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="../../favicon.ico">
+	<title>领信样式模板</title>
+
+	<!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+	<script type="text/JavaScript" src="space-css.js"></script>
+	<!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+
+</head>
+<body class="fixed-top-body" ng-app="" data-spy="scroll" data-target=".navbar-example">
+	<input type="hidden" id="navigation-top-menu" name="navigation-top-menu" value="navigation-top-school-xzhpt">
+	<input type="hidden" id="space-class-menu" name="space-class-menu" value="space-school-scoreinfo">
+	<input type="hidden" id="space-class-menu-two" name="space-class-menu-two" value="space-school-scoreinfo1">
+	<!-- 引入顶部 -->
+
+	<div class="navbar navbar-zhijiao navbar-green navbar-fixed-top " style="height:36px; min-height:36px;">
+		<div class="container">
+			<div class="navbar-header">
+				<button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a target="_blank" href="/linktrust/home/index" class="navbar-brand logo-small" alt="领信logo"></a>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+
+					<li id="navigation-top-teacher-lsn">
+						<a href="/linktrust/space/lsn/index">教学空间</a>
+					</li>
+					<li id="navigation-top-teacher-personal">
+						<a href="/linktrust/space/index/main">个人空间</a>
+					</li>
+
+					<li id="navigation-top-school-class">
+						<a href="/linktrust/space/class/index/main">班级空间</a>
+					</li>
+					<li id="navigation-top-school-space">
+						<a href="/linktrust/others/school/index?schoolId=53f691f1a2d2f7034bdf2a07">学校空间</a>
+					</li>
+
+					<li id="navigation-top-school-xzhpt">
+						<a href="/linktrust/space/school/index?schoolId=53f691f1a2d2f7034bdf2a07">校综合平台</a>
+					</li>
+
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+
+					<li>
+
+						<a href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle">
+							彭志宏
+										
+											(
+							<span class="user-role">华容实验初中学校管理员</span>
+							<span class="caret"></span>
+							)
+						</a>
+
+						<ul role="menu" class="dropdown-menu">
+
+							<li>
+								<a href="javascript:void(0)" onclick="doChangeRole('53e98cbcb3bb260e3e3f6cf6', '华容实验初中学校管理员')">华容实验初中学校管理员</a>
+							</li>
+
+						</ul>
+
+					</li>
+					<li>
+						<a href="javascript:void(0)">
+							<span class="icon-t-shirt"></span>
+						</a>
+					</li>
+					<li>
+						<a href="/linktrust/space/pm/index">
+							<span class="icon-envelope" style="position:relative;">
+								<span id="pmNotReadCount" class="red-round" style="display: none"></span>
+							</span>
+						</a>
+					</li>
+					<li class="dropdown">
+						<a data-toggle="dropdown" class="dropdown-toggle" href="#">
+							<span class=" icon-cogwheel"></span>
+							设置
+							<span class="caret"></span>
+						</a>
+						<ul role="menu" class="dropdown-menu">
+
+							<li>
+								<a href="/linktrust/sys/site/login" target="_blank">后台管理</a>
+							</li>
+							<li class="divider"></li>
+
+							<li>
+								<a href="/linktrust/sys/user/setup/account">个人设置</a>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<a href="/linktrust/sys/site/logout">退出</a>
+							</li>
+						</ul>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+	function doChangeRole(id, text) {
+		$('.user-role').text(text);
+		var url = window.location.href;
+		window.location.href = '/linktrust/sys/site/changeRole?roleid=' + id + '&url=' + url;
+	}
+</script>
+	<div class="container">
+		<div class="col-md-12">
+			<div class="panel panel-default clear-border">
+				<div class="panel-body" style="padding: 15px;">
+					<!-- 引入空间中间头部 -->
+
+					<!--导航-->
+					<div class="col-md-2 clear-padding ht-left">
+						<!-- 分类 -->
+						<div class="panel panel-default clear-border">
+
+							<div class="panel-body clear-padding">
+
+								<ul class="expmenu col-md-12 clear-padding clear-margin">
+									<li>
+										<div class="headers">
+											<span class="label">学校综合平台</span>
+										</div>
+
+										<ul class="menu-menu col-md-12 clear-padding" style="display:block;">
+
+											<li id="space-school-news" onClick="javascript:ShowMenu(this,0)">
+												<a href="javascript:void(0)">校空间动态信息</a>
+											</li>
+											<ol id="ol-space-school-news" class="no">
+
+												<a id="space-school-news1"  href="/linktrust/space/school/news/main?type=1&schoolId=53f691f1a2d2f7034bdf2a07">学校新闻</a>
+
+												<a id="space-school-news2"  href="/linktrust/space/school/news/main?type=2&schoolId=53f691f1a2d2f7034bdf2a07">通知公告</a>
+
+												<a id="space-school-news3"  href="/linktrust/space/school/newscata/main?type=3&schoolId=53f691f1a2d2f7034bdf2a07">自定义栏目配置</a>
+
+												<a id="space-school-news4"  href="/linktrust/space/school/link/main?a=a&schoolId=53f691f1a2d2f7034bdf2a07">友情连接</a>
+
+											</ol>
+
+											<li id="space-school-tuijian-main" onClick="javascript:ShowMenu(this,1)">
+												<a href="javascript:void(0)">校空间推荐</a>
+											</li>
+											<ol id="ol-space-school-tuijian-main" class="no">
+
+												<a id="space-school-tuijian-main1"  href="/linktrust/space/school/best/teacher/main?a=a&schoolId=53f691f1a2d2f7034bdf2a07">优秀教师</a>
+
+												<a id="space-school-tuijian-main2"  href="/linktrust/space/school/best/teacher/ms/main?a=a&schoolId=53f691f1a2d2f7034bdf2a07">师资队伍</a>
+
+												<a id="space-school-tuijian-main3"  href="/linktrust/space/school/best/student/main?a=a&schoolId=53f691f1a2d2f7034bdf2a07">学生天地</a>
+
+												<a id="space-school-tuijian-main4"  href="/linktrust/space/school/best/class/main?a=a&schoolId=53f691f1a2d2f7034bdf2a07">班级园地</a>
+
+											</ol>
+
+											<li id="space-school-schoolinfo" onClick="javascript:ShowMenu(this,2)">
+												<a href="javascript:void(0)">校空间管理</a>
+											</li>
+											<ol id="ol-space-school-schoolinfo" class="no">
+
+												<a id="space-school-schoolinfo1"  href="/linktrust/space/school/base/main?a=a&schoolId=53f691f1a2d2f7034bdf2a07">校信息设置</a>
+
+												<a id="space-school-schoolinfo2"  href="/linktrust/space/school/banner/main?a=a&schoolId=53f691f1a2d2f7034bdf2a07">校风貌图片</a>
+
+												<a id="space-school-schoolinfo3"  href="/linktrust/space/class/virtue/catmain?a=a&schoolId=53f691f1a2d2f7034bdf2a07">德能评分项管理</a>
+
+												<a id="space-school-schoolinfo4"  href="/linktrust/space/school/module/main?a=a&schoolId=53f691f1a2d2f7034bdf2a07">论坛版块配置</a>
+
+												<a id="space-school-schoolinfo8"  href="/linktrust/space/school/menu/roleMain?a=a&schoolId=53f691f1a2d2f7034bdf2a07">角色管理</a>
+
+												<a id="space-school-schoolinfo9"  href="/linktrust/space/school/menu/main?a=a&schoolId=53f691f1a2d2f7034bdf2a07">菜单管理</a>
+
+												<a id="space-school-schoolinfo10"  href="/linktrust/space/school/jurisdiction/main?a=a&schoolId=53f691f1a2d2f7034bdf2a07">权限管理</a>
+
+												<a id="space-school-schoolinfo11"  href="/linktrust/space/school/mail/index?a=a&schoolId=53f691f1a2d2f7034bdf2a07">校长留言审核</a>
+
+											</ol>
+
+											<li id="space-school-schoolreport" onClick="javascript:ShowMenu(this,3)">
+												<a href="javascript:void(0)">报表管理</a>
+											</li>
+											<ol id="ol-space-school-schoolreport" class="no">
+
+												<a id="space-school-schoolreport1"  href="/linktrust/space/school/lsnreport/main?a=a&schoolId=53f691f1a2d2f7034bdf2a07">教学报表</a>
+
+												<a id="space-school-schoolreport2"  href="/linktrust/space/school/catasum/main?a=a&schoolId=53f691f1a2d2f7034bdf2a07">日志报表</a>
+
+												<a id="space-school-schoolreport3"  href="/linktrust/space/school/loginlogger/main?a=a&schoolId=53f691f1a2d2f7034bdf2a07">登陆日志</a>
+
+												<a id="space-school-schoolreport4"  href="/linktrust/space/school/online/main?a=a&schoolId=53f691f1a2d2f7034bdf2a07">在线用户</a>
+
+												<a id="space-school-schoolreport5"  href="/linktrust/space/school/spaceaddr/main?a=a&schoolId=53f691f1a2d2f7034bdf2a07">空间地址</a>
+
+												<a id="space-school-schoolreport6"  href="/linktrust/space/school/best/teacher/jy/main?a=a&schoolId=53f691f1a2d2f7034bdf2a07">备课检查</a>
+
+											</ol>
+
+											<li id="space-school-recordinfo" onClick="javascript:ShowMenu(this,4)">
+												<a href="javascript:void(0)">档案管理</a>
+											</li>
+											<ol id="ol-space-school-recordinfo" class="no">
+
+												<a id="space-school-recordinfo1"  href="/linktrust/space/record/approveby/main?a=a&schoolId=53f691f1a2d2f7034bdf2a07">指定审核人</a>
+
+												<a id="space-school-recordinfo2"  href="/linktrust/space/record/approve/main?a=a&schoolId=53f691f1a2d2f7034bdf2a07">档案审核</a>
+
+												<a id="space-school-recordinfo3"  href="/linktrust/space/record/list/main?a=a&schoolId=53f691f1a2d2f7034bdf2a07">档案列表</a>
+
+												<a id="space-school-recordinfo4"  href="/linktrust/space/record/logger/main?a=a&schoolId=53f691f1a2d2f7034bdf2a07">审核日志</a>
+
+												<a id="space-school-recordinfo5"  href="/linktrust/space/record/modify/main?a=a&schoolId=53f691f1a2d2f7034bdf2a07">档案修改</a>
+
+											</ol>
+
+											<li id="space-school-scoreinfo" onClick="javascript:ShowMenu(this,5)">
+												<a href="javascript:void(0)">考试成绩管理</a>
+											</li>
+											<ol id="ol-space-school-scoreinfo" class="no">
+
+												<a id="space-school-scoreinfo1"  href="/linktrust/space/score/school/exam/list?a=a&schoolId=53f691f1a2d2f7034bdf2a07">考试列表</a>
+
+											</ol>
+
+										</ul>
+
+									</li>
+
+								</ul>
+
+							</div>
+						</div>
+
+					</div>
+					<div class="col-md-10">
+						<div class="panel panel-default " style="padding: 0px;">
+							<div class="panel-heading tab-header">
+								<ul class="inline-block-ul navigation-inline-ul">
+									<li class="current">
+										<a href="javascript:void(0)">匹配不同版本的章节</a>
+									</li>
+								</ul>
+							</div>
+							<div class="panel-body " style="margin: 10px 0px; padding:10px 0; min-height: 350px;">
+
+								<div style="margin-bottom:20px;" class="container-fluid">
+
+									<table class="gray-box-table">
+									  <tbody><tr class="filter-box">
+									    <td class="col-md-1 title">学段</td>
+									    <td class="col-md-11">
+									      <ul class="inline-block-ul list">
+									        <li>
+									          <a href="javascript:" >小学</a>
+									        </li>
+									        <li class="current">
+									          <a href="javascript:" >初中</a>
+									        </li>
+									        <li>
+									          <a href="javascript:" >高中</a>
+									        </li>
+									      </ul>
+									    </td>
+									  </tr>
+									  <tr class="filter-box">
+									    <td class="col-md-1 title">科目</td>
+									    <td class="col-md-11">
+									      <ul class="inline-block-ul list">
+									        <li>
+									          <a href="javascript:" >语文</a>
+									        </li>
+									        <li class="current">
+									          <a href="javascript:" >数学</a>
+									        </li>
+									        <li>
+									          <a href="javascript:" >英语</a>
+									        </li>
+									        <li>
+									          <a href="javascript:" >物理</a>
+									        </li>
+									        <li>
+									          <a href="javascript:" >化学</a>
+									        </li>
+									        <li>
+									          <a href="javascript:" >历史</a>
+									        </li>
+									        <li>
+									          <a href="javascript:" >生物</a>
+									        </li>
+									        <li>
+									          <a href="javascript:" >地理</a>
+									        </li>
+									        <li>
+									          <a href="javascript:" >思想政治</a>
+									        </li>
+									      </ul>
+									    </td>
+									  </tr>
+									  <tr class="filter-box">
+									    <td class="col-md-1 title">版本</td>
+									    <td class="col-md-11">
+									      <ul class="inline-block-ul list">
+									        <li>
+									          <a href="javascript:" >人教版</a>
+									        </li>
+									        <li class="current">
+									          <a href="javascript:" >鲁教版</a>
+									        </li>
+									        <li>
+									          <a href="javascript:" >北师大版</a>
+									        </li>
+									        <li>
+									          <a href="javascript:" >异教版</a>
+									        </li>
+									        <li>
+									          <a href="javascript:" >鹿角版</a>
+									        </li>
+									      </ul>
+									    </td>
+									  </tr>
+									  <tr class="filter-box">
+									    <td class="col-md-1 title">年级</td>
+									    <td class="col-md-11">
+									      <ul class="inline-block-ul list">
+									        <li>
+									          <a href="javascript:" >七年级上</a>
+									        </li>
+									        <li class="current">
+									          <a href="javascript:" >七年级下</a>
+									        </li>
+									        <li>
+									          <a href="javascript:" >八年级上</a>
+									        </li>
+									        <li>
+									          <a href="javascript:" >八年级下</a>
+									        </li>
+									      </ul>
+									    </td>
+									  </tr>
+									</tbody>
+									</table>
+
+									<div class="col-md-5">
+
+									  <div class="collapse-lx">
+
+									    <div class="list-group  list-group-tree small all-tree-ul-none showit sub-list-all-hover">
+
+									      <div class="list-group-item tree-title-button active title-button" href="javascript:">
+									        <span class="glyphicon glyphicon-chevron-right glyphicon-chevron-down"></span>
+									        目录
+									      </div>
+
+									      <ul class="tree-sub tree-sub-1 sub-list ">
+									        <li class="current-tree">
+									          <a href="javascript:" >
+									            <span class="sub-click-area icon-circle-plus icon-circle-minus"></span>
+									            <span class="sub-click-area">全部资源</span>
+									          </a>
+
+									          <ul class="tree-sub ">
+									            <li>
+									              <a href="javascript:" >
+									                <span class="sub-click-area icon-circle-plus icon-circle-minus"></span>
+									                <span class="sub-click-area">第一节</span>
+									              </a>
+									              <ul class="tree-sub">
+									                  <li>
+									                    <a href="javascript:" >
+									                      <span class="sub-click-area icon-circle-plus icon-circle-minus"></span>
+									                      <span class="sub-click-area">第一节</span>
+									                    </a>
+									                    <ul class="tree-sub ">
+									                      <li>
+									                        <a href="javascript:" >
+									                          <span class="icon-notes"></span>
+									                           11 我多想去看看  
+									                          <span class="gray" style="margin:0px 0;">(已匹配：北师大版、鲁教版)</span>
+									                        </a>
+									                      </li>
+									                      <li>
+									                        <a href="javascript:" >
+									                          <span class="icon-notes"></span>
+									                           12 雨点儿 
+									                        </a>
+									                      </li>
+									                      <li>
+									                        <a href="javascript:" >
+									                          <span class="icon-notes"></span>
+									                           15 一次比一次有进步 
+									                        </a>
+									                      </li>
+									                    </ul>
+									                  </li>
+									              </ul>
+									            </li>
+									          </ul>
+									        </li>
+
+									      </ul>
+
+									    </div>
+
+									  </div>
+
+									</div>
+
+									<div class="col-md-7">  
+
+									  <table  class="table">
+									  	<tr>
+									  		<td>11 我多想去看看<span class="small gray">版本：北师大版</span></td>
+									  		<td><a href="javascript:void(0)" class="btn btn-default btn-sm">取消匹配</a></td>
+									  	</tr>
+									  	<tr>
+									  		<td>11 我多想去看看<span class="small gray">版本：北师大版</span></td>
+									  		<td><a href="javascript:void(0)" class="btn btn-default btn-sm">取消匹配</a></td>
+									  	</tr>
+									  	<tr>
+									  		<td>11 我多想去看看<span class="small gray">版本：北师大版</span></td>
+									  		<td><a href="javascript:void(0)" class="btn btn-default btn-sm">取消匹配</a></td>
+									  	</tr>
+									  </table>
+									  <div style="margin:0; " class="container-fluid">
+									    <div class="col-md-12">
+									      <div class="input-group">
+									        <input type="text" class="form-control" placeholder="输入章节关键字...">
+									        <span class="input-group-btn">
+									        <button type="button" class="btn btn-primary ">搜索章节</button>
+									        </span>
+									      </div><!-- /input-group -->
+									    </div><!-- /.col-lg-6 -->
+
+									  </div><!-- /.row -->
+
+									  <div class="container-fluid document-single-box">
+									    <div class="col-md-9">
+									      <ul class="wd-menu-info">
+									        <li><h4 class="title"><a href="#" >11 我多想去看看 </a></h4></li>
+									        <li>
+									          <span class="info">版本：北师大版</span> 
+									          <span class="info">年级：七年级</span> 
+									        </li>
+									      </ul>
+									    </div>
+									    <div class="col-md-3">
+									      <ul class="wd-info">
+									      <li><a href="javascript:void(0)" class="btn btn-default">匹配</a></li>
+									      </ul>
+									    </div>
+									  </div>
+
+									  <div class="container-fluid document-single-box">
+									    <div class="col-md-9">
+									      <ul class="wd-menu-info">
+									        <li><h4 class="title"><a href="#" >11 我多想去看看 </a></h4></li>
+									        <li>
+									          <span class="info">版本：鲁教版</span> 
+									          <span class="info">年级：七年级</span> 
+									        </li>
+									      </ul>
+									    </div>
+									    <div class="col-md-3">
+									      <ul class="wd-info">
+									      <li><a href="javascript:void(0)" class="btn btn-default">匹配</a></li>
+									      </ul>
+									    </div>
+									  </div>
+
+									  <div class="container-fluid document-single-box">
+									    <div class="col-md-9">
+									      <ul class="wd-menu-info">
+									        <li><h4 class="title"><a href="#" >11 我多想去看看 </a></h4></li>
+									        <li>
+									          <span class="info">版本：北师大版</span> 
+									          <span class="info">年级：七年级</span> 
+									        </li>
+									      </ul>
+									    </div>
+									    <div class="col-md-3">
+									      <ul class="wd-info">
+									      <li><a href="javascript:void(0)" class="btn btn-default">匹配</a></li>
+									      </ul>
+									    </div>
+									  </div>
+
+
+
+<!-- 									  <ul class="pagination center">
+									    <li><a href="#" >«</a></li>
+									    <li class="active"><a href="#" >1</a></li>
+									    <li><a href="#" >2</a></li>
+									    <li><a href="#" >3</a></li>
+									    <li><a href="#" >4</a></li>
+									    <li><a href="#" >5</a></li>
+									    <li><a href="#" >»</a></li>
+									  </ul>
+
+
+ -->
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid footer footer-grayline">
+		<div class="row">
+			<ul class="col-md-12 inline-block-ul">
+				<li>
+					<a href="#">关于我们</a>
+				</li>
+				<li>|</li>
+				<li>
+					<a href="#">联系我们</a>
+				</li>
+				<li>|</li>
+				<li>
+					<a href="#">友情链接</a>
+				</li>
+				<li>|</li>
+				<li>
+					<a href="#">关于我们</a>
+				</li>
+				<li>|</li>
+				<li>
+					<a href="#">关于我们</a>
+				</li>
+			</ul>
+		</div>
+		<div class="row">
+			<div class="col-md-12">Copyright @ 2011-2015 湖南领信教育网络发展有限公司版权所有 湘ICP备14001031号</div>
+		</div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade bs-example-modal-sm" id="loginModal" 
+	tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+	aria-hidden="true">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<button type="button" class="close close-position" data-dismiss="modal">
+					<span aria-hidden="true">&times;</span>
+					<span class="sr-only">Close</span>
+				</button>
+				<div class="modal-body">
+					<form id="loginForm" role="form">
+						<h4 class="login-title">领信登录</h4>
+						<div id="login_alert" class="alert-message" style="display: none">
+							<span class="glyphicon glyphicon-exclamation-sign"></span>
+							<span id="login_message"></span>
+						</div>
+						<div class="form-group">
+							<div class="input-group">
+								<div class="input-group-addon large">
+									<span class="glyphicon glyphicon-user"></span>
+								</div>
+								<input type="text" id="login_account" name="account" placeholder="输入用户名" class="form-control small"></div>
+						</div>
+						<div class="form-group">
+							<div class="input-group">
+								<div class="input-group-addon large">
+									<span class="glyphicon glyphicon-lock"></span>
+								</div>
+								<input type="password" id="login_password" name="password" placeholder="输入密码" id="exampleInputPassword2" class="form-control small"></div>
+						</div>
+						<div class="checkbox" style="text-align: right;">
+							<label>
+								<input type="checkbox" id="login_rememberMe" name="rememberMe">记住密码</label>
+						</div>
+						<button class="btn btn-primary btn-lg" onclick="ajaxLogin()" style="width: 100%;">登 陆</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+	<script type="text/JavaScript" src="space-footer-css.js"></script>
+	<!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+
+	<script type="text/javascript">
+	$(function(){
+		$(".label-tab-button label").click(function(){
+			var ThisIndex = $(this).index();
+			$(".nr-tab-content").eq(ThisIndex).show().siblings(".nr-tab-content").hide();
+		});
+	})
+	</script>
+
+</body>
+</html>

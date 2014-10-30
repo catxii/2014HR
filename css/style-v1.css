@@ -1805,6 +1805,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 }
 .html-view-area table {
   max-width: 100%!important;
+  display: inline-block;
 }
 .html-view-area table tr,
 .html-view-area table td {
@@ -1829,6 +1830,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 }
 .blog-nr-view table {
   max-width: 100%!important;
+  display: inline-block;
 }
 .blog-nr-view table tr,
 .blog-nr-view table td {
@@ -2623,7 +2625,7 @@ slide {
 .exam-tj-ul {
   position: absolute;
   right: 8px;
-  top: 8px;
+  top: 3px;
 }
 .table-img {
   border: 5px solid #ccc;

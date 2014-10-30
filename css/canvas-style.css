@@ -58,27 +58,43 @@
       .sidebar li{
         list-style: none;
         margin-bottom: 10px;
+        position:relative;
+        min-height: 154px;
       }
+    .sidebar li div{
+       font-size: 0.68em;
+    }
       .sidebar li a {
-        background: #f9f9f9;
-        border: 1px solid #ccc;
-        display: block;
-        height: 20px;
-        line-height: 20px;
-        text-align: center;
-        text-decoration: none;
-        width: 90%;
-        margin-right: auto;
-        margin-left: auto;
+  		background: none;
+  		border: 8px solid #ccc;
+  		bottom: 0;
+  		display: block;
+  		left: 0;
+  		line-height: 20px;
+  		position: absolute;
+  		right: 0;
+  		text-align: center;
+  		text-decoration: none;
+  		top: 0;
+  		text-align: left;
+  		color:red;
+      z-index: 20;
       }
       .sidebar li.current a {
-        background: #2ecc71!important;
-        color: white!important;
-        border: 1px solid #2ecc71;
+		border: 8px solid #9b1a20;
+		color: white !important;
       }
       .sidebar li a:hover {
-        background: #eee;
+        border: 8px solid #9b1a20;
       }
+      .sidebar li a span {
+		  background: #9b1a20;
+		  border-radius: 0 0 10px;
+		  color: white;
+		  display: block;
+		  text-align: center;
+		  width: 23px;
+		}
       .literally .toolbar {
         height: 45px;
         padding: 5px;
@@ -110,7 +126,7 @@
         line-height: 30px;
       }
       .literally .toolbar-row-right {
-        width: 15em;
+        width: 270px;
         margin-right: 10px;
       }
       .fullscreen-button {
@@ -151,7 +167,7 @@
         display: none;
       }
       .page-change .button {
-        padding: 10px;
+        /*padding: 10px;*/
         font-size: 20px;
         opacity:0.8;
       }
@@ -183,4 +199,16 @@
       }
       .page-change.mid li .button {
         padding: 5px 15px;
+      }
+      .page-change-left-right .arrow-up,.page-change-left-right .arrow-up-one {
+          position: absolute;
+          left: 10px;
+          top: 50%;
+          z-index: 100000;
+      }
+      .page-change-left-right .arrow-down,.page-change-left-right .arrow-down-one {
+          position: absolute;
+          right: 10px;
+          top: 50%;
+          z-index: 100000;
       }
