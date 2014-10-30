@@ -1395,7 +1395,7 @@ text-shadow: 1px 1px 0px rgba(119, 0, 0, 1);
 }
 ul.sub-list{margin-bottom: 0 !important;}
 .rizhi-list-new{border-bottom: 1px dashed rgb(212, 212, 212);}
-.rizhi-list-new .name{font-size: 14px;}
+.rizhi-list-new .name{font-size: 14px !important;}
 .rizhi-list-new .list-group-item .red-block {
     font-size: 13px;
     color: #FF6347 !important;
