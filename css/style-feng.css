@@ -1619,7 +1619,7 @@ border-top:1px solid rgba(233, 226, 206, 1);
 border-left:1px solid rgba(233, 226, 206, 1);
 border-right:1px solid rgba(233, 226, 206, 1);
 border-bottom: 0px !important;
-font-size: 13px;
+font-size: 12px;
 }
 .bg2{background:#FFFDF2 !important;}
 .dn-list > .list-group-item:hover .bank-name,
@@ -1640,9 +1640,10 @@ font-weight: 500;
 
 }
 .dn-list {margin: 0px !important;box-shadow: none !important;}
-.dn-list > .list-group-item:hover,.dn-list > .list-group-item.active:hover,.dn-list > .list-group-item.active:focus,.dn-list > .list-group-item.active{
+.dn-list > a.list-group-item:hover,.dn-list > a.list-group-item:focus,.dn-list > .list-group-item.active:hover,.dn-list > .list-group-item.active:focus,.dn-list > .list-group-item.active{
 	background: none repeat scroll 0% 0% rgba(242, 223, 186, 1) !important;
 	color: #6E582D;
+	border-bottom: 1px solid rgba(225, 206, 170, 1) !important;
 }
 
 
