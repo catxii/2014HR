@@ -1606,3 +1606,49 @@ vertical-align: middle;
 .skin-school .col-xs-5.skin-right{height: 72px;padding: 20px 0;}
 .skin-school .thumbnail{box-shadow: none !important;margin-bottom: 0;}
 .skin-school .school-list-group-ul .row .thumbnail img{}
+
+
+
+/*德能银行*/
+.dn-list .add-button-bank{left: 10px;width: 20px;}
+.dn-list > .list-group-item-dn-active{background:#FCF8E3;
+color: #8C805F;
+margin: 0px !important;
+box-shadow: none !important;
+border-top:1px solid rgba(233, 226, 206, 1);
+border-left:1px solid rgba(233, 226, 206, 1);
+border-right:1px solid rgba(233, 226, 206, 1);
+border-bottom: 0px !important;
+font-size: 13px;
+}
+.bg2{background:#FFFDF2 !important;}
+.dn-list > .list-group-item:hover .bank-name,
+.dn-list > .list-group-item.active:hover .bank-name,
+.dn-list > .list-group-item.active:focus .bank-name,
+.dn-list > .list-group-item.active .bank-name{color: #EC6333;}
+.dn-list .table-bordered{
+	box-shadow: 0px -4px 5px rgba(234, 234, 234, 1) inset !important;
+	border: 0px !important;
+	font-size: 12px !important;
+	margin-bottom: 0 !important;
+	text-align: center;
+}
+.dn-list .table-bordered .tableheader-gray{
+	background: none repeat scroll 0% 0% rgba(240, 240, 240, 1);
+color: #000;
+font-weight: 500;
+
+}
+.dn-list {margin: 0px !important;box-shadow: none !important;}
+.dn-list > .list-group-item:hover,.dn-list > .list-group-item.active:hover,.dn-list > .list-group-item.active:focus,.dn-list > .list-group-item.active{
+	background: none repeat scroll 0% 0% rgba(242, 223, 186, 1) !important;
+	color: #6E582D;
+}
+
+
+
+
+
+
+
+

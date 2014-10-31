@@ -535,6 +535,7 @@ top: 4px !important;}
 
 
 /*资源库*/
+.red-body .school-search .input-group-btn > .btn{ background: #BD0000 !important; border:0px !important;}
 .red-body .school-neiye-search-img{height: 53px; padding: 10px 10px;}
 .red-body .school-search .form-control{height: 32px;}
 .red-body .school-banner-img{height: 277px;}
@@ -821,6 +822,7 @@ top: 4px !important;}
 
 
 /*资源库*/
+.blue-body .school-search .input-group-btn > .btn{ background: #52ADF3 !important; border:0px !important;}
 .blue-body .school-neiye-search-img{height: 53px; padding: 10px 10px;}
 .blue-body .school-search .form-control{height: 32px;}
 .blue-body .school-banner-img{height: 277px;}
@@ -1110,6 +1112,7 @@ top: 4px !important;}
 
 
 /*资源库*/
+.pink-body .school-search .input-group-btn > .btn{ background: #FF6969 !important; border:0px !important;}
 .pink-body .school-neiye-search-img{height: 53px; padding: 10px 10px;}
 .pink-body .school-search .form-control{height: 32px;}
 .pink-body .school-banner-img{height: 277px;}
@@ -1407,6 +1410,7 @@ top: 4px !important;}
 
 
 /*资源库*/
+.crimson-body .school-search .input-group-btn > .btn{ background: #FF8700 !important; border:0px !important;}
 .crimson-body .school-neiye-search-img{height: 53px; padding: 10px 10px;}
 .crimson-body .school-search .form-control{height: 32px;}
 .crimson-body .school-banner-img{height: 277px;}
