@@ -2,14 +2,23 @@
 .green-body{background: #fff; padding-top: 2px;}
 .green-body .navbar{background: #2ECC71;margin-top:-34px;}
 .green-body .navbar:hover{margin-top: 0;}
-
+.green-body .school-logo-name{
+position: absolute;
+top: 55px;
+left: 89px;
+font-size: 32px;
+font-weight: 900;
+letter-spacing: 16px;
+text-shadow: 1px 1px 1px #000;
+color: rgba(255, 255, 255, 1);
+}
 .school-header{}
 .green-body .container-new-top{/*background:url(../img/bg-schol.jpg) repeat-x scroll center top #FFF !important;*/background: linear-gradient(rgba(210, 210, 210, 1) 0%, #FFF 100%) repeat scroll 0% 0% transparent;}
 .green-body .container-new-content{padding-top: 10px;}
 .green-body .school-header-top{height: 130px;position: relative;border-bottom: 1px solid #D4D4D4;}
 .green-body .school-header-top .thumbnail{display: inherit;background: none;}
 .green-body .school-header-top a{width: 375px; height: 85px;}
-.green-body .school-header-name{position: absolute;top:35px; width: 375px;height: 85px;}
+.green-body .school-header-name{position: absolute;top:52px; width: 65px;height: 65px;}
 .green-body .school-header-bottom{border-top: 1px solid #fff;}
 .green-body .school-header-bottom .top-nav-bar-bottom li a {
     font-size: 15px;
@@ -259,13 +268,23 @@ border: 1px solid rgba(168, 0, 0, 1);}
 .red-body .navbar{background:#C40000;margin-top:-34px;}
 .red-body .navbar:hover{margin-top: 0;}
 .red-body .BreakingNews-container{background: url(../img/red-bg.png)repeat-y !important; }
+.red-body .school-logo-name{
+position: absolute;
+top: 55px;
+left: 89px;
+font-size: 32px;
+font-weight: 900;
+letter-spacing: 16px;
+text-shadow: 1px 1px 1px #000;
+color: rgba(255, 255, 255, 1);
+}
 .school-header{}
 .red-body .container-new-top{background:url('../img/bg-red.jpg') repeat !important;/*background: linear-gradient(-180deg, #D9CEB4 0%, #FFFCF5 110%) repeat scroll 0% 0% transparent;*/}
 .red-body .container-new-content{padding-top: 10px;background: url(../img/red-bg.png) repeat-y;}
 .red-body .school-header-top{height: 130px;position: relative;/*border-bottom: 1px solid #fff;*/}
 .red-body .school-header-top .thumbnail{display: inherit;background: none;}
 .red-body .school-header-top a{width: 375px; height: 85px;}
-.red-body .school-header-name{position: absolute;top:35px; width: 375px;height: 85px;}
+.red-body .school-header-name{position: absolute;top:52px; width: 65px;height: 65px;}
 .red-body .school-header-bottom{/*border-top: 1px solid #DFD5BE;*/}
 
  .red-body ul.top-nav-bar-bottom {
@@ -633,14 +652,23 @@ border: 1px solid rgba(168, 0, 0, 1);}
 .blue-body{background:url(../img/5-1206010S329-50.gif) repeat !important; padding-top: 2px;}
 .blue-body .navbar{background: #0079AC;margin-top:-34px;}
 .blue-body .navbar:hover{margin-top: 0;}
-
+.blue-body .school-logo-name{
+position: absolute;
+top: 55px;
+left: 89px;
+font-size: 32px;
+font-weight: 900;
+letter-spacing: 16px;
+text-shadow: 1px 1px 1px #000;
+color: rgba(255, 255, 255, 1);
+}
 .school-header{}
 .blue-body .container-new-top{/*background:url(../img/bg-schol.jpg) repeat-x scroll center top #FFF !important;*/background:url(../img/5-1206010S329-50.gif) repeat !important;}
 .blue-body .container-new-content{padding-top: 10px;background: url('../img/red-bg.png') repeat-y scroll 0% 0% transparent !important;}
 .blue-body .school-header-top{height: 130px;position: relative;/*border-bottom:1px solid rgba(16, 88, 119, 0.32);*/}
 .blue-body .school-header-top .thumbnail{display: inherit;background: none;}
 .blue-body .school-header-top a{width: 375px; height: 85px;}
-.blue-body .school-header-name{position: absolute;top:35px; width: 375px;height: 85px;}
+.blue-body .school-header-name{position: absolute;top:52px; width: 65px;height: 65px;}
 .blue-body .school-header-bottom{/*border-top: 1px solid #BFDEF5;*/}
 .blue-body .school-header-bottom ul.top-nav-bar-bottom{
 	background: -moz-linear-gradient(center top , rgba(73, 111, 177, 1), #2B477D 80%) repeat scroll 0px 0px #F2F2F2;
@@ -1214,14 +1242,23 @@ border: 1px solid rgba(168, 0, 0, 1);}
 .pink-body{/*background:none repeat scroll 0% 0% rgba(255, 105, 105, 0.12);*/background: url(../img/index-red.png) repeat; padding-top: 2px;}
 .pink-body .navbar{background: none repeat scroll 0% 0% rgba(102, 102, 102, 1);margin-top:-34px;}
 .pink-body .navbar:hover{margin-top: 0;}
-
+.pink-body .school-logo-name{
+position: absolute;
+top: 55px;
+left: 89px;
+font-size: 32px;
+font-weight: 900;
+letter-spacing: 16px;
+text-shadow: 1px 1px 1px #000;
+color: rgba(255, 255, 255, 1);
+}
 .school-header{}
 .pink-body .container-new-top{/*background:url(../img/bg-schol.jpg) repeat-x scroll center top #FFF !important;*/background:none repeat scroll 0% 0% #FF6969;}
 .pink-body .container-new-content{padding-top: 10px;background: url('../img/red-bg.png') repeat-y scroll 0% 0% transparent !important;}
 .pink-body .school-header-top{height: 130px;position: relative;/*border-bottom:1px solid rgba(16, 88, 119, 0.32);*/}
 .pink-body .school-header-top .thumbnail{display: inherit;background: none;}
 .pink-body .school-header-top a{width: 375px; height: 85px;}
-.pink-body .school-header-name{position: absolute;top:35px; width: 375px;height: 85px;}
+.pink-body .school-header-name{position: absolute;top:52px; width: 65px;height: 65px;}
 .pink-body .school-header-bottom{/*border-top: 1px solid #BFDEF5;*/}
 .pink-body .school-header-bottom ul.top-nav-bar-bottom{
 	background: -moz-linear-gradient(center top , rgba(189, 189, 189, 1), rgba(239, 239, 239, 1) 80%) repeat scroll 0px 0px #F2F2F2;
@@ -1503,14 +1540,23 @@ border: 1px solid rgba(168, 0, 0, 1);}
 .crimson-body{background:url(../img/5-13050G33952.jpg) repeat !important; padding-top: 2px;box-shadow: 0px -60px 91px rgba(0, 0, 0, 0.34) inset;}
 .crimson-body .navbar{background: none repeat scroll 0% 0% #292929;margin-top:-34px;}
 .crimson-body .navbar:hover{margin-top: 0;}
-
+.crimson-body .school-logo-name{
+position: absolute;
+top: 55px;
+left: 89px;
+font-size: 32px;
+font-weight: 900;
+letter-spacing: 16px;
+text-shadow: 1px 1px 1px #000;
+color: rgba(255, 255, 255, 1);
+}
 .school-header{}
 .crimson-body .container-new-top{box-shadow: 0px 51px 55px rgba(0, 0, 0, 0.34) inset;background:url(../img/5-13050G33952.jpg) repeat !important;}
 .crimson-body .container-new-content{padding-top: 10px;background: url('../img/red-bg.png') repeat-y scroll 0% 0% transparent !important;}
 .crimson-body .school-header-top{height: 130px;position: relative;/*border-bottom:1px solid rgba(16, 88, 119, 0.32);*/}
 .crimson-body .school-header-top .thumbnail{display: inherit;background: none;}
 .crimson-body .school-header-top a{width: 375px; height: 85px;}
-.crimson-body .school-header-name{position: absolute;top:35px; width: 375px;height: 85px;}
+.crimson-body .school-header-name{position: absolute;top:52px; width: 65px;height: 65px;}
 .crimson-body .school-header-bottom{
 	padding: 4px;
 background: none repeat scroll 0% 0% rgba(216, 0, 0, 1);}
