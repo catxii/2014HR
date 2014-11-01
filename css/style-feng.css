@@ -1600,18 +1600,43 @@ vertical-align: middle;
 .bbs-right{background:#fff; }
 .bbs-right .inline-block-ul{ color:#999}
 .bbs-reply-btn{ background:#eee; padding:15px 15px}
+ .submenu {
+ 	display: none;
+ 	background: #EFEFEF;
+ 	font-size: 14px;
+ 	box-shadow: 0px -5px 14px rgba(224, 224, 224, 1) inset !important;
+ }
 
+ .submenu > li {
+ 	border-bottom: 1px dotted #fff;
+ }
+
+ .submenu > li > a {
+ 	display: block;
+ 	text-decoration: none;
+ 	color: #333;
+ 	padding: 14px;
+ 	
+ 	-webkit-transition: all 0.25s ease;
+ 	-o-transition: all 0.25s ease;
+ 	transition: all 0.25s ease;
+ }
+
+ .submenu > li > a:hover {
+ 	background: #ccc;
+ 	color: #333;
+ }
 /*学校后台皮肤*/
 .skin-school .col-xs-2.skin-left{height: 72px;padding: 27px 0;}
 .skin-school .col-xs-5.skin-right{height: 72px;padding: 20px 0;}
 .skin-school .thumbnail{box-shadow: none !important;margin-bottom: 0;}
 .skin-school .school-list-group-ul .row .thumbnail img{}
-
+.bbs-list .dn-list .list-group-item{}
 
 
 /*德能银行*/
 .dn-list .add-button-bank{left: 10px;width: 20px;}
-.dn-list > .list-group-item-dn-active{background:#FCF8E3;
+.dn-list > .list-group-item-dn-active{background:#fff;
 color: #8C805F;
 margin: 0px !important;
 box-shadow: none !important;
@@ -1619,9 +1644,10 @@ border-top:1px solid rgba(233, 226, 206, 1);
 border-left:1px solid rgba(233, 226, 206, 1);
 border-right:1px solid rgba(233, 226, 206, 1);
 border-bottom: 0px !important;
-font-size: 12px;
+font-size: 14px;
 }
 .bg2{background:#FFFDF2 !important;}
+.dn-list > .list-group-item .bank-name,
 .dn-list > .list-group-item:hover .bank-name,
 .dn-list > .list-group-item.active:hover .bank-name,
 .dn-list > .list-group-item.active:focus .bank-name,
@@ -1645,7 +1671,9 @@ font-weight: 500;
 	color: #6E582D;
 	border-bottom: 1px solid rgba(225, 206, 170, 1) !important;
 }
-
+.dn-list > a.list-group-item:focus i.fa,.dn-list > .list-group-item.active:hover i.fa{
+	color: #EC6333;
+}
 
 
 
