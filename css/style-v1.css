@@ -2401,7 +2401,6 @@ slide {
   font-size: 13px;
 }
 .search-bank li a {
-  color: #0099cb;
   margin-right: 5px;
 }
 .sidebar-teacher-info img {
@@ -2645,4 +2644,12 @@ slide {
 }
 .search-single-box .container-fluid .title {
   margin-left: 0;
+}
+.question-add-list > li > a {
+  border: 1px solid #ccc!important;
+  border-radius: 12px!important;
+  overflow: hidden;
+  display: block;
+  margin: 10px 0;
+  box-shadow: 3px 3px 3px #ccc!important;
 }
