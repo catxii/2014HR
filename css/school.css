@@ -9,8 +9,8 @@ left: 89px;
 font-size: 32px;
 font-weight: 900;
 letter-spacing: 16px;
-text-shadow: 1px 1px 1px #000;
-color: rgba(255, 255, 255, 1);
+text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.65);
+color: rgba(42, 194, 106, 1);
 }
 .school-header{}
 .green-body .container-new-top{/*background:url(../img/bg-schol.jpg) repeat-x scroll center top #FFF !important;*/background: linear-gradient(rgba(210, 210, 210, 1) 0%, #FFF 100%) repeat scroll 0% 0% transparent;}
@@ -1290,7 +1290,14 @@ color: rgba(255, 255, 255, 1);
 .pink-body .school-header-top{height: 130px;position: relative;/*border-bottom:1px solid rgba(16, 88, 119, 0.32);*/}
 .pink-body .school-header-top .thumbnail{display: inherit;background: none;}
 .pink-body .school-header-top a{width: 375px; height: 85px;}
-.pink-body .school-header-name{position: absolute;top:52px; width: 65px;height: 65px;}
+.pink-body .school-header-name{
+position: absolute;
+top: 47px;
+width: 75px;
+height: 75px;
+border-radius: 50%;
+box-shadow: 0px 0px 2px #666;
+}
 .pink-body .school-header-bottom{/*border-top: 1px solid #BFDEF5;*/}
 .pink-body .school-header-bottom ul.top-nav-bar-bottom{
 	background: -moz-linear-gradient(center top , rgba(189, 189, 189, 1), rgba(239, 239, 239, 1) 80%) repeat scroll 0px 0px #F2F2F2;
@@ -1579,8 +1586,8 @@ left: 89px;
 font-size: 32px;
 font-weight: 900;
 letter-spacing: 16px;
-text-shadow: 1px 1px 1px #000;
-color: rgba(255, 255, 255, 1);
+text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+color: rgba(255, 137, 137, 1);
 }
 .school-header{}
 .crimson-body .container-new-top{box-shadow: 0px 51px 55px rgba(0, 0, 0, 0.34) inset;background:url(../img/5-13050G33952.jpg) repeat !important;}
