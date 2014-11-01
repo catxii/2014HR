@@ -1,0 +1,263 @@
+      html {
+        overflow: hidden;
+      }
+      body {
+        font-family: "微软雅黑";
+        margin: 0;
+        height: 100%;
+      }
+
+      .fs-container {
+        width: 768px;
+        height: 300px;
+        margin: auto;
+      }
+      .mainbox {
+        height: 100%;
+      }
+      .literally {
+        width: 100%;
+        height: 100%;
+      }
+      .SECT canvas{
+      	z-index: 10!important;
+        background: none!important;
+        cursor: Crosshair;
+      }
+      .literally canvas {
+        background: none!important;
+      }
+      .SECT {
+        border: none!important;
+        margin: 0!important;
+        width: 100%!important;
+        /*position: relative;!important;
+        left: 20%!important;
+        top: 0!important;
+        bottom: 0!important;
+        right: 0!important;*/
+        /*width: 70%!important;*/
+
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+      }
+      .sidebar {
+        bottom: 0;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 15%;
+      }
+      .mainbox {
+        float: right;
+        width: 85%;
+        overflow: hidden;
+        position: relative;
+      }
+      .colorpicker {
+        z-index: 999999999;
+      }
+      .sidebar ul {
+        bottom: 0;
+        left: 0;
+        overflow: auto;
+        padding: 10px;
+        position: absolute;
+        right: 0;
+        top: 43px;
+      }
+      .sidebar li{
+        list-style: none;
+        margin-bottom: 10px;
+        position:relative;
+        min-height: 154px;
+        overflow: hidden;
+      }
+    .sidebar li div{
+       font-size:2pt;
+    }
+      .sidebar li > a {
+  		background: none;
+  		border: 8px solid #ccc;
+  		bottom: 0;
+  		display: block;
+  		left: 0;
+  		line-height: 20px;
+  		position: absolute;
+  		right: 0;
+  		text-align: center;
+  		text-decoration: none;
+  		top: 0;
+  		text-align: left;
+  		color:red;
+      z-index: 20;
+      }
+      .sidebar li.current > a {
+		border: 8px solid #9b1a20;
+		color: white !important;
+      }
+      .sidebar li > a:hover {
+        border: 8px solid #9b1a20;
+      }
+      .sidebar li > a span {
+		  background: #9b1a20;
+		  border-radius: 0 0 10px;
+		  color: white;
+		  display: block;
+		  text-align: center;
+		  width: 23px;
+		}
+      .literally .toolbar {
+        height: 45px;
+        padding: 5px;
+        border-top: 1px solid #ccc;
+        z-index: 100001;
+      }
+      .literally .button.color-square {
+        width: 30px;
+        height: 30px;
+      }
+      .literally .tools .button {
+        width: 70px;
+        height: 40px;
+        line-height: 40px;
+      }
+      .literally .button {
+        vertical-align: middle;
+      }
+      .literally .tool-options-container {
+        vertical-align: middle;
+      }
+      .tool-pan,.tool-eye-dropper {
+        display: none!important;
+      }
+      .tool-eraser {
+        border-radius: 0 5px 5px 0!important;
+      }
+      .literally .button {
+        padding: 5px 10px;
+        line-height: 30px;
+      }
+      .literally .toolbar-row-right {
+        width: 270px;
+        margin-right: 10px;
+      }
+      .fullscreen-button {
+        background: #2ecc71;
+        //border-radius: 5px;
+        cursor: pointer;
+        font-size: 20px;
+        padding: 6px 0;
+        //position: absolute;
+        right: 10px;
+        text-align: center;
+        top: 10px;
+        width: 100%;
+        z-index: 20;
+        color: white;
+        display:block;
+      }
+      .fullscreen-button:hover {
+        background: #1ebc61;
+      }
+      ul,li {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .page-change {
+        position: absolute;
+        z-index: 100002;
+        top: 50%;
+        margin-top: -100px;
+      }
+      .page-change.left {
+        left:10px;
+        display: none;
+      }
+      .page-change.right {
+        right:10px;
+        display: none;
+      }
+      .page-change .button {
+        /*padding: 10px;*/
+        font-size: 20px;
+        opacity:0.8;
+      }
+      .page-change .button:hover {
+        color: white!important;
+        opacity:0.3;
+      }
+      .tool-options-container {
+        border-radius: 5px;
+        font-size: 12px;
+        padding: 7px 6px;
+      }
+      .tool-options span, .tool-options input {
+        vertical-align: middle;
+      }
+      .tool-options input {
+        width: 50px;
+      }
+      .page-change.mid {
+        bottom: 6px;
+        left: 50%;
+        margin-left: -60px;
+        top: auto;
+        width: 220px;
+      }
+      .page-change.mid li {
+        float: left;
+        margin-right: 5px;
+      }
+      .page-change.mid li .button {
+        padding: 5px 15px;
+      }
+      .page-change-left-right .arrow-up,.page-change-left-right .arrow-up-one {
+          bottom: 0;
+          left: 0;
+          position: absolute;
+          right: 90%;
+          top: 0;
+          z-index: 100000;
+      }
+      .page-change-left-right .arrow-down,.page-change-left-right .arrow-down-one {
+          bottom: 0;
+          left: 90%;
+          position: absolute;
+          right: 0%;
+          top: 0;
+          z-index: 100000;
+
+      }
+      .page-change-left-right .arrow-up:hover,
+      .page-change-left-right .arrow-up-one:hover,
+      .page-change-left-right .arrow-down:hover,
+      .page-change-left-right .arrow-down-one:hover {
+          background: #000;
+          opacity:0.1;
+          cursor: pointer;
+      }
+      .page-change-left-right .arrow-up:active,
+      .page-change-left-right .arrow-up-one:active,
+      .page-change-left-right .arrow-down:active,
+      .page-change-left-right .arrow-down-one:active {
+          background: #000;
+          opacity:0.4;
+      }
+      .page-change-left-right .icon-step-backward,
+      .page-change-left-right .icon-step-forward {
+          display: none;
+      }
+      .page-change-left-right .arrow-up-one:hover  .icon-step-backward,
+      .page-change-left-right .arrow-down-one:hover  .icon-step-forward {
+          color: #fff;
+          display: block;
+          font-size: 74px;
+          margin-top: -30px;
+          position: absolute;
+          text-align: center;
+          top: 50%;
+          width: 100%;
+      }
