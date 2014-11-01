@@ -1635,7 +1635,7 @@ vertical-align: middle;
 
 
 /*德能银行*/
-.dn-list .add-button-bank{left: 10px;width: 20px;}
+.dn-list .add-button-new{left: 10px;width: 20px;position: absolute;}
 .dn-list > .list-group-item-dn-active{background:#fff;
 color: #8C805F;
 margin: 0px !important;

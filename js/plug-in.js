@@ -372,11 +372,7 @@ $(function(){
 	
 }
     $(document).ready(function(){
-	$("ul.top-nav-bar-bottom li a").click(function() {
-		$("ul.top-nav-bar-bottom li").removeClass("selected");
-		$(this).parents().addClass("selected");
-		return false;
-	});
+	
 	/*手风琴*/
 	var Accordion = function(el, multiple) {
 					this.el = el || {};
