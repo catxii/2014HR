@@ -1,6 +1,6 @@
 /*学校新页面*/
 .green-body{background: #fff; padding-top: 2px;}
-.green-body .navbar{background: #2ECC71;margin-top:-34px;}
+.green-body .navbar{/*background: #2ECC71;*/margin-top:-34px;}
 .green-body .navbar:hover{margin-top: 0;}
 .green-body .school-logo-name{
 position: absolute;
@@ -70,7 +70,7 @@ vertical-align: middle;}
 .green-body .school-new-default,.green-body .school-new-tzgg,.green-body .school-new-xxxw,.green-body .school-new-xxgk,.green-body .school-new-dyzc,.green-body .school-new-xyjs,.green-body .school-new-yxjs,.green-body .school-new-szdw,.green-body .school-new-xstd,.green-body .school-new-bjyd,.green-body .school-new-xxzy,.green-body .school-new-jypt,.green-body .school-new-rmzy,.green-body .school-new-rmht,.green-body .school-new-xzxx{margin-bottom: 20px; background: #fff;}
 .green-body .green-pane{  position:relative;
 background: linear-gradient(#e6e6e6, rgba(123, 123, 123, 0)) repeat scroll 0% 0% transparent;
-box-shadow: 0px 3px 0px #FFF inset;
+box-shadow: 0px 3px 0px rgba(240, 239, 239, 1) inset;
 padding: 0; position: relative;}
 .green-body .green-pane > ul{margin: 0;word-spacing: -4px;border-bottom: 1px solid #00A856;
 border-top: 1px solid #DDD;
@@ -1895,4 +1895,83 @@ ul.school-luntan-title{padding: 6px; background: rgba(255, 255, 255, 0.51);borde
 ul.school-luntan-title > li span i{font-size: 16px;color: #F06431;}
 ul.school-luntan-title > li{padding: 0 10px;border-right: 1px solid #999;margin: 0 !important;font-size: 12px;}
 ul.school-luntan-title > li.pull-right{border-right: 0px;}
-ul.school-luntan-title > li span a{color: #f90;text-decoration: none;font-weight: bold;font-size: 16px;}
+ul.school-luntan-title > li span a{color: #F06431;text-decoration: none;font-weight: bold;font-size: 16px;}
+.school-teacher-ranking .inline-ranking-left dl{border: 2px solid rgba(255, 255, 255, 0.56);}
+.luntan-contant{margin-top: 15px;}
+.school-luntan-list{
+	padding:0 5px 5px 5px;
+	margin-bottom: 10px;
+}
+.school-luntan-list > div{padding:10px ;font-size: 17px;font-weight: bold;text-decoration: none;width: 100%;background: none repeat scroll 0% 0% rgba(221, 221, 221, 0.33);}
+.school-luntan-list .submenu{
+	background: #ddd;
+	margin: 0 !important;
+	box-shadow: none !important;
+	padding-right: 5px !important;
+}
+.school-luntan-list .submenu > li{
+	padding: 5px;
+    border-bottom: 0px !important;
+	padding-right: 0 !important;
+	margin-right: 0 !important;
+}
+.school-luntan-list .submenu > li > a:hover{
+	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.14) inset;
+	background: #eee !important;
+}
+.school-luntan-list .submenu > li > a {
+	text-align: center;
+	border: 1px solid #fff;
+		border-radius: 5px;
+	background: #eee;
+ 	display: block;
+ 	text-decoration: none;
+ 	color: #333;
+ 	padding: 14px;
+ 	line-height: 20px;
+ 	-webkit-transition: all 0.25s ease;
+ 	-o-transition: all 0.25s ease;
+ 	transition: all 0.25s ease;
+ 	
+ }
+.school-luntan-list .submenu > li > a:hover{background: #eee;}
+.school-luntan-list .luntan-ico{background: #fff;
+display: block;
+float: left;
+text-decoration: none;
+width: 60px;
+height: 60px;
+vertical-align: middle;
+text-align: center;
+padding: 5px;
+margin-right: 10px;
+border-radius: 50%;
+}
+.school-luntan-list .luntan-ico:hover{
+	background: #ddd;
+}
+.school-luntan-list .luntan-ico img{
+	border-radius: 50%;
+	box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+
+}
+.school-luntan-list .link-menu > span{
+	padding: 17px;
+display: block;
+
+}
+.school-luntan-list ul.inline-luntan{
+	padding: 10px 0;
+}
+.school-luntan-list ul.inline-luntan li{
+	border-right: 1px dashed #ccc;
+	margin: 0 !important;
+	padding: 0 10px;
+	font-weight: 500;
+	font-size: 14px;
+}
+.school-luntan-list ul.inline-luntan li.inline-luntan-1{
+	font-weight: bold;
+	color: #f90;
+}
+.school-luntan-list i.fa-clipboard{color:#2CA974 ;font-size: 18px;}
