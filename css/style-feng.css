@@ -1215,7 +1215,7 @@ border-right: 1px solid #DDD;
 ul.expmenu{}
 ul.expmenu li div.headers{padding:12px;border-bottom:1px #fff solid;text-align: center;}
 ul.expmenu li:last-child div.headers{border-bottom:none;text-align: center;}
-ul.expmenu li ul li {text-align:center;background-color:#D9EDF7;padding:8px 12px;border-bottom:1px solid #A2C5E0;color:#727272;text-shadow:1px 1px 0px rgba(255, 255, 255, 0.8);}
+ul.expmenu li ul li {text-align:left;background-color:#D9EDF7;padding:12px;border-bottom:1px dotted #A2C5E0;color:#727272;/*text-shadow:1px 1px 0px rgba(255, 255, 255, 0.8)*/;}
 ul.expmenu li ul li:last-child{border-bottom:none;}
 ul.expmenu li ul li.selected{background-color:#f4f4f4;}
 ul.expmenu div.headers{
@@ -1238,16 +1238,16 @@ ul.expmenu li ul li:not(.selected):hover{
 	cursor:pointer;
 }
 ul.expmenu li ul li:not(.selected):active{
-	background:#f1f1f1;/* Old browsers */
+	/* Old browsers */
 	cursor:pointer;
 }
 
 .menu-menu ol {
-				
+				box-shadow: -5px 3px 5px rgba(0, 0, 0, 0.06) inset;
 				border: #E7E7E7 1px solid;
 				border-top: none;
 				background: none repeat scroll 0% 0% rgba(217, 237, 247, 0.19);
-				text-align: center;
+				text-align: left;
 				padding: 0;
 			}
 .menu-menu li i {
@@ -1257,6 +1257,18 @@ ul.expmenu li ul li:not(.selected):active{
 				text-shadow: 0px 0px 0px rgba(255, 255, 255, 0.8);
 				
 				font-style: normal;
+			}
+.menu-menu li a > span.fa{
+				color: #61A5DE;
+				margin-right:6px;
+				border-radius: 5px;
+				font-size: 20px;
+			}
+.menu-menu li.s2 a > span.fa{
+				color: #fff;
+				margin-right:6px;
+				border-radius: 5px;
+				font-size: 20px;
 			}
 .menu-menu a {
 				color:#1D516E;
@@ -1269,7 +1281,7 @@ ul.expmenu li ul li:not(.selected):active{
 				font-size: 12px;
 				display: block;
 				line-height: 2.5em;
-				
+				padding: 0 0 0 43px;
 			}
 .menu-menu ol a.ol-active{background: #ddd;}
 .menu-menu ol a:hover{background: #ddd;}
