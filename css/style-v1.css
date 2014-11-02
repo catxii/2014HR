@@ -2660,3 +2660,37 @@ slide {
 .view-area {
   border: 1px solid #ccc;
 }
+.loader-con {
+  bottom: 0;
+  left: 300px;
+  position: fixed;
+  right: 0;
+  top: 0px;
+  z-index: 1000;
+}
+.loader-con .loader {
+  display: block;
+  position: absolute;
+  text-align: center;
+  top: 48%;
+  vertical-align: middle;
+  width: 100%;
+  z-index: 110;
+}
+.loader-con .loader .loading {
+  color: #fff;
+  display: inline-block;
+  font-size: 22px;
+  position: relative;
+  text-align: center;
+}
+.loader-con .mask {
+  background: #000;
+  bottom: 0;
+  left: 0;
+  opacity: 0.3;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 100;
+}
