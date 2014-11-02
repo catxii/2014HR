@@ -37,7 +37,7 @@ function canvasShow() {
 
 $(".sidebar").on("click", "ul li a", function() {
 	$(this).parent().addClass("current").siblings().removeClass("current");
-	var sidebarLI = $(this).parent().index();
+	var sidebarLI = $(this).parent().index();//li的index
 	$(".SECT").eq(sidebarLI).show().siblings().hide();
 	liAddCurrent()
 })
@@ -58,6 +58,7 @@ $("section").on("click", ".arrow-down", function() {
 function liAddCurrent() {
 	var SECTIndex = $(".SECT:visible").index();
 
+	//这里只有单击缩略图 MY
 	if (ifFullscreen()) { //MY
 		sectid = SECTIndex + 1; //MY
 		hele = []; //MY
@@ -83,7 +84,8 @@ $("body").on("click",".tool-eye-pointSB",function(){
 function canvasDo(name){
 	$(".SECT canvas").show();
 	$(name).addClass("active").siblings().removeClass("active");
-	$(".SECT canvas").css("cursor","Crosshair");
+	//$(".SECT canvas").css("cursor","Crosshair");
+	$(".SECT canvas").css("cursor","url(highlighter.cur),default");//MY
 }
 $("body").on("click",".tool-pencil",function(){
 	canvasDo(".tool-pencil");
