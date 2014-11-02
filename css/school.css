@@ -1893,7 +1893,7 @@ border: 1px solid rgba(168, 0, 0, 1);}
 /*论坛首页*/
 ul.school-luntan-title{padding: 6px; background: rgba(255, 255, 255, 0.51);border-radius: 6px;color: #333;}
 ul.school-luntan-title > li span i{font-size: 16px;color: #F06431;}
-ul.school-luntan-title > li{padding: 0 10px;border-right: 1px solid #999;margin: 0 !important;font-size: 12px;}
+ul.school-luntan-title > li{padding: 0 10px;border-right: 1px solid #2CA974;margin: 0 !important;font-size: 12px;}
 ul.school-luntan-title > li.pull-right{border-right: 0px;}
 ul.school-luntan-title > li span a{color: #F06431;text-decoration: none;font-weight: bold;font-size: 16px;}
 .school-teacher-ranking .inline-ranking-left dl{border: 2px solid rgba(255, 255, 255, 0.56);}

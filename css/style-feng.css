@@ -1236,6 +1236,8 @@ ul.expmenu li .menu{display:none;}
 ul.expmenu li ul li:not(.selected):hover{
 	background:#B1E0F0;/* Old browsers */
 	cursor:pointer;
+	box-shadow: -5px 3px 5px rgba(0, 0, 0, 0.06) inset;
+	transition: all 0.4s ease 0s;
 }
 ul.expmenu li ul li:not(.selected):active{
 	/* Old browsers */
@@ -1265,7 +1267,7 @@ ul.expmenu li ul li:not(.selected):active{
 				font-size: 20px;
 			}
 .menu-menu li.s2 a > span.fa{
-				color: #fff;
+				/*color: #fff;*/
 				margin-right:6px;
 				border-radius: 5px;
 				font-size: 20px;
@@ -1282,9 +1284,10 @@ ul.expmenu li ul li:not(.selected):active{
 				display: block;
 				line-height: 2.5em;
 				padding: 0 0 0 43px;
+				transition: all 0.25s ease 0s;
 			}
 .menu-menu ol a.ol-active{background: #ddd;}
-.menu-menu ol a:hover{background: #ddd;}
+.menu-menu ol a:hover{background: #ddd;box-shadow: -5px 0px 5px rgba(0, 0, 0, 0.06) inset;}
 
 
 

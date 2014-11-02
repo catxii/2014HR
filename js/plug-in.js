@@ -343,16 +343,19 @@ $(function(){
     }
 //  学校后台竖导航
     function ShowMenu(obj, n) {
+    $(obj).siblings().find("span").removeClass("fa-minus-square").addClass("fa-plus-square");
 	var Nav = obj.parentNode;
 	console.log("id:" + Nav.id);
 	if (!Nav.id) {
 		var BName = Nav.getElementsByTagName("ol");
 		var HName = Nav.getElementsByTagName("s6");
 		var t = 2;
+		
 	} else {
 		var BName = document.getElementById(Nav.id).getElementsByTagName("span");
 		var HName = document.getElementById(Nav.id).getElementsByTagName(".header");
 		var t = 1;
+		 
 	}
 	obj.className = "s" + t;
 	for (var i = 0; i < BName.length; i++) {
@@ -364,13 +367,16 @@ $(function(){
 	if (BName[n].className == "no") {
 		BName[n].className = "";
 		obj.innerHTML = obj.innerHTML.replace(/＋/g, "－");
+		$(obj).find("span").removeClass("fa-plus-square").addClass("fa-minus-square");
 	} else {
 		BName[n].className = "no";
 		obj.className = "";
 		obj.innerHTML = obj.innerHTML.replace(/－/g, "＋");
+		$(obj).find("span").removeClass("fa-minus-square").addClass("fa-plus-square");
 	}
 	
 }
+
     $(document).ready(function(){
 	
 	/*手风琴*/
