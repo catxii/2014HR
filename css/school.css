@@ -710,7 +710,7 @@ overflow: hidden;
     text-shadow:-1px -1px 0px rgba(0, 59, 110, 1);
     text-decoration: none;
 }
-.blue-body .school-header-bottom .top-nav-bar-bottom li{margin: 0 !important; padding: 6px 42px !important;}
+.blue-body .school-header-bottom .top-nav-bar-bottom li{margin: 0 !important; padding: 6px 41px !important;}
 .blue-body .school-header-bottom .top-nav-bar-bottom li:hover,.blue-body .school-header-bottom .top-nav-bar-bottom li:visited{background: -moz-linear-gradient(center top , rgba(63, 88, 135, 1), rgba(73, 107, 173, 1) 80%) repeat scroll 0px 0px rgba(33, 83, 183, 1);
                                                               background: -webkit-gradient(linear,left bottom,left top,color-stop(0.8, rgba(28, 58, 112, 1)),color-stop(0.2, rgba(63, 93, 155, 1)));
 }
@@ -1011,7 +1011,7 @@ overflow: hidden;
     text-shadow:none !important;
     text-decoration: none;
 }
-.skyblue-body .school-header-bottom .top-nav-bar-bottom li{margin: 0 !important; padding: 6px 42px !important;}
+.skyblue-body .school-header-bottom .top-nav-bar-bottom li{margin: 0 !important; padding: 6px 41px !important;}
 .skyblue-body .school-header-bottom .top-nav-bar-bottom li:hover,.skyblue-body .school-header-bottom .top-nav-bar-bottom li:visited{background: #4DC6A8;
 }
 .skyblue-body .school-header-bottom .top-nav-bar-bottom li.current{background: rgba(64, 182, 152, 1)
@@ -1318,7 +1318,7 @@ overflow: hidden;
     text-shadow:1px 1px 0px rgba(255, 255, 255, 1);
     text-decoration: none;
 }
-.pink-body .school-header-bottom .top-nav-bar-bottom li{margin: 0 !important; padding: 6px 42px !important;}
+.pink-body .school-header-bottom .top-nav-bar-bottom li{margin: 0 !important; padding: 6px 41px !important;}
 .pink-body .school-header-bottom .top-nav-bar-bottom li:hover,.blue-body .school-header-bottom .top-nav-bar-bottom li:visited{background: -moz-linear-gradient(center top , #ABABAB, #868686 80%) repeat scroll 0px 0px rgba(126, 126, 126, 1);
                                                               background: -webkit-gradient(linear,left bottom,left top,color-stop(0.8, #ABABAB),color-stop(0.2, #868686));
 }

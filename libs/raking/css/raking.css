@@ -1,0 +1,112 @@
+
+
+#main{
+	/* The main container div */
+	position:relative;
+	margin:auto;
+	width:216px;
+	background:url('../images/main_bg.jpg') repeat-x #aeadad;
+	border:1px solid #CCCCCC;
+	padding:10px 10px 28px 10px;
+	height: 259px;
+	/* CSS3 rounded cornenrs */
+	
+	-moz-border-radius:12px;
+	-webkit-border-radius:12px;
+	border-radius:12px;
+}
+
+#holder{
+	/* The unordered list that is to be split into pages */
+    
+	width:196px;
+	overflow:hidden;
+	position:relative;
+	background:#4e5355;
+	padding-bottom:10px;
+    height: 222px !important;
+	/*	CSS3 inner shadow (the webkit one is commeted, because Google Chrome
+		does not like rounded corners combined with inset shadows): */
+
+	-moz-box-shadow:0 0 10px #222 inset;
+	/*-webkit-box-shadow:0 0 10px #222 inset;*/
+	box-shadow:0 0 10px #222 inset;
+}
+
+.swControls{
+	position:absolute;
+	margin-top:0px;
+}
+
+a.swShowPage{
+
+	/* The links that initiate the page slide */
+
+	background-color:#444444;
+	float:left;
+	height:15px;
+	margin:4px 3px;
+	text-indent:-9999px;
+	width:15px;
+	/*border:1px solid #ccc;*/
+	
+	/* CSS3 rounded corners */
+	
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	border-radius:7px;
+}
+
+a.swShowPage:hover,
+a.swShowPage.active{
+	background-color:#2993dd;
+	
+	/*	CSS3 inner shadow */
+	
+	-moz-box-shadow:0 0 7px #1e435d inset;
+	/*-webkit-box-shadow:0 0 7px #1e435d inset;*/
+	box-shadow:0 0 7px #1e435d inset;
+}
+
+#holder li{
+	background-color: #95D0D7;
+list-style: none outside none;
+padding:30px 10px;
+float: left;
+box-shadow: 0px 0px 6px #111;
+margin:17px;
+width: 163px;
+height: 188px;
+text-align: center;
+	/* Regular CSS3 box shadows (not inset): */
+
+	-moz-box-shadow:0 0 6px #111111;
+	-webkit-box-shadow:0 0 6px #111111;
+	box-shadow:0 0 6px #111111;
+}
+
+#holder,
+#holder li{
+	/* Applying rouded corners to both the holder and the holder lis */
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+}
+
+.clear{
+	/* This class clears the floated elements */
+	clear:both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
