@@ -30,6 +30,10 @@ var filegroup = [
 
 	//highcharts
 	"<script type='text/javascript' src='libs/Highcharts-4.0.3/js/highcharts.js'><\/script>",
+
+	// //jbox
+	// "<script type='text/javascript' src='libs/jbox-v2.3/jBox/jquery.jBox-2.3.min.js'><\/script>",
+ //  	"<script type='text/javascript' src='libs/jbox-v2.3/jBox/i18n/jquery.jBox-zh-CN.js'><\/script>",
 	
 	// 自定义JS
 	"<script type='text/javascript' src='js/plug-in.js'><\/script>"

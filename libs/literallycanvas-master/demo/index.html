@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Literally Canvas</title>
+    <link href="../lib/css/literallycanvas.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+
+
+  </head>
+
+  <body>
+    <div class="fs-container">
+
+       <div class="literally">
+      </div>
+
+      <div class="literally"></div>
+      
+    </div>
+
+    <script src="jquery-1.8.2.js"></script>
+    <script src="fastclick.js"></script>
+    <script src="react-0.10.0.js"></script>
+    <script src="../lib/js/literallycanvas.js"></script>
+
+    
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.literally').literallycanvas({
+          imageURLPrefix: '../lib/img',
+          onInit: function(lc) {
+            console.log('initialized with', lc)
+          }
+        });
+      });
+    </script>
+    
+
+  </body>
+</html>

@@ -31,6 +31,9 @@ var filegroup = [
     "<link href='css/style-feng.css' rel='stylesheet'>", 
 	"<link rel='stylesheet' media='screen and (max-width: 900px)' href='css/response.css' />",
 
+	// 空间装扮样式
+	"<link href='css/diy-space.css' rel='stylesheet'>",
+
 	// Just for debugging purposes. Don't actually copy these 2 lines! 
 	// "<!--[if lt IE 9]> <script src='libs/bootstrap/js/ie8-responsive-file-warning.js'></script> <![endif]-->",
 	// "<script src='libs/bootstrap/js/ie-emulation-modes-warning.js'></script>",

@@ -1,5 +1,5 @@
 body {
-  font-family: "微软雅黑", "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+  font-family: Verdana,Helvetica;
 }
 /* button */
 .btn-lg,
@@ -969,6 +969,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 .tab-header {
   position: relative;
   height: 45px;
+  z-index: 20;
 }
 .navigation-inline-ul {
   position: absolute;
