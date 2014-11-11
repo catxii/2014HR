@@ -15,9 +15,17 @@
 		<script type="text/JavaScript" src="space-css.js"></script>
 		<!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
         
+		
 	</head>
 
 	<body class="bureau-body">
+		<div class="side"style="display: none;" id=goTopBtn >
+			<ul>
+		<li><a href="javascript:void(0);" ><div class="sidebox"><span style="display: block;padding: 5px 12px;float: left;"><i class="fa fa-envelope-o" style="font-size: 30px;color: #fff;"></i></span>局长信箱</div></a></li>
+		<li style="border:none;"><a href="javascript:goTop();" class="sidetop"><img src="img/side_icon05.png"></a></li>
+	</ul>
+		</div>
+		
 		<div class="navbar navbar-zhijiao navbar-bureau navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header">
@@ -1319,8 +1327,9 @@
         	 			 学校资源排行
         	 		</h5>
         	 	</div>
-        	 	<div class="bureau-data-right-body " id="main">
-        	 		<ul class="bureau-data-school-raking clear-margin clear-padding clear-border clearfix" id="holder">
+        	 	<div class="bureau-data-right-body" id="main">
+        	 		
+        	 		<ul class=" clear-margin clear-padding clear-border clearfix" id="holder" >
         	 			<li class=" bureau-data-school-raking">
         	 				<a title="" data-original-title="" target="_blank" href="#">
         	 					<img src="img/name-bg.jpg" style="height:70px;width:70px;">
@@ -1356,7 +1365,13 @@
         	 			</li>
         	 			
         	 		</ul>
+        	 		
         	 	</div>
+        	 	<SCRIPT type=text/javascript>
+			<!--
+			picrun_ini()
+			//-->
+		</SCRIPT>
         	 </div>
         	 </div>
         </div>
@@ -1543,6 +1558,9 @@
         	 	<div class="bureau-school-right-body">
         	 				<div class=" bureau-school-rizhi-list clear-padding clearfix" style="text-align: center;">
         	 					<div class="app-img"></div>
+        	 					<div class="app-download">
+        	 						<a title="" data-original-title="" href="#" class="btn btn-info btn-sm btn-block"><span class="fa fa-android" style="font-size: 20px;"></span> 下载Android版</a>
+        	 					</div>
         	 				</div>
         	 	</div>
         	 </div>
@@ -1642,6 +1660,17 @@
         </div>
         <div class="container bureau-chain navchain" id="chain">
         	 <ul class="clearfix" id="chainer">
+        	 	
+        	 	<li class="col-md-2">
+        	 		<a href="#">
+				           <p><span class="fa fa-globe"></span></p>
+				           <div class="navwz">
+					          <h1><i class="fa fa-arrow-circle-right"></i></h1>
+					          <h2>百度云是的减肥了还是</h2>
+				           </div>
+			        </a>
+        	 	</li>
+        	 	
         	 	<li class="col-md-2">
         	 		<a href="#">
 				           <p><span class="fa fa-globe"></span></p>
@@ -1687,15 +1716,7 @@
 				           </div>
 			        </a>
         	 	</li>
-        	 	<li class="col-md-2">
-        	 		<a href="#">
-				           <p><span class="fa fa-globe"></span></p>
-				           <div class="navwz">
-					          <h1><i class="fa fa-arrow-circle-right"></i></h1>
-					          <h2>百度云是的减肥了还是</h2>
-				           </div>
-			        </a>
-        	 	</li>
+        	 	
         	 </ul>
         </div>
 		<!-- 底部 -->
@@ -1747,21 +1768,11 @@
 			$('.navwz h1',this).stop().animate({'top':'-68px'},400);
 			$('.navwz h2',this).stop().animate({'top':'68px'},400);
 		})
-		qfzy();
+		
 	})
 })(jQuery);
 
-function qfzy(){
 
-	if(jQuery(window).width()>1170){
-		var navchain = jQuery(window).width();
-	}else{
-		var navchain = 1170;
-	}
-	var navchain_single = nav/5;
-	jQuery('.navchain').width(navchain);
-	jQuery('.navchain li').width(navchain_single);
-}
 
 jQuery(window).resize(function(){
 	if (typeof indexSlides != 'undefined' && indexSlides.reformat) 
@@ -1769,6 +1780,7 @@ jQuery(window).resize(function(){
 	qfzy();
 });
         </script>
+        
        <!-- <script>
 	     $('.bureau-student-rizhi>li').each(function(){
 		var num = $(this).index();
@@ -1778,6 +1790,42 @@ jQuery(window).resize(function(){
 		}
 	    });
         </script>-->
+        
+        <script>
+     function goTopEx(){
+        var obj=document.getElementById("goTopBtn");
+        function getScrollTop(){
+                return document.documentElement.scrollTop;
+            }
+        function setScrollTop(value){
+                document.documentElement.scrollTop=value;
+            }    
+        window.onscroll=function(){getScrollTop()>0?obj.style.display="":obj.style.display="none";}
+        obj.onclick=function(){
+            var goTop=setInterval(scrollMove,10);
+            function scrollMove(){
+                    setScrollTop(getScrollTop()/1.1);
+                    if(getScrollTop()<1)clearInterval(goTop);
+                }
+        }
+    }
+     goTopEx();
+     $(document).ready(function(){
+
+	$(".side ul li").hover(function(){
+		$(this).find(".sidebox").stop().animate({"width":"124px"},200).css({"opacity":"1","filter":"Alpha(opacity=100)","background":"#ae1c1c"})	
+	},function(){
+		$(this).find(".sidebox").stop().animate({"width":"54px"},200).css({"opacity":"0.8","filter":"Alpha(opacity=80)","background":"#ccc"})	
+	});
+	
+});
+
+//回到顶部
+function goTop(){
+	$('html,body').animate({'scrollTop':0},500);
+}
+
+        </script>
 	</body>
 
 </html>
