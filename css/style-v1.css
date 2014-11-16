@@ -91,10 +91,7 @@ fieldset[disabled] .btn-primary.active {
   border: 1px solid #1fbd62;
 }
 .btn-fileupload {
-  height: 20px;
   overflow: hidden;
-  padding: 0;
-  width: 20px;
 }
 /*labels*/
 .label-default {
@@ -2694,4 +2691,15 @@ slide {
   right: 0;
   top: 0;
   z-index: 100;
+}
+.navbar-toggle {
+  background-color: #ffae00;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  float: right;
+  margin-bottom: 0px;
+  margin-right: 6px;
+  margin-top: 6px;
+  padding: 5px;
 }
