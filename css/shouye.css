@@ -30,4 +30,5 @@
 .banner_mag{width:600px;height:190px;position:absolute;left:45%;bottom:35px;text-align:left;z-index:99;font-family: "微软雅黑";}
 .banner_magbox{width:600px;height:190px;background:url(../img/bureau-img/ico3.png) repeat;text-align:left;padding:25px 30px 35px;border-right: 6px solid #ff9900;}
 .banner_magbox h4{ font-size:20px;*font-size:18px; font-weight:bold; color:#fff; margin-bottom:10px; }
-.banner_magbox p{font-size:12px;color:#fff;font-weight:normal;margin-bottom:12px;}
+.banner_magbox p{font-size:12px;color:#fff;font-weight:normal;margin-bottom:12px;height: 70px;overflow: hidden;}
+.banner_magbox h4 > a > i.fa{color: #f90;}
