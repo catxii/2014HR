@@ -1786,6 +1786,27 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 .single-view0body {
   background: #f2f2f2;
 }
+.index-view-area {
+  position: relative;
+  overflow: hidden;
+}
+.index-view-area * {
+  position: static!important;
+  line-height: 1.7em !important;
+  max-width: 100%!important;
+}
+.index-view-area table {
+  max-width: 100%!important;
+  display: inline-block;
+}
+.index-view-area table tr,
+.index-view-area table td {
+  border: 1px solid #ccc;
+}
+.index-view-area img {
+  display: inline-block;
+  vertical-align: middle;
+}
 .html-view-area {
   border: 1px solid #d0d0d0;
   box-shadow: 0 0 7px #ccc;
@@ -2702,4 +2723,14 @@ slide {
   margin-right: 6px;
   margin-top: 6px;
   padding: 5px;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  -webkit-transform: scale(1.7);
+  /* for Chrome || Safari */
+  -moz-transform: scale(1.7);
+  /* for Firefox */
+  -ms-transform: scale(1.7);
+  /* for IE */
+  -o-transform: scale(1.7);
 }
