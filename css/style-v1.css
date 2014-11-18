@@ -2734,6 +2734,10 @@ input[type="checkbox"] {
   text-align: center;
   z-index: 1;
 }
+.head-mask * {
+  max-width: 100% !important;
+  position: static !important;
+}
 .head-mask > div,
 .head-mask > p {
   display: inline-block;
