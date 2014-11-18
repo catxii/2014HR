@@ -377,7 +377,9 @@ a.list-grouping-fen-more{
 .top-nav-left{
 	padding-left:0px; padding-right:0px; /*background:url(../img/bg_09.png) repeat-x;*/
 	height:178px;
-	position:relative;}	
+	position:relative;
+	z-index:2;
+	}	
 .user-nav-bar{
 	position:relative;
 	margin:-35px auto 0px;

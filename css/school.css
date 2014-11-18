@@ -290,6 +290,9 @@ text-shadow: 1px 1px 1px #000;
 color: rgba(255, 255, 255, 1);
 }
 .school-header{}
+.red-body .top-nav-fluid2{
+	height: 178px;
+}
 .red-body .container-new-top{background:url('../img/bg-red.jpg') repeat !important;/*background: linear-gradient(-180deg, #D9CEB4 0%, #FFFCF5 110%) repeat scroll 0% 0% transparent;*/}
 .red-body .container-new-content{padding-top: 10px;background: url(../img/red-bg.png) repeat-y;}
 .red-body .school-header-top{height: 130px;position: relative;/*border-bottom: 1px solid #fff;*/}

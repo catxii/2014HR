@@ -1,14 +1,44 @@
+.bureau-cuzdy-custom li{
+	line-height: 40px;
+	padding: 5px 0;
+}
+.bureau-cuzdy-custom li a{
+	width: 30px;
+	height: 30px;
+	display: block;
+border-radius: 50%;
+text-align: center;
+color: #FFF;
+margin-right: 5px;
+
+}
+.bureau-cuzdy-custom li a.cuzdy-red{
+	box-shadow: 1px 0px 1px rgba(255, 255, 255, 0.53);
+	background: #F6583C;
+}
+.bureau-cuzdy-custom li a.cuzdy-blue{
+	box-shadow: 1px 0px 1px rgba(255, 255, 255, 0.53);
+	background:#3598DB;
+}
+.bureau-cuzdy-custom li a.cuzdy-green{
+	box-shadow: 1px 0px 1px rgba(255, 255, 255, 0.53);
+	background: #22AC38;
+}
+.bureau-cuzdy-custom li a.cuzdy-orange{
+	box-shadow: 1px 0px 1px rgba(255, 255, 255, 0.53);
+	background: #F67E3C;
+}
 /*蓝色样式*/
 .bureau-blue-body {
     padding-top: 0px !important;
     position: relative;
-   font:normal 14px/24px "Helvetica Neue",Helvetica,STheiti,"Microsoft Yahei","冬青黑体简体中文 w3",宋体,Arial,Tahoma,sans-serif,serif;word-wrap:break-word;
     background: #F0F0F0;
+    font-family: Arial,Helvetica,sans-serif,Verdana,Helvetica;
 }
 .bureau-blue-body .bureau-navlist {
     height: 138px;
     padding: 38px 0px 0px;
-    background: url('../img/bureau-img/body_bg01.png') repeat scroll center top transparent;
+    background: url('../img/icons-blue.jpg') repeat scroll center top transparent;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.525) inset;
 }
 /*自定义头部*/
@@ -28,24 +58,24 @@ box-shadow: 0px 0px 2px #666;
 	position: absolute;
 top: 23px;
 left: 89px;
-font-size: 32px;
+font-size: 25px;
 font-weight: 900;
 letter-spacing: 16px;
-text-shadow: 3px 2px 0px #EBF6FB, 7px 5px 0px rgba(0, 0, 0, 0.15);
-color: #2AC26A;
+text-shadow: 3px 2px 0px #3598DB, 7px 5px 0px rgba(0, 0, 0, 0.15);
+color: rgba(186, 243, 255, 1);
 font-family: "微软雅黑";
 }
 .bureau-blue-body .bureau-header-name span{
-	color: #f90;
-	font-size: 41px;
+	color: rgba(255, 207, 0, 1);
+	font-size: 35px;
 }
 .bureau-blue-body .school-resources-banner {
-    background: none repeat scroll 0% 0% rgba(124, 189, 224, 1);
+    background: none repeat scroll 0% 0% rgba(131, 220, 239, 1);
     border-bottom: 1px solid #2D89BA;
 }
 .bureau-blue-body .bureau-cuzdy-chengyuan{
 	margin: 0 !important;
-	color: #fff;
+	color: #1B79B7;
 	float: right;
 }
 .bureau-blue-body .bureau-cuzdy-chengyuan li{
@@ -89,8 +119,9 @@ box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.14);
 .bureau-blue-body .event_year li{height:40px;line-height:40px;background:#FFF;margin-bottom:1px;font-size:18px;color:#828282;cursor:pointer;}
 .bureau-blue-body .event_year li.current{width:70px;background:#0066ff url('../img/jian.png') 60px 0 no-repeat;color:#FFF;text-align:left;padding-left:9px;}
 .bureau-blue-body .event_list{float:right;background:url('../img/dian3.png') 139px 0 repeat-y;margin:10px 0 20px 0;}
-.bureau-blue-body .event_list h3{margin:0 0 10px 132px;font-size:20px;color:#333;padding-left:25px;background:url('../img/jian.png') 0 -45px no-repeat;height:38px;line-height:38px;}
-.bureau-blue-body .event_list li{background:url('../img/jian.png') 131px -80px no-repeat;font-family:Verdana,Helvetica,"微软雅黑";}
+.bureau-blue-body .event_list h3{margin:0 0 10px 127px;font-size:20px;color:#333;padding-left:25px;background:url('../img/jian.png') 0 -45px no-repeat;height:38px;line-height:38px;text-shadow: 3px 1px 0px #F0F0F0, 6px 3px 0px rgba(0, 0, 0, 0.11);
+font-weight: 900;font-family: "微软雅黑";}
+.bureau-blue-body .event_list li{background:url('../img/jian.png') 131px -80px no-repeat;font-family:Verdana,Helvetica;}
 .bureau-blue-body .event_list li > span{width:127px;text-align:right;display:block;float:left;margin-top:10px;font-size: 14px;}
 .bureau-blue-body .event_list li p.cuzdy-title{margin-left:24px;display:inline-block;padding-left:10px;background:url('../img/jian.png') -21px 0 no-repeat;line-height:25px;_float:left;}
 .bureau-blue-body .event_list li p span{
@@ -134,13 +165,13 @@ padding-left: 7px;
 .bureau-green-body {
     padding-top: 0px !important;
     position: relative;
-   font:normal 14px/24px "Helvetica Neue",Helvetica,STheiti,"Microsoft Yahei","冬青黑体简体中文 w3",宋体,Arial,Tahoma,sans-serif,serif;word-wrap:break-word;
     background: #F0F0F0;
+    font-family: Arial,Helvetica,sans-serif,Verdana,Helvetica;
 }
 .bureau-green-body .bureau-navlist {
     height: 138px;
     padding: 38px 0px 0px;
-    background-image:url('../img/bg-skyblue.png') ;
+    background-image:url('../img/icons-green.jpg') ;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.525) inset;
 }
 /*自定义头部*/
@@ -160,19 +191,19 @@ box-shadow: 0px 0px 2px #666;
 	position: absolute;
 top: 23px;
 left: 89px;
-font-size: 32px;
+font-size: 25px;
 font-weight: 900;
 letter-spacing: 16px;
-text-shadow: 3px 2px 0px #17BFA0, 7px 5px 0px rgba(0, 0, 0, 0.15);
-color: #474747;
+text-shadow: 3px 2px 0px #2DCC70, 7px 5px 0px rgba(0, 0, 0, 0.26);
+color: rgba(249, 255, 0, 1);
 font-family: "微软雅黑";
 }
 .bureau-green-body .bureau-header-name span{
-	color: #FFCF00;
-	font-size: 41px;
+	color: rgba(0, 0, 0, 1);
+	font-size: 35px;
 }
 .bureau-green-body .school-resources-banner {
-    background: none repeat scroll 0% 0% #D7DFE1;
+    background: none repeat scroll 0% 0% rgba(240, 218, 140, 1);
     border-bottom: 1px solid #ccc;
 }
 .bureau-green-body .bureau-cuzdy-chengyuan{
@@ -222,8 +253,9 @@ box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.14);
 .bureau-green-body .event_year li{height:40px;line-height:40px;background:#FFF;margin-bottom:1px;font-size:18px;color:#828282;cursor:pointer;}
 .bureau-green-body .event_year li.current{width:70px;background:#0066ff url('../img/jian.png') 60px 0 no-repeat;color:#FFF;text-align:left;padding-left:9px;}
 .bureau-green-body .event_list{float:right;background:url('../img/dian3.png') 139px 0 repeat-y;margin:10px 0 20px 0;}
-.bureau-green-body .event_list h3{margin:0 0 10px 132px;font-size:20px;color:#333;padding-left:25px;background:url('../img/jian2.png') 0 -45px no-repeat;height:38px;line-height:38px;}
-.bureau-green-body .event_list li{background:url('../img/jian.png') 131px -80px no-repeat;font-family:Verdana,Helvetica,"微软雅黑";}
+.bureau-green-body .event_list h3{margin:0 0 10px 127px;font-size:20px;color:#333;padding-left:25px;background:url('../img/jian2.png') 0 -45px no-repeat;height:38px;line-height:38px;text-shadow: 3px 1px 0px #F0F0F0, 6px 3px 0px rgba(0, 0, 0, 0.11);
+font-weight: 900;font-family: "微软雅黑";}
+.bureau-green-body .event_list li{background:url('../img/jian.png') 131px -80px no-repeat;font-family:Verdana,Helvetica;}
 .bureau-green-body .event_list li > span{width:127px;text-align:right;display:block;float:left;margin-top:10px;font-size: 14px;}
 .bureau-green-body .event_list li p.cuzdy-title{margin-left:24px;display:inline-block;padding-left:10px;background:url('../img/jian.png') -21px 0 no-repeat;line-height:25px;_float:left;}
 .bureau-green-body .event_list li p span{
@@ -245,7 +277,7 @@ box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.14);
 	}
 .bureau-green-body .event_list li p span a i{
 	margin-right: 8px;
-	color: #40B698;
+	color: #22AC38;
 	font-size: 22px;
 	font-weight: bold;
 }
@@ -267,14 +299,14 @@ padding-left: 7px;
 .bureau-red-body {
     padding-top: 0px !important;
     position: relative;
-   font:normal 14px/24px "Helvetica Neue",Helvetica,STheiti,"Microsoft Yahei","冬青黑体简体中文 w3",宋体,Arial,Tahoma,sans-serif,serif;word-wrap:break-word;
     background: #F0F0F0;
+    font-family: Arial,Helvetica,sans-serif,Verdana,Helvetica;
 }
 .bureau-red-body .bureau-navlist {
     height: 138px;
     padding: 38px 0px 0px;
-    background-image:url('../img/bg-skyblue.png') ;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.525) inset;
+    background-image:url('../img/icons-red.jpg') ;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.525) inset;
 }
 /*自定义头部*/
 /*自定义内页*/
@@ -293,19 +325,19 @@ box-shadow: 0px 0px 2px #666;
 	position: absolute;
 top: 23px;
 left: 89px;
-font-size: 32px;
+font-size: 25px;
 font-weight: 900;
 letter-spacing: 16px;
-text-shadow: 3px 2px 0px #17BFA0, 7px 5px 0px rgba(0, 0, 0, 0.15);
-color: #474747;
+text-shadow: 3px 2px 0px #E84C3D, 7px 5px 0px rgba(0, 0, 0, 0.34);
+color: #FFCF00;
 font-family: "微软雅黑";
 }
 .bureau-red-body .bureau-header-name span{
-	color: #FFCF00;
-	font-size: 41px;
+	color: #fff;
+	font-size: 35px;
 }
 .bureau-red-body .school-resources-banner {
-    background: none repeat scroll 0% 0% #D7DFE1;
+    background: none repeat scroll 0% 0% rgba(255, 235, 186, 1);
     border-bottom: 1px solid #ccc;
 }
 .bureau-red-body .bureau-cuzdy-chengyuan{
@@ -324,16 +356,16 @@ border-radius: 10%;
 text-align: center;
 color: #fff;
 margin-right: 5px;
-background: rgb(107,186,112); /* Old browsers */
-background: -moz-linear-gradient(top,  rgba(107,186,112,1) 0%, rgba(107,186,112,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(107,186,112,1)), color-stop(100%,rgba(107,186,112,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(107,186,112,1) 0%,rgba(107,186,112,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(107,186,112,1) 0%,rgba(107,186,112,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(107,186,112,1) 0%,rgba(107,186,112,1) 100%); /* IE10+ */
-background: linear-gradient(to bottom,  rgba(107,186,112,1) 0%,rgba(107,186,112,1) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6bba70', endColorstr='#6bba70',GradientType=0 ); /* IE6-9 */
+background: rgb(248,80,50); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(248,80,50,1) 0%, rgba(241,111,92,1) 50%, rgba(246,41,12,1) 51%, rgba(240,47,23,1) 71%, rgba(231,56,39,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(248,80,50,1)), color-stop(50%,rgba(241,111,92,1)), color-stop(51%,rgba(246,41,12,1)), color-stop(71%,rgba(240,47,23,1)), color-stop(100%,rgba(231,56,39,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(248,80,50,1) 0%,rgba(241,111,92,1) 50%,rgba(246,41,12,1) 51%,rgba(240,47,23,1) 71%,rgba(231,56,39,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(248,80,50,1) 0%,rgba(241,111,92,1) 50%,rgba(246,41,12,1) 51%,rgba(240,47,23,1) 71%,rgba(231,56,39,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(248,80,50,1) 0%,rgba(241,111,92,1) 50%,rgba(246,41,12,1) 51%,rgba(240,47,23,1) 71%,rgba(231,56,39,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(248,80,50,1) 0%,rgba(241,111,92,1) 50%,rgba(246,41,12,1) 51%,rgba(240,47,23,1) 71%,rgba(231,56,39,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e73827',GradientType=0 ); /* IE6-9 */
 
-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.14);
+box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.34);
 }
 
 /* IE7 */
@@ -353,10 +385,11 @@ box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.14);
 .bureau-red-body .link li a:hover{color:#0066FF  }.box{width:940px;margin:18px auto 0 auto;}
 .bureau-red-body .event_year{width:70px;text-align:center;float:left;margin-top:10px;}
 .bureau-red-body .event_year li{height:40px;line-height:40px;background:#FFF;margin-bottom:1px;font-size:18px;color:#828282;cursor:pointer;}
-.bureau-red-body .event_year li.current{width:70px;background:#0066ff url('../img/jian.png') 60px 0 no-repeat;color:#FFF;text-align:left;padding-left:9px;}
+.bureau-red-body .event_year li.current{width:70px;background:#0066ff url('../img/jian3.png') 60px 0 no-repeat;color:#FFF;text-align:left;padding-left:9px;}
 .bureau-red-body .event_list{float:right;background:url('../img/dian3.png') 139px 0 repeat-y;margin:10px 0 20px 0;}
-.bureau-red-body .event_list h3{margin:0 0 10px 132px;font-size:20px;color:#333;padding-left:25px;background:url('../img/jian2.png') 0 -45px no-repeat;height:38px;line-height:38px;}
-.bureau-red-body .event_list li{background:url('../img/jian.png') 131px -80px no-repeat;font-family:Verdana,Helvetica,"微软雅黑";}
+.bureau-red-body .event_list h3{margin:0 0 10px 127px;font-size:20px;color:#333;padding-left:25px;background:url('../img/jian3.png') 0 -45px no-repeat;height:38px;line-height:38px;text-shadow: 3px 1px 0px #F0F0F0, 6px 3px 0px rgba(0, 0, 0, 0.11);
+font-weight: 900;font-family: "微软雅黑";}
+.bureau-red-body .event_list li{background:url('../img/jian3.png') 131px -80px no-repeat;font-family:Verdana,Helvetica;}
 .bureau-red-body .event_list li > span{width:127px;text-align:right;display:block;float:left;margin-top:10px;font-size: 14px;}
 .bureau-red-body .event_list li p.cuzdy-title{margin-left:24px;display:inline-block;padding-left:10px;background:url('../img/jian.png') -21px 0 no-repeat;line-height:25px;_float:left;}
 .bureau-red-body .event_list li p span{
@@ -378,11 +411,144 @@ box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.14);
 	}
 .bureau-red-body .event_list li p span a i{
 	margin-right: 8px;
-	color: #40B698;
+	color: #F6583C;
 	font-size: 22px;
 	font-weight: bold;
 }
 .bureau-red-body .event_list li p span > em{
+	display: block;
+font-style: normal;
+font-size: 12px;
+color: #959595;
+max-height: 36px;
+overflow: hidden;
+line-height: 18px;
+margin-top: 9px;
+font-weight: initial;
+border-left: 1px solid rgba(234, 234, 234, 1);
+padding-left: 7px;
+}
+/*橘色样式*/
+.bureau-orange-body {
+    padding-top: 0px !important;
+    position: relative;
+    background: #F0F0F0;
+    font-family: Arial,Helvetica,sans-serif,Verdana,Helvetica;
+}
+.bureau-orange-body .bureau-navlist {
+    height: 138px;
+    padding: 38px 0px 0px;
+    background-image:url('../img/icons-orange.jpg') ;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.525) inset;
+}
+/*自定义头部*/
+/*自定义内页*/
+.bureau-orange-body .bureau-header-logo{
+	position: relative;
+}
+.bureau-orange-body .bureau-header{
+	position: absolute;
+top: 12px;
+width: 75px;
+height: 75px;
+border-radius: 50%;
+box-shadow: 0px 0px 2px #666;
+}
+.bureau-orange-body .bureau-header-name{
+	position: absolute;
+top: 23px;
+left: 89px;
+font-size: 25px;
+font-weight: 900;
+letter-spacing: 16px;
+text-shadow: 3px 2px 0px #E77E23, 7px 5px 0px rgba(0, 0, 0, 0.44);
+color: #FFFC00;
+font-family: "微软雅黑";
+}
+.bureau-orange-body .bureau-header-name span{
+	color: #fff;
+	font-size: 35px;
+}
+.bureau-orange-body .school-resources-banner {
+    background: none repeat scroll 0% 0% rgba(209, 209, 209, 1);
+    border-bottom: 1px solid #ccc;
+}
+.bureau-orange-body .bureau-cuzdy-chengyuan{
+	margin: 0 !important;
+	color: #333;
+	float: right;
+}
+.bureau-orange-body .bureau-cuzdy-chengyuan li{
+	line-height: 40px;
+	margin-right: 20px;
+}
+.bureau-orange-body .bureau-cuzdy-chengyuan li .fa{
+padding: 10px;
+font-size: 16px;
+border-radius: 10%;
+text-align: center;
+color: #fff;
+margin-right: 5px;
+background: rgb(254,204,177); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(254,204,177,1) 0%, rgba(241,116,50,1) 50%, rgba(234,85,7,1) 51%, rgba(251,149,94,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(254,204,177,1)), color-stop(50%,rgba(241,116,50,1)), color-stop(51%,rgba(234,85,7,1)), color-stop(100%,rgba(251,149,94,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(251,149,94,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(251,149,94,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(251,149,94,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(251,149,94,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', endColorstr='#fb955e',GradientType=0 ); /* IE6-9 */
+
+box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.54);
+}
+
+/* IE7 */
+.bureau-orange-body .hidden{display:none;}
+.bureau-orange-body .last{border-bottom:none !important;}
+.bureau-orange-body .page { width:100%;background:#F0F0F0 url('img/dian2.png') repeat-x; }
+.bureau-orange-body .page{display:table;margin:0 auto;background:#fff;-moz-box-shadow: 0 5px 20px #CCCCCC;-webkit-box-shadow: 0 5px 20px #CCCCCC;box-shadow: 0 5px 20px #CCCCCC;}
+.bureau-orange-body .about{box-shadow:0;-webkit-box-shadow:0;-moz-box-shadow:0;}
+.bureau-orange-body .header{width:940px;height:90px;margin:0 auto;z-index:8;}
+.bureau-orange-body .logo{margin:22px 0 0 0;float:left;display:inline;}
+.bureau-orange-body .link{margin-top:30px;float:right;text-align:right;_width:718px;}
+.bureau-orange-body .link li{float:left;display:inline;margin-left:60px;}
+.bureau-orange-body .link li a{color:#4F4E4E;font-size:16px;font-weight:500;padding-bottom:6px;display:block;}
+.bureau-orange-body .link li.active{border-bottom:2px solid #0066ff;}
+.bureau-orange-body .link li.active a{color:#0066FF  }
+.bureau-orange-body .link li:hover{border-bottom:2px solid #0066ff;color:#0066FF  }
+.bureau-orange-body .link li a:hover{color:#0066FF  }.box{width:940px;margin:18px auto 0 auto;}
+.bureau-orange-body .event_year{width:70px;text-align:center;float:left;margin-top:10px;}
+.bureau-orange-body .event_year li{height:40px;line-height:40px;background:#FFF;margin-bottom:1px;font-size:18px;color:#828282;cursor:pointer;}
+.bureau-orange-body .event_year li.current{width:70px;background:#0066ff url('../img/jian3.png') 60px 0 no-repeat;color:#FFF;text-align:left;padding-left:9px;}
+.bureau-orange-body .event_list{float:right;background:url('../img/dian3.png') 139px 0 repeat-y;margin:10px 0 20px 0;}
+.bureau-orange-body .event_list h3{margin:0 0 10px 127px;font-size:20px;color:#333;padding-left:25px;background:url('../img/jian4.png') 0 -45px no-repeat;height:38px;line-height:38px;text-shadow: 3px 1px 0px #F0F0F0, 6px 3px 0px rgba(0, 0, 0, 0.11);
+font-weight: 900;font-family: "微软雅黑";}
+.bureau-orange-body .event_list li{background:url('../img/jian3.png') 131px -80px no-repeat;font-family:Verdana,Helvetica;}
+.bureau-orange-body .event_list li > span{width:127px;text-align:right;display:block;float:left;margin-top:10px;font-size: 14px;}
+.bureau-orange-body .event_list li p.cuzdy-title{margin-left:24px;display:inline-block;padding-left:10px;background:url('../img/jian.png') -21px 0 no-repeat;line-height:25px;_float:left;}
+.bureau-orange-body .event_list li p span{
+	width:900px;
+	font-size:18px;
+	color: #7CBDE0;
+	text-align:left;
+	border-bottom:2px solid #DDD;
+	padding:10px 15px;
+	background:#FFF;
+	display:block;
+	float:left;
+	}
+.bureau-orange-body .event_list li p span a{
+	font-size:16px;
+	font-weight: bold;
+	color: #474747;
+	display:block;
+	}
+.bureau-orange-body .event_list li p span a i{
+	margin-right: 8px;
+	color: rgba(246, 126, 60, 1);
+	font-size: 22px;
+	font-weight: bold;
+}
+.bureau-orange-body .event_list li p span > em{
 	display: block;
 font-style: normal;
 font-size: 12px;

@@ -1527,6 +1527,187 @@ overflow: hidden;
 .navchain li a div.navdq h1{color:#222;font-size:14px;font-weight:bold;width:49%;text-align:right;height:68px;top:0px;position:absolute;left:0;}
 .navchain li a div.navdq h2{color:#222;font-weight:normal;font-size:12px;font-family:Arial;line-height:68px;width:49%;text-align:left;height:68px;top:0px;position:absolute;right:0;}
 
+/*教育局新闻列表*/
+
+.bureau-navlist {
+    height: 138px;
+    padding: 38px 0px 0px;
+    background-image:url('../img/bureau-img/body_bg01.png') repeat scroll center top transparent ;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.525) inset;
+}
+/*自定义头部*/
+/*自定义内页*/
+.bureau-header-logo{
+	position: relative;
+}
+.bureau-header{
+	position: absolute;
+top: 12px;
+width: 75px;
+height: 75px;
+border-radius: 50%;
+box-shadow: 0px 0px 2px #666;
+}
+.bureau-header-name{
+	position: absolute;
+top: 23px;
+left: 89px;
+font-size: 25px;
+font-weight: 900;
+letter-spacing: 16px;
+text-shadow: 3px 2px 0px #2DCC70, 7px 5px 0px rgba(0, 0, 0, 0.26);
+color: rgba(249, 255, 0, 1);
+font-family: "微软雅黑";
+}
+.bureau-header-name span{
+	color: rgba(0, 0, 0, 1);
+	font-size: 35px;
+}
+.school-resources-banner {
+    background: none repeat scroll 0% 0% rgba(240, 218, 140, 1);
+    border-bottom: 1px solid #ccc;
+}
+.bureau-cuzdy-chengyuan{
+	margin: 0 !important;
+	color: #333;
+	float: right;
+}
+.bureau-cuzdy-chengyuan li{
+	line-height: 40px;
+	margin-right: 20px;
+}
+.bureau-cuzdy-chengyuan li .fa{
+padding: 10px;
+font-size: 16px;
+border-radius: 10%;
+text-align: center;
+color: #fff;
+margin-right: 5px;
+background: rgb(122,188,255); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(122,188,255,1) 0%, rgba(96,171,248,1) 44%, rgba(64,150,238,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(122,188,255,1)), color-stop(44%,rgba(96,171,248,1)), color-stop(100%,rgba(64,150,238,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(122,188,255,1) 0%,rgba(96,171,248,1) 44%,rgba(64,150,238,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(122,188,255,1) 0%,rgba(96,171,248,1) 44%,rgba(64,150,238,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(122,188,255,1) 0%,rgba(96,171,248,1) 44%,rgba(64,150,238,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(122,188,255,1) 0%,rgba(96,171,248,1) 44%,rgba(64,150,238,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', endColorstr='#4096ee',GradientType=0 ); /* IE6-9 */
+
+box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.14);
+}
+
+/* IE7 */
+.hidden{display:none;}
+.last{border-bottom:none !important;}
+.page { width:100%;background:#F0F0F0 url('img/dian2.png') repeat-x; }
+.page{display:table;margin:0 auto;background:#fff;-moz-box-shadow: 0 5px 20px #CCCCCC;-webkit-box-shadow: 0 5px 20px #CCCCCC;box-shadow: 0 5px 20px #CCCCCC;}
+.about{box-shadow:0;-webkit-box-shadow:0;-moz-box-shadow:0;}
+.header{width:940px;height:90px;margin:0 auto;z-index:8;}
+.logo{margin:22px 0 0 0;float:left;display:inline;}
+.link{margin-top:30px;float:right;text-align:right;_width:718px;}
+.link li{float:left;display:inline;margin-left:60px;}
+.link li a{color:#4F4E4E;font-size:16px;font-weight:500;padding-bottom:6px;display:block;}
+.link li.active{border-bottom:2px solid #0066ff;}
+.link li.active a{color:#0066FF  }
+.link li:hover{border-bottom:2px solid #0066ff;color:#0066FF  }
+.link li a:hover{color:#0066FF  }.box{width:940px;margin:18px auto 0 auto;}
+.event_year{width:70px;text-align:center;float:left;margin-top:10px;}
+.event_year li{height:40px;line-height:40px;background:#FFF;margin-bottom:1px;font-size:18px;color:#828282;cursor:pointer;}
+.event_year li.current{width:70px;background:#0066ff url('../img/jian.png') 60px 0 no-repeat;color:#FFF;text-align:left;padding-left:9px;}
+.event_list{float:right;background:url('../img/dian3.png') 139px 0 repeat-y;margin:10px 0 20px 0;}
+.event_list h3{margin:0 0 10px 127px;font-size:20px;color:#333;padding-left:25px;background:url('../img/jian.png') 0 -45px no-repeat;height:38px;line-height:38px;text-shadow: 3px 1px 0px #F0F0F0, 6px 3px 0px rgba(0, 0, 0, 0.11);
+font-weight: 900;font-family: "微软雅黑";}
+.event_list li{background:url('../img/jian.png') 131px -80px no-repeat;font-family:Verdana,Helvetica;}
+.event_list li > span{width:127px;text-align:right;display:block;float:left;margin-top:10px;font-size: 14px;}
+.event_list li p.cuzdy-title{margin-left:24px;display:inline-block;padding-left:10px;background:url('../img/jian.png') -21px 0 no-repeat;line-height:25px;_float:left;}
+.event_list li p span{
+	width:900px;
+	font-size:18px;
+	color: #7CBDE0;
+	text-align:left;
+	border-bottom:2px solid #DDD;
+	padding:10px 15px;
+	background: -moz-linear-gradient(top,  rgba(242,242,242,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,242,242,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(242,242,242,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(242,242,242,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(242,242,242,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(242,242,242,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+
+	display:block;
+	float:left;
+	border-right: 1px solid #eee;
+	}
+.event_list li p span a{
+	font-size:16px;
+	font-weight: bold;
+	color: #474747;
+	display:block;
+	}
+.event_list li p span a i{
+	margin-right: 8px;
+	color: #4D9FF2;
+	font-size: 22px;
+	font-weight: bold;
+}
+.event_list li p span > em{
+	display: block;
+font-style: normal;
+font-size: 12px;
+color: #959595;
+max-height: 36px;
+overflow: hidden;
+line-height: 18px;
+margin-top: 9px;
+font-weight: initial;
+border-left: 1px solid rgba(234, 234, 234, 1);
+padding-left: 7px;
+}
+
+.bureau-news-title h5{
+	margin: 0 !important;
+	line-height: 40px;
+	font-size: 25px;
+	font-family: "微软雅黑";
+	text-align: center;
+	text-shadow: 3px 1px 0px #F0F0F0, 6px 3px 0px rgba(0, 0, 0, 0.09);
+color: rgba(72, 133, 177, 1);
+font-weight: 900;
+}
+.bureau-news-content-data{
+	height: 40px;
+	text-align: center;
+	padding: 10px 0;
+	margin: 10px 0;
+	color: #999;
+	border-bottom: 1px solid #ddd;
+	box-shadow: 0px 3px 0px rgba(237, 237, 237, 0.35);
+}
+.bureau-news-content-data ul li{
+	margin-right: 20px;
+}
+.bureau-news-content-body{
+	padding: 10px 20px;
+background: -moz-linear-gradient(top,  rgba(242,249,253,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,249,253,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(242,249,253,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(242,249,253,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(242,249,253,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(242,249,253,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f9fd', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+
+}
+.bureau-news-content-body p{
+	line-height: 25px;
+}
+
+
+
+
+
+
+
+
 
 /*教育局资源库*/
 .school-neiye-search-img .input-group{
@@ -1545,7 +1726,16 @@ border-radius: 0px !important;
 box-shadow: none; 
 margin-left: 0 !important;
 }
-.school-resources-banner{background: #eee;border-bottom: 1px solid #ccc;}
+.school-resources-banner{
+background: -moz-linear-gradient(top,  rgba(237,237,237,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(237,237,237,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(237,237,237,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(237,237,237,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(237,237,237,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(237,237,237,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ededed', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+
+border-bottom: 1px solid #fff;}
 .school-neiye-search-img{height: 60px; padding: 10px 10px;}
 .school-search .form-control{height: 32px;}
 .school-banner-img{height: 277px;}
@@ -2280,7 +2470,7 @@ border-radius: 10px;
 	font-size: 12px;
 }
 .bureau-high-body .bureau-high-right-body ul.bureau-high-rizhi > li{
-	padding: 11px 5px;
+	padding: 10px 5px;
 box-shadow: 0px 5px 48px #EDEDED inset;
 border-bottom: 1px dotted #ccc;
 margin-bottom: 3px !important;
@@ -2461,7 +2651,7 @@ position: relative;
 .suckerdiv > ul > li:hover .b-bg{
 	background-color: #f90;
 }
-.suckerdiv > ul > li .dd-list{float: left;}
+.suckerdiv > ul > li .dd-list{float: left;padding: 0 !important;}
 /*1st level sub menu style */
 .suckerdiv > ul > li > ul{
 left: 283px; /* Parent menu width - 1*/
