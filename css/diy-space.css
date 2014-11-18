@@ -255,7 +255,12 @@
   top: 0;
 }
 .diy-all-box .diy-box .backgroud-option-list {
-  margin: 40px auto 10px;
+  margin: 23px auto 0px;
+}
+.diy-all-box .diy-box .backgroud-option-list .name {
+  display: block;
+  text-align: right;
+  width: 120px;
 }
 body {
   background-repeat: no-repeat;
