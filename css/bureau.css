@@ -1687,7 +1687,7 @@ font-weight: 900;
 	margin-right: 20px;
 }
 .bureau-news-content-body{
-	padding: 10px 20px;
+	padding: 10px 30px;
 background: -moz-linear-gradient(top,  rgba(242,249,253,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,249,253,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
 background: -webkit-linear-gradient(top,  rgba(242,249,253,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
@@ -1696,6 +1696,7 @@ background: -ms-linear-gradient(top,  rgba(242,249,253,1) 0%,rgba(255,255,255,0)
 background: linear-gradient(to bottom,  rgba(242,249,253,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f9fd', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
 
+border: 5px solid rgba(215, 235, 248, 0.47);
 }
 .bureau-news-content-body p{
 	line-height: 25px;
@@ -1727,6 +1728,9 @@ box-shadow: none;
 margin-left: 0 !important;
 }
 .school-resources-banner{
+	background: #eee;
+}
+.line-banner{
 background: -moz-linear-gradient(top,  rgba(237,237,237,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(237,237,237,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
 background: -webkit-linear-gradient(top,  rgba(237,237,237,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */

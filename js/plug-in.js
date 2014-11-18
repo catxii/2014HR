@@ -405,4 +405,19 @@ $(function(){
 			
 				var accordion = new Accordion($('#accordion'), false);
 });
-    
+    /*高度自适应*/
+    function autoHeight(){
+	if (window.innerHeight){//FF
+		nowHeight = window.innerHeight;
+	}else{
+		nowHeight = document.documentElement.clientHeight;
+	}
+	var jianHeight = 60;//1*3 => 20px=60px
+	if(nowHeight > jianHeight){
+		document.getElementById('ididid').style.height = nowHeight - jianHeight + 'px';
+	}else{
+		document.getElementById('ididid').style.height = jianHeight + 'px';
+	}
+    }
+autoHeight();
+window.onresize = autoHeight;

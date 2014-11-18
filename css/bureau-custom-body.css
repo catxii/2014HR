@@ -28,6 +28,25 @@ margin-right: 5px;
 	box-shadow: 1px 0px 1px rgba(255, 255, 255, 0.53);
 	background: #F67E3C;
 }
+
+/*自定义内页*/
+.bureau-content-neiye-title{
+	margin: 15px 0 0 0 !important;
+line-height: 40px;
+font-size: 25px;
+font-family: "微软雅黑";
+text-align: center;
+text-shadow: 3px 1px 0px #F0F0F0, 6px 3px 0px rgba(0, 0, 0, 0.09);
+color: #333;
+font-weight: 900;
+}
+.bureau-content-body-neiye{
+	padding: 10px 20px;
+
+}
+.bureau-content-body-neiye p{
+	line-height: 25px;
+}
 /*蓝色样式*/
 .bureau-blue-body {
     padding-top: 0px !important;
