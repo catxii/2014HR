@@ -370,13 +370,13 @@ a.list-grouping-fen-more{
 	position:relative;
 	padding:0;
 	margin:-17px 0 0;
-	height:178px;
+	/*height:178px;*/
 	width:100%;
 	/*background:#eff2ec; background:url(../img/b2de9c82d158ccbf1c2ab7391bd8bc3eb135411a.jpg) center;*/
 }
 .top-nav-left{
 	padding-left:0px; padding-right:0px; /*background:url(../img/bg_09.png) repeat-x;*/
-	height:178px;
+	/*height:178px;*/
 	position:relative;
 	z-index:2;
 	}	
