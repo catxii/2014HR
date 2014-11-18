@@ -2726,11 +2726,15 @@ slide {
 }
 input[type="radio"],
 input[type="checkbox"] {
-  -webkit-transform: scale(1.7);
-  /* for Chrome || Safari */
-  -moz-transform: scale(1.7);
-  /* for Firefox */
-  -ms-transform: scale(1.7);
-  /* for IE */
-  -o-transform: scale(1.7);
+  margin-right: 2px;
+}
+.head-mask {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+.head-mask > div,
+.head-mask > p {
+  display: inline-block;
 }

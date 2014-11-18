@@ -5,10 +5,10 @@
   box-shadow: none;
   height: 36px;
   min-height: 36px;
-  background: rgba(0, 168, 86, 0.9);
+  background: #00a856;
   border: none;
   position: relative;
-  z-index: 10;
+  z-index: 11;
 }
 .diy-navbar .navbar-nav li {
   position: relative;
@@ -44,6 +44,8 @@
   box-shadow: 0 6px 9px #c7c7c7;
   margin-top: -5px;
   display: none;
+  position: relative;
+  z-index: 10;
 }
 .diy-all-box .diy-box {
   position: relative;
@@ -277,6 +279,95 @@ body.xldy-bg {
 body.zsmh-bg {
   background-image: url(../img/theme-img/public/zsmh.jpg);
   background-color: #c1c4ea;
+}
+body.cj-bg {
+  background-image: url(../img/theme-img/public/cj.jpg );
+  background-color: #bbd5e9;
+}
+body.cnhk-bg {
+  background-image: url(../img/theme-img/public/clhk.jpg );
+  background-color: #c8e744;
+}
+body.csfh-bg {
+  background-image: url(../img/theme-img/public/csfh.jpg );
+  background-color: #376b76;
+}
+body.fhds-bg {
+  background-image: url(../img/theme-img/public/fhds.jpg );
+  background-color: #000;
+}
+body.fwdpp-bg {
+  background-image: url(../img/theme-img/public/fwdpp.jpg );
+  background-color: #fff;
+}
+body.hbcl-bg {
+  background-image: url(../img/theme-img/public/hbcl.jpg );
+  background-color: #eee5dc;
+}
+body.hbztd-bg {
+  background-image: url(../img/theme-img/public/hbztd.jpg );
+  background-color: #181818;
+}
+body.hhsj-bg {
+  background-image: url(../img/theme-img/public/hhsj.jpg );
+  background-color: #91a158;
+}
+body.hjmh-bg {
+  background-image: url(../img/theme-img/public/hjmh.jpg );
+  background-color: #000;
+  background-repeat: repeat-y;
+}
+body.jzlm-bg {
+  background-image: url(../img/theme-img/public/jzlm.jpg );
+  background-color: #faebe3;
+}
+body.lsxq-bg {
+  background-image: url(../img/theme-img/public/lsxq.jpg );
+  background-color: #586223;
+}
+body.mscf-bg {
+  background-image: url(../img/theme-img/public/mscf.jpg );
+  background-color: #f2af46;
+}
+body.nndt-bg {
+  background-image: url(../img/theme-img/public/nndt.jpg );
+  background-color: #000;
+}
+body.qccf-bg {
+  background-image: url(../img/theme-img/public/qccf.jpg );
+  background-color: #d39039;
+}
+body.qflm-bg {
+  background-image: url(../img/theme-img/public/qflm.jpg );
+  background-color: #efe7fc;
+}
+body.qzy-bg {
+  background-image: url(../img/theme-img/public/qzy.jpg );
+  background-color: #521b07;
+}
+body.sgls-bg {
+  background-image: url(../img/theme-img/public/sgls.jpg );
+  background-color: #4b7581;
+}
+body.xzsl-bg {
+  background-image: url(../img/theme-img/public/szsl.jpg );
+  background-color: #88c100;
+}
+body.wlkh-bg {
+  background-image: url(../img/theme-img/public/wlkh.jpg );
+  background-color: #000;
+}
+body.zgldwx-bg {
+  background-image: url(../img/theme-img/public/zgldwx.jpg );
+  background-color: #b11810;
+}
+body.xgz-bg {
+  background-image: url(../img/theme-img/public/xgz.jpg );
+  background-color: #0a0a0a;
+}
+body.yskj-bg {
+  background-image: url(../img/theme-img/public/yskj.jpg );
+  background-color: #f4e6cc;
 }
 .diy-mode .class-index-container .droptrue {
   min-height: 600px;
