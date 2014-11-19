@@ -406,42 +406,42 @@ body.yskj-bg {
 .html-view-box * {
   max-width: 100%!important;
 }
-.col-md-1 embed,
-.col-md-2 embed,
-.col-md-3 embed {
+.class-index-container .col-md-1 embed,
+.class-index-container .col-md-2 embed,
+.class-index-container .col-md-3 embed {
   height: 150px;
   width: 100%;
 }
-.col-md-1 object,
-.col-md-2 object,
-.col-md-3 object {
+.class-index-container .col-md-1 object,
+.class-index-container .col-md-2 object,
+.class-index-container .col-md-3 object {
   width: 100%;
 }
-.col-md-4 embed,
-.col-md-5 embed,
-.col-md-6 embed,
-.col-md-7 embed {
+.class-index-container .col-md-4 embed,
+.class-index-container .col-md-5 embed,
+.class-index-container .col-md-6 embed,
+.class-index-container .col-md-7 embed {
   height: 400px;
   width: 100%;
 }
-.col-md-4 object,
-.col-md-5 object,
-.col-md-6 object,
-.col-md-7 object {
+.class-index-container .col-md-4 object,
+.class-index-container .col-md-5 object,
+.class-index-container .col-md-6 object,
+.class-index-container .col-md-7 object {
   height: 250px;
   width: 100%;
 }
-.col-md-11 embed,
-.col-md-12 embed,
-.col-md-8 embed,
-.col-md-9 embed {
+.class-index-container .col-md-11 embed,
+.class-index-container .col-md-12 embed,
+.class-index-container .col-md-8 embed,
+.class-index-container .col-md-9 embed {
   height: 400px;
   width: 100%;
 }
-.col-md-11 object,
-.col-md-12 object,
-.col-md-8 object,
-.col-md-9 object {
+.class-index-container .col-md-11 object,
+.class-index-container .col-md-12 object,
+.class-index-container .col-md-8 object,
+.class-index-container .col-md-9 object {
   height: 250px;
   width: 100%;
 }
