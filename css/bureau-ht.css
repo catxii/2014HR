@@ -87,6 +87,7 @@ width: auto;
 background: none repeat scroll 0% 0% #FFF;
 left: 200px;
 bottom: 0px;
+padding: 20px;
 }
 .bureau-right ul.nav{
 	background: url('../img/rptx.png') repeat scroll 0% 0% transparent;
@@ -121,4 +122,161 @@ color: #fff;
 }
 .hui-right a.btn:hover{
 	border-color: #28A4C9;
+}
+/*自定义科室*/
+.zdy-ks{
+	width: 20%;
+}
+.zdy-ks ul{
+	padding: 6px;
+box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+background: url('../img/bg_index_6b4cd6b3.png') repeat scroll 0% 0% transparent;
+border: 1px solid #ddd;
+border-top: 3px solid  #68B4F0;
+background-size: 100%;
+}
+.zdy-ks ul > li{
+	height: 50px;
+vertical-align: top;
+}
+.zdy-ks ul > li.bureau-new-szdw-img{
+	margin-right: 5px !important;
+overflow: hidden;
+border-radius: 50%;
+box-shadow: 0px 0px 3px #A4A4A4;
+float: left;
+}
+.zdy-ks ul > li.bureau-new-szdw-img img{
+	width:50px;
+height: 50px;
+transition: transform 0.3s ease 0s;
+border-radius: 50% !important;
+overflow: hidden !important;
+}
+.zdy-ks ul > li.bureau-new-szdw-name{
+	margin-right: 0px !important;
+	float: left;
+}
+.zdy-ks ul > li.bureau-new-szdw-name .label{
+	padding: 0.1em !important;
+text-shadow: 1px 1px 1px #FFF;
+background: none repeat scroll 0% 0% transparent;
+text-align: left;
+color: #68B4F0;
+margin: 0px 0px 5px !important;
+line-height: 20px;
+display: block;
+font-size: 14px;
+width: 105px;
+}
+.zdy-ks ul > li.bureau-new-szdw-name p{
+	margin-bottom: 5px;
+font-size: 12px;
+
+}
+.zdy-ks ul > li.bureau-new-szdw-name p a{
+	color: #666;
+}
+
+.zdy-ks-add ul{
+	padding: 6px;
+box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+background: rgba(219, 219, 219, 1);
+border: 1px solid #ddd;
+border-top: 3px solid  #999;
+background-size: 100%;
+text-align: center;
+}
+.zdy-ks-add .bureau-new-szdw-name{
+	float: none !important;
+}
+.zdy-ks-add .bureau-new-szdw-name a{
+	line-height: 50px !important;
+	font-size: 20px !important;
+	text-align: center !important;
+	width: 100% !important;
+	margin: 0px !important;
+	color: #9C9C9C !important;
+	font-family: "微软雅黑";
+	font-weight: 300;
+	background: none;
+	text-shadow: 1px 1px 1px #FFF;
+	text-decoration: none;
+}
+.zdy-ks-add .bureau-new-szdw-name a:hover{
+	color: #f90 !important;
+}
+/*
+后台新闻发布*/
+.selectpicker{
+	padding: 6px 5px;
+	
+}
+.zdy-color > li{
+	border-radius: 50%;
+}
+.zdy-color > li.active{
+	border:2px solid #fff;
+	box-shadow: 0px 0px 2px rgba(0, 0, 0, 1);
+}
+.zdy-color > li >a{
+	width: 20px;
+height: 20px;
+display: block;
+border-radius: 50%;
+text-align: center;
+color: #FFF;
+}
+.zdy-color > li >a.cuzdy-red{
+	box-shadow: 1px 0px 1px rgba(255, 255, 255, 0.53);
+background: none repeat scroll 0% 0% #F6583C;
+}
+.zdy-color > li >a.cuzdy-blue{
+	box-shadow: 1px 0px 1px rgba(255, 255, 255, 0.53);
+	background:#3598DB;
+}
+.zdy-color > li >a.cuzdy-green{
+	box-shadow: 1px 0px 1px rgba(255, 255, 255, 0.53);
+	background: #22AC38;
+}
+.zdy-color > li >a.cuzdy-orange{
+	box-shadow: 1px 0px 1px rgba(255, 255, 255, 0.53);
+	background: #F67E3C;
+}
+/*后台文章列表*/
+
+.bureau-item-list{
+background: none repeat scroll 0% 0% rgba(245, 252, 255, 1);
+}
+.bureau-item-list a{
+	padding: 10px 5px;
+	font-weight: bold;
+	background: none ;
+}
+.bureau-item-list.bg3{
+	background: #fff;
+}
+.bureau-item-list-title{
+	font-size: 15px;
+line-height: 35px;
+font-weight: bold;
+padding-left: 8px;
+margin: 0px !important;
+}
+.bureau-item-list-footer{
+	font-weight: 500;
+color: #999;
+position: absolute;
+right: 30px;
+}
+.bureau-item-list-footer-data{
+	margin: 0 10px;
+}
+.index-ico{
+	background: none repeat scroll 0% 0% #68B4F0;
+font-style: initial;
+font-size: 12px;
+color: #fff;
+padding: 3px;
+border-radius: 3px;
 }

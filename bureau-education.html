@@ -19,7 +19,7 @@
 	</head>
 
 	<body class="bureau-body">
-		<div class="side"style="display: none;" id=goTopBtn >
+		<div class="sidel"style="display: none;" id=goTopBtn >
 			<ul>
 		<li><a href="javascript:void(0);" ><div class="sidebox"><span style="display: block;padding: 5px 12px;float: left;"><i class="fa fa-envelope-o" style="font-size: 30px;color: #fff;"></i></span>局长信箱</div></a></li>
 		<li style="border:none;"><a href="javascript:goTop();" class="sidetop"><img src="img/side_icon05.png"></a></li>
@@ -1828,19 +1828,8 @@ jQuery(window).resize(function(){
 	qfzy();
 });
         </script>
-        
-       <!-- <script>
-	     $('.bureau-student-rizhi>li').each(function(){
-		var num = $(this).index();
-		if(num % 2 !== 0)
-		{
-			$(this).addClass('bg3')
-		}
-	    });
-        </script>-->
-        
         <script>
-     function goTopEx(){
+        	function goTopEx(){
         var obj=document.getElementById("goTopBtn");
         function getScrollTop(){
                 return document.documentElement.scrollTop;
@@ -1860,7 +1849,7 @@ jQuery(window).resize(function(){
      goTopEx();
      $(document).ready(function(){
 
-	$(".side ul li").hover(function(){
+	$(".sidel ul li").hover(function(){
 		$(this).find(".sidebox").stop().animate({"width":"124px"},200).css({"opacity":"1","filter":"Alpha(opacity=100)","background":"#24D665"})	
 	},function(){
 		$(this).find(".sidebox").stop().animate({"width":"54px"},200).css({"opacity":"0.8","filter":"Alpha(opacity=80)","background":"#ccc"})	
@@ -1872,8 +1861,18 @@ jQuery(window).resize(function(){
 function goTop(){
 	$('html,body').animate({'scrollTop':0},500);
 }
-
         </script>
+       <!-- <script>
+	     $('.bureau-student-rizhi>li').each(function(){
+		var num = $(this).index();
+		if(num % 2 !== 0)
+		{
+			$(this).addClass('bg3')
+		}
+	    });
+        </script>-->
+        
+       
 	</body>
 
 </html>
