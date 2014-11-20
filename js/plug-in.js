@@ -35,11 +35,11 @@ $(function(){
  	});
 
  	// lightbox 
- 	$(".lightbox").lightbox({
-	    fitToScreen: true,
-	    imageClickClose: false
-    });
- 	
+// 	$(".lightbox").lightbox({
+//	    fitToScreen: true,
+//	    imageClickClose: false
+//  });
+// 	
  	// tips设置
  	$('a,.btn,.icon-eye-close,.glyphicon-trash').tooltip();
  	$(".add-person-button,.show-tips").tooltip();

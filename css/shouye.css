@@ -18,14 +18,14 @@
 .content_bottom_tig h4 a:hover,.content_bottom_tig h4 a.hover{background:url(../images/btnbg2.png) no-repeat left; color:#fff; }
 /*banner*/
 .bureau-banner{ min-width:1003px;height:410px; position:relative; margin:0 auto; overflow:hidden; z-index:1;}
-.banner_pre_next{position:relative;z-index:101;top:230px;display:none;}
-.banner_pre_next .banner_btn_left{position:absolute;left:10%;color:#fff;font:bold 80px/normal simsun;}
-.banner_pre_next .banner_btn_right{position:absolute;right:10%;color:#fff;font:bold 80px/normal simsun;}
+.banner_pre_next{position:relative;z-index:101;top:151px;display:none;}
+.banner_pre_next .banner_btn_left{position:absolute;left:3%;color:#fff;font:bold 80px/normal simsun;}
+.banner_pre_next .banner_btn_right{position:absolute;right:3%;color:#fff;font:bold 80px/normal simsun;}
 .banner_pre_next .banner_btn_right:hover,.banner_pre_next .banner_btn_left:hover{color:#C00;}
 .yq_banner_list{ height:25px;position:absolute; bottom:15px; text-align:right; z-index:100; right:22px; }
 .yq_banner_list a{text-decoration: none; display:inline-block; width:18px; height:18px;background:url(../img/bureau-img/i_dot.32.png) no-repeat left; }
 .yq_banner_list a:hover,.yq_banner_list a.hover{background:url(../img/bureau-img/i_dot_hover.32.png) no-repeat right; }
-.banner_show{ width:100%; text-align:center; height:410px; overflow:hidden; position:relative;  }
+.banner_show{ width:100%; text-align:center; height:410px; overflow:hidden; position:relative;background:#E3F2FA;}
 .bannger_inbox{ position:absolute; left:50%; top:0;}
 .banner_mag{width:600px;height:190px;position:absolute;left:45%;bottom:35px;text-align:left;z-index:99;font-family: "微软雅黑";}
 .banner_magbox{width:600px;height:190px;background:url(../img/bureau-img/ico3.png) repeat;text-align:left;padding:25px 30px 35px;border-right: 6px solid #ff9900;}

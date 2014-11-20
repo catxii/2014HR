@@ -1706,16 +1706,168 @@ border: 5px solid rgba(215, 235, 248, 0.47);
 /*成员发现*/
 .bureau-chengyuan-search{
 	width: 100%;
-	height: 160px;
-	padding: 10px 20px;
-	background: #eee;
+	min-height: 100px;
+	padding: 10px 0px;
+	background: #fff;
+	margin-top: 15px;
 }
+.bureau-chengyuan-search-list{
+	margin-right: 0px !important;
+	height: 50px;
+	text-align: center;
+	position: relative;
+}
+.bureau-chengyuan-search-list a > span{
+	margin-right: 0 !important;
+}
+.bureau-chengyuan-search-list a{
+	background: none repeat scroll 0% 0% #EEE;
+width: 100%;
+height: 100%;
+padding: 10px;
+display: block;
+line-height: 30px;
+font-weight: bold;
+border-radius: 5px;
+}
+.bureau-chengyuan-search-list.active a{
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.125) inset;
+	background:#A4D9FF;
+	color: #fff;
+}
+.san1{
+	display: none;
+}
+.bureau-chengyuan-search-list.active .san1{
+	display: block;
+	width: 0px;
+height: 0px;
+padding: 0px !important;
+border-width: 10px !important;
+border-style: solid;
+border-color: rgba(164, 217, 255, 1) rgba(255, 204, 0, 0) rgba(102, 153, 204, 0) rgba(104, 180, 240, 0) !important;
+position: absolute;
+bottom: -18px;
+right: 45%;
+z-index: 3;
+}
+.seach-bureau{
+	margin: 5px;
+	padding: 0px 7px;
+	border: 1px solid #A4D9FF;
+	font-size: 12px;
+	box-shadow: 0px 3px 0px #F3F3F3;
+}
+ul.bureau-seach-school{padding: 6px 0;}
+ul.bureau-seach-school li:first-child{
+	color: rgba(255, 255, 255, 1);
+background: none repeat scroll 0% 0% #A4D9FF;
+padding: 4px 6px;
+}
+.seach-seach{
+	margin: 10px 0;
+}
+.seach-seach .input-group {
+    border: 3px solid #A4D9FF;
+}
+.seach-seach .input-group .form-control {
+    height: 34px;
+}
+.seach-seach .input-group .input-group-btn .btn {
+    padding: 6px 60px;
+    background: none repeat scroll 0% 0% #A4D9FF;
+    text-shadow: none;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid #A4D9FF;
+    border-radius: 0px !important;
+    box-shadow: none;
+    margin-left: 0px !important;
+}
+/*学校搜索展示*/
+#pic_show.container{
+	
+}
+#pic_show.container > ul > li{
+	padding:0 6px;
+	margin-bottom: 15px;
+}
+#pic_show.container > ul > li > ul.bureau-school-search-list{
+	margin: 0px;
+border-top: 2px solid #CCC;
 
+padding: 10px 7px;
+border: 1px solid #ddd;
+background: url('../img/bg_index_6b4cd6b3.png') repeat scroll 0% 0% transparent;
+background-size: 100%;
+}
+.bureau-school-search-list li{
+	vertical-align: top;
+	padding: 0px;
+}
+.bureau-school-search-list .bureau-new-szdw-img{
+	margin-right: 0px !important;
 
-
-
-
-
+}
+.bureau-school-search-list .bureau-new-szdw-img > a{
+	width: 50px;
+	height: 50px;
+	display: block;
+	overflow: hidden;
+border-radius: 50%;
+}
+.bureau-school-search-list .bureau-new-szdw-img img{
+	width: 50px;
+	height: 50px;
+}
+.bureau-school-search-list .bureau-school-search-name{
+	margin-right: 0;
+}
+.bureau-school-search-list .bureau-school-search-name > h3{
+	margin: 0 !important;
+	font-size: 18px;
+	line-height: 25px;
+    font-weight: bold;
+    color: #4C9ED9;
+    text-align: right;
+}
+.bureau-school-search-list .bureau-school-search-name > p{
+	font-size: 12px;
+	margin: 0;
+	line-height: 25px;
+	color: #666;
+	text-align: right;
+}
+.bureau-school-search-list .bureau-school-search-name > p span{
+	margin-left: 5px;
+}
+.zhaiyao{
+	font-size: 12px;
+line-height: 20px;
+color: #999;
+text-align:Justify;
+text-align-last:justify;
+text-justify:inter-ideograph;
+height: 77px;
+overflow: hidden;
+}
+.zhaiyao p{
+	font-size: 12px;
+line-height: 20px;
+color: #999;
+text-align:Justify;
+text-align-last:justify;
+text-justify:inter-ideograph；
+}
+.color0{
+	border-top: 2px solid rgba(164, 197, 255, 1) !important;
+}
+.color1{
+	border-top: 2px solid rgba(240, 138, 138, 1) !important;
+}
+.color2{
+	border-top:2px solid rgba(255, 203, 164, 1) !important;
+}
 
 /*教育局资源库*/
 .school-neiye-search-img .input-group{

@@ -72,12 +72,13 @@ border-right: 1px solid #ddd;
 	position: fixed;
 margin: 0px;
 padding: 0px;
-overflow: hidden;
+/*overflow: hidden;*/
 left: 200px;
-z-index: 999;
+
 top: 137px;
 right:0;
 }
+.nav-tabs .current > a{line-height: 36px !important;}
 .bureau-right-content{
 	overflow-y: scroll;
 position: fixed;
@@ -126,7 +127,23 @@ color: #fff;
 /*自定义科室*/
 .zdy-ks{
 	width: 20%;
+	overflow: hidden;
+	position: relative;
 }
+.zdy-ks:hover .wrench{
+	display: block;
+}
+.wrench{
+	width: 30px;
+	height: 70px;
+	background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.31);
+	position: absolute;
+	right: 5px;
+	top: 0px;
+	
+	display: none;
+}
+.wrench .fa{padding: 10px 6px 0px 6px;font-size: 18px; text-decoration: none;color: #eee;}
 .zdy-ks ul{
 	padding: 6px;
 box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
@@ -183,7 +200,7 @@ font-size: 12px;
 box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
 background: rgba(219, 219, 219, 1);
 border: 1px solid #ddd;
-border-top: 3px solid  #999;
+border-top: 3px solid  rgba(219, 219, 219, 1);
 background-size: 100%;
 text-align: center;
 }
@@ -208,6 +225,32 @@ text-align: center;
 }
 /*
 后台新闻发布*/
+.bureau-news1-ico{background: none repeat scroll 0% 0% #F26464;
+display: block;
+margin-right: 8px;
+float: left;
+padding: 5px;
+border-radius: 3px;
+color: #FFF;}
+
+.bureau-news2-ico{background: none repeat scroll 0% 0% #FF9D50;
+display: block;
+margin-right: 8px;
+float: left;
+padding: 5px;
+border-radius: 3px;
+color: #FFF;
+	
+}
+.bureau-news3-ico{background: none repeat scroll 0% 0% #91C6EB;
+display: block;
+margin-right: 8px;
+float: left;
+padding: 5px;
+border-radius: 3px;
+color: #FFF;
+	
+}
 .selectpicker{
 	padding: 6px 5px;
 	
@@ -279,4 +322,268 @@ font-size: 12px;
 color: #fff;
 padding: 3px;
 border-radius: 3px;
+}
+
+/*
+推荐*/
+/*成员发现*/
+.bureau-chengyuan-search{
+	width: 100%;
+	min-height: 100px;
+	padding: 10px 0px;
+	background: #fff;
+	margin-top: 15px;
+}
+.bureau-chengyuan-search-list{
+	margin-right: 0px !important;
+	height: 50px;
+	text-align: center;
+	position: relative;
+}
+.bureau-chengyuan-search-list a > span{
+	margin-right: 0 !important;
+}
+.bureau-chengyuan-search-list a{
+	background: none repeat scroll 0% 0% #EEE;
+width: 100%;
+height: 100%;
+padding: 10px;
+display: block;
+line-height: 30px;
+font-weight: bold;
+border-radius: 12px;
+}
+.bureau-chengyuan-search-list.active a{
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.125) inset;
+	background:#A4D9FF;
+	color: #fff;
+}
+.san1{
+	display: none;
+}
+.bureau-chengyuan-search-list.active .san1{
+	display: block;
+	width: 0px;
+height: 0px;
+padding: 0px !important;
+border-width: 10px !important;
+border-style: solid;
+border-color: rgba(164, 217, 255, 1) rgba(255, 204, 0, 0) rgba(102, 153, 204, 0) rgba(104, 180, 240, 0) !important;
+position: absolute;
+bottom: -18px;
+right: 45%;
+z-index: 3;
+}
+.seach-bureau{
+	margin: 5px;
+	padding: 0px 7px;
+	border: 1px solid #A4D9FF;
+	font-size: 12px;
+	box-shadow: 0px 3px 0px #F3F3F3;
+}
+ul.bureau-seach-school{padding: 6px 0; font-weight: bold;}
+ul.bureau-seach-school li:first-child{
+	color: rgba(255, 255, 255, 1);
+	font-weight: normal;
+background: none repeat scroll 0% 0% #A4D9FF;
+padding: 4px 6px;
+}
+.seach-seach{
+	margin: 10px 0;
+}
+.seach-seach .input-group {
+    border: 3px solid #A4D9FF;
+}
+.seach-seach .input-group .form-control {
+    height: 34px;
+}
+.seach-seach .input-group .input-group-btn .btn {
+    padding: 6px 60px;
+    background: none repeat scroll 0% 0% #A4D9FF;
+    text-shadow: none;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid #A4D9FF;
+    border-radius: 0px !important;
+    box-shadow: none;
+    margin-left: 0px !important;
+}
+/*学校选中展示*/
+#school_show > h4{
+	border-bottom: 1px solid #CCC;
+font-family: "微软雅黑";
+padding: 7px;
+background: none repeat scroll 0% 0% #F2F2F2;
+box-shadow: 0px 3px 0px #EDEDED;
+margin-top: 0px !important;
+font-size: 14px;
+}
+#school_show > ul > li{
+	padding:0 6px;
+	margin-bottom: 15px;
+}
+#school_show > ul > li:hover .wrench{
+	display: block;
+}
+#school_show > ul > li .wrench{
+	width: 40px;
+height:100%;
+background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.41);
+position: absolute;
+right: 5px;
+top: 0px;
+display: none;
+}
+#school_show > ul > li .wrench .fa {
+    font-size: 21px;
+text-decoration: none;
+color: #FFF;
+padding: 0px;
+position: relative;
+top: 32%;
+left: 28%;
+}
+#school_show > ul > li .wrench a.fa:hover{
+	color: #f90;
+}
+#school_show > ul > li > ul.bureau-school-search-list{
+	margin: 0px;
+padding: 10px 7px;
+
+background: rgb(255,175,75); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(255,175,75,1) 0%, rgba(255,146,10,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,175,75,1)), color-stop(100%,rgba(255,146,10,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,175,75,1) 0%,rgba(255,146,10,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,175,75,1) 0%,rgba(255,146,10,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,175,75,1) 0%,rgba(255,146,10,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,175,75,1) 0%,rgba(255,146,10,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf4b', endColorstr='#ff920a',GradientType=0 ); /* IE6-9 */
+
+}
+#school_show .bureau-school-search-list .bureau-school-search-name > h3 {
+    margin: 0px !important;
+font-size: 14px;
+line-height: 30px;
+font-weight: bold;
+color: #FFF;
+text-align: center;
+}
+#school_show .bureau-school-search-list .bureau-new-szdw-img > a {
+    width: 30px;
+    height: 30px;
+    display: block;
+    overflow: hidden;
+    border-radius: 50%;
+}
+#school_show .bureau-school-search-list .bureau-new-szdw-img > a img{
+	width: 30px;
+	height: 30px;
+}
+#school_show .bureau-school-search-line{}
+/*学校搜索展示*/
+
+#pic_show > ul > li{
+	padding:0 6px;
+	margin-bottom: 15px;
+}
+#pic_show > ul > li:hover .wrench{
+	display: block;
+}
+#pic_show > ul > li .wrench{
+	width: 40px;
+height:100%;
+background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.41);
+position: absolute;
+right: 5px;
+top: 0px;
+display: none;
+}
+#pic_show > ul > li .wrench .fa {
+    font-size: 21px;
+text-decoration: none;
+color: #FFF;
+padding: 0px;
+position: relative;
+top: 35%;
+left: 28%;
+}
+#pic_show > ul > li .wrench a.fa:hover{
+	color: #f90;
+}
+#pic_show > ul > li > ul.bureau-school-search-list{
+	margin: 0px;
+border-top: 2px solid #CCC;
+
+padding: 10px 7px;
+
+background: url('../img/bg_index_6b4cd6b3.png') repeat scroll 0% 0% transparent;
+background-size: 100%;
+border: 1px solid #ccc;
+}
+.bureau-school-search-list li{
+	vertical-align: top;
+	padding: 0px;
+}
+.bureau-school-search-list .bureau-new-szdw-img{
+	margin-right: 0px !important;
+
+}
+.bureau-school-search-list .bureau-new-szdw-img > a{
+	width: 30px;
+	height: 30px;
+	display: block;
+	overflow: hidden;
+border-radius: 50%;
+}
+.bureau-school-search-list .bureau-new-szdw-img img{
+	width: 30px;
+	height: 30px;
+}
+.bureau-school-search-list .bureau-school-search-name{
+	margin-right: 0;
+}
+.bureau-school-search-list .bureau-school-search-name > h3{
+	margin: 0px !important;
+font-size: 14px;
+line-height: 20px;
+font-weight: bold;
+color: #4C9ED9;
+text-align:right;
+}
+.bureau-school-search-list .bureau-school-search-name > p{
+	font-size: 12px;
+	margin: 0;
+	line-height: 15px;
+	color: #666;
+	text-align: right;
+}
+.bureau-school-search-list .bureau-school-search-name > p span{
+	margin-left: 5px;
+}
+.zhaiyao{
+	font-size: 12px;
+line-height: 20px;
+color: #999;
+text-align:Justify;
+text-align-last:justify;
+text-justify:inter-ideograph;
+height: 77px;
+overflow: hidden;
+}
+.zhaiyao p{
+	font-size: 12px;
+line-height: 20px;
+color: #999;
+text-align:Justify;
+text-align-last:justify;
+text-justify:inter-ideograph；
+}
+.color0{
+	border-top: 2px solid rgba(164, 197, 255, 1) !important;
+}
+.color1{
+	border-top: 2px solid rgba(240, 138, 138, 1) !important;
+}
+.color2{
+	border-top:2px solid rgba(255, 203, 164, 1) !important;
 }
