@@ -64,7 +64,7 @@ text-decoration: none;
 }
 
 .bureau-ico a.fa:hover,.bureau-ico a.current{
-	box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.225) inset;
+	/*box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.225) inset;*/
 color: #4C9ED9;
 border: 2px solid #4C9ED9;
 }
@@ -1066,8 +1066,8 @@ color: #333;
     line-height: 25px;
 }
 .bureau-school-body #accordion{
-	overflow-y: scroll;
-	height: 287px;
+	/*overflow-y: scroll;
+	height: 287px;*/
 }
 .bureau-school-body .bureau-school-left-body .link-menu > a{
 	font-family: "微软雅黑";
@@ -1087,6 +1087,8 @@ color: #333;
 	background: none repeat scroll 0% 0% rgba(255, 255, 255, 1);
     font-size: 14px;
     box-shadow: 0px -5px 14px #EAEAEA inset !important;
+    overflow-y: scroll;
+height: 133px;
 }
 .bureau-school-left-body .submenu > li{
 	border-bottom: 1px dotted rgba(185, 185, 185, 1);
@@ -1577,6 +1579,17 @@ font-family: "微软雅黑";
 	line-height: 40px;
 	margin-right: 20px;
 }
+.bureau-cuzdy-chengyuan li.current .fa{
+	background: #ffa84c; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffa84c 0%, #ff7b0d 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffa84c), color-stop(100%,#ff7b0d)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffa84c 0%,#ff7b0d 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffa84c 0%,#ff7b0d 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffa84c 0%,#ff7b0d 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ffa84c 0%,#ff7b0d 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa84c', endColorstr='#ff7b0d',GradientType=0 ); /* IE6-9 */
+
+}
 .bureau-cuzdy-chengyuan li .fa{
 padding: 10px;
 font-size: 16px;
@@ -1627,14 +1640,8 @@ font-weight: 900;font-family: "微软雅黑";}
 	text-align:left;
 	border-bottom:2px solid #DDD;
 	padding:10px 15px;
-	background: -moz-linear-gradient(top,  rgba(242,242,242,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(242,242,242,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(242,242,242,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(242,242,242,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(242,242,242,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
-background: linear-gradient(to bottom,  rgba(242,242,242,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
-
+	box-shadow: 0px -1px 1px #eee;
+	background: #fff;
 	display:block;
 	float:left;
 	border-right: 1px solid #eee;
@@ -1697,7 +1704,6 @@ background: -ms-linear-gradient(top,  rgba(242,249,253,1) 0%,rgba(255,255,255,0)
 background: linear-gradient(to bottom,  rgba(242,249,253,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f9fd', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
 
-border: 5px solid rgba(215, 235, 248, 0.47);
 }
 .bureau-news-content-body p{
 	line-height: 25px;
@@ -1738,7 +1744,25 @@ border-radius: 5px;
 .san1{
 	display: none;
 }
-.bureau-chengyuan-search-list.active .san1{
+.bureau-chengyuan-search-list:hover a{
+	box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.125) inset;
+	background:#A4D9FF;
+	color: #fff;
+}
+.bureau-chengyuan-search-list:hover > .san1{
+	display: block;
+	width: 0px;
+height: 0px;
+padding: 0px !important;
+border-width: 10px !important;
+border-style: solid;
+border-color: rgba(164, 217, 255, 1) rgba(255, 204, 0, 0) rgba(102, 153, 204, 0) rgba(104, 180, 240, 0) !important;
+position: absolute;
+bottom: -18px;
+right: 45%;
+z-index: 3;
+}
+.bureau-chengyuan-search-list.active > .san1{
 	display: block;
 	width: 0px;
 height: 0px;
@@ -1759,6 +1783,9 @@ z-index: 3;
 	box-shadow: 0px 3px 0px #F3F3F3;
 }
 ul.bureau-seach-school{padding: 6px 0;}
+ul.bureau-seach-school li.current a{
+	color: #f90;
+}
 ul.bureau-seach-school li:first-child{
 	color: rgba(255, 255, 255, 1);
 background: none repeat scroll 0% 0% #A4D9FF;
@@ -1768,10 +1795,13 @@ padding: 4px 6px;
 	margin: 10px 0;
 }
 .seach-seach .input-group {
-    border: 3px solid #A4D9FF;
+    /*border: 3px solid #A4D9FF;*/
 }
 .seach-seach .input-group .form-control {
     height: 34px;
+    width: 33%;
+    margin-right: 5px;
+    border: 3px solid #A4D9FF;
 }
 .seach-seach .input-group .input-group-btn .btn {
     padding: 6px 60px;
@@ -1783,6 +1813,19 @@ padding: 4px 6px;
     border-radius: 0px !important;
     box-shadow: none;
     margin-left: 0px !important;
+}
+.bureau-loading{
+	padding: 10px;
+background: none repeat scroll 0% 0% #E1F2FF;
+margin: 0px auto;
+text-align: center;
+border-radius: 10px;
+border: 1px solid #A4D9FF;
+font-weight: bold;
+width: 500px;
+}
+.bureau-loading a{
+	color: #2DA7FF;
 }
 /*学校搜索展示*/
 #pic_show.container{
@@ -1825,7 +1868,7 @@ border-radius: 50%;
 }
 .bureau-school-search-list .bureau-school-search-name > h3{
 	margin: 0 !important;
-	font-size: 18px;
+	font-size: 16px;
 	line-height: 25px;
     font-weight: bold;
     color: #4C9ED9;
