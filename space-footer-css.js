@@ -31,6 +31,14 @@ var filegroup = [
 	//highcharts
 	"<script type='text/javascript' src='libs/Highcharts-4.0.3/js/highcharts.js'><\/script>",
 
+	//highcharts
+	"<script type='text/javascript' src='libs/Highcharts-4.0.3/js/highcharts.js'><\/script>",
+
+	// Zebra-Dialog弹出框js
+    
+    "<script type='text/javascript' src='libs/Zebra-Dialog/public/javascript/zebra_dialog.js'></script>",
+    "<script type='text/javascript' src='libs/Zebra-Dialog/examples/public/javascript/main.js'></script>",
+
 	// //jbox
 	// "<script type='text/javascript' src='libs/jbox-v2.3/jBox/jquery.jBox-2.3.min.js'><\/script>",
  //  	"<script type='text/javascript' src='libs/jbox-v2.3/jBox/i18n/jquery.jBox-zh-CN.js'><\/script>",
