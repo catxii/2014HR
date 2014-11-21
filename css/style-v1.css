@@ -2762,3 +2762,8 @@ input[type="checkbox"] {
   line-height: 1.42857;
   padding: 6px 12px;
 }
+.notice-word-area {
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  min-height: 100px;
+}
