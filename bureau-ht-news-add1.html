@@ -143,6 +143,17 @@
 
 				</div>
 				<div class=" bureau-right-content panel-body">
+					<div class="fixedBtn">
+						<a rel="nofollow" href="###" class="feedback" title=""></a>
+						<div class="feedbackTips fb-open hide green">
+
+						</div>
+						<div class="feedbackCnt">
+							<img src="img/bz.png">
+							<div>视频只支持flv\MP4</div>
+						</div>
+						
+					</div>
 					<div class="nr-box" style=" width:98%; margin:0 auto;">
 						<form class="form-horizontal form-horizontal-nomargin" role="form">
 
@@ -169,8 +180,8 @@
 									</div>
 								</div>
 							</div>
-							
-							
+
+
 							<ul class="inline-block-ul btn-center" style="border-top:1px solid #eee; padding-top:10px; margin-bottom:10px;">
 								<li>
 									<input type="button" class="btn btn-warning" value="提 交">
@@ -190,7 +201,7 @@
 
 
 		<!--add专区-->
-        
+
 
 
 
@@ -225,17 +236,54 @@
 
 		<script type="text/javascript" src="libs/raking/js/raking1.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/bureau-ht.css" media="screen">
-		<link rel="stylesheet" type="text/css" href="libs/raking/css/raking.css" />
-
-		<!-- <script>
-	     $('.bureau-student-rizhi>li').each(function(){
-		var num = $(this).index();
-		if(num % 2 !== 0)
-		{
-			$(this).addClass('bg3')
+		<link href="libs/help/css/feedback.css" rel="stylesheet" />
+        
+		<script type="text/javascript">
+$(function(){
+	$body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+	$animating = false;
+	$('.fixedBtn .top').click(function(){
+		if ($animating == false) {
+			$body.animate({scrollTop: 0}, 500);
+			$animating = true;
 		}
-	    });
-        </script>-->
+		return false;
+	});
+	$(window).scroll(function(){
+		if ($('.fixedBtn').offset().top > 500) {
+			$('.fixedBtn .top').css('display', 'inline-block');
+		} else {
+			$('.fixedBtn .top').css('display', 'none');
+			$animating = false;
+		}
+	});	
+	var	fixedBtn = $('.fixedBtn'),
+		feedback = $('.feedback', fixedBtn),
+		feedbackCnt = $('.feedbackCnt'),
+		sendBtn = $('.button', fixedBtn),
+		content = $('textarea', fixedBtn),
+		feedbackTips = $('.feedbackTips', fixedBtn),
+		FBCLASS = 'fb-open',
+		close = function(){
+			fixedBtn.animate({
+				right: '-=220'
+			})
+			feedbackCnt.removeClass(FBCLASS);
+		},
+		open = function(){
+			feedbackTips.hide();
+			feedbackCnt.show();
+			fixedBtn.animate({
+				right: '+=220'
+			});
+			feedbackCnt.addClass(FBCLASS);
+		};
+	feedback.length && feedback.on('click', function(e){
+		e.preventDefault();
+		feedbackCnt.hasClass(FBCLASS) ? close() : open();
+	});	
+});
+</script>
 	</body>
 
 </html>

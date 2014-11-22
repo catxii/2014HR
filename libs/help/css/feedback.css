@@ -1,0 +1,35 @@
+*{padding:0; margin:0;}
+body{height:3000px;}
+.fixedBtn {
+	POSITION: fixed; WIDTH: 350px;TOP: 50%; RIGHT: -350px;
+	z-index: 9999;
+}
+
+
+.fixedBtn .feedback {
+	POSITION: absolute; TEXT-INDENT: -2000px; OUTLINE-STYLE: none; OUTLINE-COLOR: invert; OUTLINE-WIDTH: 0px; WIDTH: 33px; DISPLAY: inline-block; BACKGROUND: url(../images/feedback.gif); HEIGHT: 101px; TOP: 0px; LEFT: -33px
+}
+.fixedBtn .feedback:hover {
+	BACKGROUND-POSITION: -33px 0px
+}
+.fixedBtn .top {
+	POSITION: absolute; TEXT-INDENT: -2000px; WIDTH: 33px; DISPLAY: none; BACKGROUND: url(../images/topbutton.png); HEIGHT: 61px; TOP: 93px; LEFT: -33px
+}
+.fixedBtn .top:hover {
+	BACKGROUND-POSITION: -33px 0px
+}
+.feedbackCnt {
+	padding: 6px; BACKGROUND: #fff; 
+}
+.feedbackCnt H3 {
+	MARGIN-BOTTOM: 10px; FONT-SIZE: 14px
+}
+.feedbackTips {
+	TEXT-ALIGN: center; LINE-HEIGHT: 180px; BACKGROUND: #fff; HEIGHT: 180px; FONT-SIZE: 20px
+}
+.feedbackCnt TEXTAREA {
+	BORDER-BOTTOM: #cfcfcf 1px solid; BORDER-LEFT: #cfcfcf 1px solid; PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; WIDTH: 305px; PADDING-RIGHT: 5px; DISPLAY: block; MARGIN-BOTTOM: 10px; HEIGHT: 100px; BORDER-TOP: #cfcfcf 1px solid; BORDER-RIGHT: #cfcfcf 1px solid; PADDING-TOP: 5px
+}	
+.fb-open {
+	BORDER-BOTTOM: #cfcfcf 1px solid; BORDER-LEFT: #cfcfcf 1px solid; BORDER-TOP: #cfcfcf 1px solid; BORDER-RIGHT: #cfcfcf 1px solid; borer-right: none; box-shadow: 2px 2px 8px #aaa
+}

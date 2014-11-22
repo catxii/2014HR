@@ -1288,8 +1288,8 @@ ul.expmenu li ul li:not(.selected):active{
 				padding: 0 0 0 43px;
 				transition: all 0.25s ease 0s;
 			}
-.menu-menu ol a.ol-active{background: #ddd;}
-.menu-menu ol a:hover{background: #ddd;box-shadow: -5px 0px 5px rgba(0, 0, 0, 0.06) inset;}
+.menu-menu ol a.ol-active{background: rgba(164, 208, 243, 1);}
+.menu-menu ol a:hover{background: rgba(164, 208, 243, 1);box-shadow: -5px 0px 5px rgba(0, 0, 0, 0.06) inset;}
 
 
 

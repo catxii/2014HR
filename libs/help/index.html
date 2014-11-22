@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type"  charset="utf-8" />
+<title>jquery������ͷ��ض��� -</title>
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<link href="css/feedback.css" rel="stylesheet" />
+
+</head>
+
+<body>
+<div class="fixedBtn">
+	<a rel="nofollow" href="###" class="feedback" title=""></a>
+	<a href="#top" class="top" ></a>
+	<div class="feedbackTips fb-open hide green">
+	
+	</div>
+	<div class="feedbackCnt">
+		<img src="images/bz.png">
+	</div>
+</div>
+
+<script type="text/javascript">
+$(function(){
+	$body = (window.opera) ? (document.compatMode == "CSS1Compat" ? $('html') : $('body')) : $('html,body');
+	$animating = false;
+	$('.fixedBtn .top').click(function(){
+		if ($animating == false) {
+			$body.animate({scrollTop: 0}, 500);
+			$animating = true;
+		}
+		return false;
+	});
+	$(window).scroll(function(){
+		if ($('.fixedBtn').offset().top > 500) {
+			$('.fixedBtn .top').css('display', 'inline-block');
+		} else {
+			$('.fixedBtn .top').css('display', 'none');
+			$animating = false;
+		}
+	});	
+	var	fixedBtn = $('.fixedBtn'),
+		feedback = $('.feedback', fixedBtn),
+		feedbackCnt = $('.feedbackCnt'),
+		sendBtn = $('.button', fixedBtn),
+		content = $('textarea', fixedBtn),
+		feedbackTips = $('.feedbackTips', fixedBtn),
+		FBCLASS = 'fb-open',
+		close = function(){
+			fixedBtn.animate({
+				right: '-=350'
+			})
+			feedbackCnt.removeClass(FBCLASS);
+		},
+		open = function(){
+			feedbackTips.hide();
+			feedbackCnt.show();
+			fixedBtn.animate({
+				right: '+=350'
+			});
+			feedbackCnt.addClass(FBCLASS);
+		};
+	feedback.length && feedback.on('click', function(e){
+		e.preventDefault();
+		feedbackCnt.hasClass(FBCLASS) ? close() : open();
+	});	
+});
+</script>
+
+</body>
+</html>

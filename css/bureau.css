@@ -30,6 +30,7 @@ box-shadow: 0px 0px 2px rgba(117, 117, 117, 1);
 	line-height: 18px !important;
 	padding: 10px 10px;
 	color: #999 !important;
+	font-size: 12px;
 }
 
 .bureau-navlist{
@@ -47,9 +48,9 @@ box-shadow: 0px 0px 2px rgba(117, 117, 117, 1);
 .banner_magbox{border-right: 6px solid #24D665 !important;}
 .bureau-nav ul{vertical-align: middle;}
 .bureau-nav ul li{margin-right: 32px !important;}
-.bureau-ico a.fa{font-size: 30px;
-
-border: 2px solid rgba(152, 152, 152, 1);
+.bureau-ico a.fa{
+	font-size: 30px;
+box-shadow: 1px -1px 2px rgba(0, 0, 0, 0.13);
 border-radius: 50%;
 width: 56px;
 height: 56px;
@@ -61,19 +62,40 @@ text-decoration: none;
 -webkit-transition: all 0.65s ease;
  	-o-transition: all 0.65s ease;
  	transition: all 0.65s ease;
+ 	background: #fff;
 }
 
 .bureau-ico a.fa:hover,.bureau-ico a.current{
-	/*box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.225) inset;*/
+	box-shadow: 0px 0px 28px rgba(0, 0, 0, 0.225) inset;
 color: #4C9ED9;
-border: 2px solid #4C9ED9;
+background: #fff;
+}
+.bureau-ico a.fa.fa-zy{
+	background: url('../img/bureau-ico-list.png') no-repeat 0px 0px;
+	width: 56px;
+	height: 56px;
+}
+.bureau-ico a.fa.fa-zypt{
+	background: url('../img/bureau-ico-list.png') no-repeat 0px -58px;
+	width: 56px;
+	height: 56px;
+}
+.bureau-ico a.fa.fa-cy{
+	background: url('../img/bureau-ico-list.png') no-repeat 0px -116px;
+	width: 56px;
+	height: 56px;
+}
+.bureau-ico a.fa.fa-xwfb{
+	background: url('../img/bureau-ico-list.png') no-repeat 0px -175px;
+	width: 56px;
+	height: 56px;
 }
 .bureau-ico-name{
 	text-align: center;
 	line-height: 12px;
 font-size: 12px;
 margin-top: 5px;
-color: #999;
+color: #333;
 	}
 /*新闻专区*/
 .bureau-new{margin-top: 15px;}
@@ -1194,6 +1216,7 @@ border-radius: 10px;
     overflow: hidden;
     border-radius: 50%;
     box-shadow: 0px 0px 3px rgba(164, 164, 164, 1);
+    float: left;
 }
 .bureau-school-body .bureau-school-center-body .bureau-school-center-body-list ul li.bureau-new-szdw-img img{
 	width: 50px;
@@ -1217,11 +1240,12 @@ border-radius: 10px;
     color: #444;
 }
 .bureau-school-body .bureau-school-center-body .bureau-school-center-body-list ul li.bureau-new-szdw-name h4{
-	margin: 0px 0px 5px !important;
+	
 line-height: 20px;
 display: block;
 font-size: 14px;
-width: 100%;
+white-space: normal;
+width: 109px;
 }
 .bureau-school-body .bureau-school-center-body .bureau-school-center-body-list ul li.bureau-new-szdw-name p{
 	margin-bottom:5px ;
