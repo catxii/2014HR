@@ -1650,7 +1650,25 @@ vertical-align: middle;
 .skin-school .school-list-group-ul .row .thumbnail img{}
 .bbs-list .dn-list .list-group-item{}
 
-
+/*
+平安到校*/
+.safety-school{
+	
+}
+.safety-school > ul{
+	border-bottom: 1px solid #CCC;
+	box-shadow: 0px 2px 2px rgba(242, 242, 242, 1);
+}
+.safety-school > .ididid{
+	width: 100%;
+height: 500px;
+overflow: hidden;
+position: relative; 
+border: 1px solid #eee;
+border: 8px solid rgba(217, 237, 247, 0.55);
+background: none repeat scroll 0% 0% #F5F3EB;
+border: 2px solid rgba(189, 189, 189, 0.27);
+}
 /*德能银行*/
 .dn-list .add-button-new{left: 10px;width: 20px;position: absolute;}
 .dn-list > .list-group-item-dn-active{background:#fff;
