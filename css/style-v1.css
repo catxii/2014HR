@@ -147,6 +147,7 @@ fieldset[disabled] .btn-primary.active {
   line-height: 36px;
   padding-bottom: 0;
   padding-top: 0;
+  font-size: 12px;
 }
 .navbar-green .navbar-nav > li > a:hover,
 .navbar-green .navbar-nav > li > a:focus {
@@ -2766,4 +2767,10 @@ input[type="checkbox"] {
   border: 1px solid #ccc;
   margin-top: 10px;
   min-height: 100px;
+}
+.center-index-list-box {
+  height: 257px;
+}
+.center-index-list-box .panel-body {
+  height: 244px;
 }
