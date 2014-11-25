@@ -346,6 +346,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 }
 .navbar-zhijiao {
   border-radius: 0;
+  position: fixed;
 }
 .navbar {
   box-shadow: 0 4px 2px #ccc;
