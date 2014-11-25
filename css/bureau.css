@@ -1413,6 +1413,8 @@ border-radius: 10px;
 /*自定义左侧内容*/
 .bureau-custom-body .bureau-custom-left-body{
 	font-size: 12px;
+	height: 162px;
+overflow: hidden;
 }
 .bureau-custom-body .bureau-custom-left-body ul.bureau-custom-rizhi > li{
 	padding: 6px 3px;
@@ -1780,7 +1782,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f9fd', end
 .bureau-news-content-body p{
 	line-height: 25px;
 }
-
+.bureau-news-content-body p img{
+	max-width: 900px;
+	display: block;
+margin: 0px auto;
+}
 /*成员发现*/
 .bureau-chengyuan-search{
 	width: 100%;
@@ -1895,6 +1901,7 @@ border-radius: 10px;
 border: 1px solid #A4D9FF;
 font-weight: bold;
 width: 500px;
+cursor: pointer;
 
 }
 .bureau-loading a{
@@ -1906,14 +1913,16 @@ width: 500px;
 }
 #pic_show.container > ul > li{
 	padding:0 6px;
-	margin-bottom: 15px;
+	margin-bottom: 11px;
 }
 #pic_show.container > ul > li > ul.bureau-school-search-list{
 	margin: 0px;
-border-top: 2px solid #CCC;
+border-top: 2px solid #A4D9FF !important;
 
 padding: 10px 7px;
-border: 1px solid #ddd;
+border-bottom: 1px solid #ddd;
+border-left: 1px solid #ddd;
+border-right: 1px solid #ddd;
 background: url('../img/bg_index_6b4cd6b3.png') repeat scroll 0% 0% transparent;
 background-size: 100%;
 }

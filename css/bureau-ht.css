@@ -15,6 +15,7 @@ box-shadow: 0px 0px 2px rgba(117, 117, 117, 1);
 	line-height: 18px !important;
 	padding: 10px 10px;
 	color: #999 !important;
+	font-size: 12px;
 }
 
 .bureau-navlist{
@@ -149,7 +150,9 @@ color: #fff;
 	padding: 6px;
 box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
 background: url('../img/bg_index_6b4cd6b3.png') repeat scroll 0% 0% transparent;
-border: 1px solid #ddd;
+border-bottom: 1px solid #ddd;
+border-left: 1px solid #ddd;
+border-right: 1px solid #ddd;
 border-top: 3px solid  #68B4F0;
 background-size: 100%;
 }
