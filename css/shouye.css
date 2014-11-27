@@ -23,7 +23,7 @@
 .banner_pre_next .banner_btn_right{position:absolute;right:3%;color:#fff;font:bold 80px/normal simsun;}
 .banner_pre_next .banner_btn_right:hover,.banner_pre_next .banner_btn_left:hover{color:#C00;}
 .yq_banner_list{ height:25px;position:absolute; bottom:15px; text-align:right; z-index:100; right:22px; }
-.yq_banner_list a{text-decoration: none; display:inline-block; width:18px; height:18px;/*background:url(../img/bureau-img/i_dot.32.png) no-repeat left;*/ background:none repeat scroll 0% 0% rgba(204, 204, 204, 0.31); border-radius: 50%; margin-left: 4px;}
+.yq_banner_list a{text-decoration: none; display:inline-block; width:16px; height:16px;/*background:url(../img/bureau-img/i_dot.32.png) no-repeat left;*/ background:none repeat scroll 0% 0% rgba(204, 204, 204, 0.31); border-radius: 50%; margin-left: 6px !important;}
 .yq_banner_list a:hover,.yq_banner_list a.hover{/*background:url(../img/bureau-img/i_dot_hover.32.png) no-repeat right;*/ background: #fff; border-radius: 50%;box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.55); }
 .banner_show{ width:100%; text-align:center; height:410px; overflow:hidden; position:relative;background:#E3F2FA;}
 .bannger_inbox{ position:absolute; left:50%; top:0;}

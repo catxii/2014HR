@@ -29,7 +29,7 @@
 
 		<![endif]-->
 </head>
-<body class="fixed-top-body skyblue-body" >
+<body class="fixed-top-body green-body" >
 <div class="navbar navbar-zhijiao navbar-green navbar-fixed-top" style="">
   <div class="container">
     <div class="navbar-header">
@@ -75,8 +75,10 @@
     </div>
 
 
-    <!--/.nav-collapse --> 
+    <div class="xiala">导航</div>
+    <div class="xialala">收起</div>
   </div>
+  
 </div>
 
      <div class="container top-nav-fluid top-nav-fluid2 container-new-top" style=" ">
@@ -1123,6 +1125,19 @@
 
 	
 </script>
-
+<script>
+$(document).ready(function() {
+	$(".xiala").click(function(){
+  $(".navbar-green").animate({marginTop:"0px"});
+  $(".xiala").hide();
+  $(".xialala").show();
+  });
+  $(".xialala").click(function(){
+  $(".navbar-green").animate({marginTop:"-34px"});
+  $(".xialala").hide();
+  $(".xiala").show();
+  });
+});
+</script>
 </body>
 </html>
