@@ -165,6 +165,7 @@ padding:10px;
 font-style: normal;
 line-height: 23px;
 color: #333;
+cursor: pointer;
 }
 .bureau-new-header > h4 .pull-right{
 	font-size: 15px;
@@ -1415,6 +1416,7 @@ border-radius: 10px;
 	font-size: 12px;
 	height: 162px;
 overflow: hidden;
+margin-bottom: 10px;
 }
 .bureau-custom-body .bureau-custom-left-body ul.bureau-custom-rizhi > li{
 	padding: 6px 3px;

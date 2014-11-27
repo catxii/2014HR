@@ -116,16 +116,6 @@
 							<div class="form-group">
 								<label for="inputPassword3" class="col-sm-2 control-label">选择类型：</label>
 								<div class="col-sm-9">
-									<select class="selectpicker ng-valid ng-dirty" ng-model="selectedItem" ng-change="showallxam()">
-										<option value="0">科室</option>
-										<option value="1">自定义</option>
-									</select>
-
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="inputPassword3" class="col-sm-2 control-label">选择类型：</label>
-								<div class="col-sm-9">
 									<a type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#add-people"><span class="icon-user-add"></span>&nbsp;添加成员</a>
 
 								</div>
@@ -147,7 +137,125 @@
     </div>
   </div>
 </div>
-
+<!--add专区-->
+         <div class="modal fade" id="add-people" ng-app=""  tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">添加小组成员</h4>
+      </div>
+      <div class="modal-body row">
+        <div class="tab-pane" id="messages">
+              <div class="left-qx col-md-5">
+                <div class="panel panel-default"> 
+                  <!-- Default panel contents -->
+                  <div class="panel-heading">班级成员</div>
+                  
+                  <!-- List group -->
+                  <ul class="list-group" style="height:300px; overflow:auto">
+                    <li class="list-group-item">
+                      
+                      <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1">
+                        1 </label>
+                    </li>
+                    <li class="list-group-item">
+                     
+                      <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1">
+                        1 </label>
+                    </li>
+                    <li class="list-group-item">
+                      <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1">
+                        2 </label>
+                    </li>
+                    <li class="list-group-item">
+                      <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1">
+                        3 </label>
+                    </li>
+                    <li class="list-group-item">
+                      <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1">
+                        4 </label>
+                    </li>
+                    <li class="list-group-item">
+                      <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1">
+                        5 </label>
+                    </li>
+                    <li class="list-group-item">
+                      <label>
+                      <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1">
+                        1 </label>
+                    </li>
+                    <li class="list-group-item">
+                      <label>
+                      <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1">
+                        1 </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="button-qx col-md-2" style="padding:0px 10px; width:80px; ">
+                <button type="button" class="btn-lg btn-warning icon-forward" style="font-size:30px"></button>
+               
+              </div>
+              <div class="right-qx col-md-5">
+                <div class="panel panel-default"> 
+                  <!-- Default panel contents -->
+                  <div class="panel-heading">已选对象</div>
+                  
+                  <!-- List group -->
+                  <ul class="list-group" style="height:300px; overflow:auto">
+                    <li class="list-group-item">
+                     
+                      <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1">
+                        1 </label>
+                    </li>
+                    <li class="list-group-item">
+                     
+                      <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1">
+                        1 </label>
+                    </li>
+                    <li class="list-group-item">
+                      <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1">
+                        2 </label>
+                    </li>
+                    <li class="list-group-item">
+                      <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1">
+                        3 </label>
+                    </li>
+                    <li class="list-group-item">
+                      <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1">
+                        4 </label>
+                    </li>
+                    <li class="list-group-item">
+                      <label class="checkbox-inline">
+                        <input type="checkbox" id="inlineCheckbox1" value="option1">
+                        5 </label>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary">保存</button>
+      </div>
+    </div>
+  </div>
+</div>
 <!-- 底部 -->
 <div class="container-fluid footer footer-grayline">
   <div class="row">
