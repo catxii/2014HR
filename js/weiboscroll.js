@@ -2,24 +2,26 @@ $(function () {
     var scrtime;
 
     var $ul = $("#con ul");
-    var liFirstHeight = $ul.find("li:first").height();//µÚÒ»¸öliµÄ¸ß¶È
-    $ul.css({ top: "-" + liFirstHeight - 20 + "px" });//ÀûÓÃcssµÄtopÊôĞÔ½«µÚÒ»¸öliÒş²ØÔÚÁĞ±íÉÏ·½	 ÒòliµÄÉÏÏÂpadding:10pxËùÒÔÒª-20
+    var liFirstHeight = $ul.find("li:first").height();//ï¿½ï¿½Ò»ï¿½ï¿½liï¿½Ä¸ß¶ï¿½
+    $ul.css({ top: "-" + liFirstHeight - 20 + "px" });//ï¿½ï¿½ï¿½ï¿½cssï¿½ï¿½topï¿½ï¿½ï¿½Ô½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½liï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ±ï¿½ï¿½Ï·ï¿½	 ï¿½ï¿½liï¿½ï¿½ï¿½ï¿½ï¿½ï¿½padding:10pxï¿½ï¿½ï¿½ï¿½Òª-20
 
     $("#con").hover(function () {
-        $ul.pause();//ÔİÍ£¶¯»­
+        $ul.pause();//ï¿½ï¿½Í£ï¿½ï¿½ï¿½ï¿½
         clearInterval(scrtime);
     }, function () {
-        $ul.resume();//»Ö¸´²¥·Å¶¯»­	
+        $ul.resume();//ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½Å¶ï¿½ï¿½ï¿½	
         scrtime = setInterval(function scrolllist() {
-            //¶¯»­ĞÎÊ½Õ¹ÏÖµÚÒ»¸öli
+            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½Õ¹ï¿½Öµï¿½Ò»ï¿½ï¿½li
             $ul.animate({ top: 0 + "px" }, 1500, function () {
-                //¶¯»­Íê³ÉÊ±
-                $ul.find("li:last").prependTo($ul);//½«ulµÄ×îºóÒ»¸ö¼ôÇĞli²åÈëÎªulµÄµÚÒ»¸öli
-                liFirstHeight = $ul.find("li:first").height();//¸Õ²åÈëµÄliµÄ¸ß¶È
-                $ul.css({ top: "-" + liFirstHeight - 20 + "px" });//ÀûÓÃcssµÄtopÊôĞÔ½«¸Õ²åÈëµÄliÒş²ØÔÚÁĞ±íÉÏ·½  ÒòliµÄÉÏÏÂpadding:10pxËùÒÔÒª-20					
+                //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±
+                $ul.find("li:last").prependTo($ul);//ï¿½ï¿½ulï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½liï¿½ï¿½ï¿½ï¿½Îªulï¿½Äµï¿½Ò»ï¿½ï¿½li
+                liFirstHeight = $ul.find("li:first").height();//ï¿½Õ²ï¿½ï¿½ï¿½ï¿½liï¿½Ä¸ß¶ï¿½
+                $ul.css({ top: "-" + liFirstHeight - 20 + "px" });//ï¿½ï¿½ï¿½ï¿½cssï¿½ï¿½topï¿½ï¿½ï¿½Ô½ï¿½ï¿½Õ²ï¿½ï¿½ï¿½ï¿½liï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ±ï¿½ï¿½Ï·ï¿½  ï¿½ï¿½liï¿½ï¿½ï¿½ï¿½ï¿½ï¿½padding:10pxï¿½ï¿½ï¿½ï¿½Òª-20					
             });
         }, 3300);
 
-    }).trigger("mouseleave");//Í¨¹ıtrigger("mouseleave")º¯ÊıÀ´´¥·¢hoverÊÂ¼şµÄµÚ2¸öº¯Êı
-
+    }).trigger("mouseleave");//Í¨ï¿½ï¿½trigger("mouseleave")ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½hoverï¿½Â¼ï¿½ï¿½Äµï¿½2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+    
+    
+    
 });
