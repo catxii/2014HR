@@ -222,6 +222,10 @@
 					    <div class="col-sm-6">
 					      <input id="citySel" class="form-control" type="text" readonly value="" style="width:161px; display:inline-block"/>
 					      <a id="menuBtn" class="btn btn-primary btn-sm" href="#" onclick="showMenu(); return false;">选择</a>
+					      <!-- 下拉选择弹出框 -->
+							<div id="menuContent" class="menuContent menuContent-custom" style="display:none; position: absolute; border:1px solid #ccc; background:white; z-index: 999999;">
+								<ul id="treeDemo" class="ztree" style="margin-top:0; width:160px; max-height:150px; overflow:auto;"></ul>
+							</div>
 					    </div>
 					  </div>
 
@@ -288,10 +292,7 @@
 
 
 
-		<!-- 下拉选择弹出框 -->
-		<div id="menuContent" class="menuContent" style="display:none; position: absolute; border:1px solid #ccc; background:white; z-index: 999999;">
-			<ul id="treeDemo" class="ztree" style="margin-top:0; width:160px; max-height:150px; overflow:auto;"></ul>
-		</div>
+		
 
 		<!--***** “space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
 		<script type="text/JavaScript" src="space-footer-css.js"></script>
