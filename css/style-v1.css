@@ -346,7 +346,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 }
 .navbar-zhijiao {
   border-radius: 0;
-  position: fixed;
+  position: fixed!important;
 }
 .navbar {
   box-shadow: 0 4px 2px #ccc;
@@ -616,7 +616,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 }
 .user-list-small .date {
   text-align: center;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 16px;
 }
 .tree-sub-1 {
@@ -1098,7 +1098,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
 .drag-km {
   z-index: 3000;
 }
-.chose-box-index.container-fluid .drag-km {
+.chose-box-index.container-fluid .drag-km-button {
   border-radius: 6px;
   padding: 5px;
   background: #2ecc71;
@@ -1107,7 +1107,7 @@ fieldset[disabled] .navbar-green .btn-link:focus {
   font-size: 12px;
   padding: 3px 5px;
 }
-.chose-box-index.container-fluid .drag-km .icon-move {
+.chose-box-index.container-fluid .drag-km-button .icon-move {
   margin-right: 5px;
 }
 .drag-km.ui-draggable-dragging {
