@@ -1400,15 +1400,13 @@ height:50px;}
 
 /*日志树*/
 .rizhi-list-new .number-news {
-    font-size: 10px !important;
-padding: 0px 3px;
+    font-size: 11px !important;
+padding: 3px 6px;
 border-radius: 2px;
 color: #FFF;
 margin-right: 5px;
-background-image: -moz-linear-gradient(center top , #FF4343, rgba(197, 6, 6, 1));
-background-image: -webkit-linear-gradient(top, #FF4343, rgba(197, 6, 6, 1));
-border: 1px solid rgba(204, 0, 0, 1);
-text-shadow: 1px 1px 0px rgba(119, 0, 0, 1);
+border: 1px solid rgba(206, 82, 82, 1);
+background: none repeat scroll 0% 0% #F26464;
 }
 ul.sub-list{margin-bottom: 0 !important;}
 .rizhi-list-new{border-bottom: 1px dashed rgb(212, 212, 212);}
