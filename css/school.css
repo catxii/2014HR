@@ -41,9 +41,8 @@ border-radius: 0px 0px 6px 6px;
     cursor: pointer;
     font-size: 12px;
 }
-.green-body{background: #fff; padding-top: 2px;}
-.green-body .navbar{/*background: #2ECC71;*/margin-top:-34px;}
-/*.green-body .navbar:hover{margin-top: 0;}*/
+.green-body{background: #fff; padding-top: 17px;}
+.green-body .navbar:hover{margin-top: 0;}
 .green-body .school-logo-name{
 position: absolute;
 top: 55px;
@@ -314,8 +313,8 @@ border: 1px solid rgba(168, 0, 0, 1);}
 
 
 /*学校新页面-红色*/
-.red-body{/*background: linear-gradient(0deg, #D9CEB4 0%, #FFFCF5 100%) repeat scroll 0% 0% transparent;*/background:url('../img/bg-red.jpg') repeat !important; padding-top: 2px;}
-.red-body .navbar{background:none repeat scroll 0% 0% rgba(41, 41, 41, 0.87);margin-top:-34px;}
+.red-body{/*background: linear-gradient(0deg, #D9CEB4 0%, #FFFCF5 100%) repeat scroll 0% 0% transparent;*/background:url('../img/bg-red.jpg') repeat !important;padding-top: 17px;}
+.red-body .navbar{background:none repeat scroll 0% 0% rgba(41, 41, 41, 0.87);margin-top:0px;}
 
 .red-body .BreakingNews-container{background: url(../img/red-bg.png)repeat-y !important; }
 .red-body .school-logo-name{
@@ -709,8 +708,8 @@ border: 1px solid rgba(168, 0, 0, 1);}
 
 /*学校新页面-蓝色*/
 /*学校新页面*/
-.blue-body{background:url(../img/5-1206010S329-50.gif) repeat !important; padding-top: 2px;}
-.blue-body .navbar{background:none repeat scroll 0% 0% rgba(0, 121, 172, 0.81);margin-top:-34px;}
+.blue-body{background:url(../img/5-1206010S329-50.gif) repeat !important; padding-top: 17px;}
+.blue-body .navbar{background:none repeat scroll 0% 0% rgba(0, 121, 172, 0.81);margin-top:0px;}
 .blue-body .school-logo-name{
 position: absolute;
 top: 55px;
@@ -1011,8 +1010,8 @@ border: 1px solid rgba(168, 0, 0, 1);}
 
 /*学校新页面-天蓝色*/
 /*学校新页面*/
-.skyblue-body{background:linear-gradient(-30deg, rgba(255, 255, 255, 1) 0%, #E9EAED 100%) repeat scroll 0% 0% transparent !important; padding-top: 2px;}
-.skyblue-body .navbar{background:none repeat scroll 0% 0% rgba(42, 42, 42, 0.82);margin-top:-34px;}
+.skyblue-body{background:linear-gradient(-30deg, rgba(255, 255, 255, 1) 0%, #E9EAED 100%) repeat scroll 0% 0% transparent !important; padding-top: 17px;}
+.skyblue-body .navbar{background:none repeat scroll 0% 0% rgba(42, 42, 42, 0.82);margin-top:0px;}
 .skyblue-body .school-logo-name{
 position: absolute;
 top: 55px;
@@ -1315,8 +1314,8 @@ border: 1px solid rgba(168, 0, 0, 1);}
 
 /*学校新页面-粉红色*/
 /*学校新页面*/
-.pink-body{/*background:none repeat scroll 0% 0% rgba(255, 105, 105, 0.12);*/background: url(../img/index-red.png) repeat; padding-top: 2px;}
-.pink-body .navbar{background: none repeat scroll 0% 0% rgba(102, 102, 102, 0.84);margin-top:-34px;}
+.pink-body{/*background:none repeat scroll 0% 0% rgba(255, 105, 105, 0.12);*/background: url(../img/index-red.png) repeat; padding-top: 17px;}
+.pink-body .navbar{background: none repeat scroll 0% 0% rgba(102, 102, 102, 0.84);margin-top:0px;}
 .pink-body .school-logo-name{
 position: absolute;
 top: 55px;
@@ -1619,8 +1618,8 @@ border: 1px solid rgba(168, 0, 0, 1);}
 
 /*深红页面*/
 /*学校新页面*/
-.crimson-body{background:url(../img/5-13050G33952.jpg) repeat !important; padding-top: 2px;box-shadow: 0px -60px 91px rgba(0, 0, 0, 0.34) inset;}
-.crimson-body .navbar{background: none repeat scroll 0% 0% rgba(41, 41, 41, 0.85);margin-top:-34px;}
+.crimson-body{background:url(../img/5-13050G33952.jpg) repeat !important; padding-top: 17px;box-shadow: 0px -60px 91px rgba(0, 0, 0, 0.34) inset;}
+.crimson-body .navbar{background: none repeat scroll 0% 0% rgba(41, 41, 41, 0.85);margin-top:0px;}
 .crimson-body .school-logo-name{
 position: absolute;
 top: 55px;
