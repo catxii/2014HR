@@ -93,8 +93,149 @@ vertical-align: middle;
 .btn-primary > a{
 	color:#FFF;
 	}
-.navbar-green{
-	background-color:rgba(0,168,86,0.9)}
+	
+/*头部*/
+/* navbars */
+.navbar-green {
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(234, 234, 234, 0.9)) repeat scroll 0% 0% transparent;
+height: 36px;
+min-height: 36px;
+box-shadow: 0px 0px 2px #757575;
+border-bottom: 1px solid #fff;
+font-family: Arial,Helvetica,sans-serif;
+}
+.navbar-green .navbar-header{
+	padding: 9px 10px;
+}
+.navbar-green .navbar-brand {
+  color: #fff;
+}
+.navbar-green .navbar-brand:hover,
+.navbar-green .navbar-brand:focus {
+  color: #fff;
+  background-color: transparent;
+}
+.navbar-green .navbar-text {
+  color: #fff;
+}
+.navbar-green .navbar-nav > li > a {
+  color:#666;
+  height: 36px;
+  line-height: 36px;
+  padding-bottom: 0;
+  padding-top: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 12px;
+  text-shadow: 1px 1px 0px #fff;
+}
+.navbar-green .navbar-nav > li > a:hover,
+.navbar-green .navbar-nav > li > a:focus {
+  background-color: rgba(198, 198, 198, 1);
+color: #444;
+text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.48);
+}
+.navbar-green .navbar-nav > .active > a,
+.navbar-green .navbar-nav > .active > a:hover,
+.navbar-green .navbar-nav > .active > a:focus {
+  background-color: #CFCFCF;
+color: #444;
+text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.48);
+}
+.navbar-green .navbar-nav > .disabled > a,
+.navbar-green .navbar-nav > .disabled > a:hover,
+.navbar-green .navbar-nav > .disabled > a:focus {
+  color: #444;
+  background-color: transparent;
+  text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.48);
+}
+.navbar-green .navbar-toggle {
+  border-color: #ffae00;
+}
+.navbar-green .navbar-toggle:hover,
+.navbar-green .navbar-toggle:focus {
+  background-color: #ffae00;
+}
+.navbar-green .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+.navbar-green .navbar-collapse,
+.navbar-green .navbar-form {
+  border-color: #101010;
+}
+.navbar-green .navbar-nav > .open > a,
+.navbar-green .navbar-nav > .open > a:hover,
+.navbar-green .navbar-nav > .open > a:focus {
+  color: rgba(255, 255, 255, 1);
+background-color: #2ECC71 !important;
+text-shadow: none !important;
+}
+@media (max-width: 767px) {
+  .navbar-green .navbar-nav .open .dropdown-menu > .dropdown-header {
+    border-color: #080808;
+  }
+  .navbar-green .navbar-nav .open .dropdown-menu .divider {
+    background-color: #080808;
+  }
+  .navbar-green .navbar-nav .open .dropdown-menu > li > a {
+    color: #777;
+  }
+  .navbar-green .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-green .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #fff;
+    background-color: transparent;
+  }
+  .navbar-green .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-green .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-green .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #fff;
+    background-color: #080808;
+  }
+  .navbar-green .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-green .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-green .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #444;
+    background-color: transparent;
+  }
+}
+.navbar-green .navbar-link {
+  color: #777;
+}
+.navbar-green .navbar-link:hover {
+  color: #fff;
+}
+.navbar-green .btn-link {
+  color: #777;
+}
+.navbar-green .btn-link:hover,
+.navbar-green .btn-link:focus {
+  color: #fff;
+}
+.navbar-green .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-green .btn-link:hover,
+.navbar-green .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-green .btn-link:focus {
+  color: #444;
+}
+.navbar-green .open > a, .navbar-green .open > a:hover, .navbar-green .open > a:focus {
+    background-color: #d2d2d2 !important;
+}
+
+.navbar-nav > li > a:hover,.navbar-nav > li > a:focus{
+	background-color: #d2d2d2 !important;
+}
+.logo-small {
+  display: block;
+  background: url(../img/logo-tm-top_03.png) left center no-repeat;
+  width: 140px;
+  height: 36px;
+}
+.navbar-zhijiao {
+  border-radius: 0;
+  position: fixed!important;
+}
+
+.lx-logo{background: url(../img/login-logo1.png) no-repeat scroll 0px 0px transparent; height: 19px; width: 21px;display: block;}
 .btn-warning > span{
 	margin-right:5px;}
 .btn-warning > a{
