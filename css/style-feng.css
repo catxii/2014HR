@@ -504,7 +504,203 @@ a.list-grouping-fen-more{
 	padding:15px; color:#06C; background:#E6E6E6; margin-bottom:15px;}
 	
 .management-list td{ padding:4px 8px!important;}
+
 /*班级主页*/
+.class-body{
+	padding-top:36px !important;
+	background:  scroll center 0px #ccc;
+	
+}
+.class-body.diy-mode{
+	padding-top: 0px !important;
+}
+.class-body .diy-all-box{
+	background: none repeat scroll 0% 0% rgba(255, 255, 255, 1);
+border-bottom: 1px solid #9B9B9B;
+box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.55);
+margin-top: 0px;
+}
+.class-body .diy-all-box .diy-box{
+	margin: 0 auto;
+	border-radius: 0px !important;
+}
+.class-body.diy-mode > .navbar{
+	background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(234, 234, 234, 0.9)) repeat scroll 0% 0% transparent;
+height: 38px;
+min-height: 38px;
+box-shadow: 0px 0px 2px #757575;
+}
+.class-body .diy-navbar .navbar-nav li a{
+	color: #757575 !important;
+font-size: 12px;
+}
+.class-body .nav-wrapper{
+	padding: 0 5px;
+}
+.class-body .top-nav-bar-bottom{
+	background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.28);
+height: 35px;
+margin: 0px auto;
+	
+}
+.class-body .top-nav-bar-bottom li{
+	line-height: 35px;
+	margin: 0 !important;
+	padding: 0 16px !important;
+}
+.class-body .top-nav-bar-bottom li a{
+	text-shadow:none !important;
+	color: rgba(0, 0, 0, 1);
+    font-size: 13px;
+	
+}
+.class-body .top-nav-bar-bottom li.current a{
+	border-bottom: 0px !important;
+}
+.class-body .img-wrappr-ico{
+	box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.62);
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+.class-body .img-wrappr-ico img{
+	border-radius: 50%;
+}
+.class-body .user-num-wrapper{
+	margin-left: 40px;
+}
+.class-body .user-num-wrapper .num-list li h3 {
+    padding: 0px;
+    color: #000;
+    text-shadow:none;
+}
+
+/*班级主页板块*/
+.class-body .panel-class-zdy{
+	background-color: rgba(255, 255, 255, 0.29) !important;
+padding: 5px !important;
+border-radius: 0px !important;
+margin-bottom: 10px !important;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.16);
+}
+.class-body .panel-class-zdy > .panel-body {
+    background:#fff !important;
+    border-radius: 0px !important;
+    padding: 0 !important;
+}
+.class-body .panel-class-zdy > .panel-body > .nr{
+	background: #fff;
+}
+.class-body .panel-class-zdy > .panel-body > .nr.txt-zdy{
+	padding: 5px;
+}
+.class-body .panel-class-zdy > .panel-body > .zdy-kb{
+	
+}
+.class-body .panel-class-zdy > .panel-body > .panel-heading{
+	height: 30px;
+font-size: 12px;
+padding: 0px 5px;
+color: rgba(255, 255, 255, 1);
+line-height: 30px;
+border-radius: 0px !important;
+border-bottom: 1px solid rgba(0, 0, 0, 0.23);
+font-family: Tahoma,Arial,Helvetica,STHeiti,"宋体";
+font-weight: 900;
+}
+.class-body .panel-class-zdy > .panel-body > .panel-heading > i{
+	background: none repeat scroll 0% 0% rgba(255, 255, 255, 0.27);
+width: 20px;
+height: 20px;
+border-radius: 2px;
+padding: 4px;
+color: rgba(255, 255, 255, 1);
+margin-right: 5px;
+text-align: center;
+text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+.class-body .panel-class-zdy > .panel-body > .panel-heading > .pull-right{
+	color: rgba(255, 255, 255, 0.5);;
+font-size: 11px;
+display: block;
+font-weight: 100;
+}
+.class-body .panel-class-zdy > .panel-body > .list-group{
+	background: #fff;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+	font-size: 12px !important;
+}
+.class-body .panel-class-zdy > .panel-body > .list-group > .list-group-item{
+	padding:7px 5px;
+	font-family: Arial,Helvetica,sans-serif,Verdana,Helvetica;
+	border-bottom: 1px dotted #ddd;
+	border-radius: 0px !important;
+	margin-top: 1px !important;
+}
+.class-body .panel-class-zdy > .panel-body > .list-group > .list-group-item > i{
+	font-size: 12px;
+vertical-align: middle;
+padding: 2px 5px;
+margin-right: 2px;
+border-radius: 3px;
+color: #FFF;
+font-style: initial;
+text-align: center;
+}
+
+
+
+/*班级首页相册*/
+.class-body .panel-class-zdy .carousel.slide{
+	height: 12em;
+}
+.class-body .panel-class-zdy .carousel-inner > .item > img,.class-body .panel-class-zdy .carousel-inner > .item > a > img{
+	height: 12em;
+}
+.class-body .panel-class-zdy .carousel.slide .carousel-indicators{
+	bottom: 2px;
+}
+.class-body .panel-class-zdy .carousel.slide .carousel-indicators > li{
+	background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.22);
+	border: 0px !important;
+}
+.class-body .panel-class-zdy .carousel.slide .carousel-indicators > li.active{
+	background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.62);
+}
+
+/*班级首页动态*/
+.class-body .panel-class-zdy.panel-class-dongtai{
+	
+}
+.class-body .panel-class-zdy.panel-class-dongtai > .panel-heading{
+	height: 30px;
+font-size: 12px;
+padding: 0px 5px;
+color: #FFF;
+line-height: 30px;
+border-radius: 0px !important;
+border-bottom: 1px solid rgba(0, 0, 0, 0.23);
+font-family: Tahoma,Arial,Helvetica,STHeiti,"宋体";
+font-weight: 900;
+}
+.class-body .panel-class-zdy.panel-class-dongtai > .panel-heading > i {
+    background: none repeat scroll 0% 0% rgba(255, 255, 255, 0.27);
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    padding: 4px;
+    color: #FFF;
+    margin-right: 5px;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+}
+.class-body .panel-class-zdy.panel-class-dongtai > .panel-heading > .pull-right{
+	color: rgba(255, 255, 255, 0.5);;
+font-size: 11px;
+display: block;
+font-weight: 100;
+}
+
 .container-class{
 	}
 .top-nav-fluid{
@@ -650,7 +846,7 @@ a.list-grouping-fen-more{
 	 margin-bottom:8px;
 	display:block; color:#999; font-size:12px;}
 .panel-class-dongtai .media-body a.media-body-h{
-	color:#093; font:16px "microsoft yahei";  margin-top:8px; letter-spacing:1px;}
+	color:#333; font:16px "microsoft yahei";  margin-top:8px; letter-spacing:1px;}
 .panel-class-dongtai .media-body a.media-body-h:hover{
 	color:#FFAE00; font-size:16px; }
 .panel-class-dongtai .dongtai-say{ background:rgba(0,0,0,0.05); margin:0px; padding:5px 10px; border-top:3px solid #ECECEC;}

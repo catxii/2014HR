@@ -3726,7 +3726,7 @@ background-color: gray;
 }
 .onload-left{width: 80%;float: left;}
 .onload-right{width:30px;height:30px;float: left;line-height: 30px;margin-right: 10px;}
-.onload-right img{width: 30px;border-radius: 50%;box-shadow: 1px 0px 1px #468FC9;}
+.onload-right img{width: 30px;border-radius: 50%;box-shadow: 1px 0px 1px #468FC9;height: 30px;}
 .search {
 	width: 30px;
 	height: 30px;
