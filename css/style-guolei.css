@@ -1,0 +1,7 @@
+﻿/*2014.12.05 guolei custom*/
+
+/*文章列表图标样式*/
+.bureau-icon-size{ font-size: 5px;}
+
+/*视频*/
+.video-mask { position: absolute; top:5px; z-index: 10; width: 172px; height: 140px;}
