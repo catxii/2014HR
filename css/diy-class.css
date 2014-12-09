@@ -22,6 +22,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababa', end
 body.class-body .class-index-container .droptrue.droptrue1 {
     background-color: rgba(239, 239, 239, 0.24);
 }
+body.class-body .class-index-container .droptrue.droptrue2 {
+    background-color: rgba(239, 239, 239, 0.24);
+}
+body.class-body .class-index-container .droptrue.droptrue3 {
+    background-color: rgba(239, 239, 239, 0.24);
+}
 body.byhx-bg {
   background-image: url(../img/theme-img/public/byhx.jpg);
   background-color: #dff0f8;

@@ -509,7 +509,6 @@ a.list-grouping-fen-more{
 .class-body{
 	padding-top:52px !important;
 	background:  scroll center 0px #ccc;
-	background-position: center 247px;
     background-repeat: no-repeat;
 	
 }
@@ -550,7 +549,6 @@ font-size: 12px;
 	background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.12);
 height: 35px;
 margin: 0px auto;
-	
 }
 .class-body .top-nav-bar-bottom li{
 	line-height: 35px;
@@ -579,11 +577,16 @@ border: 4px solid rgba(255, 255, 255, 0.3);
 }
 .class-body .user-num-wrapper .num-list li h3 {
     padding: 0px;
-    color: #000;
+    color: #FF6C00;
     text-shadow:none;
     font-weight: bold;
 }
-
+.class-body .user-num-wrapper .num-list li .btn{
+	box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
+background: -moz-linear-gradient(center top , #696E78 0%, #646973 100%) repeat scroll 0% 0% transparent;
+border: none !important;
+padding: 2px 6px;
+}
 /*班级主页板块*/
 .class-body .panel-class-zdy{
 	background-color: rgba(255, 255, 255, 0.15) !important;
@@ -741,6 +744,7 @@ font-family: Tahoma,Arial,Helvetica,STHeiti,"宋体";
 font-size: 14px;
 font-family: Arial,"宋体";
 letter-spacing: 0px;
+
 }
 .class-body .panel-class-zdy.panel-class-dongtai .panel-body.class-zdy-dongtai > .media{
 	padding: 10px;
@@ -791,10 +795,14 @@ letter-spacing: 0px;
 	width: 85%;
 	font-size: 12px;
 }
-.class-body .panel-class-zdy .fontbold{
+.class-body .panel-class-zdy .media-body > .fontbold{
 	color: #5C82A3 !important;
+	font-weight: 600 ;
 }
-
+.class-body .panel-class-zdy .media-body > .fontbold:first-child{
+	color: #5C82A3 !important;
+	font-weight: 200;
+}
 
 /*班级首页加载*/
 .bureau-loading{
@@ -1099,9 +1107,12 @@ box-shadow: 0px 2px 0px rgba(197, 197, 197, 1);
 .panel-class-dongtai .media-body{
 	color:#CCC; font-size:12px;}
 .panel-class-dongtai .media-body-text{
-	 line-height:20px;
-	 margin:8px 0;
-	display:block; color:#999; font-size:12px;}
+	 line-height: 18px;
+display: block;
+font-size: 12px;
+color: #666;
+margin: 7px 0px !important;
+}
 .panel-class-dongtai .media-body a.media-body-h{
 	color:#333; font:16px "microsoft yahei";  margin:5px 0; letter-spacing:1px;}
 .panel-class-dongtai .media-body a.media-body-h:hover{
