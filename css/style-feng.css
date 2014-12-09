@@ -507,9 +507,18 @@ a.list-grouping-fen-more{
 
 /*班级主页*/
 .class-body{
-	padding-top:36px !important;
+	padding-top:52px !important;
 	background:  scroll center 0px #ccc;
+	background-position: center 247px;
+    background-repeat: no-repeat;
 	
+}
+
+.class-body .top-nav-fluid {
+    position: relative;
+    padding: 0px;
+    margin: -17px auto 0px;
+    width: 1170px;
 }
 .class-body.diy-mode{
 	padding-top: 0px !important;
@@ -538,7 +547,7 @@ font-size: 12px;
 	padding: 0 5px;
 }
 .class-body .top-nav-bar-bottom{
-	background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.28);
+	background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.12);
 height: 35px;
 margin: 0px auto;
 	
@@ -558,9 +567,9 @@ margin: 0px auto;
 	border-bottom: 0px !important;
 }
 .class-body .img-wrappr-ico{
-	box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.62);
-    border-radius: 50%;
-    border: 2px solid #fff;
+	box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.13);
+border-radius: 50%;
+border: 4px solid rgba(255, 255, 255, 0.3);
 }
 .class-body .img-wrappr-ico img{
 	border-radius: 50%;
@@ -572,15 +581,16 @@ margin: 0px auto;
     padding: 0px;
     color: #000;
     text-shadow:none;
+    font-weight: bold;
 }
 
 /*班级主页板块*/
 .class-body .panel-class-zdy{
-	background-color: rgba(255, 255, 255, 0.29) !important;
+	background-color: rgba(255, 255, 255, 0.15) !important;
 padding: 5px !important;
 border-radius: 0px !important;
 margin-bottom: 10px !important;
-    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.16);
+box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
 }
 .class-body .panel-class-zdy > .panel-body {
     background:#fff !important;
@@ -670,7 +680,8 @@ text-align: center;
 
 /*班级首页动态*/
 .class-body .panel-class-zdy.panel-class-dongtai{
-	
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.16);
+	margin-bottom: 5px;
 }
 .class-body .panel-class-zdy.panel-class-dongtai > .panel-heading{
 	height: 30px;
@@ -682,6 +693,26 @@ border-radius: 0px !important;
 border-bottom: 1px solid rgba(0, 0, 0, 0.23);
 font-family: Tahoma,Arial,Helvetica,STHeiti,"宋体";
 font-weight: 900;
+}
+.class-body .panel-class-zdy.panel-class-dongtai > .panel-heading .nav-tabs > li.active > a,
+.class-body .panel-class-zdy.panel-class-dongtai > .panel-heading .nav-tabs > li.active > a:hover,
+.class-body .panel-class-zdy.panel-class-dongtai > .panel-heading .nav-tabs > li.active > a:focus
+{
+	border: 0 !important;
+	background: none;
+	line-height: 26px;
+	padding: 2px 6px;
+	box-shadow: none !important;
+	color: #000 !important;
+}
+.class-body .panel-class-zdy.panel-class-dongtai > .panel-heading .nav-tabs > li > a{
+	border: 0 !important;
+	background: none;
+	line-height: 26px;
+	padding: 2px 6px;
+	box-shadow: none !important;
+	font-size: 13px !important;
+	color: rgba(0, 0, 0, 0.32) !important;
 }
 .class-body .panel-class-zdy.panel-class-dongtai > .panel-heading > i {
     background: none repeat scroll 0% 0% rgba(255, 255, 255, 0.27);
@@ -700,6 +731,232 @@ font-size: 11px;
 display: block;
 font-weight: 100;
 }
+.class-body .panel-class-zdy.panel-class-dongtai .panel-body.class-zdy-dongtai{
+	box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.09);
+margin-bottom: 7px;
+font-family: Tahoma,Arial,Helvetica,STHeiti,"宋体";
+}
+.class-body .panel-class-zdy.panel-class-dongtai .panel-body.class-zdy-dongtai .media-body-h{
+	color: #333;
+font-size: 14px;
+font-family: Arial,"宋体";
+letter-spacing: 0px;
+}
+.class-body .panel-class-zdy.panel-class-dongtai .panel-body.class-zdy-dongtai > .media{
+	padding: 10px;
+}
+.class-body .panel-class-zdy.panel-class-dongtai .panel-body.class-zdy-dongtai > .media > .media-body{
+	font-size: 14px;
+	color: #575757;
+}
+.class-body .panel-class-zdy.panel-class-dongtai img.media-object{
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+}
+
+/*班级首页评论*/
+.class-body .panel-class-zdy .dongtai-say-reply{
+	font-family: Tahoma,Arial,Helvetica,STHeiti,"宋体";
+	padding: 7px !important;
+}
+.class-body .panel-class-zdy .dongtai-say-reply img.media-object{
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	
+}
+.class-body .panel-class-zdy ul.dongtai-say-reply li.dongtai-media .media-heading{
+	margin: 0 !important;
+	line-height: 25px;
+}
+.class-body .panel-class-zdy ul.dongtai-say-reply .media-body{
+	font-size: 12px !important;
+}
+.class-body .panel-class-zdy ul.dongtai-say-reply .dongtai-media.submenu{
+	background:#E6E6E6;
+	box-shadow: none !important;
+}
+.class-body .panel-class-zdy .panel-class-zdy-title{
+	line-height: 30px;
+	display: block;
+}
+.class-body .panel-class-zdy .panel-class-zdy-title > i.fa{
+	color: #ccc;
+	margin-right:2px;
+	font-size: 12px;
+}
+.class-body .panel-class-zdy .panel-class-zdy-title > font{
+	font-weight: bold;
+	width: 85%;
+	font-size: 12px;
+}
+.class-body .panel-class-zdy .fontbold{
+	color: #5C82A3 !important;
+}
+
+
+/*班级首页加载*/
+.bureau-loading{
+	padding: 10px;
+background: none repeat scroll 0% 0% rgba(255, 255, 255, 1);
+margin: 0px auto;
+text-align: center;
+border-radius: 2px;
+border: 1px solid rgba(255, 255, 255, 1);
+font-weight: bold;
+cursor: pointer;
+box-shadow: 0px 2px 0px rgba(197, 197, 197, 1);
+
+}
+.bureau-loading a{
+	color: #666;
+}
+.font-loading{
+	font-size: 12px;
+	margin-top: 5px;
+}
+@-webkit-keyframes scaleout {
+  0% { -webkit-transform: scale(0.0) }
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+@keyframes scaleout {
+  0% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 100% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+.zzsc8 {
+  width: 20px;
+  height: 20px;
+  position: relative;
+ margin-left: 10px;
+  float: left;
+  left: 37%;
+}
+
+.container1 > div, .container3 > div {
+  width: 6px;
+  height: 6px;
+  background-color: rgba(0, 91, 168, 0.34);
+  border-radius: 100%;
+  position: absolute;
+  -webkit-animation: bouncedelay 1.2s infinite ease-in-out;
+  animation: bouncedelay 1.2s infinite ease-in-out;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.container2 > div{
+	width: 6px;
+  height: 6px;
+  background-color: rgba(255, 180, 0, 1);
+  border-radius: 100%;
+  position: absolute;
+  -webkit-animation: bouncedelay 1.2s infinite ease-in-out;
+  animation: bouncedelay 1.2s infinite ease-in-out;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.zzsc8 .zzsc8-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.container2 {
+  -webkit-transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
+}
+
+.container3 {
+  -webkit-transform: rotateZ(90deg);
+  transform: rotateZ(90deg);
+}
+
+.circle1 { top: 0; left: 0; }
+.circle2 { top: 0; right: 0; }
+.circle3 { right: 0; bottom: 0; }
+.circle4 { left: 0; bottom: 0; }
+
+.container2 .circle1 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+
+.container3 .circle1 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+.container1 .circle2 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+
+.container2 .circle2 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+
+.container3 .circle2 {
+  -webkit-animation-delay: -0.7s;
+  animation-delay: -0.7s;
+}
+
+.container1 .circle3 {
+  -webkit-animation-delay: -0.6s;
+  animation-delay: -0.6s;
+}
+
+.container2 .circle3 {
+  -webkit-animation-delay: -0.5s;
+  animation-delay: -0.5s;
+}
+
+.container3 .circle3 {
+  -webkit-animation-delay: -0.4s;
+  animation-delay: -0.4s;
+}
+
+.container1 .circle4 {
+  -webkit-animation-delay: -0.3s;
+  animation-delay: -0.3s;
+}
+
+.container2 .circle4 {
+  -webkit-animation-delay: -0.2s;
+  animation-delay: -0.2s;
+}
+
+.container3 .circle4 {
+  -webkit-animation-delay: -0.1s;
+  animation-delay: -0.1s;
+}
+
+@-webkit-keyframes bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0.0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes bouncedelay {
+  0%, 80%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 40% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
 
 .container-class{
 	}
@@ -773,7 +1030,7 @@ font-weight: 100;
 .num-list li span{
 	color:#FFF; font-size:12px;margin-left:15px;  text-shadow:none}
 .class-index-container{
-	margin-top:20px;}
+	margin-top:10px;}
 .class-index-container .panel-body{
 	padding:10px 5px;}
 .class-index-container .row,.class-index-container .thumbnail{
@@ -796,7 +1053,7 @@ font-weight: 100;
 	display:block;
 	font-size:24px;
 	font-weight:700;
-	margin-top:10px;
+	margin: 5px 0;
 	font-style:normal;
 	color:#ffae00;}
 #text-control{
@@ -810,7 +1067,7 @@ font-weight: 100;
 .panel-class-Set .tip{
 	line-height:20px;
 	display:block;
-	margin-top:10px;
+	margin: 5px 0;
 	font-style:normal}
 	
 .class-fixed-top,
@@ -836,17 +1093,17 @@ font-weight: 100;
 .class-index-center .panel-class-dongtai .panel-body .media{
 	 padding:10px; }
 .panel-class-dongtai .media-heading{
-	font-size:12px; color:#4c4c4c; border-top:1px dotted #EEE; padding:6px;}
+	font-size:12px; color:#666; border-top:1px dotted #EEE;line-height: 20px;}
 .panel-class-dongtai .media-heading span{
-	font-size:12px; color:#CCC; margin-left:6px;}
+	font-size:12px; color:#999; margin-left:6px;}
 .panel-class-dongtai .media-body{
 	color:#CCC; font-size:12px;}
 .panel-class-dongtai .media-body-text{
 	 line-height:20px;
-	 margin-bottom:8px;
+	 margin:8px 0;
 	display:block; color:#999; font-size:12px;}
 .panel-class-dongtai .media-body a.media-body-h{
-	color:#333; font:16px "microsoft yahei";  margin-top:8px; letter-spacing:1px;}
+	color:#333; font:16px "microsoft yahei";  margin:5px 0; letter-spacing:1px;}
 .panel-class-dongtai .media-body a.media-body-h:hover{
 	color:#FFAE00; font-size:16px; }
 .panel-class-dongtai .dongtai-say{ background:rgba(0,0,0,0.05); margin:0px; padding:5px 10px; border-top:3px solid #ECECEC;}
@@ -914,8 +1171,8 @@ ul.ban li a {
 	margin-top:10px;
 	font-size:12px;
 	color:#333!important;}
-.panel-class-photo .label{
-	font-size:18px;}
+/*.panel-class-photo .label{
+	font-size:18px;}*/
 .class-index-left .list-group .list-group-item{
 	padding:5px 0;}
 .panel-class-photo .panel-heading{
@@ -925,7 +1182,7 @@ ul.ban li a {
 	box-shadow:0px 0px 2px #999;
 	margin:0px 0px 10px 0px;}
 /*评论*/
-.dongtai-say-reply{padding:0 10px 0px 10px; background:rgba(0, 0, 0, 0.05); margin:0px;}
+.dongtai-say-reply{padding:0 10px 0px 10px; background:#fff; margin:0px;}
 ul.dongtai-say-reply li{
 	;}
 ul.dongtai-say-reply li.dongtai-media{ margin:0px!important; border-bottom:1px dashed #DDD; padding:10px 0 10px 0; color:#666;}
