@@ -127,7 +127,6 @@ font-family: Arial,Helvetica,sans-serif;
   padding-left: 10px;
   padding-right: 10px;
   font-size: 12px;
-  text-shadow: 1px 1px 0px #fff;
 }
 .navbar-green .navbar-nav > li > a:hover,
 .navbar-green .navbar-nav > li > a:focus {
@@ -506,6 +505,18 @@ a.list-grouping-fen-more{
 .management-list td{ padding:4px 8px!important;}
 
 /*班级主页*/
+#goTopBtn.sidel{
+position: fixed;
+width: 54px;
+right: 41px;
+bottom: 0px;
+z-index: 999;
+}
+#goTopBtn.sidel ul li{width:54px;height:54px;float:left;position:relative;border-bottom:1px solid #444;}
+#goTopBtn.sidel ul li .sidebox{position:absolute;width:54px;height:54px;top:0;right:0;transition:all 0.3s;background:#ccc;opacity:0.8;filter:Alpha(opacity=80);color:#fff;font:14px/54px "微软雅黑";overflow:hidden;}
+#goTopBtn.sidel ul li .sidetop{width:54px;height:54px;line-height:54px;display:inline-block;background:none repeat scroll 0% 0% rgba(0, 0, 0, 0.47);opacity:0.8;filter:Alpha(opacity=80);transition:all 0.3s;}
+#goTopBtn.sidel ul li .sidetop:hover{background:#f90;opacity:1;filter:Alpha(opacity=100);}
+#goTopBtn.sidel ul li img{float:left;}
 .class-body{
 	padding-top:52px !important;
 	background:  scroll center 0px #ccc;
@@ -667,6 +678,16 @@ text-align: center;
 .class-body .panel-class-zdy .carousel.slide{
 	height: 12em;
 }
+.class-body .panel-class-zdy .carousel-control.left,.class-body .panel-class-zdy .carousel-control.right{
+	background: rgba(0, 0, 0, 0.55);
+	width: 7% !important;
+	top: 49px;
+	height: 50px;
+}
+.class-body .panel-class-zdy .carousel-control .glyphicon-chevron-left,.class-body .panel-class-zdy .carousel-control .glyphicon-chevron-right{
+	font-size: 15px;
+line-height: 30px;
+}
 .class-body .panel-class-zdy .carousel-inner > .item > img,.class-body .panel-class-zdy .carousel-inner > .item > a > img{
 	height: 12em;
 }
@@ -706,7 +727,7 @@ font-weight: 900;
 	line-height: 26px;
 	padding: 2px 6px;
 	box-shadow: none !important;
-	color: #000 !important;
+	color: rgba(0, 0, 0, 0.52) !important;
 }
 .class-body .panel-class-zdy.panel-class-dongtai > .panel-heading .nav-tabs > li > a{
 	border: 0 !important;
@@ -715,7 +736,7 @@ font-weight: 900;
 	padding: 2px 6px;
 	box-shadow: none !important;
 	font-size: 13px !important;
-	color: rgba(0, 0, 0, 0.32) !important;
+	color: rgba(0, 0, 0, 0.12) !important;
 }
 .class-body .panel-class-zdy.panel-class-dongtai > .panel-heading > i {
     background: none repeat scroll 0% 0% rgba(255, 255, 255, 0.27);
@@ -782,7 +803,7 @@ letter-spacing: 0px;
 	box-shadow: none !important;
 }
 .class-body .panel-class-zdy .panel-class-zdy-title{
-	line-height: 30px;
+	line-height: 26px;
 	display: block;
 }
 .class-body .panel-class-zdy .panel-class-zdy-title > i.fa{
@@ -794,10 +815,11 @@ letter-spacing: 0px;
 	font-weight: bold;
 	width: 85%;
 	font-size: 12px;
+	text-align: center;
 }
 .class-body .panel-class-zdy .media-body > .fontbold{
 	color: #5C82A3 !important;
-	font-weight: 600 ;
+	font-weight: bold ;
 }
 .class-body .panel-class-zdy .media-body > .fontbold:first-child{
 	color: #5C82A3 !important;
