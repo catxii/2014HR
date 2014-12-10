@@ -275,7 +275,7 @@ body.byhx-bg {
 }
 body.mtpgy-bg {
   background-image: url(../img/theme-img/public/mtpgy.jpg);
-  background-color: #AEE0FB;
+  background-color: #a3daf6;
 }
 body.xldy-bg {
   background-image: url(../img/theme-img/public/xldy.jpg);
@@ -373,6 +373,9 @@ body.xgz-bg {
 body.yskj-bg {
   background-image: url(../img/theme-img/public/yskj.jpg );
   background-color: #f4e6cc;
+}
+.diy-mode .class-index-container {
+  display: flex;
 }
 .diy-mode .class-index-container .droptrue {
   min-height: 600px;

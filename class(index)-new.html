@@ -13,7 +13,7 @@
 		<!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
 		<script type="text/JavaScript" src="space-css.js"></script>
 		<!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
-        <link rel="stylesheet" type="text/css" href="css/diy-class.css" />
+		<link rel="stylesheet" type="text/css" href="css/diy-class.css" />
 		<![endif]-->
 </head>
 <body class="fixed-top-body class-body diy-mode">
@@ -387,7 +387,7 @@
           <div class="user-num-wrapper" style="margin-left: 50px;">
             <ul class="num-list clearfix inline-block-ul">
                <li><h3>三年级5班</h3></li>
-               <li><h4>欢迎小哥莅临指导工作</h4></li>
+               <li><a type="button" class="btn btn-primary btn-xs">装扮</a></li>
             </ul>
           </div>
         </div>
@@ -407,7 +407,7 @@
   <div class="container-box class-index-container">
     <div class="col-md-3 class-index-left  droptrue droptrue1">
     <!--统计-->
-      <div class="panel panel-default panel-class-Set panel-class-zdy">
+      <div class="panel panel-default panel-class-Set panel-class-zdy"  data-type="kjtj">
         <div class="panel-body">
           <ul class="inline-block-ul col-md-12 row">
             <li class="col-md-4"  style="margin-right:0px; border-right:1px dashed #DDD"> <a class="record-box"><em class="num">18</em> <em class="tip">作业完成</em> </a> </li>
@@ -417,7 +417,7 @@
         </div>
       </div>
       <!--固定栏目-班级通知-->
-      <div class="panel panel-default panel-class-photo panel-class-zdy">
+      <div class="panel panel-default panel-class-photo panel-class-zdy"  data-type="zxbk">
         <div class="panel-body">
           <div class="panel-heading color1" ><i class="fa fa-twitch"></i> 通知 <a class="pull-right">配置</a></div>
           <div class="list-group"> 
@@ -587,42 +587,45 @@
               <span class="name-block-center">丁老师</span>
             </div>
           </div>
-           <div class="visitor-number" >
+           <div class="visitor-number" style="border-radius: 0px;">
             您是第 <span>399</span> 个访客
           </div>
         </div>
       </div>
-      <!--固定栏目-课程-->
-      
     </div>
     <div class="col-md-6 class-index-center droptrue droptrue1 ui-sortable" >
-    	<div class="panel panel-default panel-class-photo panel-class-zdy">
-        <div class="panel-body">
-          <div class="panel-heading color1" ><i class="fa fa-twitch"></i> 通知 <a class="pull-right">配置</a></div>
-          <div class="list-group"> 
-          	<a href="#" class="list-group-item text-space"><i class="color1">1</i> 百度相册冲印照片百度项行动的百度相册冲印照片百度项行动的公告百度相册冲印照片百度项行动的公告公告</a>
-          	<a href="#" class="list-group-item text-space"><i class="color1">1</i> 百度相册冲印照片百度项行动的百度相册冲印照片百度项行动的公告百度相册冲印照片百度项行动的公告公告</a>
-          	 </div>
-        </div>
-      </div>
+    	
       
       <!--   动态信息-->
       <div class="panel panel-default panel-class-dongtai panel-class-zdy">
-        <div class="panel-heading color1" ><i class="fa fa-comment"></i> 动态<a class="pull-right">配置</a></div>
-        <div class="panel-body">
-          <div class="media"> <a class="pull-left" href="#"> <img class="media-object" src="img/people-zuijin-img1.png" alt="...">
-            <h3 class="media-heading" style="text-align:center; border:none;">张老师</h3>
+        <div class="panel-heading color1" ><i class="fa fa-spinner "></i> 动态
+        <ul class="nav nav-tabs pull-right clear-border" role="tablist">
+        	<li role="presentation" class="active"><a href="#lst" role="tab" data-toggle="tab"><i class="fa fa-th-large"></i></a></li>
+        	<li role="presentation" ><a href="#lbt" role="tab" data-toggle="tab"><i class="fa fa-reorder"></i></a></li>
+        </ul>
+        </div>
+        <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="lst">
+        <div class="panel-body class-zdy-dongtai ">
+          <div class="media"> 
+          	<a class="pull-left" href="#"> 
+          		<img class="media-object" src="img/people-zuijin-img1.png" alt="...">
             </a>
-            <div class="media-body"> 发表了一篇日志：<a href="#" class="media-body-h text-space">红楼梦研究两红楼梦研究两红楼梦研究两红楼梦研究两首首红楼梦研究两红楼梦研究两首首红楼梦研究两红楼梦研究两首首红楼梦研究两红楼梦研究两首首首首</a> <span class="media-body-text">红楼梦研究两红楼梦研究两首首红楼梦研究两红楼梦研究两首首红楼梦研究两红楼梦研究两首首红楼梦研究两红楼梦研究两首首红楼梦研究两红楼梦研究两首首红楼梦研究两红楼梦研究两首首<a href="#">[详情]</a></span>
-              <h3 class="media-heading"><span class="pull-right">2014-08-09</span></h3>
+            <div class="media-body"> 
+            	<a class="media-body-h fontbold">小哥</a>
+            	发表了一篇日志：
+            	<a href="#" class="media-body-h fontbold">红楼梦研究两红楼梦研究两红楼梦研究两红楼梦研究两首首红楼梦研究两红楼梦研究两首首红楼梦研究两红楼梦研究两首首红楼梦研究两红楼梦研究两首首首首</a>
+            	<span class="media-body-text" style="max-height: 40px;overflow: hidden;margin: 4px 0;">红楼梦研究两红楼梦研究两首首红楼梦研究两红楼梦研究两首首红楼梦研究两红楼梦研究两首首红楼梦研究两红楼梦研究两首首红楼梦研究两红楼梦研究两首首红楼梦研究两红楼梦研究两首首<a href="#">[详情]</a></span>
+            	<span class="media-body-text"><img src="img/bureau-zy.png" height="100"  class="img-responsive" alt="Responsive image" style="height: 100px;"/></span>
+            	<h3 class="media-heading clearfix"><span class="pull-right">2014-08-09</span></h3>
             </div>
           </div>
-          <ul class="dongtai-say inline-block-ul">
+          <!--<ul class="dongtai-say inline-block-ul">
             <li><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">回复(23)</a></li>
             <li><a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">评论</a></li>
             <li><a href="#">转发</a></li>
-          </ul>
-          <ul class="dongtai-say-reply panel-collapse collapse" id="collapseOne">
+          </ul>-->
+         <!-- <ul class="dongtai-say-reply panel-collapse collapse" id="collapseOne">
             <li class="dongtai-reply" style="">
               <input type="text" class="form-control" placeholder="说一说">
             </li>
@@ -645,57 +648,135 @@
                 <h4 class="media-heading">Media heading</h4>
                 ... </div>
             </li>
-          </ul>
+          </ul>-->
         </div>
-       <div class="panel-body">
-          <div class="media"> <a class="pull-left" href="#"> <img class="media-object" src="img/people-zuijin-img.png" alt="...">
-            <h3 class="media-heading" style="text-align:center; border:none;">张老师</h3>
+       <div class="panel-body class-zdy-dongtai">
+          <div class="media"> 
+          	<a class="pull-left" href="#"> 
+          		<img class="media-object" src="img/people-zuijin-img1.png" alt="...">
             </a>
-            <div class="media-body"> 发表了一篇相片：<a href="#" class="media-body-h">红楼梦研究两红楼梦研究两首首</a> <span class="media-body-text"><img src="img/banner5.jpg" width="708" height="359"  class="img-responsive" alt="Responsive image"/></span>
-              <h3 class="media-heading"><span class="pull-right">2014-08-09</span></h3>
-            </div>
-          </div>
-          <ul class="dongtai-say inline-block-ul">
-            <li><a href="#">回复(23)</a></li>
-            <li><a href="#">评论</a></li>
-            <li><a href="#">转发</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="panel panel-default panel-class-dongtai">
-        <div class="panel-body">
-          <div class="media"> <a class="pull-left" href="#"> <img class="media-object" src="img/people-zuijin-img.png" alt="...">
-            <h3 class="media-heading" style="text-align:center; border:none;">张老师</h3>
-            </a>
-            <div class="media-body"> 发表了一篇日志：<a href="#" class="media-body-h">红楼梦研究两红楼梦研究两首首</a> <span class="media-body-text">红楼梦研究两红楼梦研究两首首红楼梦研究两红楼梦研究两首首红楼梦研究两红楼梦研究两首首红楼梦研究两红楼梦研究两首首红楼梦研究两红楼梦研究两首首红楼梦研究两红楼梦研究两首首<a href="#">[详情]</a></span>
-              <h3 class="media-heading"><span class="pull-right">2014-08-09</span></h3>
-            </div>
-          </div>
-          <ul class="dongtai-say inline-block-ul">
-            <li><a href="#">回复(23)</a></li>
-            <li><a href="#">评论</a></li>
-            <li><a href="#">转发</a></li>
-          </ul>
-        </div>
-      </div>
-     
-      <div class="panel panel-default panel-class-dongtai">
-        <div class="panel-body">
-          <div class="media"> <a class="pull-left" href="#"> <img class="media-object" src="img/people-zuijin-img.png" alt="..."> </a>
             <div class="media-body">
-              <h3 class="media-heading">张老师<span>马鞍山实验小学</span></h3>
-              上传了5张相片：<a>2222</a> <span class="media-body-text"> <img src="img/6f0b532563af000.jpg" class="img-responsive" alt="Responsive image"/> </span> </div>
+            	<a class="media-body-h fontbold">小哥的爸爸</a>
+            	发表了一段留言：
+            	<span class="media-body-text" style="max-height: 40px;overflow: hidden;margin: 4px 0;">弄死你<a href="#">[详情]</a></span>
+            	<h3 class="media-heading clearfix"><span class="pull-right">2014-08-09</span></h3>
+            </div>
           </div>
-          <ul class="dongtai-say inline-block-ul">
-            <li><a href="#">回复(23)</a></li>
-            <li><a href="#">评论</a></li>
-            <li><a href="#">转发</a></li>
-          </ul>
         </div>
+        <div class="panel-body class-zdy-dongtai">
+          <div class="media"> 
+          	<a class="pull-left" href="#"> 
+          		<img class="media-object" src="img/005a.png" alt="...">
+            </a>
+            <div class="media-body">
+            	<a class="media-body-h fontbold">小哥</a>
+            	发表了一张相片：
+            	<a href="#" class="media-body-h">000/jpg</a>
+            	<span class="media-body-text"><img src="img/bureau-zy.png" height="100"  class="img-responsive" alt="Responsive image" style="height: 100px;"/></span>
+            	<h3 class="media-heading clearfix"><span class="pull-right">2014-08-09</span></h3>
+            </div>
+          </div>
+        </div>
+        <div class="bureau-loading">
+				<div><a>加载更多</a>
+					 <div class="zzsc8">
+  <div class="zzsc8-container container1">
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <div class="circle4"></div>
+  </div>
+  <div class="zzsc8-container container2">
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <div class="circle4"></div>
+  </div>
+  <div class="zzsc8-container container3">
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <div class="circle4"></div>
+  </div>
+ 
+</div>
+			    </div>
+			   
+<div class="clearfix"></div>
+			</div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="lbt">
+        <div class="panel-body class-zdy-dongtai ">
+          <div class="media"> 
+          	<a class="pull-left" href="#"> 
+          		<img class="media-object" src="img/people-zuijin-img1.png" alt="...">
+            </a>
+            <div class="media-body">
+            	<a class="media-body-h fontbold">小哥</a>
+            	发表了一篇日志：
+            	<a href="#" class="media-body-h">如何当好小学班主任（转载）如何当好小学班主任（转载）如何当好小学班主任（转载）如何当好小学班主任（转载）</a>
+            	<h3 class="media-heading clearfix"><span class="pull-right">2014-08-09</span></h3>
+            </div>
+          </div>
+        </div>
+       <div class="panel-body class-zdy-dongtai">
+          <div class="media"> 
+          	<a class="pull-left" href="#"> 
+          		<img class="media-object" src="img/people-zuijin-img1.png" alt="...">
+                <h3 class="media-heading" style="text-align:center; border:none;">张老师</h3>
+            </a>
+            <div class="media-body"> 发表了一篇日志：
+            	<a href="#" class="media-body-h text-space">红楼梦研究两红楼梦研究两红楼梦研究两红楼梦研究两首首红楼梦研究两红楼梦研究两首首红楼梦研究两红楼梦研究两首首红楼梦研究两红楼梦研究两首首首首</a>
+            	<h3 class="media-heading clearfix"><span class="pull-right">2014-08-09</span></h3>
+            </div>
+          </div>
+        </div>
+        <div class="panel-body class-zdy-dongtai">
+          <div class="media"> 
+          	<a class="pull-left" href="#"> 
+          		<img class="media-object" src="img/people-zuijin-img1.png" alt="...">
+                <h3 class="media-heading" style="text-align:center; border:none;">张老师</h3>
+            </a>
+            <div class="media-body"> 发表了一篇日志：
+            	<a href="#" class="media-body-h text-space">红楼梦研究两红楼梦研究两红楼梦研究两红楼梦研究两首首红楼梦研究两红楼梦研究两首首红楼梦研究两红楼梦研究两首首红楼梦研究两红楼梦研究两首首首首</a>
+            	<h3 class="media-heading clearfix"><span class="pull-right">2014-08-09</span></h3>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
       </div>
     </div>
      <div class="col-md-3 class-index-left droptrue droptrue1">
-     
+     	<!--固定栏目-评论-->
+        <div class="panel panel-default panel-class-photo panel-class-zdy">
+        <div class="panel-body" id="accordion">
+          <div class="panel-heading color1" ><i class="fa fa-comment"></i> 评论<a class="pull-right">配置</a></div>
+          <ul class="dongtai-say-reply" >
+          	<a class="panel-class-zdy-title"><i class="fa fa-quote-left"></i><font class="text-space" > 技术重塑管理技术重塑管”2013大会</font> <i class="fa fa-quote-right"></i></a>
+            <li class="media dongtai-media"> 
+            <a class="pull-left" href="#"><img class="media-object" src="img/people-zuijin-img1.png"></a>
+              <div class="media-body">
+                <h4 class="media-heading">Media heading <font class="pull-right">09-08</font></h4>
+                 <span class="media-body-text" style="margin: 5px 0;display: block;"><img src="img/bureau-zy.png" class="img-responsive" alt="Responsive image" style="height: 60px;" height="60"></span>
+                 <p class="link-menu">只是作为一个热血的粉丝，刷博数频繁了点而已，刷博数频繁了点而，刷博数频繁了点而，刷博数频繁了点而，刷博数频繁了点而，刷博数频繁了点而(5分钟前)<a class="media-reply " >回复</a></p>
+                 <div class="media dongtai-media submenu clear-margin" style="padding:5px;display: block;"> 
+                <a class="pull-left" href="#"> <img class="media-object" src="img/people-zuijin-img1.png"> </a>
+                  <div class="media-body">
+                    <h4 class="media-heading">张老师<font class="pull-right">09-08</font></h4>
+                                                             哈哈哈哈哈哈哈哈 
+                    ( </div>
+                </div>
+              </div>
+            </li>
+            <li class="media dongtai-media"> <a class="pull-left" href="#"> <img class="media-object" src="img/people-zuijin-img1.png"> </a>
+              <div class="media-body">
+                <h4 class="media-heading">Media heading</h4>
+                ... </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </div>
