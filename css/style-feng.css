@@ -697,6 +697,7 @@ line-height: 30px;
 .class-body .panel-class-zdy .carousel.slide .carousel-indicators > li{
 	background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.22);
 	border: 0px !important;
+	margin: 0 3px;
 }
 .class-body .panel-class-zdy .carousel.slide .carousel-indicators > li.active{
 	background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.62);
@@ -784,12 +785,25 @@ letter-spacing: 0px;
 .class-body .panel-class-zdy .dongtai-say-reply{
 	font-family: Tahoma,Arial,Helvetica,STHeiti,"宋体";
 	padding: 7px !important;
+	box-shadow: none !important;
+}
+.class-body .panel-class-zdy .dongtai-say-reply.submenu > li{
+	border: none !important;
+}
+.class-body .panel-class-zdy .dongtai-say-reply.submenu #text-control {
+    color: #999;
+    line-height: 20px;
+    margin: 3px 10px 0px 0px;
+    font-size: 16px;
 }
 .class-body .panel-class-zdy .dongtai-say-reply img.media-object{
 	width: 25px;
 	height: 25px;
-	border-radius: 50%;
+	border-radius:0;
 	
+}
+.class-body .panel-class-zdy .ke-container.ke-container-default{
+	width: 100% !important;
 }
 .class-body .panel-class-zdy ul.dongtai-say-reply li.dongtai-media .media-heading{
 	margin: 0 !important;
