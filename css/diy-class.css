@@ -105,6 +105,10 @@ body.mtpgy-bg.class-body .top-nav-bar-bottom li.current a {
 body.mtpgy-bg .media-body > .fontbold{
 	color: #4190B7 !important;
 }
+body.mtpgy-bg .btncolor1{
+	background: none repeat scroll 0% 0% #FE4C4C;
+    border: 1px solid #E33232;
+}
 body.xldy-bg {
   background-image: url(../img/theme-img/public/xldy.jpg);
   background-color: #DEFED5;
@@ -283,7 +287,9 @@ body.jzlm-bg .top-nav-bar-bottom{
 background:-webkit-linear-gradient(left,rgb(255, 129, 64) 0,rgb(254, 189, 104) 10%,#81E0A3 60%,#40A1FF 100%);
 background:-moz-linear-gradient(left center , rgb(255, 129, 64) 0px, rgb(254, 189, 104) 10%, #81E0A3 60%, #40A1FF 100%) repeat scroll 0% 0% transparent;
 background:-ms-linear-gradient(left,rgb(255, 129, 64) 0,rgb(254, 189, 104) 10%,#81E0A3 60%,#40A1FF 100%);
-background:linear-gradient(left,rgb(255, 129, 64) 0,rgb(254, 189, 104) 10%,#81E0A3 60%,#40A1FF 100%)
+background:linear-gradient(left,rgb(255, 129, 64) 0,rgb(254, 189, 104) 10%,#81E0A3 60%,#40A1FF 100%);
+
+border-bottom: 2px solid rgba(0, 0, 0, 0.15);
 }
 body.jzlm-bg .top-nav-bar-bottom li.current a,body.jzlm-bg .top-nav-bar-bottom li a:hover{
 	color:#44A5F9 ;
