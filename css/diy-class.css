@@ -44,6 +44,14 @@ background: linear-gradient(to bottom,  #88bfe8 0%,#70b0e0 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#88bfe8', endColorstr='#70b0e0',GradientType=0 ); /* IE6-9 */
 
 }
+body.byhx-bg .btncolor1{
+	box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
+background: none repeat scroll 0% 0% #0FA6EA;
+border: 1px solid #2291CC;
+padding: 3px 16px;
+color: #FFF;
+font-family: "微软雅黑";
+}
 body.byhx-bg .top-nav-bar-bottom{
 	border-bottom: 2px solid rgba(0, 0, 0, 0.2);
 background-color:#0fa6ea;
@@ -64,6 +72,9 @@ body.byhx-bg.class-body .top-nav-bar-bottom li a:hover {
 }
 body.byhx-bg.class-body .top-nav-bar-bottom li.current a {
     color: #2286CF;
+}
+body.byhx-bg .media-body > .fontbold{
+	color: #549BE5 !important;
 }
 body.mtpgy-bg {
   background-image: url(../img/theme-img/public/mtpgy.jpg);
@@ -91,11 +102,24 @@ body.mtpgy-bg.class-body .top-nav-bar-bottom li a:hover {
 body.mtpgy-bg.class-body .top-nav-bar-bottom li.current a {
     color: #2286CF;
 }
+body.mtpgy-bg .media-body > .fontbold{
+	color: #4190B7 !important;
+}
 body.xldy-bg {
   background-image: url(../img/theme-img/public/xldy.jpg);
   background-color: #DEFED5;
   background-repeat: no-repeat;
 }
+body.xldy-bg .media-body > .fontbold{
+	color: #70A427 !important;
+}
+body.xldy-bg .btncolor1{
+	box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
+background: none repeat scroll 0% 0% #7ABC45;
+border: 1px solid #84B45D;
+padding: 3px 16px;
+color: #FFF;
+font-family: "微软雅黑";}
 body.xldy-bg .panel-class-zdy .color1{
 	background: #a9db80; /* Old browsers */
 background: -moz-linear-gradient(top,  #a9db80 0%, #96c56f 100%); /* FF3.6+ */
@@ -122,6 +146,11 @@ body.zsmh-bg {
   background-image: url(../img/theme-img/public/zsmh.jpg);
   background-color: #CCCCEE;
   background-repeat: no-repeat;
+}
+body.zsmh-bg .btncolor1{
+background: none repeat scroll 0% 0% #7399DB;
+border: 1px solid #5C82A3;
+color: #FFF;
 }
 body.zsmh-bg .panel-class-zdy .color1{
 	background: #c3d9ff; /* Old browsers */
@@ -165,6 +194,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', end
 
 color: #fff !important;
 }
+body.cj-bg .user-num-wrapper .num-list > li > h3{
+	color: #10629F !important;
+}
 body.cnhk-bg {
   background-image: url(../img/theme-img/public/clhk.jpg );
   background-color: #c8e744;
@@ -180,6 +212,10 @@ body.fhds-bg {
 body.fwdpp-bg {
   background-image: url(../img/theme-img/public/fwdpp.jpg );
   background-color: #fff;
+}
+body.fwdpp-bg .btncolor1{
+	background: none repeat scroll 0% 0% #FE80D8;
+border: 1px solid #D270C6;
 }
 body.fwdpp-bg .panel-class-zdy .color1{
 	background: #f998c9; /* Old browsers */
@@ -211,6 +247,9 @@ body.hbztd-bg {
   background-image: url(../img/theme-img/public/hbztd.jpg );
   background-color: #181818;
 }
+body.hbztd-bg .top-nav-bar-bottom li a{
+	color: #fff;
+}
 body.hhsj-bg {
   background-image: url(../img/theme-img/public/hhsj.jpg );
   background-color: #91a158;
@@ -239,7 +278,16 @@ color: #fff !important;
 body.jzlm-bg.class-body .user-num-wrapper .num-list > li > h3{
     color: #FF7500 !important;
 }
-
+body.jzlm-bg .top-nav-bar-bottom{
+	background-color:#0fa6ea;
+background:-webkit-linear-gradient(left,rgb(255, 129, 64) 0,rgb(254, 189, 104) 10%,#81E0A3 60%,#40A1FF 100%);
+background:-moz-linear-gradient(left center , rgb(255, 129, 64) 0px, rgb(254, 189, 104) 10%, #81E0A3 60%, #40A1FF 100%) repeat scroll 0% 0% transparent;
+background:-ms-linear-gradient(left,rgb(255, 129, 64) 0,rgb(254, 189, 104) 10%,#81E0A3 60%,#40A1FF 100%);
+background:linear-gradient(left,rgb(255, 129, 64) 0,rgb(254, 189, 104) 10%,#81E0A3 60%,#40A1FF 100%)
+}
+body.jzlm-bg .top-nav-bar-bottom li.current a,body.jzlm-bg .top-nav-bar-bottom li a:hover{
+	color:#44A5F9 ;
+}
 body.lsxq-bg {
   background-image: url(../img/theme-img/public/lsxq.jpg );
   background-color: #586223;
@@ -283,6 +331,9 @@ background: linear-gradient(to bottom,  #6ebc4f 0%,#75b768 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6ebc4f', endColorstr='#75b768',GradientType=0 ); /* IE6-9 */
 
 color: #fff !important;
+}
+body.xzsl-bg .media-body > .fontbold{
+	color: #55913D !important;
 }
 body.xzsl-bg.class-body .user-num-wrapper .num-list > li > h3,body.xzsl-bg.class-body .panel-class-Set .num{
     color: #329E18 !important;

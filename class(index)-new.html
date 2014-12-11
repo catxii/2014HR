@@ -173,7 +173,7 @@
               <li>
                 <h3>三年级5班</h3>
               </li>
-              <li><a type="button" class="btn btn-primary btn-xs">装扮</a></li>
+              <li><a type="button" class="btn btncolor2">装扮</a></li>
             </ul>
           </div>
         </div>
@@ -330,18 +330,67 @@
     <div class="col-md-6 class-index-center droptrue droptrue1 ui-sortable" > 
       
       <!--   动态信息-->
-      <div class="panel panel-default panel-class-dongtai panel-class-zdy">
+      <div class="panel panel-default panel-class-dongtai panel-class-zdy" id="accordion">
         <div class="panel-heading color1" ><i class="fa fa-spinner "></i> 动态
           <ul class="nav nav-tabs pull-right clear-border" role="tablist">
             <li role="presentation" class="active"><a href="#lst" role="tab" data-toggle="tab"><i class="fa fa-th-large"></i></a></li>
             <li role="presentation" ><a href="#lbt" role="tab" data-toggle="tab"><i class="fa fa-reorder"></i></a></li>
           </ul>
         </div>
+        <div class="panel-body class-zdy-dongtai class-zdy-fabiao" style="">
+               <div style="margin-bottom:5px;">
+               	  <div class="pull-left"><img src="img/message_bar.png" class="img-responsive" alt="Responsive image"/></div>
+               	  <span class="pull-right" id="text-control">你还能输入<em>140</em>个字</span>
+               	  <div class="clearfix"></div>
+               </div>
+               <div class="panel-body" style=" position:relative;">
+                     <textarea class="form-control" rows="2" placeholder="" style=""></textarea>
+                 <div style="display:block; float:right; margin-top:10px;line-height: 25px;">
+                 	
+                 	<button type="button" class="btn btncolor1">提交</button>
+                 </div>
+               </div>
+         </div>
         <div class="tab-content">
           <div role="tabpanel" class="tab-pane active" id="lst">
-            <div class="panel-body class-zdy-dongtai " id="accordion">
+            <div class="panel-body class-zdy-dongtai " >
               <div class="media"> <a class="pull-left" href="#"> <img class="media-object" src="img/people-zuijin-img1.png" alt="..."> </a>
                 <div class="media-body"> <a class="media-body-h fontbold">小哥</a> 发表了一篇日志： <a href="#" class="media-body-h fontbold">红楼梦研究两红楼梦研究两红楼梦研究两红楼梦研究两首首红楼梦研究两红楼梦研究两首首红楼梦研究两红楼梦研究两首首红楼梦研究两红楼梦研究两首首首首</a> <span class="media-body-text" style="max-height: 40px;overflow: hidden;margin: 4px 0;">红楼梦研究两红楼梦研究两首首红楼梦研究两红楼梦研究两首首红楼梦研究两红楼梦研究两首首红楼梦研究两红楼梦研究两首首红楼梦研究两红楼梦研究两首首红楼梦研究两红楼梦研究两首首<a href="#">[详情]</a></span> <span class="media-body-text"><img src="img/bureau-zy.png" height="100"  class="img-responsive" alt="Responsive image" style="height: 100px;"/></span>
+                  <h3 class="media-heading clearfix"><span class="pull-right">2014-08-09</span></h3>
+                </div>
+              </div>
+              <ul class="dongtai-say inline-block-ul link-menu">
+                <li class="clickben"><i class="fa fa-comment"></i> 我要说一说</li>
+                <li class="clickben">评论<span> (10)</span> </li>
+              </ul>
+              <ul class="dongtai-say-reply  submenu" >
+                <li class="dongtai-reply" style="">
+                    <form role="form">
+                      <textarea class="form-control" rows="1"></textarea>
+                    </form>
+                </li>
+                <li style="line-height:35px;"><span id="text-control">你还能输入<em>140</em>个字</span>
+                  <button type="button" class="btn btncolor2" style="float:right; margin-top:5px;">提交</button>
+                </li>
+                <li class="media dongtai-media" style="padding:5px;">
+                	<a class="pull-left clear-padding" href="#"> <img class="media-object" src="img/people-zuijin-img1.png"> </a>
+                  <div class="media-body" style="border-top: 1px dotted #ccc;">
+                    <h4 class="media-heading"><a href="#">小哥小哥1</a><font class="pull-right">09-08</font></h4>
+                    <p style="line-height: 20px;color: #666;">只是作为一个热血的粉丝，刷博数频繁了点而已，刷博数频繁了点而，刷博数频繁了点而，刷博数频繁了点而，刷博数频繁了点而，刷博数频繁了点而(5分钟前)</p>
+                  </div>
+                </li>
+               <li class="media dongtai-media" style="padding:5px;">
+                	<a class="pull-left clear-padding" href="#"> <img class="media-object" src="img/people-zuijin-img1.png"> </a>
+                  <div class="media-body" style="border-top: 1px dotted #ccc;">
+                    <h4 class="media-heading">小哥小哥2222<font class="pull-right">09-08</font></h4>
+                    <p style="line-height: 20px;color: #666;">只是作为一个热血的粉丝，刷博数频繁了点而已，刷博数频繁了点而，刷博数频繁了点而，刷博数频繁了点而，刷博数频繁了点而，刷博数频繁了点而(5分钟前)</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="panel-body class-zdy-dongtai" >
+              <div class="media"> <a class="pull-left" href="#"> <img class="media-object" src="img/people-zuijin-img1.png" alt="..."> </a>
+                <div class="media-body"> <a class="media-body-h fontbold">小哥的爸爸</a> 发表了一段留言： <span class="media-body-text" style="max-height: 40px;overflow: hidden;margin: 4px 0;">弄死你<a href="#">[详情]</a></span>
                   <h3 class="media-heading clearfix"><span class="pull-right">2014-08-09</span></h3>
                 </div>
               </div>
@@ -371,13 +420,6 @@
                   </div>
                 </li>
               </ul>
-            </div>
-            <div class="panel-body class-zdy-dongtai">
-              <div class="media"> <a class="pull-left" href="#"> <img class="media-object" src="img/people-zuijin-img1.png" alt="..."> </a>
-                <div class="media-body"> <a class="media-body-h fontbold">小哥的爸爸</a> 发表了一段留言： <span class="media-body-text" style="max-height: 40px;overflow: hidden;margin: 4px 0;">弄死你<a href="#">[详情]</a></span>
-                  <h3 class="media-heading clearfix"><span class="pull-right">2014-08-09</span></h3>
-                </div>
-              </div>
             </div>
             <div class="panel-body class-zdy-dongtai">
               <div class="media"> <a class="pull-left" href="#"> <img class="media-object" src="img/005a.png" alt="..."> </a>
