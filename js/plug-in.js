@@ -455,3 +455,14 @@ window.onresize = autoHeight;
 function goTop(){
 	$('html,body').animate({'scrollTop':0},500);
 }
+
+
+function changeTab(tabbutton,tabpanel){
+  $(tabbutton).click(function(){
+    var buttonIndex = $(this).index();
+    $(this).addClass("active").siblings().removeClass("active");
+    $(tabpanel).eq(buttonIndex).show().siblings(tabpanel).hide();
+  });
+}
+
+

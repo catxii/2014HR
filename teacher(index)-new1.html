@@ -225,10 +225,10 @@
   
   <ul class="nav nav-pills nav-justified nav-btn-radius row " role="tablist" >
       <li class="active tab-js-button">
-        <a href="javascript:void(0)" role="tab" data-toggle="tab"><span class="nav-bottom-navs glyphicon glyphicon-chevron-down"></span>好友圈</a>
+        <a href="javascript:void(0)" ><span class="nav-bottom-navs glyphicon glyphicon-chevron-down"></span>好友圈</a>
       </li>
       <li class="tab-js-button">
-        <a href="javascript:void(0)" role="tab" data-toggle="tab"><span class="nav-bottom-navs glyphicon glyphicon-chevron-down"></span>同事圈</a>
+        <a href="javascript:void(0)"><span class="nav-bottom-navs glyphicon glyphicon-chevron-down"></span>同事圈</a>
       </li>
       
     </ul>
@@ -611,13 +611,6 @@ $(document).ready(function() {
 });
 
 $(function(){
-    function changeTab(tabbutton,tabpanel){
-      $(tabbutton).click(function(){
-        var buttonIndex = $(this).index();
-        $(this).addClass("active").siblings().removeClass("active");
-        $(tabpanel).eq(buttonIndex).show().siblings(tabpanel).hide();
-      });
-    }
     changeTab(".tab-js-button",".tab-js-panel");
 });
 
