@@ -16,7 +16,7 @@
 		<!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
 
 
-		<![endif]-->
+		
 </head>
 <body class="fixed-top-body" style="padding-top:52px;">
 <div class="navbar navbar-zhijiao navbar-green navbar-fixed-top" >
@@ -223,17 +223,17 @@
    <div class="panel panel-default panel-class-photo">
   <div class="panel-body">
   
-  <ul class="nav nav-pills nav-justified nav-btn-radius row" role="tablist" >
-      <li class="active">
-        <a href="#home-f" role="tab" data-toggle="tab"><span class="nav-bottom-navs glyphicon glyphicon-chevron-down"></span>好友圈</a>
+  <ul class="nav nav-pills nav-justified nav-btn-radius row " role="tablist" >
+      <li class="active tab-js-button">
+        <a href="javascript:void(0)" role="tab" data-toggle="tab"><span class="nav-bottom-navs glyphicon glyphicon-chevron-down"></span>好友圈</a>
       </li>
-      <li>
-        <a href="#home-t" role="tab" data-toggle="tab"><span class="nav-bottom-navs glyphicon glyphicon-chevron-down"></span>同事圈</a>
+      <li class="tab-js-button">
+        <a href="javascript:void(0)" role="tab" data-toggle="tab"><span class="nav-bottom-navs glyphicon glyphicon-chevron-down"></span>同事圈</a>
       </li>
       
     </ul>
   <div class="tab-content">
-  <div class="tab-pane active" id="home-f" style="margin-top:15px;">
+  <div class="tab-pane tab-js-panel active" id="home-f" style="margin-top:15px;">
               <div class="col-md-3"><img src="img/people-zuijin-img1.png"><span class="name-block-center">丁老师</span></div>
               <div class="col-md-3"><img src="img/people-zuijin-img1.png"><span class="name-block-center">丁老师</span></div>
               <div class="col-md-3"><img src="img/people-zuijin-img1.png"><span class="name-block-center">丁老师</span></div>
@@ -244,7 +244,7 @@
               <div class="col-md-3"><img src="img/people-zuijin-img1.png"><span class="name-block-center">丁老师</span></div>
               
             </div>
-  <div class="tab-pane" id="home-t" style="margin-top:15px;">
+  <div class="tab-pane  tab-js-panel" id="home-t" style="margin-top:15px;">
               <div class="col-md-3"><img src="img/people-zuijin-img1.png"><span class="name-block-center">维老师</span></div>
             </div>
   
@@ -604,8 +604,21 @@ $(document).ready(function() {
 		//Fade the image to 1 
 		$(this).find("span").stop().fadeTo('normal', 1).show();
 	});
+
+
 	 
 	
+});
+
+$(function(){
+    function changeTab(tabbutton,tabpanel){
+      $(tabbutton).click(function(){
+        var buttonIndex = $(this).index();
+        $(this).addClass("active").siblings().removeClass("active");
+        $(tabpanel).eq(buttonIndex).show().siblings(tabpanel).hide();
+      });
+    }
+    changeTab(".tab-js-button",".tab-js-panel");
 });
 
 </script>
