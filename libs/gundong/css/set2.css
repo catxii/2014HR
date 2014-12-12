@@ -8,7 +8,7 @@
 }
 
 /* Common style */
-.grid figure {
+.bureau-famous-body .grid figure {
 	position: relative;
 	float: left;
 	overflow: hidden;
@@ -25,7 +25,7 @@ border-radius: 3px;
 border: 1px solid rgba(215, 215, 215, 1);
 }
 
-.grid figure img {
+.bureau-famous-body .grid figure img {
 	position: relative;
 	display: block;
 	min-height: 100%;
@@ -47,8 +47,8 @@ border: 1px solid rgba(215, 215, 215, 1);
 	pointer-events: none;
 }
 
-.grid figure figcaption,
-.grid figure figcaption > a {
+.bureau-famous-body .grid figure figcaption,
+.bureau-famous-body .grid figure figcaption > a {
 	position: absolute;
 	top: 0;
 	left: 0;
