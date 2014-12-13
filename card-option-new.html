@@ -270,7 +270,7 @@
 										<li><span>班级 ：</span><input class="form-control-noblock"  type="text" name="jxtClassName" id="jxtClassName"></li>
 										<li>
 											<input type="button" class="btn btn-sm btn-default" value="查询">
-								            <input type="button" class="btn btn-sm btn-warning" value="导入">
+								            <input type="button" class="btn btn-sm btn-warning" value="导出" data-toggle="modal" data-target="#loginModal">
 										</li>
 									</ul>
 								</div>
@@ -292,12 +292,6 @@
 
 
 							</div>
-
-							
-
-
-						
-
 						</div>
 					</div>
 
@@ -339,40 +333,24 @@
 	<div class="modal fade bs-example-modal-sm" id="loginModal" 
 	tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
 	aria-hidden="true">
-		<div class="modal-dialog modal-sm">
+		<div class="modal-dialog">
 			<div class="modal-content">
 				<button type="button" class="close close-position" data-dismiss="modal">
 					<span aria-hidden="true">&times;</span>
 					<span class="sr-only">Close</span>
 				</button>
 				<div class="modal-body">
-					<form id="loginForm" role="form">
-						<h4 class="login-title">领信登录</h4>
-						<div id="login_alert" class="alert-message" style="display: none">
-							<span class="glyphicon glyphicon-exclamation-sign"></span>
-							<span id="login_message"></span>
-						</div>
-						<div class="form-group">
-							<div class="input-group">
-								<div class="input-group-addon large">
-									<span class="glyphicon glyphicon-user"></span>
+								<div class="box-search" style="background: none repeat scroll 0% 0% #D9EDF7;box-shadow: 0px 0px 5px rgba(152, 201, 225, 0.58) inset;">
+									<ul class="inline-block-ul-mid list-unstyled">
+										<li><span>起始时间：</span><input class="form-control-noblock" name="startTime" id="startTime" onfocus="WdatePicker({dateFmt:'yyyy-MM-dd'})" readonly="readonly" type="text"></li>
+										<li><span>结束时间 ：</span><input class="form-control-noblock"  type="text" name="jxtClassName" id="jxtClassName"></li>
+									</ul>
 								</div>
-								<input type="text" id="login_account" name="account" placeholder="输入用户名" class="form-control small"></div>
-						</div>
-						<div class="form-group">
-							<div class="input-group">
-								<div class="input-group-addon large">
-									<span class="glyphicon glyphicon-lock"></span>
-								</div>
-								<input type="password" id="login_password" name="password" placeholder="输入密码" id="exampleInputPassword2" class="form-control small"></div>
-						</div>
-						<div class="checkbox" style="text-align: right;">
-							<label>
-								<input type="checkbox" id="login_rememberMe" name="rememberMe">记住密码</label>
-						</div>
-						<button class="btn btn-primary btn-lg" onclick="ajaxLogin()" style="width: 100%;">登 陆</button>
-					</form>
 				</div>
+				<div class="modal-footer">
+                     <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                      <button type="button" class="btn btn-primary">保存</button>
+                </div>
 			</div>
 		</div>
 	</div>

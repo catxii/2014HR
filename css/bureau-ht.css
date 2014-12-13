@@ -11,12 +11,17 @@ min-height: 36px;
 box-shadow: 0px 0px 2px rgba(117, 117, 117, 1);
 	}
 .navbar-bureau .navbar-nav > li > a{
-	line-height: 18px !important;
-	padding: 10px 10px;
+	line-height: 16px !important;
+	padding: 10px;
 	color: #757575 !important;
 	font-size: 12px;
 }
-
+.navbar-bureau .navbar-nav > li > a:hover,.navbar-bureau .navbar-nav > li > a:focus,.navbar-bureau .navbar-nav > li.active > a{
+	background-color: #d2d2d2 !important;
+}
+.navbar-bureau .navbar-nav > li:first-child > a{
+	background: none repeat scroll 0% 0% transparent !important;
+}
 .bureau-navlist{
 	height: 138px;
 	padding: 38px 0 0 0;
