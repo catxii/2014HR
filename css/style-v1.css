@@ -258,9 +258,8 @@ fieldset[disabled] .btn-primary.active {
   padding-top: 50px;
 }
 .banner-fluid-bg {
-  /*background: url(../img/banner-graybg_03.png) repeat-x;*/
   position: relative;
-  z-index: 30;
+  z-index: 1002;
 }
 .top-banner-small {
   height: 50px;
