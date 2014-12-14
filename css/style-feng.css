@@ -2048,6 +2048,7 @@ ul.expmenu li ul li:not(.selected):active{
 .menu-menu a {
 				color:#1D516E;
 				text-decoration: none;
+				font-size: 12px;
 			}
 .menu-menu .no {
 				display: none;
@@ -2242,7 +2243,7 @@ font-weight: 900;
 .nav-bar-new{ }
 .nav-bar-new-list{  word-spacing:-5px;}
 .nav-bar-new-list > li{ line-height:60px; /*background:#e1e1e1;*/ margin-right:0px!important; padding:0; border-bottom:3px solid #0cb353;  font-size:14px; }
-.nav-bar-new-list > li > a{color:#3C3C3C; text-decoration:none; font-size:13px; font-weight:500; display:block; padding:0 26px;}
+.nav-bar-new-list > li > a{color:#3C3C3C; text-decoration:none; font-size:13px; font-weight:500; display:block; padding:0 26px;font-family: "新宋体";}
 .second-nav-bar-bottom li .sub li {
     margin: 0px;
     width: 113px !important;
@@ -2483,13 +2484,14 @@ margin-bottom: 10px;
 	
 line-height: 29px;
 }
-.wrench1 .fa{font-size: 20px; text-decoration: none;color: #4C9ED9;}
+.wrench1 .fa{font-size: 20px; text-decoration: none;color: #F96767;}
 .add-configure-btn{
 	padding: 10px;
 text-align: center;
 background: none repeat scroll 0% 0% #4C9ED9;
 margin-bottom: 10px;
 color: #FFF;
+cursor: pointer;
 }
 
 .configure-school-right-content{
@@ -2524,6 +2526,7 @@ box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.225) inset;
 .close-configure > i{
 	font-size: 30px;
 	color:#F96767;
+	cursor: pointer;
 }
 .add-configure{
 	text-align: center;
@@ -2533,6 +2536,7 @@ padding:0 10px 10px 10px;
 .add-configure i{
 	font-size: 45px;
 	color: #4C9ED9;
+	cursor: pointer;
 }
 /*德能银行*/
 .dn-list .add-button-new{left: 10px;width: 20px;position: absolute;}

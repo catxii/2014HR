@@ -807,6 +807,29 @@ float: left;
 .bureau-class-body .bureau-class-right-body ul.bureau-class-rizhi > li{
 	padding: 6px 3px;
 	border-bottom: 1px dotted #ccc;
+	position: relative;
+}
+.bureau-class-body .bureau-class-right-body ul.bureau-class-rizhi > li:hover .over-class-name{
+	display: block;
+}
+.bureau-class-body .bureau-class-right-body ul.bureau-class-rizhi > li .over-class-name{
+	position: absolute;
+top: 0px;
+right: 0px;
+padding: 6px 5px;
+background: none repeat scroll 0% 0% #4C9ED9;
+color: #FFF;
+display: none;
+text-shadow: 1px 1px 0px #3078AB;
+z-index: 999;
+text-align: center;
+width: 100%;
+}
+.bureau-class-body .bureau-class-right-body ul.bureau-class-rizhi > li .over-class-name a{
+	color: #fff;
+}
+.bureau-class-body .bureau-class-right-body ul.bureau-class-rizhi > li .over-class-name font{
+	margin: 0 5px;
 }
 .bg3{
 	background: #eee;

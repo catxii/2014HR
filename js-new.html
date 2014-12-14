@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="../../favicon.ico">
+	<title>领信样式模板</title>
+
+	<!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+	<script type="text/JavaScript" src="space-css.js"></script>
+	<!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+     <style>
+     	button.class1{
+     		font-size: 20px;
+     		color: red;
+     	}
+     	.class2{
+     		background: #000;
+     		font-size: 50px;
+     	}
+     </style>
+     
+</head>
+<body class="fixed-top-body" ng-app="" data-spy="scroll" data-target=".navbar-example">
+	<input type="hidden" id="navigation-top-menu" name="navigation-top-menu" value="navigation-top-school-xzhpt">
+	<input type="hidden" id="space-class-menu" name="space-class-menu" value="space-school-scoreinfo">
+	<input type="hidden" id="space-class-menu-two" name="space-class-menu-two" value="space-school-scoreinfo1">
+	<!-- 引入顶部 -->
+
+	<div class="container">
+		<div class="col-md-12">
+			<div class="panel panel-default clear-border">
+				<div class="panel-body" style="padding: 15px;">
+					<!-- 引入空间中间头部 -->
+
+					<!--导航-->
+
+					<div class="col-md-10">
+						<div class="panel panel-default " style="padding: 0px;">
+							<div class="panel-heading tab-header">
+								<ul class="inline-block-ul navigation-inline-ul">
+									<li class="current">
+										<a href="javascript:void(0)">卡片管理</a>
+									</li>
+								</ul>
+							</div>
+							<!-- 第一个页面 -->
+							<div class="panel-body " style="margin: 10px 0px; padding:10px 0; min-height: 350px;">
+
+								<div class="box-search" style="background: none repeat scroll 0% 0% #D9EDF7;box-shadow: 0px 0px 5px rgba(152, 201, 225, 0.58) inset;">
+									<button class="class1">小哥</button>
+									<a data-type = ""></a>
+								</div>
+
+
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!--***** “space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+	<script type="text/JavaScript" src="space-footer-css.js"></script>
+	<!--***** “space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+    <script>
+     	$(function() {
+     		 $(".class1").click(function() {
+     		 	$("body").toggleClass("class2");
+     		 });
+     	});
+     </script>
+	<script type="text/javascript">
+	$(function(){
+		$(".label-tab-button label").click(function(){
+			var ThisIndex = $(this).index();
+			$(".nr-tab-content").eq(ThisIndex).show().siblings(".nr-tab-content").hide();
+		});
+	})
+	</script>
+
+</body>
+</html>
