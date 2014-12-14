@@ -459,6 +459,7 @@ fieldset[disabled] .btn-primary.active {
   padding: 0;
   text-align: center;
   display: none;
+  opacity: 0.8;
 }
 .position-bottom-info li {
   display: inline-block;
@@ -1790,6 +1791,7 @@ fieldset[disabled] .btn-primary.active {
   width: 15px;
   background: red;
   border-radius: 20px;
+  color: #fff;
 }
 .num-round {
   background: green;
@@ -2674,4 +2676,10 @@ input[type="checkbox"] {
 .menuContent-custom {
   top: auto !important;
   left: 5px!important;
+}
+.ZebraDialog {
+  z-index: 1050!important;
+}
+.ZebraDialogOverlay {
+  z-index: 1010!important;
 }
