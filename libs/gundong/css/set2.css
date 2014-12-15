@@ -33,7 +33,7 @@ border: 1px solid rgba(215, 215, 215, 1);
 	opacity: 0.8;
 }
 
-.grid figure figcaption {
+.bureau-famous-body .grid figure figcaption {
 	padding: 2em;
 	color: #fff;
 	text-transform: uppercase;
