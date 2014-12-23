@@ -801,7 +801,6 @@ float: left;
     line-height: 25px;
 }
 .bureau-class-body .bureau-class-right-body{
-	border-top: 1px solid #ddd;
 	font-size: 12px;
 }
 .bureau-class-body .bureau-class-right-body ul.bureau-class-rizhi > li{
@@ -1014,14 +1013,6 @@ color: #333;
 border-top: 0px;
 padding:0 10px 10px 10px;
 box-shadow: 0px 3px 1px #F2F2F2;
-background: rgb(214,249,255); /* Old browsers */
-background: -moz-linear-gradient(top,  rgba(214,249,255,1) 0%, rgba(158,232,250,1) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(214,249,255,1)), color-stop(100%,rgba(158,232,250,1))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  rgba(214,249,255,1) 0%,rgba(158,232,250,1) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  rgba(214,249,255,1) 0%,rgba(158,232,250,1) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  rgba(214,249,255,1) 0%,rgba(158,232,250,1) 100%); /* IE10+ */
-background: linear-gradient(to bottom,  rgba(214,249,255,1) 0%,rgba(158,232,250,1) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6f9ff', endColorstr='#9ee8fa',GradientType=0 ); /* IE6-9 */
 
 }
 .bureau-famous-left{
@@ -1356,7 +1347,7 @@ border-radius: 10px;
 	font-size: 12px;
 }
 .bureau-data-body .bureau-data-right-body ul.bureau-data-rizhi > li{
-	padding: 11px 5px;
+	padding: 11px 5px 10px 5px;
 box-shadow: 0px 5px 48px #EDEDED inset;
 border-bottom: 1px dotted #ccc;
 margin-bottom: 3px !important;
@@ -1559,6 +1550,61 @@ margin: 0px 8px;
 	_padding: 8px 0;
 	overflow: hidden;
 }
+
+
+
+
+
+#con1 {
+	height: 182px;
+	margin: 0px auto;
+	position: relative;
+	background-color: #FFF;
+	overflow: hidden;
+}
+#con1 .bottomcover {
+	position: absolute;
+bottom: 0px;
+background: url("../img/halftransp.png") no-repeat scroll 0px -5px transparent;
+height: 35px;
+width: 100%;
+pointer-events: none;
+}
+
+#con1 ul {
+	position: relative;
+	margin: 0px 10px 0px 10px;
+	top: 0;
+	left: 0;
+	padding: 0;
+}
+#con1 ul li {
+	width: 100%;
+	border-top: 1px dotted #d6d6d6;
+	padding: 10px 0;
+	_padding: 8px 0;
+	overflow: hidden;
+	line-height: 1.5;
+}
+#con1 ul li .div_left {
+	float: left;
+}
+#con1 ul li .div_left img{
+	width: 30px;
+	height: 30px;
+}
+#con1 ul li .div_right {
+	float: right;
+}
+#con1 ul li .div_right a {
+	color: #6EAFD5;
+	padding: 0px;
+}
+#con1 ul li .div_right .twit_item_time {
+	color: #999;
+	padding: 0px;
+}
+
 /*资源专区排行*/
 .bureau-data-school-raking img{
 	box-shadow:0px 0px 11px rgba(0, 0, 0, 0.27);
@@ -1621,35 +1667,38 @@ color: #333;
     line-height: 25px;
 }
 .bureau-school-body #accordion{
-	/*overflow-y: scroll;
-	height: 287px;*/
+	overflow-y: scroll;
+	height: 216px;
 }
 .bureau-school-body .bureau-school-left-body .link-menu > a{
-	font-family: "微软雅黑";
-	font-size: 14px;
-	line-height: 30px;
-	background: #eee;
-	display: block;
-	text-align: center;
-	color: #fff;
-	font-weight: bold;
-	text-decoration: none;
-	background: #68B4F0;
-	border: 1px solid #379BE9;
-	border-bottom: 0px !important;
+	font-size: 12px;
+line-height: 25px;
+display: block;
+text-align: center;
+color: #fff;
+font-weight: bold;
+background: none repeat scroll 0% 0% #68B4F0;
+border-top: 1px solid #379BE9;
+border-right: 1px solid #379BE9;
+border-left: 1px solid #379BE9;
+-moz-border-top-colors: none;
+-moz-border-right-colors: none;
+-moz-border-bottom-colors: none;
+-moz-border-left-colors: none;
+border-image: none;
+border-bottom: 0px none !important;
 }
 .bureau-school-left-body .submenu{
-	background: none repeat scroll 0% 0% rgba(255, 255, 255, 1);
-    font-size: 14px;
-    box-shadow: 0px -5px 14px #EAEAEA inset !important;
-    overflow-y: scroll;
-height:98px;
+	background: #fff ;
+    font-size: 12px;
+    box-shadow: none !important;
+    margin-bottom: 0px !important;
 }
 .bureau-school-left-body .submenu > li{
-	border-bottom: 1px dotted rgba(185, 185, 185, 1);
+	border-bottom: 0px;
 }
 .bureau-school-left-body .submenu > li > a{
-	padding: 5px 0;
+	padding: 3px 0;
 	text-align: center;
 	font-size: 12px;
 	color: #666;
@@ -1764,6 +1813,7 @@ border-radius: 10px;
 }
 .bureau-school-body .bureau-school-center-body .bureau-school-center-body-list ul li.bureau-new-szdw-name{
 	margin-right: 0px !important;
+	padding: 10px 0;
 }
 .bureau-school-body .bureau-school-center-body .bureau-school-center-body-list ul li.bureau-new-szdw-name .label{
 	padding: 0.1em !important;
@@ -2578,7 +2628,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfe2ef', end
 }
 .intro-ks-body p{
 	margin: 10px 0;
-	height: 46px;
+	height: 72px;
 overflow: hidden;
 text-shadow: 1px 1px 0px #fff;
 color: rgba(86, 110, 128, 1);

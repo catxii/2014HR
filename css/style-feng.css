@@ -2471,6 +2471,11 @@ border-style: solid;
 border-color: #68B4F0 #DDD #DDD;
 margin-bottom: 10px;
 }
+.configure-btn.active{
+	background: #B5D0E4;
+	border: 1px solid #4C9ED9;
+	border-top:3px solid #4C9ED9 ;
+}
 .configure-btn .col-md-10{
 	line-height: 26px;
 }
@@ -2501,7 +2506,7 @@ cursor: pointer;
 	margin-bottom: 10px;
 }
 .configure-school-right-content .form-group {
-	margin: 0px 0px 5px 0px !important;
+	margin: 0px !important;
 }
 .configure-school-right-content .form-group .control-label,.configure-school-right-content .form-group .form-control-static{
 	padding: 6px 0;
