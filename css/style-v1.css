@@ -1496,7 +1496,7 @@ fieldset[disabled] .btn-primary.active {
   position: fixed;
   top: 52px;
   background: white;
-  z-index: 40;
+  z-index: 1002;
 }
 .position-fix.right {
   bottom: 0;
