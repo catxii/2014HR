@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="../../favicon.ico">
+
+		<title>领信样式模板</title>
+
+		<!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+		<script type="text/JavaScript" src="space-css.js"></script>
+		<!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+
+	</head>
+
+	<body class="bureau-ht-body">
+		<div class="navbar navbar-zhijiao navbar-bureau navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="#"><span class="lx-logo"></span></a>
+						</li>
+						<li>
+							<a href="#about">个人空间</a>
+						</li>
+						<li>
+							<a href="#contact">班级空间</a>
+						</li>
+						<li>
+							<a href="#contact">我的班级</a>
+						</li>
+					</ul>
+
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">登陆</a>
+						</li>
+
+						<li class="dropdown">
+							<a data-toggle="dropdown" class="dropdown-toggle" href="#"> 设置 <span class="caret"></span></a>
+							<ul role="menu" class="dropdown-menu">
+								<li><a href="#">Action</a>
+								</li>
+								<li><a href="#">Another action</a>
+								</li>
+								<li><a href="#">Something else here</a>
+								</li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+
+				</div>
+
+
+				<!--/.nav-collapse -->
+			</div>
+		</div>
+
+		<div class="container-fluid bureau-navlist">
+				<div class="col-md-12">
+					<div class="bureau-logo">
+						<img src="img/huaronglogo1.png">
+					</div>
+				</div>
+		</div>
+		<div class="container-fulid bureau-ht clear-padding">
+			<div class=" clear-padding col-md-2 bureau-left">
+				<!-- 分类 -->
+				<div class="panel-body" id="ididid">
+                    <div class="bureau-ht-title"></div>
+					<ul class="expmenu col-md-12 clear-padding clear-margin">
+						<li>
+							<ul class="menu-menu col-md-12 clear-padding" style="display:block;">
+								<li onClick="javascript:ShowMenu(this,0)"><a href="javascript:void(0)"><span class="fa fa-plus-square" style=""></span> 学校介绍</a>
+									<div class="san3">
+									</div>
+								</li>
+								<ol class="s2 ">
+									<a class="ol-active">陶瓷盆</a>
+									<a>拖布池拖布池</a>
+									<a>妇洗器</a>
+									<a>小便器</a>
+
+								</ol>
+								
+								<li onClick="javascript:ShowMenu(this,1)"><a href="javascript:void(0)"><span class="fa fa-plus-square" style=""></span> 学校介绍</a>
+									<div class="san3">
+									</div>
+								</li>
+								<ol class="no ">
+									<a class="ol-active">陶瓷盆</a>
+									<a>拖布池拖布池</a>
+									<a>妇洗器</a>
+									<a>小便器</a>
+
+								</ol>
+
+								
+							</ul>
+
+						</li>
+
+					</ul>
+
+				</div>
+
+
+
+
+			</div>
+			<div class="col-md-10 bureau-right clear-padding">
+				<div class="tab-ht bureau-right-heading">
+					<ul class="inline-block-ul nav nav-tabs" role="tablist">
+						<li class="current active"><a href="javascript:" role="tab" data-toggle="tab" style="line-height: 35px;">修改学校信息</a>
+						</li>
+						<li class="hui-right pull-right"><a class="btn" href="javascript:history.go(-1)">返回列表</a></li>
+					</ul>
+					
+				</div>
+				
+				<div class=" bureau-right-content panel-body">
+
+                    <!--表单  -->
+					<form class="form-horizontal" role="form">
+                       
+                      <div class="form-group clearfix" style="border-bottom:1px solid #eee; padding-bottom:10px; margin-bottom:10px;">
+					    <div class="pull-right">
+					      <button type="submit" class="btn btn-primary">保存</button>
+					      <button type="reset" class="btn btn-default">取消</button>
+					    </div>
+					  </div> 
+                       
+					  <div class="form-group">
+					    <label for="inputEmail3" class="col-sm-1 control-label"><span class="red">*</span>名称：</label>
+					    <div class="col-sm-6">
+					      <input type="text" class="form-control" >
+					    </div>
+					  </div>
+
+					  <div class="form-group">
+					  	<label for="inputPassword3" class="col-sm-1 control-label"><span class="red">*</span>排序：</label>
+					    <div class="col-sm-6">
+					      <input type="number" class="form-control" value="1" >
+					    </div>
+					  </div>
+
+					  
+					   <div class="bureau-school-search-line">
+					   <div class="clearfix" id="school_show">
+					   	  <h4><span class="red">*</span><span class="seach-sch">学校</span></h4>
+						  <ul class="col-md-12 clear-margin">	
+						      <li class="col-md-2">
+									<ul class="bureau-school-search-list inline-block-ul row">
+										<li class="bureau-new-szdw-img col-md-3">
+											<a class="clearfix" target="_blank" href="javascript:;">
+												<img src="img/photo.jpg">
+											</a>
+										</li>
+										<li class="bureau-school-search-name col-md-9">
+											<h3 limit="7" title=" 华容县实验小学"> 华容县实验小...</h3>
+										</li>
+									</ul>
+									<div class="wrench">
+										<a href="javascript:void(0)" onclick="" class="fa fa-times"></a>
+									</div>
+								</li>
+								
+								<li class="col-md-2">
+									<ul class="bureau-school-search-list inline-block-ul row">
+										<li class="bureau-new-szdw-img col-md-3">
+											<a class="clearfix" target="_blank" href="javascript:;">
+												<img src="img/photo.jpg">
+											</a>
+										</li>
+										<li class="bureau-school-search-name col-md-9">
+											<h3 limit="7" title=" 华容县实验小学"> 华容县实验小...</h3>
+										</li>
+									</ul>
+									<div class="wrench">
+										<a href="javascript:void(0)" onclick="" class="fa fa-times"></a>
+									</div>
+								</li>
+								
+								<li class="col-md-2">
+									<ul class="bureau-school-search-list inline-block-ul row">
+										<li class="bureau-new-szdw-img col-md-3">
+											<a class="clearfix" target="_blank" href="javascript:;">
+												<img src="img/photo.jpg">
+											</a>
+										</li>
+										<li class="bureau-school-search-name col-md-9">
+											<h3 limit="7" title=" 华容县实验小学"> 华容县实验小...</h3>
+										</li>
+									</ul>
+									<div class="wrench">
+										<a href="javascript:void(0)" onclick="" class="fa fa-times"></a>
+									</div>
+								</li>
+								
+							 </ul>
+					   </div>
+					   </div>
+					 
+					  
+					  <div class="seach-bureau">
+				        <!--搜索框 -->
+						<div class="seach-seach">
+							<form id="searchForm" action="/linktrust/bureau/platform/best/school/main?orgId=53fbd9af1b9468292b452f96" method="post">
+								<div class="input-group col-md-12">
+									<input type="hidden" id="phase" name="phase" value="2">
+									<input name="name" class="form-control clear-border col-md-4" placeholder="请输入学校名称" type="text" style="margin-right: 5px;" value="">
+									<div class="input-group-btn col-md-4">
+										<button type="button" onclick="submit()" class="btn btn-primary" tabindex="-1">搜索</button>
+									</div>
+								</div>
+							</form>
+						</div><!--搜索框 结束-->
+						
+						
+						 <!--全部学校-->
+					  	 <div id="pic_show" class="clearfix" >
+							<ul class="col-md-12">
+								
+								<li class="col-md-2">
+									<ul class="bureau-school-search-list inline-block-ul row color1">
+										<li class="bureau-new-szdw-img col-md-3">
+											<a class="clearfix" target="_blank" href="javascript:;">
+												<img src="img/photo.jpg">
+											</a>
+										</li>
+										<li class="bureau-school-search-name col-md-9">
+											<h3 limit="7" title=" 华容县城关小学"> 华容县城关小...</h3>
+										</li>
+									</ul>
+									<div class="wrench">
+										<a href="javascript:void(0)" onclick="" class="fa fa-check-square" ></a>
+									</div>
+								</li>
+								<li class="col-md-2">
+									<ul class="bureau-school-search-list inline-block-ul row color1">
+										<li class="bureau-new-szdw-img col-md-3">
+											<a class="clearfix" target="_blank" href="javascript:;">
+												<img src="img/photo.jpg">
+											</a>
+										</li>
+										<li class="bureau-school-search-name col-md-9">
+											<h3 limit="7" title=" 华容县城关小学"> 华容县城关小...</h3>
+										</li>
+									</ul>
+									<div class="wrench">
+										<a href="javascript:void(0)" onclick="" class="fa fa-check-square" ></a>
+									</div>
+								</li>
+								<li class="col-md-2">
+									<ul class="bureau-school-search-list inline-block-ul row color1">
+										<li class="bureau-new-szdw-img col-md-3">
+											<a class="clearfix" target="_blank" href="javascript:;">
+												<img src="img/photo.jpg">
+											</a>
+										</li>
+										<li class="bureau-school-search-name col-md-9">
+											<h3 limit="7" title=" 华容县城关小学"> 华容县城关小...</h3>
+										</li>
+									</ul>
+									<div class="wrench">
+										<a href="javascript:void(0)" onclick="" class="fa fa-check-square" ></a>
+									</div>
+								</li>
+								<li class="col-md-2">
+									<ul class="bureau-school-search-list inline-block-ul row color1">
+										<li class="bureau-new-szdw-img col-md-3">
+											<a class="clearfix" target="_blank" href="javascript:;">
+												<img src="img/photo.jpg">
+											</a>
+										</li>
+										<li class="bureau-school-search-name col-md-9">
+											<h3 limit="7" title=" 华容县城关小学"> 华容县城关小...</h3>
+										</li>
+									</ul>
+									<div class="wrench">
+										<a href="javascript:void(0)" onclick="" class="fa fa-check-square" ></a>
+									</div>
+								</li>
+								<li class="col-md-2">
+									<ul class="bureau-school-search-list inline-block-ul row color1">
+										<li class="bureau-new-szdw-img col-md-3">
+											<a class="clearfix" target="_blank" href="javascript:;">
+												<img src="img/photo.jpg">
+											</a>
+										</li>
+										<li class="bureau-school-search-name col-md-9">
+											<h3 limit="7" title=" 华容县城关小学"> 华容县城关小...</h3>
+										</li>
+									</ul>
+									<div class="wrench">
+										<a href="javascript:void(0)" onclick="" class="fa fa-check-square" ></a>
+									</div>
+								</li>
+								<li class="col-md-2">
+									<ul class="bureau-school-search-list inline-block-ul row color1">
+										<li class="bureau-new-szdw-img col-md-3">
+											<a class="clearfix" target="_blank" href="javascript:;">
+												<img src="img/photo.jpg">
+											</a>
+										</li>
+										<li class="bureau-school-search-name col-md-9">
+											<h3 limit="7" title=" 华容县城关小学"> 华容县城关小...</h3>
+										</li>
+									</ul>
+									<div class="wrench">
+										<a href="javascript:void(0)" onclick="" class="fa fa-check-square" ></a>
+									</div>
+								</li>
+								<li class="col-md-2">
+									<ul class="bureau-school-search-list inline-block-ul row color1">
+										<li class="bureau-new-szdw-img col-md-3">
+											<a class="clearfix" target="_blank" href="javascript:;">
+												<img src="img/photo.jpg">
+											</a>
+										</li>
+										<li class="bureau-school-search-name col-md-9">
+											<h3 limit="7" title=" 华容县城关小学"> 华容县城关小...</h3>
+										</li>
+									</ul>
+									<div class="wrench">
+										<a href="javascript:void(0)" onclick="" class="fa fa-check-square" ></a>
+									</div>
+								</li>
+	
+							</ul>
+			
+		             </div><!--全部学校结束-->
+		                 
+		
+			       </div>
+
+				 </form><!--表单结束-->
+
+	            </div>
+
+			</div>
+		</div>
+
+
+
+		<!--资源专区-->
+
+
+
+
+		<!-- 底部 -->
+		<div class="container-fluid footer footer-grayline">
+			<div class="row">
+				<ul class="col-md-12 inline-block-ul">
+					<li><a href="#">关于我们</a>
+					</li>
+					<li>|</li>
+					<li><a href="#">联系我们</a>
+					</li>
+					<li>|</li>
+					<li><a href="#">友情链接</a>
+					</li>
+					<li>|</li>
+					<li><a href="#">关于我们</a>
+					</li>
+					<li>|</li>
+					<li><a href="#">关于我们</a>
+					</li>
+				</ul>
+			</div>
+			<div class="row">
+				<div class="col-md-12">Copyright @ 2011-2015 湖南领信教育网络发展有限公司版权所有 湘ICP备14001031号</div>
+			</div>
+		</div>
+
+		<!--***** “space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+		<script type="text/JavaScript" src="space-footer-css.js"></script>
+		<!--***** “space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+
+		<script type="text/javascript" src="libs/raking/js/raking1.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/bureau-ht.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="libs/raking/css/raking.css" />
+        
+		<!-- <script>
+	     $('.bureau-student-rizhi>li').each(function(){
+		var num = $(this).index();
+		if(num % 2 !== 0)
+		{
+			$(this).addClass('bg3')
+		}
+	    });
+        </script>-->
+	</body>
+
+</html>

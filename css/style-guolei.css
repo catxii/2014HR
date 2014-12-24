@@ -8,3 +8,25 @@
 
 /*用户评价去掉最后下划线*/
 .qdline:last-child{ border-bottom: 0px !important;}
+
+/*校综合平台-学样列表*/
+.bureau-sch-title{ 
+  border-bottom: 1px solid #CCC;
+  padding: 7px; 
+  background: none repeat scroll 0% 0% #F2F2F2;
+  box-shadow: 0px 3px 0px #EDEDED;
+  margin-top: 0px !important;
+ font-size: 14px;
+  margin-bottom: 10px;;
+ }
+ 
+.bureau-operation{ margin-bottom: 10px;} 
+.bureau-sch-title span{ display:inline-block; line-height: 30px;}
+.sch-name{ max-width: 500px; height: 30px; overflow: hidden;}
+.seach-sch{ font-weight:bold; font-size: 14px;}
+
+
+
+
+
+
