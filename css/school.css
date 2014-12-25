@@ -79,7 +79,7 @@ border: 4px solid rgba(255, 255, 255, 0.3);
     text-shadow:none;
     text-decoration: none;
 }
-.green-body .school-header-bottom .top-nav-bar-bottom li{margin: 0 !important; padding: 10px 40px 10px 39px !important;}
+.green-body .school-header-bottom .top-nav-bar-bottom li{margin: 0 !important; padding: 10px 45px !important;}
 .green-body .school-header-bottom .top-nav-bar-bottom li:hover{}
 .green-body .school-header-bottom .top-nav-bar-bottom li a:hover{border-bottom: 3px solid #FFAE00;color: #f90 !important;}
 .green-body .school-header-bottom .top-nav-bar-bottom li.current a {
@@ -120,7 +120,21 @@ color: #ccc;
 margin-right: 5px;
 vertical-align: middle;}
 /*学校自定义颜色*/
-.green-body .school-new-default,.green-body .school-new-tzgg,.green-body .school-new-xxxw,.green-body .school-new-xxgk,.green-body .school-new-dyzc,.green-body .school-new-xyjs,.green-body .school-new-yxjs,.green-body .school-new-szdw,.green-body .school-new-xstd,.green-body .school-new-bjyd,.green-body .school-new-xxzy,.green-body .school-new-jypt,.green-body .school-new-rmzy,.green-body .school-new-rmht,.green-body .school-new-xzxx{
+.green-body .school-new-default,
+.green-body .school-new-tzgg,
+.green-body .school-new-xxxw,
+.green-body .school-new-xxgk,
+.green-body .school-new-dyzc,
+.green-body .school-new-xyjs,
+.green-body .school-new-yxjs,
+.green-body .school-new-szdw,
+.green-body .school-new-xstd,
+.green-body .school-new-bjyd,
+.green-body .school-new-xxzy,
+.green-body .school-new-jypt,
+.green-body .school-new-rmzy,
+.green-body .school-new-rmht,
+.green-body .school-new-xzxx{
 margin-bottom: 6px;
 background: none repeat scroll 0% 0% rgba(255, 255, 255, 0.33);
 padding: 4px;
@@ -140,9 +154,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababa', end
 padding: 0; position: relative;
 color: #fff;
 }
-.green-body .green-pane > ul{margin: 0;word-spacing: -4px;
-border-top: 1px solid #DDD;
-border-right: 1px solid #DDD;}
+.green-body .green-pane > ul{margin: 0;word-spacing: -4px;}
 .green-body .green-pane > ul > li{
 	margin-right:0 !important;
 word-spacing: normal;
@@ -245,12 +257,21 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababa', end
 }
 /*学校二级页面*/
 .green-body .school-neiye-banner{background:#ECECEC;}
-.green-body .school-resources-banner{background:#2CA974 !important;}
+.green-body .school-resources-banner{background:none repeat scroll 0% 0% #ADADAD !important !important;}
 .green-body .school-neiye-banner-img{/*background: #ECECEC;*/height: 150px;}
 .green-body .school-new-neiye-left{position: relative;}
 .green-body .school-new-neiye-tab{position: absolute;top:-50px;width: 187px;}
 .green-body .school-neiye-title{min-height: 500px;}
-.green-body .green-pane .school-new-neiye-tab .panel-heading{color: rgba(46, 156, 92, 1) !important;padding:0 22px;line-height: 49px; text-align:center; background:#ccc;font-size: 20px;color: #fff;font-weight: bold;text-shadow: 1px 1px 0px rgba(255, 255, 255, 1);}
+.green-body .green-pane .school-new-neiye-tab .panel-heading{
+color: #5D5D5D !important;
+padding: 0px 22px;
+line-height: 49px;
+text-align: center;
+background: none repeat scroll 0% 0% #CCC;
+font-size: 20px;
+font-weight: bold;
+text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.12);
+}
 .green-body .green-pane .school-new-neiye-list .list-group-item{}
 
 .green-body .school-search-list{width: 200px;position: absolute !important;
@@ -508,7 +529,6 @@ body.byhx-bg .school-header-bottom .top-nav-bar-bottom li a {
     text-shadow:none;
     text-decoration: none;
 }
-body.byhx-bg .school-header-bottom .top-nav-bar-bottom li{margin: 0 !important; padding: 10px 40px 10px 39px !important;}
 body.byhx-bg .school-header-bottom .top-nav-bar-bottom li:hover{}
 body.byhx-bg .school-header-bottom .top-nav-bar-bottom li a:hover{border-bottom:0px !important;color: #1E669B !important;}
 body.byhx-bg .school-header-bottom .top-nav-bar-bottom li.current a {
@@ -561,7 +581,6 @@ body.mtpgy-bg .school-header-bottom .top-nav-bar-bottom li a {
     text-shadow:none;
     text-decoration: none;
 }
-body.mtpgy-bg .school-header-bottom .top-nav-bar-bottom li{margin: 0 !important; padding: 10px 40px 10px 39px !important;}
 body.mtpgy-bg .school-header-bottom .top-nav-bar-bottom li:hover{}
 body.mtpgy-bg .school-header-bottom .top-nav-bar-bottom li a:hover{border-bottom: 3px solid #4C9ED9;color: #1E669B !important;}
 body.mtpgy-bg .school-header-bottom .top-nav-bar-bottom li.current a {
@@ -598,7 +617,6 @@ body.xldy-bg .school-header-bottom .top-nav-bar-bottom li a {
     text-shadow:none;
     text-decoration: none;
 }
-body.xldy-bg .school-header-bottom .top-nav-bar-bottom li{margin: 0 !important; padding: 10px 40px 10px 39px !important;}
 body.xldy-bg .school-header-bottom .top-nav-bar-bottom li a:hover{border-bottom: 3px solid #0F8A22;color: #0F8A22 !important;}
 body.xldy-bg .school-header-bottom .top-nav-bar-bottom li.current a {
     font-size: 13px;
@@ -624,7 +642,6 @@ body.zsmh-bg .school-header-bottom .top-nav-bar-bottom li a {
     text-shadow:none;
     text-decoration: none;
 }
-body.zsmh-bg .school-header-bottom .top-nav-bar-bottom li{margin: 0 !important; padding: 10px 40px 10px 39px !important;}
 body.zsmh-bg .school-header-bottom .top-nav-bar-bottom li a:hover{border-bottom: 3px solid #795DD7;color: #795DD7 !important;}
 body.zsmh-bg .school-header-bottom .top-nav-bar-bottom li.current a {
     font-size: 13px;
@@ -735,6 +752,26 @@ background:linear-gradient(left,rgb(255, 129, 64) 0,rgb(254, 189, 104) 10%,#81E0
 
 border-bottom: 2px solid rgba(0, 0, 0, 0.15);
 }
+body.jzlm-bg .school-header-bottom .top-nav-bar-bottom li a {
+    font-size: 13px;
+    color: #fff !important;
+    padding-bottom: 2px;
+    text-shadow:none;
+    text-decoration: none;
+}
+body.jzlm-bg .school-header-bottom .top-nav-bar-bottom li:hover{}
+body.jzlm-bg .school-header-bottom .top-nav-bar-bottom li a:hover{border-bottom:0px !important;color: #1E669B !important;}
+body.jzlm-bg .school-header-bottom .top-nav-bar-bottom li.current a {
+    font-size: 13px;
+    color: #fff !important;
+    padding-bottom: 2px;
+    text-shadow:none;
+    border-bottom:0px !important;
+}
+body.jzlm-bg .school-logo-name{
+	text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.6);
+color: #FF8744;
+}
 body.jzlm-bg .top-nav-bar-bottom li.current a,body.jzlm-bg .top-nav-bar-bottom li a:hover{
 	color:#44A5F9 ;
 }
@@ -770,17 +807,19 @@ body.xzsl-bg {
   background-image: url(../img/theme-img/public/szsl.jpg );
   background-color: #88c100;
 }
-body.xzsl-bg .panel-class-zdy .color1{
-	background: #6ebc4f; /* Old browsers */
-background: -moz-linear-gradient(top,  #6ebc4f 0%, #75b768 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6ebc4f), color-stop(100%,#75b768)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  #6ebc4f 0%,#75b768 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  #6ebc4f 0%,#75b768 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  #6ebc4f 0%,#75b768 100%); /* IE10+ */
-background: linear-gradient(to bottom,  #6ebc4f 0%,#75b768 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6ebc4f', endColorstr='#75b768',GradientType=0 ); /* IE6-9 */
+body.xzsl-bg .green-pane{
+		background: rgb(180,223,91); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(180,223,91,1) 0%, rgba(180,223,91,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(180,223,91,1)), color-stop(100%,rgba(180,223,91,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(180,223,91,1) 0%,rgba(180,223,91,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(180,223,91,1) 0%,rgba(180,223,91,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(180,223,91,1) 0%,rgba(180,223,91,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(180,223,91,1) 0%,rgba(180,223,91,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4df5b', endColorstr='#b4df5b',GradientType=0 ); /* IE6-9 */
 
-color: #fff !important;
+}
+body.xzsl-bg .school-logo-name{
+	color: #038300;
 }
 body.xzsl-bg .media-body > .fontbold{
 	color: #55913D !important;

@@ -201,6 +201,11 @@ background: #fff;
 	width: 56px;
 	height: 56px;
 }
+.bureau-ico a.fa.fa-app{
+	background: url('../img/bureau-ico-list.png') no-repeat 0px -233px;
+	width: 56px;
+	height: 56px;
+}
 .bureau-ico-name{
 	text-align: center;
 	line-height: 12px;
