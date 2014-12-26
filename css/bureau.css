@@ -1675,7 +1675,7 @@ color: #333;
 	margin-top: 0 !important;
     line-height: 25px;
 }
-.bureau-school-body #accordion{
+.bureau-school-body #accordionIndex{
 	overflow-y: scroll;
 	height: 216px;
 }
