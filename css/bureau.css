@@ -114,6 +114,10 @@ font-weight: bold;
 color: #4C9ED9;
 font-size: 13px;
 }
+.navbar-collapse.collapse.in{
+	background: #fff;
+	text-align: center;
+}
 a{text-decoration: none !important;}
 a:hover{
 	color: #24D665 ;
