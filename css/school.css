@@ -26,7 +26,7 @@ body{
 .navbar-green .container{
 	position: relative;
 }
-.green-body{ padding-top: 0px;
+.green-body{ padding-top: 25px !important;
 background: -moz-linear-gradient(-45deg,  rgba(170,170,170,0.65) 0%, rgba(201,201,201,0) 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(170,170,170,0.65)), color-stop(100%,rgba(201,201,201,0))); /* Chrome,Safari4+ */
 background: -webkit-linear-gradient(-45deg,  rgba(170,170,170,0.65) 0%,rgba(201,201,201,0) 100%); /* Chrome10+,Safari5.1+ */
@@ -34,6 +34,7 @@ background: -o-linear-gradient(-45deg,  rgba(170,170,170,0.65) 0%,rgba(201,201,2
 background: -ms-linear-gradient(-45deg,  rgba(170,170,170,0.65) 0%,rgba(201,201,201,0) 100%); /* IE10+ */
 background: linear-gradient(135deg,  rgba(170,170,170,0.65) 0%,rgba(201,201,201,0) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6aaaaaa', endColorstr='#00c9c9c9',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 
 }
 .green-body.diy-mode > .navbar{
@@ -73,13 +74,13 @@ border: 4px solid rgba(255, 255, 255, 0.3);
 }
 .green-body .school-header-bottom{}
 .green-body .school-header-bottom .top-nav-bar-bottom li a {
-    font-size: 13px;
+    font-size: 12px;
     color: #000 !important;
     padding-bottom: 2px;
     text-shadow:none;
     text-decoration: none;
 }
-.green-body .school-header-bottom .top-nav-bar-bottom li{margin: 0 !important; padding: 10px 45px !important;}
+.green-body .school-header-bottom .top-nav-bar-bottom li{margin: 0 !important; padding: 7px 44px !important;}
 .green-body .school-header-bottom .top-nav-bar-bottom li:hover{}
 .green-body .school-header-bottom .top-nav-bar-bottom li a:hover{border-bottom: 3px solid #FFAE00;color: #f90 !important;}
 .green-body .school-header-bottom .top-nav-bar-bottom li.current a {
@@ -93,6 +94,14 @@ border: 4px solid rgba(255, 255, 255, 0.3);
 .green-body .school-new-left{padding-left: 0 !important;padding-right: 3px !important;}
 .green-body .school-new-left .panel-body{padding: 0 !important;background: #fff;}
 .green-body .school-new-right{padding-right: 0 !important;padding-left: 3px !important;}
+.green-body .school-new-right embed{
+	width: 100%;
+	height: 200px;
+}
+.green-body .school-new-left embed{
+	width: 100%;
+	height: 200px;
+}
 .green-body .school-new-right .panel-body{padding: 5px 0 !important;background: #fff;}
 .green-body .school-new-center{padding: 0px 3px;}
 .green-body .school-new-center .panel-body{padding: 5px 0 !important;background: #fff;}
@@ -228,9 +237,9 @@ padding: 8px 4px !important;
 .green-body .school-new-default .panel-body{/*overflow-y:scroll; max-height: 90px;*/}
 /*尾部*/
 .green-body .container-footer{background: url(../img/foot_bg.png) repeat-x #eee; /*box-shadow: 0px -1px 2px rgba(168, 168, 168, 1);*/}
-.green-body .container-footer ul li{margin-right: 0 !important;text-align: center;padding: 10px 0;background: #ccc;font-size: 13px;
+.green-body .container-footer ul li{margin-right: 0 !important;text-align: center;padding: 10px 0;font-size: 13px;
 font-weight: 900;}
-.green-body .container-footer ul li a{padding: 4px 30px;text-shadow: 1px 1px 1px #fff;border-radius: 4px;}
+.green-body .container-footer ul li a{padding: 4px 30px;text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.47);border-radius: 4px;}
 .green-body .container-footer ul li a:hover{background: #999;color: #333;}
 .green-body .number-news{
     padding: 1px 5px;
@@ -256,7 +265,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababa', end
     text-align: justify;
 }
 /*学校二级页面*/
-.green-body .school-neiye-banner{background:#ECECEC;}
+.green-body .school-neiye-banner{}
 .green-body .school-resources-banner{background:none repeat scroll 0% 0% #ADADAD !important !important;}
 .green-body .school-neiye-banner-img{/*background: #ECECEC;*/height: 150px;}
 .green-body .school-new-neiye-left{position: relative;}
@@ -307,9 +316,12 @@ top: 4px !important;}
 
 
 /*资源库*/
+.green-body .container-fluid.document-single-box{
+	background: #fff;
+}
 .green-body .school-neiye-search-img{height: 53px; padding: 10px 10px;}
 .green-body .school-search .form-control{height: 32px;}
-.green-body .school-banner-img{height: 277px;}
+.green-body .school-banner-img{height: 277px;background: #F5F5F5;}
 .green-body .list-tab-school{box-shadow: 3px 3px 3px #EBEBEB;border-bottom: 1px solid #ccc;border-left: 1px solid #ccc;border-right: 1px solid #ccc;}
 .green-body .list-tab-right{padding-top: 10px !important;}
 .green-body .list-tab-number{height: 160px; border: 1px solid #ccc;margin-bottom:7px;background: #EAE3C9;padding: 0 10px;}
@@ -358,7 +370,7 @@ padding: 4px;
 border-radius: 5px;
 }
 .green-body .ranking-title h5 i{color: #fff;}
-.green-body .school-teacher-ranking{border-bottom: 1px solid #ddd; height: 120px;overflow-x: scroll;padding: 0 3px;}
+.green-body .school-teacher-ranking{border-bottom: 1px solid #ddd; height: 120px;overflow-x: scroll;padding: 0 3px;background: #fff;}
 .green-body .school-teacher-ranking > ul{white-space: nowrap;word-spacing: -4px;}
 .green-body .school-teacher-ranking > ul > li{
 	width: 274px;
@@ -562,7 +574,9 @@ body.mtpgy-bg {
   background-color: #AEE0FB;
   background-repeat: no-repeat;
 }
-
+body.mtpgy-bg .school-neiye-banner{
+    background: none repeat scroll 0% 0% #6ABFE9;
+}
 body.mtpgy-bg .green-pane{
 	background: #54bcef; /* Old browsers */
 background: -moz-linear-gradient(top,  #54bcef 0%, #4eafde 100%); /* FF3.6+ */
@@ -659,6 +673,9 @@ body.cj-bg {
   background-color: #bbd5e9;
   background-repeat: no-repeat;
 }
+body.cj-bg .school-neiye-banner {
+    background: none repeat scroll 0% 0% rgb(69, 158, 227);
+}
 body.cj-bg .user-num-wrapper .num-list > li > h3{
 	color: #10629F !important;
 }
@@ -681,18 +698,6 @@ body.fwdpp-bg {
 body.fwdpp-bg .btncolor1{
 	background: none repeat scroll 0% 0% #FE80D8;
 border: 1px solid #D270C6;
-}
-body.fwdpp-bg .panel-class-zdy .color1{
-	background: #f998c9; /* Old browsers */
-background: -moz-linear-gradient(top,  #f998c9 0%, #fba6e1 50%, #fd89d7 51%, #ff7cd8 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f998c9), color-stop(50%,#fba6e1), color-stop(51%,#fd89d7), color-stop(100%,#ff7cd8)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  #f998c9 0%,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  #f998c9 0%,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  #f998c9 0%,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%); /* IE10+ */
-background: linear-gradient(to bottom,  #f998c9 0%,#fba6e1 50%,#fd89d7 51%,#ff7cd8 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f998c9', endColorstr='#ff7cd8',GradientType=0 ); /* IE6-9 */
-
-color: #fff !important;
 }
 body.fwdpp-bg.class-body .user-num-wrapper .num-list > li > h3,body.fwdpp-bg.class-body .panel-class-Set .num{
     color: #C470EC !important;
@@ -728,20 +733,34 @@ body.jzlm-bg {
   background-image: url(../img/theme-img/public/jzlm.jpg );
   background-color: #faebe3;
 }
-body.jzlm-bg .panel-class-zdy .color1{
-	background: #ffc578; /* Old browsers */
-background: -moz-linear-gradient(top,  #ffc578 0%, #fb9d23 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffc578), color-stop(100%,#fb9d23)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top,  #ffc578 0%,#fb9d23 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top,  #ffc578 0%,#fb9d23 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(top,  #ffc578 0%,#fb9d23 100%); /* IE10+ */
-background: linear-gradient(to bottom,  #ffc578 0%,#fb9d23 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc578', endColorstr='#fb9d23',GradientType=0 ); /* IE6-9 */
-
-color: #fff !important;
+body.jzlm-bg .school-neiye-banner {
+    background: none;
 }
-body.jzlm-bg.class-body .user-num-wrapper .num-list > li > h3{
-    color: #FF7500 !important;
+body.jzlm-bg .green-pane{
+		background: rgb(255,168,76); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(255,168,76,1) 0%, rgba(255,123,13,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,168,76,1)), color-stop(100%,rgba(255,123,13,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,168,76,1) 0%,rgba(255,123,13,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,168,76,1) 0%,rgba(255,123,13,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,168,76,1) 0%,rgba(255,123,13,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,168,76,1) 0%,rgba(255,123,13,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa84c', endColorstr='#ff7b0d',GradientType=0 ); /* IE6-9 */
+
+}
+body.jzlm-bg .school-new-xxgk .panel-body .school-group .list-group-item{
+	color: #AD5001;
+font-size: 15px !important;
+font-weight: bold;
+background: none repeat scroll 0% 0% #FFA649 !important;
+text-shadow: 1px 1px 1px #FFF;
+box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3) inset, 0px 1px 1px rgba(50, 50, 50, 0.05);
+border: 1px solid #F27700 !important;
+text-align: center;
+border-radius: 5px;
+margin: 2px 0px;
+height: 37px;
+vertical-align: middle;
+padding: 8px 4px !important;
 }
 body.jzlm-bg .top-nav-bar-bottom{
 	background-color:#0fa6ea;
@@ -806,6 +825,9 @@ body.sgls-bg {
 body.xzsl-bg {
   background-image: url(../img/theme-img/public/szsl.jpg );
   background-color: #88c100;
+}
+body.xzsl-bg .school-neiye-banner {
+    background: none repeat scroll 0% 0% #CF0;
 }
 body.xzsl-bg .green-pane{
 		background: rgb(180,223,91); /* Old browsers */
