@@ -60,7 +60,7 @@ color: #8D8D8D;
 font-family: "微软雅黑";
 }
 .school-header{padding: 0 10px;}
-.green-body .container-new-content{padding-top: 10px;/*background: url("../img/red-bg.png") repeat-y scroll 0% 0% transparent;*/}
+.green-body .container-new-content{padding-top:0 10px;/*background: url("../img/red-bg.png") repeat-y scroll 0% 0% transparent;*/}
 .green-body .school-header-top{height: 130px;position: relative;}
 .green-body .school-header-top .thumbnail{display: inherit;background: none;}
 .green-body .school-header-name{
@@ -74,13 +74,13 @@ border: 4px solid rgba(255, 255, 255, 0.3);
 }
 .green-body .school-header-bottom{}
 .green-body .school-header-bottom .top-nav-bar-bottom li a {
-    font-size: 12px;
+    font-size: 14px;
     color: #000 !important;
     padding-bottom: 2px;
     text-shadow:none;
     text-decoration: none;
 }
-.green-body .school-header-bottom .top-nav-bar-bottom li{margin: 0 !important; padding: 7px 44px !important;}
+.green-body .school-header-bottom .top-nav-bar-bottom li{margin: 0 !important; padding: 10px 43px !important;}
 .green-body .school-header-bottom .top-nav-bar-bottom li:hover{}
 .green-body .school-header-bottom .top-nav-bar-bottom li a:hover{border-bottom: 3px solid #FFAE00;color: #f90 !important;}
 .green-body .school-header-bottom .top-nav-bar-bottom li.current a {
@@ -89,7 +89,7 @@ border: 4px solid rgba(255, 255, 255, 0.3);
     padding-bottom: 2px;
     text-shadow:none;
 }
-.green-body .school-banner-new{margin: auto ;width: 1280px; height: 435px;margin-top: 0px;}
+.green-body .school-banner-new{margin: auto ;width: 1280px; height: 419px;margin-top: 0px;}
 
 .green-body .school-new-left{padding-left: 0 !important;padding-right: 3px !important;}
 .green-body .school-new-left .panel-body{padding: 0 !important;background: #fff;}
@@ -675,6 +675,10 @@ body.cj-bg {
 }
 body.cj-bg .school-neiye-banner {
     background: none repeat scroll 0% 0% rgb(69, 158, 227);
+}
+body.cj-bg .school-logo-name{
+	text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.29);
+color: #0063A1;
 }
 body.cj-bg .user-num-wrapper .num-list > li > h3{
 	color: #10629F !important;
