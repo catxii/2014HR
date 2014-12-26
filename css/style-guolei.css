@@ -9,7 +9,7 @@
 /*用户评价去掉最后下划线*/
 .qdline:last-child{ border-bottom: 0px !important;}
 
-/*校综合平台-学样列表*/
+/*校综合平台-县制乡镇学校列表*/
 .bureau-sch-title{ 
   border-bottom: 1px solid #CCC;
   padding: 7px; 
@@ -25,8 +25,22 @@
 .sch-name{ max-width: 500px; height: 30px; overflow: hidden;}
 .seach-sch{ font-weight:bold; font-size: 14px;}
 
-
-
-
+/*教育局平台首页*/ 
+#con2{ 
+	height: 245px;
+    margin: 0px auto;
+    position: relative;
+    background-color: #95d0d7;
+    overflow: hidden;
+    }
+    
+.schresourceRank{ padding:0px 5px 10px 0px !important;}
+.schresourceRank li{ padding:10px 0 10px 0; !important; border-bottom:#fff dotted 1px !important ;}
+.sch-resources-text p{ line-height: 23px !important; margin: 0px !important;}
+.sch-resources-text p:first-child{ 
+	height: 45px;
+	overflow: hidden;
+    }
+#resRank{ overflow:hidden;height:245px;background:#f4f4f4;}
 
 
