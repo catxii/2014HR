@@ -218,9 +218,9 @@ padding: 8px 4px !important;
 
 .green-body .school-new-szdw-name .label{padding: 0.3em !important;text-shadow: 1px 1px 1px #fff;}
 .green-body .school-new-szdw-list ul{padding: 6px; background: #eee;}
-.green-body .school-new-szdw-list ul li{height: 50px;vertical-align: top;}
+.green-body .school-new-szdw-list ul li{height: 50px;vertical-align: top;border-radius: 50%;}
 .green-body .school-new-szdw-img{margin-right: 5px !important;overflow: hidden;}
-.green-body .school-new-szdw-img img{width: 50px;height: 50px;transition: transform 0.3s ease 0s;}
+.green-body .school-new-szdw-img img{width: 50px;height: 50px;transition: transform 0.3s ease 0s;border-radius: 50%;}
 .green-body .school-new-szdw-img img:hover{transform: scale(1.6);}
 .green-body .school-new-szdw-name{margin-right: 0 !important;}
 .green-body .school-new-szdw-name h4{margin: 0 0 5px 0 !important; line-height: 20px;/*text-shadow: 1px 1px 0px #285C44;*/display: block;font-size: 12px;width: 57px;}
