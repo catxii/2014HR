@@ -828,7 +828,6 @@ padding: 6px 5px;
 background: none repeat scroll 0% 0% #4C9ED9;
 color: #FFF;
 display: none;
-text-shadow: 1px 1px 0px #3078AB;
 z-index: 999;
 text-align: center;
 width: 100%;
@@ -1355,6 +1354,14 @@ border-radius: 10px;
 	border-top: 1px solid #ddd;
 	font-size: 12px;
 }
+#resRank.bureau-data-right-body {
+    position: relative;
+    margin: auto;
+    background:none !important;
+    border: 1px solid #ddd;
+    padding: 10px 10px 20px;
+    border-radius: 12px;
+}
 .bureau-data-body .bureau-data-right-body ul.bureau-data-rizhi > li{
 	padding: 11px 5px 10px 5px;
 box-shadow: 0px 5px 48px #EDEDED inset;
@@ -1601,6 +1608,7 @@ pointer-events: none;
 #con1 ul li .div_left img{
 	width: 30px;
 	height: 30px;
+	border-radius: 50%;
 }
 #con1 ul li .div_right {
 	float: right;
@@ -1616,7 +1624,7 @@ pointer-events: none;
 
 /*资源专区排行*/
 .bureau-data-school-raking img{
-	box-shadow:0px 0px 11px rgba(0, 0, 0, 0.27);
+	/*box-shadow:0px 0px 11px rgba(0, 0, 0, 0.27);*/
 	border-radius: 50%;
 }
 

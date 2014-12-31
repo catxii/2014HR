@@ -162,8 +162,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bababa', end
 
 padding: 0; position: relative;
 color: #fff;
+box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.27) inset, 0px 1px 1px rgba(0, 0, 0, 0.18);
 }
-.green-body .green-pane > ul{margin: 0;word-spacing: -4px;}
+.green-body .green-pane > ul{margin: 0;word-spacing: -4px;border-bottom: 0px;}
 .green-body .green-pane > ul > li{
 	margin-right:0 !important;
 word-spacing: normal;
@@ -236,11 +237,11 @@ padding: 8px 4px !important;
 /*自定义栏目*/
 .green-body .school-new-default .panel-body{/*overflow-y:scroll; max-height: 90px;*/}
 /*尾部*/
-.green-body .container-footer{background: url(../img/foot_bg.png) repeat-x #eee; /*box-shadow: 0px -1px 2px rgba(168, 168, 168, 1);*/}
+.green-body .container-footer{box-shadow:0px -1px 2px rgba(168, 168, 168, 0.21);background: none repeat scroll 0% 0% #FFF;}
 .green-body .container-footer ul li{margin-right: 0 !important;text-align: center;padding: 10px 0;font-size: 13px;
 font-weight: 900;}
-.green-body .container-footer ul li a{padding: 4px 30px;text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.47);border-radius: 4px;}
-.green-body .container-footer ul li a:hover{background: #999;color: #333;}
+.green-body .container-footer ul li a{padding: 4px 30px;border-radius: 4px;}
+.green-body .container-footer ul li a:hover{background: #ccc;color: #fff;}
 .green-body .number-news{
     padding: 1px 5px;
     border-radius: 2px;
@@ -320,20 +321,20 @@ top: 4px !important;}
 	background: #fff;
 }
 .green-body .school-neiye-search-img{height: 53px; padding: 10px 10px;}
-.green-body .school-search .form-control{height: 32px;}
+.green-body .school-search .form-control{height: 34px;}
 .green-body .school-banner-img{height: 277px;background: #F5F5F5;}
 .green-body .list-tab-school{box-shadow: 3px 3px 3px #EBEBEB;border-bottom: 1px solid #ccc;border-left: 1px solid #ccc;border-right: 1px solid #ccc;}
 .green-body .list-tab-right{padding-top: 10px !important;}
 .green-body .list-tab-number{height: 160px; border: 1px solid #ccc;margin-bottom:7px;background: #EAE3C9;padding: 0 10px;}
 .green-body .list-tab-number h4{text-align: center;font-size: 16px; font-weight: bold;color: rgba(131, 125, 104, 1);}
 .green-body .list-tab-number .list-tab-number-list{height: 50px;
-            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.125) inset;
-    background-color: #449D44;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.125) inset;
+    background-color: #989898;
     text-align: center;
-    text-shadow: 0px 4px 9px rgba(0, 89, 39, 1), 0px -1px 0px #FFF;
-border-color: #398439;
+    text-shadow: 0px 4px 9px #3E3E3E, 0px -1px 0px #FFF;
+border-color: #999;
 font-size: 25px;
-color:rgba(167, 255, 167, 1);
+color: #D1D1D1;
 font-weight: bold;
 padding: 8px 14px !important;
 }
@@ -377,7 +378,6 @@ border-radius: 5px;
 	height: 85px;
 	background: #efefef;
 	padding: 10px;
-	border-bottom: 1px solid #2CA974;
 	margin-right: 11px !important;
 	word-spacing: 0px;
 }
@@ -695,6 +695,28 @@ body.fhds-bg {
   background-image: url(../img/theme-img/public/fhds.jpg );
   background-color: #000;
 }
+body.fhds-bg .school-header-bottom .top-nav-bar-bottom li a {
+    font-size: 13px;
+    color: #fff !important;
+    padding-bottom: 2px;
+    text-shadow:none;
+    text-decoration: none;
+}
+body.fhds-bg .school-header-bottom .top-nav-bar-bottom li a:hover{border-bottom: 0px solid #795DD7;color: #FF9900 !important;}
+body.fhds-bg .school-header-bottom .top-nav-bar-bottom li.current a {
+    font-size: 13px;
+    color: #FF9900 !important;
+    padding-bottom: 2px;
+    text-shadow:none;
+    border-bottom: 0px solid #795DD7;
+}
+body.fhds-bg .school-logo-name{
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.65);
+color: #ED1CD1;
+}
+body.fhds-bg .school-neiye-banner {
+    background: #89264A;
+}
 body.fwdpp-bg {
   background-image: url(../img/theme-img/public/fwdpp.jpg );
   background-color: #fff;
@@ -721,8 +743,27 @@ body.hbztd-bg {
   background-image: url(../img/theme-img/public/hbztd.jpg );
   background-color: #181818;
 }
-body.hbztd-bg .top-nav-bar-bottom li a{
-	color: #fff;
+body.hbztd-bg .school-header-bottom .top-nav-bar-bottom li a {
+    font-size: 13px;
+    color: #fff !important;
+    padding-bottom: 2px;
+    text-shadow:none;
+    text-decoration: none;
+}
+body.hbztd-bg .school-header-bottom .top-nav-bar-bottom li a:hover{border-bottom: 0px solid #795DD7;color: #FF9900 !important;}
+body.hbztd-bg .school-header-bottom .top-nav-bar-bottom li.current a {
+    font-size: 13px;
+    color: #FF9900 !important;
+    padding-bottom: 2px;
+    text-shadow:none;
+    border-bottom: 0px solid #795DD7;
+}
+body.hbztd-bg .school-logo-name{
+	text-shadow: 1px 1px 0px #000;
+color: #FFC600;
+}
+body.hbztd-bg .school-neiye-banner {
+    background: #89264A;
 }
 body.hhsj-bg {
   background-image: url(../img/theme-img/public/hhsj.jpg );
@@ -732,6 +773,28 @@ body.hjmh-bg {
   background-image: url(../img/theme-img/public/hjmh.jpg );
   background-color: #3A0114;
   background-repeat: no-repeat;
+}
+body.hjmh-bg .school-header-bottom .top-nav-bar-bottom li a {
+    font-size: 13px;
+    color: #FC5897 !important;
+    padding-bottom: 2px;
+    text-shadow:none;
+    text-decoration: none;
+}
+body.hjmh-bg .school-header-bottom .top-nav-bar-bottom li a:hover{border-bottom: 0px solid #795DD7;color: #FC5897 !important;}
+body.hjmh-bg .school-header-bottom .top-nav-bar-bottom li.current a {
+    font-size: 13px;
+    color: #FC5897 !important;
+    padding-bottom: 2px;
+    text-shadow:none;
+    border-bottom: 0px solid #795DD7;
+}
+body.hjmh-bg .school-logo-name{
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.6);
+color: #FFD800;
+}
+body.hjmh-bg .school-neiye-banner {
+    background: #89264A;
 }
 body.jzlm-bg {
   background-image: url(../img/theme-img/public/jzlm.jpg );
@@ -802,6 +865,36 @@ body.lsxq-bg {
   background-image: url(../img/theme-img/public/lsxq.jpg );
   background-color: #586223;
 }
+body.lsxq-bg .school-header-bottom .top-nav-bar-bottom li a {
+    font-size: 13px;
+    color: #fff !important;
+    padding-bottom: 2px;
+    text-shadow:none;
+    text-decoration: none;
+}
+body.lsxq-bg .school-header-bottom .top-nav-bar-bottom li a:hover{border-bottom: 0px solid #795DD7;color: #06FF00 !important;}
+body.lsxq-bg .school-header-bottom .top-nav-bar-bottom li.current a {
+    font-size: 13px;
+    color: #06FF00 !important;
+    padding-bottom: 2px;
+    text-shadow:none;
+    border-bottom: 0px solid #795DD7;
+}
+body.lsxq-bg .school-logo-name{
+text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.65);
+color: #06FF00;
+}
+body.lsxq-bg .green-pane{
+	background: rgb(143,196,0); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(143,196,0,1) 0%, rgba(143,196,0,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(143,196,0,1)), color-stop(100%,rgba(143,196,0,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(143,196,0,1) 0%,rgba(143,196,0,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(143,196,0,1) 0%,rgba(143,196,0,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(143,196,0,1) 0%,rgba(143,196,0,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(143,196,0,1) 0%,rgba(143,196,0,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8fc400', endColorstr='#8fc400',GradientType=0 ); /* IE6-9 */
+
+}
 body.mscf-bg {
   background-image: url(../img/theme-img/public/mscf.jpg );
   background-color: #f2af46;
@@ -821,6 +914,17 @@ body.qflm-bg {
 body.qzy-bg {
   background-image: url(../img/theme-img/public/qzy.jpg );
   background-color: #521b07;
+}
+body.qzy-bg .green-pane{
+	background: rgb(255,103,15); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(255,103,15,1) 0%, rgba(255,103,15,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,103,15,1)), color-stop(100%,rgba(255,103,15,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,103,15,1) 0%,rgba(255,103,15,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,103,15,1) 0%,rgba(255,103,15,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,103,15,1) 0%,rgba(255,103,15,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,103,15,1) 0%,rgba(255,103,15,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff670f', endColorstr='#ff670f',GradientType=0 ); /* IE6-9 */
+
 }
 body.sgls-bg {
   background-image: url(../img/theme-img/public/sgls.jpg );
@@ -864,6 +968,28 @@ body.wlkh-bg {
   background-image: url(../img/theme-img/public/wlkh.jpg );
   background-color: #000;
 }
+body.wlkh-bg .school-header-bottom .top-nav-bar-bottom li a {
+    font-size: 13px;
+    color: #fff !important;
+    padding-bottom: 2px;
+    text-shadow:none;
+    text-decoration: none;
+}
+body.wlkh-bg .school-header-bottom .top-nav-bar-bottom li a:hover{border-bottom: 0px solid #795DD7;color: #FF9900 !important;}
+body.wlkh-bg .school-header-bottom .top-nav-bar-bottom li.current a {
+    font-size: 13px;
+    color: #FF9900 !important;
+    padding-bottom: 2px;
+    text-shadow:none;
+    border-bottom: 0px solid #795DD7;
+}
+body.wlkh-bg .school-logo-name{
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.65);
+color: #D7D7D7;
+}
+body.wlkh-bg .school-neiye-banner {
+    background: #89264A;
+}
 body.zgldwx-bg {
   background-image: url(../img/theme-img/public/zgldwx.jpg );
   background-color: #b11810;
@@ -872,8 +998,67 @@ body.xgz-bg {
   background-image: url(../img/theme-img/public/xgz.jpg );
   background-color: #0a0a0a;
 }
+body.xgz-bg .school-header-bottom .top-nav-bar-bottom li a {
+    font-size: 13px;
+    color: #fff !important;
+    padding-bottom: 2px;
+    text-shadow:none;
+    text-decoration: none;
+}
+body.xgz-bg .school-header-bottom .top-nav-bar-bottom li a:hover{border-bottom: 0px solid #795DD7;color: #CD57C5 !important;}
+body.xgz-bg .school-header-bottom .top-nav-bar-bottom li.current a {
+    font-size: 13px;
+    color: #CD57C5 !important;
+    padding-bottom: 2px;
+    text-shadow:none;
+    border-bottom: 0px solid #795DD7;
+}
+body.xgz-bg .school-logo-name{
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.65);
+color: #CD57C5;
+}
+body.xgz-bg .green-pane{
+	background: rgb(229,112,231); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(229,112,231,1) 0%, rgba(200,94,199,1) 47%, rgba(168,73,163,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(229,112,231,1)), color-stop(47%,rgba(200,94,199,1)), color-stop(100%,rgba(168,73,163,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(229,112,231,1) 0%,rgba(200,94,199,1) 47%,rgba(168,73,163,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(229,112,231,1) 0%,rgba(200,94,199,1) 47%,rgba(168,73,163,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(229,112,231,1) 0%,rgba(200,94,199,1) 47%,rgba(168,73,163,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(229,112,231,1) 0%,rgba(200,94,199,1) 47%,rgba(168,73,163,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e570e7', endColorstr='#a849a3',GradientType=0 ); /* IE6-9 */
 
+}
 body.yskj-bg {
   background-image: url(../img/theme-img/public/yskj.jpg );
   background-color: #f4e6cc;
+}
+body.yskj-bg .school-header-bottom .top-nav-bar-bottom li a {
+    font-size: 13px;
+    color: #fff !important;
+    padding-bottom: 2px;
+    text-shadow:none;
+    text-decoration: none;
+}
+body.yskj-bg .school-header-bottom .top-nav-bar-bottom li a:hover{border-bottom: 0px solid #795DD7;color: #CD57C5 !important;}
+body.yskj-bg .school-header-bottom .top-nav-bar-bottom li.current a {
+    font-size: 13px;
+    color: #CD57C5 !important;
+    padding-bottom: 2px;
+    text-shadow:none;
+    border-bottom: 0px solid #795DD7;
+}
+body.yskj-bg .school-logo-name{
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.65);
+color: #000;
+}
+body.yskj-bg .green-pane{
+	background: rgb(249,191,137); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(249,191,137,1) 0%, rgba(245,171,102,1) 47%, rgba(239,141,49,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(249,191,137,1)), color-stop(47%,rgba(245,171,102,1)), color-stop(100%,rgba(239,141,49,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(249,191,137,1) 0%,rgba(245,171,102,1) 47%,rgba(239,141,49,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(249,191,137,1) 0%,rgba(245,171,102,1) 47%,rgba(239,141,49,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(249,191,137,1) 0%,rgba(245,171,102,1) 47%,rgba(239,141,49,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(249,191,137,1) 0%,rgba(245,171,102,1) 47%,rgba(239,141,49,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9bf89', endColorstr='#ef8d31',GradientType=0 ); /* IE6-9 */
+
 }
