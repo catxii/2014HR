@@ -2056,7 +2056,7 @@ ul.expmenu li ul li:not(.selected):active{
 .menu-menu ol a {
 				font-size: 12px;
 				display: block;
-				line-height: 2.5em;
+				line-height: 2em;
 				padding: 0 0 0 43px;
 				transition: all 0.25s ease 0s;
 			}
