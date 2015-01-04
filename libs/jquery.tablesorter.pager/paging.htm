@@ -1,0 +1,114 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <title>Paging</title>
+    <!-- <link href="paging_files/Site.css" rel="stylesheet" type="text/css"></head> -->
+<body>
+            <script type="text/javascript" language="javascript" src="paging_files/jquery.js"></script>
+            <script type="text/javascript" language="javascript" src="paging_files/jquery.table.js"></script>
+
+
+            <table id="myTable" border="0">
+                <thead>
+                    <tr>
+                        <th class="js-OrderByName">Name</th>
+                        <th class="js-OrderByCode">Code</th>
+                        <th class="js-OrderByOrder">Order</th>
+                        <th class="js-OrderByCreated">Created</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="display: table-row;" class="tr_8">
+                        <td class="js-Name">TestWeekDayName</td>
+                        <td class="js-Code">TESTWEEKDAY</td>
+                        <td class="js-Order">4</td>
+                        <td class="js-Created">2010/1/12</td>
+                    </tr>
+                    <tr style="display: table-row;" class="tr_19">
+                        <td class="js-Name">Monday</td>
+                        <td class="js-Code">MON</td>
+                        <td class="js-Order">7</td>
+                        <td class="js-Created">2010/3/12</td>
+                    </tr>
+                    <tr style="display: table-row;" class="tr_6">
+                        <td class="js-Name">SATURDAY</td>
+                        <td class="js-Code">SATURDAY</td>
+                        <td class="js-Order">1</td>
+                        <td class="js-Created">2010/11/1</td>
+                    </tr>
+                    <tr style="display: table-row;" class="tr_4">
+                        <td class="js-Name">THURSDAY</td>
+                        <td class="js-Code">THURSDAY</td>
+                        <td class="js-Order">2</td>
+                        <td class="js-Created">2010/11/1</td>
+                    </tr>
+                    <tr style="display: table-row;" class="tr_55">
+                        <td class="js-Name">zhf test wd</td>
+                        <td class="js-Code">WD</td>
+                        <td class="js-Order">32</td>
+                        <td class="js-Created">2010/11/5</td>
+                    </tr>
+                    <tr style="display: none;" class="tr_1">
+                        <td class="js-Name">Wednesday</td>
+                        <td class="js-Code">WED</td>
+                        <td class="js-Order">3</td>
+                        <td class="js-Created">2010/11/12</td>
+                    </tr>
+                    <tr style="display: none;" class="tr_5">
+                        <td class="js-Name">FRIDAY</td>
+                        <td class="js-Code">FRIDAY</td>
+                        <td class="js-Order">4</td>
+                        <td class="js-Created">2010/11/15</td>
+                    </tr>
+                    <tr style="display: none;" class="tr_3">
+                        <td class="js-Name">周二</td>
+                        <td class="js-Code">ZHOUER</td>
+                        <td class="js-Order">9</td>
+                        <td class="js-Created">2010/11/23</td>
+                    </tr>
+                    <tr style="display: none;" class="tr_7">
+                        <td class="js-Name">SUNDAY</td>
+                        <td class="js-Code">SUNDAY</td>
+                        <td class="js-Order">6</td>
+                        <td class="js-Created">2010/11/26</td>
+                    </tr>
+                    <tr style="display: none;" class="tr_53">
+                        <td class="js-Name">周一</td>
+                        <td class="js-Code">ABCA</td>
+                        <td class="js-Order">6</td>
+                        <td class="js-Created">2010/11/30</td>
+                    </tr>
+                    <tr style="display: none;" class="tr_2">
+                        <td class="js-Name">TUESDAY</td>
+                        <td class="js-Code">TUESDAY</td>
+                        <td class="js-Order">5</td>
+                        <td class="js-Created">2010/12/12</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div id="myTablePaging" class="search-for">
+                <p class="paging">
+                    <a id="prePage" tableid="myTable" pageindex="-1" href="#">previous</a>
+                    | 1/3 |
+                    <a id="nextPage" tableid="myTable" pageindex="1" href="#">next</a>
+                </p>
+            </div>
+            <script language="javascript" type="text/javascript">
+        $("#myTable").tablePaging({ pageSize: 5, sorting: true, sortSelector: ".js-Order", sortType: "number" });
+        $(".js-OrderByName").click(function () {
+            $("#myTable").tablePaging({ pageSize: 5, sorting: true, sortSelector: ".js-Name", sortType: "string" });
+        });
+        $(".js-OrderByCode").click(function () {
+            $("#myTable").tablePaging({ pageSize: 5, sorting: true, sortSelector: ".js-Code", sortType: "string" });
+        });
+        $(".js-OrderByOrder").click(function () {
+            $("#myTable").tablePaging({ pageSize: 5, sorting: true, sortSelector: ".js-Order", sortType: "number" });
+        });
+        $(".js-OrderByCreated").click(function () {
+            $("#myTable").tablePaging({ pageSize: 5, sorting: true, sortSelector: ".js-Created", sortType: "date" });
+        });
+    </script>
+</body>
+</html>
