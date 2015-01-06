@@ -133,3 +133,7 @@ function parseDate(date) {
 function convertDateFormat(value) {
     return value = value.toString().replace(/\-/g, '/').replace(/\./g, '/').replace(/\s/g, '/');
 }
+
+$(".table-px-header th").click(function(){
+    $(this).find("a").siblings("i").addClass("active").parent().siblings("th").find("i").removeClass("active");
+});

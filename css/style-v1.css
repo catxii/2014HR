@@ -2682,3 +2682,11 @@ input[type="checkbox"] {
 .ZebraDialogOverlay {
   z-index: 1010!important;
 }
+.table-px-header i {
+  font-size: 12px;
+  vertical-align: middle;
+  color: #ececec;
+}
+.table-px-header i.active {
+  color: green;
+}
