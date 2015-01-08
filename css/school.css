@@ -902,6 +902,7 @@ body.mscf-bg {
 body.nndt-bg {
   background-image: url(../img/theme-img/public/nndt.jpg );
   background-color: #e2e2e2;
+  background-position: center 0;
 }
 body.qccf-bg {
   background-image: url(../img/theme-img/public/qccf.jpg );
