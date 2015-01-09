@@ -2241,7 +2241,7 @@ font-weight: 900;
 
 .nav-bar-new{ }
 .nav-bar-new-list{  word-spacing:-5px;}
-.nav-bar-new-list > li{ line-height:60px; /*background:#e1e1e1;*/ margin-right:0px!important; padding:0; border-bottom:3px solid #0cb353;  font-size:14px; }
+.nav-bar-new-list > li{ line-height:52px; /*background:#e1e1e1;*/ margin-right:0px!important; padding:0; border-bottom:3px solid #0cb353;  font-size:14px; }
 .nav-bar-new-list > li > a{color:#3C3C3C; text-decoration:none; font-size:13px; font-weight:500; display:block; padding:0 26px;font-family: "新宋体";}
 .second-nav-bar-bottom li .sub li {
     margin: 0px;
