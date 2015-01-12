@@ -466,3 +466,104 @@ function changeTab(tabbutton,tabpanel){
 }
 
 
+// 表情替换
+
+  $(".black:contains('😁')").each(function(){
+    var str = $(this).text();
+    $(this).text(str.replace(/😁/g,"[呲笑]"));
+  });
+  $(".black:contains('😘')").each(function(){
+    var str = $(this).text();
+    $(this).text(str.replace(/😘/g,"[献吻]"));
+  });
+  $(".black:contains('😚')").each(function(){
+    var str = $(this).text();
+    $(this).text(str.replace(/😚/g,"[亲吻]"));
+  });
+  $(".black:contains('😜')").each(function(){
+    var str = $(this).text();
+    $(this).text(str.replace(/😜/g,"[鬼脸]"));
+  });
+  $(".black:contains('😝')").each(function(){
+    var str = $(this).text();
+    $(this).text(str.replace(/😝/g,"[大笑]"));
+  });
+  $(".black:contains('😂')").each(function(){
+    var str = $(this).text();
+    $(this).text(str.replace(/😂/g,"[哭笑不得]"));
+  });
+  $(".black:contains('😃')").each(function(){
+    var str = $(this).text();
+    $(this).text(str.replace(/😃/g,"[笑脸]"));
+  });
+  $(".black:contains('😄')").each(function(){
+    var str = $(this).text();
+    $(this).text(str.replace(/😄/g,"[笑脸]"));
+  });
+  $(".black:contains('😉')").each(function(){
+    var str = $(this).text();
+    $(this).text(str.replace(/😉/g,"[眨眼]"));
+  });
+  $(".black:contains('😊')").each(function(){
+    var str = $(this).text();
+    $(this).text(str.replace(/😊/g,"[微笑]"));
+  });
+  $(".black:contains('😌')").each(function(){
+    var str = $(this).text();
+    $(this).text(str.replace(/😌/g,"[小憩]"));
+  });
+  $(".black:contains('😍')").each(function(){
+    var str = $(this).text();
+    $(this).text(str.replace(/😍/g,"[色眯眯]"));
+  });
+  $(".black:contains('😏')").each(function(){
+    var str = $(this).text();
+    $(this).text(str.replace(/😏/g,"[诈笑]"));
+  });
+  $(".black:contains('😒')").each(function(){
+    var str = $(this).text();
+    $(this).text(str.replace(/😒/g,"[不高兴]"));
+  });
+  $(".black:contains('😓')").each(function(){
+    var str = $(this).text();
+    $(this).text(str.replace(/😓/g,"[汗]"));
+  });
+  $(".black:contains('😔')").each(function(){
+    var str = $(this).text();
+    $(this).text(str.replace(/😔/g,"[难过]"));
+  });
+  $(".black:contains('😖')").each(function(){
+    var str = $(this).text();
+    $(this).text(str.replace(/😖/g,"[痛苦]"));
+  });
+  $(".black:contains('😞')").each(function(){
+    var str = $(this).text();
+    $(this).text(str.replace(/😞/g,"[失望]"));
+  });
+  $(".black:contains('😠')").each(function(){
+    var str = $(this).text();
+    $(this).text(str.replace(/😠/g,"[生气]"));
+  });
+  $(".black:contains('😡')").each(function(){
+    var str = $(this).text();
+    $(this).text(str.replace(/😡/g,"[愤怒]"));
+  });
+  $(".black:contains('😢')").each(function(){
+    var str = $(this).text();
+    $(this).text(str.replace(/😢/g,"[流泪]"));
+  });
+  $(".black:contains('😣')").each(function(){
+    var str = $(this).text();
+    $(this).text(str.replace(/😣/g,"[痛苦]"));
+  });
+  $(".black:contains('😥')").each(function(){
+    var str = $(this).text();
+    $(this).text(str.replace(/😥/g,"[汗]"));
+  });
+  $(".black:contains('😨')").each(function(){
+    var str = $(this).text();
+    $(this).text(str.replace(/😨/g,"[惊悚]"));
+  });
+  
+
+
