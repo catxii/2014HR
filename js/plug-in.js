@@ -466,104 +466,103 @@ function changeTab(tabbutton,tabpanel){
 }
 
 
+
 // 表情替换
-
-  $(".black:contains('😁')").each(function(){
+function showFace() {
+  $(".face-black:contains('😁')").each(function(){
     var str = $(this).text();
-    $(this).text(str.replace(/😁/g,"[呲笑]"));
+    $(this).html(str.replace(/😁/g,"<i class='emoji-ico emoji-2'></i>"));
   });
-  $(".black:contains('😘')").each(function(){
+  $(".face-black:contains('😘')").each(function(){
     var str = $(this).text();
-    $(this).text(str.replace(/😘/g,"[献吻]"));
+    $(this).html(str.replace(/😘/g,"<i class='emoji-ico emoji-10'></i>"));
   });
-  $(".black:contains('😚')").each(function(){
+  $(".face-black:contains('😚')").each(function(){
     var str = $(this).text();
-    $(this).text(str.replace(/😚/g,"[亲吻]"));
+    $(this).html(str.replace(/😚/g,"<i class='emoji-ico emoji-10'></i>"));
   });
-  $(".black:contains('😜')").each(function(){
+  $(".face-black:contains('😜')").each(function(){
     var str = $(this).text();
-    $(this).text(str.replace(/😜/g,"[鬼脸]"));
+    $(this).html(str.replace(/😜/g,"<i class='emoji-ico emoji-8'></i>"));
   });
-  $(".black:contains('😝')").each(function(){
+  $(".face-black:contains('😝')").each(function(){
     var str = $(this).text();
-    $(this).text(str.replace(/😝/g,"[大笑]"));
+    $(this).html(str.replace(/😝/g,"<i class='emoji-ico emoji-8'></i>"));
   });
-  $(".black:contains('😂')").each(function(){
+  $(".face-black:contains('😂')").each(function(){
     var str = $(this).text();
-    $(this).text(str.replace(/😂/g,"[哭笑不得]"));
+    $(this).html(str.replace(/😂/g,"<i class='emoji-ico emoji-6'></i>"));
   });
-  $(".black:contains('😃')").each(function(){
+  $(".face-black:contains('😃')").each(function(){
     var str = $(this).text();
-    $(this).text(str.replace(/😃/g,"[笑脸]"));
+    $(this).html(str.replace(/😃/g,"<i class='emoji-ico emoji-1'></i>"));
   });
-  $(".black:contains('😄')").each(function(){
+  $(".face-black:contains('😄')").each(function(){
     var str = $(this).text();
-    $(this).text(str.replace(/😄/g,"[笑脸]"));
+    $(this).html(str.replace(/😄/g,"<i class='emoji-ico emoji-1'></i>"));
   });
-  $(".black:contains('😉')").each(function(){
+  $(".face-black:contains('😉')").each(function(){
     var str = $(this).text();
-    $(this).text(str.replace(/😉/g,"[眨眼]"));
+    $(this).html(str.replace(/😉/g,"<i class='emoji-ico emoji-4'></i>"));
   });
-  $(".black:contains('😊')").each(function(){
+  $(".face-black:contains('😊')").each(function(){
     var str = $(this).text();
-    $(this).text(str.replace(/😊/g,"[微笑]"));
+    $(this).html(str.replace(/😊/g,"<i class='emoji-ico emoji-1'></i>"));
   });
-  $(".black:contains('😌')").each(function(){
+  $(".face-black:contains('😌')").each(function(){
     var str = $(this).text();
-    $(this).text(str.replace(/😌/g,"[小憩]"));
+    $(this).html(str.replace(/😌/g,"<i class='emoji-ico emoji-5'></i>"));
   });
-  $(".black:contains('😍')").each(function(){
+  $(".face-black:contains('😍')").each(function(){
     var str = $(this).text();
-    $(this).text(str.replace(/😍/g,"[色眯眯]"));
+    $(this).html(str.replace(/😍/g,"<i class='emoji-ico emoji-7'></i>"));
   });
-  $(".black:contains('😏')").each(function(){
+  $(".face-black:contains('😏')").each(function(){
     var str = $(this).text();
-    $(this).text(str.replace(/😏/g,"[诈笑]"));
+    $(this).html(str.replace(/😏/g,"<i class='emoji-ico emoji-4'></i>"));
   });
-  $(".black:contains('😒')").each(function(){
+  $(".face-black:contains('😒')").each(function(){
     var str = $(this).text();
-    $(this).text(str.replace(/😒/g,"[不高兴]"));
+    $(this).html(str.replace(/😒/g,"<i class='emoji-ico emoji-15'></i>"));
   });
-  $(".black:contains('😓')").each(function(){
+  $(".face-black:contains('😓')").each(function(){
     var str = $(this).text();
-    $(this).text(str.replace(/😓/g,"[汗]"));
+    $(this).html(str.replace(/😓/g,"<i class='emoji-ico emoji-13'></i>"));
   });
-  $(".black:contains('😔')").each(function(){
+  $(".face-black:contains('😔')").each(function(){
     var str = $(this).text();
-    $(this).text(str.replace(/😔/g,"[难过]"));
+    $(this).html(str.replace(/😔/g,"<i class='emoji-ico emoji-15'></i>"));
   });
-  $(".black:contains('😖')").each(function(){
+  $(".face-black:contains('😖')").each(function(){
     var str = $(this).text();
-    $(this).text(str.replace(/😖/g,"[痛苦]"));
+    $(this).html(str.replace(/😖/g,"<i class='emoji-ico emoji-14'></i>"));
   });
-  $(".black:contains('😞')").each(function(){
+  $(".face-black:contains('😞')").each(function(){
     var str = $(this).text();
-    $(this).text(str.replace(/😞/g,"[失望]"));
+    $(this).html(str.replace(/😞/g,"<i class='emoji-ico emoji-15'></i>"));
   });
-  $(".black:contains('😠')").each(function(){
+  $(".face-black:contains('😠')").each(function(){
     var str = $(this).text();
-    $(this).text(str.replace(/😠/g,"[生气]"));
+    $(this).html(str.replace(/😠/g,"<i class='emoji-ico emoji-16'></i>"));
   });
-  $(".black:contains('😡')").each(function(){
+  $(".face-black:contains('😡')").each(function(){
     var str = $(this).text();
-    $(this).text(str.replace(/😡/g,"[愤怒]"));
+    $(this).html(str.replace(/😡/g,"<i class='emoji-ico emoji-16'></i>"));
   });
-  $(".black:contains('😢')").each(function(){
+  $(".face-black:contains('😢')").each(function(){
     var str = $(this).text();
-    $(this).text(str.replace(/😢/g,"[流泪]"));
+    $(this).html(str.replace(/😢/g,"<i class='emoji-ico emoji-17'></i>"));
   });
-  $(".black:contains('😣')").each(function(){
+  $(".face-black:contains('😣')").each(function(){
     var str = $(this).text();
-    $(this).text(str.replace(/😣/g,"[痛苦]"));
+    $(this).html(str.replace(/😣/g,"<i class='emoji-ico emoji-14'></i>"));
   });
-  $(".black:contains('😥')").each(function(){
+  $(".face-black:contains('😥')").each(function(){
     var str = $(this).text();
-    $(this).text(str.replace(/😥/g,"[汗]"));
+    $(this).html(str.replace(/😥/g,"<i class='emoji-ico emoji-17'></i>"));
   });
-  $(".black:contains('😨')").each(function(){
+  $(".face-black:contains('😨')").each(function(){
     var str = $(this).text();
-    $(this).text(str.replace(/😨/g,"[惊悚]"));
+    $(this).html(str.replace(/😨/g,"<i class='emoji-ico emoji-20'></i>"));
   });
-  
-
-
+}
