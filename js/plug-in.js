@@ -377,7 +377,7 @@ $(function(){
 	
 }
 
-    $(document).ready(function(){
+
 	
 	/*手风琴*/
 	var Accordion = function(el, multiple) {
@@ -388,7 +388,7 @@ $(function(){
 					var links = this.el.find('.link-menu');
 					// Evento
 					links.on('click', {el: this.el, multiple: this.multiple}, this.dropdown)
-				}
+				};
 			
 				Accordion.prototype.dropdown = function(e) {
 					var $el = e.data.el;
@@ -401,10 +401,10 @@ $(function(){
 					if (!e.data.multiple) {
 						$el.find('.submenu').not($next).slideUp().parent().removeClass('open');
 					};
-				}	
-			
+				};
+		$(document).ready(function(){			
 				var accordion = new Accordion($('#accordion'), false);
-});
+		});
     /*高度自适应*/
     function autoHeight(){
 	if (window.innerHeight){//FF
