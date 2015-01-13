@@ -1370,6 +1370,7 @@ margin-bottom: 3px !important;
 .bureau-data-body .carousel .carousel-indicators > li{
 	background: none repeat scroll 0% 0% rgba(53, 53, 53, 0.36);
 	border: none !important;
+	margin: 0 3px;
 }
 .bureau-data-body .carousel .carousel-indicators > li.active{
 	background: #4C9ED9;
@@ -2979,7 +2980,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7400', end
 }
 .school-resources-tui > li{background:#fff;/*box-shadow:0px 0px 4px rgba(0, 0, 0, 0.09) inset;*/}
 
-.school-resources-tui > li dl{}
+.school-resources-tui > li dl{font-size: 12px !important;
+font-family: "宋体";}
 .school-resources-tui > li dt{margin-bottom:5px !important;font-weight: 200 !important;color: #ccc;font-size: 12px;}
 .school-resources-tui > li dt a{font-weight: bold !important;margin-right: 5px;font-size: 15px;}
 .school-resources-tui > li dt b.b-bg{
@@ -3887,7 +3889,7 @@ background-color: gray;
 
 .suckerdiv dl.has-sub > dt,.suckerdiv dl.has-sub > dd{float: left;}
 .suckerdiv .spec-dt{
-	font-size: 14px;
+	font-size: 12px;
 	color: #f90;
 	font-weight: bold !important;
 	margin-right: 10px;

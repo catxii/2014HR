@@ -1213,7 +1213,7 @@ box-shadow: 0px 2px 0px rgba(197, 197, 197, 0.3);
 .class-index-container .panel{
 	border-radius:2px; border:none; margin-bottom:10px;}
 .class-index-center .panel-class-photo,.class-index-left .panel-class-photo{
-	background-color:rgba(0,0,0,0.05); padding:5px;}
+	background-color: rgba(255, 255, 255, 0.22); padding:5px;}
 .class-index-center .panel-class-photo .panel-body{
 	background:#FFF;}
 .class-index-left .panel-class-Set{
@@ -2242,6 +2242,9 @@ font-weight: 900;
 .nav-bar-new{ }
 .nav-bar-new-list{  word-spacing:-5px;}
 .nav-bar-new-list > li{ line-height:52px; /*background:#e1e1e1;*/ margin-right:0px!important; padding:0; border-bottom:3px solid #0cb353;  font-size:14px; }
+.nav-bar-new-list > li.current{
+	background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.13);
+}
 .nav-bar-new-list > li > a{color:#3C3C3C; text-decoration:none; font-size:13px; font-weight:500; display:block; padding:0 26px;font-family: "新宋体";}
 .second-nav-bar-bottom li .sub li {
     margin: 0px;
@@ -2765,7 +2768,7 @@ background: -ms-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1)
 background: linear-gradient(to bottom,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
 
-color: #fff;
+color: #292929;
 border-bottom: 1px solid #FFF;
 }
 .ndividual > .col-md-9 marquee > a{
@@ -2864,7 +2867,6 @@ border-radius: 3px;
 .ndividual .class-zdy-dongtai{
 	
 padding: 12px 15px 0px;
-min-height: 75px;
 }
 .ndividual .class-zdy-dongtai .media{
 	padding: 10px;
@@ -2883,4 +2885,44 @@ height: 50px;
 .ndividual .bureau-loading{
 	box-shadow: 0px 2px 0px rgba(197, 197, 197, 0.16);
 border: 1px solid #ECECEC;
+}
+.function-body{
+	padding: 5px;
+}
+.function-body > .col-md-2{
+	padding: 5px;
+	width: 20%;
+}
+.function-ico{
+background-color: #EFEFEF;
+background-image: linear-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, 0.1));
+text-align: center;
+border: medium none;
+/*border-radius: 0.5em;*/
+box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.2) inset, 0px 2px 0px rgba(255, 255, 255, 0.1) inset, 0px 1.2em 0px rgba(255, 255, 255, 0.1) inset, 0px -0.2em 0px rgba(255, 255, 255, 0.1) inset, 0px -0.25em 0px rgba(0, 0, 0, 0.12) inset, 0px 0.25em 0.25em rgba(0, 0, 0, 0.05);
+color: #444;
+cursor: pointer;
+font-family: sans-serif;
+font-size: 1em;
+line-height: 1.5;
+position: relative;
+text-decoration: none;
+text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.25);
+vertical-align: middle;
+}
+.function-ico > .fa-briefcase{
+	color: rgb(76, 158, 217);
+	padding: 0 5px;
+}
+.function-ico > a{
+	color: #000;
+	padding:10px;
+	text-decoration: none;
+}
+.function-position{
+	line-height: 30px;
+background: #eee;
+border-bottom: 1px solid #ddd;
+padding: 0px 15px;
+text-align: right;
 }
