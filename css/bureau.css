@@ -1721,6 +1721,7 @@ border-left: 1px solid #379BE9;
 -moz-border-left-colors: none;
 border-image: none;
 border-bottom: 0px none !important;
+cursor: pointer;
 }
 .bureau-school-left-body .submenu{
 	background: #fff ;
@@ -3283,7 +3284,7 @@ float: right;
 	 }
 .bureau-datas-list-bottom > ul li div{display: inline-block;}
 .bureau-datas-list-bottom > ul li div.bureau-list-left{
-	width: 65%;
+	width: 60%;
 	float: left;
 }
 .bureau-datas-list-bottom > ul li div.bureau-list-left a{
@@ -3303,7 +3304,7 @@ margin: 0px 8px;
 }
 .bureau-datas-list-bottom > ul li div.bureau-list-right{
 	float: right;
-	width: 30%;
+	width: 39%;
 	line-height: 16px;
 	text-align: right;
 	color: #999;
