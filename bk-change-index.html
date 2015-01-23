@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>领信样式模板</title>
+    <style>
+.list-group-other.active, .list-group-other.active:hover, .list-group-other.active:focus{border-bottom:0px;}
+.navbar-nav > li > a{padding:8px 10px!important;}
+.navbar {min-height:36px!important;}
+  </style>
+    <!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+    <script type="text/JavaScript" src="space-css.js"></script>
+    <!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+
+</head>
+<body class="fixed-top-body" onselectstart="return false">
+
+    <div class="navbar navbar-zhijiao navbar-green navbar-fixed-top " style="height:36px; min-height:36px;">
+        <div class="container">
+            <div class="navbar-header">
+                <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a title="" data-original-title="" target="_blank" href="http://manage.linktrust-edu.com/linktrust/home/index" alt="领信logo">
+                    <span class="lx-logo"></span>
+                </a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+
+                    <li class="active" id="navigation-top-teacher-lsn">
+                        <a title="" data-original-title="" href="http://manage.linktrust-edu.com/linktrust/space/lsn/index">教学空间</a>
+                    </li>
+                    <li id="navigation-top-teacher-personal">
+                        <a title="" data-original-title="" href="http://manage.linktrust-edu.com/linktrust/space/index/index">个人空间</a>
+                    </li>
+
+                    <li id="navigation-top-school-class">
+                        <a title="" data-original-title="" href="http://manage.linktrust-edu.com/linktrust/space/class/index/main">班级空间</a>
+                    </li>
+                    <li id="navigation-top-school-space">
+                        <a title="" data-original-title="" href="http://manage.linktrust-edu.com/linktrust/others/school/index?schoolId=54179051a310cbc18d596ed9">学校空间</a>
+                    </li>
+
+                    <li id="navigation-top-school-xzhpt">
+                        <a title="" data-original-title="" href="http://manage.linktrust-edu.com/linktrust/space/school/index?schoolId=54179051a310cbc18d596ed9">校综合平台</a>
+                    </li>
+
+                    <li id="navigation-top-bureau-index">
+                        <a title="" data-original-title="" href="http://manage.linktrust-edu.com/linktrust/bureau/index?educode=414200">教育局空间</a>
+                    </li>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li>
+
+                        <a title="" data-original-title="" href="javascript:void(0)" data-toggle="dropdown" class="dropdown-toggle">
+                            前锋老师
+                                        
+                                            (
+                            <span class="user-role">测试学校管理员</span>
+                            <span class="caret"></span>
+                            )
+                        </a>
+
+                        <ul role="menu" class="dropdown-menu">
+
+                            <li>
+                                <a title="" data-original-title="" href="javascript:void(0)" onclick="doChangeRole('541954a935cc6dd2ddffcaf7', '测试学校管理员')">测试学校管理员</a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+                    <li>
+                        <a title="" data-original-title="" href="http://manage.linktrust-edu.com/linktrust/space/pm/index">
+                            <span class="icon-envelope" style="position:relative;">
+                                <span id="pmNotReadCount" class="red-round" style="display: none">0</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="dropdown">
+                        <a title="" data-original-title="" data-toggle="dropdown" class="dropdown-toggle" href="javascript:void(0)">
+                            <span class=" icon-cogwheel"></span>
+                            设置
+                            <span class="caret"></span>
+                        </a>
+                        <ul role="menu" class="dropdown-menu">
+
+                            <li>
+                                <a title="" data-original-title="" href="http://manage.linktrust-edu.com/linktrust/sys/site/login" target="_blank">后台管理</a>
+                            </li>
+                            <li class="divider"></li>
+
+                            <li>
+                                <a title="" data-original-title="" href="http://manage.linktrust-edu.com/linktrust/sys/user/setup/account">个人设置</a>
+                            </li>
+
+                            <li>
+                                <a title="" data-original-title="" href="http://manage.linktrust-edu.com/linktrust/space/dress/teacher/index">
+                                    个人空间装扮
+                                    <span class="red-bg">new</span>
+                                </a>
+                            </li>
+
+                            <li class="divider"></li>
+                            <li>
+                                <a title="" data-original-title="" href="http://manage.linktrust-edu.com/linktrust/sys/site/logout">退出</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <input id="navigation-top-menu" name="navigation-top-menu" value="navigation-top-teacher-lsn" type="hidden">
+
+    <div class="container-fluid banner-fluid-bg" style="background:#e1e1e1; border-bottom:1px solid #BEBEBE; margin-bottom:20px; margin-top: -15px;">
+        <div class="container nav-bar-new">
+            <ul class="inline-block-ul nav-bar-new-list clearfix text-center clear-margin second-nav-bar-bottom">
+                <li class="current">
+                    <a title="" data-original-title="" href="http://manage.linktrust-edu.com/linktrust/space/lsn/index"> <i class="nav-list-zy"></i>
+                        主页
+                    </a>
+                </li>
+                <li>
+                    <a title="" data-original-title="" href="http://manage.linktrust-edu.com/linktrust/resource/index"> <i class="nav-list-ggzy"></i>
+                        公共资源
+                    </a>
+                </li>
+                <li>
+                    <a title="" data-original-title="" href="http://manage.linktrust-edu.com/linktrust/space/school/resource/index">
+                        <i class="nav-list-xbzy"></i>
+                        校本资源
+                    </a>
+                </li>
+                <li>
+                    <a title="" data-original-title="" href="javascript:">
+                        <i class="nav-list-wdtk"></i>
+                        我的题库
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="sub">
+                        <li>
+                            <a title="" data-original-title="" href="http://manage.linktrust-edu.com/linktrust/space/personalxam/index">题库预览</a>
+                        </li>
+                        <li>
+                            <a title="" data-original-title="" href="http://manage.linktrust-edu.com/linktrust/space/xam/home">单题参考导入</a>
+                        </li>
+                        <li style="display:none">
+                            <a title="" data-original-title="" href="http://manage.linktrust-edu.com/linktrust/xam/exam-import.jsp">半自动导题</a>
+                        </li>
+                        <li>
+                            <a title="" data-original-title="" href="http://manage.linktrust-edu.com/linktrust/xam/exam-microsoft.jsp">半自动导题</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a title="" data-original-title="" href="http://manage.linktrust-edu.com/linktrust/space/schoolxam/index">
+                        <i class="nav-list-xbtk"></i>
+                        校本题库
+                    </a>
+                </li>
+                <li>
+                    <a title="" data-original-title="" href="http://manage.linktrust-edu.com/linktrust/space/xam/index">
+                        <i class="nav-list-ggtk"></i>
+                        公共题库
+                    </a>
+                </li>
+                <li>
+                    <a title="" data-original-title="" href="javascript:void(0)">
+                        <i class="nav-list-sjfx"></i>
+                        数据分析
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="sub">
+                        <li>
+                            <a title="" data-original-title="" href="http://manage.linktrust-edu.com/linktrust/space/homework/main">作业列表</a>
+                        </li>
+                        <li>
+                            <a title="" data-original-title="" href="http://manage.linktrust-edu.com/linktrust/space/onlinework/main">在线作业</a>
+                        </li>
+                        <li>
+                            <a title="" data-original-title="" href="http://manage.linktrust-edu.com/linktrust/space/blog/exam">随堂测验</a>
+                        </li>
+                        <li>
+                            <a title="" data-original-title="" href="http://manage.linktrust-edu.com/linktrust/space/lsn/push/reportIndex">资源推荐</a>
+                        </li>
+                        <li>
+                            <a title="" data-original-title="" href="http://manage.linktrust-edu.com/linktrust/space/lsn/list">备课列表</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid  chose-box-index">
+        <div class="col-xs-3" style="width:20%;">
+
+            <div class="panel panel-default">
+                <div class="panel-heading clear-padding">
+                    <div class="ico-position">
+                        <span class="ico-other"></span>
+                        我的资源
+                    </div>
+                    <div class="position-right-top" style="display: block">
+                        <a href="javascript:void(0)" class="btn btn-xs btn-primary"><span class=" glyphicon glyphicon-refresh" style="margin:0;"></span></a>
+                        <a title="" data-original-title="" class="btn btn-info btn-xs " href="http://manage.linktrust-edu.com/linktrust/space/lsn/catalog/manager">管理目录</a>
+                    </div>
+                </div>
+                <div class="panel-body clear-padding" style="max-height: 419px; overflow: auto;">
+
+                    <div class="collapse-lx rizhi-shu" style="margin-bottom: 3px;">
+                        <div class="list-group-tree small all-tree-ul-none showit sub-list-all-hover clear-border"></div>
+
+                        <!-- 我的文件夹 -->
+                        <div class="list-group  list-group-tree all-tree-ul-none clear-border clear-margin clear-padding  ng-scope" >
+
+                            <div href="javascript:" class="list-group-item tree-title-button active title-button psition-hidden list-group-other">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                我的文件夹
+                            </div>
+                            <ul collection="ctzcatalogs" class="tree-sub sub-list tree-sub-1 custul ng-isolate-scope">
+                                <!-- ngRepeat: member in collection --> </ul>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="col-xs-9 right-content-box" style="width:80%; overflow:hidden;min-height:250px;">
+            <div class="panel panel-other clear-border">
+                <div class="panel-body panel-syllabus clear-margin">
+                    <div class="panel-syllabus-content">
+                        <div class="syllabus-ico">
+                            <ul class="inline-block-ul inline-block-ul-mid">
+                                <li class="bk-table">
+                                <img src="img/syllabus-ico1.png" class="img-responsive" alt="Responsive image"></li>
+                                <li  class="bk-list">
+                                    <img src="img/beik-logo-list.png" class="img-responsive">
+                                </li>
+                                <li class="change-table-show"><a href="javascript:void(0)" class="btn btn-warning btn-sm"><span class="red-bg">new</span> 查看更新列表</a> </li>
+                                <li class="pull-right">
+                                    <img src="img/syllabus-ico2.png" class="img-responsive" alt="Responsive image"></li>
+                            </ul>
+                            <p class="text-space clear-margin">
+                                ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                            </p>
+                        </div>
+                        <table class="table table-syllabus table-striped" id="zhkb">
+                            <tbody>
+                                <tr class="title" style="border-bottom:1px solid #333;">
+                                    <td></td>
+                                    <td>星期一</td>
+                                    <td>星期二</td>
+                                    <td>星期三</td>
+                                    <td>星期四</td>
+                                    <td>星期五</td>
+                                    <td>星期六</td>
+                                    <td>星期日</td>
+                                </tr>
+                                <tr style="border-top: 1px dashed #159242;">
+                                    <td class="title" x="null" y="1">第1节课</td>
+                                    <td class="dropzone-km" x="2015-01-12 星期一" y="1"></td>
+                                    <td class="dropzone-km" x="2015-01-13 星期二" y="1"></td>
+                                    <td class="dropzone-km" x="2015-01-14 星期三" y="1"></td>
+                                    <td class="dropzone-km" x="2015-01-15 星期四" y="1"></td>
+                                    <td class="dropzone-km" x="2015-01-16 星期五" y="1"></td>
+                                    <td class="dropzone-km" x="2015-01-17 星期六" y="1"></td>
+                                    <td class="dropzone-km" x="2015-01-18 星期日" y="1"></td>
+                                </tr>
+                                <tr style="border-top: 1px dashed #159242;">
+                                    <td class="title" x="null" y="2">第2节课</td>
+                                    <td class="dropzone-km" x="2015-01-12 星期一" y="2"></td>
+                                    <td class="dropzone-km" x="2015-01-13 星期二" y="2"></td>
+                                    <td class="dropzone-km" x="2015-01-14 星期三" y="2"></td>
+                                    <td class="dropzone-km" x="2015-01-15 星期四" y="2"></td>
+                                    <td class="dropzone-km" x="2015-01-16 星期五" y="2"></td>
+                                    <td class="dropzone-km" x="2015-01-17 星期六" y="2"></td>
+                                    <td class="dropzone-km" x="2015-01-18 星期日" y="2"></td>
+                                </tr>
+                                <tr style="border-top: 1px dashed #159242;">
+                                    <td class="title" x="null" y="3">第3节课</td>
+                                    <td class="dropzone-km" x="2015-01-12 星期一" y="3"></td>
+                                    <td class="dropzone-km" x="2015-01-13 星期二" y="3"></td>
+                                    <td class="dropzone-km" x="2015-01-14 星期三" y="3"></td>
+                                    <td class="dropzone-km" x="2015-01-15 星期四" y="3"></td>
+                                    <td class="dropzone-km" x="2015-01-16 星期五" y="3"></td>
+                                    <td class="dropzone-km" x="2015-01-17 星期六" y="3"></td>
+                                    <td class="dropzone-km" x="2015-01-18 星期日" y="3"></td>
+                                </tr>
+                                <tr style="border-top: 1px dashed #159242;">
+                                    <td class="title" x="null" y="4">第4节课</td>
+                                    <td class="dropzone-km" x="2015-01-12 星期一" y="4"></td>
+                                    <td class="dropzone-km" x="2015-01-13 星期二" y="4"></td>
+                                    <td class="dropzone-km" x="2015-01-14 星期三" y="4"></td>
+                                    <td class="dropzone-km" x="2015-01-15 星期四" y="4"></td>
+                                    <td class="dropzone-km" x="2015-01-16 星期五" y="4"></td>
+                                    <td class="dropzone-km" x="2015-01-17 星期六" y="4"></td>
+                                    <td class="dropzone-km" x="2015-01-18 星期日" y="4"></td>
+                                </tr>
+                                <tr style="border-top: 1px dashed #159242;">
+                                    <td class="title" x="null" y="5">第5节课</td>
+                                    <td class="dropzone-km" x="2015-01-12 星期一" y="5"></td>
+                                    <td class="dropzone-km" x="2015-01-13 星期二" y="5"></td>
+                                    <td class="dropzone-km" x="2015-01-14 星期三" y="5"></td>
+                                    <td class="dropzone-km" x="2015-01-15 星期四" y="5"></td>
+                                    <td class="dropzone-km" x="2015-01-16 星期五" y="5"></td>
+                                    <td class="dropzone-km" x="2015-01-17 星期六" y="5"></td>
+                                    <td class="dropzone-km" x="2015-01-18 星期日" y="5"></td>
+                                </tr>
+                                <tr style="border-top: 1px dashed #159242;">
+                                    <td class="title" x="null" y="6">第6节课</td>
+                                    <td class="dropzone-km" x="2015-01-12 星期一" y="6"></td>
+                                    <td class="dropzone-km" x="2015-01-13 星期二" y="6"></td>
+                                    <td class="dropzone-km" x="2015-01-14 星期三" y="6"></td>
+                                    <td class="dropzone-km" x="2015-01-15 星期四" y="6"></td>
+                                    <td class="dropzone-km" x="2015-01-16 星期五" y="6"></td>
+                                    <td class="dropzone-km" x="2015-01-17 星期六" y="6"></td>
+                                    <td class="dropzone-km" x="2015-01-18 星期日" y="6"></td>
+                                </tr>
+                                <tr style="border-top: 1px dashed #159242;">
+                                    <td class="title" x="null" y="7">第7节课</td>
+                                    <td class="dropzone-km" x="2015-01-12 星期一" y="7"></td>
+                                    <td class="dropzone-km" x="2015-01-13 星期二" y="7"></td>
+                                    <td class="dropzone-km" x="2015-01-14 星期三" y="7"></td>
+                                    <td class="dropzone-km" x="2015-01-15 星期四" y="7"></td>
+                                    <td class="dropzone-km" x="2015-01-16 星期五" y="7"></td>
+                                    <td class="dropzone-km" x="2015-01-17 星期六" y="7"></td>
+                                    <td class="dropzone-km" x="2015-01-18 星期日" y="7"></td>
+                                </tr>
+                                <tr style="border-top: 1px dashed #159242;">
+                                    <td class="title" x="null" y="8">第8节课</td>
+                                    <td class="dropzone-km" x="2015-01-12 星期一" y="8"></td>
+                                    <td class="dropzone-km" x="2015-01-13 星期二" y="8"></td>
+                                    <td class="dropzone-km" x="2015-01-14 星期三" y="8"></td>
+                                    <td class="dropzone-km" x="2015-01-15 星期四" y="8"></td>
+                                    <td class="dropzone-km" x="2015-01-16 星期五" y="8"></td>
+                                    <td class="dropzone-km" x="2015-01-17 星期六" y="8"></td>
+                                    <td class="dropzone-km" x="2015-01-18 星期日" y="8"></td>
+                                </tr>
+                                <tr style="border-top: 1px dashed #159242;">
+                                    <td class="title" x="null" y="9">第9节课</td>
+                                    <td class="dropzone-km" x="2015-01-12 星期一" y="9"></td>
+                                    <td class="dropzone-km" x="2015-01-13 星期二" y="9"></td>
+                                    <td class="dropzone-km" x="2015-01-14 星期三" y="9"></td>
+                                    <td class="dropzone-km" x="2015-01-15 星期四" y="9"></td>
+                                    <td class="dropzone-km" x="2015-01-16 星期五" y="9"></td>
+                                    <td class="dropzone-km" x="2015-01-17 星期六" y="9"></td>
+                                    <td class="dropzone-km" x="2015-01-18 星期日" y="9"></td>
+                                </tr>
+                                <tr style="border-top: 1px dashed #159242;">
+                                    <td class="title" x="null" y="10">第10节课</td>
+                                    <td class="dropzone-km" x="2015-01-12 星期一" y="10"></td>
+                                    <td class="dropzone-km" x="2015-01-13 星期二" y="10"></td>
+                                    <td class="dropzone-km" x="2015-01-14 星期三" y="10"></td>
+                                    <td class="dropzone-km" x="2015-01-15 星期四" y="10"></td>
+                                    <td class="dropzone-km" x="2015-01-16 星期五" y="10"></td>
+                                    <td class="dropzone-km" x="2015-01-17 星期六" y="10"></td>
+                                    <td class="dropzone-km" x="2015-01-18 星期日" y="10"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="new-list-history">
+
+                            <ul class="inline-block-ul-mid list-unstyled chose-resource-list">
+                                <li><span>筛选：</span></li>
+                                <li><a class="active" href="javascript:void(0)">视频</a></li>
+                                <li><a href="javascript:void(0)">ppt</a></li>
+                                <li><a href="javascript:void(0)">word</a></li>
+                                <li><a href="javascript:void(0)">视频</a></li>
+                                <li><a href="javascript:void(0)">视频</a></li>
+                                <li><a href="javascript:void(0)">视频</a></li>
+                                <li><a href="javascript:void(0)">视频</a></li>
+                            </ul>
+                            <h4>今天的更新记录：</h4>
+                            <table class="table table-bk-list">
+                                <tr>
+                                    <td style="width:15%;">2014-10-10 12：30</td>
+                                    <td style="width:5%;"><a href="#">视频</a></td>
+                                    <td style="width:30%;">上传了 <a href="#">数学-圆率的计算</a></td>
+                                    <td style="width:50%;" class="green">初中 > 历史 > 岳麓版 > 八年级上 > 第一单元 列强的侵略与中国人民的抗争 </td>
+                                </tr>
+                                <tr>
+                                    <td>2014-10-10 12：30</td>
+                                    <td><a href="#">视频</a></td>
+                                    <td>上传了 <a href="#">数学-圆周率的计算</a></td>
+                                    <td class="green">初中 > 历史 > 岳麓版 > 八年级上 > 第一单元 列强的侵略与中国人民的抗争 </td>
+                                </tr>
+                                <tr>
+                                    <td>2014-10-10 12：30</td>
+                                    <td><a href="#">视频</a></td>
+                                    <td>上传了 <a href="#">数学-圆周率的计算</a></td>
+                                    <td class="green">初中 > 历史 > 岳麓版 > 八年级上 > 第一单元 列强的侵略与中国人民的抗争 </td>
+                                </tr>
+                                <tr>
+                                    <td>2014-10-10 12：30</td>
+                                    <td><a href="#">视频</a></td>
+                                    <td>上传了 <a href="#">数学-圆周率的计算</a></td>
+                                    <td class="green">初中 > 历史 > 岳麓版 > 八年级上 > 第一单元 列强的侵略与中国人民的抗争 </td>
+                                </tr>
+                                <tr>
+                                    <td>2014-10-10 12：30</td>
+                                    <td><a href="#">视频</a></td>
+                                    <td>上传了 <a href="#">数学-圆周率的计算</a></td>
+                                    <td class="green">初中 > 历史 > 岳麓版 > 八年级上 > 第一单元 列强的侵略与中国人民的抗争 </td>
+                                </tr>
+                                <tr>
+                                    <td>2014-10-10 12：30</td>
+                                    <td><a href="#">视频</a></td>
+                                    <td>上传了 <a href="#">数学-圆周率的计算</a></td>
+                                    <td class="green">初中 > 历史 > 岳麓版 > 八年级上 > 第一单元 列强的侵略与中国人民的抗争 </td>
+                                </tr>
+                                <tr>
+                                    <td>2014-10-10 12：30</td>
+                                    <td><a href="#">视频</a></td>
+                                    <td>上传了 <a href="#">数学-圆周率的计算</a></td>
+                                    <td class="green">初中 > 历史 > 岳麓版 > 八年级上 > 第一单元 列强的侵略与中国人民的抗争 </td>
+                                </tr>
+                            </table>
+
+                            <h4>最近的更新记录：</h4>
+                            <table class="table table-bk-list">
+                                <tr>
+                                    <td style="width:15%;">2014-10-10 12：30</td>
+                                    <td style="width:5%;"><a href="#">视频</a></td>
+                                    <td style="width:30%;">上传了 <a href="#">数学-圆周计算</a></td>
+                                    <td style="width:50%;" class="green">初中 > 历史 > 岳麓版 > 八年级上 > 第一单元 列强的侵略与中国人民的抗争 </td>
+                                </tr>
+                                <tr>
+                                    <td>2014-10-10 12：30</td>
+                                    <td><a href="#">ppt</a></td>
+                                    <td>上传了 <a href="#">数学-圆周率的计算</a></td>
+                                    <td class="green">初中 > 历史 > 岳麓版 > 八年级上 > 第一单元 列强的侵略与中国人民的抗争 </td>
+                                </tr>
+                                <tr>
+                                    <td>2014-10-10 12：30</td>
+                                    <td><a href="#">视频</a></td>
+                                    <td>上传了 <a href="#">数学-圆周率的计算</a></td>
+                                    <td class="green">初中 > 历史 > 岳麓版 > 八年级上 > 第一单元 列强的侵略与中国人民的抗争 </td>
+                                </tr>
+                                <tr>
+                                    <td>2014-10-10 12：30</td>
+                                    <td><a href="#">视频</a></td>
+                                    <td>上传了 <a href="#">数学-圆周计算</a></td>
+                                    <td class="green">初中 > 历史 > 岳麓版 > 八年级上 > 第一单元 列强的侵略与中国人民的抗争</td>
+                                </tr>
+                                <tr>
+                                    <td>2014-10-10 12：30</td>
+                                    <td><a href="#">word</a></td>
+                                    <td>上传了 <a href="#">数学-周率的计算</a></td>
+                                    <td class="green">初中 > 历史 > 岳麓版 > 八年级上 > 第一单元 列强的侵略与中国人民的抗争 </td>
+                                </tr>
+                                <tr>
+                                    <td>2014-10-10 12：30</td>
+                                    <td><a href="#">视频</a></td>
+                                    <td>上传了 <a href="#">数学-圆周率的计算</a></td>
+                                    <td class="green">初中 > 历史 > 岳麓版 > 八年级上 > 第一单元 列强的侵略与中国人民的抗争 </td>
+                                </tr>
+                                <tr>
+                                    <td>2014-10-10 12：30</td>
+                                    <td><a href="#">视频</a></td>
+                                    <td>上传了 <a href="#">数学-圆周率计算</a></td>
+                                    <td class="green">初中 > 历史 > 岳麓版 > 八年级上 > 第一单元 列强的侵略与中国人民的抗争</td>
+                                </tr>
+                                <tr>
+                                    <td>2014-10-10 12：30</td>
+                                    <td><a href="#">swf</a></td>
+                                    <td>上传了 <a href="#">数学-圆周率的计算</a></td>
+                                    <td class="green">初中 > 历史 > 岳麓版 > 八年级上 > 第一单元 列强的侵略与中国人民的抗争 </td>
+                                </tr>
+                                <tr>
+                                    <td>2014-10-10 12：30</td>
+                                    <td><a href="#">视频</a></td>
+                                    <td>上传了 <a href="#">数学-圆周率的计算</a></td>
+                                    <td class="green">初中 > 历史 > 岳麓版 > 八年级上 > 第一单元 列强的侵略与中国人民的抗争 </td>
+                                </tr>
+                                <tr>
+                                    <td>2014-10-10 12：30</td>
+                                    <td><a href="#">视频</a></td>
+                                    <td>上传了 <a href="#">英语-what your name?</a></td>
+                                    <td class="green">初中 > 历史 > 岳麓版 > 八年级上 > 第一单元 列强的侵略与中国人民的抗争</td>
+                                </tr>
+                                <tr>
+                                    <td>2014-10-10 12：30</td>
+                                    <td><a href="#">ppt</a></td>
+                                    <td>上传了 <a href="#">数学-圆周率的计算</a></td>
+                                    <td class="green">初中 > 历史 > 岳麓版 > 八年级上 > 第一单元 列强的侵略与中国人民的抗争 </td>
+                                </tr>
+                                <tr>
+                                    <td>2014-10-10 12：30</td>
+                                    <td><a href="#">视频</a></td>
+                                    <td>上传了 <a href="#">数学-圆周率的计算</a></td>
+                                    <td class="green">初中 > 历史 > 岳麓版 > 八年级上 > 第一单元 列强的侵略与中国人民的抗争 </td>
+                                </tr>
+                                <tr>
+                                    <td>2014-10-10 12：30</td>
+                                    <td><a href="#">视频</a></td>
+                                    <td>上传了 <a href="#">数学-圆周率的计算</a></td>
+                                    <td class="green">初中 > 历史 > 岳麓版 > 八年级上 > 第一单元 列强的侵略与中国人民的抗争</td>
+                                </tr>
+                            </table>
+                            <div class="btn-center">
+                                <a href="javascript:void(0)" class="btn btn-primary btn-sm">+ 加载更多记录</a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!--***** “space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+    <script type="text/JavaScript" src="space-footer-css.js"></script>
+    <!--***** “space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+    <script type="text/javascript">
+    $(function(){
+        $(".change-table-show").click(function(){
+            var bkNew = $(this).html();
+            if ( $(".panel-syllabus-content").hasClass("show")  ) {
+                $(".panel-syllabus-content").removeClass("show");
+                $(this).find("a").text("查看更新列表");
+            }else{
+                $(".panel-syllabus-content").addClass("show");
+                $(this).find("a").text("返回智慧课表");
+            }
+        });
+        $(".chose-resource-list li a").click(function(){
+            $(this).addClass("active").parent().siblings("li").find("a").removeClass("active");
+        });
+    });
+    </script>
+    
+</body>
+</html>

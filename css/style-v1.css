@@ -1959,6 +1959,19 @@ fieldset[disabled] .btn-primary.active {
 .global-zeroclipboard-container {
   display: none;
 }
+.zj-group {
+  text-align: center;
+}
+.zj-group img {
+  display: inline-block;
+  margin-top: 10px;
+}
+.class-index-container .panel {
+  text-align: center;
+}
+.class-index-container .panel img {
+  margin-top: 15px;
+}
 .edit-area {
   margin: 10px 0;
   position: relative;
@@ -2689,4 +2702,57 @@ input[type="checkbox"] {
 }
 .table-px-header i.active {
   color: green;
+}
+.new-list-history {
+  display: none;
+  color: #efefef;
+  padding: 10px 20px;
+}
+.new-list-history .table-bk-list {
+  font-size: 12px;
+}
+.new-list-history .table-bk-list .green {
+  color: #82ed71;
+}
+.new-list-history .table-bk-list a {
+  color: #32cbfd;
+}
+.new-list-history h4 {
+  color: #00441f;
+  font-size: 15px;
+  text-shadow: 1px 1px 0 #529c75;
+}
+.chose-resource-list {
+  background: #8ebd8d;
+  border-radius: 10px;
+  color: #000;
+  padding: 5px 10px;
+}
+.chose-resource-list li {
+  margin-left: 10px;
+}
+.chose-resource-list li a {
+  border-radius: 11px;
+  display: block;
+  padding: 2px 10px;
+  outline: none;
+}
+.chose-resource-list li a.active {
+  background: #e38d13;
+  color: white;
+}
+.panel-syllabus-content .bk-list {
+  display: none;
+}
+.panel-syllabus-content.show .bk-list {
+  display: inline-block;
+}
+.panel-syllabus-content.show .bk-table {
+  display: none;
+}
+.panel-syllabus-content.show .table-syllabus {
+  display: none;
+}
+.panel-syllabus-content.show .new-list-history {
+  display: block;
 }
