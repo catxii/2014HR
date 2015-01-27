@@ -38,3 +38,13 @@
 #resRank{ overflow:hidden;height:245px;background:#f4f4f4;}
 
 
+
+/*期刊*/
+.graytab{text-align: center;}
+.graytab thead tr{ background-color: #F9F9F9;}
+.up-progress{  border:#ccc solid 1px;  border-radius:5px; padding: 10px 10px 0px 10px;}
+
+
+/*友情链接*/
+.notice-old .list-group-item{  border-left: 0px; border-right: 0px;}
+
