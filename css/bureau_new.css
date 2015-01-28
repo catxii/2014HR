@@ -1007,12 +1007,12 @@ color: #333;
 	float: left;
 }
 .bureau-famous-ico{
-	background: url(../img/lx-plate-ico.png) no-repeat scroll -283px 0px transparent;
-	display: block;
-	width: 30px;
-	height: 30px;
-	margin-right: 8px;
-	float: left;
+	background: url("../img/lx-plate-ico.png") no-repeat scroll -216px 0px transparent;
+display: block;
+width: 27px;
+height: 30px;
+margin-right: 8px;
+float: left;
 	
 }
 .bureau-famous-body{
@@ -4185,7 +4185,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.06);
 	width: 12.5%;
 	text-align: center;
 }
-.bureau-new-navbar .navbar-nav > li > a{padding: 10px;}
+.bureau-new-navbar .navbar-nav > li > a{padding: 10px;font-size: 12px;}
 /*装扮自定义*/
 .bureau-new-modify{
 	margin-top: 15px;
@@ -4244,7 +4244,7 @@ border-bottom: 1px solid #fff;
 .bureau-modify-left > div > h4 > i,.bureau-modify-center > div > h4 > i,.bureau-modify-right > div > h4 > i{
 font-family: "微软雅黑";
 float: left;
-padding: 6px 10px;
+padding: 5px 10px;
 font-style: normal;
 line-height: 29px;
 color: #333;
@@ -4269,8 +4269,94 @@ font-size: 16px;
 line-height: 18px;
 text-shadow: 0px 1px 1px rgba(51, 51, 51, 0.5);
 }
-
-
+.bureau-tzgg-ico{
+	background: url("../img/lx-plate-ico.png") no-repeat scroll -354px 0px transparent;
+display: block;
+width: 28px;
+height: 30px;
+margin-right: 8px;
+float: left;
+}
+.bureau-jyyy-ico{
+	background: url("../img/lx-plate-ico.png") no-repeat scroll -318px 0px transparent;
+display: block;
+width: 25px;
+height: 30px;
+margin-right: 8px;
+float: left;
+}
+.bureau-zyzq-ico{
+	background: url("../img/lx-plate-ico.png") no-repeat scroll -41px 0px transparent;
+display: block;
+width: 25px;
+height: 30px;
+margin-right: 8px;
+float: left;
+}
+.bureau-jyxw-ico{
+	background: url("../img/lx-plate-ico.png") no-repeat scroll -530px 0px transparent;
+display: block;
+width: 22px;
+height: 30px;
+margin-right: 8px;
+float: left;
+}
+.bureau-tplj-ico{
+	background: url("../img/lx-plate-ico.png") no-repeat scroll -491px 0px transparent;
+display: block;
+width: 25px;
+height: 30px;
+margin-right: 8px;
+float: left;
+}
+.bureau-qyjl-ico{
+	background: url("../img/lx-plate-ico.png") no-repeat scroll -73px 0px transparent;
+display: block;
+width: 24px;
+height: 30px;
+margin-right: 8px;
+float: left;
+}
+.bureau-jyjks-ico{
+	background: url("../img/lx-plate-ico.png") no-repeat scroll -152px 0px transparent;
+display: block;
+width: 25px;
+height: 30px;
+margin-right: 8px;
+float: left;
+}
+.bureau-rzlb-ico{
+	background: url("../img/lx-plate-ico.png") no-repeat scroll -565px 0px transparent;
+display: block;
+width: 30px;
+height: 30px;
+margin-right: 8px;
+float: left;
+}
+.bureau-wl-ico{
+	background: url("../img/lx-plate-ico.png") no-repeat scroll -417px 0px transparent;
+display: block;
+width: 25px;
+height: 30px;
+margin-right: 8px;
+float: left;
+}
+.bureau-sp-ico{
+	background: url("../img/lx-plate-ico.png") no-repeat scroll -457px 0px transparent;
+display: block;
+width: 25px;
+height: 30px;
+margin-right: 8px;
+float: left;
+}
+.bureau-html-ico{
+	background: url("../img/lx-plate-ico.png") no-repeat scroll -391px 0px transparent;
+display: block;
+width: 25px;
+height: 30px;
+margin-right: 8px;
+float: left;
+}
 /*通知公告*/
 .bureau-modify-zdy-tzgg .bureau-modify-zdy-body > ul > li{
 	padding: 6px 3px;
@@ -4291,7 +4377,7 @@ text-decoration: none;
 	font-size: 12px;
 vertical-align: middle;
 margin-right: 5px;
-padding: 10px;
+padding: 10px 5px;
 background: none repeat scroll 0% 0% #C2C2C2;
 color: #FFF;
 }
@@ -4381,6 +4467,10 @@ margin: 0px 3px;
     border-radius: 10px;
     box-shadow: 2px 2px 5px #D7D7D7;
 }
+.bureau-modify-zdy-jyyy .application img{
+	width: 64px;
+	height: 64px;
+}
 /*图片链接*/
 .bureau-modify-zdy-tplj .img-responsive{
 	width: 100%;
@@ -4430,7 +4520,7 @@ max-width: 737px;
 
 /*资源专区*/
 .bureau-modify-zdy-zyzq .tab-content ul.bureau-new-zy > li{
-	padding: 6px 3px;
+	padding: 6px;
 border-bottom: 1px dotted #CCC;
 }
 .bureau-modify-zdy-zyzq .tab-content ul.bureau-new-zy > li a{
@@ -4508,3 +4598,34 @@ margin-right: 6px;
     display: none;
     font-size: 12px !important;
 }
+.footer-grayline .row ul li{
+	padding: 0;
+	margin-right: 0;
+}
+
+/*
+自适应*/
+/*左*/
+.col-md-3.bureau-modify-left .col-md-6.bureau-modify-zdy-jyxw-left,
+.col-md-3.bureau-modify-left .col-md-6.bureau-modify-zdy-jyxw-right,
+.col-md-3.bureau-modify-left .bureau-modify-zdy-qyjl .bureau-news-list-bottom > ul > li.col-md-6
+{
+	width: 100%;
+}
+
+/*右*/
+.col-md-3.bureau-modify-right .col-md-6.bureau-modify-zdy-jyxw-left,
+.col-md-3.bureau-modify-right .col-md-6.bureau-modify-zdy-jyxw-right,
+.col-md-3.bureau-modify-right .bureau-modify-zdy-qyjl .bureau-news-list-bottom > ul > li.col-md-6
+{
+	width: 100%;
+}
+
+/*中*/
+.col-md-6.bureau-modify-center .bureau-modify-zdy-jyyy > .bureau-modify-zdy-body > .col-md-6{
+	width: 33%;
+}
+
+
+
+
