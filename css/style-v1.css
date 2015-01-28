@@ -1966,12 +1966,6 @@ fieldset[disabled] .btn-primary.active {
   display: inline-block;
   margin-top: 10px;
 }
-.class-index-container .panel {
-  text-align: center;
-}
-.class-index-container .panel img {
-  margin-top: 15px;
-}
 .edit-area {
   margin: 10px 0;
   position: relative;
@@ -2407,6 +2401,14 @@ slide {
   vertical-align: middle;
   width: 26px;
 }
+.mac-ico {
+  background: url("../img/android-icon.png") no-repeat;
+  display: inline-block;
+  height: 31px;
+  vertical-align: middle;
+  width: 26px;
+  background: url("../img/mac-icon.png") no-repeat;
+}
 .images-list li {
   margin: 10px 0;
 }
@@ -2755,4 +2757,11 @@ input[type="checkbox"] {
 }
 .panel-syllabus-content.show .new-list-history {
   display: block;
+}
+.resource-ul-info li {
+  display: inline-block;
+  background: #ff6300;
+  color: white;
+  border-radius: 5px;
+  padding: 0 3px;
 }
