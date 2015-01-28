@@ -1966,6 +1966,12 @@ fieldset[disabled] .btn-primary.active {
   display: inline-block;
   margin-top: 10px;
 }
+.class-index-container .panel {
+  text-align: center;
+}
+.class-index-container .panel img {
+  margin-top: 15px;
+}
 .edit-area {
   margin: 10px 0;
   position: relative;
@@ -2400,14 +2406,6 @@ slide {
   height: 31px;
   vertical-align: middle;
   width: 26px;
-}
-.mac-ico {
-  background: url("../img/android-icon.png") no-repeat;
-  display: inline-block;
-  height: 31px;
-  vertical-align: middle;
-  width: 26px;
-  background: url("../img/mac-icon.png") no-repeat;
 }
 .images-list li {
   margin: 10px 0;
