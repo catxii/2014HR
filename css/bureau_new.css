@@ -4599,7 +4599,7 @@ margin-right: 6px;
     font-size: 12px !important;
 }
 .footer-grayline .row ul li{
-	padding: 0;
+	padding: 0 4px;
 	margin-right: 0;
 }
 
