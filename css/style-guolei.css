@@ -39,12 +39,13 @@
 
 
 
-/*期刊*/
+/*教育局综合平台-静态资源管理-期刊、视频*/
 .graytab{text-align: center;}
 .graytab thead tr{ background-color: #F9F9F9;}
 .up-progress{  border:#ccc solid 1px;  border-radius:5px; padding: 10px 10px 0px 10px;}
+.basicModal{ font-family: "微软雅黑";}
+.basicModal .modal-title{ font-weight: bold; }
 
-
-/*友情链接*/
+/*教育局综合平台-友情链接*/
 .notice-old .list-group-item{  border-left: 0px; border-right: 0px;}
 

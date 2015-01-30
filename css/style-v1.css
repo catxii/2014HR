@@ -735,6 +735,12 @@ fieldset[disabled] .btn-primary.active {
 .ppt2-ico {
   background-position: -442px center;
 }
+.file-ico {
+  background-position: -168px center;
+}
+.jpg-ico {
+  background-position: -463px center;
+}
 .pagination {
   margin: 10px auto;
 }

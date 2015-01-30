@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="../../favicon.ico">
+
+		<title>领信样式模板</title>
+
+		<!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+		<script type="text/JavaScript" src="space-css.js"></script>
+		<!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+
+	</head>
+
+	<body class="bureau-ht-body">
+		<div class="navbar navbar-zhijiao navbar-bureau navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="#"><span class="lx-logo"></span></a>
+						</li>
+						<li>
+							<a href="#about">个人空间</a>
+						</li>
+						<li>
+							<a href="#contact">班级空间</a>
+						</li>
+						<li>
+							<a href="#contact">我的班级</a>
+						</li>
+					</ul>
+
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">登陆</a>
+						</li>
+
+						<li class="dropdown">
+							<a data-toggle="dropdown" class="dropdown-toggle" href="#"> 设置 <span class="caret"></span></a>
+							<ul role="menu" class="dropdown-menu">
+								<li><a href="#">Action</a>
+								</li>
+								<li><a href="#">Another action</a>
+								</li>
+								<li><a href="#">Something else here</a>
+								</li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+
+				</div>
+
+
+				<!--/.nav-collapse -->
+			</div>
+		</div>
+
+		<div class="container-fluid bureau-navlist">
+				<div class="col-md-12">
+					<div class="bureau-logo">
+						<img src="img/huaronglogo1.png">
+					</div>
+				</div>
+		</div>
+		<div class="container-fulid bureau-ht clear-padding">
+			<div class=" clear-padding col-md-2 bureau-left">
+				<!-- 分类 -->
+				<div class="panel-body" id="ididid">
+                    <div class="bureau-ht-title"></div>
+					<ul class="expmenu col-md-12 clear-padding clear-margin">
+						<li>
+							<ul class="menu-menu col-md-12 clear-padding" style="display:block;">
+								<li onClick="javascript:ShowMenu(this,0)"><a href="javascript:void(0)"><span class="fa fa-plus-square" style=""></span>静态资源管理</a>
+									<div class="san3">
+									</div>
+								</li>
+								<ol class="s2 ">
+									<a class="ol-active">栏目管理</a>
+									<a>期刊</a>
+									<a>视频</a>
+									<a>文件</a>
+								</ol>
+								
+								<li onClick="javascript:ShowMenu(this,1)"><a href="javascript:void(0)"><span class="fa fa-plus-square" style=""></span> 学校介绍</a>
+									<div class="san3">
+									</div>
+								</li>
+								<ol class="no ">
+									<a class="ol-active">陶瓷盆</a>
+									<a>拖布池拖布池</a>
+									<a>妇洗器</a>
+									<a>小便器</a>
+
+								</ol>
+
+								
+							</ul>
+
+						</li>
+
+					</ul>
+
+				</div>
+
+
+
+
+			</div>
+			<div class="col-md-10 bureau-right clear-padding">
+				<div class="tab-ht bureau-right-heading">
+					<ul class="inline-block-ul nav nav-tabs" role="tablist">
+						<li class="current active"><a title="" data-original-title="" href="javascript:" role="tab" data-toggle="tab" style="line-height: 35px;">期刊目录</a>
+						</li>
+						<li class="hui-right pull-right"><a class="btn" href="bureau-ht-magazine-add.html">添加期刊</a></li>
+					</ul>
+					
+				</div>
+				<div class=" bureau-right-content panel-body">					
+				  <div class="table-responsive">
+					<table class="table table-bordered graytab">
+					<thead>
+			       		<tr align="center" style="font-weight:bold; ">
+			       			<td><input type="checkbox"></td>
+			       			<td>序号</td>
+			       			<td>期刊名</td>
+			       			<td>大小</td>
+			       			<td>最后修改时间</td>
+			       			<td >操作</td>
+			       		</tr>
+			       	</thead>
+			       	<tbody id="tbodyid">		       		
+			       			<tr>
+			       				<td><input type="checkbox"></td>
+				       			<td>1</td>
+				       			<td>第一期刊第一期刊第一期刊第一期刊第一期刊第一期刊第一期刊</td>
+                                <td>5KB</td>
+				       			<td>2014-11-21 02:07:38</td>
+				       			<td>
+				       				<a href="bureau-ht-magazine-list.html" class="btn btn-sm btn-warning">查看</a>
+				       				<a href="bureau-ht-magazine-modifyname.html" class="btn btn-sm btn-primary">重命名</a>
+				       				<a href="javascript:void(0)"  class="btn btn-danger btn-sm">删除</a>
+				       			</td>
+				       		</tr>
+				       		
+				       		<tr>
+			       				<td><input type="checkbox"></td>
+				       			<td>1</td>
+				       			<td>第一期刊</td>
+                                <td>5KB</td>
+				       			<td>2014-11-21 02:07:38</td>
+				       			<td>
+				       				<a href="#" class="btn btn-sm btn-warning">查看</a>
+				       				<a href="javascript:void(0)" class="btn btn-sm btn-primary">重命名</a>
+				       				<a href="javascript:void(0)"  class="btn btn-danger btn-sm">删除</a>
+				       			</td>
+				       		</tr>
+				       		<tr>
+			       				<td><input type="checkbox"></td>
+				       			<td>1</td>
+				       			<td>第一期刊</td>
+                                <td>5KB</td>
+				       			<td>2014-11-21 02:07:38</td>
+				       			<td>
+				       				<a href="#" class="btn btn-sm btn-warning">查看</a>
+				       				<a href="javascript:void(0);" class="btn btn-sm btn-primary" >重命名</a>
+				       				<a href="javascript:void(0)"  class="btn btn-danger btn-sm">删除</a>
+				       			</td>
+				       		</tr>
+				       		<tr>
+			       				<td><input type="checkbox"></td>
+				       			<td>1</td>
+				       			<td>第一期刊</td>
+                                <td>5KB</td>
+				       			<td>2014-11-21 02:07:38</td>
+				       			<td>
+				       				<a href="#" class="btn btn-sm btn-warning">查看</a>
+				       				<a href="javascript:void(0);" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#updataName">重命名</a>
+				       				<a href="javascript:void(0)"  class="btn btn-danger btn-sm">删除</a>
+				       			</td>
+				       		</tr>
+
+			       	</tbody>
+				</table>
+				<a href="javascript:" class="btn btn-danger btn-sm" style="font-size: 14px;"><span class="glyphicon glyphicon-trash"></span>删除</a>
+				</div>	<!--table-responsive end-->
+				
+				<!--页数-->
+				<ul class="pagination center">
+					<li class="disabled"><span>首页</span></li>
+					<li class="disabled"><span>«</span></li>
+					<li class="active"><a href="javascript:setPageNumber('1')" data-original-title="" title="">1</a></li>
+					<li class="disabled"><span>»</span></li><li class="disabled"><span>末页</span></li>
+				</ul>
+				
+				</div>
+			</div>
+		</div>
+        
+       
+		<!--资源专区-->
+
+
+
+
+		<!-- 底部 -->
+		<div class="container-fluid footer footer-grayline">
+			<div class="row">
+				<ul class="col-md-12 inline-block-ul">
+					<li><a href="#">关于我们</a>
+					</li>
+					<li>|</li>
+					<li><a href="#">联系我们</a>
+					</li>
+					<li>|</li>
+					<li><a href="#">友情链接</a>
+					</li>
+					<li>|</li>
+					<li><a href="#">关于我们</a>
+					</li>
+					<li>|</li>
+					<li><a href="#">关于我们</a>
+					</li>
+				</ul>
+			</div>
+			<div class="row">
+				<div class="col-md-12">Copyright @ 2011-2015 湖南领信教育网络发展有限公司版权所有 湘ICP备14001031号</div>
+			</div>
+		</div>
+
+		<!--***** “space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+		<script type="text/JavaScript" src="space-footer-css.js"></script>
+		<!--***** “space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+
+		<script type="text/javascript" src="libs/raking/js/raking1.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/bureau-ht.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="libs/raking/css/raking.css" />
+        
+		<!-- <script>
+	     $('.bureau-student-rizhi>li').each(function(){
+		var num = $(this).index();
+		if(num % 2 !== 0)
+		{
+			$(this).addClass('bg3')
+		}
+	    });
+        </script>-->
+	</body>
+
+</html>
