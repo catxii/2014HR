@@ -495,9 +495,11 @@ display: block;
 	padding: 5px 10px;
 font-family: "宋体";
 font-weight: 900;
+cursor: pointer;
 }
 .school-erji > .link-menu a{
 	color: #328CCE;
+	font-size: 12px;
 }
 .school-erji > .submenu{
 	background: #fff;
