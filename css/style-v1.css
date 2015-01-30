@@ -2762,3 +2762,10 @@ input[type="checkbox"] {
 .panel-syllabus-content.show .new-list-history {
   display: block;
 }
+.resource-ul-info li {
+  display: inline-block;
+  background: #ff6300;
+  color: white;
+  border-radius: 5px;
+  padding: 0 3px;
+}
