@@ -4224,6 +4224,16 @@ margin-bottom: 10px;
     color: #333;
     position: relative;
 }
+.bureau-modify-left > .bureau-modify-zdy > h4 > .pull-right,.bureau-modify-center > .bureau-modify-zdy > h4 > .pull-right,.bureau-modify-right > .bureau-modify-zdy > h4 > .pull-right{
+font-size: 12px;
+line-height: 40px;
+
+padding: 0px 5px;	
+}
+.bureau-modify-left > .bureau-modify-zdy > h4 > .pull-right a,.bureau-modify-center > .bureau-modify-zdy > h4 > .pull-right a,.bureau-modify-right > .bureau-modify-zdy > h4 > .pull-right a{
+color: rgb(153, 153, 153);	
+font-family: "宋体";
+}
 .bureau-modify-zdy .bureau-student-header > h4{
     background: url(../img/rptx.png);
 	border: 1px solid #eee;
