@@ -46,6 +46,14 @@
 .basicModal{ font-family: "微软雅黑";}
 .basicModal .modal-title{ font-weight: bold; }
 
+/*图标*/
+.file-ico {
+  background-position: -168px center;
+}
+.jpg-ico {
+  background-position: -463px center;
+}
+
 /*教育局综合平台-友情链接*/
 .notice-old .list-group-item{  border-left: 0px; border-right: 0px;}
 
