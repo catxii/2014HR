@@ -509,6 +509,9 @@ a.list-grouping-fen-more{
 	
     
 }
+.class-body .class-index-container .panel img {
+    margin-top: 0px !important;
+}
 .bg-zb-bg a{
 	position: absolute;
 	top: 18px;
@@ -2928,4 +2931,71 @@ border-bottom: 1px solid #ddd;
 padding: 0px 15px;
 text-align: right;
 cursor: pointer;
+}
+
+
+
+/*科室空间*/
+.department-body{
+	
+}
+.bureau-modify-zdy-jyxw .bureau-modify-zdy-jyxw-left .carousel-inner > .item > a > img{
+	width: 218px;
+	height: 177px;
+}
+.bureau-modify-zdy-jyxw .bureau-modify-zdy-body > .bureau-modify-zdy-jyxw-right > ul > li{
+	padding: 6px 3px;
+border-bottom: 1px dotted #CCC;
+}
+.bureau-modify-zdy-jyxw .bureau-modify-zdy-body > .bureau-modify-zdy-jyxw-right > ul > li > .bureau-new-rizhi-list > a{
+	line-height: 16px;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+width: 80%;
+display: inline-block;
+vertical-align: middle;
+float: left;
+text-decoration: none;
+}
+.bureau-modify-zdy-jyxw .bureau-modify-zdy-body > .bureau-modify-zdy-jyxw-right > ul > li > .bureau-new-rizhi-list > a > i{
+	font-size: 14px;
+vertical-align: middle;
+margin-right: 5px;
+padding: 4px;
+background: none repeat scroll 0% 0% #C2C2C2;
+border-radius: 3px;
+color: #FFF;
+}
+.bureau-modify-zdy-jyxw .bureau-modify-zdy-body > .bureau-modify-zdy-jyxw-right > ul > li:first-child > .bureau-new-rizhi-list > a > i{
+	background: none repeat scroll 0% 0% #F26464;
+}
+.bureau-modify-zdy-jyxw .bureau-modify-zdy-body > .bureau-modify-zdy-jyxw-right > ul > li > .bureau-new-rizhi-name > span{
+	line-height: 16px;
+display: block;
+width: 20%;
+float: right;
+text-align: right;
+color: #999;
+}
+
+.bureau-modify-zdy-jyxw-left .carousel-control.left,.bureau-modify-zdy-jyxw-left .carousel-control.right{
+	background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.55);
+width: 9% !important;
+top: 36%;
+height: 50px;
+}
+.bureau-modify-zdy-jyxw-left .carousel-control .glyphicon-chevron-left,.bureau-modify-zdy-jyxw-left .carousel-control .glyphicon-chevron-right{
+	font-size: 15px;
+line-height: 30px;
+}
+.bureau-modify-zdy-jyxw-left .carousel.slide .carousel-indicators{
+	bottom: -6px;
+}
+.bureau-modify-zdy-jyxw-left .carousel.slide .carousel-indicators > li{
+    background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.22);
+margin: 0px 3px;
+}
+.bureau-modify-zdy-jyxw-left .carousel.slide .carousel-indicators > li.active {
+    background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.62);
 }
