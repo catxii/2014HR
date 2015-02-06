@@ -152,14 +152,7 @@ box-shadow: 0px 0px 2px rgba(117, 117, 117, 1);
 	height: 138px;
 	padding: 38px 0 0 0;
 	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.12) inset !important;
-	background:#f6f6f6;
-	background:-moz-linear-gradient("45deg", #f6f6f6 0%, #D5D4D4 100%);
-	background:-webkit-gradient(linear, left bottom, right top, color-stop(0%, #f6f6f6), color-stop(100%, #D5D4D4));
-	background:-webkit-linear-gradient(45deg, #f6f6f6 0%, #D5D4D4 100%);
-	background:-o-linear-gradient(45deg, #f6f6f6 0%, #D5D4D4 100%);
-	background:-ms-linear-gradient(45deg, #f6f6f6 0%, #D5D4D4 100%);
-	background:linear-gradient(45deg, #f6f6f6 0%, #D5D4D4 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#D5D4D4',GradientType=1 );
+    background:url('../img/bureau-img/body_bg01.png') repeat scroll center top transparent ;
 }
 .bureau-logo{width: 376px;margin: auto;padding: 18px 0 !important;}
 
@@ -514,7 +507,7 @@ margin: 0px 8px;
 
 .bureau-student-header > h4 i{
 	font-size: 14px;
-font-family: "微软雅黑";
+font-family: "宋体";
 float: left;
 padding: 5px 7px;
 font-style: normal;
@@ -652,14 +645,15 @@ right: 1px;
      border: 1px solid rgba(87, 87, 87, 0.26);
 }
 .bureau-student-body .bureau-student-center-body .bureau-student-center-body-list ul li{
-	height: 70px;
+	height: 50px;
     vertical-align: top;
 }
 .bureau-student-body .bureau-student-center-body .bureau-student-center-body-list ul li.bureau-new-szdw-img{
 	margin-right: 5px !important;
-    overflow: hidden;
-    border-radius: 50%;
-    box-shadow: 0px 0px 1px #FFF;
+overflow: hidden;
+border-radius: 50%;
+box-shadow: 0px 0px 1px #FFF;
+float: left;
 }
 .bureau-student-body .bureau-student-center-body .bureau-student-center-body-list ul li.bureau-new-szdw-img img{
 	width: 50px;
@@ -674,6 +668,7 @@ right: 1px;
 }
 .bureau-student-body .bureau-student-center-body .bureau-student-center-body-list ul li.bureau-new-szdw-name{
 	margin-right: 0px !important;
+	padding: 6px 0px;
 }
 .bureau-student-body .bureau-student-center-body .bureau-student-center-body-list ul li.bureau-new-szdw-name .label{
 	padding: 0.1em !important;
@@ -987,7 +982,6 @@ font-weight: bold;
 }*/
 .bureau-famous-header > h4 i{
 	font-size: 15px;
-font-family: "微软雅黑";
 float: left;
 padding: 5px 7px;
 font-style: normal;
@@ -2216,7 +2210,7 @@ overflow: hidden;
 .bureau-navlist {
     height: 100%;
     padding: 38px 0px 0px;
-    background-image:url('../img/bureau-img/body_bg01.png') repeat scroll center top transparent ;
+    background:url('../img/bureau-img/body_bg01.png') repeat scroll center top transparent ;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.525) inset;
 }
 
@@ -4220,7 +4214,7 @@ margin-bottom: 10px;
     background: url("../img/rptx.png") repeat scroll 0% 0% transparent;
     height:40px;
     margin: 0px !important;
-    font: bold 18px/33px "microsoft yahei";
+    font: bold 18px/33px "宋体";
     color: #333;
     position: relative;
 }
@@ -4239,7 +4233,7 @@ font-family: "宋体";
 	border: 1px solid #eee;
 	height: 40px;
 	margin: 0 !important;
-font: 18px/33px "microsoft yahei";
+font: 18px/33px "宋体";
 color: #70CFD7;
 position: relative;
 font-weight: bold;
@@ -4250,14 +4244,13 @@ border-bottom: 1px solid #fff;
 	border: 1px solid #eee;
 	height: 40px;
 	margin: 0 !important;
-font: 18px/33px "microsoft yahei";
+font: 18px/33px "宋体";
 color: #70CFD7;
 position: relative;
 font-weight: bold;
 border-bottom: 1px solid #fff;
 }
 .bureau-modify-left > div > h4 > i,.bureau-modify-center > div > h4 > i,.bureau-modify-right > div > h4 > i{
-font-family: "微软雅黑";
 float: left;
 padding: 5px 10px;
 font-style: normal;
@@ -4644,6 +4637,7 @@ padding: 1px 5px;
 background: none repeat scroll 0% 0% #C2C2C2;
 color: #FFF;
 line-height: 14px;
+margin-right: 4px;
 }
 /*底部导航*/
 .footer-grayline {
