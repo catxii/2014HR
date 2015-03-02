@@ -89,7 +89,7 @@ border: 4px solid rgba(255, 255, 255, 0.3);
     padding-bottom: 2px;
     text-shadow:none;
 }
-.green-body .school-banner-new{margin: auto ;width: 1280px; height: 419px;margin-top: 0px;}
+.green-body .school-banner-new{margin: auto ;/*width: 1280px;*/ height: 419px;margin-top: 0px;}
 
 .green-body .school-new-left{padding-left: 0 !important;padding-right: 3px !important;}
 .green-body .school-new-left .panel-body{padding: 0 !important;background: #fff;}
