@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="../../favicon.ico">
+
+	<title>领信样式模板</title>
+
+	<!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+	<script type="text/JavaScript" src="space-css.js"></script>
+	<!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+
+</head>
+
+<body class="bureau-body">
+	<input type="hidden" value="navigation-top-bureau-index" name="navigation-top-menu" id="navigation-top-menu">
+	<input type="hidden" value="bureauTopMenuIndex" id="navigation-bureau-top-menu">
+
+	<div class="navbar navbar-zhijiao navbar-bureau navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li class="">
+						<a href="javascript:void(0)" data-original-title="" title="">
+							<span class="lx-logo"></span>
+						</a>
+					</li>
+
+					<li id="navigation-top-teacher-lsn">
+						<a href="/linktrust/space/lsn/index" data-original-title="" title="">教学空间</a>
+					</li>
+					<li id="navigation-top-teacher-personal">
+						<a href="/linktrust/space/index/index" data-original-title="" title="">个人空间</a>
+					</li>
+
+					<li id="navigation-top-school-class">
+						<a href="/linktrust/space/class/index/main" data-original-title="" title="">班级空间</a>
+					</li>
+					<li id="navigation-top-school-space">
+						<a href="/linktrust/others/school/index?schoolId=54179051a310cbc18d596ed9" data-original-title="" title="">学校空间</a>
+					</li>
+
+					<li id="navigation-top-school-xzhpt">
+						<a href="/linktrust/space/school/index?schoolId=54179051a310cbc18d596ed9" data-original-title="" title="">校综合平台</a>
+					</li>
+
+					<li id="navigation-top-bureau-index" class="active">
+						<a href="/linktrust/bureau/index?educode=414200" data-original-title="" title="">教育局空间</a>
+					</li>
+
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+
+					<li>
+
+						<a class="dropdown-toggle" data-toggle="dropdown" href="javascript:void(0)" data-original-title="" title="">
+							前锋老师
+												
+													(
+							<span class="user-role">测试学校管理员</span>
+							<span class="caret"></span>
+							)
+						</a>
+
+						<ul class="dropdown-menu" role="menu">
+
+							<li>
+								<a onclick="doChangeRole('541954a935cc6dd2ddffcaf7', '测试学校管理员')" href="javascript:void(0)" data-original-title="" title="">测试学校管理员</a>
+							</li>
+
+						</ul>
+
+					</li>
+					<li>
+						<a href="/linktrust/space/pm/index" data-original-title="" title="">
+							<span style="position:relative;" class="icon-envelope">
+								<span style="display: none" class="red-round" id="pmNotReadCount">0</span>
+							</span>
+						</a>
+					</li>
+					<li class="dropdown">
+						<a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" data-original-title="" title="">
+							<span class=" icon-cogwheel"></span>
+							设置
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu" role="menu">
+
+							<li>
+								<a href="/linktrust/sys/user/setup/account" data-original-title="" title="">个人设置</a>
+							</li>
+
+							<li>
+								<a href="/linktrust/space/dress/teacher/index" data-original-title="" title="">
+									主页装扮
+									<span class="red-bg">new</span>
+								</a>
+							</li>
+
+							<li class="divider"></li>
+							<li>
+								<a href="/linktrust/sys/site/logout" data-original-title="" title="">退出</a>
+							</li>
+						</ul>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid bureau-navlist">
+		<div class="container ">
+			<div class="col-md-4">
+				<div class="bureau-logo">
+					<img src="/linktrust/bureau/logoImage?educode=414200"></div>
+			</div>
+			<div class="col-md-8 bureau-nav">
+				<ul class="inline-block-ul pull-right clear-margin">
+					<li>
+						<div class="bureau-ico">
+							<a class="fa fa-zy current" name="bureauTopMenu" id="bureauTopMenuIndex" href="/linktrust/bureau/index?educode=414200" data-original-title="" title=""></a>
+							<div class="bureau-ico-name">主页</div>
+						</div>
+					</li>
+					<li>
+						<div class="bureau-ico">
+							<a class="fa fa-zypt" name="bureauTopMenu" id="bureauTopMenuResourceIndex" href="/linktrust/bureau/resource/index?educode=414200" data-original-title="" title=""></a>
+							<div class="bureau-ico-name">资源平台</div>
+						</div>
+					</li>
+					<li>
+						<div class="bureau-ico">
+							<a class="fa fa-cy" name="bureauTopMenu" id="bureauTopMenuMemberIndex" href="/linktrust/bureau/member/index?educode=414200" data-original-title="" title=""></a>
+							<div class="bureau-ico-name">成员</div>
+						</div>
+					</li>
+					<li>
+						<div class="bureau-ico">
+							<a class="fa fa-xwfb " name="bureauTopMenu" id="bureauTopMenuIntroductionIndex" href="/linktrust/bureau/introduction?educode=414200" data-original-title="" title=""></a>
+							<div class="bureau-ico-name">教育局简介</div>
+						</div>
+					</li>
+					<li>
+						<div class="bureau-ico">
+							<a class="fa fa-app" href="/linktrust/lx.apk" data-original-title="" title=""></a>
+							<div class="bureau-ico-name">APP下载</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="bottom_tools">
+		<a href="javascript:;" id="scrollUp" data-original-title="" title=""></a>
+	</div>
+
+	<!--新闻专区-->
+
+	<!--资源专区-->
+	<div class="container bureau-data ng-scope" ng-controller="ResourceController">
+		<div class="bureau-data-header col-md-12 clear-padding">
+			<h4> 
+				<i><span class="bureau-data-ico"></span>期刊列表</i> 
+			</h4>
+			<ul class="press-list bureau-data-body clearfix">
+				<li>
+					<a href="#">
+						<span>《华容教育电子版 2014.12》</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span>《华容教育电子版 2014.12》</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span>《华容教育电子版 2014.12》</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span>《华容教育电子版 2014.12》</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span>《华容教育电子版 2014.12》</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span>《华容教育电子版 2014.12》</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span>《华容教育电子版 2014.12》</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+	</div>
+	<!--学校专区-->
+
+	<!--班级-->
+
+	<!--教师专区-->
+
+	<!--学生专区-->
+
+	<!--自定义专区-->
+
+	<div class="container-fluid footer footer-grayline">
+		<div class="row">
+			<ul class="col-md-12 inline-block-ul">
+				<li>
+					<a href="#" data-original-title="" title="">关于我们</a>
+				</li>
+				<li>|</li>
+				<li>
+					<a href="#" data-original-title="" title="">联系我们</a>
+				</li>
+				<li>|</li>
+				<li>
+					<a href="#" data-original-title="" title="">友情链接</a>
+				</li>
+				<li>|</li>
+				<li>
+					<a href="#" data-original-title="" title="">关于我们</a>
+				</li>
+				<li>|</li>
+				<li>
+					<a href="#" data-original-title="" title="">关于我们</a>
+				</li>
+			</ul>
+		</div>
+		<div class="row">
+			<div class="col-md-12">Copyright @ 2011-2015 湖南领信教育网络发展有限公司版权所有 湘ICP备14001031号</div>
+		</div>
+	</div>
+
+	<!--***** “space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+	<script type="text/JavaScript" src="space-footer-css.js"></script>
+	<!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+	<script type="text/javascript" src="js/zzsc.js"></script>
+	<script type="text/javascript" src="libs/gundong/js/jjjj.js"></script>
+	<link rel="stylesheet" type="text/css" href="libs/gundong/css/set2.css" />
+	<link rel="stylesheet" type="text/css" href="css/bureau_new.css" media="screen">
+	<link href="css/shouye.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/top-top.js"></script>
+	<script type="text/javascript" src=" libs/jQuery-ui/jquery-ui-1.10.4.custom.min.js"></script>
+
+	<script>
+			var editor;
+			KindEditor.ready(function(K) {
+				editor = K.create('textarea[name="content"]', {
+					resizeType : 1,
+					allowPreviewEmoticons : false,
+					allowImageUpload : false,
+					items : [
+						'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
+						'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
+						'insertunorderedlist', '|', 'emoticons', 'link']
+				});
+			});
+</script>
+	<script type="text/javascript">
+    //TAB切换效果
+    function toggleTab(tabname,contname){
+      $(tabname).click(function(){
+        var thisIndex = $(this).index();
+        $(this).addClass("active").siblings().removeClass("active");
+        $(contname).eq(thisIndex).show().siblings(contname).hide();
+      });
+    }
+    toggleTab(".diy-navbar .navbar-nav li.diy-button",".diy-all-box");
+    toggleTab(".sidebar-button li",".content-right");
+
+    //layout 切换
+    $(".diy-layout-list li").click(function(){
+      $(this).addClass("active").siblings().removeClass("active");
+      var thisLayoutNumber = $(this).children("a").attr("data-layout");
+    });
+    var col_md_2 = "<div class='droptrue2'></div>"
+    var col_md_3 = "<div class='droptrue3'></div>"
+    
+    function droptrue2To1(){
+      $(".droptrue1").append( $(".droptrue2").html() );
+      $(".droptrue2").hide().empty();
+    }
+    function droptrue3To1(){
+      $(".droptrue1").append( $(".droptrue3").html() );
+      $(".droptrue3").hide().empty();
+      $(".droptrue2").show();
+    }
+    function removeColClass(){
+      var colName = "col-md-1 col-md-2 col-md-3 col-md-4 col-md-5 col-md-6 col-md-7 col-md-8 col-md-9 col-md-10 col-md-11 col-md-12"
+      $(".droptrue1,.droptrue2,.droptrue3").removeClass(colName);
+    }
+    function clickLayout3_2(){
+      droptrue3To1();
+      removeColClass();
+      $(".droptrue1").addClass("col-md-7");
+      $(".droptrue2").addClass("col-md-5");
+    }
+    function clickLayout2_3(){
+      droptrue3To1();
+      removeColClass();
+      $(".droptrue1").addClass("col-md-5");
+      $(".droptrue2").addClass("col-md-7");
+    }
+    function clickLayout1_3(){
+      droptrue3To1();
+      removeColClass();
+      $(".droptrue1").addClass("col-md-3");
+      $(".droptrue2").addClass("col-md-9");
+    }
+    function clickLayout3_1(){
+      droptrue3To1();
+      removeColClass();
+      $(".droptrue1").addClass("col-md-9");
+      $(".droptrue2").addClass("col-md-3");
+    }
+    function clickLayout1_2_1(){
+      removeColClass();
+      $(".droptrue1").addClass("col-md-3");
+      $(".droptrue2").addClass("col-md-6");
+      $(".droptrue3").show().addClass("col-md-3");
+    }
+    function clickLayout1_1_2(){
+      removeColClass();
+      $(".droptrue1").addClass("col-md-3");
+      $(".droptrue2").addClass("col-md-3");
+      $(".droptrue3").show().addClass("col-md-6");
+    }
+    function clickLayout2_1_1(){
+      removeColClass();
+      $(".droptrue1").addClass("col-md-6");
+      $(".droptrue2").addClass("col-md-3");
+      $(".droptrue3").show().addClass("col-md-3");
+    }
+    function clickLayout2_2(){
+      droptrue3To1();
+      removeColClass();
+      $(".droptrue1").addClass("col-md-6");
+      $(".droptrue2").addClass("col-md-6");
+    }
+    function clickLayout1(){
+      droptrue2To1();
+      droptrue3To1();
+      removeColClass();
+      $(".droptrue1").addClass("col-md-12");
+    }
+    $(".layout-3-2").click(function(){
+      clickLayout3_2();
+    });
+    $(".layout-2-3").click(function(){
+      clickLayout2_3();
+    });
+    $(".layout-1-3").click(function(){
+      clickLayout1_3();
+    });
+    $(".layout-3-1").click(function(){
+      clickLayout3_1();
+    });
+    $(".layout-1-2-1").click(function(){
+      clickLayout1_2_1();
+    });
+    $(".layout-1-1-2").click(function(){
+      clickLayout1_1_2();
+    });
+    $(".layout-2-1-1").click(function(){
+      clickLayout2_1_1();
+    });
+    $(".layout-2-2").click(function(){
+      clickLayout2_2();
+    });
+    $(".layout-1").click(function(){
+      clickLayout1();
+    });
+    
+
+    //style  切换
+    $(".diy-style-list li").click(function(){
+       $(this).addClass("active").siblings().removeClass("active");
+    });
+    $(".diy-style-list li a").click(function(){
+       var ThisDataBG = $(this).attr("data-bg");
+        var unnecessaryClass = "ls-bg hs-bg tls-bg "
+       console.log(ThisDataBG);
+       $("body").removeClass(unnecessaryClass).addClass(ThisDataBG+"-bg");
+    });
+
+   
+
+    //修改头部高度
+    function getRngeValue(){
+        var rangeHeight = $(".header-height-val").val();
+        $(".top-nav-fluid2").css("margin-top",rangeHeight+"px");
+    };
+
+    //拖拽模块
+   $( ".droptrue" ).sortable({
+      connectWith: "div"
+    });
+
+    // //设置拖动条的高度
+    // var contentHeight = $("#layout-content").height();
+    // $(".droptrue").css("height",contentHeight);
+
+    //diy-mode模式下的内容区域的A链接都是新开
+    $(".diy-mode .droptrue a").attr("target","_blank");
+
+    //mode-pulg 调用关闭
+    $(".model-base-list").on("click",".model-ico-user",function(){
+      var modeClickDataType = $(this).attr("data-type");
+      if ( $("#layout-content div[data-type='"+modeClickDataType+"']").is(":visible") ) {
+        $("#layout-content div[data-type='"+modeClickDataType+"']").hide();
+        $(this).children(".checked").remove();
+      }else{
+        $("#layout-content div[data-type='"+modeClickDataType+"']").show();
+        $(this).append("<i class='checked'></i>");
+      }
+    });
+
+    //默认是否出现小勾
+    var clickButtontemp = [];
+    var modeClickButtonName = $(".model-base-list .model-ico");
+    for( var i=0; i < modeClickButtonName.length; i++){
+      clickButtontemp.push( modeClickButtonName.eq(i).attr("data-type") ); 
+    }
+    console.log( clickButtontemp );
+
+    var Divtemp = [];
+    var modeDivName = $(".droptrue > div");
+    for( var i=0; i < modeDivName.length; i++){
+      Divtemp.push( modeDivName.eq(i).attr("data-type") );
+      if ( $(".model-base-list .model-ico[data-type='Divtemp'][i]").is(":visible") ) {
+      $(".model-base-list .model-ico[data-type='clickButtontemp']").append("<i class='checked'></i>");
+    };
+  };
+  
+  $(function(){
+    changeTab(".tab-js-button",".tab-js-panel");
+  });
+</script>
+
+	<script type="text/javascript">marqueeStart(1, "left");</script>
+	<script type="text/javascript">marqueeStart(2, "up");</script>
+	<script>
+			$('.bureau-custom-rizhi>li').each(function(){
+		
+		
+		        	function goTopEx(){
+		        var obj=document.getElementById("goTopBtn");
+		        function getScrollTop(){
+		                return document.documentElement.scrollTop;
+		            }
+		        function setScrollTop(value){
+		                document.documentElement.scrollTop=value;
+		            }    
+		        window.onscroll=function(){getScrollTop()>0?obj.style.display="":obj.style.display="none";}
+		        obj.onclick=function(){
+		            var goTop=setInterval(scrollMove,10);
+		            function scrollMove(){
+		                    setScrollTop(getScrollTop()/1.1);
+		                    if(getScrollTop()<1)clearInterval(goTop);
+		                }
+		        }
+		    }
+		     goTopEx();
+		     $(document).ready(function(){
+		
+			$(".sidel ul li").hover(function(){
+				$(this).find(".sidebox").stop().animate({"width":"124px"},200).css({"opacity":"1","filter":"Alpha(opacity=100)","background":"#24D665"})	
+			},function(){
+				$(this).find(".sidebox").stop().animate({"width":"54px"},200).css({"opacity":"0.8","filter":"Alpha(opacity=80)","background":"#ccc"})	
+			});
+			
+		});
+		
+		//回到顶部
+		function goTop(){
+			$('html,body').animate({'scrollTop':0},500);
+		}
+		</script>
+	<script>
+			$('.bureau-custom-rizhi>li').each(function(){
+				var num = $(this).index();
+				if(num % 2 !== 0)
+				{
+					$(this).addClass('bg3')
+				}
+			    });
+			    changeTab(".bureau-student-left-header li",".bureau-new-zy");
+			    changeTab(".bureau-new-tab li",".bureau-student-body")
+		</script>
+	<script type="text/javascript">
+			$(document).ready(function() {
+					 var tags_a = $(".bureau-modify-zdy-tzgg-list>ul>li>.bureau-new-rizhi-list>a>i");
+					 tags_a.each(function(){
+						 var x = 2;
+						 var y = 0;
+						 var rand = parseInt(Math.random() * (x - y + 1) + y);
+						 // Math.random() 令系统随机选取0-1之间的14位的随机数
+						 // parseInt() 函数可解析一个字符串，并返回一个整数
+						 $(this).addClass("color"+rand);
+					  });
+			      })
+		</script>
+
+</body>
+
+</html>
