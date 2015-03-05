@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="../../favicon.ico">
+<title>领信样式模板</title>
+
+<!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+<script type="text/JavaScript" src="space-css.js"></script>
+<!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+
+</head>
+<body class="fixed-top-body" ng-app="" data-spy="scroll" data-target=".navbar-example">
+<div class="navbar navbar-zhijiao navbar-green navbar-fixed-top" style="height:36px; min-height:36px;">
+  <div class="container">
+    <div class="navbar-header">
+      <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+      <a href="#" class="navbar-brand logo-small" alt="领信logo"></a> </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"> <a href="#">教学空间</a> </li>
+        <li> <a href="#about">个人空间</a> </li>
+        <li> <a href="#contact">班级空间</a> </li>
+        <li> <a href="#contact">我的班级</a> </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">张学友 [ 退出 ]</a></li>
+        <li><a href="#"><span class="icon-t-shirt"></span> 装扮</a></li>
+        <li class="dropdown"> <a data-toggle="dropdown" class="dropdown-toggle" href="#"><span class=" icon-cogwheel"></span> 设置 <span class="caret"></span></a>
+          <ul role="menu" class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    
+    <!--/.nav-collapse --> 
+  </div>
+</div>
+<div class="container">
+  
+  <div class="col-md-12">
+    <div class="panel panel-default">
+    <div class="panel-body clear-padding">
+  <!-- 引入空间中间头部 -->
+  
+
+<!--导航-->
+            <div class="col-md-2 clear-padding ht-left">
+              <!-- 分类 -->
+              <div class="panel panel-default clear-border">
+
+                <div class="panel-body clear-padding">
+
+                  <ul class="expmenu col-md-12 clear-padding clear-margin">
+                    <li>
+                      <div class="headers"><span class="label">学校综合平台</span></div>
+
+                      <ul style="display:block;" class="menu-menu col-md-12 clear-padding">
+                      
+                        <li onclick="javascript:ShowMenu(this,0)" id="space-school-news"><a href="javascript:void(0)" data-original-title="" title="">校空间动态信息</a>
+                        </li>
+                        <ol class="no" id="ol-space-school-news">
+                        
+                          <a href="/linktrust/space/school/news/main?type=1&amp;schoolId=53dcd846469695bd0352c7ef" id="space-school-news1" data-original-title="" title="">学校新闻</a>
+                          
+                          <a href="/linktrust/space/school/news/main?type=2&amp;schoolId=53dcd846469695bd0352c7ef" id="space-school-news2" data-original-title="" title="">通知公告</a>
+                          
+                          <a href="/linktrust/space/school/news/main?type=3&amp;schoolId=53dcd846469695bd0352c7ef" id="space-school-news3" data-original-title="" title="">德育之窗</a>
+                          
+                          <a href="/linktrust/space/school/link/main?a=a&amp;schoolId=53dcd846469695bd0352c7ef" id="space-school-news4" data-original-title="" title="">友情连接</a>
+                          
+                          <a href="/linktrust/space/school/newscata/main?a=a&amp;schoolId=53dcd846469695bd0352c7ef" id="space-school-news5" data-original-title="" title="">自定义栏目配置</a>
+                          
+                        </ol>
+                      
+                        <li onclick="javascript:ShowMenu(this,1)" id="space-school-tuijian-main"><a href="javascript:void(0)" data-original-title="" title="">校空间推荐</a>
+                        </li>
+                        <ol class="no" id="ol-space-school-tuijian-main">
+                        
+                          <a href="/linktrust/space/school/best/teacher/main?a=a&amp;schoolId=53dcd846469695bd0352c7ef" id="space-school-tuijian-main1" data-original-title="" title="">优秀教师</a>
+                          
+                          <a href="/linktrust/space/school/best/teacher/ms/main?a=a&amp;schoolId=53dcd846469695bd0352c7ef" id="space-school-tuijian-main2" data-original-title="" title="">师资队伍</a>
+                          
+                          <a href="/linktrust/space/school/best/student/main?a=a&amp;schoolId=53dcd846469695bd0352c7ef" id="space-school-tuijian-main3" data-original-title="" title="">学生天地</a>
+                          
+                          <a href="/linktrust/space/school/best/class/main?a=a&amp;schoolId=53dcd846469695bd0352c7ef" id="space-school-tuijian-main4" data-original-title="" title="">班级园地</a>
+                          
+                        </ol>
+                      
+                        <li onclick="javascript:ShowMenu(this,2)" id="space-school-schoolinfo" class="s2"><a href="javascript:void(0)" data-original-title="" title="">校空间管理 </a>
+                        </li>
+                        <ol class="" id="ol-space-school-schoolinfo">
+                        
+                          <a href="/linktrust/space/school/base/main?a=a&amp;schoolId=53dcd846469695bd0352c7ef" id="space-school-schoolinfo1" data-original-title="" title="">校信息设置</a>
+                          
+                          <a href="/linktrust/space/school/banner/main?a=a&amp;schoolId=53dcd846469695bd0352c7ef" id="space-school-schoolinfo2" class="ol-active" data-original-title="" title="">校风貌图片</a>
+                          
+                          <a href="/linktrust/space/class/virtue/catmain?a=a&amp;schoolId=53dcd846469695bd0352c7ef" id="space-school-schoolinfo3" data-original-title="" title="">德能评分项管理</a>
+                          
+                          <a href="/linktrust/space/school/module/main?a=a&amp;schoolId=53dcd846469695bd0352c7ef" id="space-school-schoolinfo4" data-original-title="" title="">论坛版块配置</a>
+                          
+                          <a href="/linktrust/space/school/menu/roleMain?a=a&amp;schoolId=53dcd846469695bd0352c7ef" id="space-school-schoolinfo8" data-original-title="" title="">角色管理</a>
+                          
+                          <a href="/linktrust/space/school/menu/main?a=a&amp;schoolId=53dcd846469695bd0352c7ef" id="space-school-schoolinfo9" data-original-title="" title="">菜单管理</a>
+                          
+                          <a href="/linktrust/space/school/jurisdiction/main?a=a&amp;schoolId=53dcd846469695bd0352c7ef" id="space-school-schoolinfo10" data-original-title="" title="">权限管理</a>
+                          
+                        </ol>
+                      
+                        <li onclick="javascript:ShowMenu(this,3)" id="space-school-schoolreport"><a href="javascript:void(0)" data-original-title="" title="">报表管理</a>
+                        </li>
+                        <ol class="no" id="ol-space-school-schoolreport">
+                        
+                          <a href="/linktrust/space/school/lsnreport/main?a=a&amp;schoolId=53dcd846469695bd0352c7ef" id="space-school-schoolreport1" data-original-title="" title="">教学报表</a>
+                          
+                          <a href="/linktrust/space/school/catasum/main?a=a&amp;schoolId=53dcd846469695bd0352c7ef" id="space-school-schoolreport2" data-original-title="" title="">日志报表</a>
+                          
+                          <a href="/linktrust/space/school/loginlogger/main?a=a&amp;schoolId=53dcd846469695bd0352c7ef" id="space-school-schoolreport3" data-original-title="" title="">登陆日志</a>
+                          
+                          <a href="/linktrust/space/school/online/main?a=a&amp;schoolId=53dcd846469695bd0352c7ef" id="space-school-schoolreport4" data-original-title="" title="">在线用户</a>
+                          
+                          <a href="/linktrust/space/school/spaceaddr/main?a=a&amp;schoolId=53dcd846469695bd0352c7ef" id="space-school-schoolreport5" data-original-title="" title="">空间地址</a>
+                          
+                        </ol>
+                      
+                        <li onclick="javascript:ShowMenu(this,4)" id="space-school-recordinfo"><a href="javascript:void(0)" data-original-title="" title="">档案管理 </a>
+                        </li>
+                        <ol class="no" id="ol-space-school-recordinfo">
+                        
+                          <a href="/linktrust/space/record/approveby/main?a=a&amp;schoolId=53dcd846469695bd0352c7ef" id="space-school-recordinfo1" data-original-title="" title="">指定审核人</a>
+                          
+                          <a href="/linktrust/space/record/logger/main?a=a&amp;schoolId=53dcd846469695bd0352c7ef" id="space-school-recordinfo2" data-original-title="" title="">档案日志</a>
+                          
+                          <a href="/linktrust/space/record/approve/main?a=a&amp;schoolId=53dcd846469695bd0352c7ef" id="space-school-recordinfo3" data-original-title="" title="">档案审核</a>
+                          
+                          <a href="/linktrust/space/record/list/main?a=a&amp;schoolId=53dcd846469695bd0352c7ef" id="space-school-recordinfo4" data-original-title="" title="">档案列表</a>
+                          
+                        </ol>
+                      
+                        <li onclick="javascript:ShowMenu(this,5)" id="space-school-scoreinfo"><a href="javascript:void(0)" data-original-title="" title="">考试成绩管理 </a>
+                        </li>
+                        <ol class="no" id="ol-space-school-scoreinfo">
+                        
+                          <a href="/linktrust/space/score/school/exam/list?a=a&amp;schoolId=53dcd846469695bd0352c7ef" id="space-school-scoreinfo1" data-original-title="" title="">考试列表</a>
+                          
+                        </ol>
+                        
+                      </ul>
+
+                    </li>
+
+                  </ul>
+
+                </div>
+              </div>
+
+
+
+            </div>
+
+
+
+ 
+   <div style="padding:0px;" class="panel-body col-md-10 class-rizhi-list ht-right"> 
+     <div class="tab-content tab-content-ht">
+        <div class="tab-pane active">
+        <div class="panel-heading clear-border tab-ht">
+          <!--横导航-->
+          <ul role="tablist" class="inline-block-ul nav nav-tabs">
+            <li class="current active"><a data-toggle="tab" role="tab" href="javascript:" data-original-title="" title="">班级德能银行报表</a></li>
+          </ul>
+
+        </div>
+        <ul class="inline-block-ul">
+          <li style="margin-left:10px;">
+              <a href="javascript:void(0)" class="btn btn-sm btn-warning">
+              <span class="icon-unshare"></span> 返回列表 
+              </a>
+          </li>
+        </ul>
+        <div class="nr-box col-md-12" style="border-top:1px solid #eee; width:98%; margin:0 auto;">
+  <div class="col-md-2 class-rizhi-list-img">
+    <a href="#">
+    <div class="thumbnail">
+      <img data-src="holder.js/100x100" alt="...">
+      <div class="caption">
+        <a><h5 class="text-space">331233验初中331233验初中</h5></a>
+         <p><a type="button" class="btn btn-info btn-sm btn-block" style="color:white">导出</a></p>
+      </div>
+      
+     
+     
+    </div>
+    </a>
+  </div>
+  <div class="col-md-2 class-rizhi-list-img">
+    <a href="#">
+    <div class="thumbnail">
+      <img data-src="holder.js/100x100" alt="...">
+      <div class="caption">
+        <a><h5 class="text-space">331233验初中331233验初中</h5></a>
+         <p><button type="button" class="btn btn-info btn-sm btn-block">导出</button></p>
+      </div>
+      
+     
+     
+    </div>
+    </a>
+  </div>
+            
+        </div>
+        
+       </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+<!-- 底部 -->
+<div class="container-fluid footer footer-grayline">
+  <div class="row">
+    <ul class="col-md-12 inline-block-ul">
+      <li><a href="#">关于我们</a></li>
+      <li>|</li>
+      <li><a href="#">联系我们</a></li>
+      <li>|</li>
+      <li><a href="#">友情链接</a></li>
+      <li>|</li>
+      <li><a href="#">关于我们</a></li>
+      <li>|</li>
+      <li><a href="#">关于我们</a></li>
+    </ul>
+  </div>
+  <div class="row">
+    <div class="col-md-12">Copyright @ 2011-2015 湖南领信教育网络发展有限公司版权所有 湘ICP备14001031号</div>
+  </div>
+</div>
+
+<!--***** “space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****--> 
+<script type="text/JavaScript" src="space-footer-css.js"></script> 
+<!--***** “space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+<script type="text/javascript">
+
+    $(function(){
+        //调取本地的图片预览
+        var result = document.getElementById("imgshow2");
+        var input = document.getElementById("picupload");
+        if(typeof FileReader === 'undefined'){
+          result.innerHTML = "抱歉，你的浏览器不支持 FileReader";
+          input.setAttribute('disabled','disabled');
+          }else{
+          input.addEventListener('change',readFile,false);
+        }
+        function readFile(){
+          var file = this.files[0];
+          if(!/image\/\w+/.test(file.type)){
+          alert("请确保文件为图像类型");
+          return false;
+        }
+        var reader = new FileReader();
+          reader.readAsDataURL(file);
+          reader.onload = function(e){
+          result.innerHTML = '<img src="'+this.result+'" alt=""/>'
+        }
+        }
+        $("#picupload").change(function(){
+          $(".img-upload").show();
+        })
+
+        // 选择上传方式
+        $(".chose-upload-style label").click(function(){
+            var inputIndex = $(this).index();
+            $(".video-box").eq(inputIndex).show().siblings(".video-box").hide();
+        })
+
+        function inputFileName(input,box){
+          $(input).find("input").change(function(){
+            $(box).text( '已选择"' + $(this).val() +'"')
+          });
+        }
+        inputFileName(".btn",".showfile");
+
+    });
+  </script>
+
+
+</body>
+</html>

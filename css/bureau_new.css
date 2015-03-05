@@ -4775,3 +4775,92 @@ body.hs-bg .bureau-navlist {
     background-image: url("../img/theme-img/public/xldy.jpg");
 
 }
+
+
+
+/*晒课*/
+.curriculum-banner .school-search{
+	border-bottom: 4px solid #4C9ED9;
+	padding: 0;
+}
+.curriculum-content .left.carousel-control,.curriculum-content .right.carousel-control{
+	background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.55);
+width: 7% !important;
+top: 68px;
+height: 50px;
+}
+.curriculum-content .left.carousel-control > span,.curriculum-content .right.carousel-control > span{
+	line-height: 30px;
+font-size: 19px;
+}
+.curriculum-banner .school-search .bureau-cuzdy-chengyuan li{
+	margin-right: 0px ;
+	padding: 0 20px;
+	
+	line-height: 30px;
+	border-radius: 5px 5px 0 0;
+}
+.curriculum-banner .school-search .bureau-cuzdy-chengyuan li.active,.curriculum-banner .school-search .bureau-cuzdy-chengyuan li:hover{
+	background:#4C9ED9;
+}
+.curriculum-banner .school-search .bureau-cuzdy-chengyuan li.active a,.curriculum-banner .school-search .bureau-cuzdy-chengyuan li:hover a{
+	color: #fff;
+}
+.curriculum-zs > ul > li.active{
+	border-bottom: 2px solid #ddd;
+	line-height: 40px;
+	padding: 0px;
+	font-size: 20px;
+}
+.shai-i{
+	background: none repeat scroll 0% 0% #FF8700;
+padding: 3px 10px;
+border-radius: 14px;
+color: #FFF;
+display: block;
+width: 94px;
+text-decoration: none;
+text-align: center;
+}
+.shai-i a{
+	color: #fff;
+}
+.curriculum-zs{
+	border: 1px solid #ccc;
+	height: 180px;
+}
+.curriculum-zs-header{
+	background: url("../img/rptx.png") repeat scroll 0% 0% transparent;
+height: 40px;
+margin: 0px !important;
+font: bold 18px/33px "microsoft yahei";
+color: #35A2E1;
+position: relative;
+}
+.curriculum-zs ul li{
+	padding: 0 10px;
+}
+.curriculum-zs li .bureau-list-left a{
+	line-height: 28px;
+}
+.curriculum-zs li .bureau-list-left a i{
+	font-size: 14px;
+vertical-align: middle;
+margin-right: 5px;
+padding: 1px 4px;
+background: none repeat scroll 0% 0% #F26464;
+color: #fff;
+}
+.curriculum-zs li .bureau-list-left{
+	width: 70%;
+float: left;
+}
+.curriculum-zs li .bureau-list-right{
+	width: 30%;
+float: right;
+text-align: right;
+}
+.curriculum-zs li .bureau-list-right a{
+	line-height: 28px;
+	
+}

@@ -3046,3 +3046,9 @@ color: #FFF;
 line-height: 14px;
 margin-right: 4px;
 }
+
+/*学校后台-德能银行报表*/
+.dntable{
+	text-align: center;
+	padding: 10px 20px;
+}
