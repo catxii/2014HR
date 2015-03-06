@@ -229,7 +229,7 @@ padding: 8px 4px !important;
 
 .green-body .school-new-bjyd .school-new-szdw-name h4{}
 
-.green-body .school-new-jypt-list div{text-align: center;margin:5px 0;}
+.green-body .school-new-jypt-list div{text-align: center;margin:2px 0;font-size: 12px;}
 .green-body .school-new-jypt-list div a{padding: 4px; display: block;background:#EAE3C9 ;border-radius:4px;}
 .green-body .school-new-jypt-list div span{display: block;}
 .green-body .school-new-jypt-list div a img{transition: transform 0.3s ease 0s;}
