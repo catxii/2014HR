@@ -2760,3 +2760,21 @@ input[type="checkbox"] {
   border-radius: 5px;
   padding: 0 3px;
 }
+.press-list {
+  padding: 10px 0;
+  min-height: 300px;
+}
+.press-list li {
+  width: 33%;
+  float: left;
+  line-height: 40px;
+}
+.press-list li a {
+  width: 90%;
+  overflow: hidden;
+  display: block;
+  position: relative;
+  border-bottom: 1px dashed #ccc;
+  font-size: 16px;
+  font-weight: bloder;
+}

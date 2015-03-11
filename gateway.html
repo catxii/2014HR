@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="../../favicon.ico">
+
+		<title>领信样式模板</title>
+
+		<!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+		<script type="text/JavaScript" src="space-css.js"></script>
+		<!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+
+
+	</head>
+
+	<body class="bureau-body gateway-body">
+		<div class="bottom_tools">
+  <a id="scrollUp" href="javascript:;"></a>
+</div>
+
+		<div class="navbar navbar-zhijiao navbar-bureau navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav" style="position: relative;">
+						<li>
+							<a href="#about">个人空间</a>
+						</li>
+						<li>
+							<a href="#contact">班级空间</a>
+						</li>
+						<li>
+							<a href="#contact">我的班级</a>
+						</li>
+						<li class="dropdown" style="position:initial;">
+							<a data-toggle="dropdown" class="dropdown-toggle" href="#"> 机构导航 <span class="caret"></span></a>
+							<ul role="menu" class="dropdown-menu container mechanism-navigation">
+								<li class="clearfix">
+									<ul class="inline-block-ul col-md-12">
+										<li class="col-md-2">我的机构：</li>
+										<li class="col-md-2">
+											<a>华容六中</a>
+											<div class="san3"></div>
+										</li>
+										<li class="col-md-2">
+											<a>华容县</a>
+											<div class="san3"></div>
+										</li>
+										<li class="col-md-2">
+											<a>岳阳市</a>
+											<div class="san3"></div>
+										</li>
+
+									</ul>
+								</li>
+								<li class="clearfix">
+									<ul class="inline-block-ul col-md-12">
+										<li class="col-md-2">我的机构：</li>
+										<li class="col-md-2">
+											<a>华容六中</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">登陆</a>
+						</li>
+
+						<li class="dropdown">
+							<a data-toggle="dropdown" class="dropdown-toggle" href="#"> 设置 <span class="caret"></span></a>
+							<ul role="menu" class="dropdown-menu">
+								<li><a href="#">Action</a>
+								</li>
+								<li><a href="#">Another action</a>
+								</li>
+								<li><a href="#">Something else here</a>
+								</li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+
+				</div>
+
+
+				<!--/.nav-collapse -->
+			</div>
+		</div>
+
+		<div class="container-fluid bureau-navlist">
+			<div class="container ">
+				<div class="col-md-4">
+					<div class="bureau-logo">
+						<img src="img/lxjylogo.png">
+					</div>
+				</div>
+				<div class="col-md-8 bureau-nav">
+					<!--<ul class="inline-block-ul pull-right clear-margin">
+						<li>
+							<div class="bureau-ico">
+								<a href="#" class="fa fa-zy current"></a>
+								<div class="bureau-ico-name">主页</div>
+							</div>
+						</li>
+						<li>
+							<div class="bureau-ico">
+								<a href="#" class="fa fa-zypt"></a>
+								<div class="bureau-ico-name">资源平台</div>
+							</div>
+						</li>
+						<li>
+							<div class="bureau-ico">
+								<a href="#" class="fa fa-cy"></a>
+								<div class="bureau-ico-name">成员</div>
+							</div>
+						</li>
+						<li>
+							<div class="bureau-ico">
+								<a href="#" class="fa fa-xwfb"></a>
+								<div class="bureau-ico-name">试题平台</div>
+							</div>
+						</li>
+					</ul>-->
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid clear-padding">
+			<div class=" bureau-banner">
+				<div class="banner_show" id="banner_show">
+					<a href="http://sc.admin5.com" class="bannger_inbox">
+						<img src="img/bureau-img/banner-bureau.png" height="410">
+					</a>
+					<a href="http://sc.admin5.com" class="bannger_inbox">
+						<img src="img/bureau-img/img-gway.jpg" height="410">
+					</a>
+					<div class="banner_mag">
+						<div class="banner_magbox">
+							<div class="" >
+                    <form role="form">
+                        <h4 class="login-title" style="font-size: 16px;">领信登录</h4>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon large"><span class="fa fa-user"></span></div>
+                                <input placeholder="输入用户名" class="form-control large" type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-addon large"><span class="fa fa-lock"></span></div>
+                                <input placeholder="输入密码" id="exampleInputPassword2" class="form-control large" type="password">
+                            </div>
+                        </div>
+                        <div class="checkbox" style="text-align: right;">
+                            <label>
+                                <input type="checkbox"> 忘记密码？
+                            </label>
+                        </div>
+                        <button title="" data-original-title="" class="btn btn-danger btn-lg" type="submit" style="width:100%;">登 陆</button>
+                    </form>
+                </div>
+							
+
+
+
+						</div>
+						
+					</div>
+					<div class="banner_pre_next" style="display: block;">
+						<a href="javascript:;" class="banner_btn_left"><i class="fa fa-chevron-circle-left"></i></a>
+						<a href="javascript:;" class="banner_btn_right"><i class="fa fa-chevron-circle-right"></i></a>
+					</div>
+				</div>
+
+
+
+
+			</div>
+            <div class="container edu-gateway">
+            	<div class="col-md-8">
+            		<div class="edu-information">
+            			<div class="edu-information-header">
+            				<h5>教育<span>资讯</span></h5>
+            			</div>
+            			<div class="edu-information-body">
+            				<div class="bureau-new-center-body-list active tab-pane clearfix" id="new1">
+							<div class="bureau-news-list">
+								<dl class=" clearfix bureau-news-list-top" style="margin-bottom: 5px;">
+									<dt class="col-md-2"><a href="#" target="_blank"><img src="img/index-img-bg.png"  height="90" width="118"></a></dt>
+									<dd class="col-md-10" style="padding-left: 20px;">
+										<div class="clear-margin">
+                                  <a  href="#" target="_blank" style="font-size: 17px;color: rgb(76, 158, 217) !important;font-weight: 600;"font-family: "宋体";>教育部解读《中小学教科书选用管理暂行办法》</a>
+                                  </div>
+										<p class="text-space">选好适合学校和学生的教科书选好适合学校和学生的教科书选好适合学校和学生的教科书选好适合学校和学生的教科书选好适合学校和学生的教科书 ――教育部基础教育二司负责人就《中小学教科书选用管理暂行办法》答记者问...</p>
+										<span style="float: right;">10-28</span>
+									</dd>
+								</dl>
+
+								<div class="bureau-news-list-bottom clearfix">
+									<ul class="col-md-12 clear-padding clear-margin clearfix">
+										<li class="clearfix col-md-6">
+											<div class="bureau-list-left clear-padding ">
+												<a href="#"><i>●</i>热烈庆祝华容县教育云平台上线成功！</a>
+											</div>
+											<div class="bureau-list-right clear-padding">
+												<span>2014-10-26</span>
+											</div>
+										</li>
+										<li class="clearfix col-md-6">
+											<div class="bureau-list-left clear-padding ">
+												<a href="#"><i>●</i>那一条铺满石子的小路</a>
+											</div>
+											<div class="bureau-list-right clear-padding">
+												<span>2014-10-26</span>
+											</div>
+										</li>
+										<li class="clearfix col-md-6">
+											<div class="bureau-list-left clear-padding ">
+												<a href="#"><i>●</i>那一条铺满石子的小路</a>
+											</div>
+											<div class="bureau-list-right clear-padding">
+												<span>2014-10-26</span>
+											</div>
+										</li>
+										<li class="clearfix col-md-6">
+											<div class="bureau-list-left clear-padding ">
+												<a href="#"><i>●</i>那一条铺满石子的小路</a>
+											</div>
+											<div class="bureau-list-right clear-padding">
+												<span>2014-10-26</span>
+											</div>
+										</li>
+										<li class="clearfix col-md-6">
+											<div class="bureau-list-left clear-padding ">
+												<a href="#"><i>●</i>那一条铺满石子的小路</a>
+											</div>
+											<div class="bureau-list-right clear-padding">
+												<span>2014-10-26</span>
+											</div>
+										</li>
+										<li class="clearfix col-md-6">
+											<div class="bureau-list-left clear-padding ">
+												<a href="#"><i>●</i>那一条铺满石子的小路</a>
+											</div>
+											<div class="bureau-list-right clear-padding">
+												<span>2014-10-26</span>
+											</div>
+										</li>
+										<li class="clearfix col-md-6">
+											<div class="bureau-list-left clear-padding ">
+												<a href="#"><i>●</i>那一条铺满石子的小路</a>
+											</div>
+											<div class="bureau-list-right clear-padding">
+												<span>2014-10-26</span>
+											</div>
+										</li>
+										<li class="clearfix col-md-6">
+											<div class="bureau-list-left clear-padding ">
+												<a href="#"><i>●</i>那一条铺满石子的小路</a>
+											</div>
+											<div class="bureau-list-right clear-padding">
+												<span>2014-10-26</span>
+											</div>
+										</li>
+										<li class="clearfix col-md-6">
+											<div class="bureau-list-left clear-padding ">
+												<a href="#"><i>●</i>那一条铺满石子的小路</a>
+											</div>
+											<div class="bureau-list-right clear-padding">
+												<span>2014-10-26</span>
+											</div>
+										</li>
+										<li class="clearfix col-md-6">
+											<div class="bureau-list-left clear-padding ">
+												<a href="#"><i>●</i>那一条铺满石子的小路</a>
+											</div>
+											<div class="bureau-list-right clear-padding">
+												<span>2014-10-26</span>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+            			</div>
+            		</div>
+            		<div class="edu-banner">
+            			<img src="img/edu-banner.png">
+            		</div>
+            		<div class="edu-lx">
+            			<div class="edu-lx-header">
+            				<h5>领信<span>展示</span></h5>
+            			</div>
+            			<div class="edu-lx-body">
+            				<div class="col-md-6">
+            					<div class="bureau-modify-zdy-jyxw-left">
+        				
+        				  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"> 
+              <!-- Indicators -->
+              <ol class="carousel-indicators clear-padding">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+              </ol>
+              
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active"> <a href="#"><img src= "img/22img.png" width="364" alt=""/></a> </div>
+                <div class="item"> <a href="#"><img src= "img/22img.png" width="364"  alt=""/></a> </div>
+              </div>
+              
+              <!-- Controls --> 
+              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> <span class="sr-only">Previous</span> </a> <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> <span class="sr-only">Next</span> </a> </div>
+        				
+        			</div>
+            				</div>
+            				<div class="col-md-6 edu-lx-list">
+            					<ul class=" col-md-12 clear-padding clear-margin">
+            					       <li class="clearfix col-md-12">
+            					  	       <font class="edu-lx-list-left text-space">
+												信息好信
+											</font>
+											<font class="edu-lx-list-center">
+												|
+											</font>
+											<a class="text-space edu-lx-list-right"  href="#">那一条铺满石子的小路那一条铺满石子的小路那一条铺满石子的小路</a>
+											
+										</li>
+										<li class="clearfix col-md-12">
+            					  	       <font class="edu-lx-list-left text-space">
+												信息
+											</font>
+											<font class="edu-lx-list-center">
+												|
+											</font>
+											<a class="text-space edu-lx-list-right"  href="#">那一条铺满石子的小路那一条铺满石子的小路那一条铺满石子的小路</a>
+											
+										</li>
+										<li class="clearfix col-md-12">
+            					  	       <font class="edu-lx-list-left text-space">
+												信息
+											</font>
+											<font class="edu-lx-list-center">
+												|
+											</font>
+											<a class="text-space edu-lx-list-right"  href="#">那一条铺满石子的小路那一条铺满石子的小路那一条铺满石子的小路</a>
+											
+										</li>
+										<li class="clearfix col-md-12">
+            					  	       <font class="edu-lx-list-left text-space">
+												信息
+											</font>
+											<font class="edu-lx-list-center">
+												|
+											</font>
+											<a class="text-space edu-lx-list-right"  href="#">那一条铺满石子的小路那一条铺满石子的小路那一条铺满石子的小路</a>
+											
+										</li>
+										<li class="clearfix col-md-12">
+            					  	       <font class="edu-lx-list-left text-space">
+												信息
+											</font>
+											<font class="edu-lx-list-center">
+												|
+											</font>
+											<a class="text-space edu-lx-list-right"  href="#">那一条铺满石子的小路那一条铺满石子的小路那一条铺满石子的小路</a>
+											
+										</li>
+										<li class="clearfix col-md-12">
+            					  	       <font class="edu-lx-list-left text-space">
+												信息
+											</font>
+											<font class="edu-lx-list-center">
+												|
+											</font>
+											<a class="text-space edu-lx-list-right"  href="#">那一条铺满石子的小路那一条铺满石子的小路那一条铺满石子的小路</a>
+											
+										</li>
+            					</ul>
+            				</div>
+            			</div>
+            		</div>
+            		
+            	</div>
+            	<div class="col-md-4">
+            		<div class="edu-user">
+            			<div class="edu-user-header">
+            				<h5>用户<span>签约</span></h5>
+            			</div>
+            			<div class="edu-user-body ">
+            				<div class="bureau-teacher-right-body" id="con">
+						<div class="bottomcover" style="z-index: 2;"></div>
+						<ul class="bureau-teacher-rizhi clear-margin clear-padding clear-border clearfix">
+							<li class="clearfix">
+								<div class=" bureau-teacher-rizhi-list clear-padding clearfix">
+									<dt class="col-md-2">
+
+        	 						<img src="img/hredu-ico.png">
+
+        	 					</dt>
+									<dd class="col-md-10">
+										<a href="#" class="text-space">热烈庆祝华容县教育云平台上线成功！</a>
+									</dd>
+								</div>
+
+							</li>
+							<li class="clearfix">
+								<div class=" bureau-teacher-rizhi-list clear-padding clearfix">
+									<dt class="col-md-2">
+
+        	 						<img src="img/hredu-ico.png">
+
+        	 					</dt>
+									<dd class="col-md-10">
+										<a href="#" class="text-space">热烈庆祝华容县教育云平台上线成功！</a>
+									</dd>
+								</div>
+
+							</li>
+							<li class="clearfix">
+								<div class=" bureau-teacher-rizhi-list clear-padding clearfix">
+									<dt class="col-md-2">
+
+        	 						<img src="img/hredu-ico.png">
+
+        	 					</dt>
+									<dd class="col-md-10">
+										<a href="#" class="text-space">热烈庆祝华容县教育云平台上线成功！</a>
+									</dd>
+								</div>
+
+							</li>
+							<li class="clearfix">
+								<div class=" bureau-teacher-rizhi-list clear-padding clearfix">
+									<dt class="col-md-2">
+
+        	 						<img src="img/hredu-ico.png">
+
+        	 					</dt>
+									<dd class="col-md-10">
+										<a href="#" class="text-space">热烈庆祝华容县教育云平台上线成功！</a>
+									</dd>
+								</div>
+
+							</li>
+							<li class="clearfix">
+								<div class=" bureau-teacher-rizhi-list clear-padding clearfix">
+									<dt class="col-md-2">
+
+        	 						<img src="img/hredu-ico.png">
+
+        	 					</dt>
+									<dd class="col-md-10">
+										<a href="#" class="text-space">热烈庆祝华容县教育云平台上线成功！</a>
+									</dd>
+								</div>
+
+							</li>
+							<li class="clearfix">
+								<div class=" bureau-teacher-rizhi-list clear-padding clearfix">
+									<dt class="col-md-2">
+
+        	 						<img src="img/hredu-ico.png">
+
+        	 					</dt>
+									<dd class="col-md-10">
+										<a href="#" class="text-space">热烈庆祝华容县教育云平台上线成功！</a>
+									</dd>
+								</div>
+
+							</li>
+						</ul>
+					</div>
+            			</div>
+            		</div>
+            		<div class="edu-banner">
+            			<div class="col-md-3">
+            				<a><img src="img/edu-yy1.png"></a>
+            				<div class="edu-bottom">教育应用</div>
+            			</div>
+            			<div class="col-md-3">
+            				<a><img src="img/edu-yy1.png"></a>
+            				<div class="edu-bottom">教育应用</div>
+            			</div>
+            			<div class="col-md-3">
+            				<a><img src="img/edu-yy1.png"></a>
+            				<div class="edu-bottom">教育应用</div>
+            			</div>
+            			<div class="col-md-3">
+            				<a><img src="img/edu-yy1.png"></a>
+            				<div class="edu-bottom">教育应用</div>
+            			</div>
+            			<div class="clearfix"></div>
+            		</div>
+            		<div class="edu-recommend">
+            			<div class="edu-recommend-header">
+            				<h5>优秀<span>推荐</span></h5>
+            			</div>
+            			<div class="edu-recommend-body">
+            			</div>
+            		</div>
+            	</div>
+            </div>
+		</div>
+		<!-- 底部 -->
+		<div class="container-fluid footer footer-grayline">
+			<div class="row">
+				<ul class="col-md-12 inline-block-ul">
+					<li><a href="#">关于我们</a>
+					</li>
+					<li>|</li>
+					<li><a href="#">联系我们</a>
+					</li>
+					<li>|</li>
+					<li><a href="#">友情链接</a>
+					</li>
+					<li>|</li>
+					<li><a href="#">关于我们</a>
+					</li>
+					<li>|</li>
+					<li><a href="#">关于我们</a>
+					</li>
+				</ul>
+			</div>
+			<div class="row">
+				<div class="col-md-12">Copyright @ 2011-2015 湖南领信教育网络发展有限公司版权所有 湘ICP备14001031号</div>
+			</div>
+		</div>
+
+		<!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+		<script type="text/JavaScript" src="space-footer-css.js"></script>
+		<!--***** 程序猿们，睁大你们的钛合金猿眼，“space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+		<script type="text/javascript" src="js/zzsc.js"></script>
+		<script type="text/javascript" src="js/jquery.pause.min.js"></script>
+		<script type="text/javascript" src="js/weiboscroll.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/gateway.css" media="screen">
+		<link href="css/shouye.css" rel="stylesheet" type="text/css">
+		<script type="text/javascript" src="js/top-top.js"></script>
+		<script>
+			(function($) {
+				$(function() {
+					$('.navchain li a').hover(function() {
+						$('.navwz', this).stop().fadeIn(200);
+						$('.navwz h1', this).stop().animate({
+							'top': '0'
+						}, 400);
+						$('.navwz h2', this).stop().animate({
+							'top': '0'
+						}, 400);
+					}, function() {
+						$('.navwz', this).stop().fadeOut(400);
+						$('.navwz h1', this).stop().animate({
+							'top': '-68px'
+						}, 400);
+						$('.navwz h2', this).stop().animate({
+							'top': '68px'
+						}, 400);
+					})
+
+				})
+			})(jQuery);
+
+
+
+			jQuery(window).resize(function() {
+				if (typeof indexSlides != 'undefined' && indexSlides.reformat)
+					indexSlides.reformat();
+				qfzy();
+			});
+		</script>
+		<script>
+			function goTopEx() {
+				var obj = document.getElementById("goTopBtn");
+
+				function getScrollTop() {
+					return document.documentElement.scrollTop;
+				}
+
+				function setScrollTop(value) {
+					document.documentElement.scrollTop = value;
+				}
+				window.onscroll = function() {
+					getScrollTop() > 0 ? obj.style.display = "" : obj.style.display = "none";
+				}
+				obj.onclick = function() {
+					var goTop = setInterval(scrollMove, 10);
+
+					function scrollMove() {
+						setScrollTop(getScrollTop() / 1.1);
+						if (getScrollTop() < 1) clearInterval(goTop);
+					}
+				}
+			}
+			goTopEx();
+			$(document).ready(function() {
+
+				$(".sidel ul li").hover(function() {
+					$(this).find(".sidebox").stop().animate({
+						"width": "124px"
+					}, 200).css({
+						"opacity": "1",
+						"filter": "Alpha(opacity=100)",
+						"background": "#24D665"
+					})
+				}, function() {
+					$(this).find(".sidebox").stop().animate({
+						"width": "54px"
+					}, 200).css({
+						"opacity": "0.8",
+						"filter": "Alpha(opacity=80)",
+						"background": "#ccc"
+					})
+				});
+
+			});
+
+			 //回到顶部
+			function goTop() {
+				$('html,body').animate({
+					'scrollTop': 0
+				}, 500);
+			}
+		</script>
+		<script type="text/javascript">
+			marqueeStart(1, "left");
+		</script>
+		<script type="text/javascript">
+			marqueeStart(2, "up");
+		</script>
+		<script>
+	     $('.bureau-custom-rizhi>li').each(function(){
+		var num = $(this).index();
+		if(num % 2 !== 0)
+		{
+			$(this).addClass('bg3')
+		}
+	    });
+        </script>
+
+
+	</body>
+
+</html>

@@ -2248,7 +2248,7 @@ font-weight: 900;
 
 .nav-bar-new{ }
 .nav-bar-new-list{  word-spacing:-5px;}
-.nav-bar-new-list > li{ line-height:52px; /*background:#e1e1e1;*/ margin-right:0px!important; padding:0; border-bottom:3px solid #0cb353;  font-size:14px; }
+.nav-bar-new-list > li{ line-height:60px; /*background:#e1e1e1;*/ margin-right:0px!important; padding:0; border-bottom:3px solid #0cb353;  font-size:14px; }
 .nav-bar-new-list > li.current{
 	background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.13);
 }
@@ -3045,4 +3045,10 @@ background: none repeat scroll 0% 0% #C2C2C2;
 color: #FFF;
 line-height: 14px;
 margin-right: 4px;
+}
+
+/*学校后台-德能银行报表*/
+.dntable{
+	text-align: center;
+	padding: 10px 20px;
 }
