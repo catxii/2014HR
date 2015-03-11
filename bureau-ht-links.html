@@ -21,7 +21,7 @@
 			box-shadow: 0 0 5px #535658;
 			font-size: 12px;
 			border-radius: 5px;
-			
+			display: none;
 			}
 			body, input, textarea, select, button {
 			font-family: "Hiragino Sans GB","Helvetica Neue",\5FAE\8F6F\96C5\9ED1,Tohoma;
@@ -234,7 +234,7 @@
 									<div class="san3">
 									</div>
 								</li>
-								<ol class="no ">
+								<ol class="no">
 									<a class="ol-active">自定义栏目</a>
 									<a>科室</a>
 									<a>优秀学校推荐</a>
@@ -261,23 +261,25 @@
 					
 				</div>
 				<div class=" bureau-right-content panel-body" id="add_show">
+					<!--<a href="javascript:void(0)" id="example2_1">error</a>-->
+					
 					<ul class="col-md-12">
 					
         	 			<li class="col-md-2 zdy-ks">
         	 				<ul class="inline-block-ul clear-margin clearfix">						 
 								  <li class="bureau-new-szdw-name">
-								  	<h4 class="label label-default text-space">教育类</h4>
+								  	<a href="bureau-ht-links-list.html"><h4 class="label label-default text-space" style="width: 175px;">教育类</h4></a>
 								  </li>
 							</ul>
 							<div class="wrench">
 								<div><a class="fa fa-cog"></a></div>
-								<div><a class="fa fa-close" id="delete"></a></div>
+								<div><a class="fa fa-close" id="coldelete"></a></div>
 							</div>
         	 	         </li>
         	 	         <li class="col-md-2 zdy-ks">
         	 				<ul class="inline-block-ul clear-margin clearfix">
 								  <li class="bureau-new-szdw-name">
-								  	<h4 class="label label-default text-space">资源类</h4>
+								  	<h4 class="label label-default text-space" style="width: 175px;">资源类</h4>
 								  </li>
 							</ul>
 							<div class="wrench">
@@ -289,7 +291,7 @@
         	 			<li class="col-md-2 zdy-ks zdy-ks-add">
         	 				<ul class="inline-block-ul clear-margin clearfix">
 								  <li class="bureau-new-szdw-name">
-								  	<a class="label-default text-space"><i class="fa fa-plus-square"></i> 添加链接</a>
+								  	<a class="label-default text-space" id="coladd"><i class="fa fa-plus-square"></i>添加链接</a>
 								  </li>
 							</ul>
         	 			</li>
@@ -300,9 +302,10 @@
 		</div>
         
         
+        
        <!--弹出框-->
        <!--添加链接-->
-       <div class="qz_dialog_layer" tabindex="-1" role="dialog" id="qz_dialog_instance_qzDialog3" aria-labelledby="dialog_head_3" aria-describedby="dialog_content_3" style="z-index: 9003; position: absolute; top: 160px; left: 499px; width: 352px; background-color: rgb(255, 255, 255); display: none;">
+       <div class="qz_dialog_layer" tabindex="-1" role="dialog" id="qz_dialog_instance_addlinks" aria-labelledby="dialog_head_3" aria-describedby="dialog_content_3" style="z-index: 9003; position: absolute; top: 160px; left: 499px; width: 352px; background-color: rgb(255, 255, 255);  ">
        	<div id="dialog_main_3" class="qz_dialog_layer_main qz_dialog_btn_bpadding" style="border-width: 2px; padding: 0px; margin: 0px; background-color: transparent;"><div class="qz_dialog_custom custom_left" id="dragdrop_10" style="cursor: move;"></div>
        	<div class="qz_dialog_custom custom_top" id="dragdrop_11" style="cursor: move;"></div>
        	<div id="dialog_head_3" class="qz_dialog_layer_title clearfix" style=" cursor: move;">
@@ -329,12 +332,12 @@
        			<div class="qz_dialog_layer_other"></div>
        			<div class="qz_dialog_layer_op">
        				<a href="javascript:confirm();" title="" class="qz_dialog_layer_btn qz_dialog_layer_sub" data-original-title="点击这里确认"><span>确定</span></a>
-       				<a href="javascript:closeqz_dialog_layer();" title="" class="qz_dialog_layer_btn qz_dialog_layer_nor" data-original-title="点击这里否决"><span>取消</span></a>
+       				<a href="javascript:void(0);" title="" class="qz_dialog_layer_btn qz_dialog_layer_nor colcancel" data-original-title="点击这里否决"><span>取消</span></a>
        			</div></div></div></div>
        <div class="qz_mask" style="opacity: 0.2; position: fixed; left: 0px; top: 0px; z-index: 6002; width: 100%; height: 100%; background-color: rgb(0, 0, 0); display: none;"></div>
        
        <!--删除链接-->
-       <div class="qz_dialog_layer" tabindex="-1" role="dialog" id="qz_dialog_instance_qzDialog3" aria-labelledby="dialog_head_3" aria-describedby="dialog_content_3" style="z-index: 9003; position: absolute; top: 160px; left: 499px; width: 352px; background-color: rgb(255, 255, 255); display: none;">
+       <div class="qz_dialog_layer" tabindex="-1" role="dialog" id="qz_dialog_instance_deletecol" aria-labelledby="dialog_head_3" aria-describedby="dialog_content_3" style="z-index: 9003; position: absolute; top: 160px; left: 499px; width: 352px; background-color: rgb(255, 255, 255); display: none;">
        	<div id="dialog_main_3" class="qz_dialog_layer_main qz_dialog_btn_bpadding" style="border-width: 2px; padding: 0px; margin: 0px; background-color: transparent;"><div class="qz_dialog_custom custom_left" id="dragdrop_10" style="cursor: move;"></div>
        	<div class="qz_dialog_custom custom_top" id="dragdrop_11" style="cursor: move;"></div>
        	<div id="dialog_head_3" class="qz_dialog_layer_title" style="display: none; cursor: move;">
@@ -354,7 +357,7 @@
        			<div class="qz_dialog_layer_other"></div>
        			<div class="qz_dialog_layer_op">
        				<a href="javascript:confirm();" title="" class="qz_dialog_layer_btn qz_dialog_layer_sub" data-original-title="点击这里确认"><span>确定</span></a>
-       				<a href="javascript:closeqz_dialog_layer();" title="" class="qz_dialog_layer_btn qz_dialog_layer_nor" data-original-title="点击这里否决"><span>取消</span></a>
+       				<a href="javascript:void(0);" title="" class="qz_dialog_layer_btn qz_dialog_layer_nor colcancel" data-original-title="点击这里否决"><span>取消</span></a>
        			</div></div></div></div>
        <div class="qz_mask" style="opacity: 0.2; position: fixed; left: 0px; top: 0px; z-index: 6002; width: 100%; height: 100%; background-color: rgb(0, 0, 0); display: none;"></div>
 
@@ -408,6 +411,36 @@
 			      })
 		</script>
 		
+		<script type="text/javascript">
+			
+			$(function(){
+				//添加链接
+				$('#coladd').click( function(){
+					$('#qz_dialog_instance_addlinks').show();
+					$('.qz_mask').show();
+				});
+
+               //删除链接
+				$('#coldelete').click( function(){
+					$('#qz_dialog_instance_deletecol').show();
+					$('.qz_mask').show();
+				});
+
+				//关闭对话框
+				$('.colcancel').click( function(){
+					$('#qz_dialog_instance_deletecol').hide();
+					$('#qz_dialog_instance_addlinks').hide();
+					$('.qz_mask').hide();
+				});
+				
+				$('.qz_dialog_btn_close').click( function(){
+					$('#qz_dialog_instance_addlinks').hide();
+					$('.qz_mask').hide();
+				});
+
+			})
+			
+		</script>
 		
 		
 	</body>
