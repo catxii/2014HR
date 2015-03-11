@@ -514,6 +514,48 @@
             				<h5>优秀<span>推荐</span></h5>
             			</div>
             			<div class="edu-recommend-body">
+            				 <div class="apply">
+    <div class="img_l"><img src="img/left.gif" /></div>
+    <div class="apply_nav">
+      <div class="apply_w">
+        <div class="apply_array">
+          <div class="apply_img"><img src="img/sinaminiblog.gif" /></div>
+          <div><span>语文老师：刘德华</span></div>
+        </div>
+       <div class="apply_array">
+          <div class="apply_img"><img src="img/sinaminiblog.gif" /></div>
+        </div>
+        <div class="apply_array">
+          <div class="apply_img"><img src="img/sinaminiblog.gif" /></div>
+        </div>
+        <div class="apply_array">
+          <div class="apply_img"><img src="img/sinaminiblog.gif" /></div>
+        </div>
+        <div class="apply_array">
+          <div class="apply_img"><img src="img/sinaminiblog.gif" /></div>
+        </div>
+        <div class="apply_array">
+          <div class="apply_img"><img src="img/sinaminiblog.gif" /></div>
+        </div>
+        <div class="apply_array">
+          <div class="apply_img"><img src="img/sinaminiblog.gif" /></div>
+        </div>
+        <div class="apply_array">
+          <div class="apply_img"><img src="img/sinaminiblog.gif" /></div>
+        </div>
+        <div class="apply_array">
+          <div class="apply_img"><img src="img/sinaminiblog.gif" /></div>
+        </div>
+        <div class="apply_array">
+          <div class="apply_img"><img src="img/sinaminiblog.gif" /></div>
+        </div>
+        <div class="apply_array">
+          <div class="apply_img"><img src="img/sinaminiblog.gif" /></div>
+        </div>
+      </div>
+    </div>
+    <div class="img_r"><img src="img/right.gif" /></div>
+  </div>
             			</div>
             		</div>
             	</div>
@@ -653,7 +695,38 @@
 		}
 	    });
         </script>
-
+        <script type="text/javascript">
+$(function() {
+  $li1 = $(".apply_nav .apply_array");
+  $window1 = $(".apply .apply_w");
+  $left1 = $(".apply .img_l");
+  $right1 = $(".apply .img_r");
+	
+  $window1.css("width", $li1.length*166);
+	
+  var lc1 = 0;
+  var rc1 = $li1.length-5;
+  $left1.click(function() {
+    if (lc1 < 1) {
+     alert("已经是第一张图片");
+     return;
+    }
+    lc1--;
+    rc1++;
+    $window1.animate({left:'+=134px'}, 1000);
+  });
+	
+  $right1.click(function() {
+  if (rc1 < 1) {
+    alert("已经是最后一张图片");
+    return;
+  }
+  lc1++;
+  rc1--;
+  $window1.animate({left:'-=134px'}, 1000);
+  });
+})
+</script>
 
 	</body>
 

@@ -3309,6 +3309,14 @@ margin: 0px 8px;
 	text-align: right;
 	color: #999;
 	}
+.bureau-datas-list-bottom > ul li div.bureau-list-right .data-ranking1{
+	width: 80px !important;
+	overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+display: inline-block;
+vertical-align: middle;
+}
 /*
 初中资源专区*/
 .bureau-middle-ico{

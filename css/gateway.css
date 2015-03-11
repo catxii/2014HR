@@ -223,19 +223,22 @@ color: #333;
 banner
 */
 .gateway-body .banner_mag {
-    width: 285px;
-height: 315px;
-    position: absolute;
-    left: 66%;
+    width: 305px;
+height: 335px;
+position: absolute;
+left: 66%;
 bottom: 48px;
-    text-align: left;
-    z-index: 99;
-    font-family: "微软雅黑";
+text-align: left;
+z-index: 99;
+font-family: "微软雅黑";
+padding: 10px;
+background: none repeat scroll 0% 0% rgba(255, 255, 255, 0.22);
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
 }
 .gateway-body .banner_magbox {
    width: 285px;
 height: 315px;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.32);
     text-align: left;
     padding: 20px;
     border-right: 6px solid #F90;
@@ -1168,6 +1171,44 @@ color: #EC9533;
 	color: #5A5A5A;
 font-weight: 200;
 }
+
+
+.apply_array {
+border-width: 1px;
+border-style: solid;
+border-color: #CDCDCD;
+padding: 16px;
+width: 100px;
+float: left;
+height: 186px;
+margin-right: 34px;
+}
+.apply_array .vote {position: absolute; line-height: 26px; margin-top: 10px; padding-left: 29px; width: 83px; display: block; background: url(imgs/vote.gif) no-repeat 0px 0px; height: 26px; color: #282828; margin-left: -6px; text-decoration: none}
+.apply_last {margin-right: 0px}
+.apply_img {text-align: center; display: table-cell; width: 64px;height: 64px; vertical-align: middle}
+.apply_array a {text-decoration: underline}
+.apply_array a:hover {color: #e01111}
+.apply_info {text-align: center; padding-bottom: 15px; padding-left: 15px; padding-right: 15px; padding-top: 15px}
+.apply_comment {text-align: center}
+.apply_info a {line-height: 17px; font-weight: 700}
+.apply_nav {
+position: relative;
+width: 370px;
+float: left;
+height: 193px;
+overflow: hidden;
+}
+.apply_w {position: absolute;  width: 1000px; float: left; left: 0px}
+.apply .img_l {
+position: absolute;
+z-index: 999;
+left: 322px;
+bottom: 202px;
+}
+.apply .img_r {position: absolute;right: 5px;bottom: 203px;}
+.app {border-bottom: #cdcdcd 1px solid; border-left: #cdcdcd 1px solid; margin-top: 18px; width: 888px; height: 178px; border-top: #cdcdcd 1px solid; border-right: #cdcdcd 1px solid}
+.img_l { float: left; cursor: pointer; }
+.img_r { float: left; cursor: pointer;}
 /*资源专区滚动*/
 #box_title {
 	margin: 0px auto;
@@ -1245,7 +1286,8 @@ font-weight: 200;
 	font-size: 12px;
 }
 .edu-banner .col-md-3 .edu-bottom{
-	line-height: 18px;
+	line-height: 22px;
+	white-space: nowrap;
 }
 /*日志列表*/
 .bureau-modify-zdy-tzgg-list > ul > li > .bureau-new-rizhi-list > a > i{
