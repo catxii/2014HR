@@ -194,5 +194,105 @@ border-radius: 0 !important;}
 
 
 
+ /*custom*/
+.grid-body{ background: url(../img/saike/grid_bg.png) repeat;} 
+.font-arial{ font-family: Arial,Helvetica,sans-serif,Verdana,Helvetica;}
+.font_size_16{ font-size: 16px;}
+.step_green_bg{ background-color: #19a97b;}
+.grid-2{ width: 120px;}
+.grid-2.center{ margin-left: auto;  margin-right: auto; display: block;}
+
+
+
+/*我要晒课-首页*/
+.gray-body{ background-color: #f8f8f8; font-family: "微软雅黑", Verdana, Helvetica !important; font-size: 14px;}
+.gray-body a:hover{text-decoration:underline !important; color:#4C4C4C; }
+.curriculum-banner .shai-i a{ padding: 8px 15px; font-size: 16px; border-radius: 2px; /*font-family: '微软雅黑';*/ font-weight: normal;}
+.curriculum-banner .shai-i a:hover{ color: #FFF; text-decoration: none !important;}
+.curriculum-banner .shaike-info{ padding: 10px 0px;}
+.curriculum-banner .shaike-info .num-red{vertical-align:middle; font-family:Helvetica,Arial,sans-serif; font-size: 20px; color: #F06431;}
+
+.curriculum-content .curriculum-zs{ padding: 5px; background-color: #FFF; border: 1px solid #DFDFDF}
+.curriculum-content .curriculum-zs .curriculum-zs-header{ font-size: 18px; line-height: 31px; /*font-family: "微软雅黑";*/}
+.curriculum-content .curriculum-zs .curriculum-news .bureau-list-left{ width: 80%; float: left; line-height: 16px;}
+.curriculum-content .curriculum-zs .curriculum-news .bureau-list-right{ line-height: 16px;width: 20%;float: right;text-align: right;color: #999;}
+.curriculum-content .curriculum-zs > ul > li > .bureau-list-left > a:hover{ text-decoration: underline;}
+.curriculum-content .curriculum-zs > ul > li:first-child > .bureau-list-left > i{ background: none repeat scroll 0% 0% #419641;} 
+.curriculum-content .curriculum-zs > ul > li > .bureau-list-left > i{
+	font-family: Arial,Helvetica,sans-serif,Verdana,Helvetica;
+	font-size: 14px;
+	vertical-align: middle;
+	margin-right: 5px;
+	padding: 4px;
+	background: none repeat scroll 0% 0% #C2C2C2;
+	border-radius: 3px;
+	color: #FFF;
+}
+
+.curriculum-content .curriculum-zs > .curriculum-news > li{padding: 6px 3px;}
+
+.curriculum-content .saike-box{ text-align: center; padding: 5px; border: 1px solid #DFDFDF; background-color: #FFF;}
+.curriculum-content .saike-box p.saike-num{
+	font-family: Arial,Helvetica,sans-serif,Verdana,Helvetica; 
+	font-size: 22px; display: inline-block;
+	}
+.curriculum-content .saike-box p.saike-num span{ padding: 5px; margin:0 1px; color: #c12e2a; background-color: #f1f1f1;}
+.curriculum-content .saike-box p.saike-num b.spv{ font-size: 12px; margin-right: 2px; font-weight: normal;}
+.curriculum-content .curriculum-zs ul.user_inf{ background:url(../img/saike/user_bg.png) repeat-x;}
+.curriculum-content .curriculum-zs ul li.user_inf_left img{ width: 70px; height: 70px;}
+.curriculum-content .curriculum-zs ul li.user_inf_right .user_name{ margin-top:25px; display:inline-block;}
+.curriculum-content .curriculum-zs ul.user_info_wrap li{ text-align: center;}
+.curriculum-content .curriculum-zs ul.user_info_wrap li .user_info_num{ color: #F06431;}
+
+.teacher-img-wrap{}
+.teacher-img-wrap hr{
+    border: none;
+    height: 1px;
+    background-color: #aaaaaa;
+}
+
+
+
+/*我要晒课-步骤页面*/
+.step_main{ padding-top: 120px; padding-bottom: 80px;}
+.curriculum-nav{ box-shadow:none; padding: 20px 0px 20px 0px;  border-bottom:#E7E7E7 solid 1px;}
+.curriculum-nav .navbar-nav li .num_circle{ 
+	font-family: Arial,Helvetica,sans-serif,Verdana,Helvetica;
+	font-size: 16px;
+	text-align: center; 
+	/*line-height: 50px; */
+	color: #FFF !important; 
+	width: 50px; 
+	height: 50px;  
+	background-color: #D0D0D0;    
+	-moz-border-radius: 25px;    
+	-webkit-border-radius: 25px;  
+	border-radius: 25px;
+	}
+	
+.curriculum-nav .navbar-nav li a:hover, .curriculum-nav .navbar-nav li a:focus{ /*background-color:#d9534f !important; */ }
+.curriculum-nav .navbar-nav li p{ line-height: 25px;  margin: 0px; color: #fff;}
+
+.curriculum-nav .step_active li a{ background-color: #d9534f !important; }
+
+
+.saike_edit_box .panel .tips-red{ 
+	font-family: Arial,Helvetica,sans-serif,Verdana,Helvetica; 
+	font-size: 20px;
+	line-height: 30px;
+	color: #d9534f;
+	}
+
+.saike_edit_box .book-colum ul{ font-size: 16px;}
+.saike_edit_box .book-colum ul li{ line-height: 30px;}
+.saike_edit_box .book-colum ul li.floor-stand{ background:url(../img/saike/stand.png) center repeat-x;}	
+.saike_edit_box .book-colum ul li.floor-stand span.floor-title{line-height:25px;background-color: #FFF; padding-right: 10px; max-height: 90px; display:inline-block; overflow: hidden;}
+.saike_edit_box .book-colum .nums{font-size:16px;}
+.saike_edit_box .book-colum ul li.edit_ul{ font-size: 14px; }
+.saike_edit_box .book-colum ul li.edit_ul ul{ font-size: 14px; }
+.saike_edit_box .book-colum .floor-box{ padding-top: 20px; }
+
+
+
 
 
