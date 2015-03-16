@@ -4781,13 +4781,13 @@ body.hs-bg .bureau-navlist {
 
 /*晒课*/
 .curriculum-banner .school-search{
-	border-bottom: 4px solid #4C9ED9;
+	border-bottom: 4px solid #19A97B;
 	padding: 0;
 }
 .curriculum-content .left.carousel-control,.curriculum-content .right.carousel-control{
 	background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.55);
 width: 7% !important;
-top: 68px;
+top: 95px;
 height: 50px;
 }
 .curriculum-content .left.carousel-control > span,.curriculum-content .right.carousel-control > span{
@@ -4796,13 +4796,13 @@ font-size: 19px;
 }
 .curriculum-banner .school-search .bureau-cuzdy-chengyuan li{
 	margin-right: 0px ;
-	padding: 0 20px;
+	padding: 3px 20px;
 	
 	line-height: 30px;
 	border-radius: 5px 5px 0 0;
 }
 .curriculum-banner .school-search .bureau-cuzdy-chengyuan li.active,.curriculum-banner .school-search .bureau-cuzdy-chengyuan li:hover{
-	background:#4C9ED9;
+	background-color:#19A97B;
 }
 .curriculum-banner .school-search .bureau-cuzdy-chengyuan li.active a,.curriculum-banner .school-search .bureau-cuzdy-chengyuan li:hover a{
 	color: #fff;

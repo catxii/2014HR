@@ -193,32 +193,86 @@ border-radius: 0 !important;}
 .catalog-menu .navbar-toggle .icon-bar{ background-color: #fff;}
 
 
-
- /*custom*/
+/*===================custom==============*/
 .grid-body{ background: url(../img/saike/grid_bg.png) repeat;} 
 .font-arial{ font-family: Arial,Helvetica,sans-serif,Verdana,Helvetica;}
 .font_size_16{ font-size: 16px;}
+.font_size_12{ font-size: 12px;}
 .step_green_bg{ background-color: #19a97b;}
+.color_gray{ color: #9a9a9a;}
+.color_brown{ color:#9b5b32;}
+.text-overflow{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
 .grid-2{ width: 120px;}
 .grid-2.center{ margin-left: auto;  margin-right: auto; display: block;}
 
+/*评分星级*/
+.bg-saike{ 
+	background: transparent url(../img/saike/bg-saike.png) no-repeat scroll; 
+	_background: transparent url(../img/saike/bg-saike.png) no-repeat scroll; 
+}
+b.ic-star{
+	display: inline-block;
+	width: 15px;
+	height: 14px;
+	vertical-align: -1px;
+	margin: 0 -1px;
+}
+b.full{
+	background-position: 0 0;
+}
+b.harf{ 
+	background-position: -15px 0;
+}
+b.empty{
+	background-position: -31px 0;
+}
+b.rank{ 
+	display: inline-block;
+	width: 20px;
+	height: 26px;
+	background-position: -2px -22px;
+	text-align: center;
+	color: #FFF;
+	font-weight:normal;
+	margin-left: 5px;
+}
 
 
-/*我要晒课-首页*/
+/*====我要晒课-首页====*/
 .gray-body{ background-color: #f8f8f8; font-family: "微软雅黑", Verdana, Helvetica !important; font-size: 14px;}
 .gray-body a:hover{text-decoration:underline !important; color:#4C4C4C; }
-.curriculum-banner .shai-i a{ padding: 8px 15px; font-size: 16px; border-radius: 2px; /*font-family: '微软雅黑';*/ font-weight: normal;}
-.curriculum-banner .shai-i a:hover{ color: #FFF; text-decoration: none !important;}
-.curriculum-banner .shaike-info{ padding: 10px 0px;}
-.curriculum-banner .shaike-info .num-red{vertical-align:middle; font-family:Helvetica,Arial,sans-serif; font-size: 20px; color: #F06431;}
 
-.curriculum-content .curriculum-zs{ padding: 5px; background-color: #FFF; border: 1px solid #DFDFDF}
-.curriculum-content .curriculum-zs .curriculum-zs-header{ font-size: 18px; line-height: 31px; /*font-family: "微软雅黑";*/}
-.curriculum-content .curriculum-zs .curriculum-news .bureau-list-left{ width: 80%; float: left; line-height: 16px;}
-.curriculum-content .curriculum-zs .curriculum-news .bureau-list-right{ line-height: 16px;width: 20%;float: right;text-align: right;color: #999;}
-.curriculum-content .curriculum-zs > ul > li > .bureau-list-left > a:hover{ text-decoration: underline;}
-.curriculum-content .curriculum-zs > ul > li:first-child > .bureau-list-left > i{ background: none repeat scroll 0% 0% #419641;} 
-.curriculum-content .curriculum-zs > ul > li > .bureau-list-left > i{
+.curriculum-content .carousel{height:246px; overflow: hidden;}
+.curriculum-content .carousel .carousel-inner .item{ height:246px; overflow: hidden;}
+.curriculum-content .carousel .carousel-inner .item a img{
+	width: 100%;
+	height: 100%;
+}
+
+.curriculum-banner .curriculum-menu{ padding: 10px 10px;}
+.curriculum-banner a.sai-i{ padding: 8px 15px; font-size: 16px; border-radius: 2px; /*font-family: '微软雅黑';*/ font-weight: normal;}
+.curriculum-banner a.sai-i:hover{ color: #FFF; text-decoration: none !important;}
+
+.curriculum-content{ padding: 10px 10px;}
+.curriculum-content .curriculum-box{ padding: 5px; background-color: #FFF; border: 1px solid #DFDFDF}
+.curriculum-content .curriculum-box .curriculum-box-header h4{ 
+	   margin:5px 0 0 0;
+	   line-height: 20px; 
+	   border-left: 4px solid #19A97B;
+       padding-left: 7px;
+}
+.curriculum-content .curriculum-box .curriculum-box-header{  line-height: 31px;}
+.curriculum-content .curriculum-box .curriculum-news .bureau-list-left{ width: 80%; float: left; line-height: 16px;}
+.curriculum-content .curriculum-box .curriculum-news .bureau-list-right{ line-height: 16px;width: 20%;float: right;text-align: right;color: #999;}
+.curriculum-content .curriculum-box .curriculum-news .bureau-list-right span{ font-size: 12px;}
+.curriculum-content .curriculum-box > ul > li > .bureau-list-left > a:hover{ text-decoration: underline;}
+.curriculum-content .curriculum-box > ul > li:first-child > .bureau-list-left > i{ background: none repeat scroll 0% 0% #419641;} 
+.curriculum-content .curriculum-box > ul > li > .bureau-list-left > i{
 	font-family: Arial,Helvetica,sans-serif,Verdana,Helvetica;
 	font-size: 14px;
 	vertical-align: middle;
@@ -229,7 +283,7 @@ border-radius: 0 !important;}
 	color: #FFF;
 }
 
-.curriculum-content .curriculum-zs > .curriculum-news > li{padding: 6px 3px;}
+.curriculum-content .curriculum-box > .curriculum-news > li{padding: 6px 3px;}
 
 .curriculum-content .saike-box{ text-align: center; padding: 5px; border: 1px solid #DFDFDF; background-color: #FFF;}
 .curriculum-content .saike-box p.saike-num{
@@ -238,22 +292,339 @@ border-radius: 0 !important;}
 	}
 .curriculum-content .saike-box p.saike-num span{ padding: 5px; margin:0 1px; color: #c12e2a; background-color: #f1f1f1;}
 .curriculum-content .saike-box p.saike-num b.spv{ font-size: 12px; margin-right: 2px; font-weight: normal;}
-.curriculum-content .curriculum-zs ul.user_inf{ background:url(../img/saike/user_bg.png) repeat-x;}
-.curriculum-content .curriculum-zs ul li.user_inf_left img{ width: 70px; height: 70px;}
-.curriculum-content .curriculum-zs ul li.user_inf_right .user_name{ margin-top:25px; display:inline-block;}
-.curriculum-content .curriculum-zs ul.user_info_wrap li{ text-align: center;}
-.curriculum-content .curriculum-zs ul.user_info_wrap li .user_info_num{ color: #F06431;}
+.curriculum-content .curriculum-box ul.user_inf{ background:url(../img/saike/user_bg.png) repeat-x;}
+.curriculum-content .curriculum-box ul li.user_inf_left img{ width: 70px; height: 70px;}
+.curriculum-content .curriculum-box ul li.user_inf_right .user_name{ margin-top:25px; display:inline-block;}
+.curriculum-content .curriculum-box ul.user_info_wrap li{ text-align: center;}
+.curriculum-content .curriculum-box ul.user_info_wrap li .user_info_num{ color: #F06431;}
 
-.teacher-img-wrap{}
+.teacher-img-wrap{ margin-bottom: 20px;}
 .teacher-img-wrap hr{
     border: none;
     height: 1px;
     background-color: #aaaaaa;
 }
+.teacher-img-wrap h3{ padding-bottom: 20px;}
+
+.teacher-img-wrap .teacher-case-box .panels{
+	width: 142px;
+    height: 142px;
+    overflow: hidden;
+    background: #19A97B;
+    display: block;
+	position: relative;
+	float: left;
+}
+.teacher-img-wrap .teacher-case-box .panels a{
+	background-size: 100% 100%;
+	display: block;
+	width: 142px;
+	height: 142px;
+	position: relative;
+	box-shadow: 
+        inset 0 0 0 17px rgba(255,255,255,0.6),
+        0 1px 2px rgba(0,0,0,0.1);
+	transition: all 0.4s ease-in-out;
+
+}
+.teacher-img-wrap .teacher-case-box .panels a:hover{
+	box-shadow: 
+        inset 0 0 0 1px rgba(255,255,255,0.1),
+        0 1px 2px rgba(0,0,0,0.1);
+}
+
+.teacher-img-wrap .teacher-case-box .panels a span.overstate{
+	position: absolute;
+	z-index: 3;
+	width: 142px;
+	height: 142px;
+	top: 0;
+	left: 0;
+	text-align: center;
+	color: #ffffff;
+	text-transform: uppercase;
+	background: #19A97B;
+	padding: 10px;
+	line-height: 18px;
+
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out;
+	-moz-transition: all 0.4s ease-in-out;
+	-o-transition: all 0.4s ease-in-out;
+	-ms-transition: all 0.4s ease-in-out;
+	transition: all 0.4s ease-in-out;
+	
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-o-transform: scale(0);
+	-ms-transform: scale(0);
+	transform: scale(0);
+}
+
+.teacher-img-wrap .teacher-case-box .panels a:hover span.overstate{
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+}
+
+.teacher-img-wrap .teacher-case-box .panels a span.overstate strong{
+	word-wrap : break-word;
+	height: 38px;
+	display: block;
+	overflow: hidden;
+	
+}
+.teacher-img-wrap .teacher-case-box .panels a span.overstate span{
+	height: 38px;
+	overflow: hidden;
+	display: block;
+}
+
+/*他们在晒   media*/
+
+@media (min-width: 768px){
+	/*width: 750px;*/
+	.teacher-img-wrap .teacher-case-box .panels{
+		width: 179px;
+        height: 179px;
+	}
+	.teacher-img-wrap .teacher-case-box .panels a{
+		width: 179px;
+	   height: 179px;
+	}
+	
+	.teacher-img-wrap .teacher-case-box .panels a span.overstate{
+		width: 179px;
+	   height: 179px;
+	}
+	
+}
+
+@media (min-width: 992px){
+	/*width: 970px;*/
+	.teacher-img-wrap .teacher-case-box .panels{
+		width: 234px;
+	    height: 234px;
+	}
+	.teacher-img-wrap .teacher-case-box .panels a{
+		width: 234px;
+	    height: 234px;
+	}
+	
+	.teacher-img-wrap .teacher-case-box .panels a span.overstate{
+		width: 234px;
+	    height: 234px;
+	}
+}    
+
+@media (min-width: 1200px){
+	/*width: 1170px;*/
+	.teacher-img-wrap .teacher-case-box .panels{
+		width: 142px;
+	    height: 142px;
+	}
+	.teacher-img-wrap .teacher-case-box .panels a{
+		width: 142px;
+	    height: 142px;
+	}
+	.teacher-img-wrap .teacher-case-box .panels a span.overstate{
+		width: 142px;
+	    height: 142px;
+	}
+}    
+
+/*晒课比拼*/
+.competition-lesson-wrap{
+	margin-top: 10px;
+	background-color: #FFF; 
+	border: 1px solid #DFDFDF
+}
+.competition-lesson-wrap .competition-lesson-box{  padding-right: 10px;}
+.competition-lesson-wrap .competition-lesson-box:last-child{ padding-right: 0px;}
+.competition-lesson-wrap .competition-lesson-box h3{
+	padding-bottom: 20px;
+	
+}
+.competition-lesson-wrap .competition-lesson-box hr{
+    border: none;
+    height: 1px;
+    background-color: #aaaaaa;
+}
+.competition-lesson-wrap .competition-lesson-box dl.competition-header dt{
+	text-align: left;
+	
+}
+.competition-lesson-wrap .competition-lesson-box dl.competition-header dt img{
+	margin-left: 5px;
+    width: 142px;
+    height: 142px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;  
+    -moz-border-radius : 5px; 
+}
+.competition-lesson-wrap .competition-lesson-box dl.competition-header dd{margin: 0;}
+.competition-lesson-wrap .competition-lesson-box dl.competition-header dd p{
+	margin: 0; 
+	padding: 0; 
+	line-height: 25px;
+}
+.competition-lesson-wrap .competition-lesson-box dl.competition-header dd p.author_name{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.competition-lesson-wrap .competition-lesson-box dl.competition-header dd p.author_notes{
+	color: #9a9a9a;
+}
+.competition-lesson-wrap .competition-lesson-box ul.competition-content li{ padding: 3px 0;}
+.competition-lesson-wrap .competition-lesson-box ul.competition-content li span.score{
+	float: right;
+	text-align: right;
+	font-size: 12px;
+	color:#f96210;
+	line-height: 20px;
+}
+
+.competition-lesson-wrap .competition-lesson-box ul.competition-content li b{
+	font-family: Arial,Helvetica,sans-serif,Verdana,Helvetica;
+	font-size: 16px;
+}
+.competition-lesson-wrap .competition-lesson-box ul.competition-content li a{ 
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+/*活动指南*/
+
+.activity-help-wrap hr{
+	border: none;
+    height: 1px;
+    background-color: #aaaaaa;
+}
+.activity-help-wrap h3{ margin-bottom: 20px;}
+.activity-help-wrap .actvity-help-box{ 
+	background-color: #FFF; 
+	border: 1px solid #DFDFDF;
+	padding: 10px;
+	
+}
+.activity-help-wrap .actvity-help-box .page-header h4{ border-left: 4px solid #19A97B; padding-left: 9px;}
+.activity-help-wrap .actvity-help-box ul.active-help-content li{ 
+	margin-left: -7px;
+	padding: 3px 12px; 
+	/*list-style-type: circle;*/
+	
+	background-position: -48px 5px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.activity-help-wrap .actvity-help-box .page-header a.title-more{ margin-top: 10px;}
+
+
+/*===我的晒课===*/
+
+.myclass_box{ 
+	background-color: #FFF; 
+	border: 1px solid #DFDFDF;
+}
+.myclass_box h3{ margin-bottom: 20px;}
+
+.myclass_box .nav-tabs{ border: 0;}
+.myclass_box .nav-tabs > li > a{ 
+	border-radius: 0px;
+	border: 0px;
+	background-color: #F2F2F2;
+	padding: 3px 20px;
+	margin-right: 5px;
+}
+.myclass_box .nav-tabs > li > a:hover{
+	background-color: #56C4A1;
+	color: #FFF;
+}
+.myclass_box .nav-tabs > li.active > a{
+	border: 0px;
+	color: #FFF;
+    background-color: #56C4A1;
+	
+}
+
+.myclass_box .myclass_content li{
+	margin-top: 20px;
+	border-bottom: #D9D9D9 dashed 1px;
+}
+.myclass_box .myclass_content li:last-child{
+	border-bottom:0px
+}
+.myclass_box .myclass_content li dl dt{
+	width: 125px;
+	height: 125px;
+	overflow: hidden;
+}
+.myclass_box .myclass_content li dl dd{
+	margin-left: 135px;
+}
+.myclass_box .myclass_content li dl dd .myclass_btn{ margin-top: 20px;}
+.myclass_box .myclass_content li dl dd .myclass_btn p{	text-align: center;}
+.myclass_box .myclass_content li dl dd .myclass_btn a{ color: #FFF;}
+.myclass_box .myclass_content li dl dd p.book_title a{
+	display:inline-block; 
+	max-width: 200px; 
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.myclass_box .myclass_content li dl dd p.book_title{
+	font-size: 18px;
+	font-weight: bold;
+}
+.myclass_box .myclass_content li dl dd p.book_title span{
+	margin-left: 5px;
+	font-size: 12px;
+	display: inline-block;
+	margin-top: -15px;
+	vertical-align: middle;
+}
+.myclass_box .myclass_content li dl dd p.book_desc{
+	display:block; 
+	max-width: 400px; 
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.myclass_box .myclass_content li dl dd p.book_comment{ color:#9a9a9a;}
+.myclass_box .myclass_content li dl dd p.book_comment span{ margin-right: 10px;}
+.myclass_box .myclass_content li dl dd p.book_comment span i{ font-style: normal; color: red;}
+.myclass_box .myclass_content li dl dd p.book_score{ color:#9a9a9a; font-size: 12px; }
+
+/*分页*/
+.footer-page ul.pagination li a{
+	margin-right: 5px;
+	border-radius: 0;
+}
+.footer-page ul.pagination li a:hover{
+	background-color: #28b385;
+	color: #FFF;
+	text-decoration: none !important;
+}
+.footer-page ul.pagination li.active a{ 
+	background-color: #28b385;	
+}
 
 
 
-/*我要晒课-步骤页面*/
+
+
+
+
+
+
+/*===我要晒课-步骤页面===*/
 .step_main{ padding-top: 120px; padding-bottom: 80px;}
 .curriculum-nav{ box-shadow:none; padding: 20px 0px 20px 0px;  border-bottom:#E7E7E7 solid 1px;}
 .curriculum-nav .navbar-nav li .num_circle{ 

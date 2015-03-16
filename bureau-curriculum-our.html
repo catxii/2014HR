@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="../../favicon.ico">
+
+		<title>领信样式模板</title>
+
+		<!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+		<script type="text/JavaScript" src="space-css.js"></script>
+		<!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+
+
+	</head>
+
+	<body class="bureau-body gray-body">
+		<div class="sidel"style="display: none;" id="goTopBtn" >
+			<ul>
+		<li style="border:none;"><a href="javascript:goTop();" class="sidetop"><img src="img/side_icon05.png"></a></li>
+	  </ul>
+		</div>
+		<div class="navbar navbar-zhijiao navbar-bureau navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="#"><span class="lx-logo"></span></a>
+						</li>
+						<li>
+							<a href="#about">个人空间</a>
+						</li>
+						<li>
+							<a href="#contact">班级空间</a>
+						</li>
+						<li>
+							<a href="#contact">我的班级</a>
+						</li>
+					</ul>
+
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="#">登陆</a>
+						</li>
+
+						<li class="dropdown">
+							<a data-toggle="dropdown" class="dropdown-toggle" href="#"> 设置 <span class="caret"></span></a>
+							<ul role="menu" class="dropdown-menu">
+								<li><a href="#">Action</a>
+								</li>
+								<li><a href="#">Another action</a>
+								</li>
+								<li><a href="#">Something else here</a>
+								</li>
+								<li class="divider"></li>
+								<li><a href="#">Separated link</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+
+				</div>
+
+
+				<!--/.nav-collapse -->
+			</div>
+		</div>
+
+		<div class="container-fluid bureau-navlist">
+			 <div class="container ">
+			 	 <div class="col-md-4">
+			 	 	<div class="bureau-logo">
+			 	 			<img src="img/huaronglogo.png">
+			 	 	</div>
+			 	 </div>
+			 	 <div class="col-md-8 bureau-nav">
+			 	 		    <ul class="inline-block-ul pull-right clear-margin">
+			 	 		    	<li>
+			 	 		    		<div class="bureau-ico">
+			 	 		    		     <a href="#" class="fa fa-home current"></a>
+			 	 		    		     <div class="bureau-ico-name">主页</div>
+			 	 		    	    </div>
+			 	 		    	</li>
+			 	 		    	<li>
+			 	 		    		<div class="bureau-ico">
+			 	 		    		     <a href="#" class="fa fa-paste"></a>
+			 	 		    		     <div class="bureau-ico-name">资源平台</div>
+			 	 		    	    </div>
+			 	 		    	</li>
+			 	 		    	<li>
+			 	 		    		<div class="bureau-ico">
+			 	 		    		     <a href="#" class="fa fa-user"></a>
+			 	 		    		     <div class="bureau-ico-name">成员</div>
+			 	 		    	    </div>
+			 	 		    	</li>
+			 	 		    	<li>
+			 	 		    		<div class="bureau-ico">
+			 	 		    		     <a href="#" class="fa fa-bar-chart "></a>
+			 	 		    		     <div class="bureau-ico-name">试题平台</div>
+			 	 		    	    </div>
+			 	 		    	</li>
+			 	 		    </ul>
+			 	 </div>
+			 </div>
+		</div>
+		<div class="school-neiye-banner curriculum-banner">
+			<div class="curriculum-menu container">
+				<div class="col-md-12 school-search clear-padding clearfix">
+					<ul class="inline-block-ul bureau-cuzdy-chengyuan" style="float: left;">
+						<li><a href="#">首页</a></li>
+						<li><a href="#">展示</a></li>
+						<li class="active"><a href="#">我的晒课</a></li>
+						<li><a href="#">报名信息</a></li>
+					</ul>
+					
+					<a href="#" class="label label-warning sai-i float-right">我要晒课</a>					
+				</div>
+			</div>
+		</div>
+		
+		<!--资源专区-->
+		
+       
+        <div class="container curriculum-content">
+        	<!--我的晒课-->
+        	<section  role="tabpanel" class="myclass_box col-md-12" style="min-height: 350px;">
+        		<div class="col-md-12 myclass_menu">
+	        		<h3>我的晒课</h3>
+				    <ul class="nav nav-tabs" role="tablist">
+				      <li class="active"><a href="#all" data-toggle="tab">全部</a></li>
+				      <li class=""><a href="#submit" data-toggle="tab">待提交</a></li>
+				      <li class=""><a href="#examine" data-toggle="tab">待审核</a></li>
+				      <li class=""><a href="#pass" data-toggle="tab">审核通过</a></li>
+				      <li class=""><a href="#exit" data-toggle="tab">退回</a></li>
+				    </ul>
+				</div>
+				
+			    <div class="tab-content clearfix">
+			     <!--全部-->
+			     <div class="tab-pane clearfix active" id="all">
+			        <ul class="myclass_content col-md-12" >
+	           	     	<li class="clearfix">
+	           	     		<dl class="dl-horizontal">
+	           	     			<dt><a href="#"><img src="img/saike/img_book_125x125.png"></a></dt>
+	           	     			<dd>
+	           	     				<div class="float-left">
+		           	     				<p class="book_title"><a href="#">自己去吧</a><span class="label label-primary">6天前</span><span class="label label-danger">删除</span></p>
+		           	     				<p class="book_desc">小学语文 > 人教2001课标版 > 一年级上册 > 第六组　课文 ></p>
+		           	     				<p class="book_comment"><span><i>0</i>人同晒此课</span><span><i>0</i>人浏览</span><span>评论(<i>0</i>)</span></p>
+		           	     				<p class="book_score">
+		           	     					评分
+		           	     					<b class="ic-star bg-saike full"></b>
+			    							<b class="ic-star bg-saike full"></b>
+			    							<b class="ic-star bg-saike full"></b>
+			    							<b class="ic-star bg-saike harf"></b>
+			    							<b class="ic-star bg-saike empty"></b>
+			    							5.0
+		           	     				</p>
+	           	     				</div>
+	           	     				<div class="myclass_btn float-right">
+	           	     					<p>待审核</p>
+	           	     				    <a href="#" class="replay btn btn-primary">重新修改</a>
+	           	     				</div>
+	           	     			</dd>
+	           	     		</dl>
+	           	     	</li>
+	           	     	<li class="clearfix">
+	           	     		<dl class="dl-horizontal">
+	           	     			<dt><a href="#"><img src="img/saike/img_book_125x125.png"></a></dt>
+	           	     			<dd>
+	           	     				<div class="float-left">
+		           	     				<p class="book_title"><a href="#">自己去吧自己去吧自己去吧自己去吧自己去吧自己去吧自己去吧自己去吧</a><span class="label label-primary">6天前</span><span class="label label-danger">删除</span></p>
+		           	     				<p class="book_desc">小学语文 > 人教2001课标版 > 一年级上册 > 第六组　课文 ></p>
+		           	     				<p class="book_comment"><span><i>0</i>人同晒此课</span><span><i>0</i>人浏览</span><span>评论(<i>0</i>)</span></p>
+		           	     				<p class="book_score">
+		           	     					评分
+		           	     					<b class="ic-star bg-saike full"></b>
+			    							<b class="ic-star bg-saike full"></b>
+			    							<b class="ic-star bg-saike full"></b>
+			    							<b class="ic-star bg-saike harf"></b>
+			    							<b class="ic-star bg-saike empty"></b>
+			    							5.0
+		           	     				</p>
+	           	     				</div>
+	           	     				<div class="myclass_btn float-right">
+	           	     					<p>待审核</p>
+	           	     				    <a href="#" class="replay btn btn-primary">重新修改</a>
+	           	     				</div>
+	           	     			</dd>
+	           	     		</dl>
+	           	     	</li>
+	           	     </ul>
+	           	     
+	           	     <!--分页-->
+		           	 <nav  class="col-md-4 col-md-offset-4 footer-page text-center">
+							  <ul class="pagination">
+							    <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true"><上一页</span></a></li>
+							    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+							    <li><a href="#">2</a></li>
+							    <li><a href="#">3</a></li>
+							    <li><a href="#" aria-label="Next"><span aria-hidden="true">下一页></span></a></li>
+							  </ul>
+		             </nav><!--/.footer-page-->
+			      </div>
+			      
+			      <!--待提交-->
+			      <div class="tab-pane clearfix" id="submit">
+			           <ul class="myclass_content col-md-12">
+	           	     	<li class="clearfix">
+	           	     		<dl class="dl-horizontal">
+	           	     			<dt><a href="#"><img src="img/saike/img_book_125x125.png"></a></dt>
+	           	     			<dd>
+	           	     				<div class="float-left">
+		           	     				<p class="book_title"><a href="#">唐诗三首</a><span class="label label-primary">6天前</span><span class="label label-danger">删除</span></p>
+		           	     				<p class="book_desc">小学语文 > 人教2001课标版 > 一年级上册 > 第六组　课文 ></p>
+		           	     				<p class="book_comment"><span><i>0</i>人同晒此课</span><span><i>0</i>人浏览</span><span>评论(<i>0</i>)</span></p>
+		           	     				<p class="book_score">
+		           	     					评分
+		           	     					<b class="ic-star bg-saike full"></b>
+			    							<b class="ic-star bg-saike full"></b>
+			    							<b class="ic-star bg-saike full"></b>
+			    							<b class="ic-star bg-saike harf"></b>
+			    							<b class="ic-star bg-saike empty"></b>
+			    							5.0
+		           	     				</p>
+	           	     				</div>
+	           	     				<div class="myclass_btn float-right">
+	           	     					<p>待提交</p>
+	           	     				    <a href="#" class="replay btn btn-primary">重新修改</a>
+	           	     				</div>
+	           	     			</dd>
+	           	     		</dl>
+	           	     	</li>
+	           	     	<li class="clearfix">
+	           	     		<dl class="dl-horizontal">
+	           	     			<dt><a href="#"><img src="img/saike/img_book_125x125.png"></a></dt>
+	           	     			<dd>
+	           	     				<div class="float-left">
+		           	     				<p class="book_title"><a href="#">自己去吧自己去吧自己去吧自己去吧自己去吧自己去吧自己去吧自己去吧</a><span class="label label-primary">6天前</span><span class="label label-danger">删除</span></p>
+		           	     				<p class="book_desc">小学语文 > 人教2001课标版 > 一年级上册 > 第六组　课文 ></p>
+		           	     				<p class="book_comment"><span><i>0</i>人同晒此课</span><span><i>0</i>人浏览</span><span>评论(<i>0</i>)</span></p>
+		           	     				<p class="book_score">
+		           	     					评分
+		           	     					<b class="ic-star bg-saike full"></b>
+			    							<b class="ic-star bg-saike full"></b>
+			    							<b class="ic-star bg-saike full"></b>
+			    							<b class="ic-star bg-saike harf"></b>
+			    							<b class="ic-star bg-saike empty"></b>
+			    							5.0
+		           	     				</p>
+	           	     				</div>
+	           	     				<div class="myclass_btn float-right">
+	           	     					<p>待提交</p>
+	           	     				    <a href="#" class="replay btn btn-primary">重新修改</a>
+	           	     				</div>
+	           	     			</dd>
+	           	     		</dl>
+	           	     	</li>
+	           	     </ul>
+	           	     
+	           	      <!--分页-->
+		           	 <nav  class="col-md-4 col-md-offset-4 footer-page text-center">
+							  <ul class="pagination">
+							    <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true"><上一页</span></a></li>
+							    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+							    <li><a href="#">2</a></li>
+							    <li><a href="#">3</a></li>
+							    <li><a href="#" aria-label="Next"><span aria-hidden="true">下一页></span></a></li>
+							  </ul>
+		             </nav><!--/.footer-page-->
+			      </div>
+			      
+		          <!--待审核-->
+		          <div class="tab-pane" id="examine">
+		          	   <p class="col-md-12 text-muted" style=" padding: 10px;">暂无晒课记录!</p>
+		          </div>
+		          
+		     </div><!--/.tab-content-->
+		     
+		     
+		     <!--分页-->
+           	 <!--<nav  class="col-md-4 col-md-offset-4 footer-page text-center">
+					  <ul class="pagination">
+					    <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true"><上一页</span></a></li>
+					    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+					    <li><a href="#">2</a></li>
+					    <li><a href="#">3</a></li>
+					    <li><a href="#" aria-label="Next"><span aria-hidden="true">下一页></span></a></li>
+					  </ul>
+             </nav><!--/.footer-page-->
+              
+          </section><!--/.myclass_box-->
+          
+          
+          
+         
+        	
+        	
+		</div><!--/.container .curriculum-content-->
+		
+		<!-- 底部 -->
+		<div class="container-fluid footer footer-grayline" style="display:block ;">
+			<!--<div class="row">
+				<ul class="col-md-12 inline-block-ul">
+					<li><a href="#">关于我们</a>
+					</li>
+					<li>|</li>
+					<li><a href="#">联系我们</a>
+					</li>
+					<li>|</li>
+					<li><a href="#">友情链接</a>
+					</li>
+					<li>|</li>
+					<li><a href="#">关于我们</a>
+					</li>
+					<li>|</li>
+					<li><a href="#">关于我们</a>
+					</li>
+				</ul>
+			</div>-->
+			<div class="row">
+				<div class="col-md-12" style="padding:10px 0 10px 0;">Copyright @ 2011-2015 湖南领信教育网络发展有限公司版权所有 湘ICP备14001031号</div>
+			</div>
+		</div>
+
+		<!--***** “space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+		<script type="text/JavaScript" src="space-footer-css.js"></script>
+		<!--***** “space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****-->
+		<link rel="stylesheet" type="text/css" href="css/bureau_new.css" media="screen">
+		<link rel="stylesheet" type="text/css" href="css/img-player.css" />
+		<link rel="stylesheet" type="text/css" href="libs/raking/css/raking.css" />
+		<script type="text/javascript">
+$(function(){
+	$('label').click(function(){
+		$('.event_year>li').removeClass('current');
+		$(this).parent('li').addClass('current');
+		var year = $(this).attr('for');
+		$('#'+year).parent().prevAll('div').slideUp(800);
+		$('#'+year).parent().slideDown(800).nextAll('div').slideDown(800);
+	});
+});
+</script>
+        <script>
+         	goTopEx();
+         </script>
+		<!-- <script>
+	     $('.bureau-student-rizhi>li').each(function(){
+		var num = $(this).index();
+		if(num % 2 !== 0)
+		{
+			$(this).addClass('bg3')
+		}
+	    });
+        </script>-->
+	</body>
+
+</html>
