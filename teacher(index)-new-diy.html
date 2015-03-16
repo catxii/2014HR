@@ -1570,41 +1570,48 @@
       removeColClass();
       $(".droptrue1").addClass("col-md-7");
       $(".droptrue2").addClass("col-md-5");
+      appendWidthInfo();
     }
     function clickLayout2_3(){
       droptrue3To1();
       removeColClass();
       $(".droptrue1").addClass("col-md-5");
       $(".droptrue2").addClass("col-md-7");
+      appendWidthInfo();
     }
     function clickLayout1_3(){
       droptrue3To1();
       removeColClass();
       $(".droptrue1").addClass("col-md-3");
       $(".droptrue2").addClass("col-md-9");
+      appendWidthInfo();
     }
     function clickLayout3_1(){
       droptrue3To1();
       removeColClass();
       $(".droptrue1").addClass("col-md-9");
       $(".droptrue2").addClass("col-md-3");
+      appendWidthInfo();
     }
     function clickLayout1_2_1(){
       removeColClass();
       $(".droptrue1").addClass("col-md-3");
       $(".droptrue2").addClass("col-md-6");
+      appendWidthInfo();
       $(".droptrue3").show().addClass("col-md-3");
     }
     function clickLayout1_1_2(){
       removeColClass();
       $(".droptrue1").addClass("col-md-3");
       $(".droptrue2").addClass("col-md-3");
+      appendWidthInfo();
       $(".droptrue3").show().addClass("col-md-6");
     }
     function clickLayout2_1_1(){
       removeColClass();
       $(".droptrue1").addClass("col-md-6");
       $(".droptrue2").addClass("col-md-3");
+      appendWidthInfo();
       $(".droptrue3").show().addClass("col-md-3");
     }
     function clickLayout2_2(){
@@ -1612,6 +1619,7 @@
       removeColClass();
       $(".droptrue1").addClass("col-md-6");
       $(".droptrue2").addClass("col-md-6");
+      appendWidthInfo();
     }
     function clickLayout1(){
       droptrue2To1();
@@ -1646,7 +1654,14 @@
     $(".layout-1").click(function(){
       clickLayout1();
     });
-    
+    function appendWidthInfo(){
+       $(".widthinfo").remove();
+      for(var i=0; i< $(".droptrue").length;i++ ){
+        var widthInfo = "<span class='widthinfo'>栏目内容宽度："+$(".droptrue").eq(i).width()+"</span>"; 
+        $(".droptrue").eq(i).prepend(widthInfo);
+      }
+    }
+    appendWidthInfo();
 
     //style  切换
     $(".diy-style-list li").click(function(){
@@ -1670,6 +1685,7 @@
     //拖拽模块
    $( ".droptrue" ).sortable({
       connectWith: "div"
+
     });
 
     // //设置拖动条的高度

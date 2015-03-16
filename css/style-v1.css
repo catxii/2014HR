@@ -41,6 +41,9 @@ body {
   background-color: #ee9e19;
   border-color: #adadad;
 }
+.btn-full {
+  display: block;
+}
 .btn-danger {
   background: #ec6333;
   border: none;
@@ -578,6 +581,10 @@ fieldset[disabled] .btn-primary.active {
 .tree-sub .glyphicon.glyphicon-book {
   margin-right: 5px;
 }
+.sub-click-area-bigger {
+  display: inline-block;
+  width: 80%;
+}
 /* 相册详情页 */
 .photo-title-box {
   margin-top: 10px;
@@ -594,6 +601,14 @@ fieldset[disabled] .btn-primary.active {
 .name-block-center {
   display: block;
   text-align: center;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  overflow: hidden;
+  vertical-align: middle;
 }
 .pj-del-ico-small {
   font-size: 12px;
@@ -1441,9 +1456,13 @@ fieldset[disabled] .btn-primary.active {
 }
 .table-pepole-list tr td {
   cursor: pointer;
+  line-height: 30px!important;
 }
 .table-pepole-list .active td {
   background: #2ecc71!important;
+  color: white;
+}
+.table-pepole-list .active td a {
   color: white;
 }
 .table-pepole-list .glyphicon-chevron-right {
@@ -2777,4 +2796,22 @@ input[type="checkbox"] {
   border-bottom: 1px dashed #ccc;
   font-size: 16px;
   font-weight: bloder;
+}
+.widthinfo {
+  background: #ffbd5a;
+  border: 1px dashed red;
+  color: red;
+  display: block;
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 10px;
+  opacity: 0.49;
+  padding: 10px;
+  position: static !important;
+  text-align: center;
+  width: 100%;
+  z-index: 10;
+}
+.top-nav-fluid.top-nav-fluid2 {
+  margin-bottom: 10px;
 }
