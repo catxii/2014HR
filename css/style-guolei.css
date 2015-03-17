@@ -271,14 +271,16 @@ b.rank{
 .curriculum-content .curriculum-box .curriculum-news .bureau-list-right{ line-height: 16px;width: 20%;float: right;text-align: right;color: #999;}
 .curriculum-content .curriculum-box .curriculum-news .bureau-list-right span{ font-size: 12px;}
 .curriculum-content .curriculum-box > ul > li > .bureau-list-left > a:hover{ text-decoration: underline;}
-.curriculum-content .curriculum-box > ul > li:first-child > .bureau-list-left > i{ background: none repeat scroll 0% 0% #419641;} 
+.curriculum-content .curriculum-box > ul > li:first-child > .bureau-list-left > i{ background:#ff5f5f;} 
+.curriculum-content .curriculum-box > ul > li:nth-child(2)> .bureau-list-left > i{ background:#fc7e29;} 
+.curriculum-content .curriculum-box > ul > li:nth-child(3)> .bureau-list-left > i{ background:#fcb005;} 
 .curriculum-content .curriculum-box > ul > li > .bureau-list-left > i{
 	font-family: Arial,Helvetica,sans-serif,Verdana,Helvetica;
 	font-size: 14px;
 	vertical-align: middle;
 	margin-right: 5px;
 	padding: 4px;
-	background: none repeat scroll 0% 0% #C2C2C2;
+	background: #C2C2C2;
 	border-radius: 3px;
 	color: #FFF;
 }
@@ -298,7 +300,7 @@ b.rank{
 .curriculum-content .curriculum-box ul.user_info_wrap li{ text-align: center;}
 .curriculum-content .curriculum-box ul.user_info_wrap li .user_info_num{ color: #F06431;}
 
-.teacher-img-wrap{ margin-bottom: 20px;}
+.teacher-img-wrap{ /*margin-bottom: 20px;*/}
 .teacher-img-wrap hr{
     border: none;
     height: 1px;
@@ -438,21 +440,24 @@ b.rank{
 
 /*晒课比拼*/
 .competition-lesson-wrap{
-	margin-top: 10px;
+	/*margin-top: 10px;*/
+	/*background-color: #FFF; 
+	border: 1px solid #DFDFDF*/
+}
+.competition-lesson-wrap .competition-box{
 	background-color: #FFF; 
-	border: 1px solid #DFDFDF
+	border: 1px solid #DFDFDF;
 }
-.competition-lesson-wrap .competition-lesson-box{  padding-right: 10px;}
-.competition-lesson-wrap .competition-lesson-box:last-child{ padding-right: 0px;}
-.competition-lesson-wrap .competition-lesson-box h3{
-	padding-bottom: 20px;
-	
-}
-.competition-lesson-wrap .competition-lesson-box hr{
-    border: none;
+.competition-lesson-wrap hr{
+	border: none;
     height: 1px;
     background-color: #aaaaaa;
 }
+.competition-lesson-wrap h3{ padding-bottom: 20px;}
+
+.competition-lesson-wrap .competition-lesson-box{  padding-right: 10px;}
+.competition-lesson-wrap .competition-lesson-box:last-child{ padding-right: 0px;}
+
 .competition-lesson-wrap .competition-lesson-box dl.competition-header dt{
 	text-align: left;
 	
@@ -479,6 +484,12 @@ b.rank{
 .competition-lesson-wrap .competition-lesson-box dl.competition-header dd p.author_notes{
 	color: #9a9a9a;
 }
+.competition-lesson-wrap .competition-lesson-box dl.competition-header dd p.author-title{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
 .competition-lesson-wrap .competition-lesson-box ul.competition-content li{ padding: 3px 0;}
 .competition-lesson-wrap .competition-lesson-box ul.competition-content li span.score{
 	float: right;
@@ -505,7 +516,7 @@ b.rank{
     height: 1px;
     background-color: #aaaaaa;
 }
-.activity-help-wrap h3{ margin-bottom: 20px;}
+.activity-help-wrap h3{ padding-bottom: 20px;}
 .activity-help-wrap .actvity-help-box{ 
 	background-color: #FFF; 
 	border: 1px solid #DFDFDF;
@@ -617,10 +628,32 @@ b.rank{
 }
 
 
+/*=======优课展示页=====*/
+.curriculum-show-content{ background-color: #FFF; border-top: 1px solid #e7e7e7;}
+.curriculum-show-content .class-show-box{
+    margin-top: 20px;
+}
+.curriculum-show-content .class-show-box .main-box .con-hd{
+	border-bottom: 1px solid #e7e3e4;
+	margin-bottom: -1px;
+}
+.curriculum-show-content .class-show-box .main-box .con-hd h3{
+	border-bottom: 3px solid #4abb97;
+	line-height: 40px;
+	margin: 0;
+}
 
+.curriculum-show-content .class-show-box .main-box .con-hd .tab-nav-menu{
+	border-bottom: 0px;
+}
 
+.curriculum-show-content .class-show-box .main-box .con-hd .tab-nav-menu > li.active > a{
+   border-top: 3px solid #4abb97;
+}
 
-
+.tab-nav-menu li.active a:hover, .tab-nav-menu li.active a:focus{
+	 box-shadow: none;
+}
 
 
 

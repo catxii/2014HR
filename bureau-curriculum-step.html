@@ -161,9 +161,9 @@
 		         </div>
 		         
 		        <!-- 保存按钮-->
-		        <div class=" col-sm-3  col-sm-offset-9 ">
-		        	<button type="button" class="btn btn-lg btn-primary" style="width: 49%;">保存</button>
-		        	<button type="button" class="btn btn-lg btn-default" style="width: 49%;">取消</button>
+		        <div class=" col-sm-3 col-sm-offset-9 text-right">
+		        	<button type="button" class="btn btn-primary" style="width: 30%;">保存</button>
+		        	<button type="button" class="btn btn-default" style="width: 30%;">取消</button>
 		        </div> 
 		         
 	   	  	 </div><!--/.col-sm-10-->
@@ -207,17 +207,7 @@
 		<link rel="stylesheet" type="text/css" href="css/bureau_new.css" media="screen">
 		<link rel="stylesheet" type="text/css" href="css/img-player.css" />
 		<link rel="stylesheet" type="text/css" href="libs/raking/css/raking.css" />
-		<script type="text/javascript">
-$(function(){
-	$('label').click(function(){
-		$('.event_year>li').removeClass('current');
-		$(this).parent('li').addClass('current');
-		var year = $(this).attr('for');
-		$('#'+year).parent().prevAll('div').slideUp(800);
-		$('#'+year).parent().slideDown(800).nextAll('div').slideDown(800);
-	});
-});
-</script>
+
         <script>
          	goTopEx();
          </script>
