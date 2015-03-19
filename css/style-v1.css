@@ -599,7 +599,7 @@ fieldset[disabled] .btn-primary.active {
   margin-top: 20px;
 }
 .name-block-center {
-  display: block;
+  display: block!important;
   text-align: center;
   display: inline-block;
   zoom: 1;
