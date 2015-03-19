@@ -37,6 +37,8 @@ var filegroup = [
 
 	// Zebra-Dialog弹出框样式
     "<link rel='stylesheet' href='libs/Zebra-Dialog/public/css/flat/zebra_dialog.css' type='text/css'>",
+    // Zebra-Dialog弹出框样式
+    "<link rel='stylesheet' href='libs/animatecss3/animate.css' type='text/css'>",
 
 	// Just for debugging purposes. Don't actually copy these 2 lines! 
 	// "<!--[if lt IE 9]> <script src='libs/bootstrap/js/ie8-responsive-file-warning.js'></script> <![endif]-->",
