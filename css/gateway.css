@@ -127,12 +127,24 @@ a:hover{
 }
 i{font-style: normal;}
 .fa-circle{color: #ccc;}
-.lx-logo{background: url(../img/login-logo1.png) no-repeat scroll 0px 0px transparent; height: 19px; width: 21px;display: block;}
+.lx-logo{background: url(../img/login-logo1.png) no-repeat scroll 0px 0px transparent; height: 19px; width: 21px;display: block;float: left;}
+.navbar-collapse{
+	position: relative;
+}
+.logobg{
+	background: url("../img/logobg.png") repeat scroll 0% 0% transparent;
+width: 166px;
+height: 53px;
+position: absolute;
+top: 0;
+left: 0;
+}
 .navbar-bureau{
-	background: #5b8ed1;
+	background: none repeat scroll 0% 0% rgb(2, 205, 104);
+	/*background:  url(../img/topBg.png) repeat-x;*/
 height: 38px;
 min-height: 38px;
-box-shadow: 0px 0px 2px rgba(117, 117, 117, 1);
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.26);
 	}
 .navbar-bureau .open > a, .navbar-bureau .open > a:hover, .navbar-bureau .open > a:focus {
     background-color: #333 !important;
@@ -179,7 +191,7 @@ text-decoration: none;
 -webkit-transition: all 0.65s ease;
  	-o-transition: all 0.65s ease;
  	transition: all 0.65s ease;
- 	background: #fff;
+ 	background: none repeat scroll 0% 0% rgb(255, 192, 0);
 }
 
 .bureau-ico a.fa:hover,.bureau-ico a.current{
@@ -187,31 +199,11 @@ text-decoration: none;
 color: #4C9ED9;
 background: #fff;
 }
-.bureau-ico a.fa.fa-zy{
-	background: url('../img/bureau-ico-list.png') no-repeat 0px 0px;
+.bureau-ico a{
 	width: 56px;
 	height: 56px;
 }
-.bureau-ico a.fa.fa-zypt{
-	background: url('../img/bureau-ico-list.png') no-repeat 0px -58px;
-	width: 56px;
-	height: 56px;
-}
-.bureau-ico a.fa.fa-cy{
-	background: url('../img/bureau-ico-list.png') no-repeat 0px -116px;
-	width: 56px;
-	height: 56px;
-}
-.bureau-ico a.fa.fa-xwfb{
-	background: url('../img/bureau-ico-list.png') no-repeat 0px -175px;
-	width: 56px;
-	height: 56px;
-}
-.bureau-ico a.fa.fa-app{
-	background: url('../img/bureau-ico-list.png') no-repeat 0px -233px;
-	width: 56px;
-	height: 56px;
-}
+
 .bureau-ico-name{
 	text-align: center;
 	line-height: 12px;
@@ -222,28 +214,57 @@ color: #333;
 	/*
 banner
 */
+.bureau-banner{
+	height: 570px !important;
+}
+.banner_show{
+	height: 570px !important;
+}
+.banner_pre_next {
+    top: 239px !important;
+    }
 .gateway-body .banner_mag {
-    width: 305px;
-height: 335px;
+    width: 286px;
+height: 315px;
 position: absolute;
-left: 66%;
-bottom: 48px;
+left: 68%;
+bottom: 23%;
 text-align: left;
 z-index: 99;
 font-family: "微软雅黑";
 padding: 10px;
-background: none repeat scroll 0% 0% rgba(255, 255, 255, 0.22);
+background: #E2B870;
 box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+border-radius: 6px;
 }
 .gateway-body .banner_magbox {
-   width: 285px;
-height: 315px;
-    background: rgba(0, 0, 0, 0.32);
+   width: 266px;
+height: 288px;
+    background: #2A6A23;
     text-align: left;
     padding: 20px;
     border-right: 6px solid #F90;
+    border-radius: 6px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.52) inset;
 }
-
+.gateway-body .banner_magbox .btn.btn-danger.btn-lg{
+	background: none repeat scroll 0% 0% #03D34F;
+	border: 1px solid rgba(3, 3, 3, 0.26);
+}
+.gateway-body .banner_magbox .input-group-addon{
+	color: #03D34F;
+text-align: center;
+background-color: rgba(0, 0, 0, 0.21);
+border: 0px solid #CCC;
+}
+.heiban{
+	background: url("../img/heiban.png") repeat scroll 0% 0% transparent;
+height: 25px;
+width: 240px;
+position: absolute;
+bottom: 4px;
+left: 24px;
+}
 .banner_pre_next .banner_btn_left {
     position: absolute;
     color: rgba(0, 0, 0, 0.2) !important;
@@ -274,9 +295,9 @@ height: 315px;
 
 .bureau-navlist {
     height: 100%;
-    padding: 38px 0px 0px;
+    padding: 36px 0px 0px;
     background:#fff ;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.525) inset;
+    box-shadow: none !important;
 }
 
 
@@ -560,82 +581,7 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.06);
 	text-align: center;
 }
 .bureau-new-navbar .navbar-nav > li > a{padding: 10px;font-size: 12px;}
-/*装扮自定义*/
-.bureau-new-modify{
-	margin-top: 15px;
-	padding: 0px !important;
-}
-.bureau-new-modify > .col-md-3{
-	padding-left: 4px;
-	padding-right: 4px;
-	width:20% ;
-}
-.bureau-new-modify > .col-md-6{
-	padding-left: 4px;
-	padding-right: 4px;
-	width:60% ;
-}
-.bureau-modify-zdy{
-	box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.07);
-border: 1px solid #ECECEC;
-margin-bottom: 10px;
-}
-.bureau-modify-zdy-body{
-	background: #fff;
-}
-.bureau-modify-left > .bureau-modify-zdy > h4,.bureau-modify-center > .bureau-modify-zdy > h4,.bureau-modify-right > .bureau-modify-zdy > h4{
-    background: url("../img/rptx.png") repeat scroll 0% 0% transparent;
-    height:40px;
-    margin: 0px !important;
-    font: bold 18px/33px "宋体";
-    color: #333;
-    position: relative;
-}
-.bureau-modify-left > .bureau-modify-zdy > h4 > .pull-right,.bureau-modify-center > .bureau-modify-zdy > h4 > .pull-right,.bureau-modify-right > .bureau-modify-zdy > h4 > .pull-right{
-font-size: 12px;
-line-height: 40px;
 
-padding: 0px 5px;	
-}
-.bureau-modify-left > .bureau-modify-zdy > h4 > .pull-right a,.bureau-modify-center > .bureau-modify-zdy > h4 > .pull-right a,.bureau-modify-right > .bureau-modify-zdy > h4 > .pull-right a{
-color: rgb(153, 153, 153);	
-font-family: "宋体";
-}
-.bureau-modify-zdy .bureau-student-header > h4{
-    background: url(../img/rptx.png);
-	border: 1px solid #eee;
-	height: 40px;
-	margin: 0 !important;
-font: 18px/33px "宋体";
-color: #70CFD7;
-position: relative;
-font-weight: bold;
-border-bottom: 1px solid #fff;
-}
-.bureau-modify-zdy .bureau-famous-header > h4{
-    background: url(../img/rptx.png);
-	border: 1px solid #eee;
-	height: 40px;
-	margin: 0 !important;
-font: 18px/33px "宋体";
-color: #70CFD7;
-position: relative;
-font-weight: bold;
-border-bottom: 1px solid #fff;
-}
-.bureau-modify-left > div > h4 > i,.bureau-modify-center > div > h4 > i,.bureau-modify-right > div > h4 > i{
-float: left;
-padding: 5px 10px;
-font-style: normal;
-line-height: 29px;
-/*color: #333;*/
-font-size: 15px;
-}
-.bureau-modify-zdy-body{
-	background: #fff;
-	padding: 5px;
-font-size: 12px;
-}
 /*栏目图标*/
 .bureau-modify-zdy > h4 > i > span.fa{
 	background: none repeat scroll 0% 0% #63C3CC;
@@ -962,7 +908,7 @@ margin-right: 2px;
 
 /*门户*/
 .edu-gateway > .col-md-8,.edu-gateway > .col-md-4{
-	padding: 0 6px;
+	padding: 0 10px;
 }
 
 /*教育资讯*/
@@ -973,7 +919,7 @@ margin-right: 2px;
 	height: 24px;
 margin-bottom: 24px;
 text-align: center;
-border-bottom: 3px solid #CBCBCB;
+border-bottom: 2px solid #4C9ED9;
 }
 .edu-information-header > h5{
 	line-height: 40px;
@@ -1063,7 +1009,6 @@ vertical-align: middle;
 overflow: hidden;
 text-overflow: ellipsis;
 white-space: nowrap;
-
 display: inline-block;
 vertical-align: middle;
 float: left;
@@ -1088,7 +1033,7 @@ margin: 0px 8px;
 	height: 24px;
 margin-bottom: 24px;
 text-align: center;
-border-bottom: 3px solid #CBCBCB;
+border-bottom: 2px solid #F29533;
 }
 .edu-user-header > h5{
 	line-height: 40px;
@@ -1116,7 +1061,7 @@ font-weight: 200;
 	height: 24px;
 margin-bottom: 24px;
 text-align: center;
-border-bottom: 3px solid #CBCBCB;
+border-bottom: 2px solid #4FCC6F;
 }
 .edu-lx-header > h5{
 	line-height: 40px;
@@ -1142,7 +1087,7 @@ font-size: 14px;
 }
 .edu-lx-list-left{float: left;width: 56px;}
 .edu-lx-list-center{padding: 0 10px;color: #ccc;}
-.edu-lx-list-right{width: 270px; }
+.edu-lx-list-right{width: 266px; }
 /*领信教育推荐*/
 .edu-recommend{
 	margin-top: 20px;
@@ -1151,7 +1096,7 @@ font-size: 14px;
 	height: 24px;
 margin-bottom: 24px;
 text-align: center;
-border-bottom: 3px solid #CBCBCB;
+border-bottom: 2px solid #CBCBCB;
 }
 .edu-recommend-header > h5{
 	line-height: 40px;
@@ -1176,16 +1121,29 @@ font-weight: 200;
 .apply_array {
 border-width: 1px;
 border-style: solid;
-border-color: #CDCDCD;
-padding: 16px;
+border-color: #E0E0E0;
 width: 100px;
 float: left;
 height: 186px;
 margin-right: 34px;
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(-45deg,  rgba(255,255,255,1) 0%, rgba(243,243,243,1) 50%, rgba(237,237,237,1) 51%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(50%,rgba(243,243,243,1)), color-stop(51%,rgba(237,237,237,1)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-45deg,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-45deg,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-45deg,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* IE10+ */
+background: linear-gradient(135deg,  rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+font-size: 12px;
 }
 .apply_array .vote {position: absolute; line-height: 26px; margin-top: 10px; padding-left: 29px; width: 83px; display: block; background: url(imgs/vote.gif) no-repeat 0px 0px; height: 26px; color: #282828; margin-left: -6px; text-decoration: none}
 .apply_last {margin-right: 0px}
-.apply_img {text-align: center; display: table-cell; width: 64px;height: 64px; vertical-align: middle}
+.apply_img {text-align: center;  width: 64px;height: 64px; vertical-align: middle;margin:10px auto;height: 100px;}
+.apply_img > img{
+	width: 64px;
+	height: 64px;
+	}
 .apply_array a {text-decoration: underline}
 .apply_array a:hover {color: #e01111}
 .apply_info {text-align: center; padding-bottom: 15px; padding-left: 15px; padding-right: 15px; padding-top: 15px}
@@ -1202,10 +1160,38 @@ overflow: hidden;
 .apply .img_l {
 position: absolute;
 z-index: 999;
-left: 322px;
-bottom: 202px;
+left: 312px;
+bottom: 198px;
+font-size: 30px;
+background: none repeat scroll 0% 0% #FFF;
+padding: 0px 10px;
+color: #EC9577;
 }
-.apply .img_r {position: absolute;right: 5px;bottom: 203px;}
+.apply .img_r {
+	position: absolute;
+z-index: 999;
+left: 342px;
+bottom: 198px;
+font-size: 30px;
+background: none repeat scroll 0% 0% #FFF;
+padding: 0px 10px;
+color: #EC9577;
+}
+.apply_name{
+	height: 64px;
+background: rgb(221,221,221); /* Old browsers */
+background: -moz-linear-gradient(45deg,  rgba(221,221,221,1) 0%, rgba(242,242,242,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(221,221,221,1)), color-stop(100%,rgba(242,242,242,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(45deg,  rgba(221,221,221,1) 0%,rgba(242,242,242,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(45deg,  rgba(221,221,221,1) 0%,rgba(242,242,242,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(45deg,  rgba(221,221,221,1) 0%,rgba(242,242,242,1) 100%); /* IE10+ */
+background: linear-gradient(45deg,  rgba(221,221,221,1) 0%,rgba(242,242,242,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#f2f2f2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+color: #fff;
+border-top: 1px solid rgba(0, 0, 0, 0.09);
+}
+
 .app {border-bottom: #cdcdcd 1px solid; border-left: #cdcdcd 1px solid; margin-top: 18px; width: 888px; height: 178px; border-top: #cdcdcd 1px solid; border-right: #cdcdcd 1px solid}
 .img_l { float: left; cursor: pointer; }
 .img_r { float: left; cursor: pointer;}
@@ -1342,12 +1328,96 @@ color: #FFF;
 line-height: 14px;
 margin-right: 4px;
 }
+
+
+/*常用链接*/
+
+.c-link{
+	min-height: 164px;
+background: none repeat scroll 0% 0% #EDEDED;
+border-top: 1px solid #CCC;
+margin-top: 30px;
+padding: 12px 0px;
+}
+.c-link-left{
+	padding: 0px 10px;
+}
+.c-link-left > .col-md-3{
+	padding: 10px 12px;
+}
+.c-link-left img.img-responsive{
+	width: 175px;
+	height: 50px;
+	background: #fff;
+	border: 1px solid #D8D8D8;
+}
+/*名师工作室*/
+
+
+.bureau-famous-header > h4 .pull-right{
+	font-size: 15px;
+	position: relative;
+	top: 5px;
+	color: #999;
+}
+.bureau-famous-header > h4 .pull-right a{color:rgba(255, 153, 0, 1) ;text-decoration: none;}
+.famous-teacher{
+	line-height: 30px;
+	font-weight: bold;
+}
+.famous-teacher i.fa{
+	background: url(../img/lx-plate-ico.png) no-repeat scroll -283px 0px transparent;
+	display: block;
+	width: 30px;
+	height: 30px;
+	margin-right: 8px;
+	float: left;
+}
+.bureau-famous-ico{
+	background: url("../img/lx-plate-ico.png") no-repeat scroll -216px 0px transparent;
+display: block;
+width: 27px;
+height: 30px;
+margin-right: 8px;
+float: left;
+	
+}
+
+.bureau-famous-left{
+	width: 100%;
+	float: left;
+}
+
+.bureau-famous-body figure.effect-goliath {
+	background: url('../img/bg_index_6b4cd6b3.png') repeat scroll 0% 0% transparent;
+}
+.bureau-famous-body > .col-md-3{width: 20% !important;}
+.bureau-famous-body > .col-md-6{width: 60% !important;padding: 0 10px !important;}
+.marqueeleft{
+	    height: 100px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0px auto;
+    background: none repeat scroll 0% 0% rgba(255, 255, 255, 0);
+
+}
+.marqueeleft ul{float:left;padding: 0 !important;}
+.marqueeleft li{float:left;margin:0 10px;display:inline;width:100px;height:100px;overflow:hidden;}
+
+/* marqueetop */
+.marqueetop{height:429px;width:148px;overflow:hidden;margin:40px auto;}
+.marqueetop li{padding:5px 0;width:148px;height:133px;overflow:hidden;}
+
+
+
 /*底部导航*/
-.footer-grayline {
-    background: #989898;
-    border-top: 6px solid #7F7F7F;
+
+.gateway-body .footer-grayline {
+    background: none repeat scroll 0% 0% rgb(60, 60, 60);
+    padding: 10px 0;
+    border-top: 1px solid #323232;
     height: 100%;
-    color: #FFF;
+    color: #A2A2A2;
     display: none;
     font-size: 12px !important;
 }

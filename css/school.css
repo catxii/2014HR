@@ -4,6 +4,9 @@ body{
 	background-repeat: no-repeat !important;
 	padding-top: 0px !important;
 }
+.name-block-center{
+	display: block;
+}
 .diy-mode .container-new-content .droptrue {
   min-height: 600px;
   padding-bottom: 100px;
