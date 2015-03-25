@@ -4208,6 +4208,7 @@ padding: 10px;
 font-size: 14px;
 font-weight: 900;
 color: #A66732;
+text-shadow: 1px 1px 1px #fff;
 }
 /*装扮自定义*/
 .bureau-new-modify{
@@ -4402,15 +4403,14 @@ float: left;
 text-decoration: none;
 }
 .bureau-modify-zdy-tzgg .bureau-modify-zdy-body > ul > li > .bureau-new-rizhi-list > a > i{
-	font-size: 12px;
+	font-size: 9px;
 vertical-align: middle;
-margin-right: 5px;
+margin-right: 3px;
 padding: 10px 5px;
-background: none repeat scroll 0% 0% #C2C2C2;
-color: #FFF;
+color: #777;
 }
 .bureau-modify-zdy-tzgg .bureau-modify-zdy-body > ul > li:first-child > .bureau-new-rizhi-list > a > i{
-	background: none repeat scroll 0% 0% #F26464;
+	/*background: none repeat scroll 0% 0% #F26464;*/
 }
 .bureau-modify-zdy-tzgg .bureau-modify-zdy-body > ul > li > .bureau-new-rizhi-name > span{
 	line-height: 16px;
@@ -4748,7 +4748,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7abcff', end
 
 }
 body.ls-bg .bureau-student-header > h4 i{
-	color: #333 ;
+	color: #fff ;
 }
 
 body.ls-bg .bureau-student-header > h4 li.active i,body.ls-bg .bureau-student-header > h4 i:hover{
