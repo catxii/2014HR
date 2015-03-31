@@ -1582,3 +1582,87 @@ color: #333;
 font-weight: bold;
 line-height: 26px;
 }
+.gateway-news-banner-img{
+	text-align: right;
+}
+.gateway-news-ul{
+	height: 50px;
+background: none repeat scroll 0% 0% #FFF;
+border:1px solid #ddd;
+border-top: 2px solid #1F90DF;
+box-shadow: 0px 1px 1px #D8D8D8;
+margin: 0;
+}
+.gateway-news-ul > li{
+	line-height: 50px;
+	padding: 0 20px;
+font-size: 16px;
+font-weight: 900;
+border-left: 1px solid #eee;
+}
+.gateway-news-list-content{
+	border-bottom: 1px dotted #C2C2C2;
+}
+.gateway-news-list-content:hover{
+	background: #fff;
+}
+.gateway-news-list-content > h4 > span{
+	
+padding: 5px 8px;
+font-size: 14px;
+line-height: 18px;
+font-family: "宋体";
+vertical-align: middle;
+color: #fff;
+border-radius: 3px;
+margin-right: 6px ;
+}
+.gateway-news-list-content > h4 > span.color1{
+	background: #4C9ED9 !important;
+}
+.gateway-news-list-content > h4 > span.color2{
+	background: #F08A8A !important;
+}
+.gateway-news-list-content > h4{
+	font-size: 20px;
+color: #333;
+font-weight: bold;
+line-height: 55px;
+font-family: "微软雅黑";
+display: block;
+padding: 0 5px;
+}
+.gateway-news-list-content-left{
+	padding-left: 0;
+}
+.gateway-news-list-content-left img{
+	width: 150px;
+height: 100px;
+	
+}
+.gateway-news-list-content-right{
+	font-size: 12px;
+line-height: 23px;
+color: #666;
+}
+
+
+/*论坛页面*/
+
+.gateway-luntai-left{
+	
+}
+.gateway-luntai-right{
+	min-height: 1000px;
+}
+
+
+
+
+
+
+
+
+
+
+
