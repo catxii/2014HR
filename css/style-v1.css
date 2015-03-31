@@ -2815,3 +2815,7 @@ input[type="checkbox"] {
 .top-nav-fluid.top-nav-fluid2 {
   margin-bottom: 10px;
 }
+.chosetr td {
+  background: #0099cb!important;
+  color: white;
+}
