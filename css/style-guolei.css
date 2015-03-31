@@ -194,8 +194,13 @@ border-radius: 0 !important;}
 
 
 /*===================custom==============*/
-.grid-body{ background: url(../img/saike/grid_bg.png) repeat;} 
-.font-arial{ font-family: Arial,Helvetica,sans-serif,Verdana,Helvetica;}
+/*body.gray-body{ font-family: Helvetica,Arial,sans-serif;}*/
+body.gray-body{ font-family: Helvetica,"Microsoft Yahei","Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif; background-color: #f8f8f8;  font-size: 14px;}
+body.gray-body a:hover{text-decoration:underline !important; color:#4C4C4C; }
+
+body.grid-body{ background: url(../img/saike/grid_bg.png) repeat;} 
+
+.font-arial{ font-family: Arial,Helvetica,sans-serif,Verdana;}
 .font_size_16{ font-size: 16px;}
 .font_size_12{ font-size: 12px;}
 .step_green_bg{ background-color: #19a97b;}
@@ -244,8 +249,6 @@ b.rank{
 
 
 /*====我要晒课-首页====*/
-.gray-body{ background-color: #f8f8f8; font-family: "微软雅黑", Verdana, Helvetica !important; font-size: 14px;}
-.gray-body a:hover{text-decoration:underline !important; color:#4C4C4C; }
 
 .curriculum-content .carousel{height:246px; overflow: hidden;}
 .curriculum-content .carousel .carousel-inner .item{ height:246px; overflow: hidden;}
@@ -262,14 +265,15 @@ b.rank{
 .curriculum-content .curriculum-box{ padding: 5px; background-color: #FFF; border: 1px solid #DFDFDF}
 .curriculum-content .curriculum-box .curriculum-box-header h4{ 
 	   margin:5px 0 0 0;
-	   line-height: 20px; 
+	   line-height: 18px; 
 	   border-left: 4px solid #19A97B;
        padding-left: 7px;
+       font-size: 16px;
 }
-.curriculum-content .curriculum-box .curriculum-box-header{  line-height: 31px;}
+.curriculum-content .curriculum-box .curriculum-box-header{  line-height: 29px;}
 .curriculum-content .curriculum-box .curriculum-news .bureau-list-left{ width: 80%; float: left; line-height: 16px;}
 .curriculum-content .curriculum-box .curriculum-news .bureau-list-right{ line-height: 16px;width: 20%;float: right;text-align: right;color: #999;}
-.curriculum-content .curriculum-box .curriculum-news .bureau-list-right span{ font-size: 12px;}
+.curriculum-content .curriculum-box .curriculum-news .bureau-list-right span{ /*font-size: 12px;*/}
 .curriculum-content .curriculum-box > ul > li > .bureau-list-left > a:hover{ text-decoration: underline;}
 .curriculum-content .curriculum-box > ul > li:first-child > .bureau-list-left > i{ background:#ff5f5f;} 
 .curriculum-content .curriculum-box > ul > li:nth-child(2)> .bureau-list-left > i{ background:#fc7e29;} 
@@ -479,9 +483,13 @@ b.rank{
 .competition-lesson-wrap .competition-lesson-box dl.competition-header dd p.author_name{
 	font-size: 16px;
 	font-weight: bold;
+	max-height: 50px;
+	overflow: hidden;
 }
 
-.competition-lesson-wrap .competition-lesson-box dl.competition-header dd p.author_notes{
+.competition-lesson-wrap .competition-lesson-box dl.competition-header dd p.author_notes, 
+.main-box .con-bd .mod-wrap dl dd p.author_desc,
+.main-box .con-bd .mod-wrap dl dd p.author_notes{
 	color: #9a9a9a;
 }
 .competition-lesson-wrap .competition-lesson-box dl.competition-header dd p.author-title{
@@ -537,6 +545,85 @@ b.rank{
 
 .activity-help-wrap .actvity-help-box .page-header a.title-more{ margin-top: 10px;}
 
+/*活动指南   第二种展示方式*/
+.help-wrap hr{
+	border: none;
+    height: 1px;
+    background-color: #aaaaaa;
+}
+.help-wrap h3{ padding-bottom: 20px;}
+.full-center { display: table;}
+.help_row .col-md-4{ padding-left: 15px; padding-right: 15px;}
+.help-new-block .full-center {
+	margin-bottom: 0;
+	border-radius: 3px;
+	height: 200px;
+	width: 100%;
+	padding: 20px;
+	position: relative;
+	cursor: pointer;
+}
+
+.help-new-block-thumbnail{
+	text-align: center;
+	margin-bottom: 34px;
+}
+
+.help-new-block-thumbnail i{
+	font-size: 5em;
+	color: #5bc2a1;
+	position: relative;
+	line-height: 1em;
+	top: 20px;
+	text-shadow: 0 0 50px rgba(0,0,0,.3);
+}
+
+
+.help-new-block-difficulty {
+	color: #5bc2a1;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+	font-size: .8em;
+	font-weight: 700;
+}
+
+.help-new-block-title{
+	text-align: left;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 1.5em;	
+	line-height: 1.2em;
+	color: #fff;
+	/*font-weight: 700;*/
+}
+.help-new-block-title a{ color: #fff;}
+article h3.help-new-block-title a:hover{
+   color: #e6e6e6;
+}
+
+.help-new-block-meta {
+	padding: 20px 0 14px;
+	overflow: hidden;
+	font-size: 1.05em;
+	line-height: 1em;
+}
+
+.help-new-block-meta .help-new-date {
+	float: left;
+	padding-top: 1px;
+}
+.help-new-block-excerpt{
+	color: #9A9A9A;
+	font-size: 14.5px;
+}
+.help-new-block-excerpt a{ color: #5bc2a1;}
+article .help-new-block-excerpt a:hover{ color: #5bc2a1;}
+.help-new-block-excerpt p{ 
+     text-align:justify; 
+     text-justify:inter-ideograph;
+}
+
+
 
 /*===我的晒课===*/
 
@@ -591,7 +678,7 @@ b.rank{
 	white-space: nowrap;
 }
 .myclass_box .myclass_content li dl dd p.book_title{
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: bold;
 }
 .myclass_box .myclass_content li dl dd p.book_title span{
@@ -632,6 +719,20 @@ b.rank{
 .curriculum-show-content{ background-color: #FFF; border-top: 1px solid #e7e7e7;}
 .curriculum-show-content .class-show-box{
     margin-top: 20px;
+    margin-bottom: 20px;
+}
+.curriculum-show-content .class-show-box .main-box{
+	/*margin-top: 20px;*/
+}
+.curriculum-show-content .class-show-box .adv-box{
+	margin-top: 25px;
+	margin-bottom: 25px;
+	height: 85px;
+	overflow: hidden;
+}
+.curriculum-show-content .class-show-box .adv-box img{
+	width: 100%;
+	height: 100%;
 }
 .curriculum-show-content .class-show-box .main-box .con-hd{
 	border-bottom: 1px solid #e7e3e4;
@@ -654,6 +755,95 @@ b.rank{
 .tab-nav-menu li.active a:hover, .tab-nav-menu li.active a:focus{
 	 box-shadow: none;
 }
+
+.main-box .con-bd { margin-top: 20px;}
+.main-box .con-bd ul.mod-wrap{
+	border-bottom: #D9D9D9 solid 2px;
+	margin-bottom: 15px;
+}
+.main-box .con-bd .mod-wrap dl dt{
+  width: 125px;
+  height: 125px;
+  overflow: hidden;
+	
+}
+.main-box .con-bd .mod-wrap dl dt img{
+	width: 100%;
+	height: 100%;
+}
+.main-box .con-bd .mod-wrap dl dd{
+  margin-left: 140px;	
+}
+.main-box .con-bd .mod-wrap dl dd p{
+	margin: 0px;
+	line-height: 25px;
+}
+.main-box .con-bd .mod-wrap dl dd p.author-title{
+	font-size: 16px;
+	font-weight: bold;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+/*.main-box .con-bd .mod-wrap dl dd p.author-title a:hover{ 
+	font-weight: normal;
+}*/
+
+.main-box .con-bd .mod-wrap dl dd p.author_name, .main-box .con-bd .mod-wrap dl dd p.author_desc{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.main-box .con-bd .mod-wrap dl dd p.author_notes{
+	font-size: 12px;
+}
+.main-box .con-bd .mod-wrap dl dd p.author_notes span{color:#9b5b32;}
+
+.main-box .con-bd #Marquee, .main-box .con-bd #Marquee2, .main-box .con-bd #Marquee3{ 
+	width: 100%; 
+	height: 60px; 
+	overflow: hidden; 
+	/*margin-bottom: 20px;*/
+}
+.main-box .con-bd .dyn-box ul{  margin-bottom: 0px; }
+.main-box .con-bd .dyn-box ul dl{  margin-bottom: 0px;}
+.main-box .con-bd .dyn-box li:first-child{ padding-left: 0px;}
+.main-box .con-bd .dyn-box li:last-child{ padding-right: 0px;}
+.main-box .con-bd .dyn-box dl{   /*border-top: #D9D9D9 dotted 1px; padding-top: 10px; */}
+.main-box .con-bd .dyn-box dl dt{
+    width: 60px; 
+	height: 60px;
+	overflow: hidden;
+}
+.main-box .con-bd .dyn-box dl dt img{ 
+	width: 100%;
+	height: 100%;
+	-webkit-border-radius: 2px;  
+	-moz-border-radius : 2px; 
+	border-radius: 2px;  
+}
+.main-box .con-bd .dyn-box dl dd{ margin-left: 74px;}
+.main-box .con-bd .dyn-box dl dd p{ margin: 0; line-height: 20px;}
+.main-box .con-bd .dyn-box dl dd p:first-child span{ color: #9A9A9A; margin-left: 10px;}
+.main-box .con-bd .dyn-box dl dd p:nth-child(2) span{ font-size: 12px; color: #9A9A9A; margin-right: 5px;}
+
+.main-box ul.con-hot-tag li{ margin-top: 10px;}
+.main-box ul.con-hot-tag li a{
+	padding: 8px 10px;
+	background-color: #F7F7F7;
+	display:inline-block;
+	/*border: #f00 solid 1px;*/
+}
+.main-box ul.con-hot-tag li a:hover{
+	background-color: #56C4A1; 
+	color: #FFF; 
+	text-decoration: none !important; 
+}
+.main-box ul.con-hot-tag li a i{
+	color: red;
+	font-style: normal;
+}
+
 
 
 
@@ -696,6 +886,57 @@ b.rank{
 .saike_edit_box .book-colum ul li.edit_ul ul{ font-size: 14px; }
 .saike_edit_box .book-colum .floor-box{ padding-top: 20px; }
 
+
+
+/*
+ =========================
+       教育局空间   修改20150326
+ =========================
+ */
+.bureau-student-header > h4 i.padding{ padding: 8px 14px;}
+.bureau-student-body .bureau-student-center-body .bureau-student-center-body-list ul li.bureau-new-szdw-name h4.label{
+	font-size: 13px;
+} 
+.bureau-modify-zdy-zyzq .bureau-new-zy .bureau-teacher-rizhi-list > .col-md-9 > a.color_black{
+	color: #000;
+	font-size: 13px;
+}
+.bureau-modify-zdy-zyzq .bureau-new-zy .bureau-teacher-rizhi-list > .col-md-9 .data-ranking{
+	font-size: 13px;
+}
+.bureau-modify-zdy-zyzq .bureau-new-zy .bureau-teacher-rizhi-list > .col-md-9 .data-ranking1{
+	font-size: 13px !important;
+}
+
+/*空间推荐重写*/
+.bureau-modify-zdy-kjtj .bureau-excellent-space{
+	 background-color: #FFF;
+	 
+}
+.bureau-modify-zdy-kjtj .bureau-excellent-space ul li{ 
+	margin: 5px;
+	font-family: '宋体'; 
+	font-size: 12px;
+}
+.bureau-modify-zdy-kjtj .bureau-excellent-space ul li i{
+	display: inline-block;
+	padding: 6px 15px; 
+	background-color: #F0F0EE;
+}
+.bureau-modify-zdy-kjtj .bureau-excellent-space ul li.active i{color:#F26464;}
+body.ls-bg .bureau-modify-left > .bureau-modify-zdy > h4 > .pull-right a, body.ls-bg .bureau-modify-center > .bureau-modify-zdy > h4 > .pull-right a{
+	 color: #FFF;
+}
+
+
+/*领导空间*/
+.linder-rizi h4{ color:#3c763d; font-size: 12px; margin-top: 20px; }
+.linder-rizi ol{ padding-left: 10px; font-size: 12px; }
+.linder-rizi ol li{ /*border: #f00 solid 1px;*/ padding-bottom: 5px;}
+.linder-rizi ol li:last-child{ padding-bottom: 0px;}
+.linder-rizi ol li a{ color:#4C9ED9}
+.linder-rizi ol li a:hover{ color:#4C9ED9 }
+.linder-rizi ol li a strong{ padding-left: 5px;}
 
 
 
