@@ -233,7 +233,7 @@ banner
     top: 131px !important;
     }
 .gateway-body .banner_mag {
-    width: 100%;
+  width: 100%;
 height: 323px;
 position: relative;
 left: 0px;
@@ -241,30 +241,31 @@ bottom: 0px;
 z-index: 99;
 font-family: "微软雅黑";
 padding: 10px;
-background: none repeat scroll 0% 0% #fff;
-border-radius: 3px;
-border: 1px solid #BFBFBF;
+background: none repeat scroll 0% 0% #FFF;
+border-radius: 0px;
+border: 1px solid rgba(0, 0, 0, 0.22);
+border-top: 3px solid #FFC000;
 }
 .gateway-body .banner_magbox {
    width: 292px;
 height: 288px;
 text-align: left;
-padding: 25px;
 border-right: 6px solid #F90;
 background: none;
 border-radius: 6px;
+padding: 10px;
 }
 .gateway-body .banner_magbox h4{
 	color: #FFC000;
 }
+
 .gateway-body .banner_magbox .img-wrappr-ico{
-	box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.13);
-border-radius: 50%;
-border: 4px solid rgba(255, 255, 255, 0.3);
+/*border: 4px solid rgba(255, 255, 255, 0.3);*/
 }
 .gateway-body .banner_magbox .img-wrappr-ico img{
-	width: 60px;
-	height: 60px;
+	width: 70px;
+	height: 70px;
+	box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.13);
 	border-radius: 50%;
 }
 .gateway-body .banner_magbox .btn.btn-danger.btn-lg{
@@ -276,6 +277,33 @@ border: 4px solid rgba(255, 255, 255, 0.3);
 text-align: center;
 background-color: rgba(0, 0, 0, 0.21);
 border: 0px solid #CCC;
+}
+.gateway-user{
+padding: 4px 10px;
+background: #E9E7E7;
+background: #eee;
+
+}
+.gateway-user > h6{
+	margin: 0;
+	font-size: 12px;
+	line-height: 30px;
+}
+.gateway-user-font > a{
+	font-size: 14px;
+	color: rgb(59, 150, 57);
+}
+
+.gateway-kongjian{
+	line-height: 36px;
+text-align: center;
+border: 1px solid #FFF;
+background: none repeat scroll 0% 0% #4C9ED9;
+color: #fff;
+padding: 0 5px !important;
+}
+.gateway-kongjian > a{
+	color: #fff;
 }
 .heiban{
 /*	background: url("../img/heiban.png") repeat scroll 0% 0% transparent;
@@ -1462,8 +1490,16 @@ display: block;
 .edu-download{
 	height: 110px;
 	margin-bottom: 10px;
-	background: #666;
+	background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.19);
 	padding:15px 10px;
+}
+.edu-download > .col-md-6{
+	height: 80px;
+	
+}
+.edu-download > .col-md-6 > a{
+	float: right;
+width: 65px;
 }
 .edu-call{
 	height: 195px;
