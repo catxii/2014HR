@@ -58,16 +58,49 @@
 .notice-old .list-group-item{  border-left: 0px; border-right: 0px;}
 
 
+
+/*2015.02.26 门户注册与登录  guolei custom*/
+/*动画*/
+.slide.ng-leave {
+  position: relative;
+}
+.slide.ng-enter {
+  position: absolute;
+}
+.slide.ng-enter, .slide.ng-leave {
+  -webkit-transition: -webkit-transform 0.3s ease-in, opacity 0.3s ease-in;
+  -moz-transition: -moz-transform 0.3s ease-in, opacity 0.3s ease-in;
+  -o-transition: -o-transform 0.3s ease-in, opacity 0.3s ease-in;
+  transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+}
+.slide.ng-enter, .slide.ng-leave.ng-leave-active {
+  -webkit-transform: scaleX(0.0001);
+       -o-transform: scaleX(0.0001);
+          transform: scaleX(0.0001);
+  opacity: 0;
+}
+.slide, .slide.ng-enter.ng-enter-active {
+  -webkit-transform: scaleX(1);
+       -o-transform: scaleX(1);
+          transform: scaleX(1);
+  opacity: 1;
+}
+/*动画结束*/
+
+
+
 /*主页登录*/
-.bg-green { padding-top: 0px !important;background-color: #24c267;}
+.bg-green { /*padding-top: 0px !important;*/ background-color: #24c267;}
  .container-bg{ background: #FFF url("../img/log-content-bg.png") repeat-x 0 100%;}
 
-.renav{ box-shadow: none !important; border: 0px !important; }
+/*.renav{ box-shadow: none !important; border: 0px !important; }
 .renavbg-green{ background-color: #24c267; color: #fff !important; }
 .re-navbar-brand{ float: left;  padding: 10px 15px; font-size: 18px; line-height: 20px; background-color: #fff;}
 
-.re-nav li a{ color: #fff !important; padding:27px 20px !important; }
-.re-nav li a:hover, .re-nav li a:visited{ background-color: #339966 !important;}
+.renavbg-gray{ background-color: #F1F1EF; color: #666 !important; }
+
+.re-nav li a{ color: #fff; padding:27px 20px; outline: none; }
+.re-nav li a:hover, .re-nav li a:visited{ background-color: #339966 !important;}*/
 
 
 /*注册*/
@@ -142,6 +175,8 @@ border-radius: 0 !important;}
 .role-parents:hover, .role-parents:focus{background-position: -501px -320px;}
 
 .role-teacher-active{ background-position: -9px -320px;}
+.role-student-active{ background-position: -255px -320px;}
+.role-parents-active{ background-position: -501px -320px;}
 
 /*小图角色 */
 .role-sm{
@@ -154,7 +189,7 @@ border-radius: 0 !important;}
 	  background-image: url(../img/smUserBg.png);
 }
 .sm-role{ padding-top: 5px;}
-.role-left{ /*border-right: #eee solid 1px;*/}
+.role-left{ /*border-right: #eee solid 1px;*/ margin-right: 50px; }
 .role-teacher-sm{ background-position: -1px -163px;}
 .role-student-sm{ background-position: -123px -163px;}
 .role-parents-sm{ background-position: -245px -163px;}
@@ -166,7 +201,14 @@ border-radius: 0 !important;}
 .info-btn{ margin: 10px 0px 10px 50px; }
 .info-btn .info-tips{ margin-left: 10px; color: #C0C0C0;}
 
-.role-right{ margin-left: 50px; border-left: #eee solid 1px;}
+/*.btn-plus{ margin-top:-2px;}*/
+.btn-plus .fa{ color:#24c267 !important; font-size: 30px;}
+.btn-plus a{ text-decoration: none; margin-right: 75px; display: block; }
+.btn-plus a .fa-white{ color: #FFF !important;}
+
+.role-right{ /*margin-left: 50px; */border-left: #eee solid 1px;}
+.role-right .panel-body .warn_tips{padding: 10px; font-size: 14px; color: #f0ad4e;}
+.role-right .panel-body .warn_tips i{  font-size: 20px;}
 .role-right .red-waring, .login-info .red-waring{ border: none !important; background:none !important;}
 .role-right .red-padding, .login-info .red-padding{ padding: 0px 22px;}
 .role-right .re-input-minHeight, .login-info .re-input-minHeight{min-height: 66px;  /*border: #f00 solid 1px;*/}
@@ -174,6 +216,10 @@ border-radius: 0 !important;}
 .role-right .re-input-icon, .login-info .re-input-icon{ border: none; background:none; }
 .role-right .re-input-icon .re-icon-green, .login-info .re-input-icon .re-icon-green{ color: #24c267;}
 .role-right .re-input, .login-info .re-input{ border-left: 0px; border-top: 0px; border-right: 0px; box-shadow: none; -webkit-box-shadow:none;}
+
+/*.role-right .addIDBox{ border: #24c267 solid 1px;}*/
+.role-right .addIDBox .close{ margin-right: 5px; outline: none;}
+.role-right .addIDBox:hover{ border: #24c267 solid 1px;}
 
 /*注册警告提示*/
 .warning-tips{ margin-right: 75px; font-size: 10px;}
@@ -183,7 +229,7 @@ border-radius: 0 !important;}
 .register-complete p{ font-size: 16px; padding: 10px;}
 
 .san-login{ text-align: center;}
-.san-login a, .san-login a:hover{ color: #fff; line-height: 30px; padding: 2px 20px 2px 20px; margin-bottom: 10px;}
+.san-login a, .san-login a:hover, .san-login a:visited{ color: #fff; line-height: 30px; padding: 2px 20px 2px 20px; margin-bottom: 10px;}
 .san-login a span{ padding-left: 10px;}
  
 .notice-tips{ line-height: 40px; color: #666;}
@@ -192,8 +238,106 @@ border-radius: 0 !important;}
 /*屏幕缩小后的菜单指示*/
 .catalog-menu .navbar-toggle .icon-bar{ background-color: #fff;}
 
+/*首页*/
+.top-left-menu{ /*padding: 0px !important;*/ font-size: 12px; background:none;}
+.top-left-menu a{ color: #FFF; text-decoration: none;}
 
-/*===================custom==============*/
+.top-right-menu li{ margin: 10px 0px 10px 0px;  border-right:#fff solid 1px;}
+.top-right-menu li:last-child{ border: 0px;}
+.top-right-menu li a{ padding: 0px 10px; font-size: 12px; outline: none;}
+.top-right-menu li a:hover, .top-right-menu li a:visited{ background-color: #24c267 !important;}
+
+.renavbg-gray .lingxinlogo{ background: none;}
+.renavbg-gray .nav-resource li a{ outline: none; color: #bcbbbb;}
+.renavbg-gray .nav-resource li a:hover, .renavbg-gray .nav-resource li a:visited{ background-color: #F1F1F1 !important;}
+
+
+/*==============提示对话框==============*/
+.dialog-tips{
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1050;
+	/*display: none;*/
+	overflow: hidden;
+	-webkit-overflow-scrolling: touch;
+	outline: 0;
+}
+
+.dialog-backdrop{
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1040;
+	background-color: #000;
+	opacity: .5;
+}
+
+.dialog-info {
+	position:absolute;
+	left:50%;
+	top: 50%;
+	margin-left: -200px;
+	margin-top: -80px;
+	/*margin: 30px auto;*/	
+	width: 400px;
+	overflow: hidden;
+	/*height: 130px;*/
+	/*position: relative;*/
+	background-color: #fff;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	border: 10px solid rgba(0, 0, 0, .2);
+	outline: 0;
+}
+
+.dialog-header{ padding: 5px 10px 25px 10px; }
+.dialog-header .close{ cursor: hand; outline: none;}
+.dialog-body{ position: relative; padding: 10px;}
+.dialog-body .tips-info{ /*font-size: 14px; *//*line-height: 30px;*/}
+.dialog-body .tips-info i{ font-size: 30px; vertical-align: middle; margin-right: 10px;}
+.dialog-body .tips-info .error{ color: #d9534f; }
+.dialog-body .tips-info .ok{ color: #5cb85c;}
+.dialog-body .tips-info .warning{ color: #f0ad4e;}
+.dialog-footer{ padding: 15px; text-align: right; border-top: 1px solid #e5e5e5;}
+
+
+
+/*========Moblie=======*/
+.show{display:block}
+.hide{display:none}
+
+.down_green{ background-color: #aae6aa;}
+.download_main{margin:0 auto; max-width: 640px; }
+.download_main .arrow {width: 100%;}
+.download_main .arrow img{position: relative; width:30%; left:68%;}
+.download_main .arrow:after{content: ".";visibility: hidden;line-height: 0;height: 1;clear: both;display: block;}
+.download_main .content_bottom{position: relative; top:-30px;}
+.download_main .text {text-align: center;}
+.download_main .text img{width: 100%;}
+.download_main .phone {float:left;width:45%;padding:0 10px 0 10px;}
+.download_main .phone img{width:100%;}
+.download_main .download {float:left;width:45%;text-align: center;padding-top: 15%;}
+
+.download_main .download img{width:50%;}
+.download_main .download_button{ margin-top:20px; }
+.download_main .download_button a{ outline: none !important;}
+.download_main .download_button a:hover, .download_main .download_button a:visited{ color: white;}
+.download_main .download_button .sign-md{ font-size: 25px;}
+.download_main .sep{height: 10px !important;}
+
+@media (max-width: 640px){
+	.download_main .download_button .sign-md{ font-size: 16px;}
+	.download_button .btn{ font-size:12px !important;}
+}
+
+
+
+/*=============教育局晒课功能custom   20150310==============*/
 /*body.gray-body{ font-family: Helvetica,Arial,sans-serif;}*/
 body.gray-body{ font-family: Helvetica,"Microsoft Yahei","Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif; background-color: #f8f8f8;  font-size: 14px;}
 body.gray-body a:hover{text-decoration:underline !important; color:#4C4C4C; }
@@ -890,7 +1034,7 @@ article .help-new-block-excerpt a:hover{ color: #5bc2a1;}
 
 /*
  =========================
-       教育局空间   修改20150326
+       教育局空间主页   修改20150326
  =========================
  */
 .bureau-student-header > h4 i.padding{ padding: 8px 14px;}
