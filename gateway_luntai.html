@@ -148,19 +148,25 @@
           </div>
        	     <div class="gateway-luntai-right col-md-10">
        	     	<div class="gateway-luntai-right-content" style="min-height: 1000px;display: block;">
+       	     		<div class="gateway-luntai-banner">
+       	     			<img src="img/推进教育信息化.jpg" />
+       	     		</div>
        	     		<div class="gateway-luntai-title">
        	     			<ul class="inline-block-ul">
        	     				<li>热门帖子</li>
-       	     				<li class="navbar-right"><a class="btn btn-info">我要发布</a></li>
+       	     				<li>我的帖子(<a>2</a>)</li>
+       	     				<li>热门帖子</li>
+       	     				<li>热门帖子</li>
+       	     				<li class="navbar-right"><a class="btn btn-info btn-sm">我要发布</a></li>
        	     			</ul>
        	     		</div>
        	     		<div class="gateway-luntai-container clearfix">
-       	     			<div class="col-md-9 ">
+       	     			<div class="col-md-9">
        	     				<div class="gateway-luntai-bq">热帖榜</div>
        	     				<ul class="bureau-new-rizhi clear-margin clear-padding clear-border clearfix">
 							<li class="clearfix">
 								<div class=" bureau-new-rizhi-list clear-padding ">
-									<a target="_blank"><i>●</i>那一条铺满石子的小路</a>
+									<a href="#" target="_blank"><i>●</i>那一条铺满石子的小路</a>
 								</div>
 								<div class="bureau-new-rizhi-name clear-padding">
 									<span>08-08</span>
@@ -168,7 +174,7 @@
 							</li>
 							<li class="clearfix">
 								<div class=" bureau-new-rizhi-list clear-padding ">
-									<a target="_blank"><i>●</i>那一条铺满石子的小路</a>
+									<a href="#" target="_blank"><i>●</i>那一条铺满石子的小路</a>
 								</div>
 								<div class="bureau-new-rizhi-name clear-padding">
 									<span>08-08</span>
@@ -176,7 +182,7 @@
 							</li>
 							<li class="clearfix">
 								<div class=" bureau-new-rizhi-list clear-padding ">
-									<a target="_blank"><i>●</i>那一条铺满石子的小路</a>
+									<a href="#" target="_blank"><i>●</i>那一条铺满石子的小路</a>
 								</div>
 								<div class="bureau-new-rizhi-name clear-padding">
 									<span>08-08</span>
@@ -184,7 +190,7 @@
 							</li>
 							<li class="clearfix">
 								<div class=" bureau-new-rizhi-list clear-padding ">
-									<a target="_blank"><i>●</i>那一条铺满石子的小路</a>
+									<a href="#" target="_blank"><i>●</i>那一条铺满石子的小路</a>
 								</div>
 								<div class="bureau-new-rizhi-name clear-padding">
 									<span>08-08</span>
@@ -193,7 +199,7 @@
 							<li class="luntai-line"></li>
 							<li class="clearfix">
 								<div class=" bureau-new-rizhi-list clear-padding ">
-									<a target="_blank"><i>●</i>那一条铺满石子的小路</a>
+									<a href="#" target="_blank"><i>●</i>那一条铺满石子的小路</a>
 								</div>
 								<div class="bureau-new-rizhi-name clear-padding">
 									<span>08-08</span>
@@ -201,7 +207,7 @@
 							</li>
 							<li class="clearfix">
 								<div class=" bureau-new-rizhi-list clear-padding ">
-									<a target="_blank"><i>●</i>那一条铺满石子的小路</a>
+									<a href="#" target="_blank"><i>●</i>那一条铺满石子的小路</a>
 								</div>
 								<div class="bureau-new-rizhi-name clear-padding">
 									<span>08-08</span>
@@ -212,15 +218,24 @@
        	     			<div class="col-md-3">
        	     				<div class="gateway-luntai-hot">
        	     					<div>湖南领信教育</div>
-       	     					<ul class="clear-padding">
+       	     					<ul class="clear-padding clearfix clear-margin">
        	     						<li><a href="#" class="text-space"><i>●</i>炎黄晒影活动：醉美陕西拍花季</a></li>
        	     						<li><a href="#" class="text-space"><i>●</i>炎黄晒影活动：醉美陕西拍花季</a></li>
+       	     						<li class="navbar-right"><a href="#">更多》</a></li>
+       	     					</ul>
+       	     				</div>
+       	     				<div class="gateway-luntai-hot">
+       	     					<div>湖南领信教育</div>
+       	     					<ul class="clear-padding clearfix clear-margin">
+       	     						<li><a href="#" class="text-space"><i>●</i>炎黄晒影活动：醉美陕西拍花季</a></li>
+       	     						<li><a href="#" class="text-space"><i>●</i>炎黄晒影活动：醉美陕西拍花季</a></li>
+       	     						<li class="navbar-right"><a href="#">更多》</a></li>
        	     					</ul>
        	     				</div>
        	     			</div>
        	     		</div>
        	     	</div>
-       	     	<div class="footer footer-grayline" style="display: block;">
+       	     	<div class="footer footer-grayline clearfix" style="display: block;background: #999;border-top: 1px solid #666;">
 				<div class="col-md-12">Copyright @ 2011-2015 湖南领信教育网络发展有限公司版权所有 湘ICP备14001031号</div>
 		        </div>
        	     </div>
@@ -240,38 +255,6 @@
 		<script type="text/javascript" src="libs/gundong/js/jjjj.js"></script>
 		<link rel="stylesheet" type="text/css" href="libs/gundong/css/set2.css" />
 		<script type="text/javascript" src="js/top-top.js"></script>
-		<script>
-			(function($) {
-				$(function() {
-					$('.navchain li a').hover(function() {
-						$('.navwz', this).stop().fadeIn(200);
-						$('.navwz h1', this).stop().animate({
-							'top': '0'
-						}, 400);
-						$('.navwz h2', this).stop().animate({
-							'top': '0'
-						}, 400);
-					}, function() {
-						$('.navwz', this).stop().fadeOut(400);
-						$('.navwz h1', this).stop().animate({
-							'top': '-68px'
-						}, 400);
-						$('.navwz h2', this).stop().animate({
-							'top': '68px'
-						}, 400);
-					})
-
-				})
-			})(jQuery);
-
-
-
-			jQuery(window).resize(function() {
-				if (typeof indexSlides != 'undefined' && indexSlides.reformat)
-					indexSlides.reformat();
-				qfzy();
-			});
-		</script>
 		<script>
 			function goTopEx() {
 				var obj = document.getElementById("goTopBtn");
@@ -331,15 +314,6 @@
 		<script type="text/javascript">
 			marqueeStart(2, "up");
 		</script>
-		<script>
-	     $('.bureau-custom-rizhi>li').each(function(){
-		var num = $(this).index();
-		if(num % 2 !== 0)
-		{
-			$(this).addClass('bg3')
-		}
-	    });
-        </script>
 
 	</body>
 

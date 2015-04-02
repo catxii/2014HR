@@ -1699,7 +1699,7 @@ color: #666;
 
 .gateway-luntai-left{
 	position:fixed; width:160px; bottom:0px; left:200px; top:57px; background: none repeat scroll 0% 0% #4C9ED9;z-index: 222;
-	box-shadow: 8px 0px 12px rgba(0, 0, 0, 0.08);
+	box-shadow: 8px 0px 12px rgba(0, 0, 0, 0.15);
 }
 .gateway-luntai-right{
 	left: 180px;
@@ -1707,6 +1707,8 @@ bottom: 0px;
 right: 0px;
 width: 822px;
 position: relative;
+background: none repeat scroll 0% 0% #FFF;
+padding-right: 0;
 
 }
 .gateway-luntai-left.quetions-chapter .list-group-item:first-child{
@@ -1731,11 +1733,19 @@ border-left: 0px;
 }
 .gateway-luntai-title > ul{
 	line-height: 45px;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 3px solid #4C9ED9;
 margin: 0;
+font-size: 12px;
+}
+.gateway-luntai-banner{
+	padding: 11px 11px 0px 11px;
+}
+.gateway-luntai-banner img{
+	width: 790px;
+height: 95px;
 }
 .gateway-luntai-container{
-	padding: 10px;
+	padding: 10px 10px 10px 25px;
 }
 .gateway-luntai-container > .col-md-9{
 	border: 4px solid rgba(76, 158, 217, 0.38);
@@ -1753,7 +1763,11 @@ padding: 5px 10px;
 left: -4px;
 }
 .gateway-luntai-container > .col-md-9 .bureau-new-rizhi > li{
-	padding: 3px;
+	padding: 2px 3px;
+}
+.luntai-line{
+	margin-bottom: 10px;
+margin-top: 7px;
 }
 .gateway-luntai-container > .col-md-9 .bureau-new-rizhi > li .bureau-new-rizhi-list > a{
 	line-height: 25px;
@@ -1765,15 +1779,16 @@ display: inline-block;
 vertical-align: middle;
 float: left;
 text-decoration: none;
-color: #559354;
+color: #333;
 }
 .gateway-luntai-container > .col-md-9 .bureau-new-rizhi > li .bureau-new-rizhi-list > a:hover{
 	font-weight: 900;
 }
 .gateway-luntai-container > .col-md-9 .bureau-new-rizhi > li .bureau-new-rizhi-list > a > i{
-	font-size: 11px;
+	font-size: 9px;
 padding: 2px 5px 2px 0px;
-color: #999;
+color: #5D5D5D;
+vertical-align: middle;
 }
 .gateway-luntai-container > .col-md-9 .bureau-new-rizhi > li .bureau-new-rizhi-name > span{
 	line-height: 25px;
@@ -1781,17 +1796,20 @@ display: block;
 width: 20%;
 float: right;
 text-align: right;
-color: #559354;
+color: #333;
 }
 .luntai-line{
 	border-bottom: 1px dashed #CCC;
 }
 .gateway-luntai-hot{
-	padding: 0 5px;
+	padding: 0px 5px 6px 5px;
+border-bottom: 1px solid #E6E6E6;
+margin-bottom: 20px;
 }
 .gateway-luntai-hot > div:first-child{
 	line-height: 28px;
-	color: #000;
+color: #4D4D4D;
+font-weight: 900;
 }
 .gateway-luntai-hot > ul > li{
 	line-height: 22px;
@@ -1804,4 +1822,36 @@ color: #559354;
 	padding: 0px 6px 0px 0px;
 font-size: 10px;
 color: #999;
+}
+
+
+/*新闻内页*/
+.gateway-news-details-left{
+	padding-right: 40px;
+	border-right: 1px solid #ccc;
+	box-shadow: 1px 0px 0px #fff;
+}
+.gateway-news-details-left .bureau-news-title > h5{
+	font: bold 24px 宋体;
+letter-spacing: -1.5px;
+padding: 0px 0px 10px;
+}
+.gateway-news-details-left .bureau-news-content-data{
+	line-height: 22px;
+padding-bottom: 3px;
+border-bottom: 1px solid #C9C9C9;
+margin-bottom: 10px;
+box-shadow: 0px 4px 0px #E1E1E1;
+}
+.gateway-news-details-left .bureau-news-content-data span{
+	float: left;
+color: #929292;
+margin-right: 20px;
+font-size: 12px;
+
+}
+.gateway-news-details-left .bureau-news-content-body p{
+	text-indent: 28px;
+line-height: 25px;
+padding: 0px 0px 20px 5px;
 }
