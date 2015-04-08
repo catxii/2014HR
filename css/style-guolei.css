@@ -218,7 +218,7 @@ border-radius: 0 !important;}
 .role-right .re-input, .login-info .re-input{ border-left: 0px; border-top: 0px; border-right: 0px; box-shadow: none; -webkit-box-shadow:none;}
 
 /*.role-right .addIDBox{ border: #24c267 solid 1px;}*/
-.role-right .addIDBox .close{ margin-right: 5px; outline: none;}
+.role-right .addIDBox .close{ margin-right: 5px; outline: none; display: none;}
 .role-right .addIDBox:hover{ border: #24c267 solid 1px;}
 
 /*注册警告提示*/
@@ -304,6 +304,30 @@ border-radius: 0 !important;}
 .dialog-body .tips-info .ok{ color: #5cb85c;}
 .dialog-body .tips-info .warning{ color: #f0ad4e;}
 .dialog-footer{ padding: 15px; text-align: right; border-top: 1px solid #e5e5e5;}
+
+/*=======个人信息资料   （帐户绑定）=======*/
+
+body.gateway-body-info{ background: url(../img/portal/info_bg.png) no-repeat #bdebbc; }
+
+body .content-wrapper{ border: none;}
+.content-wrapper .panel-body .form-content{ width: 500px; margin: auto;}
+.content-wrapper .panel-body .form-content .submit-btn{  margin-top: 10px; text-align: center;}
+.content-wrapper .panel-body .form-content .submit-btn button{ padding: 8px 20px;}
+
+@media (min-width: 1200px) {
+   body.gateway-body-info .container{
+	width: 1000px;
+  }  
+}
+
+
+@media (max-width: 768px) {
+   body.gateway-body-info .container{
+	width: 600px;
+  }
+}
+
+
 
 
 
@@ -1056,6 +1080,10 @@ article .help-new-block-excerpt a:hover{ color: #5bc2a1;}
 .bureau-modify-zdy-kjtj .bureau-excellent-space{
 	 background-color: #FFF;
 	 
+}
+.bureau-modify-zdy-kjtj .bureau-excellent-space ul{
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
 }
 .bureau-modify-zdy-kjtj .bureau-excellent-space ul li{ 
 	margin: 5px;
