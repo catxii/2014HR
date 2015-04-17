@@ -318,8 +318,10 @@ fieldset[disabled] .btn-primary.active {
 /* 编辑区域标签 */
 .edit-info-tips {
   position: absolute;
-  right: 10px;
-  top: 5px;
+  right: 0px;
+  top: 0px;
+  padding: 5px;
+  margin: 0;
   display: none;
   z-index: 20;
 }
@@ -337,7 +339,6 @@ fieldset[disabled] .btn-primary.active {
 }
 .list-group {
   position: relative;
-  box-shadow: 0 1px 3px #b7b7b7;
 }
 .edit-info-tips.white a {
   color: white;
@@ -2399,9 +2400,7 @@ slide {
   width: 20%;
 }
 .down-appaddress-div {
-  border: 1px solid #ebebeb;
   border-top: 5px solid #2ecc71;
-  box-shadow: 3px 3px 0 #dadada;
   margin-bottom: 10px;
   padding: 10px;
   border-radius: 5px;
@@ -2422,6 +2421,14 @@ slide {
   height: 31px;
   vertical-align: middle;
   width: 26px;
+}
+.mac-ico {
+  background: url("../img/android-icon.png") no-repeat;
+  display: inline-block;
+  height: 31px;
+  vertical-align: middle;
+  width: 26px;
+  background: url("../img/mac-icon.png") no-repeat;
 }
 .images-list li {
   margin: 10px 0;
@@ -2818,4 +2825,23 @@ input[type="checkbox"] {
 .chosetr td {
   background: #0099cb!important;
   color: white;
+}
+.cloud-notice-table {
+  table-layout: fixed;
+  width: 100%;
+}
+.cloud-notice-table tr td {
+  border: 1px solid #efefef;
+  padding: 10px;
+  width: 80%;
+  text-align: left;
+}
+.cloud-notice-table tr td.name {
+  width: 20%;
+  text-align: right;
+  font-weight: bolder;
+  color: #ff6300;
+}
+#myTable th {
+  padding: 8px 2px;
 }
