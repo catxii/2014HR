@@ -141,6 +141,7 @@ b.rank{
 	   border-left: 4px solid #19A97B;
        padding-left: 7px;
        font-size: 16px;
+       color: #f95c19;
 }
 .curriculum-content .curriculum-box .curriculum-box-header{  line-height: 29px;}
 .curriculum-content .curriculum-box .curriculum-news .bureau-list-left{ width: 80%; float: left; line-height: 16px;}
@@ -764,14 +765,23 @@ article .help-new-block-excerpt a:hover{ color: #5bc2a1;}
 	color: #d9534f;
 	}
 
-.saike_edit_box .book-colum ul{ font-size: 16px;}
+.saike_edit_box .book-colum ul, .inner-content ul{ font-size: 16px;}
 .saike_edit_box .book-colum ul li{ line-height: 30px;}
-.saike_edit_box .book-colum ul li.floor-stand{ background:url(../img/saike/stand.png) center repeat-x;}	
-.saike_edit_box .book-colum ul li.floor-stand span.floor-title{line-height:25px;background-color: #FFF; padding-right: 10px; max-height: 90px; display:inline-block; overflow: hidden;}
-.saike_edit_box .book-colum .nums{font-size:16px;}
+.saike_edit_box .book-colum ul li.floor-stand, .inner-content ul li.floor-stand{ 
+	background:url(../img/saike/stand.png) center repeat-x;
+}	
+.saike_edit_box .book-colum ul li.floor-stand span.floor-title, .inner-content ul li.floor-stand span.floor-title{
+	line-height:25px;
+	background-color: #FFF; 
+	padding-right: 10px; 
+	max-height: 90px; 
+	display:inline-block; 
+	overflow: hidden;
+}
+.saike_edit_box .book-colum .nums, .inner-content .nums{font-size:16px;}
 .saike_edit_box .book-colum ul li.edit_ul{ font-size: 14px; }
 .saike_edit_box .book-colum ul li.edit_ul ul{ font-size: 14px; }
-.saike_edit_box .book-colum .floor-box{ padding-top: 20px; }
+.saike_edit_box .book-colum .floor-box, .inner-content .floor-box{ padding-top: 20px; }
 
 
 /*===============晒课详情页================*/
@@ -804,9 +814,37 @@ body .pingfen{
 	box-shadow: none;
 }
 
-.inner-content{ background-color: #FFF;}
+.inner-content{ background-color: #FFF; border: 1px solid #DFDFDF; min-height: 613px;}
 
+/*相关推荐*/
+body .recommends{ border-radius: 0px; box-shadow: none; border: 0px;}
+body .recommends .panel-heading{ background:#f8f8f8; border-bottom: 0px; padding-left: 0px;}
+body .recommends .panel-heading .panel-title{ font-weight: bold; }
+body .recommends .panel-body{ border: 1px solid #DFDFDF;}
 
+/*用户评价*/
+body .user-commends{ border-radius:0px; background: none; box-shadow: none; border: none;}
+body .user-commends ul.inline-block-ul li h4{ font-weight: bold; font-size: 16px;}
+body .user-commends .media textarea{ border-radius: 0px; min-height: 90px;}
+body .user-commends .media .media-body .name-block-center{ font-size: 16px; font-weight: bold;}
+
+body .user-commends .panel-body{ background-color: #FFF;  border: 1px solid #DFDFDF;}
+body .user-commends .panel-body .user_info{ border-bottom: #F0F2F0 solid 1px;}
+body .user-commends .panel-heading .panel-title b{ font-weight: lighter; font-size: 14px; }
+.pingjia-nr .commend-mess-a code{ float: left; background-color: #19A97B; color:#FFF ; margin-right: 10px;}
+.pingjia-nr .commend-mess-b code{ float: left; background-color: #ff5f5f; color:#FFF ; margin-right: 10px;}
+.pingjia-nr .reply{ color: #c2c2c2; float: right; padding-bottom: 5px;  }
+body .pingjia-nr .well{ position: relative; background: #f6f6f6; border-radius: 0px; box-shadow: none; border:none; margin-top: 15px;}
+body .pingjia-nr .collapse .ico-arrow-up{ 
+	position: absolute;
+	right: 0px;
+	top: -10px; 
+	width: 0;     
+	height: 0;     
+	border-left: 20px solid transparent;     
+	border-right: 20px solid transparent;  
+    border-bottom: 30px solid #F6F6F6;
+}
 
 
 /*
@@ -880,10 +918,10 @@ body.ls-bg .bureau-modify-right > .bureau-modify-zdy > h4 > .pull-right a{
 
 /*布局图*/
 .modify-pic{ text-align: center;}
-.modify-pic img{ width: 80%; height: 80%; }
+.modify-pic img{ width: 100%; height: 100%; }
 
 /*底部外链导航*/
-body .navbar_links{ margin-bottom: 10px; background: #3d95d5; border: none; text-align: center;  }
+body .navbar_links{ margin-bottom: 10px; background: #fcfcfc; border: none; text-align: center;  }
 body .navbar_links ul.bule-navbar{ 
 	width: auto; 
 	float: none; 
@@ -894,19 +932,19 @@ body .navbar_links ul.bule-navbar{
 }
 body .navbar_links ul.bule-navbar li{
 	width: auto;
-	border-right: #fff dotted 1px;
+	border-right: #DFDFDF solid 1px;
 	margin: 10px 0px 10px 0px;
 }
 body .navbar_links ul.bule-navbar li a{
 	padding: 0px 10px;
-	color: #FFF;
+	color: #888888;
 	text-shadow: none;
 	font-size: 12px;
 	line-height: 16px;
 }
 body .navbar_links ul.bule-navbar li a:hover, body .navbar_links ul.bule-navbar li a:focus{
 	background: none !important;
-	color: #b2ddf3;
+	color: #3d95d5;
 }
 
 
