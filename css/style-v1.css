@@ -320,13 +320,10 @@ fieldset[disabled] .btn-primary.active {
   position: absolute;
   right: 0px;
   top: 0px;
-  bottom: 1px;
   padding: 5px;
   margin: 0;
   display: none;
   z-index: 20;
-  background: white;
-  opacity: 0.9;
 }
 .edit-info-tips li {
   margin-left: 5px;
