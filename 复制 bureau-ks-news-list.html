@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" href="../../favicon.ico">
+<title>领信样式模板</title>
+
+<!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+<script type="text/JavaScript" src="space-css.js"></script>
+<!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+<link rel="stylesheet" type="text/css" href="css/diy-class.css" />
+<![endif]-->
+</head>
+<body class="fixed-top-body class-body diy-mode department-body">
+<div class="bottom_tools">
+  <div class="qr_tool">二维码</div>
+  <a id="feedback" href="javascript:;" >意见反馈</a>
+  <a id="scrollUp" href="javascript:;" ></a>
+  <img class="qr_img" src="img/qr_img.png">
+</div>
+<div class="navbar diy-navbar " style="height:36px; min-height:36px;">
+  <div class="container">
+    <div class="navbar-header"> <a href="#" style="padding: 10px;display: block;"><span class="lx-logo"></span></a> </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="diy-button"> <a href="javascript:void(0)">皮肤风格</a> </li>
+        <li class="diy-button"> <a href="javascript:void(0)">模块插件</a> </li>
+        <li> <a href="javascript:void(0)" class="back">恢复默认布局</a> </li>
+      </ul>
+      <ul class="inline-block-ul-mid navbar-right" style="margin-top:3px;">
+        <li> <a href="#" class="btn btn-sm btn-warning">保存</a> </li>
+        <li> <a href="#" class="btn btn-sm btn-default">取消</a> </li>
+      </ul>
+    </div>
+    
+    <!--/.nav-collapse --> </div>
+</div>
+<div class="diy-all-box" style="display: block;">
+  <div class="diy-box container well"> 
+    <!-- <h4 class="diy-title">布局：（选择你喜欢的布局）</h4>
+    -->
+    <ul class="inline-block-ul-mid diy-style-list list-unstyled">
+      <li class="active"> <a href="javascript:void(0)" data-bg="byhx"> <img src="img/theme-img/public/theme1.png"></a> </li>
+      <li> <a href="javascript:void(0)" data-bg="mtpgy"> <img src="img/theme-img/public/theme2.png"></a> </li>
+      <li> <a href="javascript:void(0)" data-bg="xldy"> <img src="img/theme-img/public/theme3.png"></a> </li>
+      <li> <a href="javascript:void(0)" data-bg="zsmh"> <img src="img/theme-img/public/theme4.png"></a> </li>
+      <li> <a href="javascript:void(0)" data-bg="xzsl"> <img src="img/theme-img/public/theme5.png"></a> </li>
+      <li> <a href="javascript:void(0)" data-bg="fwdpp"> <img src="img/theme-img/public/theme6.png"></a> </li>
+      <li> <a href="javascript:void(0)" data-bg="jzlm"> <img src="img/theme-img/public/theme7.png"></a> </li>
+      <li> <a href="javascript:void(0)" data-bg="cj"> <img src="img/theme-img/public/theme8.png"></a> </li>
+      <li> <a href="javascript:void(0)" data-bg="hbcl"> <img src="img/theme-img/public/theme9.png"></a> </li>
+      <li> <a href="javascript:void(0)" data-bg="hjmh"> <img src="img/theme-img/public/theme10.png"></a> </li>
+      <li> <a href="javascript:void(0)" data-bg="fhds"> <img src="img/theme-img/public/theme11.png"></a> </li>
+      <li> <a href="javascript:void(0)" data-bg="wlkh"> <img src="img/theme-img/public/theme12.png"></a> </li>
+      <li> <a href="javascript:void(0)" data-bg="hhsj"> <img src="img/theme-img/public/theme13.png"></a> </li>
+      <li> <a href="javascript:void(0)" data-bg="mscf"> <img src="img/theme-img/public/theme14.png"></a> </li>
+      <li> <a href="javascript:void(0)" data-bg="zgldwx"> <img src="img/theme-img/public/theme15.png"></a> </li>
+      <li> <a href="javascript:void(0)" data-bg="nndt"> <img src="img/theme-img/public/theme16.png"></a> </li>
+      <li> <a href="javascript:void(0)" data-bg="csfh"> <img src="img/theme-img/public/theme17.png"></a> </li>
+      <li> <a href="javascript:void(0)" data-bg="hbztd"> <img src="img/theme-img/public/theme18.png"></a> </li>
+      <li> <a href="javascript:void(0)" data-bg="qzy"> <img src="img/theme-img/public/theme19.png"></a> </li>
+      <li> <a href="javascript:void(0)" data-bg="sgls"> <img src="img/theme-img/public/theme20.png"></a> </li>
+      <li> <a href="javascript:void(0)" data-bg="xgz"> <img src="img/theme-img/public/theme21.png"></a> </li>
+      <li> <a href="javascript:void(0)" data-bg="yskj"> <img src="img/theme-img/public/theme22.png"></a> </li>
+      <li> <a href="javascript:void(0)" data-bg="cnhk"> <img src="img/theme-img/public/theme23.png"></a> </li>
+      <li> <a href="javascript:void(0)" data-bg="qccf"> <img src="img/theme-img/public/theme24.png"></a> </li>
+      <li> <a href="javascript:void(0)" data-bg="lsxq"> <img src="img/theme-img/public/theme25.png"></a> </li>
+      <li> <a href="javascript:void(0)" data-bg="qflm"> <img src="img/theme-img/public/theme26.png"></a> </li>
+    </ul>
+  </div>
+</div>
+<div class="diy-all-box" >
+  <div class="diy-box container well clearfix model-box" style="overflow:hidden;"> 
+    <!-- <h4 class="diy-title">布局：（选择你喜欢的布局）</h4>
+  -->
+    <div class="pull-left sidebar-left">
+      <ul class="sidebar-button list-unstyled">
+        <li class="active"> <a href="javascript:void(0)">基础模块</a> </li>
+        <li> <a href="javascript:void(0)">自定义模块</a> </li>
+        <!-- <li>
+      <a href="javascript:void(0)">系统模块</a>
+    </li>
+    -->
+      </ul>
+    </div>
+    <div class="pull-right content-right" style="display:block;">
+      <ul class="inline-block-ul-mid list-unstyled model-base-list">
+        <li> <a href="javascript:void(0)" class="model-ico model-ico-user" data-type="kjtj"> <i class="checked"></i> <span class=" model-base-ico-kjtj"></span> </a>
+          <p> 空间统计 <a href="javascript:" class="edit icon-edit"></a> </p>
+        </li>
+        <li> <a href="javascript:void(0)" class="model-ico model-ico-user"  data-type="zxbk"> <span class=" model-base-ico-zxbk"></span> </a>
+          <p> 最新备课 <a href="javascript:" class="edit icon-edit"></a> </p>
+        </li>
+        <li> <a href="javascript:void(0)" class="model-ico model-ico-user" data-type="rzxx"> <span class=" model-base-ico-rzxx"></span> </a>
+          <p> 日志信息 <a href="javascript:" class="edit icon-edit"></a> </p>
+        </li>
+        <li> <a href="javascript:void(0)" class="model-ico model-ico-user" data-type="ljsc"> <span class=" model-base-ico-ljsc"></span> </a>
+          <p> 链接收藏 <a href="javascript:" class="edit icon-edit"></a> </p>
+        </li>
+        <li> <a href="javascript:void(0)" class="model-ico model-ico-user" data-type="xc"> <span class=" model-base-ico-xc"></span> </a>
+          <p> 相册 <a href="javascript:" class="edit icon-edit"></a> </p>
+        </li>
+        <li> <a href="javascript:void(0)" class="model-ico model-ico-user" data-type="hyts"> <span class=" model-base-ico-hyts"></span> </a>
+          <p> 好友同事 <a href="javascript:" class="edit icon-edit"></a> </p>
+        </li>
+        <li> <a href="javascript:void(0)" class="model-ico model-ico-user" data-type="httl"> <span class=" model-base-ico-httl"></span> </a>
+          <p> 话题讨论 <a href="javascript:" class="edit icon-edit"></a> </p>
+        </li>
+        <li> <a href="javascript:void(0)" class="model-ico model-ico-user" data-type="zjfk"> <span class=" model-base-ico-zjfk"></span> </a>
+          <p> 最近访客 <a href="javascript:" class="edit icon-edit"></a> </p>
+        </li>
+        <li> <a href="javascript:void(0)" class="model-ico model-ico-user" data-type="zxdt"> <span class=" model-base-ico-zxdt"></span> </a>
+          <p> 最新动态 <a href="javascript:" class="edit icon-edit"></a> </p>
+        </li>
+      </ul>
+    </div>
+    <div class="pull-right content-right"  style="display:none;">
+      <ul class="inline-block-ul-mid list-unstyled model-base-list position-padding-model" style="left:10px;">
+        <li style="display:block">
+          <h4 class="diy-title">从右侧选择模块添加到主页：</h4>
+        </li>
+        <li > <a href="javascript:void(0)" class="model-ico"> <i class="checked"></i> <span class=" model-base-ico-wzmk"></span> </a>
+          <p> 文字模块 <a href="javascript:" class="edit icon-circle-minus"></a> </p>
+        </li>
+        <li> <a href="javascript:void(0)" class="model-ico" > <span class=" model-base-ico-lbmk"></span> </a>
+          <p> 列表模块 <a href="javascript:" class="edit icon-circle-minus"></a> </p>
+        </li>
+        <li> <a href="javascript:void(0)" class="model-ico"> <span class=" model-base-ico-flash"></span> </a>
+          <p> flash模块 <a href="javascript:" class="edit icon-circle-minus"></a> </p>
+        </li>
+        <li> <a href="javascript:void(0)" class="model-ico" > <span class=" model-base-ico-spmk"></span> </a>
+          <p> 视频模块 <a href="javascript:" class="edit icon-circle-minus"></a> </p>
+        </li>
+        <li> <a href="javascript:void(0)" class="model-ico" > <span class=" model-base-ico-html"></span> </a>
+          <p> HTML模块 <a href="javascript:" class="edit icon-circle-minus"></a> </p>
+        </li>
+      </ul>
+      <ul class="inline-block-ul-mid list-unstyled model-base-list position-padding-model" style="right:0;">
+        <li > <a href="javascript:void(0)" class="model-ico" data-toggle="modal" data-target="#wzmk"> <span class=" model-base-ico-wzmk"></span> </a>
+          <p> 文字模块 </p>
+        </li>
+        <li > <a href="javascript:void(0)" class="model-ico" data-toggle="modal" data-target="#tp"> <span class=" model-base-ico-tp"></span> </a>
+          <p> 图片模块 </p>
+        </li>
+        <li> <a href="javascript:void(0)" class="model-ico"  data-toggle="modal" data-target="#lbmk"> <span class=" model-base-ico-lbmk"></span> </a>
+          <p> 列表模块 </p>
+        </li>
+        <li> <a href="javascript:void(0)" class="model-ico"  data-toggle="modal" data-target="#flash"> <span class=" model-base-ico-flash"></span> </a>
+          <p> flash模块 </p>
+        </li>
+        <li> <a href="javascript:void(0)" class="model-ico"  data-toggle="modal" data-target="#spmk"> <span class=" model-base-ico-spmk"></span> </a>
+          <p> 视频模块 </p>
+        </li>
+        <li> <a href="javascript:void(0)" class="model-ico"  data-toggle="modal" data-target="#html"> <span class=" model-base-ico-html"></span> </a>
+          <p> HTML模块 </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container top-nav-fluid">
+  <div class="bg-zb-bg"><a href="javascript:void(0);">  </a></div>
+  <div class="head-mask" style="height:178px; "></div>
+  <div class="top-nav-left">
+    <div class="user-nav-bar container">
+      <div class="nav-wrapper grid-responsive" >
+        <div class="img-wrapper">
+          <div class="img-wrappr-ico" ><img src="img/005a.png" class="img-responsive" alt="Responsive image" width="100" height="100"></div>
+          <div class="user-num-wrapper" style="margin-left: 50px;">
+            <ul class="num-list clearfix inline-block-ul">
+              <li>
+                <h3>三年级5班</h3>
+              </li>
+              <li><a type="button" class="btn btncolor2">装扮</a></li>
+            </ul>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="container-box class-index-container">
+    <div class="col-md-3 class-index-left  droptrue droptrue1"> 
+      <!--统计-->
+      <!--固定栏目-通知-->
+      <div class="panel panel-default panel-class-photo panel-class-zdy"  data-type="zxbk">
+        <div class="panel-body">
+          <div class="panel-heading color1" ><i class="fa fa-twitch"></i> 通知 <a class="pull-right">配置</a></div>
+          <div class="list-group"> <a href="#" class="list-group-item text-space"><i class="color1">1</i> 百度相册冲印照片百度项行动的百度相册冲印照片百度项行动的公告百度相册冲印照片百度项行动的公告公告</a> <a href="#" class="list-group-item text-space"><i class="color1">1</i> 百度相册冲印照片百度项行动的百度相册冲印照片百度项行动的公告百度相册冲印照片百度项行动的公告公告</a> </div>
+        </div>
+      </div>
+      <!--固定栏目-日志-->
+      <div class="panel panel-default panel-class-photo panel-class-zdy">
+        <div class="panel-body">
+          <div class="panel-heading color1" ><i class="fa fa-file-text"></i> 日志<a class="pull-right">配置</a></div>
+          <div class="list-group"> <a href="#" class="list-group-item text-space"><span style="font-weight: bold;font: 12px/18px 宋体;padding-right: 5px;">·</span> 百度相册冲印(30)</a> <a href="#" class="list-group-item text-space"><span style="font-weight: bold;font: 12px/18px 宋体;padding-right: 5px;">·</span> 百度相册冲印(30)</a> <a href="#" class="list-group-item text-space"><span style="font-weight: bold;font: 12px/18px 宋体;padding-right: 5px;">·</span> 百度相册冲印(30)</a> </div>
+        </div>
+      </div>
+      <!--固定栏目-相册-->
+      <div class="panel panel-default panel-class-photo panel-class-zdy">
+        <div class="panel-body">
+          <div class="panel-heading color1" ><i class="fa fa-file-image-o"></i> 相册<a class="pull-right">配置</a></div>
+          <div class="list-group">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel"> 
+              <!-- Indicators -->
+              <ol class="carousel-indicators clear-padding">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+              </ol>
+              
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active"> <a href="#"><img src= "img/school1_03.png" width="572" height="278"  alt=""/></a> </div>
+                <div class="item"> <a href="#"><img src= "img/school1_03.png" width="572" height="278"  alt=""/></a> </div>
+              </div>
+              
+              <!-- Controls --> 
+              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> <span class="sr-only">Previous</span> </a> <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> <span class="sr-only">Next</span> </a> </div>
+          </div>
+        </div>
+      </div>
+      <!-- 固定-flash-->
+      <div class="panel panel-default panel-class-photo panel-class-zdy">
+        <div class="panel-body">
+          <div class="panel-heading color1" ><i class="fa fa-file-video-o "></i> flash<a class="pull-right">配置</a></div>
+          <div class="nr small">
+            <object type="application/x-shockwave-flash" data="img/flash3193.swf" width="100%">
+              <param name="base" value=".">
+              <param name="wmode" value="Opaque">
+              <param name="allowScriptAccess" value="always">
+              <param name="quality" value="high">
+              <param name="allowNetWorking" value="all">
+            </object>
+          </div>
+        </div>
+      </div>
+      <!-- 固定-视频-->
+      <div class="panel panel-default panel-class-photo panel-class-zdy">
+        <div class="panel-body">
+          <div class="panel-heading color1" ><i class="fa fa-film "></i> 视频<a class="pull-right">配置</a></div>
+          <div class="nr small" >
+            <embed src="http://www.tudou.com/v/mwmT_pfty3U/&bid=05&rpid=2016861&resourceId=2016861_05_05_99/v.swf" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" wmode="opaque" width="100%" height="100%" > </embed>
+          </div>
+        </div>
+      </div>
+      <!-- 固定-html-->
+      <div class="panel panel-default panel-class-photo panel-class-zdy">
+        <div class="panel-body">
+          <div class="panel-heading color1" ><i class="fa fa-file-code-o "></i> html<a class="pull-right">配置</a></div>
+          <div class="nr small html-view-box" > </div>
+        </div>
+      </div>
+      <!-- 固定-文字-->
+      <div class="panel panel-default panel-class-photo panel-class-zdy">
+        <div class="panel-body">
+          <div class="panel-heading color1" ><i class="fa fa-file"></i> 文字<a class="pull-right">配置</a></div>
+          <div class="nr small txt-zdy">
+            <p> APEC自从成立以来，就一直将降低关税作为重要的目标。南开大学APEC研究中心主任刘晨阳介绍说，APEC成立至今，亚太地区的整体关税从16.9%降低到5.8%，这里面APEC的积极推动作用不可忽视。 </p>
+          </div>
+        </div>
+      </div>
+      <!-- 固定-链接-->
+      <div class="panel panel-default panel-class-photo panel-class-zdy">
+        <div class="panel-body">
+          <div class="panel-heading color1" ><i class="fa fa-globe "></i> 链接<a class="pull-right">配置</a></div>
+          <div class="list-group"> <a href="#" class="list-group-item text-space"><i class="color1">1</i> 百度</a> </div>
+        </div>
+      </div>
+     
+    </div>
+    <div class="col-md-6 class-index-center droptrue droptrue1 ui-sortable" > 
+      <!--图文-->
+      <div class="panel panel-default panel-class-photo panel-class-zdy ">
+        <div class="panel-body bureau-modify-zdy-jyxw">
+          <div class="panel-heading color1" ><i class="fa fa-spinner "></i> 新闻列表<a class="pull-right">配置</a></div>
+         <div class="bureau-modify-zdy-body clearfix">
+        			
+        			<div class="bureau-modify-zdy-jyxw-right" style="padding: 5px;">
+        				<ul class="bureau-new-rizhi clear-margin clear-padding clear-border clearfix">
+							<li class="clearfix">
+								<div class=" bureau-new-rizhi-list clear-padding ">
+									<a><i>1</i>那一条铺满石子的小路</a>
+								</div>
+								<div class="bureau-new-rizhi-name clear-padding">
+									<span>08-08</span>
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class=" bureau-new-rizhi-list clear-padding ">
+									<a><i>2</i>那一条铺满石子的小路</a>
+								</div>
+								<div class="bureau-new-rizhi-name clear-padding">
+									<span>08-08</span>
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class=" bureau-new-rizhi-list clear-padding ">
+									<a><i>3</i>那一条铺满石子的小路</a>
+								</div>
+								<div class="bureau-new-rizhi-name clear-padding">
+									<span>08-08</span>
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class=" bureau-new-rizhi-list clear-padding ">
+									<a><i>4</i>那一条铺满石子的小路</a>
+								</div>
+								<div class="bureau-new-rizhi-name clear-padding">
+									<span>08-08</span>
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class=" bureau-new-rizhi-list clear-padding ">
+									<a><i>5</i>那一条铺满石子的小路</a>
+								</div>
+								<div class="bureau-new-rizhi-name clear-padding">
+									<span>08-08</span>
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class=" bureau-new-rizhi-list clear-padding ">
+									<a><i>6</i>那一条铺满石子的小路</a>
+								</div>
+								<div class="bureau-new-rizhi-name clear-padding">
+									<span>08-08</span>
+								</div>
+							</li>
+						</ul>
+        			</div>
+        		</div>
+         
+        </div>
+      </div>
+      
+       <!-- 二级自定义-->
+       <div class="panel panel-default panel-class-photo panel-class-zdy">
+        <div class="panel-body">
+          <div class="panel-heading color1" ><i class="fa fa-spinner "></i> 日志<a class="pull-right">配置</a></div>
+          <div class="bureau-modify-zdy-body bureau-modify-zdy-tzgg-list clear-padding">
+        			  <div class="" id="accordion">
+							         <div class="school-erji clearfix">
+   	    	                         <div class="link-menu col-md-12" href="#">
+   	    		                           <a><i>●</i>小哥小哥 <span>(572)</span></a>
+   	                             	</div>
+   	    	                        <ul class="submenu clear-padding col-md-12">
+   	    		                    <li class="clearfix">
+   	    			                    <a class="text-space" href="#">
+   	    			                      <i>1</i> 安全卫士安全卫士安全卫士 
+   	    		                        </a>
+   	    		                   </li>
+   	    	                       </ul>
+   	                               </div>
+   	                                 <div class="school-erji clearfix">
+   	    	                         <div class="link-menu col-md-12" href="#">
+   	    		                           <a><i>●</i>小哥小哥 <span>(572)</span></a>
+   	                             	</div>
+   	    	                        <ul class="submenu clear-padding col-md-12">
+   	    		                    <li class="clearfix">
+   	    			                    <a class="text-space" href="#">
+   	    			                     <i>1</i> 安全卫士安全卫士安全卫士 
+   	    		                        </a>
+   	    		                   </li>
+   	    		                    <li class="clearfix">
+   	    			                    <a class="text-space" href="#">
+   	    			                      <i>1</i>  安全卫士安全卫士安全卫士 
+   	    		                        </a>
+   	    		                   </li>
+   	    	                       </ul>
+   	                               </div>
+   	                               
+						</div>
+        		</div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 class-index-left droptrue droptrue1"> 
+       <!-- 固定-最近访客-->
+      <div class="panel panel-default panel-class-photo panel-class-zdy">
+        <div class="panel-body">
+          <div class="panel-heading color1" ><i class="fa fa-globe "></i> 最近访客<a class="pull-right">配置</a></div>
+          <div class="list-group zj-group clearfix" style="padding: 5px ">
+            <div class="col-md-3" style="text-align: center;"> <img src="img/people-zuijin-img1.png"> <span class="name-block-center">丁老师</span> </div>
+            <div class="col-md-3" style="text-align: center;"> <img src="img/people-zuijin-img1.png"> <span class="name-block-center">丁老师</span> </div>
+            <div class="col-md-3" style="text-align: center;"> <img src="img/people-zuijin-img1.png"> <span class="name-block-center">丁老师</span> </div>
+            <div class="col-md-3" style="text-align: center;"> <img src="img/people-zuijin-img1.png"> <span class="name-block-center">丁老师</span> </div>
+          </div>
+          <div class="visitor-number" style="border-radius: 0px; margin-top: 0px;"> 您是第 <span>399</span> 个访客 </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 弹出框 --> 
+<!-- Modal -->
+<div class="modal fade bs-example-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">修改名称</h4>
+      </div>
+      <div class="modal-body">
+        <input type="text" class="form-control" placeholder="Text input">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 底部 -->
+<div class="container-fluid footer footer-grayline">
+  <div class="row">
+    <ul class="col-md-12 inline-block-ul">
+      <li><a href="#">关于我们</a></li>
+      <li>|</li>
+      <li><a href="#">联系我们</a></li>
+      <li>|</li>
+      <li><a href="#">友情链接</a></li>
+      <li>|</li>
+      <li><a href="#">关于我们</a></li>
+      <li>|</li>
+      <li><a href="#">关于我们</a></li>
+    </ul>
+  </div>
+  <div class="row">
+    <div class="col-md-12">Copyright @ 2011-2015 湖南领信教育网络发展有限公司版权所有 湘ICP备14001031号</div>
+  </div>
+</div>
+<!--***** “space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****--> 
+<script type="text/JavaScript" src="space-footer-css.js"></script> 
+<!--***** “space-footer-css.js” 为公用JS库对应项目里的"space-footer-css.jsp"由前端维护-不需要引用该文件 *****--> 
+<script type="text/javascript" src=" libs/jQuery-ui/jquery-ui-1.10.4.custom.min.js"></script> 
+<script type="text/javascript" src="libs/gundong/js/kindeditor-4.1.10/kindeditor-min.js"></script>
+<script type="text/javascript" src="libs/gundong/js/kindeditor-4.1.10/lang/zh_CN.js"></script>
+<script type="text/javascript" src="js/top-top.js"></script>
+<script>
+			var editor;
+			KindEditor.ready(function(K) {
+				editor = K.create('textarea[name="content"]', {
+					resizeType : 1,
+					allowPreviewEmoticons : false,
+					allowImageUpload : false,
+					items : [
+						'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline',
+						'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright', 'insertorderedlist',
+						'insertunorderedlist', '|', 'emoticons', 'link']
+				});
+			});
+</script>
+<script type="text/javascript">
+    //TAB切换效果
+    function toggleTab(tabname,contname){
+      $(tabname).click(function(){
+        var thisIndex = $(this).index();
+        $(this).addClass("active").siblings().removeClass("active");
+        $(contname).eq(thisIndex).show().siblings(contname).hide();
+      });
+    }
+    toggleTab(".diy-navbar .navbar-nav li.diy-button",".diy-all-box");
+    toggleTab(".sidebar-button li",".content-right");
+
+    //layout 切换
+    $(".diy-layout-list li").click(function(){
+      $(this).addClass("active").siblings().removeClass("active");
+      var thisLayoutNumber = $(this).children("a").attr("data-layout");
+    });
+    var col_md_2 = "<div class='droptrue2'></div>"
+    var col_md_3 = "<div class='droptrue3'></div>"
+    
+    function droptrue2To1(){
+      $(".droptrue1").append( $(".droptrue2").html() );
+      $(".droptrue2").hide().empty();
+    }
+    function droptrue3To1(){
+      $(".droptrue1").append( $(".droptrue3").html() );
+      $(".droptrue3").hide().empty();
+      $(".droptrue2").show();
+    }
+    function removeColClass(){
+      var colName = "col-md-1 col-md-2 col-md-3 col-md-4 col-md-5 col-md-6 col-md-7 col-md-8 col-md-9 col-md-10 col-md-11 col-md-12"
+      $(".droptrue1,.droptrue2,.droptrue3").removeClass(colName);
+    }
+    function clickLayout3_2(){
+      droptrue3To1();
+      removeColClass();
+      $(".droptrue1").addClass("col-md-7");
+      $(".droptrue2").addClass("col-md-5");
+    }
+    function clickLayout2_3(){
+      droptrue3To1();
+      removeColClass();
+      $(".droptrue1").addClass("col-md-5");
+      $(".droptrue2").addClass("col-md-7");
+    }
+    function clickLayout1_3(){
+      droptrue3To1();
+      removeColClass();
+      $(".droptrue1").addClass("col-md-3");
+      $(".droptrue2").addClass("col-md-9");
+    }
+    function clickLayout3_1(){
+      droptrue3To1();
+      removeColClass();
+      $(".droptrue1").addClass("col-md-9");
+      $(".droptrue2").addClass("col-md-3");
+    }
+    function clickLayout1_2_1(){
+      removeColClass();
+      $(".droptrue1").addClass("col-md-3");
+      $(".droptrue2").addClass("col-md-6");
+      $(".droptrue3").show().addClass("col-md-3");
+    }
+    function clickLayout1_1_2(){
+      removeColClass();
+      $(".droptrue1").addClass("col-md-3");
+      $(".droptrue2").addClass("col-md-3");
+      $(".droptrue3").show().addClass("col-md-6");
+    }
+    function clickLayout2_1_1(){
+      removeColClass();
+      $(".droptrue1").addClass("col-md-6");
+      $(".droptrue2").addClass("col-md-3");
+      $(".droptrue3").show().addClass("col-md-3");
+    }
+    function clickLayout2_2(){
+      droptrue3To1();
+      removeColClass();
+      $(".droptrue1").addClass("col-md-6");
+      $(".droptrue2").addClass("col-md-6");
+    }
+    function clickLayout1(){
+      droptrue2To1();
+      droptrue3To1();
+      removeColClass();
+      $(".droptrue1").addClass("col-md-12");
+    }
+    $(".layout-3-2").click(function(){
+      clickLayout3_2();
+    });
+    $(".layout-2-3").click(function(){
+      clickLayout2_3();
+    });
+    $(".layout-1-3").click(function(){
+      clickLayout1_3();
+    });
+    $(".layout-3-1").click(function(){
+      clickLayout3_1();
+    });
+    $(".layout-1-2-1").click(function(){
+      clickLayout1_2_1();
+    });
+    $(".layout-1-1-2").click(function(){
+      clickLayout1_1_2();
+    });
+    $(".layout-2-1-1").click(function(){
+      clickLayout2_1_1();
+    });
+    $(".layout-2-2").click(function(){
+      clickLayout2_2();
+    });
+    $(".layout-1").click(function(){
+      clickLayout1();
+    });
+    
+
+    //style  切换
+    $(".diy-style-list li").click(function(){
+       $(this).addClass("active").siblings().removeClass("active");
+    });
+    $(".diy-style-list li a").click(function(){
+       var ThisDataBG = $(this).attr("data-bg");
+        var unnecessaryClass = "byhx-bg mtpgy-bg xldy-bg zsmh-bg xzsl-bg fwdpp-bg jzlm-bg cj-bg cnhk-bg csfh-bg fhds-bg fwdpp-bg hbcl-bg hbztd-bg hhsj-bg hjmh-bg jzlm-bg lsxq-bg mscf-bg nndt-bg qccf-bg qflm-bg qzy-bg sgls-bg xzsl-bg wlkh-bg zgldwx-bg xgz-bg yskj-bg"
+       console.log(ThisDataBG);
+       $("body").removeClass(unnecessaryClass).addClass(ThisDataBG+"-bg");
+    });
+
+   
+
+    //修改头部高度
+    function getRngeValue(){
+        var rangeHeight = $(".header-height-val").val();
+        $(".top-nav-fluid2").css("margin-top",rangeHeight+"px");
+    };
+
+    //拖拽模块
+   $( ".droptrue" ).sortable({
+      connectWith: "div"
+    });
+
+    // //设置拖动条的高度
+    // var contentHeight = $("#layout-content").height();
+    // $(".droptrue").css("height",contentHeight);
+
+    //diy-mode模式下的内容区域的A链接都是新开
+    $(".diy-mode .droptrue a").attr("target","_blank");
+
+    //mode-pulg 调用关闭
+    $(".model-base-list").on("click",".model-ico-user",function(){
+      var modeClickDataType = $(this).attr("data-type");
+      if ( $("#layout-content div[data-type='"+modeClickDataType+"']").is(":visible") ) {
+        $("#layout-content div[data-type='"+modeClickDataType+"']").hide();
+        $(this).children(".checked").remove();
+      }else{
+        $("#layout-content div[data-type='"+modeClickDataType+"']").show();
+        $(this).append("<i class='checked'></i>");
+      }
+    });
+
+    //默认是否出现小勾
+    var clickButtontemp = [];
+    var modeClickButtonName = $(".model-base-list .model-ico");
+    for( var i=0; i < modeClickButtonName.length; i++){
+      clickButtontemp.push( modeClickButtonName.eq(i).attr("data-type") ); 
+    }
+    console.log( clickButtontemp );
+
+    var Divtemp = [];
+    var modeDivName = $(".droptrue > div");
+    for( var i=0; i < modeDivName.length; i++){
+      Divtemp.push( modeDivName.eq(i).attr("data-type") );
+      if ( $(".model-base-list .model-ico[data-type='Divtemp'][i]").is(":visible") ) {
+      $(".model-base-list .model-ico[data-type='clickButtontemp']").append("<i class='checked'></i>");
+    };
+  };
+  
+  $(function(){
+    changeTab(".tab-js-button",".tab-js-panel");
+  });
+</script>
+
+</body>
+</html>
