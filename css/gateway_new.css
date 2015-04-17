@@ -1364,16 +1364,16 @@ float: left;
 }
 .edu-img-banner-url{
 	position: absolute;
-	width: 100%;
-	height: 80px;
-	background: #2c2c2c;
-	bottom: 0;
-	line-height: 40px;
-padding: 20px;
+width: 100%;
+height: 57px;
+background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.71);
+line-height: 40px;
+top: 0px;
+padding: 6px 17px;
 }
 .edu-img-banner-text{
 	font-size: 18px;
-color: #B0B0B0;
+color: #fff;
 text-align: right;
 font-family: "微软雅黑";
 display: block;
@@ -1407,7 +1407,7 @@ width: 65px;
 	position: absolute;
 width: 314px;
 height: 50px;
-background: none repeat scroll 0% 0% #2C2C2C;
+background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.75);
 bottom: 0px;
 line-height: 30px;
 padding: 10px;
@@ -1789,7 +1789,7 @@ font-weight: 100;
 #scroll{width:1080px;margin:0 auto;font-family:"Microsoft Yahei";}
 #scroll .owl-wrapper-outer{margin:0 auto;}
 #scroll .item{position:relative;width:250px;height:339px;margin:0 auto;background-color:#fff;overflow:hidden;}
-#scroll .shd{position:absolute;left:0;top:0;width:100%;height:100%;background-color:rgba(0, 0, 0, 0.15);}
+#scroll .shd{position:absolute;left:0;top:0;width:100%;height:100%;background-color:rgba(0, 0, 0, 0.35);}
 #scroll .shd a{display:block;width:250px;height:239px;*background-image:url(about:blank);background-image:url(about:blank)\0;}
 #scroll .txt{position:absolute;left:0;bottom:0;width: 100%;height:125px;padding:0 12px;color:#888;box-shadow:0 0 15px 15px rgba(228, 233, 238, 0.95);background-color:#e4e9ee\9;background-color:rgba(228, 233, 238, 0.95);}
 #scroll h3{width:226px;margin-bottom:6px;padding-top:6px;font:700 18px/25px arial,"Microsoft Yahei";overflow:hidden;}
@@ -1798,8 +1798,19 @@ font-weight: 100;
 #scroll p{width:226px;height:54px;line-height:18px;font-size:12px;}
 #scroll .item:hover .shd{background-color:rgba(0, 0, 0, 0);}
 #scroll .item:hover .txt{background-color:#fff\9;background-color:rgba(248, 249, 249, 0.95);box-shadow:0 0 15px 15px rgba(248, 249, 249, 0.95);}
-.owl-theme .owl-controls .owl-buttons div{position:absolute;top:180px;width:30px;height:60px;margin:0;padding:0;border-radius:0;font:60px/60px "宋体";background-color:transparent;overflow:hidden;_display:none;}
+.owl-theme .owl-controls .owl-buttons div{position:absolute;top:140px;width:30px;height:60px;margin:0;padding:0;border-radius:0;font:60px/60px "宋体";background-color:transparent;overflow:hidden;_display:none;}
 .owl-theme .owl-controls .owl-buttons .owl-prev{left:-40px;}
 .owl-theme .owl-controls .owl-buttons .owl-next{right:-40px;}
 .owl-theme .owl-controls .owl-buttons .owl-prev:before{content:"<";}
 .owl-theme .owl-controls .owl-buttons .owl-next:before{content:">";}
+
+
+
+
+/*首页滚动*/
+.box{ height:35px;background: none repeat scroll 0% 0% rgba(0, 0, 0, 0.13); overflow:hidden;}
+.t_news{ height:19px;  color: #515151; padding-left:10px; margin:8px 0; overflow:hidden; position:relative;font-size: 12px;}
+.t_news b{ line-height:19px; font-weight:bold; display:inline-block;}
+.news_li,.swap{ line-height:19px; display:inline-block; position:absolute; top:0; left:100px;}
+.news_li a,.swap a{ color:#f00;}
+.swap{top:19px;}

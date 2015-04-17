@@ -14,7 +14,9 @@
 		<!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
 		<script type="text/JavaScript" src="space-css.js"></script>
 		<!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
-
+        <style>
+        	
+        </style>
 
 	</head>
 
@@ -151,6 +153,21 @@
 			</div>-->
 		</div>
         <div class="container" style="margin-top: 40px;">
+        	<div style="padding: 0 5px;">
+        	<div class="box">
+	<div class="t_news">
+		<b>0225寒假海报二维码</b>
+		<ul class="news_li">
+			<li><a href="http://down.admin5.com/" target="_blank">0225寒假海报二维码</a></li>
+			<li><a href="http://down.admin5.com/" target="_blank">0225寒假海报二维码</a></li>
+			<li><a href="http://down.admin5.com/" target="_blank">0225寒假海报二维码</a></li>
+			<li><a href="http://down.admin5.com/" target="_blank">0225寒假海报二维码</a></li>
+			<li><a href="http://down.admin5.com/" target="_blank">0225寒假海报二维码</a></li>
+		</ul>
+		<ul class="swap"></ul>
+	</div>
+</div>
+</div>
         	<div class=" bureau-banner col-md-8">
 				<div class="banner_show" id="banner_show">
 					<a href="http://sc.admin5.com" class="bannger_inbox">
@@ -406,7 +423,28 @@ $(function() {
   });
 })
 </script>
-
+<script>
+function b(){	
+	t = parseInt(x.css('top'));
+	y.css('top','19px');	
+	x.animate({top: t - 19 + 'px'},'slow');	//19为每个li的高度
+	if(Math.abs(t) == h-19){ //19为每个li的高度
+		y.animate({top:'0px'},'slow');
+		z=x;
+		x=y;
+		y=z;
+	}
+	setTimeout(b,3000);//滚动间隔时间 现在是3秒
+}
+$(document).ready(function(){
+	$('.swap').html($('.news_li').html());
+	x = $('.news_li');
+	y = $('.swap');
+	h = $('.news_li li').length * 19; //19为每个li的高度
+	setTimeout(b,3000);//滚动间隔时间 现在是3秒
+	
+})
+</script>
 	</body>
 
 </html>
