@@ -63,7 +63,8 @@
 /*body.gray-body{ font-family: Helvetica,Arial,sans-serif;}*/
 body.gray-body{ font-family: Helvetica,"Microsoft Yahei","Hiragino Sans GB","WenQuanYi Micro Hei",sans-serif; background-color: #f8f8f8;  font-size: 14px;}
 body.gray-body a:hover{text-decoration:underline !important; color:#4C4C4C; }
-.gray-body .navbar a:hover{ text-decoration: none !important;}
+.gray-body .navbar a{ font-family: Arial,Helvetica,sans-serif !important;}
+.gray-body .navbar a:hover{ text-decoration: none !important; }
 .gray-body .curriculum-menu ul li a:hover{ text-decoration: none !important;}
 
 body.grid-body{ background: url(../img/saike/grid_bg.png) repeat;} 
@@ -938,6 +939,7 @@ body .bureau-modify-zdy-zyzq .bureau-new-zy .bureau-teacher-rizhi-list > .col-md
 	color: #000;
 	font-size: 13px;
 	font-weight: normal;
+	padding: 5px 0px 5px 0px;
 }
 .bureau-modify-zdy-zyzq .bureau-new-zy .bureau-teacher-rizhi-list > .col-md-9 .data-ranking{
 	font-size: 13px;
@@ -1029,9 +1031,17 @@ body .bureau-modify-zdy-jyjks .bureau-modify-zdy-body > .gshi > a{
         		background: none !important;
         		border: none !important;
 			    border-bottom: #ededed solid 1px !important;
-			    padding: 7px 4px;			    
+			    padding: 8px 4px;			    
 }
 
+/*优秀空间*/
+.school-name-space{
+	display: inline-block;
+	max-width: 100px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+ }
 
 /*底部外链导航*/
 body .navbar_links{ margin-bottom: 10px; background: #fcfcfc; border: none; text-align: center;  }
