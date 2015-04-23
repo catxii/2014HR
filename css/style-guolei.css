@@ -933,7 +933,7 @@ body .pingjia-nr .collapse .ico-arrow-up{
 	font-size: 13px;
 } 
 /*资源专区*/
-body .bureau-modify-zdy-zyzq-btn > li{ font-weight: normal;}
+body .bureau-modify-zdy-zyzq-btn > li{ font-weight: normal; font-size: 14px;}
 body .bureau-modify-zdy-zyzq .bureau-new-zy .bureau-teacher-rizhi-list > .col-md-9 > a.color_black{
 	color: #000;
 	font-size: 13px;
@@ -1021,6 +1021,16 @@ body .bureau-modify-zdy-jyjks .bureau-modify-zdy-body .url-gray a span{ padding-
 .bureau-video-body .photo-box-single .video-mask{ width: 100%; height: 100%; top: 0px; left: 0px;}
 .bureau-video-body .photo-box-single .video-mask img{ padding: 5px;}
 .bureau-video-body .photo-box-single .gray-color{ color: #c2c2c2; }
+
+/*教育局股室*/
+body .bureau-modify-zdy-jyjks .bureau-modify-zdy-body > .gshi > a{
+        		font-weight: lighter !important;
+        		color: #333 !important; 
+        		background: none !important;
+        		border: none !important;
+			    border-bottom: #ededed solid 1px !important;
+			    padding: 7px 4px;			    
+}
 
 
 /*底部外链导航*/
