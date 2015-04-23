@@ -18,7 +18,7 @@
 	</head>
 
 	<body class="bureau-body gray-body">
-		<div class="sidel"style="display: none;" id="goTopBtn" >
+		<div class="sidel"style="display: none;" id="goTopBtn" style="border: #f00 solid 1px;">
 			<ul>
 		<li style="border:none;"><a href="javascript:goTop();" class="sidetop"><img src="img/side_icon05.png"></a></li>
 	  </ul>
@@ -598,43 +598,6 @@
 		<link rel="stylesheet" type="text/css" href="css/bureau_new.css" media="screen">		
 		<link rel="stylesheet" type="text/css" href="css/img-player.css" />
 		<link rel="stylesheet" type="text/css" href="libs/raking/css/raking.css" />
-		
-		<script type="text/javascript" src="js/weiboscroll.js"></script>
-        
-        <script type="text/javascript">
-          function up(n){
-	        	var Mar = document.getElementById(n); 
-				var child_div=Mar.getElementsByTagName("ul") ;
-				var picH = 60;//移动高度 
-				var scrollstep=3;//移动步幅,越大越快 
-				var scrolltime=20;//移动频度(毫秒)越大越慢 
-				var stoptime=3000;//间断时间(毫秒) 
-				var tmpH = 0;
-				
-				Mar.innerHTML += Mar.innerHTML; 
-	
-				function start(){ 
-				    if(tmpH < picH){ 
-				        tmpH += scrollstep; 
-				        if(tmpH > picH )tmpH = picH ; 
-				        Mar.scrollTop = tmpH; 
-				        setTimeout(start,scrolltime); 
-				    }else{ 
-				        tmpH = 0; 
-				        Mar.appendChild(child_div[0]); 
-				        Mar.scrollTop = 0; 
-				        setTimeout(start,stoptime); 
-				    } 
-				} 
-			
-				setTimeout(start,stoptime);
-				
-		  }
-		  window.onload=function(){	
-	          up("Marquee");
-	          up("Marquee2");
-          };
-        </script>
 
 
 	</body>

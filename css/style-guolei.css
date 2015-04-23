@@ -563,7 +563,7 @@ article .help-new-block-excerpt a:hover{ color: #5bc2a1;}
 .myclass_box .myclass_content li dl dd .myclass_btn a{ color: #FFF;}
 .myclass_box .myclass_content li dl dd p.book_title a{
 	display:inline-block; 
-	max-width: 200px; 
+	max-width: 400px; 
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
@@ -576,7 +576,7 @@ article .help-new-block-excerpt a:hover{ color: #5bc2a1;}
 	margin-left: 5px;
 	font-size: 12px;
 	display: inline-block;
-	margin-top: -3px;
+	margin-top: -17px;
 	vertical-align: middle;
 }
 .myclass_box .myclass_content li dl dd p.book_desc{
