@@ -66,6 +66,17 @@ body.gray-body a:hover{text-decoration:underline !important; color:#4C4C4C; }
 .gray-body .navbar a{ font-family: Arial,Helvetica,sans-serif !important;}
 .gray-body .navbar a:hover{ text-decoration: none !important; }
 .gray-body .curriculum-menu ul li a:hover{ text-decoration: none !important;}
+.catalog-space{
+	display: inline-block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+/*.navmenu-green li a{ color: #FFF;}
+.navmenu-green li:hover{ cursor: pointer; background: #5bc2a1 !important; border-radius: 0px !important; }
+body .curriculum-banner a.sai-i{ padding: 10px 15px; border-radius: 0px;}
+body .curriculum-banner .school-search{ border-bottom: 0px;}*/
 
 body.grid-body{ background: url(../img/saike/grid_bg.png) repeat;} 
 body .top-banner{ 
@@ -597,6 +608,9 @@ article .help-new-block-excerpt a:hover{ color: #5bc2a1;}
 	margin-right: 5px;
 	border-radius: 0;
 }
+body .footer-page .pagination > li:first-child > a, .pagination > li:first-child > span {
+	border-radius: 0;
+}
 .footer-page ul.pagination li a:hover{
 	background-color: #28b385;
 	color: #FFF;
@@ -741,7 +755,7 @@ article .help-new-block-excerpt a:hover{ color: #5bc2a1;}
 }
 
 body .show-select .filter-box .list li.current a{ background-color: #3FB8AF; color: white;}
-body .show-select .filter-box .title{ background: white;}
+body .show-select .filter-box .title{ background: #fafafa;}
 
 body .list-show-box{ padding-right:30px;}
 body .list-show-box .list-group{  background-color: #fdfdfd; /*min-height: 800px;*/  }
@@ -904,6 +918,13 @@ body .pingjia-nr .collapse .ico-arrow-up{
 	border-right: 20px solid transparent;  
     border-bottom: 30px solid #F6F6F6;
 }
+
+body .user-commends .after-line{ margin-right: 10px;  position:relative; padding-right: 10px; }
+body .user-commends .after-line:after{ content:''; position:absolute; right: -2px; top:5px; width: 1px; height: 12px; border: #e3e3e3 solid 1px; } 
+body .user-commends .zan-pj span{ font-size: 18px; padding-right: 3px;}
+body .user-commends .zan-pj a:hover, body .user-commends .zan-pj a:focus{ color: #ff6300; text-decoration: none !important; }
+
+
 
 /*===============晒课新闻================*/
 .news-box{  /*background-color: #FFF;*/}
