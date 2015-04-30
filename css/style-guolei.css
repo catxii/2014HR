@@ -101,6 +101,11 @@ body .top-banner{
 .grid-2{ width: 120px;}
 .grid-2.center{ margin-left: auto;  margin-right: auto; display: block;}
 
+/*导航图标*/
+
+
+
+
 /*评分星级*/
 .bg-saike{ 
 	background: transparent url(../img/saike/bg-saike.png) no-repeat scroll; 
@@ -179,12 +184,25 @@ b.rank{
 .curriculum-content .curriculum-box > .curriculum-news > li{padding: 6px 3px;}
 
 .curriculum-content .saike-box{ text-align: center; padding-top: 1px; border: 1px solid #DFDFDF; background-color: #FFF;}
+.curriculum-content .saike-box h5{ color: #f95c19;
+   -webkit-transition: all 0.65s ease;
+ 	-o-transition: all 0.65s ease;
+ 	transition: all 0.65s ease; 
+}
 .curriculum-content .saike-box p.saike-num{
 	font-family: Arial,Helvetica,sans-serif,Verdana,Helvetica; 
-	font-size: 28px; display: inline-block;
+	font-size: 28px; 
+	display: inline-block;
+	margin-bottom: -3px;
 	}
-.curriculum-content .saike-box p.saike-num span{ padding: 5px; margin:0 1px; color: #c12e2a; background-color: #f1f1f1;}
-.curriculum-content .saike-box p.saike-num b.spv{ font-size: 12px; margin-right: 2px; font-weight: normal;}
+	
+.curriculum-content .saike-box p.saike-num .t_num{ display:inline-block; line-height:13px; margin:2px 4px 0 4px;}
+.curriculum-content .saike-box p.saike-num .t_num i{width:23px;height:40px; margin-right: 2px; display:inline-block; background:url(../img/saike/number.png) no-repeat; background-position:0 0; text-indent:-999em}
+/*body .curriculum-content .saike-box p.saike-num .t_num i:nth-child(3n){ margin-right: 5px;}*/
+body .curriculum-content .saike-box p.saike-num .t_num i:last-child{ margin-right: 0px}
+
+/*.curriculum-content .saike-box p.saike-num span{ padding: 5px; margin:0 1px; color: #c12e2a; background-color: #f1f1f1;}
+.curriculum-content .saike-box p.saike-num b.spv{ font-size: 12px; margin-right: 2px; font-weight: normal;}*/
 .curriculum-content .curriculum-box ul.user_inf{ background:url(../img/saike/user_bg.png) repeat-x;}
 .curriculum-content .curriculum-box ul li.user_inf_left img{ width: 70px; height: 70px;}
 .curriculum-content .curriculum-box ul li.user_inf_right .user_name{ margin-top:25px; display:inline-block;}
@@ -359,6 +377,18 @@ b.rank{
     width: 160px;
     height:120px;
 }
+
+/*日志老师头像*/
+.competition-lesson-wrap .competition-lesson-box dl.log-head dt{
+	width: 90px;
+    overflow: hidden;
+}
+.competition-lesson-wrap .competition-lesson-box dl.log-head dt img{
+	width: 90px;
+    height:90px;
+}
+.competition-lesson-wrap .competition-lesson-box dl.log-head dd{ margin-left: 110px;}
+
 /*.competition-lesson-wrap .competition-lesson-box dl.competition-header dd{margin: 0;}*/
 .competition-lesson-wrap .competition-lesson-box dl.competition-header dd p{
 	margin: 0; 
@@ -922,15 +952,15 @@ body .pingjia-nr .collapse .ico-arrow-up{
 body .user-commends .after-line{ margin-right: 10px;  position:relative; padding-right: 10px; }
 body .user-commends .after-line:after{ content:''; position:absolute; right: -2px; top:5px; width: 1px; height: 12px; border: #e3e3e3 solid 1px; } 
 body .user-commends .zan-pj span{ font-size: 18px; padding-right: 3px;}
+body .user-commends .zan-pj i{ font-style: normal;}
 body .user-commends .zan-pj a:hover, body .user-commends .zan-pj a:focus{ color: #ff6300; text-decoration: none !important; }
 
 
-
 /*===============晒课新闻================*/
-.news-box{  /*background-color: #FFF;*/}
+.news-box{  /*background-color: #FFF;*/ min-height: 360px; margin-bottom:50px;}
 .news-box .left-news-list{ /*background-color: #FFF;*/}
 .news-box .left-news-list li{ /*padding: 6px 10px;*/ margin-bottom: 5px;}
-.news-box .left-news-list li a{ background-color: #F0F0EE; display: block; padding: 1px 1px;}
+.news-box .left-news-list li a{ /*background-color: #F0F0EE;*/ background-color: #FFF; display: block; padding: 1px 1px;}
 .news-box .left-news-list li a.news-teach-active{ background-color: #5bc2a1; color: #FFF;}
 .news-box .left-news-list li a.news-edu-active{ background-color: #3d95d5; color: #FFF;}
 .news-box .left-news-list li a.news-help-active{ background-color: #ff5f5f; color: #FFF;}
@@ -940,9 +970,19 @@ body .user-commends .zan-pj a:hover, body .user-commends .zan-pj a:focus{ color:
 .news-box .left-news-list li a.news-edu span{background-color: #3d95d5;}
 .news-box .left-news-list li a.news-help span{background-color: #ff5f5f;}
 
-.news-box .right-news-list{ background-color: #FFF; }
-.news-box .right-news-list ul li p.gray-sign{ color: #C2C2C2; }
+.news-box .right-news-list{ background-color: #FFF; padding: 0px 10px;}
+.news-box .right-news-list ul.news-list li p{  text-align: justify; /*text-justify:inter-ideograph; */ width: 100%; text-justify:distribute-all-lines;display: inline-block;}
+.news-box .right-news-list ul.news-list li p.gray-sign{ color: #C2C2C2; }
+.news-box .right-news-list ul.news-list li{ border-bottom: #F2F2F2 dashed 1px; padding-bottom: 10px;}
 
+/*===============晒课新闻详情页================*/
+.news-box .newsView-box{ background-color: #FFF; padding: 10px;}
+.news-box h4{ text-align: center; line-height: 25px;}
+.news-box .newsView-box ul.writer-info{ background-color: #F6F6F6; text-align: center; padding: 10px;}
+.news-box .newsView-box ul.writer-info li{ color: #19A97B;}
+.news-box .newsView-box ul.writer-info li span{ color: #CCC;}
+.news-box .newsView-box .news-content{}
+.news-box .newsView-box .news-content p{ text-indent: 2em;}
 
 /*
  =========================
@@ -972,13 +1012,8 @@ body .bureau-modify-zdy-zyzq .bureau-new-zy .bureau-teacher-rizhi-list > .col-md
 
 /*空间推荐重写*/
 .bureau-modify-zdy-kjtj .bureau-excellent-space{
-	 background-color: #FFF;
-	 
+	 background-color: #FFF; 
 }
-/*.bureau-modify-zdy-kjtj .bureau-excellent-space ul{
-	border-left: 1px solid #eee;
-	border-right: 1px solid #eee;
-}*/
 .bureau-modify-zdy-kjtj .bureau-excellent-space ul li{ 
 	margin: 5px;
 	font-family: '宋体'; 

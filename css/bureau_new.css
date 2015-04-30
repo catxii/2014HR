@@ -211,6 +211,11 @@ background: #fff;
 	width: 56px;
 	height: 56px;
 }
+.bureau-ico a.fa.fa-curriculum {
+	background: url('../img/bureau-ico-list.png') no-repeat 0px -290px;
+	width: 56px;
+	height: 56px;
+}
 .bureau-ico-name{
 	text-align: center;
 	line-height: 12px;

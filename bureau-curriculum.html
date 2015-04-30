@@ -14,17 +14,11 @@
 		<!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
 		<script type="text/JavaScript" src="space-css.js"></script>
 		<!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
-        
-        <style type="text/css">
-        	.competition-lesson-wrap .competition-lesson-box ul.competition-content li:last-child{
-        		border-bottom: none;
-        	} 
-        </style>
 
 	</head>
 
 	<body class="bureau-body gray-body">
-		<div class="sidel"style="display: none;" id="goTopBtn" >
+		<div class="sidel"style="display: none;" id="goTopBtn">
 			<ul>
 		<li style="border:none;"><a href="javascript:goTop();" class="sidetop"><img src="img/side_icon05.png"></a></li>
 	  </ul>
@@ -120,6 +114,12 @@
 									<div class="bureau-ico">
 										<a href="#" class="fa fa-app"></a>
 										<div class="bureau-ico-name">app下载</div>
+									</div>
+								</li>
+								<li>
+									<div class="bureau-ico">
+										<a href="#" class="fa fa-curriculum"></a>
+										<div class="bureau-ico-name">晒课</div>
 									</div>
 								</li>
 							</ul>
@@ -265,10 +265,11 @@
         	
         	<!--右边栏 晒课数量-->
         	<div class="col-md-3" style="padding-right: 0px;">
-        		<div class="saike-box">
+        		<div class="saike-box"  >
         			<h5>已晒课</h5>
         			<p class="saike-num">
-        				<span>5</span><span>1</span><span>4</span><b class="spv">,</b><span>0</span><span>0</span><span>0</span><b class="spv">,</b><span>0</span><span>0</span><span>0</span>
+        				<span class="t_num"></span>
+        				<!--<span>5</span><span>1</span><span>4</span><b class="spv">,</b><span>0</span><span>0</span><span>0</span><b class="spv">,</b><span>0</span><span>0</span><span>0</span>-->
         			</p>
         		</div>
         		<div class="curriculum-box clearfix" style="margin-top: 5px;">
@@ -596,7 +597,7 @@
         		<div class="col-md-4 competition-lesson-box">
         		    <h3 class="text-center">评分TOP</h3> 
        			
-    				<dl class="dl-horizontal competition-header clearfix">
+    				<dl class="dl-horizontal competition-header clearfix col-md-12">
     					<dt><a href="#"><img src="img/saike/img_book_160x120.png"></a></dt>
     					<dd>
     						<p class="author_name">王鹤 <b class="bg-saike rank">1</b></p>
@@ -671,7 +672,7 @@
         		<div class="col-md-4 competition-lesson-box">
         		    <h3 class="text-center">晒课TOP</h3> 
        			
-    				<dl class="dl-horizontal competition-header clearfix">
+    				<dl class="dl-horizontal competition-header clearfix col-md-12">
     					<dt><a href="#"><img src="img/saike/img_book_160x120.png"></a></dt>
     					<dd>
     						<p class="author_name">王鹤 <b class="bg-saike rank">1</b></p>
@@ -751,7 +752,7 @@
         	    <div class="col-md-4 competition-lesson-box">
         		    <h3 class="text-center">人气TOP</h3> 
        			
-    				<dl class="dl-horizontal competition-header clearfix col-md-12">
+    				<dl class="dl-horizontal competition-header clearfix col-md-12 log-head">
     					<dt><a href="#"><img src="img/saike/img_book_160x120.png"></a></dt>
     					<dd>
     						<p class="author_name">王鹤<b class="bg-saike rank">1</b></p>
@@ -820,7 +821,7 @@
         		<div class="col-md-4 competition-lesson-box">
         		    <h3 class="text-center">评分TOP</h3> 
        			
-    				<dl class="dl-horizontal competition-header clearfix">
+    				<dl class="dl-horizontal competition-header clearfix col-md-12 log-head">
     					<dt><a href="#"><img src="img/saike/img_book_160x120.png"></a></dt>
     					<dd>
     						<p class="author_name">王鹤 <b class="bg-saike rank">1</b></p>
@@ -895,7 +896,7 @@
         		<div class="col-md-4 competition-lesson-box">
         		    <h3 class="text-center">晒课TOP</h3> 
        			
-    				<dl class="dl-horizontal competition-header clearfix">
+    				<dl class="dl-horizontal competition-header clearfix col-md-12 log-head">
     					<dt><a href="#"><img src="img/saike/img_book_160x120.png"></a></dt>
     					<dd>
     						<p class="author_name">王鹤 <b class="bg-saike rank">1</b></p>
@@ -1022,7 +1023,7 @@
 					            teacher
 					        </h5>
 					        <h3 class="help-new-block-title">
-					              <a href="#" >我是老师</a>
+					              <a href="#">我是老师</a>
 					        </h3>
 					    </div>
 					
@@ -1124,18 +1125,59 @@
 		<link rel="stylesheet" type="text/css" href="css/img-player.css" />
 		<link rel="stylesheet" type="text/css" href="libs/raking/css/raking.css" />
 		
+		<script type="text/javascript" src="libs/raking/js/jquery.min.js"></script>
+		<script type="text/javascript" src="libs/numberscroll/animateBackground-plugin.js"></script>
+
+	    <script type="text/javascript">
+			$(function(){
+//				getdata();
+				show_num(3434132412);
+//				setInterval('16890', 3000);
+			});
+			
+//			function getdata(){
+//				var num = $("#cur_num").val();
+//				$.ajax({
+//				    url: 'data.php',
+//					type: 'POST',
+//					dataType: "json",
+//					data:{'total':num},
+//					cache: false,
+//					timeout: 10000,
+//					error: function(){},
+//					success: function(data){
+//						show_num(data.count);
+//				    }
+//			   	});
+//			}
+
+			function show_num(n){
+				var it = $(".t_num i");
+				var len = String(n).length;
+				for(var i=0;i<len;i++){
+					if(it.length<=i){
+						$(".t_num").append("<i></i>");
+					}
+
+					var num=String(n).charAt(i);
+					var y = -parseInt(num)*40;
+					console.log(y);
+					var obj = $(".t_num i").eq(i);
+					obj.animate({
+						backgroundPosition :'(0 '+String(y)+'px)' 
+						}, 'slow','swing',function(){}
+					);
+					
+				}
+//				$("#cur_num").val(n);
+			}
+
+		</script>
+		
         <script>
          	goTopEx();
         </script>
-		<!-- <script>
-	     $('.bureau-student-rizhi>li').each(function(){
-		var num = $(this).index();
-		if(num % 2 !== 0)
-		{
-			$(this).addClass('bg3')
-		}
-	    });
-        </script>-->
+		
 	</body>
 
 </html>
