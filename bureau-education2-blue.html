@@ -14,11 +14,52 @@
 		<!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
 		<script type="text/JavaScript" src="space-css.js"></script>
 		<!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
+        <style type="text/css">
+            body .bureau-famous-body{ box-shadow: none;}
+            body .bureau-student-body{ box-shadow: none;}
+        	body .school-erji > .link-menu {
+        		padding: 4px 10px;
+        	     
+        	}
+        	body .bureau-modify-zdy-body .nr{ height: 197px; overflow: hidden;}
+        	body .school-erji > .link-menu a{
+        		color: #333;
+        		font-weight: normal;
+        	}
 
+            body .school-erji > .link-menu a span{ font-size: 14px; margin-right: 5px;}
 
+			.ls-bg .bureau-modify-left > .bureau-modify-zdy > h4,body.ls-bg .bureau-modify-center > .bureau-modify-zdy > h4,body.ls-bg .bureau-modify-right > .bureau-modify-zdy > h4{
+			   background: #99d6ff !important;
+			}
+			.ls-bg .bureau-modify-zdy .bureau-student-header > h4{  
+			   background: #99d6ff !important;
+			}	
+			body .bureau-banner{ height: 280px; }
+			body .banner_show{ height: 280px; }
+			body .banner_pre_next{ top: 105px;}
+			body .bureau-new-modify > .col-md-3{
+				width: 24%;
+			}
+			body .bureau-new-modify > .col-md-6{
+				width: 52%;
+			}
+			body .bureau-new-navbar{ border: none;}
+			body .navbar_links ul.bule-navbar li:last-child{ border:none;}
+			body .bureau-modify-left > .bureau-modify-zdy > h4, body .bureau-modify-center > .bureau-modify-zdy > h4, body .bureau-modify-right > .bureau-modify-zdy > h4{
+			     height: 35px;
+			}
+			body .bureau-student-body .bureau-student-center-body .bureau-student-center-body-list ul{
+				padding: 3px 0px 3px 0px;
+			}
+			body .bureau-modify-left > div > h4 > i, body .bureau-modify-center > div > h4 > i, body .bureau-modify-right > div > h4 > i{
+				padding: 3px 10px;
+			}
+			
+        </style>
 	</head>
 
-	<body class="bureau-body diy-mode">
+	<body class="bureau-body diy-mode ls-bg">
 		<div class="bottom_tools">
   <div class="qr_tool">二维码</div>
   <a id="feedback" href="javascript:;" >意见反馈</a>
@@ -47,15 +88,15 @@
     <!-- <h4 class="diy-title">布局：（选择你喜欢的布局）</h4>
     -->
     <ul class="inline-block-ul-mid diy-style-list list-unstyled">
-      <li class="active"> <a href="javascript:void(0)" data-bg="ls"> <img src="img/theme-img/public/theme1.png"></a> </li>
-      <li> <a href="javascript:void(0)" data-bg="tls"> <img src="img/theme-img/public/theme2.png"></a> </li>
+      <li class="active"> <a href="javascript:void(0)" data-bg="ls"><img src="img/theme-img/public/theme1.png"></a> </li>
+      <li> <a href="javascript:void(0)" data-bg="tls"><img src="img/theme-img/public/theme2.png"></a> </li>
       <li> <a href="javascript:void(0)" data-bg="hs"> <img src="img/theme-img/public/theme3.png"></a> </li>
       <li> <a href="javascript:void(0)" data-bg="zsmh"> <img src="img/theme-img/public/theme4.png"></a> </li>
       <li> <a href="javascript:void(0)" data-bg="xzsl"> <img src="img/theme-img/public/theme5.png"></a> </li>
     </ul>
   </div>
 </div>
-<div class="diy-all-box" >
+<div class="diy-all-box">
   <div class="diy-box container well clearfix model-box" style="overflow:hidden;"> 
     <!-- <h4 class="diy-title">布局：（选择你喜欢的布局）</h4>
   -->
@@ -274,10 +315,10 @@
 			<div class=" bureau-banner">
 				<div class="banner_show" id="banner_show">
 					<a href="http://sc.admin5.com" class="bannger_inbox">
-						<img src="img/推进教育信息化.jpg" height="410">
+						<img src="img/test/banner.png" height="280">
 					</a>
 					<a href="http://sc.admin5.com" class="bannger_inbox">
-						<img src="img/bureau-img/bureau-banner-3.png" height="410">
+						<img src="img/bureau-img/bureau-banner-3.png" height="280">
 					</a>
 					
 					<div class="banner_pre_next" style="display: block;">
@@ -292,7 +333,7 @@
 		<div class="container bureau-new-navbar clear-padding">
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse clear-padding" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
+          <ul class="nav navbar-nav link-nav">
           	<li><a href="#">教育概况</a></li>
           	<li><a href="#">教育概况</a></li>
           	<li><a href="#">教育概况</a></li>
@@ -309,7 +350,7 @@
 			
 			
 		<!--左边-->
-		    <div class="col-md-3 bureau-modify-left droptrue droptrue1 ">
+		    <div class="col-md-3 bureau-modify-left droptrue droptrue1">
 		<!--通知公告-->
 		    	<div class="bureau-modify-zdy bureau-modify-zdy-tzgg">
 		    	<h4>
@@ -364,7 +405,20 @@
 						</ul>
         		</div>
         		</div>
-          <!--教育应用-->
+        		
+        		<!--华容教育-期刊-->
+		    	<div class="bureau-modify-zdy bureau-modify-zdy-tplj">
+		    	<h4>
+        			<i><span class="fa fa-file-image-o"></span>电子期刊</i>
+        		</h4>
+        		<div class="bureau-modify-zdy-body ">
+        			<a href="#" target="_blank">
+        				<img src="img/test/dzqk2.png" class="img-responsive" alt="Responsive image">
+        			</a>
+        		</div>
+        		</div>
+        		
+                <!--教育应用-->
         		<div class="bureau-modify-zdy bureau-modify-zdy-jyyy">
 		    	<h4>
         			<i><span class="fa fa-share-alt-square"></span>教育应用</i>
@@ -382,74 +436,178 @@
 							<a href="#" class="application"><img src="img/sx-ico.png"></a>
 							<p style="margin-bottom: 0;font-size: 12px;text-align: center;">日 志</p>
 					</div>
-        		</div>
-        		</div>
-        	<!--资源专区-->
-        		<div class="bureau-modify-zdy bureau-modify-zdy-zyzq">
-		    	<h4>
-        			<i><span class="fa fa-cloud-upload"></span>资源专区</i>
-        		</h4>
-        		<div class="bureau-modify-zdy-body">
-        			<ul class="bureau-student-left-header inline-block-ul clearfix bureau-modify-zdy-zyzq-btn">
-						<li class="col-md-6 clear-margin " >
-							<a ><i class="fa fa-circle" style="font-size: 10px; vertical-align: middle; margin-right: 6px;"></i> 学校资源排行</a>
-						</li>
-						<li class="col-md-6 clear-margin" >
-							<a ><i class="fa fa-circle" style="font-size: 10px; vertical-align: middle; margin-right: 6px;"></i> 备课资源排行</a>
-						</li>
-					</ul>
-					<div class="tab-content">
-        			    <ul class="bureau-new-zy clear-margin clear-padding clear-border clearfix">
-							<li class="clearfix">
-								<div class=" bureau-teacher-rizhi-list clear-padding clearfix">
-									<dt class="col-md-3">
-        	 						<img src="img/index-ng.gif">
-        	 						<span class="position-raking">1</span>
-        	 					    </dt>
-									<dd class="col-md-9">
-										<a href="#" class="text-space color_black" style="width: 100%;">华容实验初中</a>
-										<span class="data-ranking" >
-        	 							<font class="data-ranking1">1000</font>个资源
-        	 						</span>
-									</dd>
-								</div>
-							</li>
-							<li class="clearfix">
-								<div class=" bureau-teacher-rizhi-list clear-padding clearfix">
-									<dt class="col-md-3">
-        	 						<img src="img/index-ng.gif">
-        	 						<span class="position-raking">1</span>
-        	 					    </dt>
-									<dd class="col-md-9">
-										<a href="#" class="text-space color_black" style="width: 100%;">华容实验初中</a>
-										<span class="data-ranking" >
-        	 							<font class="data-ranking1">1000</font>个资源
-        	 						</span>
-									</dd>
-								</div>
-							</li>
-						</ul>
-					    <ul class="bureau-new-zy clear-margin clear-padding clear-border clearfix " style="display: none;">
-							<li class="clearfix">
-								<div class=" bureau-new-rizhi-list clear-padding ">
-									<a><i>1</i>那一条铺满石子的小路</a>
-								</div>
-								<div class="bureau-new-rizhi-name clear-padding">
-									<span>08-08</span>
-								</div>
-							</li>
-							<li class="clearfix">
-								<div class=" bureau-new-rizhi-list clear-padding ">
-									<a><i>1</i>那一条铺满石子的小路</a>
-								</div>
-								<div class="bureau-new-rizhi-name clear-padding">
-									<span>08-08</span>
-								</div>
-							</li>
-						</ul>
+					<div class="col-md-6">
+							<a href="#" class="application"><img src="img/sx-ico.png"></a>
+							<p style="margin-bottom: 0;font-size: 12px;text-align: center;">日 志</p>
+					</div>
+					<div class="col-md-6">
+							<a href="#" class="application"><img src="img/sx-ico.png"></a>
+							<p style="margin-bottom: 0;font-size: 12px;text-align: center;">日 志</p>
+					</div>
+					<div class="col-md-6">
+							<a href="#" class="application"><img src="img/sx-ico.png"></a>
+							<p style="margin-bottom: 0;font-size: 12px;text-align: center;">日 志</p>
+					</div>
+					<div class="col-md-6">
+							<a href="#" class="application"><img src="img/sx-ico.png"></a>
+							<p style="margin-bottom: 0;font-size: 12px;text-align: center;">日 志</p>
+					</div>
+					<div class="col-md-6">
+							<a href="#" class="application"><img src="img/sx-ico.png"></a>
+							<p style="margin-bottom: 0;font-size: 12px;text-align: center;">日 志</p>
 					</div>
         		</div>
         		</div>
+        		
+        	    <!--师生连线-->
+        		<!--<div class="bureau-modify-zdy bureau-modify-zdy-tzgg">
+		    	<h4>
+        			<i><span class="fa fa-list-ul"></span>师生连线</i>
+        			<div class="pull-right"><a href="#">更多</a></div>
+        		</h4>
+        		<div class="bureau-modify-zdy-body bureau-modify-zdy-tzgg-list">
+        			  <div id="accordion">	    	
+   	                       <div class="school-erji clearfix">
+		                        <div class="link-menu col-md-6" href="#" >
+			                           <a><span class="fa fa-group"></span>教师论文</a>
+	                         	</div>
+	                         	
+	                         	<div class="link-menu col-md-6" href="#">
+			                           <a><span class="glyphicon icon-globe"></span>信息化课例</a>
+	                         	</div>
+   	                        </div>
+   	                        
+   	                        <div class="school-erji clearfix">
+		                        <div class="link-menu col-md-6" href="#">
+			                           <a><span class="fa fa-comment"></span>应用感悟</a>
+	                         	</div>
+	                         	
+	                         	<div class="link-menu col-md-6" href="#">
+			                           <a><span class="fa fa-eye"></span>学生视角</a>
+	                         	</div>
+   	                        </div>
+   	                               
+				     </div>
+        		</div>
+        		</div>-->
+        		
+        		<!--在线管理-->
+        		<div class="bureau-modify-zdy bureau-modify-zdy-jyjks">
+		    	<h4>
+        			<i><span class="fa fa-tag"></span>在线管理</i>
+        		</h4>
+        		<div class="bureau-modify-zdy-body clearfix clear-padding">
+        			<div class="col-md-12 bureau-modify-zdy-jyjks-url url-gray">     				
+        				<a class=" text-space" href="#" target="_blank">
+        					<span class="glyphicon glyphicon-home"></span>
+        					华容县教育办公系统
+        			    </a>
+        			</div>
+        			<div class="col-md-12 bureau-modify-zdy-jyjks-url url-gray">
+        				<a class=" text-space" href="#" target="_blank">
+        					<span class="fa fa-bank"></span>
+        					中学学籍管理系统
+        			    </a>
+        			</div>
+        			<div class="col-md-12 bureau-modify-zdy-jyjks-url url-gray">
+        				<a class=" text-space" href="#" target="_blank">
+        					<span class="glyphicon icon-pie-chart"></span>
+        					学业水平考试平台
+        			    </a>
+        			</div>
+        			<div class="col-md-12 bureau-modify-zdy-jyjks-url url-gray">
+        				<a class=" text-space" href="#" target="_blank">
+        					<span class="glyphicon icon-global"></span>
+        					顶岗实习平台
+        			    </a>
+        			</div>
+        			
+        			<div class="col-md-12 bureau-modify-zdy-jyjks-url url-gray">
+        				<a class=" text-space" href="#" target="_blank">
+        					<span class="fa fa-car"></span>
+        					校安管理平台 
+        			    </a>
+        			</div>
+        		</div>
+        		</div>
+        		
+        		<!--日志列表-->
+        		<div class="bureau-modify-zdy bureau-modify-zdy-tzgg">
+		    	<h4>
+        			<i><span class="fa fa-list-ul"></span>师生连线</i>
+        			<div class="pull-right"><a href="#">更多</a></div>
+        		</h4>
+        		<div class="bureau-modify-zdy-body bureau-modify-zdy-tzgg-list clear-padding">
+        			  <div class="" id="accordion">
+							         <div class="school-erji clearfix">
+   	    	                         <div class="link-menu col-md-12" href="#">
+   	    		                           <a><i>●</i>信息化课例<span>(572)</span></a>
+   	                             	</div>
+   	    	                        <ul class="submenu clear-padding col-md-12">
+   	    		                    <li class="clearfix">
+   	    			                    <a class="text-space" href="#">
+   	    			                      <i>1</i> 安全卫士安全卫士安全卫士 
+   	    		                        </a>
+   	    		                   </li>
+   	    	                       </ul>
+   	                               </div>
+   	                                 <div class="school-erji clearfix">
+   	    	                         <div class="link-menu col-md-12" href="#">
+   	    		                           <a><i>●</i>教师论文<span>(572)</span></a>
+   	                             	</div>
+   	    	                        <ul class="submenu clear-padding col-md-12">
+   	    		                    <li class="clearfix">
+   	    			                    <a class="text-space" href="#">
+   	    			                     <i>1</i> 安全卫士安全卫士安全卫士 
+   	    		                        </a>
+   	    		                   </li>
+   	    		                    <li class="clearfix">
+   	    			                    <a class="text-space" href="#">
+   	    			                      <i>1</i>  安全卫士安全卫士安全卫士 
+   	    		                        </a>
+   	    		                   </li>
+   	    	                       </ul>
+   	                               </div>
+   	                               <div class="school-erji clearfix">
+   	    	                         <div class="link-menu col-md-12" href="#">
+   	    		                           <a><i>●</i>应用感悟<span>(572)</span></a>
+   	                             	</div>
+   	    	                        <ul class="submenu clear-padding col-md-12">
+   	    		                    <li class="clearfix">
+   	    			                    <a class="text-space" href="#">
+   	    			                     <i>1</i> 安全卫士安全卫士安全卫士 
+   	    		                        </a>
+   	    		                   </li>
+   	    		                    <li class="clearfix">
+   	    			                    <a class="text-space" href="#">
+   	    			                      <i>1</i>  安全卫士安全卫士安全卫士 
+   	    		                        </a>
+   	    		                   </li>
+   	    	                       </ul>
+   	                               </div>
+   	                               
+   	                               <div class="school-erji clearfix">
+   	    	                         <div class="link-menu col-md-12" href="#">
+   	    		                           <a><i>●</i>学生视角<span>(572)</span></a>
+   	                             	</div>
+   	    	                        <ul class="submenu clear-padding col-md-12">
+   	    		                    <li class="clearfix">
+   	    			                    <a class="text-space" href="#">
+   	    			                     <i>1</i> 安全卫士安全卫士安全卫士 
+   	    		                        </a>
+   	    		                   </li>
+   	    		                    <li class="clearfix">
+   	    			                    <a class="text-space" href="#">
+   	    			                      <i>1</i>  安全卫士安全卫士安全卫士 
+   	    		                        </a>
+   	    		                   </li>
+   	    	                       </ul>
+   	                               </div>
+   	                               
+						</div>
+        		</div>
+        		</div>
+        		
         		
 		    </div>
 		    <!--中间-->
@@ -474,7 +632,7 @@
               <!-- Wrapper for slides -->
               <div class="carousel-inner" role="listbox">
                 <div class="item active"> <a href="#"><img src= "img/add-img.jpg" height="190"  alt=""/></a> </div>
-                <div class="item"> <a href="#"><img src= "img/huaronglogo.png" height="190"  alt=""/></a> </div>
+                <div class="item"> <a href="#"><img src= "img/test/news.jpg" height="190"  alt=""/></a> </div>
               </div>
               
               <!-- Controls --> 
@@ -535,27 +693,19 @@
         			</div>
         		</div>
         		</div>
-        		<!--布局图-->
-        		<div class="bureau-modify-zdy bureau-modify-zdy-tplj">
-		    	<h4>
-        			<i><span class="fa fa-picture-o"></span>布局图</i>
-        		</h4>
-        		<div class="bureau-modify-zdy-body ">
-        			<a href="#" target="_blank"><img src="img/201462094424rAgPZ.png" class="img-responsive" alt="Responsive image"></a>
-        		</div>
-        		</div>
+        		
         		<!--区域交流-->
         		<div class="bureau-modify-zdy bureau-modify-zdy-qyjl">
 		    	<h4>
         			<i><span class="fa fa-list-alt"></span>区域交流</i>
         		</h4>
         		<div class="bureau-modify-zdy-body ">
-        			<div class="bureau-news-list-top clearfix">
+        			   <!--<div class="bureau-news-list-top clearfix">
 										<h4 class="clear-margin">
                                          <a href="#" target="_blank">教育部解读《中小学教科书选用管理暂行办法》</a>
                                          </h4>
 										<p class="text-space">选好适合学校和学生的教科书选好适合学校和学生的教科书选好适合学校和学生的教科书选好适合学校和学生的教科书选好适合学校和学生的教科书 ――教育部基础教育二司负责人就《中小学教科书选用管理暂行办法》答记者问...</p>
-						</div>
+						</div>-->
 						<div class="bureau-news-list-bottom clearfix">
 									<ul class="col-md-12 clear-padding clear-margin clearfix">
 										<li class="clearfix col-md-6">
@@ -588,17 +738,274 @@
 												<a class="text-space" href="#"><i>●</i>那一条铺满石子的小路</a>
 											</div>
 										</li>
+										<li class="clearfix col-md-6">
+											<div class="bureau-list-left clear-padding ">
+												<a class="text-space" href="#"><i>●</i>那一条铺满石子的小路</a>
+											</div>
+										</li>
+										<li class="clearfix col-md-6">
+											<div class="bureau-list-left clear-padding ">
+												<a class="text-space" href="#"><i>●</i>那一条铺满石子的小路</a>
+											</div>
+										</li>
+										<li class="clearfix col-md-6">
+											<div class="bureau-list-left clear-padding ">
+												<a class="text-space" href="#"><i>●</i>那一条铺满石子的小路</a>
+											</div>
+										</li>
+										<li class="clearfix col-md-6">
+											<div class="bureau-list-left clear-padding ">
+												<a class="text-space" href="#"><i>●</i>那一条铺满石子的小路</a>
+											</div>
+										</li>
+                                        <li class="clearfix col-md-6">
+											<div class="bureau-list-left clear-padding ">
+												<a class="text-space" href="#"><i>●</i>那一条铺满石子的小路</a>
+											</div>
+										</li>
+										<li class="clearfix col-md-6">
+											<div class="bureau-list-left clear-padding ">
+												<a class="text-space" href="#"><i>●</i>那一条铺满石子的小路</a>
+											</div>
+										</li>
+
 									</ul>
 								</div>
         		</div>
         		</div>
+        		
+        		<!--布局图-->
+        		<div class="bureau-modify-zdy bureau-modify-zdy-tplj">
+		    	<h4>
+        			<i><span class="fa fa-picture-o"></span>布局图</i>
+        		</h4>
+        		<div class="bureau-modify-zdy-body modify-pic">
+        			<a href="#" target="_blank"><img src="img/test/201462094424rAgPZ.png" alt="Responsive image"></a>
+        		</div>
+        		</div>
+        		
+        		
+        		
+        		<!--布局图-->
+        		<!--<div class="bureau-modify-zdy bureau-modify-zdy-tplj">
+		    	<h4>
+        			<i><span class="fa fa-picture-o"></span>布局图</i>
+        		</h4>
+        		<div class="bureau-modify-zdy-body modify-pic">
+        			<a href="#" target="_blank"><img src="img/201462094424rAgPZ.png" alt="Responsive image"></a>
+        		</div>
+        		</div>-->
+        		
+        		
+        		<!--视频-->
+        		<!--<div class="bureau-famous bureau-modify-zdy-mstj clearfix bureau-modify-zdy" style="border: 0px !important;">
+				    <h4>
+	        			<i><span class="fa fa-file-video-o"></span>视频</i>
+	        			<div class="pull-right"><a href="#">更多</a></div>
+	        		</h4>
+				
+					<div class="bureau-video-body col-md-12" style="background: #fff;">
+					   <div class="col-md-3">
+				              <div class="photo-box-single" >
+				                <div class="img" style="position: relative;">
+				                  <a href="#" data-original-title="" title=""><img src="img/test/down-video-bg.jpg"></a>
+				                  <a class="video-mask" href="#" data-original-title="" title=""><img src="img/icons-video-bg.png"></a>
+
+				                </div>  
+				                
+				                <div class="name"><a href="class-video-list-view.html" class="font-overflow col-md-12" data-original-title="" title=""><span>《春天的芭蕾》</span></a></div>
+				                <div class="amount gray-color">时长:03:01</div>
+				              </div>
+			             </div>
+			             
+			             <div class="col-md-3">
+				              <div class="photo-box-single" >
+				                <div class="img" style="position: relative;">
+				                  <a href="#" data-original-title="" title=""><img src="img/test/down-video-bg.jpg"></a>
+				                  <a class="video-mask" href="#" data-original-title="" title=""><img src="img/icons-video-bg.png"></a>
+
+				                </div>  
+				                
+				                <div class="name"><a href="class-video-list-view.html" class="font-overflow col-md-12" data-original-title="" title=""><span>《春天的芭蕾》</span></a></div>
+				                <div class="amount gray-color">时长:03:01</div>
+				              </div>
+			             </div>
+			             
+			             <div class="col-md-3">
+				              <div class="photo-box-single" >
+				                <div class="img" style="position: relative;">
+				                  <a href="#" data-original-title="" title=""><img src="img/test/down-video-bg.jpg"></a>
+				                  <a class="video-mask" href="#" data-original-title="" title=""><img src="img/icons-video-bg.png"></a>
+
+				                </div>  
+				                
+				                <div class="name"><a href="class-video-list-view.html" class="font-overflow col-md-12" data-original-title="" title=""><span>《春天的芭蕾》</span></a></div>
+				                <div class="amount gray-color">时长:03:01</div>
+				              </div>
+			             </div>
+			             
+			             <div class="col-md-3">
+				              <div class="photo-box-single" >
+				                <div class="img" style="position: relative;">
+				                  <a href="#" data-original-title="" title=""><img src="img/test/down-video-bg.jpg"></a>
+				                  <a class="video-mask" href="#" data-original-title="" title=""><img src="img/icons-video-bg.png"></a>
+
+				                </div>  
+				                
+				                <div class="name"><a href="class-video-list-view.html" class="font-overflow col-md-12" data-original-title="" title=""><span>《春天的芭蕾》</span></a></div>
+				                <div class="amount gray-color">时长:03:01</div>
+				              </div>
+			             </div>
+						
+					</div>
+		
+				</div>-->
+        		
+        		<!--名师工作-->
+        		<div class="bureau-famous bureau-modify-zdy-mstj clearfix bureau-modify-zdy" style="border: 0px !important;">
+					    <h4>
+		        			<i><span class="fa fa-user"></span>名师工作</i>
+		        		</h4>
+					
+					<!--<div class="bureau-famous-header col-md-12 clear-padding">
+						<h4>
+		        			<i><span class="fa fa-list-alt"></span>名师工作</i>
+		        		</h4>
+					</div>-->
+					<div class="bureau-famous-body col-md-12" style="padding: 10px;background: #fff;">
+						<div class="bureau-famous-left">
+							<div id="marquee1" class="marqueeleft">
+								<div style="width:100000px;">
+									<ul id="marquee1_1">
+										<li class="grid">
+											<figure class="effect-goliath">
+												<img src="img/005a.png" alt="img23" />
+												<figcaption>
+													<p>
+														刘德华
+														<span>华容实验初中</span>
+													</p>
+													<a href="#">View more</a>
+												</figcaption>
+											</figure>
+										</li>
+										<li class="grid">
+											<figure class="effect-goliath">
+												<img src="img/005a.png" alt="img23" />
+												<figcaption>
+													<p>
+														刘德华
+														<span>华容实验初中</span>
+													</p>
+													<a href="#">View more</a>
+												</figcaption>
+											</figure>
+										</li>
+										<li class="grid">
+											<figure class="effect-goliath">
+												<img src="img/005a.png" alt="img23" />
+												<figcaption>
+													<p>
+														刘德华
+														<span>华容实验初中</span>
+													</p>
+													<a href="#">View more</a>
+												</figcaption>
+											</figure>
+										</li>
+										<li class="grid">
+											<figure class="effect-goliath">
+												<img src="img/005a.png" alt="img23" />
+												<figcaption>
+													<p>
+														刘德华
+														<span>华容实验初中</span>
+													</p>
+													<a href="#">View more</a>
+												</figcaption>
+											</figure>
+										</li>
+										<li class="grid">
+											<figure class="effect-goliath">
+												<img src="img/005a.png" alt="img23" />
+												<figcaption>
+													<p>
+														刘德华
+														<span>华容实验初中</span>
+													</p>
+													<a href="#">View more</a>
+												</figcaption>
+											</figure>
+										</li>
+										<li class="grid">
+											<figure class="effect-goliath">
+												<img src="img/005a.png" alt="img23" />
+												<figcaption>
+													<p>
+														刘德华
+														<span>华容实验初中</span>
+													</p>
+													<a href="#">View more</a>
+												</figcaption>
+											</figure>
+										</li>
+										<li class="grid">
+											<figure class="effect-goliath">
+												<img src="img/005a.png" alt="img23" />
+												<figcaption>
+													<p>
+														刘德华
+														<span>华容实验初中</span>
+													</p>
+													<a href="#">View more</a>
+												</figcaption>
+											</figure>
+										</li>
+										<li class="grid">
+											<figure class="effect-goliath">
+												<img src="img/005a.png" alt="img23" />
+												<figcaption>
+													<p>
+														刘德华
+														<span>华容实验初中</span>
+													</p>
+													<a href="#">View more</a>
+												</figcaption>
+											</figure>
+										</li>
+										<li class="grid">
+											<figure class="effect-goliath">
+												<img src="img/005a.png" alt="img23" />
+												<figcaption>
+													<p>
+														刘德华
+														<span>华容实验初中</span>
+													</p>
+													<a href="#">View more</a>
+												</figcaption>
+											</figure>
+										</li>
+									</ul>
+									<ul id="marquee1_2"></ul>
+								</div>
+							</div>
+						</div>
+						<div class="bureau-famous-right col-md-4">
+		
+						</div>
+						<!--marqueeleft end-->
+					</div>
+		
+				</div>
+
+        			
         		<!--空间推荐-->
-        		<div class="bureau-student bureau-modify-zdy-kjtj clearfix bureau-modify-zdy" style="border: 0px !important;">
+        		<div class="bureau-student bureau-modify-zdy-kjtj clearfix bureau-modify-zdy" style="border: 0px !important; position: relative;">
         		 <h4>
         			<i><span class="fa fa-graduation-cap"></span>优秀空间</i>
         		 </h4>
         		 
-        		 <div class="bureau-student-header bureau-excellent-space col-md-12 clear-padding">	 
+        		 <div class="bureau-student-header bureau-excellent-space col-md-6 clear-padding" style="position: absolute; top:35px; left: 10px; z-index: 1999;">	 
         		 <ul class="inline-block-ul clear-margin clearfix bureau-new-tab">
         				<li class="active" ><i class="padding"><!--<span class="cuzdy-red fa fa-file-text">--></span>学校</i></li>
         				<li><i class="padding"><!--<span class="cuzdy-green fa fa-file-text">--></span>班级</i></li>
@@ -606,12 +1013,13 @@
         				<li><i class="padding"><!--<span class="cuzdy-orange fa fa-file-text">--></span>学生</i></li>
         		 </ul>
 			    </div>
+
 			<!--学校空间-->
-			<div class="bureau-student-body col-md-12 ">
+			<div class="bureau-student-body col-md-12">
 				<div class="bureau-student-center">
 					<div class="bureau-student-center-header clearfix">
-						<h5 class="clearfix" style="padding: 5px 0;">
-        	 			<ul class="inline-block-ul bureau-student-tab nav-tabs" role="tablist">
+						<h5 class="clearfix" style="padding: 20px 0;">
+        	 			<ul class="inline-block-ul bureau-student-tab nav-tabs" role="tablist" style="padding-top:15px;">
         	 				<li class="active"><a data-original-title="" href="#student1" role="tab" data-toggle="tab">小学</a></li>
         	 				<li><a data-original-title="" href="#student2" role="tab" data-toggle="tab">初中</a></li>
         	 				<li><a data-original-title="" href="#student3" role="tab" data-toggle="tab">高中</a></li>
@@ -628,12 +1036,12 @@
 										</a>
 									</li>
 									<li class="bureau-new-szdw-name">
-										<h4 class="label label-default">河东小学</h4>
+										<h4 class="label label-default school-name-space">河东小学河东小学河东小学河东小学河东小学</h4>
 										<!--<p>华容实验初中</p>-->
-										<p>
+										<!--<p>
 											<a href="#" class="fa fa-plus-square" style="margin-right: 6px;"></a>
 											<a href="#" class="fa  fa-share-alt-square "></a>
-										</p>
+										</p>-->
 									</li>
 								</ul>
 							</div>
@@ -647,9 +1055,9 @@
 									<li class="bureau-new-szdw-name">
 										<h4 class="label label-default">河东小学</h4>
 										<!--<p>华容实验初中</p>-->
-										<p>
+										<!--<p>
 											<a class="fa fa-plus-square"></a>
-										</p>
+										</p>-->
 									</li>
 								</ul>
 							</div>
@@ -664,9 +1072,9 @@
 									<li class="bureau-new-szdw-name">
 										<h4 class="label label-default">河东小学</h4>
 										<!--<p>华容实验初中</p>-->
-										<p>
+										<!--<p>
 											<a class="fa fa-plus-square"></a>
-										</p>
+										</p>-->
 									</li>
 								</ul>
 							</div>
@@ -680,9 +1088,9 @@
 									<li class="bureau-new-szdw-name">
 										<h4 class="label label-default">河东小学</h4>
 										<!--<p>华容实验初中</p>-->
-										<p>
+										<!--<p>
 											<a class="fa fa-plus-square"></a>
-										</p>
+										</p>-->
 									</li>
 								</ul>
 							</div>
@@ -696,9 +1104,9 @@
 									<li class="bureau-new-szdw-name">
 										<h4 class="label label-default">河东小学</h4>
 										<!--<p>华容实验初中</p>-->
-										<p>
+										<!--<p>
 											<a class="fa fa-plus-square"></a>
-										</p>
+										</p>-->
 									</li>
 								</ul>
 							</div>
@@ -712,9 +1120,9 @@
 									<li class="bureau-new-szdw-name">
 										<h4 class="label label-default">河东小学</h4>
 										<!--<p>华容实验初中</p>-->
-										<p>
+										<!--<p>
 											<a class="fa fa-plus-square"></a>
-										</p>
+										</p>-->
 									</li>
 								</ul>
 							</div>
@@ -731,10 +1139,10 @@
 									</li>
 									<li class="bureau-new-szdw-name">
 										<h4 class="label label-default">严奉鑫</h4>
-										<p>华容实验初中</p>
-										<p>
+										<p class="school-name-space">华容实验初中华容实验初中华容实验初中华容实验初中</p>
+										<!--<p>
 											<a class="fa fa-plus-square"></a>
-										</p>
+										</p>-->
 									</li>
 								</ul>
 							</div>
@@ -752,9 +1160,9 @@
 									<li class="bureau-new-szdw-name">
 										<h4 class="label label-default">严奉鑫</h4>
 										<p>华容实验初中</p>
-										<p>
+										<!--<p>
 											<a class="fa fa-plus-square"></a>
-										</p>
+										</p>-->
 									</li>
 								</ul>
 							</div>
@@ -769,8 +1177,8 @@
 			<div class="bureau-student-body col-md-12" style="display: none;">
 				<div class="bureau-student-center">
 					<div class="bureau-student-center-header clearfix">
-						<h5 class="clearfix" style="padding: 5px 0;">
-        	 			<ul class="inline-block-ul bureau-student-tab nav-tabs" role="tablist">
+						<h5 class="clearfix" style="padding: 20px 0;">
+        	 			<ul class="inline-block-ul bureau-student-tab nav-tabs" role="tablist" style="padding-top:15px;">
         	 				<li class="active"><a data-original-title="" href="#student1" role="tab" data-toggle="tab">小学</a></li>
         	 				<li><a data-original-title="" href="#student2" role="tab" data-toggle="tab">初中</a></li>
         	 				<li><a data-original-title="" href="#student3" role="tab" data-toggle="tab">高中</a></li>
@@ -789,10 +1197,10 @@
 									<li class="bureau-new-szdw-name">
 										<h4 class="label label-default">丁伟</h4>
 										<p>华容实验初中</p>
-										<p>
+										<!--<p>
 											<a href="#" class="fa fa-plus-square" style="margin-right: 6px;"></a>
 											<a href="#" class="fa  fa-share-alt-square "></a>
-										</p>
+										</p>-->
 									</li>
 								</ul>
 							</div>
@@ -806,9 +1214,9 @@
 									<li class="bureau-new-szdw-name">
 										<h4 class="label label-default">丁伟</h4>
 										<p>华容实验初中</p>
-										<p>
+										<!--<p>
 											<a class="fa fa-plus-square"></a>
-										</p>
+										</p>-->
 									</li>
 								</ul>
 							</div>
@@ -823,9 +1231,9 @@
 									<li class="bureau-new-szdw-name">
 										<h4 class="label label-default">丁伟</h4>
 										<p>华容实验初中</p>
-										<p>
+										<!--<p>
 											<a class="fa fa-plus-square"></a>
-										</p>
+										</p>-->
 									</li>
 								</ul>
 							</div>
@@ -839,9 +1247,9 @@
 									<li class="bureau-new-szdw-name">
 										<h4 class="label label-default">严奉鑫</h4>
 										<p>华容实验初中</p>
-										<p>
+										<!--<p>
 											<a class="fa fa-plus-square"></a>
-										</p>
+										</p>-->
 									</li>
 								</ul>
 							</div>
@@ -855,9 +1263,9 @@
 									<li class="bureau-new-szdw-name">
 										<h4 class="label label-default">严奉鑫</h4>
 										<p>华容实验初中</p>
-										<p>
+										<!--<p>
 											<a class="fa fa-plus-square"></a>
-										</p>
+										</p>-->
 									</li>
 								</ul>
 							</div>
@@ -871,9 +1279,9 @@
 									<li class="bureau-new-szdw-name">
 										<h4 class="label label-default">严奉鑫</h4>
 										<p>华容实验初中</p>
-										<p>
+										<!--<p>
 											<a class="fa fa-plus-square"></a>
-										</p>
+										</p>-->
 									</li>
 								</ul>
 							</div>
@@ -891,9 +1299,9 @@
 									<li class="bureau-new-szdw-name">
 										<h4 class="label label-default">严奉鑫</h4>
 										<p>华容实验初中</p>
-										<p>
+										<!--<p>
 											<a class="fa fa-plus-square"></a>
-										</p>
+										</p>-->
 									</li>
 								</ul>
 							</div>
@@ -911,9 +1319,9 @@
 									<li class="bureau-new-szdw-name">
 										<h4 class="label label-default">严奉鑫</h4>
 										<p>华容实验初中</p>
-										<p>
+										<!--<p>
 											<a class="fa fa-plus-square"></a>
-										</p>
+										</p>-->
 									</li>
 								</ul>
 							</div>
@@ -928,8 +1336,8 @@
 			  <div class="bureau-student-body col-md-12" style="display: none;">
 				<div class="bureau-student-center">
 					<div class="bureau-student-center-header clearfix">
-						<h5 class="clearfix" style="padding: 5px 0;">
-        	 			<ul class="inline-block-ul bureau-student-tab nav-tabs" role="tablist">
+						<h5 class="clearfix" style="padding: 20px 0;">
+        	 			<ul class="inline-block-ul bureau-student-tab nav-tabs" role="tablist" style="padding-top:15px;">
         	 				<li class="active"><a data-original-title="" href="#student1" role="tab" data-toggle="tab">小学</a></li>
         	 				<li><a data-original-title="" href="#student2" role="tab" data-toggle="tab">初中</a></li>
         	 				<li><a data-original-title="" href="#student3" role="tab" data-toggle="tab">高中</a></li>
@@ -948,10 +1356,10 @@
 									<li class="bureau-new-szdw-name">
 										<h4 class="label label-default">丁伟2</h4>
 										<p>华容实验初中</p>
-										<p>
+										<!--<p>
 											<a href="#" class="fa fa-plus-square" style="margin-right: 6px;"></a>
 											<a href="#" class="fa  fa-share-alt-square "></a>
-										</p>
+										</p>-->
 									</li>
 								</ul>
 							</div>
@@ -965,9 +1373,9 @@
 									<li class="bureau-new-szdw-name">
 										<h4 class="label label-default">丁伟</h4>
 										<p>华容实验初中</p>
-										<p>
+										<!--<p>
 											<a class="fa fa-plus-square"></a>
-										</p>
+										</p>-->
 									</li>
 								</ul>
 							</div>
@@ -982,9 +1390,9 @@
 									<li class="bureau-new-szdw-name">
 										<h4 class="label label-default">丁伟</h4>
 										<p>华容实验初中</p>
-										<p>
+										<!--<p>
 											<a class="fa fa-plus-square"></a>
-										</p>
+										</p>-->
 									</li>
 								</ul>
 							</div>
@@ -998,9 +1406,9 @@
 									<li class="bureau-new-szdw-name">
 										<h4 class="label label-default">严奉鑫</h4>
 										<p>华容实验初中</p>
-										<p>
+										<!--<p>
 											<a class="fa fa-plus-square"></a>
-										</p>
+										</p>-->
 									</li>
 								</ul>
 							</div>
@@ -1014,9 +1422,9 @@
 									<li class="bureau-new-szdw-name">
 										<h4 class="label label-default">严奉鑫</h4>
 										<p>华容实验初中</p>
-										<p>
+										<!--<p>
 											<a class="fa fa-plus-square"></a>
-										</p>
+										</p>-->
 									</li>
 								</ul>
 							</div>
@@ -1030,9 +1438,9 @@
 									<li class="bureau-new-szdw-name">
 										<h4 class="label label-default">严奉鑫</h4>
 										<p>华容实验初中</p>
-										<p>
+										<!--<p>
 											<a class="fa fa-plus-square"></a>
-										</p>
+										</p>-->
 									</li>
 								</ul>
 							</div>
@@ -1050,9 +1458,9 @@
 									<li class="bureau-new-szdw-name">
 										<h4 class="label label-default">严奉鑫</h4>
 										<p>华容实验初中</p>
-										<p>
+										<!--<p>
 											<a class="fa fa-plus-square"></a>
-										</p>
+										</p>-->
 									</li>
 								</ul>
 							</div>
@@ -1070,9 +1478,9 @@
 									<li class="bureau-new-szdw-name">
 										<h4 class="label label-default">严奉鑫</h4>
 										<p>华容实验初中</p>
-										<p>
+										<!--<p>
 											<a class="fa fa-plus-square"></a>
-										</p>
+										</p>-->
 									</li>
 								</ul>
 							</div>
@@ -1087,8 +1495,8 @@
 			  <div class="bureau-student-body col-md-12" style="display: none;">
 				<div class="bureau-student-center">
 					<div class="bureau-student-center-header clearfix">
-						<h5 class="clearfix" style="padding: 5px 0;">
-        	 			<ul class="inline-block-ul bureau-student-tab nav-tabs" role="tablist">
+						<h5 class="clearfix" style="padding: 20px 0;">
+        	 			<ul class="inline-block-ul bureau-student-tab nav-tabs" role="tablist" style="padding-top:15px;">
         	 				<li class="active"><a data-original-title="" href="#student1" role="tab" data-toggle="tab">小学</a></li>
         	 				<li><a data-original-title="" href="#student2" role="tab" data-toggle="tab">初中</a></li>
         	 				<li><a data-original-title="" href="#student3" role="tab" data-toggle="tab">高中</a></li>
@@ -1107,10 +1515,10 @@
 									<li class="bureau-new-szdw-name">
 										<h4 class="label label-default">丁伟3</h4>
 										<p>华容实验初中</p>
-										<p>
+										<!--<p>
 											<a href="#" class="fa fa-plus-square" style="margin-right: 6px;"></a>
 											<a href="#" class="fa  fa-share-alt-square "></a>
-										</p>
+										</p>-->
 									</li>
 								</ul>
 							</div>
@@ -1124,9 +1532,9 @@
 									<li class="bureau-new-szdw-name">
 										<h4 class="label label-default">丁伟</h4>
 										<p>华容实验初中</p>
-										<p>
+										<!--<p>
 											<a class="fa fa-plus-square"></a>
-										</p>
+										</p>-->
 									</li>
 								</ul>
 							</div>
@@ -1141,9 +1549,9 @@
 									<li class="bureau-new-szdw-name">
 										<h4 class="label label-default">丁伟</h4>
 										<p>华容实验初中</p>
-										<p>
+										<!--<p>
 											<a class="fa fa-plus-square"></a>
-										</p>
+										</p>-->
 									</li>
 								</ul>
 							</div>
@@ -1157,9 +1565,9 @@
 									<li class="bureau-new-szdw-name">
 										<h4 class="label label-default">严奉鑫</h4>
 										<p>华容实验初中</p>
-										<p>
+										<!--<p>
 											<a class="fa fa-plus-square"></a>
-										</p>
+										</p>-->
 									</li>
 								</ul>
 							</div>
@@ -1173,9 +1581,9 @@
 									<li class="bureau-new-szdw-name">
 										<h4 class="label label-default">严奉鑫</h4>
 										<p>华容实验初中</p>
-										<p>
+										<!--<p>
 											<a class="fa fa-plus-square"></a>
-										</p>
+										</p>-->
 									</li>
 								</ul>
 							</div>
@@ -1189,9 +1597,9 @@
 									<li class="bureau-new-szdw-name">
 										<h4 class="label label-default">严奉鑫</h4>
 										<p>华容实验初中</p>
-										<p>
+										<!--<p>
 											<a class="fa fa-plus-square"></a>
-										</p>
+										</p>-->
 									</li>
 								</ul>
 							</div>
@@ -1209,9 +1617,9 @@
 									<li class="bureau-new-szdw-name">
 										<h4 class="label label-default">严奉鑫</h4>
 										<p>华容实验初中</p>
-										<p>
+										<!--<p>
 											<a class="fa fa-plus-square"></a>
-										</p>
+										</p>-->
 									</li>
 								</ul>
 							</div>
@@ -1229,9 +1637,9 @@
 									<li class="bureau-new-szdw-name">
 										<h4 class="label label-default">严奉鑫</h4>
 										<p>华容实验初中</p>
-										<p>
+										<!--<p>
 											<a class="fa fa-plus-square"></a>
-										</p>
+										</p>-->
 									</li>
 								</ul>
 							</div>
@@ -1243,141 +1651,8 @@
 				
 			  </div>
 		      </div>
-		      <div class="bureau-famous bureau-modify-zdy-mstj clearfix bureau-modify-zdy" style="border: 0px !important;">
-			    <h4>
-        			<i><span class="fa fa-user"></span>名师工作</i>
-        		</h4>
-			
-			<!--<div class="bureau-famous-header col-md-12 clear-padding">
-				<h4>
-        			<i><span class="fa fa-list-alt"></span>名师工作</i>
-        		</h4>
-			</div>-->
-			<div class="bureau-famous-body col-md-12" style="padding: 10px;background: #fff;">
-				<div class="bureau-famous-left">
-					<div id="marquee1" class="marqueeleft">
-						<div style="width:100000px;">
-							<ul id="marquee1_1">
-								<li class="grid">
-									<figure class="effect-goliath">
-										<img src="img/005a.png" alt="img23" />
-										<figcaption>
-											<p>
-												刘德华
-												<span>华容实验初中</span>
-											</p>
-											<a href="#">View more</a>
-										</figcaption>
-									</figure>
-								</li>
-								<li class="grid">
-									<figure class="effect-goliath">
-										<img src="img/005a.png" alt="img23" />
-										<figcaption>
-											<p>
-												刘德华
-												<span>华容实验初中</span>
-											</p>
-											<a href="#">View more</a>
-										</figcaption>
-									</figure>
-								</li>
-								<li class="grid">
-									<figure class="effect-goliath">
-										<img src="img/005a.png" alt="img23" />
-										<figcaption>
-											<p>
-												刘德华
-												<span>华容实验初中</span>
-											</p>
-											<a href="#">View more</a>
-										</figcaption>
-									</figure>
-								</li>
-								<li class="grid">
-									<figure class="effect-goliath">
-										<img src="img/005a.png" alt="img23" />
-										<figcaption>
-											<p>
-												刘德华
-												<span>华容实验初中</span>
-											</p>
-											<a href="#">View more</a>
-										</figcaption>
-									</figure>
-								</li>
-								<li class="grid">
-									<figure class="effect-goliath">
-										<img src="img/005a.png" alt="img23" />
-										<figcaption>
-											<p>
-												刘德华
-												<span>华容实验初中</span>
-											</p>
-											<a href="#">View more</a>
-										</figcaption>
-									</figure>
-								</li>
-								<li class="grid">
-									<figure class="effect-goliath">
-										<img src="img/005a.png" alt="img23" />
-										<figcaption>
-											<p>
-												刘德华
-												<span>华容实验初中</span>
-											</p>
-											<a href="#">View more</a>
-										</figcaption>
-									</figure>
-								</li>
-								<li class="grid">
-									<figure class="effect-goliath">
-										<img src="img/005a.png" alt="img23" />
-										<figcaption>
-											<p>
-												刘德华
-												<span>华容实验初中</span>
-											</p>
-											<a href="#">View more</a>
-										</figcaption>
-									</figure>
-								</li>
-								<li class="grid">
-									<figure class="effect-goliath">
-										<img src="img/005a.png" alt="img23" />
-										<figcaption>
-											<p>
-												刘德华
-												<span>华容实验初中</span>
-											</p>
-											<a href="#">View more</a>
-										</figcaption>
-									</figure>
-								</li>
-								<li class="grid">
-									<figure class="effect-goliath">
-										<img src="img/005a.png" alt="img23" />
-										<figcaption>
-											<p>
-												刘德华
-												<span>华容实验初中</span>
-											</p>
-											<a href="#">View more</a>
-										</figcaption>
-									</figure>
-								</li>
-							</ul>
-							<ul id="marquee1_2"></ul>
-						</div>
-					</div>
-				</div>
-				<div class="bureau-famous-right col-md-4">
-
-				</div>
-				<!--marqueeleft end-->
-			</div>
-
-		</div>
+		      
+		   
 		    </div>
 		    
 		    <!--右边-->
@@ -1389,10 +1664,11 @@
         		</h4>
         		<div class="bureau-modify-zdy-body ">
         			<a href="#" target="_blank">
-        				<img src="img/2014326102812UJnAw.png" class="img-responsive" alt="Responsive image">
+        				<img src="img/test/linder.png" class="img-responsive" alt="Responsive image">
         			</a>
         		</div>
         		</div>
+        		
         		<!--视频-->
         		<div class="bureau-modify-zdy bureau-modify-zdy-tplj">
 		    	<h4>
@@ -1400,12 +1676,283 @@
         		</h4>
         		<div class="bureau-modify-zdy-body ">
         			<div class="nr small" >
-                       <embed src="http://www.tudou.com/v/mwmT_pfty3U/&bid=05&rpid=2016861&resourceId=2016861_05_05_99/v.swf" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" wmode="opaque" width="100%" height="100%" > </embed>
+                       <embed width="100%" height="100%" src="http://www.tudou.com/v/mwmT_pfty3U/&bid=05&rpid=2016861&resourceId=2016861_05_05_99/v.swf" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" wmode="opaque"  > </embed>
                     </div>
         		</div>
         		</div>
+        		
+        		<!--资源专区-->
+        		<div class="bureau-modify-zdy bureau-modify-zdy-zyzq">
+		    	<h4>
+        			<i><span class="fa fa-cloud-upload"></span>资源专区</i>
+        		</h4>
+        		<div class="bureau-modify-zdy-body">
+        			<ul class="bureau-student-left-header inline-block-ul clearfix bureau-modify-zdy-zyzq-btn">
+						<li class="col-md-6 clear-margin " >
+							<a ><i class="fa fa-circle" style="font-size: 10px; vertical-align: middle; margin-right: 6px;"></i> 学校资源排行</a>
+						</li>
+						<li class="col-md-6 clear-margin" >
+							<a ><i class="fa fa-circle" style="font-size: 10px; vertical-align: middle; margin-right: 6px;"></i> 备课资源排行</a>
+						</li>
+					</ul>
+					<div class="tab-content">
+        			    <ul class="bureau-new-zy clear-margin clear-padding clear-border clearfix">
+							<li class="clearfix">
+								<div class=" bureau-teacher-rizhi-list clear-padding clearfix">
+									<dt class="col-md-3">
+        	 						<img src="img/index-ng.gif">
+        	 						<span class="position-raking">1</span>
+        	 					    </dt>
+									<dd class="col-md-9">
+										<a href="#" class="text-space color_black" style="width: 100%;">华容实验初中</a>
+										<span class="data-ranking" >
+        	 							<font class="data-ranking1">1000</font>个资源
+        	 						</span>
+									</dd>
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class=" bureau-teacher-rizhi-list clear-padding clearfix">
+									<dt class="col-md-3">
+        	 						<img src="img/index-ng.gif">
+        	 						<span class="position-raking">1</span>
+        	 					    </dt>
+									<dd class="col-md-9">
+										<a href="#" class="text-space color_black" style="width: 100%;">华容实验初中</a>
+										<span class="data-ranking" >
+        	 							<font class="data-ranking1">1000</font>个资源
+        	 						</span>
+									</dd>
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class=" bureau-teacher-rizhi-list clear-padding clearfix">
+									<dt class="col-md-3">
+        	 						<img src="img/index-ng.gif">
+        	 						<span class="position-raking">1</span>
+        	 					    </dt>
+									<dd class="col-md-9">
+										<a href="#" class="text-space color_black" style="width: 100%;">华容实验初中</a>
+										<span class="data-ranking" >
+        	 							<font class="data-ranking1">1000</font>个资源
+        	 						</span>
+									</dd>
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class=" bureau-teacher-rizhi-list clear-padding clearfix">
+									<dt class="col-md-3">
+        	 						<img src="img/index-ng.gif">
+        	 						<span class="position-raking">1</span>
+        	 					    </dt>
+									<dd class="col-md-9">
+										<a href="#" class="text-space color_black" style="width: 100%;">华容实验初中</a>
+										<span class="data-ranking" >
+        	 							<font class="data-ranking1">1000</font>个资源
+        	 						</span>
+									</dd>
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class=" bureau-teacher-rizhi-list clear-padding clearfix">
+									<dt class="col-md-3">
+        	 						<img src="img/index-ng.gif">
+        	 						<span class="position-raking">1</span>
+        	 					    </dt>
+									<dd class="col-md-9">
+										<a href="#" class="text-space color_black" style="width: 100%;">华容实验初中</a>
+										<span class="data-ranking" >
+        	 							<font class="data-ranking1">1000</font>个资源
+        	 						</span>
+									</dd>
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class=" bureau-teacher-rizhi-list clear-padding clearfix">
+									<dt class="col-md-3">
+        	 						<img src="img/index-ng.gif">
+        	 						<span class="position-raking">1</span>
+        	 					    </dt>
+									<dd class="col-md-9">
+										<a href="#" class="text-space color_black" style="width: 100%;">华容实验初中</a>
+										<span class="data-ranking" >
+        	 							<font class="data-ranking1">1000</font>个资源
+        	 						</span>
+									</dd>
+								</div>
+							</li>
+						</ul>
+					    <ul class="bureau-new-zy clear-margin clear-padding clear-border clearfix " style="display: none;">
+							<li class="clearfix">
+								<div class=" bureau-new-rizhi-list clear-padding ">
+									<a><i>1</i>那一条铺满石子的小路</a>
+								</div>
+								<div class="bureau-new-rizhi-name clear-padding">
+									<span>08-08</span>
+								</div>
+							</li>
+							<li class="clearfix">
+								<div class=" bureau-new-rizhi-list clear-padding ">
+									<a><i>1</i>那一条铺满石子的小路</a>
+								</div>
+								<div class="bureau-new-rizhi-name clear-padding">
+									<span>08-08</span>
+								</div>
+							</li>
+						</ul>
+					</div>
+        		</div>
+        		</div>
+        		
+        		<!--教育局科室-->
+        		<div class="bureau-modify-zdy bureau-modify-zdy-jyjks">
+		    	<h4>
+        			<i><span class="fa fa-home"></span>教育局股室</i>
+        		</h4>
+        		<div class="bureau-modify-zdy-body clearfix">
+        			<div class="col-md-4 bureau-modify-zdy-jyjks-url gshi clear-padding">
+        				<a class=" text-space" href="#" target="_blank">
+        					基教股
+        			    </a>
+        			</div>
+        			
+        			<div class="col-md-4 bureau-modify-zdy-jyjks-url gshi clear-padding">
+        				<a class=" text-space" href="#" target="_blank">
+        					职成股
+        			    </a>
+        			</div>
+        			
+        			<div class="col-md-4 bureau-modify-zdy-jyjks-url gshi clear-padding">
+        				<a class=" text-space" href="#" target="_blank">
+        					学前教育办
+        			    </a>
+        			</div>
+        			
+        			<div class="col-md-4 bureau-modify-zdy-jyjks-url gshi clear-padding">
+        				<a class=" text-space" href="#" target="_blank">
+        					信息化推进办
+        			    </a>
+        			</div>
+        			
+        			<div class="col-md-4 bureau-modify-zdy-jyjks-url gshi clear-padding">
+        				<a class=" text-space" href="#" target="_blank">
+        					体卫中心
+        			    </a>
+        			</div>
+        			
+        			<div class="col-md-4 bureau-modify-zdy-jyjks-url gshi clear-padding">
+        				<a class=" text-space" href="#" target="_blank">
+        					督导室
+        			    </a>
+        			</div>
+        			
+        			<div class="col-md-4 bureau-modify-zdy-jyjks-url gshi clear-padding">
+        				<a class=" text-space" href="#" target="_blank">
+        					教师工作股
+        			    </a>
+        			</div>
+        			
+        			<div class="col-md-4 bureau-modify-zdy-jyjks-url gshi clear-padding">
+        				<a class=" text-space" href="#" target="_blank">
+        					人事股
+        			    </a>
+        			</div>
+        			
+        			<div class="col-md-4 bureau-modify-zdy-jyjks-url gshi clear-padding">
+        				<a class=" text-space" href="#" target="_blank">
+        					计财股
+        			    </a>
+        			</div>
+        			
+        			<div class="col-md-4 bureau-modify-zdy-jyjks-url gshi clear-padding">
+        				<a class=" text-space" href="#" target="_blank">
+        					办公室
+        			    </a>
+        			</div>
+        			
+        			<div class="col-md-4 bureau-modify-zdy-jyjks-url gshi clear-padding">
+        				<a class=" text-space" href="#" target="_blank">
+        					纪监室
+        			    </a>
+        			</div>
+        			
+        			<div class="col-md-4 bureau-modify-zdy-jyjks-url gshi clear-padding">
+        				<a class=" text-space" href="#" target="_blank">
+        					审计股
+        			    </a>
+        			</div>
+        			
+        			<div class="col-md-4 bureau-modify-zdy-jyjks-url gshi clear-padding">
+        				<a class=" text-space" href="#" target="_blank">
+        					法制安全股
+        			    </a>
+        			</div>
+        			
+        			<div class="col-md-4 bureau-modify-zdy-jyjks-url gshi clear-padding">
+        				<a class=" text-space" href="#" target="_blank">
+        					校车办
+        			    </a>
+        			</div>
+        			
+        			<div class="col-md-4 bureau-modify-zdy-jyjks-url gshi clear-padding">
+        				<a class=" text-space" href="#" target="_blank">
+        					勤管站
+        			    </a>
+        			</div>
+        			
+        			<div class="col-md-4 bureau-modify-zdy-jyjks-url gshi clear-padding">
+        				<a class=" text-space" href="#" target="_blank">
+        					教育工会
+        			    </a>
+        			</div>
+        			
+        			<div class="col-md-4 bureau-modify-zdy-jyjks-url gshi clear-padding">
+        				<a class=" text-space" href="#" target="_blank">
+        					离退中心
+        			    </a>
+        			</div>
+        			
+        			<div class="col-md-4 bureau-modify-zdy-jyjks-url gshi clear-padding">
+        				<a class=" text-space" href="#" target="_blank">
+        					基建办
+        			    </a>
+        			</div>
+        			
+        			<div class="col-md-4 bureau-modify-zdy-jyjks-url gshi clear-padding">
+        				<a class=" text-space" href="#" target="_blank">
+        					招考中心
+        			    </a>
+        			</div>
+        			
+        			<div class="col-md-4 bureau-modify-zdy-jyjks-url gshi clear-padding">
+        				<a class=" text-space" href="#" target="_blank">
+        					教研室
+        			    </a>
+        			</div>
+        			
+        			<div class="col-md-4 bureau-modify-zdy-jyjks-url gshi clear-padding">
+        				<a class=" text-space" href="#" target="_blank">
+        					助学中心
+        			    </a>
+        			</div>
+        			
+        			<div class="col-md-4 bureau-modify-zdy-jyjks-url gshi clear-padding">
+        				<a class=" text-space" href="#" target="_blank">
+        					教育技术中心
+        			    </a>
+        			</div>
+        			
+        		</div>
+        		</div>
+        		
+        		
+        		
+        		
+        		
+        		
+        		
         		<!--flash-->
-        		<div class="bureau-modify-zdy bureau-modify-zdy-tplj">
+        		<!--<div class="bureau-modify-zdy bureau-modify-zdy-tplj">
 		    	<h4>
         			<i><span class="fa fa-file-audio-o"></span>flash</i>
         		</h4>
@@ -1422,18 +1969,18 @@
           </div>     
 						</div>
         		</div>
-        		</div>
+        		</div>-->
         		<!--html-->
-        		<div class="bureau-modify-zdy bureau-modify-zdy-tplj">
+        		<!--<div class="bureau-modify-zdy bureau-modify-zdy-tplj">
 		    	<h4>
         			<i><span class="fa fa-file-code-o"></span>html</i>
         		</h4>
         		<div class="bureau-modify-zdy-body ">
-        			 <div class="nr small html-view-box" > </div>
+        			 <div class="nr small html-view-box" ></div>
         		</div>
-        		</div>
+        		</div>-->
         		<!--文字-->
-        		<div class="bureau-modify-zdy bureau-modify-zdy-tplj">
+        		<!--<div class="bureau-modify-zdy bureau-modify-zdy-tplj">
 		    	<h4>
         			<i><span class="fa fa-file-text-o"></span>文字</i>
         		</h4>
@@ -1442,9 +1989,9 @@
                       <p style="margin: 0;"> APEC自从成立以来，就一直将降低关税作为重要的目标。南开大学APEC研究中心主任刘晨阳介绍说，APEC成立至今，亚太地区的整体关税从16.9%降低到5.8%，这里面APEC的积极推动作用不可忽视。 </p>
                     </div>   
         		</div>
-        		</div>
+        		</div>-->
         		<!--教育局科室-->
-        		<div class="bureau-modify-zdy bureau-modify-zdy-jyjks">
+        		<!--<div class="bureau-modify-zdy bureau-modify-zdy-jyjks">
 		    	<h4>
         			<i><span class="fa fa-home"></span>教育局科室</i>
         		</h4>
@@ -1480,17 +2027,18 @@
         			    </a>
         			</div>
         		</div>
-        		</div>
+        		</div>-->
         		<!--日志列表-->
-        		<div class="bureau-modify-zdy bureau-modify-zdy-tzgg">
+        		<!--<div class="bureau-modify-zdy bureau-modify-zdy-tzgg">
 		    	<h4>
-        			<i><span class="fa fa-list-ul"></span>日志列表</i>
+        			<i><span class="fa fa-list-ul"></span>师生连线</i>
+        			<div class="pull-right"><a href="#">更多</a></div>
         		</h4>
         		<div class="bureau-modify-zdy-body bureau-modify-zdy-tzgg-list clear-padding">
         			  <div class="" id="accordion">
 							         <div class="school-erji clearfix">
    	    	                         <div class="link-menu col-md-12" href="#">
-   	    		                           <a><i>●</i>小哥小哥 <span>(572)</span></a>
+   	    		                           <a><i>●</i>信息化课例<span>(572)</span></a>
    	                             	</div>
    	    	                        <ul class="submenu clear-padding col-md-12">
    	    		                    <li class="clearfix">
@@ -1502,7 +2050,7 @@
    	                               </div>
    	                                 <div class="school-erji clearfix">
    	    	                         <div class="link-menu col-md-12" href="#">
-   	    		                           <a><i>●</i>小哥小哥 <span>(572)</span></a>
+   	    		                           <a><i>●</i>教师论文<span>(572)</span></a>
    	                             	</div>
    	    	                        <ul class="submenu clear-padding col-md-12">
    	    		                    <li class="clearfix">
@@ -1520,41 +2068,66 @@
    	                               
 						</div>
         		</div>
-                </div> 
-                
-        		<!--外链-->
-        		<div class="bureau-modify-zdy bureau-modify-zdy-jyjks">
+        		</div>-->
+        		
+        		<!--师生连线-->
+        		<!--<div class="bureau-modify-zdy bureau-modify-zdy-tzgg">
 		    	<h4>
-        			<i><span class="fa fa-tag"></span>外链</i>
+        			<i><span class="fa fa-list-ul"></span>师生连线</i>
+        			<div class="pull-right"><a href="#">更多</a></div>
         		</h4>
-        		<div class="bureau-modify-zdy-body clearfix clear-padding">
-        			<div class="col-md-12 bureau-modify-zdy-jyjks-url clear-padding">
-        				<a class=" text-space" href="#" target="_blank">
-        					华容县教育办公系统
-        			    </a>
-        			</div>
-        			<div class="col-md-12 bureau-modify-zdy-jyjks-url clear-padding">
-        				<a class=" text-space" href="#" target="_blank">
-        					办公室
-        			    </a>
-        			</div>
-        			<div class="col-md-12 bureau-modify-zdy-jyjks-url clear-padding">
-        				<a class=" text-space" href="#" target="_blank">
-        					办公室
-        			    </a>
-        			</div>
-        			<div class="col-md-12 bureau-modify-zdy-jyjks-url clear-padding">
-        				<a class=" text-space" href="#" target="_blank">
-        					办公室
-        			    </a>
-        			</div>
+        		<div class="bureau-modify-zdy-body bureau-modify-zdy-tzgg-list">
+        			  <div id="accordion">	    	
+   	                       <div class="school-erji clearfix">
+		                        <div class="link-menu col-md-6" href="#" >
+			                           <a><span class="fa fa-group"></span>教师论文</a>
+	                         	</div>
+	                         	
+	                         	<div class="link-menu col-md-6" href="#">
+			                           <a><span class="glyphicon icon-globe"></span>信息化课例</a>
+	                         	</div>
+   	                        </div>
+   	                        
+   	                        <div class="school-erji clearfix">
+		                        <div class="link-menu col-md-6" href="#">
+			                           <a><span class="fa fa-comment"></span>应用感悟</a>
+	                         	</div>
+	                         	
+	                         	<div class="link-menu col-md-6" href="#">
+			                           <a><span class="fa fa-eye"></span>学生视角</a>
+	                         	</div>
+   	                        </div>
+   	                               
+				     </div>
         		</div>
-        		</div>
+        		</div>-->
+        		
+        		
+        		
+        		
 		    </div>
 		</div>
+		
+		<!--底部外链导航-->
+		<!--<div class="container bureau-new-navbar clear-padding navbar_links">-->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!--<div class="collapse navbar-collapse clear-padding" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav bule-navbar">
+          	<li><a href="#">华容县教育局</a></li>
+          	<li><a href="#">湖南华容教育资源中心及在线协备课系统</a></li>
+          	<li><a href="#">国家教育资源公共服务平台</a></li>
+          	<li><a href="#">湖南省基础教育资源网</a></li>
+          	<li><a href="#">中国教育资源网</a></li>
+          	<li><a href="#">堂堂网</a></li>
+          	<li><a href="#">菁优网</a></li>
+            <li><a href="#">梯子网</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+		<!--</div>-->
+		
 		<!-- 底部 -->
-		<div class="container-fluid footer footer-grayline" style="display: block;">
-			<div class="row">
+		<!--<div class="container-fluid footer footer-grayline" style="display: block;">-->
+			<!--<div class="row">
 			    <ul class="inline-block-ul container">
 			    	<li class=""><a href="#"><img src="img/bureau-zy.png" class="img-responsive" alt="Responsive image"></a></li>
 			    	<li class=""><a href="#"><img src="img/bureau-zy.png" class="img-responsive" alt="Responsive image"></a></li>
@@ -1583,7 +2156,44 @@
 					<li><a href="#">关于我们</a>
 					</li>
 				</ul>
+			</div>-->
+			<!--<div class="row">
+				<div class="col-md-12" style="padding-top: 10px;">Copyright @ 2011-2015 湖南领信教育网络发展有限公司版权所有 湘ICP备14001031号</div>
 			</div>
+		</div>-->
+		
+		<!-- 底部 -->
+		<div class="container-fluid footer footer-grayline" style="display: block;">
+			<div class="row">
+			    <ul class="inline-block-ul container">
+			    	<li class=""><a href="#"><img src="img/bureau-zy.png" class="img-responsive" alt="Responsive image"></a></li>
+			    	<li class=""><a href="#"><img src="img/bureau-zy.png" class="img-responsive" alt="Responsive image"></a></li>
+			    	<li class=""><a href="#"><img src="img/bureau-zy.png" class="img-responsive" alt="Responsive image"></a></li>
+			    	<li class=""><a href="#"><img src="img/bureau-zy.png" class="img-responsive" alt="Responsive image"></a></li>
+			    	<li class=""><a href="#"><img src="img/bureau-zy.png" class="img-responsive" alt="Responsive image"></a></li>
+			    	<li class=""><a href="#"><img src="img/bureau-zy.png" class="img-responsive" alt="Responsive image"></a></li>
+			    	<li class=""><a href="#"><img src="img/bureau-zy.png" class="img-responsive" alt="Responsive image"></a></li>
+			    	<li class=""><a href="#"><img src="img/bureau-zy.png" class="img-responsive" alt="Responsive image"></a></li>
+			    </ul>
+			</div>
+			<!--<div class="row">
+				<ul class="col-md-12 inline-block-ul">
+					<li><a href="#">关于我们</a>
+					</li>
+					<li>|</li>
+					<li><a href="#">联系我们</a>
+					</li>
+					<li>|</li>
+					<li><a href="#">友情链接</a>
+					</li>
+					<li>|</li>
+					<li><a href="#">关于我们</a>
+					</li>
+					<li>|</li>
+					<li><a href="#">关于我们</a>
+					</li>
+				</ul>
+			</div>-->
 			<div class="row">
 				<div class="col-md-12">Copyright @ 2011-2015 湖南领信教育网络发展有限公司版权所有 湘ICP备14001031号</div>
 			</div>
@@ -1736,7 +2346,7 @@
     });
     $(".diy-style-list li a").click(function(){
        var ThisDataBG = $(this).attr("data-bg");
-        var unnecessaryClass = "ls-bg hs-bg tls-bg "
+        var unnecessaryClass = "ls-bg hs-bg tls-bg zsmh-bg xzsl-bg"
        console.log(ThisDataBG);
        $("body").removeClass(unnecessaryClass).addClass(ThisDataBG+"-bg");
     });

@@ -153,7 +153,7 @@ box-shadow: 0px 0px 2px rgba(117, 117, 117, 1);
 	height: 138px;
 	padding: 38px 0 0 0;
 	/*box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.12) inset !important;*/
-   background: url("../img/bureau-img/body_bg01.png") repeat scroll center top transparent;
+   /* background:url('../img/bureau-img/body_bg01.png') repeat scroll center top transparent ;*/
 }
 .bureau-logo{width: 376px;margin: auto;padding: 18px 0 !important;}
 
@@ -208,6 +208,11 @@ background: #fff;
 }
 .bureau-ico a.fa.fa-app{
 	background: url('../img/bureau-ico-list.png') no-repeat 0px -233px;
+	width: 56px;
+	height: 56px;
+}
+.bureau-ico a.fa.fa-curriculum {
+	background: url('../img/bureau-ico-list.png') no-repeat 0px -290px;
 	width: 56px;
 	height: 56px;
 }
@@ -482,7 +487,7 @@ text-decoration: none;
 float: right;
 }
 .bureau-news-list-bottom > ul li{
-	padding:6px 5px;
+	padding:7px 5px;
 	 border-bottom: 1px dotted #ccc;
 	 overflow: hidden;
 text-overflow: ellipsis;

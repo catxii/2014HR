@@ -15,11 +15,10 @@
 		<script type="text/JavaScript" src="space-css.js"></script>
 		<!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
 
-
 	</head>
 
 	<body class="bureau-body gray-body">
-		<div class="sidel"style="display: none;" id="goTopBtn" >
+		<div class="sidel"style="display: none;" id="goTopBtn">
 			<ul>
 		<li style="border:none;"><a href="javascript:goTop();" class="sidetop"><img src="img/side_icon05.png"></a></li>
 	  </ul>
@@ -78,8 +77,8 @@
 			</div>
 		</div>
 
-		<div class="container-fluid bureau-navlist">
-			 <div class="container ">
+		<div class="container-fluid bureau-navlist top-banner">
+			 <div class="container">
 			 	 <div class="col-md-4">
 			 	 	<div class="bureau-logo">
 			 	 			<img src="img/huaronglogo.png">
@@ -87,35 +86,47 @@
 			 	 </div>
 			 	 <div class="col-md-8 bureau-nav">
 			 	 		    <ul class="inline-block-ul pull-right clear-margin">
-			 	 		    	<li>
-			 	 		    		<div class="bureau-ico">
-			 	 		    		     <a href="#" class="fa fa-home current"></a>
-			 	 		    		     <div class="bureau-ico-name">主页</div>
-			 	 		    	    </div>
-			 	 		    	</li>
-			 	 		    	<li>
-			 	 		    		<div class="bureau-ico">
-			 	 		    		     <a href="#" class="fa fa-paste"></a>
-			 	 		    		     <div class="bureau-ico-name">资源平台</div>
-			 	 		    	    </div>
-			 	 		    	</li>
-			 	 		    	<li>
-			 	 		    		<div class="bureau-ico">
-			 	 		    		     <a href="#" class="fa fa-user"></a>
-			 	 		    		     <div class="bureau-ico-name">成员</div>
-			 	 		    	    </div>
-			 	 		    	</li>
-			 	 		    	<li>
-			 	 		    		<div class="bureau-ico">
-			 	 		    		     <a href="#" class="fa fa-bar-chart "></a>
-			 	 		    		     <div class="bureau-ico-name">试题平台</div>
-			 	 		    	    </div>
-			 	 		    	</li>
-			 	 		    </ul>
+								<li>
+									<div class="bureau-ico">
+										<a href="#" class="fa fa-zy current"></a>
+										<div class="bureau-ico-name">主页</div>
+									</div>
+								</li>
+								<li>
+									<div class="bureau-ico">
+										<a href="#" class="fa fa-zypt"></a>
+										<div class="bureau-ico-name">资源平台</div>
+									</div>
+								</li>
+								<li>
+									<div class="bureau-ico">
+										<a href="#" class="fa fa-cy"></a>
+										<div class="bureau-ico-name">成员</div>
+									</div>
+								</li>
+								<li>
+									<div class="bureau-ico">
+										<a href="#" class="fa fa-xwfb"></a>
+										<div class="bureau-ico-name">试题平台</div>
+									</div>
+								</li>
+								<li>
+									<div class="bureau-ico">
+										<a href="#" class="fa fa-app"></a>
+										<div class="bureau-ico-name">app下载</div>
+									</div>
+								</li>
+								<li>
+									<div class="bureau-ico">
+										<a href="#" class="fa fa-curriculum"></a>
+										<div class="bureau-ico-name">晒课</div>
+									</div>
+								</li>
+							</ul>
 			 	 </div>
 			 </div>
 		</div>
-		<div class="container-fluid school-neiye-banner curriculum-banner">
+		<div class="container-fluid school-neiye-banner curriculum-banner" >
 			<div class="curriculum-menu container">
 				<div class="col-md-12 school-search clear-padding clearfix" >
 					<ul class="inline-block-ul bureau-cuzdy-chengyuan" style="float: left;">
@@ -134,7 +145,7 @@
 		<!--资源专区-->
 		
        
-        <div class="container curriculum-content">
+        <div class="container curriculum-content clear-padding">
         	<!--幻灯广告-->
         	<div class="col-md-4" style="padding-left: 0px;">
         		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -152,13 +163,11 @@
 									<a title="" data-original-title="" href="#">
 										<img src="img/saike/saike_adv_382x246.png" alt="" >
 									</a>
-
 								</div>
 								<div class="item">
 									<a title="" data-original-title="" href="#">
 										<img src="img/saike/saike_adv_382x246.png" alt="" >
 									</a>
-
 								</div>
 							</div>
 
@@ -176,7 +185,7 @@
         	
         	<!--中间栏 新闻-->
         	<div class="col-md-5">
-        		<div class="curriculum-box clearfix">
+        		<div class="curriculum-box clearfix"> 
         		<div class="curriculum-box-header clearfix"><h4 class="float-left">资讯动态</h4><a class="float-right title-more" href="#" target="_blank">更多</a></div>
         		<ul class="col-md-12 clear-padding clear-margin clearfix curriculum-news">
 											<li class="clearfix col-md-12 text-space">
@@ -240,6 +249,15 @@
 												<span>02-02</span>
 											</div>
 										    </li>
+										    
+										    <!--<li class="clearfix col-md-12 text-space">
+											<div class="bureau-list-left clear-padding text-space">
+												<i>7</i><a title="" href="#">那一条铺满石子的小路</a>
+											</div>
+											<div class="bureau-list-right clear-padding ">
+												<span>02-02</span>
+											</div>
+										    </li>-->
 										   
 										</ul>
 				</div>
@@ -247,10 +265,11 @@
         	
         	<!--右边栏 晒课数量-->
         	<div class="col-md-3" style="padding-right: 0px;">
-        		<div class="saike-box" >
+        		<div class="saike-box"  >
         			<h5>已晒课</h5>
         			<p class="saike-num">
-        				<span>5</span><span>1</span><span>4</span><b class="spv">,</b><span>0</span><span>0</span><span>0</span><b class="spv">,</b><span>0</span><span>0</span><span>0</span>
+        				<span class="t_num"></span>
+        				<!--<span>5</span><span>1</span><span>4</span><b class="spv">,</b><span>0</span><span>0</span><span>0</span><b class="spv">,</b><span>0</span><span>0</span><span>0</span>-->
         			</p>
         		</div>
         		<div class="curriculum-box clearfix" style="margin-top: 5px;">
@@ -266,21 +285,21 @@
         		  </ul>
        		  
         		  <ul class="list-inline user_info_wrap col-md-12 clear-margin">
-        		  	  <li  class="col-md-4"><a href=""><span class="user_info_num font-arial">1</span><br>晒课</a></li>
-        		  	  <li class="col-md-4"><a href=""><span class="user_info_num font-arial">0</span><br>待审核</a></li>
-        		  	  <li class="col-md-4"><a href=""><span class="user_info_num font-arial">0</span><br>已审核</a></li>
+        		  	  <li  class="col-md-4"><a href=""><span class="user_info_num">1</span><br>晒课</a></li>
+        		  	  <li class="col-md-4"><a href=""><span class="user_info_num">0</span><br>待审核</a></li>
+        		  	  <li class="col-md-4"><a href=""><span class="user_info_num">0</span><br>审核通过</a></li>
         		  </ul>
 				</div>
         	</div>
 
         	
         	<!--老师头像展示-->
-        	<section  class="col-md-12 teacher-img-wrap">
+        	<section  class="col-md-12 teacher-img-wrap clear-padding">
         		   <hr class="grid-2 center"></hr>
         		   <h3 class="text-center">他们在晒</h3>  
         		   <div class="teacher-case-box clearfix">
         		   	    <div class="panels">
-        		   	    	<a href="#" style="background-image: url(img/saike/saike_teacher_ICO.png);">
+        		   	    	<a href="#" style="background-image: url(img/saike/news_education.png);">
 								<span class="overstate">						
 									<strong>杨老师</strong><span>已晒课10</span><span>新河前进小学</span>
 								</span>
@@ -470,14 +489,38 @@
 								</span>
 						   </a>					   
         		   	    </div>
-   
+        		   	    
+        		   	    <div class="panels">
+        		   	    	<a href="#" style="background-image: url(img/saike/saike_teacher_ICO.png);">
+								<span class="overstate">						
+									<strong>杨老师</strong><span>已晒课10</span><span>新河前进小学</span>
+								</span>
+						   </a>					   
+        		   	    </div>
+        		   	    
+        		   	    <div class="panels">
+        		   	    	<a href="#" style="background-image: url(img/saike/saike_teacher_ICO.png);">
+								<span class="overstate">						
+									<strong>杨老师</strong><span>已晒课10</span><span>新河前进小学</span>
+								</span>
+						   </a>					   
+        		   	    </div>
+        		   	    
+        		   	    <div class="panels">
+        		   	    	<a href="#" style="background-image: url(img/saike/saike_teacher_ICO.png);">
+								<span class="overstate">						
+									<strong>杨老师</strong><span>已晒课10</span><span>新河前进小学</span>
+								</span>
+						   </a>					   
+        		   	    </div>
+
         		   	 
         		   </div><!--/.teacher-case-box-->
 
         	</section><!--/.teacher-img-wrap-->
         	
         	<!--晒课比拼-->
-        	<section class="competition-lesson-wrap col-md-12">
+        	<section class="competition-lesson-wrap col-md-12 clear-padding">
     	      <hr class="grid-2 center"></hr>
     		  <h3 class="text-center">晒课</h3> 
     		  
@@ -486,9 +529,9 @@
         		    <h3 class="text-center">人气TOP</h3> 
        			
     				<dl class="dl-horizontal competition-header clearfix col-md-12">
-    					<dt><a href="#"><img src="img/saike/img_book_125x125.png"></a></dt>
+    					<dt><a href="#"><img src="img/saike/img_book_160x120.png"></a></dt>
     					<dd>
-    						<p class="author_name">王鹤<b class="bg-saike rank font-arial">1</b></p>
+    						<p class="author_name">王鹤<b class="bg-saike rank">1</b></p>
     						<p class="author-title"><a href="#">小小竹排画中游小小竹排画中游小小竹排画中游小小竹</a></p>
     						<p class="author_notes">抚顺市实验小学</p>
     						<p class="author_notes font_size_12">
@@ -500,49 +543,49 @@
     				<ul class="competition-content col-md-12">
     					<li class="clearfix">
     						<span class="score col-sm-2">128919</span>
-    						<b class="col-sm-1">2</b>
+    						<b class="col-sm-1"><span>2</span></b>
     						<span class="document-ico-style word-ico col-sm-1"></span>
     						<a href="#" target="_blank" title="一个小村庄的故事" class="col-sm-6">一个小村庄的故事一个小村庄的故事一个小村庄的故事一个小村庄的故事一个小村庄的故事</a>
     						<span class="color_brown text-overflow col-sm-2" class="">杜鹏</span>
     					</li>
     					<li class="clearfix">
     						<span class="score col-sm-2">128919</span>
-    						<b class="col-sm-1">3</b>
+    						<b class="col-sm-1"><span>3</span></b>
     						<span class="document-ico-style ppt-ico col-sm-1"></span>
     						<a href="#" target="_blank" title="一个小村庄的故事" class="col-sm-6">一个小村庄的故事</a>
     						<span class="color_brown text-overflow col-sm-2" class="">杜鹏</span>
     					</li>
     					<li class="clearfix">
     						<span class="score col-sm-2">128919</span>
-    						<b class="col-sm-1">4</b>
+    						<b class="col-sm-1"><span>4</span></b>
     						<span class="document-ico-style video-ico col-sm-1"></span>
     						<a href="#" target="_blank" title="一个小村庄的故事" class="col-sm-6">一个小村庄的故事</a>
     						<span class="color_brown text-overflow col-sm-2" class="">杜鹏</span>
     					</li>
     					<li class="clearfix">
     						<span class="score col-sm-2">128919</span>
-    						<b class="col-sm-1">5</b>
+    						<b class="col-sm-1"><span>5</span></b>
     						<span class="document-ico-style html-ico col-sm-1"></span>
     						<a href="#" target="_blank" title="一个小村庄的故事" class="col-sm-6">一个小村庄的故事</a>
     						<span class="color_brown text-overflow col-sm-2" class="">杜鹏</span>
     					</li>
     					<li class="clearfix">
     						<span class="score col-sm-2">128919</span>
-    						<b class="col-sm-1">6</b>
+    						<b class="col-sm-1"><span>6</span></b>
     						<span class="document-ico-style other-ico col-sm-1"></span>
     						<a href="#" target="_blank" title="一个小村庄的故事" class="col-sm-6">一个小村庄的故事</a>
     						<span class="color_brown text-overflow col-sm-2" class="">杜鹏</span>
     					</li>
     					<li class="clearfix">
     						<span class="score col-sm-2">128919</span>
-    						<b class="col-sm-1">7</b>
+    						<b class="col-sm-1"><span>7</span></b>
     						<span class="document-ico-style other-ico col-sm-1"></span>
     						<a href="#" target="_blank" title="一个小村庄的故事" class="col-sm-6">一个小村庄的故事</a>
     						<span class="color_brown text-overflow col-sm-2" class="">杜鹏</span>
     					</li>
     					<li class="clearfix">
     						<span class="score col-sm-2">128919</span>
-    						<b class="col-sm-1">8</b>
+    						<b class="col-sm-1"><span>8</span></b>
     						<span class="document-ico-style other-ico col-sm-1"></span>
     						<a href="#" target="_blank" title="一个小村庄的故事" class="col-sm-6">一个小村庄的故事</a>
     						<span class="color_brown text-overflow col-sm-2" class="">杜鹏</span>
@@ -554,10 +597,10 @@
         		<div class="col-md-4 competition-lesson-box">
         		    <h3 class="text-center">评分TOP</h3> 
        			
-    				<dl class="dl-horizontal competition-header clearfix">
-    					<dt><a href="#"><img src="img/saike/img_book_125x125.png"></a></dt>
+    				<dl class="dl-horizontal competition-header clearfix col-md-12">
+    					<dt><a href="#"><img src="img/saike/img_book_160x120.png"></a></dt>
     					<dd>
-    						<p class="author_name">王鹤 <b class="bg-saike rank font-arial">1</b></p>
+    						<p class="author_name">王鹤 <b class="bg-saike rank">1</b></p>
     						<p class="author-title"><a href="#">小小竹排画中游</a></p>
     						<p class="author_notes">抚顺市实验小学</p>
     						<p class="author_notes font_size_12">
@@ -575,49 +618,49 @@
     				<ul class="competition-content col-md-12">
     					<li class="clearfix">
     						<span class="score col-sm-2">4.4分</span>
-    						<b class="col-sm-1">2</b>
+    						<b class="col-sm-1"><span>2</span></b>
     						<span class="document-ico-style word-ico col-sm-1"></span>
     						<a href="#" target="_blank" title="一个小村庄的故事" class="col-sm-6">一个小村庄的故事一个小村庄的故事一个小村庄的故事一个小村庄的故事一个小村庄的故事</a>
     						<span class="color_brown text-overflow col-sm-2" class="">杜鹏</span>
     					</li>
     					<li class="clearfix">
     						<span class="score col-sm-2">4.4分</span>
-    						<b class="col-sm-1">3</b>
+    						<b class="col-sm-1"><span>3</span></b>
     						<span class="document-ico-style ppt-ico col-sm-1"></span>
     						<a href="#" target="_blank" title="一个小村庄的故事" class="col-sm-6">一个小村庄的故事</a>
     						<span class="color_brown text-overflow col-sm-2" class="">杜鹏</span>
     					</li>
     					<li class="clearfix">
     						<span class="score col-sm-2">4.4分</span>
-    						<b class="col-sm-1">4</b>
+    						<b class="col-sm-1"><span>4</span></b>
     						<span class="document-ico-style video-ico col-sm-1"></span>
     						<a href="#" target="_blank" title="一个小村庄的故事" class="col-sm-6">一个小村庄的故事</a>
     						<span class="color_brown text-overflow col-sm-2" class="">杜鹏</span>
     					</li>
     					<li class="clearfix">
     						<span class="score col-sm-2">4.4分</span>
-    						<b class="col-sm-1">5</b>
+    						<b class="col-sm-1"><span>5</span></b>
     						<span class="document-ico-style html-ico col-sm-1"></span>
     						<a href="#" target="_blank" title="一个小村庄的故事" class="col-sm-6">一个小村庄的故事</a>
     						<span class="color_brown text-overflow col-sm-2" class="">杜鹏</span>
     					</li>
     					<li class="clearfix">
     						<span class="score col-sm-2">4.4分</span>
-    						<b class="col-sm-1">6</b>
+    						<b class="col-sm-1"><span>6</span></b>
     						<span class="document-ico-style other-ico col-sm-1"></span>
     						<a href="#" target="_blank" title="一个小村庄的故事" class="col-sm-6">一个小村庄的故事</a>
     						<span class="color_brown text-overflow col-sm-2" class="">杜鹏</span>
     					</li>
     					<li class="clearfix">
     						<span class="score col-sm-2">4.4分</span>
-    						<b class="col-sm-1">7</b>
+    						<b class="col-sm-1"><span>7</span></b>
     						<span class="document-ico-style html-ico col-sm-1"></span>
     						<a href="#" target="_blank" title="一个小村庄的故事" class="col-sm-6">一个小村庄的故事</a>
     						<span class="color_brown text-overflow col-sm-2" class="">杜鹏</span>
     					</li>
     					<li class="clearfix">
     						<span class="score col-sm-2">4.4分</span>
-    						<b class="col-sm-1">8</b>
+    						<b class="col-sm-1"><span>8</span></b>
     						<span class="document-ico-style other-ico col-sm-1"></span>
     						<a href="#" target="_blank" title="一个小村庄的故事" class="col-sm-6">一个小村庄的故事</a>
     						<span class="color_brown text-overflow col-sm-2" class="">杜鹏</span>
@@ -629,10 +672,10 @@
         		<div class="col-md-4 competition-lesson-box">
         		    <h3 class="text-center">晒课TOP</h3> 
        			
-    				<dl class="dl-horizontal competition-header clearfix">
-    					<dt><a href="#"><img src="img/saike/img_book_125x125.png"></a></dt>
+    				<dl class="dl-horizontal competition-header clearfix col-md-12">
+    					<dt><a href="#"><img src="img/saike/img_book_160x120.png"></a></dt>
     					<dd>
-    						<p class="author_name">王鹤 <b class="bg-saike rank font-arial">1</b></p>
+    						<p class="author_name">王鹤 <b class="bg-saike rank">1</b></p>
     						<p class="author-title"><a href="#">小小竹排画中游</a></p>
     						<p class="author_notes">抚顺市实验小学</p>
     						<p class="author_notes font_size_12">
@@ -644,49 +687,49 @@
     				<ul class="competition-content col-md-12">
     					<li class="clearfix">
     						<span class="score col-sm-2">346</span>
-    						<b class="col-sm-1">2</b>
+    						<b class="col-sm-1"><span>2</span></b>
     						<span class="document-ico-style word-ico col-sm-1"></span>
     						<a href="#" target="_blank" title="一个小村庄的故事" class="col-sm-6">一个小村庄的故事一个小村庄的故事一个小村庄的故事一个小村庄的故事一个小村庄的故事</a>
     						<span class="color_brown text-overflow col-sm-2" class="">杜鹏</span>
     					</li>
     					<li class="clearfix">
     						<span class="score col-sm-2">346</span>
-    						<b class="col-sm-1">3</b>
+    						<b class="col-sm-1"><span>3</span></b>
     						<span class="document-ico-style ppt-ico col-sm-1"></span>
     						<a href="#" target="_blank" title="一个小村庄的故事" class="col-sm-6">一个小村庄的故事</a>
     						<span class="color_brown text-overflow col-sm-2" class="">杜鹏</span>
     					</li>
     					<li class="clearfix">
     						<span class="score col-sm-2">346</span>
-    						<b class="col-sm-1">4</b>
+    						<b class="col-sm-1"><span>4</span></b>
     						<span class="document-ico-style video-ico col-sm-1"></span>
     						<a href="#" target="_blank" title="一个小村庄的故事" class="col-sm-6">一个小村庄的故事</a>
     						<span class="color_brown text-overflow col-sm-2" class="">杜鹏</span>
     					</li>
     					<li class="clearfix">
     						<span class="score col-sm-2">346</span>
-    						<b class="col-sm-1">5</b>
+    						<b class="col-sm-1"><span>5</span></b>
     						<span class="document-ico-style html-ico col-sm-1"></span>
     						<a href="#" target="_blank" title="一个小村庄的故事" class="col-sm-6">一个小村庄的故事</a>
     						<span class="color_brown text-overflow col-sm-2" class="">杜鹏</span>
     					</li>
     					<li class="clearfix">
     						<span class="score col-sm-2">346</span>
-    						<b class="col-sm-1">6</b>
+    						<b class="col-sm-1"><span>6</span></b>
     						<span class="document-ico-style other-ico col-sm-1"></span>
     						<a href="#" target="_blank" title="一个小村庄的故事" class="col-sm-6">一个小村庄的故事</a>
     						<span class="color_brown text-overflow col-sm-2" class="">杜鹏</span>
     					</li>
     					<li class="clearfix">
     						<span class="score col-sm-2">346</span>
-    						<b class="col-sm-1">7</b>
+    						<b class="col-sm-1"><span>7</span></b>
     						<span class="document-ico-style html-ico col-sm-1"></span>
     						<a href="#" target="_blank" title="一个小村庄的故事" class="col-sm-6">一个小村庄的故事</a>
     						<span class="color_brown text-overflow col-sm-2" class="">杜鹏</span>
     					</li>
     					<li class="clearfix">
     						<span class="score col-sm-2">346</span>
-    						<b class="col-sm-1">8</b>
+    						<b class="col-sm-1"><span>8</span></b>
     						<span class="document-ico-style other-ico col-sm-1"></span>
     						<a href="#" target="_blank" title="一个小村庄的故事" class="col-sm-6">一个小村庄的故事</a>
     						<span class="color_brown text-overflow col-sm-2" class="">杜鹏</span>
@@ -701,7 +744,7 @@
         	
         	
         	<!--日志比拼-->
-        	<section class="competition-lesson-wrap col-md-12">
+        	<section class="competition-lesson-wrap col-md-12 clear-padding">
     	      <hr class="grid-2 center"></hr>
     		  <h3 class="text-center">日志</h3> 
     		  
@@ -709,10 +752,10 @@
         	    <div class="col-md-4 competition-lesson-box">
         		    <h3 class="text-center">人气TOP</h3> 
        			
-    				<dl class="dl-horizontal competition-header clearfix col-md-12">
-    					<dt><a href="#"><img src="img/saike/img_book_125x125.png"></a></dt>
+    				<dl class="dl-horizontal competition-header clearfix col-md-12 log-head">
+    					<dt><a href="#"><img src="img/saike/img_book_160x120.png"></a></dt>
     					<dd>
-    						<p class="author_name">王鹤<b class="bg-saike rank font-arial">1</b></p>
+    						<p class="author_name">王鹤<b class="bg-saike rank">1</b></p>
     						<p class="author-title"><a href="#">小小竹排画中游小小竹排画中游小小竹排画中游小小竹</a></p>
     						<p class="author_notes">抚顺市实验小学</p>
     						<p class="author_notes font_size_12">
@@ -724,49 +767,49 @@
     				<ul class="competition-content col-md-12">
     					<li class="clearfix">
     						<span class="score col-sm-2">128919</span>
-    						<b class="col-sm-1">2</b>
+    						<b class="col-sm-1"><span>2</span></b>
     						<span class="document-ico-style word-ico col-sm-1"></span>
     						<a href="#" target="_blank" title="一个小村庄的故事" class="col-sm-6">一个小村庄的故事一个小村庄的故事一个小村庄的故事一个小村庄的故事一个小村庄的故事</a>
     						<span class="color_brown text-overflow col-sm-2" class="">杜鹏</span>
     					</li>
     					<li class="clearfix">
     						<span class="score col-sm-2">128919</span>
-    						<b class="col-sm-1">3</b>
+    						<b class="col-sm-1"><span>3</span></b>
     						<span class="document-ico-style ppt-ico col-sm-1"></span>
     						<a href="#" target="_blank" title="一个小村庄的故事" class="col-sm-6">一个小村庄的故事</a>
     						<span class="color_brown text-overflow col-sm-2" class="">杜鹏</span>
     					</li>
     					<li class="clearfix">
     						<span class="score col-sm-2">128919</span>
-    						<b class="col-sm-1">4</b>
+    						<b class="col-sm-1"><span>4</span></b>
     						<span class="document-ico-style video-ico col-sm-1"></span>
     						<a href="#" target="_blank" title="一个小村庄的故事" class="col-sm-6">一个小村庄的故事</a>
     						<span class="color_brown text-overflow col-sm-2" class="">杜鹏</span>
     					</li>
     					<li class="clearfix">
     						<span class="score col-sm-2">128919</span>
-    						<b class="col-sm-1">5</b>
+    						<b class="col-sm-1"><span>5</span></b>
     						<span class="document-ico-style html-ico col-sm-1"></span>
     						<a href="#" target="_blank" title="一个小村庄的故事" class="col-sm-6">一个小村庄的故事</a>
     						<span class="color_brown text-overflow col-sm-2" class="">杜鹏</span>
     					</li>
     					<li class="clearfix">
     						<span class="score col-sm-2">128919</span>
-    						<b class="col-sm-1">6</b>
+    						<b class="col-sm-1"><span>6</span></b>
     						<span class="document-ico-style other-ico col-sm-1"></span>
     						<a href="#" target="_blank" title="一个小村庄的故事" class="col-sm-6">一个小村庄的故事</a>
     						<span class="color_brown text-overflow col-sm-2" class="">杜鹏</span>
     					</li>
     					<li class="clearfix">
     						<span class="score col-sm-2">128919</span>
-    						<b class="col-sm-1">7</b>
+    						<b class="col-sm-1"><span>7</span></b>
     						<span class="document-ico-style other-ico col-sm-1"></span>
     						<a href="#" target="_blank" title="一个小村庄的故事" class="col-sm-6">一个小村庄的故事</a>
     						<span class="color_brown text-overflow col-sm-2" class="">杜鹏</span>
     					</li>
     					<li class="clearfix">
     						<span class="score col-sm-2">128919</span>
-    						<b class="col-sm-1">8</b>
+    						<b class="col-sm-1"><span>8</span></b>
     						<span class="document-ico-style other-ico col-sm-1"></span>
     						<a href="#" target="_blank" title="一个小村庄的故事" class="col-sm-6">一个小村庄的故事</a>
     						<span class="color_brown text-overflow col-sm-2" class="">杜鹏</span>
@@ -778,10 +821,10 @@
         		<div class="col-md-4 competition-lesson-box">
         		    <h3 class="text-center">评分TOP</h3> 
        			
-    				<dl class="dl-horizontal competition-header clearfix">
-    					<dt><a href="#"><img src="img/saike/img_book_125x125.png"></a></dt>
+    				<dl class="dl-horizontal competition-header clearfix col-md-12 log-head">
+    					<dt><a href="#"><img src="img/saike/img_book_160x120.png"></a></dt>
     					<dd>
-    						<p class="author_name">王鹤 <b class="bg-saike rank font-arial">1</b></p>
+    						<p class="author_name">王鹤 <b class="bg-saike rank">1</b></p>
     						<p class="author-title"><a href="#">小小竹排画中游</a></p>
     						<p class="author_notes">抚顺市实验小学</p>
     						<p class="author_notes font_size_12">
@@ -799,49 +842,49 @@
     				<ul class="competition-content col-md-12">
     					<li class="clearfix">
     						<span class="score col-sm-2">4.4分</span>
-    						<b class="col-sm-1">2</b>
+    						<b class="col-sm-1"><span>2</span></b>
     						<span class="document-ico-style word-ico col-sm-1"></span>
     						<a href="#" target="_blank" title="一个小村庄的故事" class="col-sm-6">一个小村庄的故事一个小村庄的故事一个小村庄的故事一个小村庄的故事一个小村庄的故事</a>
     						<span class="color_brown text-overflow col-sm-2" class="">杜鹏</span>
     					</li>
     					<li class="clearfix">
     						<span class="score col-sm-2">4.4分</span>
-    						<b class="col-sm-1">3</b>
+    						<b class="col-sm-1"><span>3</span></b>
     						<span class="document-ico-style ppt-ico col-sm-1"></span>
     						<a href="#" target="_blank" title="一个小村庄的故事" class="col-sm-6">一个小村庄的故事</a>
     						<span class="color_brown text-overflow col-sm-2" class="">杜鹏</span>
     					</li>
     					<li class="clearfix">
     						<span class="score col-sm-2">4.4分</span>
-    						<b class="col-sm-1">4</b>
+    						<b class="col-sm-1"><span>4</span></b>
     						<span class="document-ico-style video-ico col-sm-1"></span>
     						<a href="#" target="_blank" title="一个小村庄的故事" class="col-sm-6">一个小村庄的故事</a>
     						<span class="color_brown text-overflow col-sm-2" class="">杜鹏</span>
     					</li>
     					<li class="clearfix">
     						<span class="score col-sm-2">4.4分</span>
-    						<b class="col-sm-1">5</b>
+    						<b class="col-sm-1"><span>5</span></b>
     						<span class="document-ico-style html-ico col-sm-1"></span>
     						<a href="#" target="_blank" title="一个小村庄的故事" class="col-sm-6">一个小村庄的故事</a>
     						<span class="color_brown text-overflow col-sm-2" class="">杜鹏</span>
     					</li>
     					<li class="clearfix">
     						<span class="score col-sm-2">4.4分</span>
-    						<b class="col-sm-1">6</b>
+    						<b class="col-sm-1"><span>6</span></b>
     						<span class="document-ico-style other-ico col-sm-1"></span>
     						<a href="#" target="_blank" title="一个小村庄的故事" class="col-sm-6">一个小村庄的故事</a>
     						<span class="color_brown text-overflow col-sm-2" class="">杜鹏</span>
     					</li>
     					<li class="clearfix">
     						<span class="score col-sm-2">4.4分</span>
-    						<b class="col-sm-1">7</b>
+    						<b class="col-sm-1"><span>7</span></b>
     						<span class="document-ico-style html-ico col-sm-1"></span>
     						<a href="#" target="_blank" title="一个小村庄的故事" class="col-sm-6">一个小村庄的故事</a>
     						<span class="color_brown text-overflow col-sm-2" class="">杜鹏</span>
     					</li>
     					<li class="clearfix">
     						<span class="score col-sm-2">4.4分</span>
-    						<b class="col-sm-1">8</b>
+    						<b class="col-sm-1"><span>8</span></b>
     						<span class="document-ico-style other-ico col-sm-1"></span>
     						<a href="#" target="_blank" title="一个小村庄的故事" class="col-sm-6">一个小村庄的故事</a>
     						<span class="color_brown text-overflow col-sm-2" class="">杜鹏</span>
@@ -853,10 +896,10 @@
         		<div class="col-md-4 competition-lesson-box">
         		    <h3 class="text-center">晒课TOP</h3> 
        			
-    				<dl class="dl-horizontal competition-header clearfix">
-    					<dt><a href="#"><img src="img/saike/img_book_125x125.png"></a></dt>
+    				<dl class="dl-horizontal competition-header clearfix col-md-12 log-head">
+    					<dt><a href="#"><img src="img/saike/img_book_160x120.png"></a></dt>
     					<dd>
-    						<p class="author_name">王鹤 <b class="bg-saike rank font-arial">1</b></p>
+    						<p class="author_name">王鹤 <b class="bg-saike rank">1</b></p>
     						<p class="author-title"><a href="#">小小竹排画中游</a></p>
     						<p class="author_notes">抚顺市实验小学</p>
     						<p class="author_notes font_size_12">
@@ -868,49 +911,49 @@
     				<ul class="competition-content col-md-12">
     					<li class="clearfix">
     						<span class="score col-sm-2">346</span>
-    						<b class="col-sm-1">2</b>
+    						<b class="col-sm-1"><span>2</span></b>
     						<span class="document-ico-style word-ico col-sm-1"></span>
     						<a href="#" target="_blank" title="一个小村庄的故事" class="col-sm-6">一个小村庄的故事一个小村庄的故事一个小村庄的故事一个小村庄的故事一个小村庄的故事</a>
     						<span class="color_brown text-overflow col-sm-2" class="">杜鹏</span>
     					</li>
     					<li class="clearfix">
     						<span class="score col-sm-2">346</span>
-    						<b class="col-sm-1">3</b>
+    						<b class="col-sm-1"><span>3</span></b>
     						<span class="document-ico-style ppt-ico col-sm-1"></span>
     						<a href="#" target="_blank" title="一个小村庄的故事" class="col-sm-6">一个小村庄的故事</a>
     						<span class="color_brown text-overflow col-sm-2" class="">杜鹏</span>
     					</li>
     					<li class="clearfix">
     						<span class="score col-sm-2">346</span>
-    						<b class="col-sm-1">4</b>
+    						<b class="col-sm-1"><span>4</span></b>
     						<span class="document-ico-style video-ico col-sm-1"></span>
     						<a href="#" target="_blank" title="一个小村庄的故事" class="col-sm-6">一个小村庄的故事</a>
     						<span class="color_brown text-overflow col-sm-2" class="">杜鹏</span>
     					</li>
     					<li class="clearfix">
     						<span class="score col-sm-2">346</span>
-    						<b class="col-sm-1">5</b>
+    						<b class="col-sm-1"><span>5</span></b>
     						<span class="document-ico-style html-ico col-sm-1"></span>
     						<a href="#" target="_blank" title="一个小村庄的故事" class="col-sm-6">一个小村庄的故事</a>
     						<span class="color_brown text-overflow col-sm-2" class="">杜鹏</span>
     					</li>
     					<li class="clearfix">
     						<span class="score col-sm-2">346</span>
-    						<b class="col-sm-1">6</b>
+    						<b class="col-sm-1"><span>6</span></b>
     						<span class="document-ico-style other-ico col-sm-1"></span>
     						<a href="#" target="_blank" title="一个小村庄的故事" class="col-sm-6">一个小村庄的故事</a>
     						<span class="color_brown text-overflow col-sm-2" class="">杜鹏</span>
     					</li>
     					<li class="clearfix">
     						<span class="score col-sm-2">346</span>
-    						<b class="col-sm-1">7</b>
+    						<b class="col-sm-1"><span>7</span></b>
     						<span class="document-ico-style html-ico col-sm-1"></span>
     						<a href="#" target="_blank" title="一个小村庄的故事" class="col-sm-6">一个小村庄的故事</a>
     						<span class="color_brown text-overflow col-sm-2" class="">杜鹏</span>
     					</li>
     					<li class="clearfix">
     						<span class="score col-sm-2">346</span>
-    						<b class="col-sm-1">8</b>
+    						<b class="col-sm-1"><span>8</span></b>
     						<span class="document-ico-style other-ico col-sm-1"></span>
     						<a href="#" target="_blank" title="一个小村庄的故事" class="col-sm-6">一个小村庄的故事</a>
     						<span class="color_brown text-overflow col-sm-2" class="">杜鹏</span>
@@ -925,7 +968,7 @@
         	
         	
         	<!--活动指南-->
-        	<section class="activity-help-wrap col-md-12 clear-padding">
+        	<!--<section class="activity-help-wrap col-md-12 clear-padding">
     		   <hr class="grid-2 center"></hr>
     		   <h3 class="text-center">活动指南</h3>
     		   
@@ -965,8 +1008,90 @@
         	</section><!--/.activity-help-wrap-->
         	
         	
-        	
+        	<!--活动指南-->
+        	<section class="help-wrap col-md-12 clear-padding">
+        		 <hr class="grid-2 center"></hr>
+    		     <h3 class="text-center">活动指南</h3>
+    		     
+    		     <div class="row help_row">
+    		     	 <article class="col-md-4 help-new-block">
+					    <div class="full-center help-new-block-inner" style="background: -webkit-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/saike/news_teacher.png); background: -moz-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/saike/news_teacher.png); background: linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/saike/news_teacher.png); background-size: cover;">
+					        <div class="help-new-block-thumbnail">
+					            <i class="glyphicon glyphicon-book"></i>
+					        </div>
+					        <h5 class="help-new-block-difficulty">
+					            teacher
+					        </h5>
+					        <h3 class="help-new-block-title">
+					              <a href="#">我是老师</a>
+					        </h3>
+					    </div>
+					
+					    <div class="help-new-block-meta">
+					        <div class="help-new-date">
+					             <a href="#">教师晒课有哪些流程？</a>
+					        </div>
+					    </div>
+					
+					    <div class="help-new-block-excerpt">
+					        <p>教师晒课有哪些流程？首先第一步确定您登录领信教育云平台;第二步角色一定得是教师;第三步点击“教学空间”页面里会有一个“我要晒课”按钮;第四步我们就一起按照步骤开始晒晒你的课件吧！<a href="#">更多</a></p>
+					    </div>
+			        </article>
+			        
+			        <article class="col-md-4 help-new-block">
+					    <div class="full-center help-new-block-inner" style="background: -webkit-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/saike/news_education.png); background: -moz-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/saike/news_education.png); background: linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/saike/news_education.png); background-size: cover;">
+					        <div class="help-new-block-thumbnail">
+					            <i class="glyphicon glyphicon-user"></i>
+					        </div>
+					        <h5 class="help-new-block-difficulty">
+					            education
+					        </h5>
+					        <h3 class="help-new-block-title">
+					               <a href="#" >我是教育局人员</a>
+					        </h3>
+					    </div>
+					
+					    <div class="help-new-block-meta">
+					        <div class="help-new-date">
+					             <a href="#">教师晒课有哪些流程？</a>
+					        </div>
+					    </div>
+					
+					    <div class="help-new-block-excerpt">
+					        <p>教师晒课有哪些流程？首先第一步确定您登录领信教育云平台;第二步角色一定得是教师;第三步点击“教学空间”页面里会有一个“我要晒课”按钮;第四步我们就一起按照步骤开始晒晒你的课件吧！<a href="#">更多</a></p>
+					    </div>
+			        </article>
+			        
+			        <article class="col-md-4 help-new-block">
+					    <div class="full-center help-new-block-inner" style="background: -webkit-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/saike/news_help.png); background: -moz-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/saike/news_help.png); background: linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(img/saike/news_help.png); background-size: cover;">
+					        <div class="help-new-block-thumbnail">
+					            <i class="glyphicon glyphicon-question-sign"></i>
+					        </div>
+					        <h5 class="help-new-block-difficulty">
+					            help
+					        </h5>
+					        <h3 class="help-new-block-title">
+					               <a href="#" >我是帮助中心</a>
+					        </h3>
+					    </div>
+					
+					    <div class="help-new-block-meta">
+					        <div class="help-new-date">
+					             <a href="#">教师晒课有哪些流程？</a>
+					        </div>
+					    </div>
+					
+					    <div class="help-new-block-excerpt">
+					        <p>教师晒课有哪些流程？首先第一步确定您登录领信教育云平台;第二步角色一定得是教师;第三步点击“教学空间”页面里会有一个“我要晒课”按钮;第四步我们就一起按照步骤开始晒晒你的课件吧！<a href="#">更多</a></p>
+					    </div>
+			        </article>
+    		   </div>
+        	</section><!--/.help-wrap-->
+
 		</div><!--/.container .curriculum-content-->
+		
+		
+		
 		
 		<!-- 底部 -->
 		<div class="container-fluid footer footer-grayline" style="display:block ;">
@@ -1000,18 +1125,59 @@
 		<link rel="stylesheet" type="text/css" href="css/img-player.css" />
 		<link rel="stylesheet" type="text/css" href="libs/raking/css/raking.css" />
 		
+		<script type="text/javascript" src="libs/raking/js/jquery.min.js"></script>
+		<script type="text/javascript" src="libs/numberscroll/animateBackground-plugin.js"></script>
+
+	    <script type="text/javascript">
+			$(function(){
+//				getdata();
+				show_num(3434132412);
+//				setInterval('16890', 3000);
+			});
+			
+//			function getdata(){
+//				var num = $("#cur_num").val();
+//				$.ajax({
+//				    url: 'data.php',
+//					type: 'POST',
+//					dataType: "json",
+//					data:{'total':num},
+//					cache: false,
+//					timeout: 10000,
+//					error: function(){},
+//					success: function(data){
+//						show_num(data.count);
+//				    }
+//			   	});
+//			}
+
+			function show_num(n){
+				var it = $(".t_num i");
+				var len = String(n).length;
+				for(var i=0;i<len;i++){
+					if(it.length<=i){
+						$(".t_num").append("<i></i>");
+					}
+
+					var num=String(n).charAt(i);
+					var y = -parseInt(num)*40;
+					console.log(y);
+					var obj = $(".t_num i").eq(i);
+					obj.animate({
+						backgroundPosition :'(0 '+String(y)+'px)' 
+						}, 'slow','swing',function(){}
+					);
+					
+				}
+//				$("#cur_num").val(n);
+			}
+
+		</script>
+		
         <script>
          	goTopEx();
         </script>
-		<!-- <script>
-	     $('.bureau-student-rizhi>li').each(function(){
-		var num = $(this).index();
-		if(num % 2 !== 0)
-		{
-			$(this).addClass('bg3')
-		}
-	    });
-        </script>-->
+		
 	</body>
 
 </html>
