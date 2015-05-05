@@ -1593,7 +1593,7 @@ color: #666;
 /*论坛页面*/
 
 .gateway-luntai-left{
-	position:fixed; width:160px; bottom:0px; left:200px; top:57px; background: none repeat scroll 0% 0% #959595;z-index: 222;
+	position:fixed; width:185px; bottom:0px; top:57px; background: none repeat scroll 0% 0% #959595;z-index: 222;
 	box-shadow: 8px 0px 12px rgba(0, 0, 0, 0.15);
 }
 .gateway-luntai-right{
