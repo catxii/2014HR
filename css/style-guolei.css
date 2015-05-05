@@ -638,6 +638,7 @@ article .help-new-block-excerpt a:hover{ color: #5bc2a1;}
 	margin-right: 5px;
 	border-radius: 0;
 }
+.footer-page ul.pagination li.disabled span{ margin-right: 5px; font-size: 14px;}
 body .footer-page .pagination > li:first-child > a, .pagination > li:first-child > span {
 	border-radius: 0;
 }
