@@ -2210,7 +2210,7 @@ margin-left: 3px;
 }
 .rizhi-list-new .badge-none{color: #999;}
 .rizhi-list-new .btn-group{
-	top: 9px !important;
+	/*top: 9px !important;*/
 }
 .rizhi-list-new .btn-group .btn{
 	padding: 0 10px !important;
