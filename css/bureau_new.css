@@ -512,6 +512,7 @@ display: inline-block;
 vertical-align: middle;
 float: left;
 text-decoration: none;
+width: 100%;
 }
 .bureau-news-list-bottom > ul li div.bureau-list-left a i{
 	font-size: 9px;
