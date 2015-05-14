@@ -1,0 +1,47 @@
+<MKM version="2.0" imageFileUrl="file:///Users/catxii/Documents/%E9%A2%86%E4%BF%A1%E6%95%99%E8%82%B2/project/2014HR/app%E6%95%88%E6%9E%9C%E5%9B%BE/%E6%A0%87%E6%B3%A8%E6%96%87%E4%BB%B6/%E6%94%B6%E8%97%8F%E9%A1%B5-%E4%B8%AA%E4%BA%BA%E8%AF%A6%E6%83%85-%E4%B8%AA%E4%BA%BA%E8%AF%A6%E6%83%85%E4%BA%8C%E7%BB%B4%E7%A0%81.jpg">
+  <Marks>
+    <LengthMark direction="12" color="16711680" length="25" x="483" y="703"/>
+    <LengthMark direction="12" color="16711680" length="25" x="1100" y="705"/>
+    <LengthMark direction="3" color="16711680" length="20" x="697" y="661"/>
+    <LengthMark direction="3" color="16711680" length="20" x="699" y="734"/>
+    <LengthMark direction="12" color="16711680" length="30" x="704" y="703"/>
+    <LengthMark direction="12" color="16711680" length="110" x="576" y="803"/>
+    <LengthMark direction="3" color="16711680" length="110" x="695" y="811"/>
+    <LengthMark direction="12" color="16711680" length="78" x="494" y="840"/>
+    <LengthMark direction="3" color="16711680" length="70" x="494" y="760"/>
+    <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="3289650" offsetX="25" offsetY="10" x="628" y="785"/>
+    <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="3289650" offsetX="25" offsetY="10" x="756" y="826"/>
+    <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="9934743" offsetX="25" offsetY="10" x="773" y="870"/>
+    <TextMark defaultDirection="9" direction="9" color="16711680" x="695" y="795" textMaxWidth="100" offsetX="25" offsetY="10" text="微软雅黑 2em"/>
+    <TextMark defaultDirection="9" direction="9" color="16711680" x="859" y="829" textMaxWidth="100" offsetX="25" offsetY="10" text="微软雅黑 2em"/>
+    <TextMark defaultDirection="9" direction="9" color="16711680" x="833" y="878" textMaxWidth="100" offsetX="25" offsetY="10" text="微软雅黑 1.6em"/>
+    <LengthMark direction="3" color="16711680" length="15" x="772" y="1049"/>
+    <LengthMark direction="3" color="16711680" length="15" x="650" y="1007"/>
+    <LengthMark direction="12" color="16711680" length="15" x="572" y="1027"/>
+    <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="10132122" offsetX="25" offsetY="10" x="1043" y="774"/>
+    <TextMark defaultDirection="9" direction="9" color="16711680" x="1030" y="974" textMaxWidth="100" offsetX="25" offsetY="10" text="微软雅黑 1.6em"/>
+    <LengthMark direction="3" color="16711680" length="20" x="538" y="942"/>
+    <LengthMark direction="3" color="16711680" length="20" x="581" y="1126"/>
+    <LengthMark direction="12" color="16711680" length="25" x="1100" y="986"/>
+    <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="3289650" offsetX="25" offsetY="10" x="1365" y="700"/>
+    <TextMark defaultDirection="9" direction="9" color="16711680" x="1416" y="723" textMaxWidth="100" offsetX="25" offsetY="10" text="微软雅黑 2em"/>
+    <LengthMark direction="12" color="16711680" length="10" x="1331" y="750"/>
+    <LengthMark direction="3" color="16711680" length="40" x="1608" y="1120"/>
+    <LengthMark direction="12" color="16711680" length="65" x="1906" y="706"/>
+    <LengthMark direction="12" color="16711680" length="20" x="1950" y="791"/>
+    <LengthMark direction="12" color="16711680" length="30" x="1875" y="919"/>
+    <LengthMark direction="3" color="16711680" length="30" x="1861" y="922"/>
+    <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="10066329" offsetX="25" offsetY="10" x="1807" y="779"/>
+    <TextMark defaultDirection="9" direction="9" color="16711680" x="1829" y="844" textMaxWidth="100" offsetX="25" offsetY="10" text="微软雅黑 2em"/>
+    <LengthMark direction="12" color="16711680" length="385" x="2332" y="845"/>
+    <LengthMark direction="3" color="16711680" length="385" x="2746" y="880"/>
+    <LengthMark direction="12" color="16711680" length="270" x="2392" y="932"/>
+    <LengthMark direction="3" color="16711680" length="260" x="2699" y="946"/>
+    <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="9605778" offsetX="25" offsetY="10" x="2347" y="1291"/>
+    <TextMark defaultDirection="9" direction="9" color="16711680" x="2483" y="1285" textMaxWidth="100" offsetX="25" offsetY="10" text="微软雅黑 2em"/>
+    <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="3463796" offsetX="25" offsetY="10" x="1023" y="693"/>
+    <TextMark defaultDirection="9" direction="9" color="16711680" x="1038" y="671" textMaxWidth="176" offsetX="25" offsetY="10" text="圆角8° 2em 微软雅黑"/>
+    <LengthMark direction="12" color="16711680" length="20" x="1010" y="727"/>
+    <LengthMark direction="12" color="16711680" length="20" x="1082" y="726"/>
+  </Marks>
+</MKM>

@@ -1,4 +1,4 @@
-<MKM version="2.0" imageFileUrl="file:///E:/%e5%b7%a5%e4%bd%9c/2014HR/app%e6%95%88%e6%9e%9c%e5%9b%be/%e6%a0%87%e6%b3%a8%e6%96%87%e4%bb%b6/app_0514.png">
+<MKM version="2.0" imageFileUrl="file:///Users/catxii/Documents/%E9%A2%86%E4%BF%A1%E6%95%99%E8%82%B2/project/2014HR/app%E6%95%88%E6%9E%9C%E5%9B%BE/%E6%A0%87%E6%B3%A8%E6%96%87%E4%BB%B6/app_0514.png">
   <Marks>
     <LengthMark direction="12" color="16711680" length="140" x="578" y="825"/>
     <LengthMark direction="3" color="16711680" length="140" x="679" y="752"/>
@@ -35,7 +35,7 @@
     <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="13093580" offsetX="25" offsetY="10" x="2459" y="743"/>
     <TextMark defaultDirection="5" direction="5" color="16711680" x="2430" y="745" textMaxWidth="100" offsetX="22" offsetY="11" text="粗细   1px"/>
     <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="12237498" offsetX="25" offsetY="10" x="2512" y="1421"/>
-    <TextMark defaultDirection="9" direction="9" color="16711680" x="2480" y="1424" textMaxWidth="100" offsetX="46" offsetY="43" text="粗细  2px"/>
+    <TextMark defaultDirection="9" direction="9" color="16711680" x="2480" y="1424" textMaxWidth="100" offsetX="46" offsetY="43" text="粗细  1px"/>
     <LengthMark direction="12" color="16711680" length="30" x="2233" y="823"/>
     <TextMark defaultDirection="10" direction="10" color="16711680" x="2241" y="843" textMaxWidth="100" offsetX="36" offsetY="36" text="注意  两边间距"/>
     <LengthMark direction="12" color="16711680" length="30" x="2842" y="796"/>
