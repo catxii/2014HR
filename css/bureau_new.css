@@ -4668,8 +4668,8 @@ margin-right: 4px;
 }
 /*底部导航*/
 .footer-grayline {
-    background: #989898;
-    border-top: 6px solid #7F7F7F;
+    background: none repeat scroll 0% 0% #67BBF3;
+    border-top: 6px solid #58A4D8;
     height: 100%;
     color: #FFF;
     display: none;
