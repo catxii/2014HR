@@ -2691,7 +2691,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfe2ef', end
 }
 .intro-ks-body p{
 	margin: 10px 0;
-	height: 100px;/*科室简介限制100字以内*/
+	height: 165px;/*科室简介限制100字以内*/
 	overflow: hidden;
 	text-shadow: 1px 1px 0px #fff;
 	color: rgba(86, 110, 128, 1);
