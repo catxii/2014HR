@@ -1,0 +1,12 @@
+<MKM version="2.0" imageFileUrl="file:///Users/catxii/Documents/%E9%A2%86%E4%BF%A1%E6%95%99%E8%82%B2/project/2014HR/app%E6%95%88%E6%9E%9C%E5%9B%BE/%E6%A0%87%E6%B3%A8%E6%96%87%E4%BB%B6/%E7%A9%BA%E9%97%B4%E5%88%86%E7%B1%BB%E9%A1%B5%E9%9D%A2.jpg">
+  <Marks>
+    <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="14540253" offsetX="25" offsetY="10" x="242" y="389"/>
+    <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="4342338" offsetX="25" offsetY="10" x="122" y="378"/>
+    <TextMark defaultDirection="9" direction="9" color="16711680" x="171" y="526" textMaxWidth="100" offsetX="25" offsetY="10" text="1.6em"/>
+    <LengthMark direction="12" color="16711680" length="70" x="97" y="412"/>
+    <LengthMark direction="3" color="16711680" length="70" x="85" y="419"/>
+    <LengthMark direction="12" color="16711680" length="35" x="65" y="598"/>
+    <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="3355443" offsetX="25" offsetY="10" x="346" y="588"/>
+    <TextMark defaultDirection="9" direction="9" color="16711680" x="364" y="721" textMaxWidth="100" offsetX="25" offsetY="10" text="微软雅黑 2.6em"/>
+  </Marks>
+</MKM>
