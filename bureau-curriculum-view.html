@@ -13,110 +13,6 @@
   <!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
   <script type="text/JavaScript" src="space-css.js"></script>
   <!--***** “space-css.js” 为公用CSS库对应项目里的"space-css.jsp"由前端维护-不需要引用该文件 *****-->
-  
-  <style type="text/css">
-  	 .shop-rating {
-    height: 25px;
-    overflow: hidden;
-    zoom: 1;
-    padding: 2px 0px;
-    position: relative;
-    z-index: 999;
-}
-
-.shop-rating span {
-    height: 23px;
-    display: block;
-    line-height: 23px;
-    float: left;
-}
-
-.shop-rating span.title {
-    width: 125px;
-    text-align: right;
-    margin-right: 5px;
-}
-
-.shop-rating ul {
-    float: left;
-	margin:0;padding:0
-}
-
-.shop-rating .result {
-    margin-left: 20px;
-    padding-top: 2px;
-}
-
-.shop-rating .result span {
-	color: #ff6d02;
-}
-.shop-rating .result em {
-    color: #f60;
-    font-family: arial;
-    font-weight: bold;
-}
-.shop-rating .result strong {
-	color: #666666;
-	font-weight: normal;
-}
-.rating-level,
-.rating-level a {
-    background: url(http://a.tbcdn.cn/app/rc/img/star_v2.png) no-repeat scroll 1000px 1000px;
-}
-.rating-level {
-    background-position: 0px -5px;
-    width: 120px;
-    height: 23px;
-    position: relative;
-    z-index: 1000;
-   
-}
-.rating-level li {
-    display: inline;
-}
-
-.rating-level a {
-    line-height: 23px;
-    height: 23px;
-    position: absolute;
-    top: -5px;
-    left: 0px;
-    text-indent: -999em;
-    *zoom: 1;
-
-}
-
-
-.rating-level a.one-star {
-    width: 20%;
-    z-index: 6;
-}
-
-.rating-level a.two-stars {
-width: 40%;
-z-index: 5;
-}
-
-.rating-level a.three-stars {
-    width: 60%;
-    z-index: 4;
-}
-
-.rating-level a.four-stars {
-    width: 80%;
-    z-index: 3;
-}
-
-.rating-level a.five-stars {
-    width: 100%;
-    z-index: 2;
-}
-
-.rating-level .current-rating,.rating-level a:hover{background-position:0 -28px;}
-.rating-level a.one-star:hover,.rating-level a.two-stars:hover,.rating-level a.one-star.current-rating,.rating-level a.two-stars.current-rating{background-position:0 -116px;}
-.rating-level .three-stars .current-rating,.rating-level .four-stars .current-rating,.rating-level .five-stars .current-rating{background-position:0 -28px;}
-
-  </style>
  
 </head>
 <body class="fixed-top-body gray-body" ng-app="" data-spy="scroll" data-target=".navbar-example">
@@ -238,24 +134,14 @@ z-index: 5;
 	     <div class="well user-commends clear-padding clearfix"  style="margin-top: 20px;" >
 	      <ul class="inline-block-ul">
 			<li><h4>对该晒课的评价：</h4></li>
-			<li class="start-pj after-line">
-				<ul class="rating-level" id="stars2">
-					<li><a class="one-star"></a></li>
-					<li><a class="two-stars"></a></li>
-					<li><a class="three-stars"></a></li>
-					<li><a class="four-stars" ></a></li>
-					<li><a class="five-stars"></a></li>
-				</ul>
-				<!--<span class="icon-dislikes icon-star"></span> 
+			<li class="start-pj">
+				<span class="icon-dislikes icon-star"></span> 
 				<span class="icon-dislikes icon-star"></span> 
 				<span class="icon-dislikes icon-star"></span> 
 				<span class="icon-dislikes"></span> 
 				<span class="icon-dislikes"></span> 
-				3.0-->
+				3.0
 			</li>
-			<li class="zan-pj">
-				<a href="" id="zan"><span class="fa fa-thumbs-up"></span>赞(<i id="zanCount">0</i>)</a>
-			</li>	
 		  </ul>
 	      <div class="media clear-margin">
 	        <!--<a class="pull-left" href="#">
@@ -684,19 +570,6 @@ z-index: 5;
   });
 </script>
 
-<script type="text/javascript">
-    window.onload=function(){
-    	var oZan=document.getElementById('zan');
-    	var oZanCount=document.getElementById('zanCount');
-    	var count=0;
-    	oZan.onclick=function(){
-    		count++;
-    		oZanCount.innerHTML=count;
-    	}
-    	
-    }
-	 
-</script>
 
 </body>
 </html>
