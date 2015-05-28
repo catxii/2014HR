@@ -526,6 +526,7 @@ fieldset[disabled] .btn-primary.active {
   list-style: none;
   line-height: 30px;
   position: relative;
+  white-space: nowrap;
 }
 .tree-sub-1 li a {
   display: block;
