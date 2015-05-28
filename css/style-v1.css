@@ -323,6 +323,13 @@ fieldset[disabled] .btn-primary.active {
   display: none;
   z-index: 20;
 }
+.edit-info-tips.inline-block-ul {
+  top: 2px;
+}
+.edit-info-tips .dropdown {
+  right: 0;
+  left: auto;
+}
 .edit-info-tips li {
   margin-left: 5px;
 }
@@ -456,12 +463,15 @@ fieldset[disabled] .btn-primary.active {
   right: 5px;
   left: 5px;
   top: 80%;
-  background: #919191;
+  background: #000;
   margin: 0;
   padding: 0;
   text-align: center;
   display: none;
-  opacity: 0.8;
+  opacity: 0.7;
+}
+.position-bottom-info {
+  white-space: nowrap;
 }
 .position-bottom-info li {
   display: inline-block;
