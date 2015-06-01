@@ -3216,6 +3216,14 @@ height: 30px;
 .bureau-primary-body .bureau-primary-center .bureau-primary-tab li{
 	margin-right: 0px !important;
 	text-align: center;
+	position: relative;
+}
+.bureau-primary-body .bureau-primary-center .bureau-primary-tab li > a.zy-ab{
+	position: absolute;
+}
+.bueau-more{
+	margin-left: 20px;
+font-size: 12px;
 }
 .bureau-primary-body .bureau-primary-tab li > a:hover, .bureau-primary-body .bureau-primary-tab li.active > a {
      background: #33C386;
@@ -3850,7 +3858,15 @@ position: relative;
 	border-bottom: 1px solid #eee;
 	padding:10px 10px 10px 35px;
 	height: 92px;
+	position: relative;
 }	
+.zy-right{
+	position: absolute;
+right: 0px;
+top: 30px;
+padding: 5px;
+color: #73A3CC;
+}
 .suckerdiv > ul > li:hover{
 	border:1px solid #ccc;
 }
