@@ -2830,3 +2830,49 @@ input[type="checkbox"] {
   background: #0099cb!important;
   color: white;
 }
+.view-area-ueditor {
+  background: white;
+  border: 5px solid #ccc;
+  box-shadow: 7px 7px 9px #888888;
+  left: 50%;
+  margin-left: -595px;
+  min-height: 500px;
+  padding: 50px 30px;
+  position: fixed;
+  text-align: justify;
+  top: 10px;
+  width: 1190px;
+  z-index: 10000;
+  max-height: 600px;
+  overflow-y: auto;
+}
+.view-area-ueditor .close {
+  font-size: 30px;
+  position: absolute;
+  right: 10px;
+  text-decoration: none;
+  top: 10px;
+}
+.view-area-ueditor .bt {
+  background: #efefef;
+  color: #4c4c4c;
+  font-size: 20px;
+  line-height: 60px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.view-area-ueditor .alert-box {
+  background: yellow ;
+  color: #ff6300;
+  font-size: 12px;
+  left: 0;
+  margin: 0;
+  padding: 10px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+}
+.view-area-ueditor .nr {
+  max-height: 400px;
+  overflow-y: auto;
+}
