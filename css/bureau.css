@@ -152,7 +152,7 @@ box-shadow: 0px 0px 2px rgba(117, 117, 117, 1);
 	height: 138px;
 	padding: 38px 0 0 0;
 	background: url(../img/bureau-img/body_bg01.png) top;
-	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.525) inset;
+	/*box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.525) inset;*/
 }
 .bureau-logo{width: 376px;margin: auto;padding: 18px 0 !important;}
 
@@ -2216,7 +2216,7 @@ overflow: hidden;
     height: 100%;
     padding: 38px 0px 0px;
     background-image:url('../img/bureau-img/body_bg01.png') repeat scroll center top transparent ;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.525) inset;
+    /*box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.525) inset;*/
 }
 
 
@@ -3224,6 +3224,10 @@ height: 30px;
 .bueau-more{
 	margin-left: 20px;
 font-size: 12px;
+}
+.bueau-more > a{
+	color: rgb(115, 163, 204) !important;
+font-weight: 500;
 }
 .bureau-primary-body .bureau-primary-tab li > a:hover, .bureau-primary-body .bureau-primary-tab li.active > a {
      background: #33C386;
