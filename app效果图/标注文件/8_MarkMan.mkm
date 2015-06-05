@@ -1,0 +1,8 @@
+<MKM version="2.0" imageFileUrl="file:///E:/%e5%b7%a5%e4%bd%9c/2014HR/app%e6%95%88%e6%9e%9c%e5%9b%be/%e6%a0%87%e6%b3%a8%e6%96%87%e4%bb%b6/8_MarkMan.png">
+  <Marks>
+    <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="15553893" offsetX="25" offsetY="10" x="646" y="673"/>
+    <TextMark defaultDirection="9" direction="9" color="16711680" x="423" y="312" textMaxWidth="100" offsetX="25" offsetY="10" text="18sp"/>
+    <ColorMark defaultDirection="9" colorSystem="hex" direction="9" color="16711680" targetColor="16777215" offsetX="25" offsetY="10" x="425" y="326"/>
+    <LengthMark direction="3" color="16711680" length="88" x="179" y="276"/>
+  </Marks>
+</MKM>
