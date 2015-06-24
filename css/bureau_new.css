@@ -2690,14 +2690,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfe2ef', end
 	
 }
 .intro-ks-body p{
-	margin: 10px 0;
-	height: 165px;/*科室简介限制100字以内*/
-	overflow: hidden;
-	text-shadow: 1px 1px 0px #fff;
-	color: rgba(86, 110, 128, 1);
-	padding: 0 10px;
-	font-size: 12px;
-	line-height: 24px;
+	margin: 10px 0px;
+height: 140px;
+text-shadow: 1px 1px 0px #FFF;
+color: #566E80;
+padding: 0px 10px;
+font-size: 12px;
+line-height: 24px;
+overflow-y: scroll;
 }
 .intro-ks .position-ru a{
 	padding: 8px 9px;
