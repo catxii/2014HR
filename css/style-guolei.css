@@ -1039,7 +1039,7 @@ body.ls-bg .bureau-modify-right > .bureau-modify-zdy > h4 > .pull-right a{
 body .bureau-modify-zdy-jyjks .bureau-modify-zdy-body .url-gray{ padding: 5px 5px 0px 5px; /*padding-top: 20px; padding-bottom: 20px;*/  }
 body .bureau-modify-zdy-jyjks .bureau-modify-zdy-body .url-gray:last-child{ padding-bottom: 5px;}
 body .bureau-modify-zdy-jyjks .bureau-modify-zdy-body .url-gray a{
-	font-weight: lighter; 
+	font-weight: normal; 
 	line-height: 30px;
 	background:#dcf6ff;
     border: 1px solid #f4f4f4;
@@ -1082,7 +1082,7 @@ body .bureau-modify-zdy-jyjks .bureau-modify-zdy-body .url-gray a span{ padding-
 
 /*教育局股室*/
 body .bureau-modify-zdy-jyjks .bureau-modify-zdy-body > .gshi > a{
-        		font-weight: lighter !important;
+        		font-weight: normal !important;
         		color: #333 !important; 
         		background: none !important;
         		border: none !important;
@@ -1136,6 +1136,14 @@ body .navbar_links ul.bule-navbar li a:hover, body .navbar_links ul.bule-navbar 
 .linder-rizi ol li a{ color:#4C9ED9}
 .linder-rizi ol li a:hover{ color:#4C9ED9 }
 .linder-rizi ol li a strong{ padding-left: 5px;}
+
+/*学校通告*/
+.confirm-nums{ text-align: justify; line-height: 24px; padding: 10px;}
+
+
+
+
+
 
 
 
